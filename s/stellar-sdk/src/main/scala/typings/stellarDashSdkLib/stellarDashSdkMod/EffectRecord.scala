@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait EffectRecord extends Record {
   var account: java.lang.String
+  var amount: js.UndefOr[js.Any] = js.undefined
   var operation: js.UndefOr[CallFunction[OperationRecord]] = js.undefined
   var paging_token: java.lang.String
   var precedes: js.UndefOr[CallFunction[EffectRecord]] = js.undefined

@@ -11,14 +11,14 @@ trait TranscribeService
   @JSName("config")
   var config_TranscribeService: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.ClientConfiguration = js.native
   /**
-     * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message. 
+     * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. 
      */
   def createVocabulary(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.CreateVocabularyResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message. 
+     * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. 
      */
   def createVocabulary(
     callback: js.Function2[
@@ -31,14 +31,14 @@ trait TranscribeService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message. 
+     * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. 
      */
   def createVocabulary(params: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.CreateVocabularyRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.CreateVocabularyResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message. 
+     * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. 
      */
   def createVocabulary(
     params: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.CreateVocabularyRequest,
@@ -137,14 +137,14 @@ trait TranscribeService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about a vocabulary. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+     * Gets information about a vocabulary. 
      */
   def getVocabulary(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.GetVocabularyResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about a vocabulary. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+     * Gets information about a vocabulary. 
      */
   def getVocabulary(
     callback: js.Function2[
@@ -157,14 +157,14 @@ trait TranscribeService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about a vocabulary. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+     * Gets information about a vocabulary. 
      */
   def getVocabulary(params: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.GetVocabularyRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.GetVocabularyResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about a vocabulary. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+     * Gets information about a vocabulary. 
      */
   def getVocabulary(
     params: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.GetVocabularyRequest,
@@ -260,14 +260,14 @@ trait TranscribeService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous job to transcribe speech to text. Note that en-AU, en-UK, and fr-CA languages are in preview and are only available to whitelisted customers. 
+     * Starts an asynchronous job to transcribe speech to text. 
      */
   def startTranscriptionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.StartTranscriptionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous job to transcribe speech to text. Note that en-AU, en-UK, and fr-CA languages are in preview and are only available to whitelisted customers. 
+     * Starts an asynchronous job to transcribe speech to text. 
      */
   def startTranscriptionJob(
     callback: js.Function2[
@@ -280,14 +280,14 @@ trait TranscribeService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous job to transcribe speech to text. Note that en-AU, en-UK, and fr-CA languages are in preview and are only available to whitelisted customers. 
+     * Starts an asynchronous job to transcribe speech to text. 
      */
   def startTranscriptionJob(params: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.StartTranscriptionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.StartTranscriptionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous job to transcribe speech to text. Note that en-AU, en-UK, and fr-CA languages are in preview and are only available to whitelisted customers. 
+     * Starts an asynchronous job to transcribe speech to text. 
      */
   def startTranscriptionJob(
     params: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.StartTranscriptionJobRequest,
@@ -301,14 +301,14 @@ trait TranscribeService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+     * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. 
      */
   def updateVocabulary(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.UpdateVocabularyResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+     * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. 
      */
   def updateVocabulary(
     callback: js.Function2[
@@ -321,14 +321,14 @@ trait TranscribeService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+     * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. 
      */
   def updateVocabulary(params: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.UpdateVocabularyRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.UpdateVocabularyResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+     * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. 
      */
   def updateVocabulary(
     params: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.UpdateVocabularyRequest,

@@ -163,7 +163,7 @@ trait MediaStream extends EventTarget {
 object MediaStream
   extends org.scalablytyped.runtime.Instantiable0[MediaStream]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* stream */ MediaStream) | (/* tracks */ js.Array[MediaStreamTrack]), 
+      (/* tracks */ js.Array[MediaStreamTrack]) | (/* stream */ MediaStream), 
       MediaStream
     ]
 

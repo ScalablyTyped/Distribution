@@ -28,13 +28,13 @@ object MeteorNs extends js.Object {
   @js.native
   trait ErrorStatic
     extends org.scalablytyped.runtime.Instantiable2[
-          (/* error */ java.lang.String) | (/* error */ scala.Double), 
+          (/* error */ scala.Double) | (/* error */ java.lang.String), 
           /* reason */ java.lang.String, 
           Error
         ]
-       with org.scalablytyped.runtime.Instantiable1[(/* error */ java.lang.String) | (/* error */ scala.Double), Error]
+       with org.scalablytyped.runtime.Instantiable1[(/* error */ scala.Double) | (/* error */ java.lang.String), Error]
        with org.scalablytyped.runtime.Instantiable3[
-          (/* error */ java.lang.String) | (/* error */ scala.Double), 
+          (/* error */ scala.Double) | (/* error */ java.lang.String), 
           /* reason */ java.lang.String, 
           /* details */ java.lang.String, 
           Error

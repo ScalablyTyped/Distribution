@@ -117,7 +117,7 @@ object MongoNs extends js.Object {
     extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Collection[js.Object]]
        with org.scalablytyped.runtime.Instantiable0[Collection[js.Object]]
        with org.scalablytyped.runtime.Instantiable2[
-          (/* name */ java.lang.String) | (/* name */ scala.Null), 
+          (/* name */ scala.Null) | (/* name */ java.lang.String), 
           /* options */ meteorDashTypingsLib.Anon_Transform, 
           Collection[js.Object]
         ]

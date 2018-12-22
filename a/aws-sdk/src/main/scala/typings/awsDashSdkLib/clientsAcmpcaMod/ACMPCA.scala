@@ -114,14 +114,14 @@ trait ACMPCA
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists information about your private certificate authority (CA). You specify the private CA on input by its ARN (Amazon Resource Name). The output contains the status of your CA. This can be any of the following:     CREATING - ACM PCA is creating your private certificate authority.    PENDING_CERTIFICATE - The certificate is pending. You must use your on-premises root or subordinate CA to sign your private CA CSR and then import it into PCA.     ACTIVE - Your private CA is active.    DISABLED - Your private CA has been disabled.    EXPIRED - Your private CA certificate has expired.    FAILED - Your private CA has failed. Your CA can fail because of problems such a network outage or backend AWS failure or other errors. A failed CA can never return to the pending state. You must create a new CA.     DELETED - Your private CA is within the restoration period, after which it will be permanently deleted. The length of time remaining in the CA's restoration period will also be included in this operation's output.  
+     * Lists information about your private certificate authority (CA). You specify the private CA on input by its ARN (Amazon Resource Name). The output contains the status of your CA. This can be any of the following:     CREATING - ACM PCA is creating your private certificate authority.    PENDING_CERTIFICATE - The certificate is pending. You must use your on-premises root or subordinate CA to sign your private CA CSR and then import it into PCA.     ACTIVE - Your private CA is active.    DISABLED - Your private CA has been disabled.    EXPIRED - Your private CA certificate has expired.    FAILED - Your private CA has failed. Your CA can fail because of problems such a network outage or backend AWS failure or other errors. A failed CA can never return to the pending state. You must create a new CA.     DELETED - Your private CA is within the restoration period, after which it is permanently deleted. The length of time remaining in the CA's restoration period is also included in this operation's output.  
      */
   def describeCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists information about your private certificate authority (CA). You specify the private CA on input by its ARN (Amazon Resource Name). The output contains the status of your CA. This can be any of the following:     CREATING - ACM PCA is creating your private certificate authority.    PENDING_CERTIFICATE - The certificate is pending. You must use your on-premises root or subordinate CA to sign your private CA CSR and then import it into PCA.     ACTIVE - Your private CA is active.    DISABLED - Your private CA has been disabled.    EXPIRED - Your private CA certificate has expired.    FAILED - Your private CA has failed. Your CA can fail because of problems such a network outage or backend AWS failure or other errors. A failed CA can never return to the pending state. You must create a new CA.     DELETED - Your private CA is within the restoration period, after which it will be permanently deleted. The length of time remaining in the CA's restoration period will also be included in this operation's output.  
+     * Lists information about your private certificate authority (CA). You specify the private CA on input by its ARN (Amazon Resource Name). The output contains the status of your CA. This can be any of the following:     CREATING - ACM PCA is creating your private certificate authority.    PENDING_CERTIFICATE - The certificate is pending. You must use your on-premises root or subordinate CA to sign your private CA CSR and then import it into PCA.     ACTIVE - Your private CA is active.    DISABLED - Your private CA has been disabled.    EXPIRED - Your private CA certificate has expired.    FAILED - Your private CA has failed. Your CA can fail because of problems such a network outage or backend AWS failure or other errors. A failed CA can never return to the pending state. You must create a new CA.     DELETED - Your private CA is within the restoration period, after which it is permanently deleted. The length of time remaining in the CA's restoration period is also included in this operation's output.  
      */
   def describeCertificateAuthority(
     callback: js.Function2[
@@ -134,14 +134,14 @@ trait ACMPCA
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists information about your private certificate authority (CA). You specify the private CA on input by its ARN (Amazon Resource Name). The output contains the status of your CA. This can be any of the following:     CREATING - ACM PCA is creating your private certificate authority.    PENDING_CERTIFICATE - The certificate is pending. You must use your on-premises root or subordinate CA to sign your private CA CSR and then import it into PCA.     ACTIVE - Your private CA is active.    DISABLED - Your private CA has been disabled.    EXPIRED - Your private CA certificate has expired.    FAILED - Your private CA has failed. Your CA can fail because of problems such a network outage or backend AWS failure or other errors. A failed CA can never return to the pending state. You must create a new CA.     DELETED - Your private CA is within the restoration period, after which it will be permanently deleted. The length of time remaining in the CA's restoration period will also be included in this operation's output.  
+     * Lists information about your private certificate authority (CA). You specify the private CA on input by its ARN (Amazon Resource Name). The output contains the status of your CA. This can be any of the following:     CREATING - ACM PCA is creating your private certificate authority.    PENDING_CERTIFICATE - The certificate is pending. You must use your on-premises root or subordinate CA to sign your private CA CSR and then import it into PCA.     ACTIVE - Your private CA is active.    DISABLED - Your private CA has been disabled.    EXPIRED - Your private CA certificate has expired.    FAILED - Your private CA has failed. Your CA can fail because of problems such a network outage or backend AWS failure or other errors. A failed CA can never return to the pending state. You must create a new CA.     DELETED - Your private CA is within the restoration period, after which it is permanently deleted. The length of time remaining in the CA's restoration period is also included in this operation's output.  
      */
   def describeCertificateAuthority(params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists information about your private certificate authority (CA). You specify the private CA on input by its ARN (Amazon Resource Name). The output contains the status of your CA. This can be any of the following:     CREATING - ACM PCA is creating your private certificate authority.    PENDING_CERTIFICATE - The certificate is pending. You must use your on-premises root or subordinate CA to sign your private CA CSR and then import it into PCA.     ACTIVE - Your private CA is active.    DISABLED - Your private CA has been disabled.    EXPIRED - Your private CA certificate has expired.    FAILED - Your private CA has failed. Your CA can fail because of problems such a network outage or backend AWS failure or other errors. A failed CA can never return to the pending state. You must create a new CA.     DELETED - Your private CA is within the restoration period, after which it will be permanently deleted. The length of time remaining in the CA's restoration period will also be included in this operation's output.  
+     * Lists information about your private certificate authority (CA). You specify the private CA on input by its ARN (Amazon Resource Name). The output contains the status of your CA. This can be any of the following:     CREATING - ACM PCA is creating your private certificate authority.    PENDING_CERTIFICATE - The certificate is pending. You must use your on-premises root or subordinate CA to sign your private CA CSR and then import it into PCA.     ACTIVE - Your private CA is active.    DISABLED - Your private CA has been disabled.    EXPIRED - Your private CA certificate has expired.    FAILED - Your private CA has failed. Your CA can fail because of problems such a network outage or backend AWS failure or other errors. A failed CA can never return to the pending state. You must create a new CA.     DELETED - Your private CA is within the restoration period, after which it is permanently deleted. The length of time remaining in the CA's restoration period is also included in this operation's output.  
      */
   def describeCertificateAuthority(
     params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityRequest,
@@ -567,5 +567,155 @@ trait ACMPCA
     params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.UpdateCertificateAuthorityRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Waits for the auditReportCreated state by periodically calling the underlying ACMPCA.describeCertificateAuthorityAuditReportoperation every 3 seconds (at most 60 times). Wait until a Audit Report is created
+     */
+  @JSName("waitFor")
+  def waitFor_auditReportCreated(state: awsDashSdkLib.awsDashSdkLibStrings.auditReportCreated): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityAuditReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the auditReportCreated state by periodically calling the underlying ACMPCA.describeCertificateAuthorityAuditReportoperation every 3 seconds (at most 60 times). Wait until a Audit Report is created
+     */
+  @JSName("waitFor")
+  def waitFor_auditReportCreated(
+    state: awsDashSdkLib.awsDashSdkLibStrings.auditReportCreated,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityAuditReportResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityAuditReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the auditReportCreated state by periodically calling the underlying ACMPCA.describeCertificateAuthorityAuditReportoperation every 3 seconds (at most 60 times). Wait until a Audit Report is created
+     */
+  @JSName("waitFor")
+  def waitFor_auditReportCreated(
+    state: awsDashSdkLib.awsDashSdkLibStrings.auditReportCreated,
+    params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityAuditReportRequest with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityAuditReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the auditReportCreated state by periodically calling the underlying ACMPCA.describeCertificateAuthorityAuditReportoperation every 3 seconds (at most 60 times). Wait until a Audit Report is created
+     */
+  @JSName("waitFor")
+  def waitFor_auditReportCreated(
+    state: awsDashSdkLib.awsDashSdkLibStrings.auditReportCreated,
+    params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityAuditReportRequest with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityAuditReportResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DescribeCertificateAuthorityAuditReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the certificateAuthorityCSRCreated state by periodically calling the underlying ACMPCA.getCertificateAuthorityCsroperation every 3 seconds (at most 60 times). Wait until a Certificate Authority CSR is created
+     */
+  @JSName("waitFor")
+  def waitFor_certificateAuthorityCSRCreated(state: awsDashSdkLib.awsDashSdkLibStrings.certificateAuthorityCSRCreated): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateAuthorityCsrResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the certificateAuthorityCSRCreated state by periodically calling the underlying ACMPCA.getCertificateAuthorityCsroperation every 3 seconds (at most 60 times). Wait until a Certificate Authority CSR is created
+     */
+  @JSName("waitFor")
+  def waitFor_certificateAuthorityCSRCreated(
+    state: awsDashSdkLib.awsDashSdkLibStrings.certificateAuthorityCSRCreated,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateAuthorityCsrResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateAuthorityCsrResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the certificateAuthorityCSRCreated state by periodically calling the underlying ACMPCA.getCertificateAuthorityCsroperation every 3 seconds (at most 60 times). Wait until a Certificate Authority CSR is created
+     */
+  @JSName("waitFor")
+  def waitFor_certificateAuthorityCSRCreated(
+    state: awsDashSdkLib.awsDashSdkLibStrings.certificateAuthorityCSRCreated,
+    params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateAuthorityCsrRequest with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateAuthorityCsrResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the certificateAuthorityCSRCreated state by periodically calling the underlying ACMPCA.getCertificateAuthorityCsroperation every 3 seconds (at most 60 times). Wait until a Certificate Authority CSR is created
+     */
+  @JSName("waitFor")
+  def waitFor_certificateAuthorityCSRCreated(
+    state: awsDashSdkLib.awsDashSdkLibStrings.certificateAuthorityCSRCreated,
+    params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateAuthorityCsrRequest with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateAuthorityCsrResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateAuthorityCsrResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the certificateIssued state by periodically calling the underlying ACMPCA.getCertificateoperation every 3 seconds (at most 60 times). Wait until a certificate is issued
+     */
+  @JSName("waitFor")
+  def waitFor_certificateIssued(state: awsDashSdkLib.awsDashSdkLibStrings.certificateIssued): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the certificateIssued state by periodically calling the underlying ACMPCA.getCertificateoperation every 3 seconds (at most 60 times). Wait until a certificate is issued
+     */
+  @JSName("waitFor")
+  def waitFor_certificateIssued(
+    state: awsDashSdkLib.awsDashSdkLibStrings.certificateIssued,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the certificateIssued state by periodically calling the underlying ACMPCA.getCertificateoperation every 3 seconds (at most 60 times). Wait until a certificate is issued
+     */
+  @JSName("waitFor")
+  def waitFor_certificateIssued(
+    state: awsDashSdkLib.awsDashSdkLibStrings.certificateIssued,
+    params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateRequest with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the certificateIssued state by periodically calling the underlying ACMPCA.getCertificateoperation every 3 seconds (at most 60 times). Wait until a certificate is issued
+     */
+  @JSName("waitFor")
+  def waitFor_certificateIssued(
+    state: awsDashSdkLib.awsDashSdkLibStrings.certificateIssued,
+    params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateRequest with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.GetCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
 }
 

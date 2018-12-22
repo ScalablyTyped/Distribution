@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "cross-fetch"
-version := "3.0.0-1ff70b"
+version := "3.0.0-c28eb4"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-d32d36",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181119Z-d6edb6",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

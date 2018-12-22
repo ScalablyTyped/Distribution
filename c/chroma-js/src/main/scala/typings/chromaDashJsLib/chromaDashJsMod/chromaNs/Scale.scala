@@ -155,9 +155,7 @@ trait Scale[OutType] extends js.Object {
   def domain(d: js.Array[scala.Double], n: scala.Double): this.type = js.native
   def domain(d: js.Array[scala.Double], n: scala.Double, mode: java.lang.String): this.type = js.native
   def gamma(g: scala.Double): this.type = js.native
-  def mode(
-    mode: chromaDashJsLib.chromaDashJsLibStrings.rgb | chromaDashJsLib.chromaDashJsLibStrings.rgba | chromaDashJsLib.chromaDashJsLibStrings.hsl | chromaDashJsLib.chromaDashJsLibStrings.hsv | chromaDashJsLib.chromaDashJsLibStrings.hsi | chromaDashJsLib.chromaDashJsLibStrings.lab | chromaDashJsLib.chromaDashJsLibStrings.lch | chromaDashJsLib.chromaDashJsLibStrings.hcl | chromaDashJsLib.chromaDashJsLibStrings.cmyk | chromaDashJsLib.chromaDashJsLibStrings.gl
-  ): this.type = js.native
+  def mode(mode: InterpolationMode): this.type = js.native
   /**
            * Set out format for scale() call. Passing null will result in a scale which outputs colors.
            */

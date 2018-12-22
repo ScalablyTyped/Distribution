@@ -104,9 +104,13 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   /* protected */ def onItemChange(changedItem: T, index: scala.Double): scala.Unit = js.native
   /* protected */ def onKeyDown(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
   /* protected */ def onSelectionChange(): scala.Unit = js.native
-  /* protected */ def onSuggestionClick(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], item: js.Any, index: scala.Double): scala.Unit = js.native
+  /* protected */ def onSuggestionClick(
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent],
+    item: js.Any,
+    index: scala.Double
+  ): scala.Unit = js.native
   /* protected */ def onSuggestionRemove(
-    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement],
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent],
     item: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps,
     index: scala.Double
   ): scala.Unit = js.native

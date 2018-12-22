@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait LRU
   extends org.scalablytyped.runtime.Instantiable0[lruDashCacheLib.lruDashCacheMod.LRUNs.Cache[js.Object, js.Object]]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* opts */ lruDashCacheLib.lruDashCacheMod.LRUNs.Options[js.Object, js.Object]) | (/* max */ scala.Double), 
+      (/* max */ scala.Double) | (/* opts */ lruDashCacheLib.lruDashCacheMod.LRUNs.Options[js.Object, js.Object]), 
       lruDashCacheLib.lruDashCacheMod.LRUNs.Cache[js.Object, js.Object]
     ] {
   def apply[K, V](): lruDashCacheLib.lruDashCacheMod.LRUNs.Cache[K, V] = js.native

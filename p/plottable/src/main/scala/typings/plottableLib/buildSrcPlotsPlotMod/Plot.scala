@@ -241,7 +241,7 @@ class Plot ()
        */
   def attr(
     attr: java.lang.String,
-    attrValue: plottableLib.buildSrcCoreInterfacesMod.IAccessor[java.lang.String | scala.Double]
+    attrValue: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Double | java.lang.String]
   ): this.type = js.native
   /**
        * Sets a particular attribute to a constant value or the result of an Accessor.

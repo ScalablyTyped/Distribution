@@ -45,18 +45,24 @@ class QueryManager[TStore] protected () extends js.Object {
   def fetchQuery[T](
     queryId: java.lang.String,
     options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables]
-  ): js.Promise[apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _]]] = js.native
+  ): js.Promise[
+    apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
+  ] = js.native
   def fetchQuery[T](
     queryId: java.lang.String,
     options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables],
     fetchType: apolloDashClientLib.coreTypesMod.FetchType
-  ): js.Promise[apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _]]] = js.native
+  ): js.Promise[
+    apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
+  ] = js.native
   def fetchQuery[T](
     queryId: java.lang.String,
     options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables],
     fetchType: apolloDashClientLib.coreTypesMod.FetchType,
     fetchMoreForQueryId: java.lang.String
-  ): js.Promise[apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _]]] = js.native
+  ): js.Promise[
+    apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
+  ] = js.native
   def generateQueryId(): java.lang.String = js.native
   def getCurrentQueryResult[T](
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables]
@@ -74,7 +80,9 @@ class QueryManager[TStore] protected () extends js.Object {
       org.scalablytyped.runtime.StringDictionary[_], 
       apolloDashClientLib.coreTypesMod.OperationVariables
     ]
-  ): js.Promise[apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _]]] = js.native
+  ): js.Promise[
+    apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
+  ] = js.native
   def query[T](
     options: apolloDashClientLib.coreWatchQueryOptionsMod.QueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables]
   ): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[T]] = js.native

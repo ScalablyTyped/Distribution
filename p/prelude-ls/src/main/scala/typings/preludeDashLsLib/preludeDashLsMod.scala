@@ -123,7 +123,7 @@ object preludeDashLsMod extends js.Object {
   def lcm(x: scala.Double): js.Function1[/* y */ scala.Double, scala.Double] = js.native
   def lcm(x: scala.Double, y: scala.Double): scala.Double = js.native
   def lines(str: java.lang.String): js.Array[java.lang.String] = js.native
-  def listsToObj[A](keys: js.Array[java.lang.String | scala.Double]): js.Function1[/* values */ js.Array[A], org.scalablytyped.runtime.StringDictionary[A]] = js.native
+  def listsToObj[A](keys: js.Array[scala.Double | java.lang.String]): js.Function1[/* values */ js.Array[A], org.scalablytyped.runtime.StringDictionary[A]] = js.native
   def listsToObj[A](keys: js.Array[java.lang.String], values: js.Array[A]): org.scalablytyped.runtime.StringDictionary[A] = js.native
   @JSName("listsToObj")
   def listsToObj_ANumberDictionary[A](keys: js.Array[scala.Double], values: js.Array[A]): org.scalablytyped.runtime.NumberDictionary[A] = js.native

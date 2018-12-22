@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SjclECCPublicKeyFactory[T /* <: SjclECCPublicKey */]
   extends org.scalablytyped.runtime.Instantiable2[
       /* curve */ SjclEllipticalCurve, 
-      (/* point */ SjclEllipticalPoint) | (/* point */ BitArray), 
+      (/* point */ BitArray) | (/* point */ SjclEllipticalPoint), 
       T
     ]
 

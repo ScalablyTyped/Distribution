@@ -56,11 +56,6 @@
  * limitations under the License.
  */
 
-// Type definitions for Material Components Web 0.35
-// Project: https://material.io/components/
-// Definitions by: Brent Douglas <https://github.com/BrentDouglas>, Collin Kostichuk <https://github.com/ckosti>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.6
 /**
  * @license
  * Copyright 2018 Google Inc. All Rights Reserved.
@@ -78,6 +73,11 @@
  * limitations under the License.
  */
 
+// Type definitions for Material Components Web 0.35
+// Project: https://material.io/components/
+// Definitions by: Brent Douglas <https://github.com/BrentDouglas>, Collin Kostichuk <https://github.com/ckosti>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.6
 /**
  * @license
  * Copyright 2018 Google Inc. All Rights Reserved.

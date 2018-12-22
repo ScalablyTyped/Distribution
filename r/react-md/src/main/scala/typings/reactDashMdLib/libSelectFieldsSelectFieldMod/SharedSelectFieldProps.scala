@@ -32,7 +32,7 @@ trait SharedSelectFieldProps
     js.Function4[
       /* value */ scala.Double | java.lang.String, 
       /* selectedIndex */ scala.Double, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ FieldDataProps, 
       scala.Unit
     ]
@@ -40,7 +40,7 @@ trait SharedSelectFieldProps
   var onVisibilityChange: js.UndefOr[
     js.Function2[
       /* visible */ scala.Boolean, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

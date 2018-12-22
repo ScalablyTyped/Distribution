@@ -131,7 +131,7 @@ class HueApi () extends js.Object {
            * @return {*} A promise that will return the id of the scene that was created (as well as the values that make up the scene),
            * or null if a callback was provided.
            */
-  def createBasicScene(lightIds: js.Array[java.lang.String | scala.Double], name: java.lang.String): js.Promise[IScene] = js.native
+  def createBasicScene(lightIds: js.Array[scala.Double | java.lang.String], name: java.lang.String): js.Promise[IScene] = js.native
   /**
            * Creates a new light Group.
            *
@@ -141,7 +141,7 @@ class HueApi () extends js.Object {
            * @return {*} A promise that will return the id of the group that was created, or null if a callback was provided.
            */
   def createGroup(name: java.lang.String, lightIds: js.Array[java.lang.String]): js.Promise[java.lang.String] = js.native
-  def createScene(lightIds: js.Array[java.lang.String | scala.Double], name: java.lang.String): js.Promise[IScene] = js.native
+  def createScene(lightIds: js.Array[scala.Double | java.lang.String], name: java.lang.String): js.Promise[IScene] = js.native
   //deleteScene(id: string | number, cb: (err: NodeJS.ErrnoException, data: Object) => void): void;
   /**
            * Creates a new Scene.

@@ -22,7 +22,7 @@ trait ReadonlyArray[T]
         * Combines two or more arrays.
         * @param items Additional items to add to the end of array1.
         */
-  def concat(items: (T | js.Array[T])*): js.Array[T] = js.native
+  def concat(items: (js.Array[T] | T)*): js.Array[T] = js.native
   /**
        * Returns an iterable of key, value pairs for every entry in the array
        */

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait CompositionEvent[T] extends SyntheticEvent[T] {
+trait CompositionEvent[T]
+  extends BaseSyntheticEvent[reactLib.NativeCompositionEvent, reactLib.EventTarget with T, reactLib.EventTarget] {
   var data: java.lang.String
-  @JSName("nativeEvent")
-  var nativeEvent_CompositionEvent: reactLib.NativeCompositionEvent
 }
 

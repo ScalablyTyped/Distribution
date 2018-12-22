@@ -159,6 +159,10 @@ trait IServerValidationManager extends js.Object {
           *  field alias to listen for.
           *  If propertyAlias is null, then this subscription is for a field property (not a user defined property).
           */
-  def subscribe(propertyAlias: java.lang.String, fieldName: java.lang.String, callback: js.Function): scala.Unit
+  def subscribe(
+    propertyAlias: java.lang.String,
+    fieldName: java.lang.String,
+    callback: angularLib.angularMod.Global.Function
+  ): scala.Unit
 }
 

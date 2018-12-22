@@ -720,15 +720,15 @@ object srcRender3InstructionsMod extends js.Object {
   def elementStyling(): scala.Unit = js.native
   def elementStyling(
     classDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ]
   ): scala.Unit = js.native
   def elementStyling(
     classDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ],
     styleDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ]
   ): scala.Unit = js.native
   def elementStyling(
@@ -786,7 +786,7 @@ object srcRender3InstructionsMod extends js.Object {
   def elementStyling(
     classDeclarations: scala.Null,
     styleDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ]
   ): scala.Unit = js.native
   def elementStyling(

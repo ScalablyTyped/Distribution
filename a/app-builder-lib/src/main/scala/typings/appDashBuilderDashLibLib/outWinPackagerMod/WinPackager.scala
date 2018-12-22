@@ -22,6 +22,7 @@ class WinPackager protected ()
     appDashBuilderDashLibLib.outCodeSignWindowsCodeSignMod.CertificateInfo | scala.Null
   ] = js.native
   val vm: lazyDashValLib.lazyDashValMod.Lazy[appDashBuilderDashLibLib.outVmVmMod.VmManager] = js.native
+  /* protected */ def createTransformerForExtraFiles(packContext: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext): builderDashUtilLib.outFsMod.FileTransformer | scala.Null = js.native
   def sign(file: java.lang.String): js.Promise[scala.Unit] = js.native
   def sign(file: java.lang.String, logMessagePrefix: java.lang.String): js.Promise[scala.Unit] = js.native
   def signAndEditResources(file: java.lang.String, arch: builderDashUtilLib.outArchMod.Arch, outDir: java.lang.String): js.Promise[scala.Unit] = js.native
@@ -45,5 +46,6 @@ class WinPackager protected ()
     internalName: scala.Null,
     requestedExecutionLevel: appDashBuilderDashLibLib.outOptionsWinOptionsMod.RequestedExecutionLevel
   ): js.Promise[scala.Unit] = js.native
+  /* protected */ def signApp(packContext: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, isAsar: scala.Boolean): js.Promise[_] = js.native
 }
 

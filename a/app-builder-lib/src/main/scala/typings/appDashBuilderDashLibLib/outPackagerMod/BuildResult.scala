@@ -8,11 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait BuildResult extends js.Object {
   val artifactPaths: js.Array[java.lang.String]
-  val configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration
+  val configuration: js.Any
   val outDir: java.lang.String
-  val platformToTargets: stdLib.Map[
-    appDashBuilderDashLibLib.outMod.Platform, 
-    stdLib.Map[java.lang.String, appDashBuilderDashLibLib.outMod.Target]
-  ]
+  val platformToTargets: stdLib.Map[_, stdLib.Map[java.lang.String, _]]
 }
 

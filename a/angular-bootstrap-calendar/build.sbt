@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "angular-bootstrap-calendar"
-version := "0.0-unknown-dt-20180910Z-c264e8"
+version := "0.0-unknown-dt-20180214Z-5e537e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20180918Z-9a8364",
-  "org.scalablytyped" %%% "moment" % "2.23.0-39ab00",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-190fe4",
+  "org.scalablytyped" %%% "moment" % "2.23.0-f391bb",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

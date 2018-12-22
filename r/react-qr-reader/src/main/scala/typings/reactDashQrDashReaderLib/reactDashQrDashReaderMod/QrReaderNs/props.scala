@@ -15,7 +15,7 @@ trait props extends js.Object {
   var legacyMode: js.UndefOr[scala.Boolean] = js.native
   var onImageLoad: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLImageElement], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLImageElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.native

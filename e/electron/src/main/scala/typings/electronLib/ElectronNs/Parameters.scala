@@ -26,8 +26,8 @@ trait Parameters extends js.Object {
        */
   var screenSize: Size
   /**
-       * Position the view on the screen (screenPosition == mobile) (default: {x: 0, y:
-       * 0}).
+       * Position the view on the screen (screenPosition == mobile) (default: { x: 0, y:
+       * 0 }).
        */
   var viewPosition: Point
   /**

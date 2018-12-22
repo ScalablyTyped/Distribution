@@ -676,7 +676,7 @@ trait Static extends js.Object {
            * Returns a new list by pulling every item out of it (and all its sub-arrays) and putting
            * them in a new array, depth-first.
            */
-  def flatten[T](x: js.Array[T | js.Array[T]]): js.Array[T] = js.native
+  def flatten[T](x: js.Array[js.Array[T] | T]): js.Array[T] = js.native
   /**
            * Returns a new function much like the supplied one, except that the first two arguments'
            * order is reversed.
@@ -780,6 +780,21 @@ trait Static extends js.Object {
            * Increments its argument.
            */
   def inc(n: scala.Double): scala.Double = js.native
+  def includes(s: java.lang.String): js.Function1[/* list */ js.Array[java.lang.String] | java.lang.String, scala.Boolean] = js.native
+  /**
+           * Given a target, this function checks a list for the target and returns a boolean.
+           * Given a string, this function checks for the string in another string or list and returns
+           * a boolean.
+           */
+  def includes(s: java.lang.String, list: java.lang.String): scala.Boolean = js.native
+  /**
+           * Given a target, this function checks a list for the target and returns a boolean.
+           * Given a string, this function checks for the string in another string or list and returns
+           * a boolean.
+           */
+  def includes(s: java.lang.String, list: js.Array[java.lang.String]): scala.Boolean = js.native
+  def includes[T](target: T): js.Function1[/* list */ js.Array[T], scala.Boolean] = js.native
+  def includes[T](target: T, list: js.Array[T]): scala.Boolean = js.native
   def indexBy[T](fn: js.Function1[/* a */ T, java.lang.String]): js.Function1[/* list */ js.Array[T], org.scalablytyped.runtime.StringDictionary[T]] = js.native
   /**
            * Given a function that generates a key, turns a list of objects into an object indexing the objects
@@ -960,8 +975,8 @@ trait Static extends js.Object {
    // used in functors
   def map[T, U](
     fn: js.Function1[
-      (/* x */ T) | (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeIntersect(List(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()), TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(U))),List()))))))) *//* x */ js.Any), 
-      U | (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(U))),List()),Right(TsTypeKeyOf(TsTypeIntersect(List(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()), TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(U))),List()))))))) */js.Any)
+      (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeIntersect(List(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()), TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(U))),List()))))))) *//* x */ js.Any) | (/* x */ T), 
+      (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(U))),List()),Right(TsTypeKeyOf(TsTypeIntersect(List(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()), TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(U))),List()))))))) */js.Any) | U
     ]
   ): js.Function1[/* list */ js.Array[T], js.Array[U]] = js.native
   def map[T, U](
@@ -2279,7 +2294,7 @@ trait Static extends js.Object {
            * Returns a new list by pulling every item at the first level of nesting out, and putting
            * them in a new array.
            */
-  def unnest[T](x: js.Array[T | js.Array[T]]): js.Array[T] = js.native
+  def unnest[T](x: js.Array[js.Array[T] | T]): js.Array[T] = js.native
   def until[T, U](pred: js.Function1[/* val */ T, scala.Boolean], fn: js.Function1[/* val */ T, U]): js.Function1[/* init */ U, U] = js.native
   /**
            * Takes a predicate, a transformation function, and an initial value, and returns a value of the same type as

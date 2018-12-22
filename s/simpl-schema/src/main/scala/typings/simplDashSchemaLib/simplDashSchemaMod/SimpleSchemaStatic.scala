@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SimpleSchemaStatic
   extends org.scalablytyped.runtime.Instantiable2[
-      (/* schema */ org.scalablytyped.runtime.StringDictionary[
+      (/* schema */ js.Array[js.Any]) | (/* schema */ org.scalablytyped.runtime.StringDictionary[
         SchemaDefinition | stdLib.BooleanConstructor | stdLib.StringConstructor | stdLib.NumberConstructor | stdLib.DateConstructor | stdLib.ArrayConstructor | java.lang.String | stdLib.RegExp | SimpleSchema
-      ]) | (/* schema */ js.Array[js.Any]), 
+      ]), 
       /* options */ SimpleSchemaOptions, 
       SimpleSchema
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* schema */ org.scalablytyped.runtime.StringDictionary[
+      (/* schema */ js.Array[js.Any]) | (/* schema */ org.scalablytyped.runtime.StringDictionary[
         SchemaDefinition | stdLib.BooleanConstructor | stdLib.StringConstructor | stdLib.NumberConstructor | stdLib.DateConstructor | stdLib.ArrayConstructor | java.lang.String | stdLib.RegExp | SimpleSchema
-      ]) | (/* schema */ js.Array[js.Any]), 
+      ]), 
       SimpleSchema
     ] {
   var ErrorTypes: simplDashSchemaLib.Anon_BADDATE = js.native

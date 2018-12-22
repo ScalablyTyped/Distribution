@@ -40,6 +40,7 @@ object newrelicModMembers extends js.Object {
   def setDispatcher(name: java.lang.String): scala.Unit = js.native
   def setDispatcher(name: java.lang.String, version: java.lang.String): scala.Unit = js.native
   def setIgnoreTransaction(ignored: scala.Boolean): scala.Unit = js.native
+  def setLambdaHandler[T](handler: js.Function1[/* repeated */js.Any, T]): T = js.native
   def setTransactionName(name: java.lang.String): scala.Unit = js.native
   def shutdown(): scala.Unit = js.native
   def shutdown(cb: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native

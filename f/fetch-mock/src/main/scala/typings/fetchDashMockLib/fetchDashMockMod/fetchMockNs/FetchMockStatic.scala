@@ -7,34 +7,74 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FetchMockStatic extends js.Object {
+  var MATCHED: fetchDashMockLib.fetchDashMockLibNumbers.`true` = js.native
+  var UNMATCHED: fetchDashMockLib.fetchDashMockLibNumbers.`false` = js.native
   /**
-           * Returns a Boolean indicating whether fetch was called and a route
-           * was matched (or a specific route if matcherName is passed).
-           * @param [matcherName] either the name of a route or equal to
-           * matcher.toString() for any unnamed route
+           * Returns a Boolean indicating whether any calls to fetch matched the
+           * given filter.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
   def called(): scala.Boolean = js.native
   /**
-           * Returns a Boolean indicating whether fetch was called and a route
-           * was matched (or a specific route if matcherName is passed).
-           * @param [matcherName] either the name of a route or equal to
-           * matcher.toString() for any unnamed route
+           * Returns a Boolean indicating whether any calls to fetch matched the
+           * given filter.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
-  def called(matcherName: java.lang.String): scala.Boolean = js.native
+  def called(filter: InspectionFilter): scala.Boolean = js.native
   /**
-           * Returns all calls to fetch matching matcherName.
+           * Returns a Boolean indicating whether any calls to fetch matched the
+           * given filter.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
+           */
+  def called(filter: InspectionFilter, options: InspectionOptions): scala.Boolean = js.native
+  /**
+           * Returns an array of all calls to fetch matching the given filters.
+           * Each call is returned as a [url, options] array. If fetch was called
+           * using a Request instance, this will be available as a request
+           * property on this array.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
   def calls(): js.Array[MockCall] = js.native
   /**
-           * Returns all calls to fetch matching matcherName.
+           * Returns an array of all calls to fetch matching the given filters.
+           * Each call is returned as a [url, options] array. If fetch was called
+           * using a Request instance, this will be available as a request
+           * property on this array.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
-  def calls(matcherName: java.lang.String): js.Array[MockCall] = js.native
+  def calls(filter: InspectionFilter): js.Array[MockCall] = js.native
   /**
-           * Returns all calls to fetch, grouped by whether fetch-mock matched
-           * them or not.
+           * Returns an array of all calls to fetch matching the given filters.
+           * Each call is returned as a [url, options] array. If fetch was called
+           * using a Request instance, this will be available as a request
+           * property on this array.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
-  @JSName("calls")
-  def calls_MatchedRoutes(): MatchedRoutes = js.native
+  def calls(filter: InspectionFilter, options: InspectionOptions): js.Array[MockCall] = js.native
   /**
            * Chainable method that defines how to respond to calls to fetch that
            * don't match any of the defined mocks. It accepts the same types of
@@ -159,22 +199,18 @@ trait FetchMockStatic extends js.Object {
   def deleteOnce(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodDelete): this.type = js.native
   /**
            * Returns a Boolean indicating whether fetch was called the expected
-           * number of times (or at least once if the route defines no expectation
-           * is set) for every route (or for a specific route if matcherName is
-           * passed).
-           * @param [matcherName] either the name of a route or equal to
-           * matcher.toString() for any unnamed route
+           * number of times (or has been called at least once if repeat is
+           * undefined for the route).
+           * @param [filter] Rule for matching calls to fetch.
            */
   def done(): scala.Boolean = js.native
   /**
            * Returns a Boolean indicating whether fetch was called the expected
-           * number of times (or at least once if the route defines no expectation
-           * is set) for every route (or for a specific route if matcherName is
-           * passed).
-           * @param [matcherName] either the name of a route or equal to
-           * matcher.toString() for any unnamed route
+           * number of times (or has been called at least once if repeat is
+           * undefined for the route).
+           * @param [filter] Rule for matching calls to fetch.
            */
-  def done(matcherName: java.lang.String): scala.Boolean = js.native
+  def done(filter: InspectionFilter): scala.Boolean = js.native
   /**
            * Returns a promise that resolves once all fetches handled by fetch-mock
            * have resolved.
@@ -349,47 +385,101 @@ trait FetchMockStatic extends js.Object {
            */
   def headOnce(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodHead): this.type = js.native
   /**
-           * Returns the arguments for the last matched call to fetch (or the
-           * last call to specific route is matcherName is passed).
-           * @param [matcherName] either the name of a route or equal to
-           * matcher.toString() for any unnamed route
+           * Returns the arguments for the last call to fetch matching the given
+           * filter.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
-  def lastCall(): MockCall = js.native
+  def lastCall(): js.UndefOr[MockCall] = js.native
   /**
-           * Returns the arguments for the last matched call to fetch (or the
-           * last call to specific route is matcherName is passed).
-           * @param [matcherName] either the name of a route or equal to
-           * matcher.toString() for any unnamed route
+           * Returns the arguments for the last call to fetch matching the given
+           * filter.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
-  def lastCall(matcherName: java.lang.String): MockCall = js.native
+  def lastCall(filter: InspectionFilter): js.UndefOr[MockCall] = js.native
   /**
-           * Returns the options for the last matched call to fetch (or the
-           * last call to a specific route is matcherName is passed).
-           * @param [matcherName] either the name of a route or equal to
-           * matcher.toString() for any unnamed route
+           * Returns the arguments for the last call to fetch matching the given
+           * filter.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
-  def lastOptions(): MockRequest = js.native
+  def lastCall(filter: InspectionFilter, options: InspectionOptions): js.UndefOr[MockCall] = js.native
   /**
-           * Returns the options for the last matched call to fetch (or the
-           * last call to a specific route is matcherName is passed).
-           * @param [matcherName] either the name of a route or equal to
-           * matcher.toString() for any unnamed route
+           * Returns the options for the call to fetch matching the given filter.
+           * If fetch was last called using a Request instance, a set of options
+           * inferred from the Request will be returned.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
-  def lastOptions(matcherName: java.lang.String): MockRequest = js.native
+  def lastOptions(): js.UndefOr[MockOptions] = js.native
   /**
-           * Returns the url for the last matched call to fetch (or the last
-           * call to specific route is matcherName is passed).
-           * @param [matcherName] either the name of a route or equal to
-           * matcher.toString() for any unnamed route
+           * Returns the options for the call to fetch matching the given filter.
+           * If fetch was last called using a Request instance, a set of options
+           * inferred from the Request will be returned.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
-  def lastUrl(): java.lang.String = js.native
+  def lastOptions(filter: InspectionFilter): js.UndefOr[MockOptions] = js.native
   /**
-           * Returns the url for the last matched call to fetch (or the last
-           * call to specific route is matcherName is passed).
-           * @param [matcherName] either the name of a route or equal to
-           * matcher.toString() for any unnamed route
+           * Returns the options for the call to fetch matching the given filter.
+           * If fetch was last called using a Request instance, a set of options
+           * inferred from the Request will be returned.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
            */
-  def lastUrl(matcherName: java.lang.String): java.lang.String = js.native
+  def lastOptions(filter: InspectionFilter, options: InspectionOptions): js.UndefOr[MockOptions] = js.native
+  /**
+           * Returns the url for the last call to fetch matching the given
+           * filter. If fetch was last called using a Request instance, the url
+           * will be extracted from this.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
+           */
+  def lastUrl(): js.UndefOr[java.lang.String] = js.native
+  /**
+           * Returns the url for the last call to fetch matching the given
+           * filter. If fetch was last called using a Request instance, the url
+           * will be extracted from this.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
+           */
+  def lastUrl(filter: InspectionFilter): js.UndefOr[java.lang.String] = js.native
+  /**
+           * Returns the url for the last call to fetch matching the given
+           * filter. If fetch was last called using a Request instance, the url
+           * will be extracted from this.
+           * @param [filter] Allows filtering of calls to fetch based on various
+           * criteria
+           * @param [options] Either an object compatible with the mocking api or
+           * a string specifying a http method to filter by. This will be used to
+           * filter the list of calls further.
+           */
+  def lastUrl(filter: InspectionFilter, options: InspectionOptions): js.UndefOr[java.lang.String] = js.native
   /**
            * Replaces fetch() with a stub which records its calls, grouped by
            * route, and optionally returns a mocked Response object or passes the
@@ -726,12 +816,22 @@ trait FetchMockStatic extends js.Object {
            */
   def putOnce(matcher: MockMatcher, reponse: MockResponse, options: MockOptionsMethodPut): this.type = js.native
   /**
-           * Chainable method that clears all data recorded for fetch()'s calls
+           * Restores fetch() to its unstubbed state and clears all data recorded
+           * for its calls. reset() is an alias for restore().
            */
   def reset(): this.type = js.native
   /**
-           * Chainable method that restores fetch() to its unstubbed state and
-           * clears all data recorded for its calls.
+           * Removes mocking behaviour without resetting call history.
+           */
+  def resetBehavior(): this.type = js.native
+  /**
+           * Clears all data recorded for fetch()’s calls. It will not restore
+           * fetch to its default implementation.
+           */
+  def resetHistory(): this.type = js.native
+  /**
+           * Restores fetch() to its unstubbed state and clears all data recorded
+           * for its calls. reset() is an alias for restore().
            */
   def restore(): this.type = js.native
   /**

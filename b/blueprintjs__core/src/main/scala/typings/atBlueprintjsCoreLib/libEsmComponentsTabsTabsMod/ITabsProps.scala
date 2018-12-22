@@ -38,7 +38,7 @@ trait ITabsProps
     js.Function3[
       /* newTabId */ atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId, 
       /* prevTabId */ atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

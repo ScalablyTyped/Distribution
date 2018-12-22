@@ -34,7 +34,7 @@ class OAuth2Client ()
   var projectId: js.UndefOr[java.lang.String] = js.native
   var redirectUri: js.UndefOr[js.Any] = js.native
   var refreshAccessTokenAsync: js.Any = js.native
-  var refreshTokenPromises: lodashLib.lodashMod.Global.Map[java.lang.String, js.Promise[GetTokenResponse]] = js.native
+  var refreshTokenPromises: stdLib.Map[java.lang.String, js.Promise[GetTokenResponse]] = js.native
   var revokeCredentialsAsync: js.Any = js.native
   var verifyIdTokenAsync: js.Any = js.native
   /**

@@ -21,7 +21,7 @@ trait Observable[T] extends js.Object {
   def map[R](fn: js.Function1[/* value */ T, R]): Observable[R] = js.native
   def of[R](args: R*): Observable[R] = js.native
   def reduce[R](fn: js.Function2[/* previousValue */ R | T, /* currentValue */ T, R | T]): Observable[R | T] = js.native
-  def reduce[R](fn: js.Function2[/* previousValue */ R | T, /* currentValue */ T, R | T], initialValue: R | T): Observable[R | T] = js.native
+  def reduce[R](fn: js.Function2[R | T, /* currentValue */ T, R | T], initialValue: R | T): Observable[R | T] = js.native
   def subscribe(observerOrNext: js.Function1[/* value */ T, scala.Unit]): zenDashObservableDashTsLib.libTypesMod.ZenObservableNs.Subscription = js.native
   def subscribe(
     observerOrNext: js.Function1[/* value */ T, scala.Unit],

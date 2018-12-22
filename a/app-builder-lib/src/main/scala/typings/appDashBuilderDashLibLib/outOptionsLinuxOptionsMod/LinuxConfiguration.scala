@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
-trait LinuxConfiguration
-  extends appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
-     with CommonLinuxOptions {
+/* RemoveDifficultInheritance: 
+- Dropped any */ 
+trait LinuxConfiguration extends CommonLinuxOptions {
   /**
        * @deprecated
        * @private
@@ -23,8 +22,7 @@ trait LinuxConfiguration
        * The path to icon set directory or one png file, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory. The icon filename must contain the size (e.g. 32x32.png) of the icon.
        * By default will be generated automatically based on the macOS icns file.
        */
-  @JSName("icon")
-  val icon_LinuxConfiguration: js.UndefOr[java.lang.String] = js.undefined
+  val icon: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The maintainer. Defaults to [author](/configuration/configuration#Metadata-author).
        */
@@ -42,8 +40,7 @@ trait LinuxConfiguration
        * Please [do not put an AppImage into another archive](https://github.com/probonopd/AppImageKit/wiki/Creating-AppImages#common-mistake) like a .zip or .tar.gz.
        * @default AppImage
        */
-  @JSName("target")
-  val target_LinuxConfiguration: js.UndefOr[appDashBuilderDashLibLib.outCoreMod.TargetConfigType] = js.undefined
+  val target: js.UndefOr[js.Any] = js.undefined
   /**
        * The vendor. Defaults to [author](/configuration/configuration#Metadata-author).
        */

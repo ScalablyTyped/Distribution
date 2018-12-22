@@ -29,7 +29,7 @@ trait InAppPurchase extends EventEmitter {
     callback: js.Function1[/* products */ js.Array[Product], scala.Unit]
   ): scala.Unit = js.native
   def getReceiptURL(): java.lang.String = js.native
-  // Docs: http://electron.atom.io/docs/api/in-app-purchase
+  // Docs: http://electronjs.org/docs/api/in-app-purchase
   /**
        * Emitted when one or more transactions have been updated.
        */

@@ -43,8 +43,7 @@ trait WebPreferences extends js.Object {
        * content to ensure the loaded content cannot tamper with the preload script and
        * any Electron APIs being used. This option uses the same technique used by . You
        * can access this context in the dev tools by selecting the 'Electron Isolated
-       * Context' entry in the combo box at the top of the Console tab. This option is
-       * currently experimental and may change or be removed in future Electron releases.
+       * Context' entry in the combo box at the top of the Console tab.
        */
   var contextIsolation: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -79,9 +78,9 @@ trait WebPreferences extends js.Object {
        */
   var enableBlinkFeatures: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Enables Chromium's experimental canvas features. Default is false.
+       * Whether to enable the module. Default is true.
        */
-  var experimentalCanvasFeatures: js.UndefOr[scala.Boolean] = js.undefined
+  var enableRemoteModule: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Enables Chromium's experimental features. Default is false.
        */
@@ -194,11 +193,11 @@ trait WebPreferences extends js.Object {
   var webgl: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether to enable the . Defaults to the value of the nodeIntegration option. The
-       * preload script configured for the <webview> will have node integration enabled
-       * when it is executed so you should ensure remote/untrusted content is not able to
-       * create a <webview> tag with a possibly malicious preload script. You can use the
+       * preload script configured for the will have node integration enabled when it is
+       * executed so you should ensure remote/untrusted content is not able to create a
+       * tag with a possibly malicious preload script. You can use the
        * will-attach-webview event on to strip away the preload script and to validate or
-       * alter the <webview>'s initial settings.
+       * alter the 's initial settings.
        */
   var webviewTag: js.UndefOr[scala.Boolean] = js.undefined
   /**

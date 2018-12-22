@@ -16,6 +16,6 @@ trait AnchorLink
   def componentWillReceiveProps_MAnchorLink(nextProps: AnchorLinkProps): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MAnchorLink(): scala.Unit = js.native
-  def handleClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def handleClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native
 }
 

@@ -11,15 +11,7 @@ trait Cascader
   var cachedOptions: js.Array[CascaderOptionType] = js.native
   var input: js.Any = js.native
   def blur(): scala.Unit = js.native
-  def clearSelection(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): scala.Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MCascader(nextProps: CascaderProps): scala.Unit = js.native
-  def flattenTree(options: js.Array[CascaderOptionType], props: CascaderProps): js.Array[js.Array[CascaderOptionType]] = js.native
-  def flattenTree(
-    options: js.Array[CascaderOptionType],
-    props: CascaderProps,
-    ancestor: js.Array[CascaderOptionType]
-  ): js.Array[js.Array[CascaderOptionType]] = js.native
+  def clearSelection(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def generateFilteredOptions(): js.Array[CascaderOptionType] = js.native
   def generateFilteredOptions(prefixCls: java.lang.String): js.Array[CascaderOptionType] = js.native
@@ -27,7 +19,7 @@ trait Cascader
   def handleChange(value: js.Any, selectedOptions: js.Array[CascaderOptionType]): scala.Unit = js.native
   def handleInputBlur(): scala.Unit = js.native
   def handleInputChange(e: reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
-  def handleInputClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
+  def handleInputClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.MouseEvent]): scala.Unit = js.native
   def handleKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
   def handlePopupVisibleChange(popupVisible: scala.Boolean): scala.Unit = js.native
   def renderCascader(hasGetPopupContainer: antdLib.libConfigDashProviderMod.ConfigProviderProps, locale: CascaderLocale): reactLib.reactMod.Global.JSXNs.Element = js.native

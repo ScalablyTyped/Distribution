@@ -13,7 +13,7 @@ trait Search
   def focus(): scala.Unit = js.native
   def getButtonOrIcon(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   def onSearch(e: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
-  def onSearch(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def onSearch(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native
   def saveInput(node: antdLib.libInputInputMod.default): scala.Unit = js.native
 }
 

@@ -14,7 +14,7 @@ trait ParserBlock extends js.Object {
     tokens: js.Array[remarkableLib.libMod.RemarkableNs.Token]
   ): scala.Unit
   def tokenize(
-    state: remarkableLib.libMod.RemarkableNs.ParsingState,
+    state: remarkableLib.libMod.RemarkableNs.StateBlock,
     startLine: scala.Double,
     endLine: scala.Double
   ): scala.Unit

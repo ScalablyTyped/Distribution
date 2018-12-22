@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Dialog extends EventEmitter {
-  // Docs: http://electron.atom.io/docs/api/dialog
+  // Docs: http://electronjs.org/docs/api/dialog
   /**
        * On macOS, this displays a modal dialog that shows a message and certificate
        * information, and gives the user the option of trusting/importing the

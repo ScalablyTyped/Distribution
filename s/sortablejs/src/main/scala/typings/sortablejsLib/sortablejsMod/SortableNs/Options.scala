@@ -82,6 +82,14 @@ trait Options extends js.Object {
            */
   var onAdd: js.UndefOr[js.Function1[/* event */ SortableEvent, scala.Unit]] = js.undefined
   /**
+           * Element is chosen
+           */
+  var onChoose: js.UndefOr[js.Function1[/* event */ SortableEvent, scala.Unit]] = js.undefined
+  /**
+           * Created a clone of an element
+           */
+  var onClone: js.UndefOr[js.Function1[/* event */ SortableEvent, scala.Unit]] = js.undefined
+  /**
            * Element dragging ended
            */
   var onEnd: js.UndefOr[js.Function1[/* event */ SortableEvent, scala.Unit]] = js.undefined
@@ -105,6 +113,10 @@ trait Options extends js.Object {
            * Element dragging started
            */
   var onStart: js.UndefOr[js.Function1[/* event */ SortableEvent, scala.Unit]] = js.undefined
+  /**
+           * Element is unchosen
+           */
+  var onUnchoose: js.UndefOr[js.Function1[/* event */ SortableEvent, scala.Unit]] = js.undefined
   /**
            * Changed sorting within list
            */

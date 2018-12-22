@@ -32,14 +32,14 @@ class DeleteSmsMessagesOperation ()
     error: js.Function1[/* error */ js.Any, _],
     progress: js.Function1[/* progress */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def `then`[U](success: js.Function1[/* value */ js.Any, U | winrtLib.WindowsNs.FoundationNs.IPromise[U]]): winrtLib.WindowsNs.FoundationNs.IPromise[U] = js.native
+  def `then`[U](success: js.Function1[/* value */ js.Any, winrtLib.WindowsNs.FoundationNs.IPromise[U] | U]): winrtLib.WindowsNs.FoundationNs.IPromise[U] = js.native
   def `then`[U](
-    success: js.Function1[/* value */ js.Any, U | winrtLib.WindowsNs.FoundationNs.IPromise[U]],
-    error: js.Function1[/* error */ js.Any, U | winrtLib.WindowsNs.FoundationNs.IPromise[U]]
+    success: js.Function1[/* value */ js.Any, winrtLib.WindowsNs.FoundationNs.IPromise[U] | U],
+    error: js.Function1[/* error */ js.Any, winrtLib.WindowsNs.FoundationNs.IPromise[U] | U]
   ): winrtLib.WindowsNs.FoundationNs.IPromise[U] = js.native
   def `then`[U](
-    success: js.Function1[/* value */ js.Any, U | winrtLib.WindowsNs.FoundationNs.IPromise[U]],
-    error: js.Function1[/* error */ js.Any, U | winrtLib.WindowsNs.FoundationNs.IPromise[U]],
+    success: js.Function1[/* value */ js.Any, winrtLib.WindowsNs.FoundationNs.IPromise[U] | U],
+    error: js.Function1[/* error */ js.Any, winrtLib.WindowsNs.FoundationNs.IPromise[U] | U],
     progress: js.Function1[/* progress */ js.Any, scala.Unit]
   ): winrtLib.WindowsNs.FoundationNs.IPromise[U] = js.native
 }

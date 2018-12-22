@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "map-age-cleaner"
-version := "0.1.3-b3d035"
+version := "0.1.3-e27ecc"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "p-defer" % "1.0-dt-20181204Z-0f29c9",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
+  "org.scalablytyped" %%% "p-defer" % "1.0-dt-20181123Z-a4a6bf",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

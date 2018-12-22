@@ -12,6 +12,7 @@ object messageNs extends js.Object {
        */
   
   trait Message extends js.Object {
+    var packets: openpgpLib.Anon_Write
     /** Returns ASCII armored text of message
              */
     def armor(): java.lang.String
@@ -51,7 +52,11 @@ object messageNs extends js.Object {
   /** creates new message object from binary data
           @param bytes
        */
-  def fromBinary(bytes: java.lang.String): Message = js.native
+  def fromBinary(bytes: stdLib.ReadableStream[_]): Message = js.native
+  /** creates new message object from binary data
+          @param bytes
+       */
+  def fromBinary(bytes: stdLib.Uint8Array): Message = js.native
   /** creates new message object from text
           @param text
        */
@@ -62,7 +67,7 @@ object messageNs extends js.Object {
        * @returns {Message}           new message object
        * @static
        */
-  def read(data: stdLib.Uint8Array): Message = js.native
+  def read(data: stdLib.Uint8Array): js.Promise[Message] = js.native
   /** reads an OpenPGP armored message and returns a message object
   
           @param armoredText text to be parsed

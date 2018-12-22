@@ -12,9 +12,10 @@ class TransformStatic () extends TransformBase {
   var _currentLocalID: scala.Double = js.native
   var _cx: js.UndefOr[scala.Double] = js.native
   var _cy: js.UndefOr[scala.Double] = js.native
-  var _nsx: js.UndefOr[scala.Double] = js.native
+  var _localID: scala.Double = js.native
   var _rotation: scala.Double = js.native
   var _sr: js.UndefOr[scala.Double] = js.native
+  var _sx: js.UndefOr[scala.Double] = js.native
   var _sy: js.UndefOr[scala.Double] = js.native
   var pivot: ObservablePoint = js.native
   var position: ObservablePoint = js.native

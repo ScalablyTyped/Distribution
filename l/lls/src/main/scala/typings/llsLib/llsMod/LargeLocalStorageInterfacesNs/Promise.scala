@@ -12,8 +12,8 @@ trait Promise[T] extends js.Object {
   def `then`[U](): Promise[U] = js.native
   def `then`[U](onFulfilled: js.Function1[/* value */ T, U | Promise[U]]): Promise[U] = js.native
   def `then`[U](
-    onFulfilled: js.Function1[/* value */ T, U | Promise[U]],
-    onRejected: js.Function1[/* error */ js.Any, U | Promise[U] | scala.Unit]
+    onFulfilled: js.Function1[/* value */ T, Promise[U] | U],
+    onRejected: js.Function1[/* error */ js.Any, Promise[U] | U | scala.Unit]
   ): Promise[U] = js.native
 }
 

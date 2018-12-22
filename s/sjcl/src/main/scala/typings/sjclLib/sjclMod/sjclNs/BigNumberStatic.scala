@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait BigNumberStatic
   extends org.scalablytyped.runtime.Instantiable0[BigNumber]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* n */ java.lang.String) | (/* n */ scala.Double) | (/* n */ BigNumber), 
+      (/* n */ BigNumber) | (/* n */ scala.Double) | (/* n */ java.lang.String), 
       BigNumber
     ] {
   var prime: sjclLib.Anon_P521 = js.native

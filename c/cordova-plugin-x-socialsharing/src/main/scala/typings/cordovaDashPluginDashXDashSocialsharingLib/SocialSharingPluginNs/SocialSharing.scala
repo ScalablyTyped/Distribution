@@ -186,7 +186,7 @@ trait SocialSharing extends js.Object {
     toArray: js.UndefOr[js.Array[java.lang.String]],
     ccArray: js.UndefOr[js.Array[java.lang.String]],
     bccArray: js.UndefOr[js.Array[java.lang.String]],
-    fileOrFileArray: js.UndefOr[java.lang.String | js.Array[java.lang.String]],
+    fileOrFileArray: js.UndefOr[js.Array[java.lang.String] | java.lang.String],
     successCallback: js.UndefOr[js.Function1[/* succeeded */ scala.Boolean, scala.Unit]],
     errorCallback: js.UndefOr[js.Function1[/* errormsg */ java.lang.String, scala.Unit]]
   ): scala.Unit = js.native

@@ -22,23 +22,6 @@ trait Date extends js.Object {
        * @throws {TypeError} If 'hint' was given something other than "number", "string", or "default".
        * @returns A number if 'hint' was "number", a string if 'hint' was "string" or "default".
        */
-  /**
-       * Converts a Date object to a string.
-       */
-  /**
-       * Converts a Date object to a string.
-       */
-  /**
-       * Converts a Date object to a number.
-       */
-  /**
-       * Converts a Date object to a string or number.
-       *
-       * @param hint The strings "number", "string", or "default" to specify what primitive to return.
-       *
-       * @throws {TypeError} If 'hint' was given something other than "number", "string", or "default".
-       * @returns A number if 'hint' was "number", a string if 'hint' was "string" or "default".
-       */
   @JSName(org.scalablytyped.runtime.Symbol.toPrimitive)
   var toPrimitive: (js.Function1[stdLib.stdLibStrings.default, java.lang.String]) with (js.Function1[stdLib.stdLibStrings.string, java.lang.String]) with (js.Function1[stdLib.stdLibStrings.number, scala.Double]) with (js.Function1[/* hint */ java.lang.String, java.lang.String | scala.Double]) = js.native
   /** Gets the day-of-the-month, using local time. */

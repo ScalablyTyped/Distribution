@@ -15,7 +15,10 @@ trait LayoverProps
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var onClose: js.Function
   var onContextMenu: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]
+    js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   var preventContextMenu: js.UndefOr[scala.Boolean] = js.undefined
   var simplified: js.UndefOr[scala.Boolean] = js.undefined

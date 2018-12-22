@@ -96,11 +96,25 @@ object UtilsNs extends js.Object {
   def throttle[T /* <: js.Function */](method: T): T = js.native
   def throttleEvent(target: reactLib.EventTarget, eventName: java.lang.String, newEventName: java.lang.String): js.Function1[/* event */ reactLib.Event, scala.Unit] = js.native
   def throttleReactEventCallback(
-    callback: js.Function2[/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_], /* repeated */js.Any, _]
-  ): js.Function1[/* event2 */ reactLib.reactMod.ReactNs.SyntheticEvent[_], scala.Unit] = js.native
+    callback: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
+      /* repeated */js.Any, 
+      _
+    ]
+  ): js.Function1[
+    /* event2 */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
+    scala.Unit
+  ] = js.native
   def throttleReactEventCallback(
-    callback: js.Function2[/* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_], /* repeated */js.Any, _],
+    callback: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
+      /* repeated */js.Any, 
+      _
+    ],
     options: atBlueprintjsCoreLib.libEsmCommonUtilsMod.IThrottledReactEventOptions
-  ): js.Function1[/* event2 */ reactLib.reactMod.ReactNs.SyntheticEvent[_], scala.Unit] = js.native
+  ): js.Function1[
+    /* event2 */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
+    scala.Unit
+  ] = js.native
 }
 

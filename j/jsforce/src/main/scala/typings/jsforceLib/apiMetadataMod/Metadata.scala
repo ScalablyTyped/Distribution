@@ -84,11 +84,11 @@ class Metadata protected () extends js.Object {
     metadata: java.lang.String,
     callback: jsforceLib.connectionMod.Callback[AsyncResult | js.Array[AsyncResult]]
   ): AsyncResultLocator[AsyncResult | js.Array[AsyncResult]] = js.native
-  def deleteAsync(`type`: java.lang.String, metadata: js.Array[java.lang.String | MetadataInfo]): AsyncResultLocator[AsyncResult | js.Array[AsyncResult]] = js.native
+  def deleteAsync(`type`: java.lang.String, metadata: js.Array[MetadataInfo | java.lang.String]): AsyncResultLocator[AsyncResult | js.Array[AsyncResult]] = js.native
   def deleteAsync(
     `type`: java.lang.String,
-    metadata: js.Array[java.lang.String | MetadataInfo],
-    callback: jsforceLib.connectionMod.Callback[AsyncResult | js.Array[AsyncResult]]
+    metadata: js.Array[MetadataInfo | java.lang.String],
+    callback: jsforceLib.connectionMod.Callback[js.Array[AsyncResult] | AsyncResult]
   ): AsyncResultLocator[AsyncResult | js.Array[AsyncResult]] = js.native
   def deleteAsync(`type`: java.lang.String, metadata: MetadataInfo): AsyncResultLocator[AsyncResult | js.Array[AsyncResult]] = js.native
   def deleteAsync(

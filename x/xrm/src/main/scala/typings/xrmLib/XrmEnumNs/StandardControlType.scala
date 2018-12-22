@@ -28,6 +28,10 @@ object StandardControlType extends js.Object {
     extends xrmLib.XrmEnumNs.StandardControlType
   
   @js.native
+  sealed trait MultiSelectOptionSet
+    extends xrmLib.XrmEnumNs.StandardControlType
+  
+  @js.native
   sealed trait Notes
     extends xrmLib.XrmEnumNs.StandardControlType
   
@@ -62,6 +66,7 @@ object StandardControlType extends js.Object {
   /* "iframe" */ val IFrame: IFrame with java.lang.String = js.native
   /* "kbsearch" */ val KBSearch: KBSearch with java.lang.String = js.native
   /* "lookup" */ val Lookup: Lookup with java.lang.String = js.native
+  /* "multiselectoptionset" */ val MultiSelectOptionSet: MultiSelectOptionSet with java.lang.String = js.native
   /* "notes" */ val Notes: Notes with java.lang.String = js.native
   /* "optionset" */ val OptionSet: OptionSet with java.lang.String = js.native
   /* "quickform" */ val QuickForm: QuickForm with java.lang.String = js.native

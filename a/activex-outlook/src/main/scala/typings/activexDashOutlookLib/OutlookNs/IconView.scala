@@ -27,7 +27,7 @@ class IconView protected () extends js.Object {
   def Apply(): scala.Unit = js.native
   def Copy(Name: java.lang.String, SaveOption: OlViewSaveOption): View = js.native
   def Delete(): scala.Unit = js.native
-  def GoToDate(Date: stdLib.VarDate): scala.Unit = js.native
+  def GoToDate(Date: activexDashInteropLib.VarDate): scala.Unit = js.native
   def Reset(): scala.Unit = js.native
   def Save(): scala.Unit = js.native
 }

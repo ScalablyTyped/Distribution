@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TouchBar protected ()
   extends electronLib.ElectronNs.TouchBar {
-  // Docs: http://electron.atom.io/docs/api/touch-bar
+  // Docs: http://electronjs.org/docs/api/touch-bar
   def this(options: electronLib.ElectronNs.TouchBarConstructorOptions) = this()
 }
 

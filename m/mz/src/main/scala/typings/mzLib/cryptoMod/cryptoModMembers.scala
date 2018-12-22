@@ -927,9 +927,9 @@ object cryptoModMembers extends js.Object {
       mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem
     ],
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
-      (/* publicKey */ java.lang.String) | (/* publicKey */ nodeLib.Buffer), 
-      (/* privateKey */ java.lang.String) | (/* privateKey */ nodeLib.Buffer), 
+      nodeLib.Error | scala.Null, 
+      (/* publicKey */ nodeLib.Buffer) | (/* publicKey */ java.lang.String), 
+      (/* privateKey */ nodeLib.Buffer) | (/* privateKey */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -940,9 +940,9 @@ object cryptoModMembers extends js.Object {
       mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem
     ],
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
-      (/* publicKey */ java.lang.String) | (/* publicKey */ nodeLib.Buffer), 
-      (/* privateKey */ java.lang.String) | (/* privateKey */ nodeLib.Buffer), 
+      nodeLib.Error | scala.Null, 
+      (/* publicKey */ nodeLib.Buffer) | (/* publicKey */ java.lang.String), 
+      (/* privateKey */ nodeLib.Buffer) | (/* privateKey */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -953,9 +953,9 @@ object cryptoModMembers extends js.Object {
       mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem
     ],
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
-      (/* publicKey */ java.lang.String) | (/* publicKey */ nodeLib.Buffer), 
-      (/* privateKey */ java.lang.String) | (/* privateKey */ nodeLib.Buffer), 
+      nodeLib.Error | scala.Null, 
+      (/* publicKey */ nodeLib.Buffer) | (/* publicKey */ java.lang.String), 
+      (/* privateKey */ nodeLib.Buffer) | (/* privateKey */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -998,7 +998,7 @@ object cryptoModMembers extends js.Object {
     iterations: scala.Double,
     keylen: scala.Double,
     digest: java.lang.String,
-    callback: js.Function2[nodeLib.Error | scala.Null, /* derivedKey */ nodeLib.Buffer, _]
+    callback: js.Function2[(/* err */ nodeLib.Error) | scala.Null, /* derivedKey */ nodeLib.Buffer, _]
   ): scala.Unit = js.native
   def pbkdf2(password: java.lang.String, salt: nodeLib.Buffer, iterations: scala.Double, keylen: scala.Double): js.Promise[nodeLib.Buffer] = js.native
   def pbkdf2(
@@ -1014,7 +1014,7 @@ object cryptoModMembers extends js.Object {
     iterations: scala.Double,
     keylen: scala.Double,
     digest: java.lang.String,
-    callback: js.Function2[nodeLib.Error | scala.Null, /* derivedKey */ nodeLib.Buffer, _]
+    callback: js.Function2[(/* err */ nodeLib.Error) | scala.Null, /* derivedKey */ nodeLib.Buffer, _]
   ): scala.Unit = js.native
   def pbkdf2(
     password: java.lang.String,
@@ -1046,7 +1046,7 @@ object cryptoModMembers extends js.Object {
     iterations: scala.Double,
     keylen: scala.Double,
     digest: java.lang.String,
-    callback: js.Function2[nodeLib.Error | scala.Null, /* derivedKey */ nodeLib.Buffer, _]
+    callback: js.Function2[(/* err */ nodeLib.Error) | scala.Null, /* derivedKey */ nodeLib.Buffer, _]
   ): scala.Unit = js.native
   def pbkdf2(password: nodeLib.Buffer, salt: nodeLib.Buffer, iterations: scala.Double, keylen: scala.Double): js.Promise[nodeLib.Buffer] = js.native
   def pbkdf2(
@@ -1062,7 +1062,7 @@ object cryptoModMembers extends js.Object {
     iterations: scala.Double,
     keylen: scala.Double,
     digest: java.lang.String,
-    callback: js.Function2[nodeLib.Error | scala.Null, /* derivedKey */ nodeLib.Buffer, _]
+    callback: js.Function2[(/* err */ nodeLib.Error) | scala.Null, /* derivedKey */ nodeLib.Buffer, _]
   ): scala.Unit = js.native
   def pbkdf2(
     password: nodeLib.Buffer,
@@ -1271,7 +1271,7 @@ object cryptoModMembers extends js.Object {
   def pseudoRandomBytes(size: scala.Double): js.Promise[nodeLib.Buffer] = js.native
   def pseudoRandomBytes(
     size: scala.Double,
-    callback: js.Function2[nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[(/* err */ nodeLib.Error) | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   @JSName("pseudoRandomBytes")
   def pseudoRandomBytes_Buffer(size: scala.Double): nodeLib.Buffer = js.native
@@ -1290,7 +1290,7 @@ object cryptoModMembers extends js.Object {
   def randomBytes(size: scala.Double): js.Promise[nodeLib.Buffer] = js.native
   def randomBytes(
     size: scala.Double,
-    callback: js.Function2[nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[(/* err */ nodeLib.Error) | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   @JSName("randomBytes")
   def randomBytes_Buffer(size: scala.Double): nodeLib.Buffer = js.native

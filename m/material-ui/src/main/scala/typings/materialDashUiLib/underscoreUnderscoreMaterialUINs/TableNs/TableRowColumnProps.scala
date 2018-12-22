@@ -17,7 +17,7 @@ trait TableRowColumnProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* column */ scala.Double, 
       scala.Unit
     ]
@@ -25,7 +25,7 @@ trait TableRowColumnProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onHover: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* column */ scala.Double, 
       scala.Unit
     ]
@@ -33,7 +33,7 @@ trait TableRowColumnProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onHoverExit: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* column */ scala.Double, 
       scala.Unit
     ]

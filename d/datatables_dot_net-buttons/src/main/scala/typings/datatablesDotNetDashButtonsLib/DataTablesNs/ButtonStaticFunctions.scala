@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ButtonStaticFunctions
   extends org.scalablytyped.runtime.Instantiable2[
       /* dt */ Api, 
-      (/* settings */ scala.Boolean) | (/* settings */ js.Array[java.lang.String]) | (/* settings */ ButtonsSettings) | (/* settings */ js.Array[ButtonSettings]), 
+      (/* settings */ js.Array[java.lang.String]) | (/* settings */ js.Array[ButtonSettings]) | (/* settings */ scala.Boolean) | (/* settings */ ButtonsSettings), 
       js.UndefOr[scala.Nothing]
     ] {
   var defaults: ButtonsSettings = js.native

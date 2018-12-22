@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CrashReporterStartOptions extends js.Object {
-  var companyName: js.UndefOr[java.lang.String] = js.undefined
+  var companyName: java.lang.String
   /**
        * Directory to store the crashreports temporarily (only used when the crash
        * reporter is started via process.crashReporter.start).

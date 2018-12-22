@@ -14,7 +14,7 @@ trait StreamWriterConstructor
       N3StreamWriter[rdfDashJsLib.rdfDashJsMod.BaseQuad]
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* options */ WriterOptions) | (/* fd */ js.Any), 
+      (/* fd */ js.Any) | (/* options */ WriterOptions), 
       N3StreamWriter[rdfDashJsLib.rdfDashJsMod.BaseQuad]
     ] {
   def apply[Q /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */](): N3StreamWriter[Q] = js.native

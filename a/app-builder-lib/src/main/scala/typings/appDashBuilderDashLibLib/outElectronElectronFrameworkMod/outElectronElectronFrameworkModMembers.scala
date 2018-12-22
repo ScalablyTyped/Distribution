@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("app-builder-lib/out/electron/ElectronFramework", JSImport.Namespace)
 @js.native
 object outElectronElectronFrameworkModMembers extends js.Object {
-  def createElectronFrameworkSupport(
-    configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
-    packager: appDashBuilderDashLibLib.outMod.Packager
-  ): js.Promise[appDashBuilderDashLibLib.outFrameworkMod.Framework] = js.native
+  def createElectronFrameworkSupport(configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration, packager: js.Any): js.Promise[appDashBuilderDashLibLib.outFrameworkMod.Framework] = js.native
 }
 

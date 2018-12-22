@@ -298,6 +298,47 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
+     */
+  def applySecurityGroupsToClientVpnTargetNetwork(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
+     */
+  def applySecurityGroupsToClientVpnTargetNetwork(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
+     */
+  def applySecurityGroupsToClientVpnTargetNetwork(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ApplySecurityGroupsToClientVpnTargetNetworkRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
+     */
+  def applySecurityGroupsToClientVpnTargetNetwork(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ApplySecurityGroupsToClientVpnTargetNetworkRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Assigns one or more IPv6 addresses to the specified network interface. You can specify one or more specific IPv6 addresses, or you can specify the number of IPv6 addresses to be automatically assigned from within the subnet's IPv6 CIDR block range. You can assign as many IPv6 addresses to a network interface as you can assign private IPv4 addresses, and the limit varies per instance type. For information, see IP Addresses Per Network Interface Per Instance Type in the Amazon Elastic Compute Cloud User Guide.
      */
   def assignIpv6Addresses(): awsDashSdkLib.libRequestMod.Request[
@@ -398,6 +439,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateAddressResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
+     */
+  def associateClientVpnTargetNetwork(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
+     */
+  def associateClientVpnTargetNetwork(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateClientVpnTargetNetworkResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
+     */
+  def associateClientVpnTargetNetwork(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateClientVpnTargetNetworkRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
+     */
+  def associateClientVpnTargetNetwork(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateClientVpnTargetNetworkRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateClientVpnTargetNetworkResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateClientVpnTargetNetworkResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -809,6 +891,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.AttachVpnGatewayResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds an ingress authorization rule to a Client VPN endpoint. Ingress authorization rules act as firewall rules that grant access to networks. You must configure ingress authorization rules to enable clients to access resources in AWS or on-premises networks.
+     */
+  def authorizeClientVpnIngress(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AuthorizeClientVpnIngressResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds an ingress authorization rule to a Client VPN endpoint. Ingress authorization rules act as firewall rules that grant access to networks. You must configure ingress authorization rules to enable clients to access resources in AWS or on-premises networks.
+     */
+  def authorizeClientVpnIngress(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.AuthorizeClientVpnIngressResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AuthorizeClientVpnIngressResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds an ingress authorization rule to a Client VPN endpoint. Ingress authorization rules act as firewall rules that grant access to networks. You must configure ingress authorization rules to enable clients to access resources in AWS or on-premises networks.
+     */
+  def authorizeClientVpnIngress(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AuthorizeClientVpnIngressRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AuthorizeClientVpnIngressResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds an ingress authorization rule to a Client VPN endpoint. Ingress authorization rules act as firewall rules that grant access to networks. You must configure ingress authorization rules to enable clients to access resources in AWS or on-premises networks.
+     */
+  def authorizeClientVpnIngress(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AuthorizeClientVpnIngressRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.AuthorizeClientVpnIngressResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AuthorizeClientVpnIngressResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1385,6 +1508,88 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a Client VPN endpoint. A Client VPN endpoint is the resource you create and configure to enable and manage client VPN sessions. It is the destination endpoint at which all client VPN sessions are terminated.
+     */
+  def createClientVpnEndpoint(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a Client VPN endpoint. A Client VPN endpoint is the resource you create and configure to enable and manage client VPN sessions. It is the destination endpoint at which all client VPN sessions are terminated.
+     */
+  def createClientVpnEndpoint(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnEndpointResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a Client VPN endpoint. A Client VPN endpoint is the resource you create and configure to enable and manage client VPN sessions. It is the destination endpoint at which all client VPN sessions are terminated.
+     */
+  def createClientVpnEndpoint(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnEndpointRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a Client VPN endpoint. A Client VPN endpoint is the resource you create and configure to enable and manage client VPN sessions. It is the destination endpoint at which all client VPN sessions are terminated.
+     */
+  def createClientVpnEndpoint(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnEndpointRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnEndpointResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traﬃc to speciﬁc resources or networks.
+     */
+  def createClientVpnRoute(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traﬃc to speciﬁc resources or networks.
+     */
+  def createClientVpnRoute(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnRouteResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traﬃc to speciﬁc resources or networks.
+     */
+  def createClientVpnRoute(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnRouteRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traﬃc to speciﬁc resources or networks.
+     */
+  def createClientVpnRoute(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnRouteRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnRouteResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateClientVpnRouteResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -2135,21 +2340,21 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+     * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
      */
   def createPlacementGroup(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+     * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
      */
   def createPlacementGroup(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+     * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
      */
   def createPlacementGroup(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreatePlacementGroupRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+     * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
      */
   def createPlacementGroup(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreatePlacementGroupRequest,
@@ -2950,6 +3155,88 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateVpnGatewayResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
+     */
+  def deleteClientVpnEndpoint(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
+     */
+  def deleteClientVpnEndpoint(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnEndpointResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
+     */
+  def deleteClientVpnEndpoint(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnEndpointRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
+     */
+  def deleteClientVpnEndpoint(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnEndpointRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnEndpointResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using the CreateClientVpnRoute action. You cannot delete routes that were automatically added when associating a subnet. To remove routes that have been automatically added, disassociate the target subnet from the Client VPN endpoint.
+     */
+  def deleteClientVpnRoute(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using the CreateClientVpnRoute action. You cannot delete routes that were automatically added when associating a subnet. To remove routes that have been automatically added, disassociate the target subnet from the Client VPN endpoint.
+     */
+  def deleteClientVpnRoute(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnRouteResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using the CreateClientVpnRoute action. You cannot delete routes that were automatically added when associating a subnet. To remove routes that have been automatically added, disassociate the target subnet from the Client VPN endpoint.
+     */
+  def deleteClientVpnRoute(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnRouteRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using the CreateClientVpnRoute action. You cannot delete routes that were automatically added when associating a subnet. To remove routes that have been automatically added, disassociate the target subnet from the Client VPN endpoint.
+     */
+  def deleteClientVpnRoute(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnRouteRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnRouteResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteClientVpnRouteResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -4419,6 +4706,211 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Describes the authorization rules for a specified Client VPN endpoint.
+     */
+  def describeClientVpnAuthorizationRules(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnAuthorizationRulesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the authorization rules for a specified Client VPN endpoint.
+     */
+  def describeClientVpnAuthorizationRules(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnAuthorizationRulesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnAuthorizationRulesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the authorization rules for a specified Client VPN endpoint.
+     */
+  def describeClientVpnAuthorizationRules(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnAuthorizationRulesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnAuthorizationRulesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the authorization rules for a specified Client VPN endpoint.
+     */
+  def describeClientVpnAuthorizationRules(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnAuthorizationRulesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnAuthorizationRulesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnAuthorizationRulesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
+     */
+  def describeClientVpnConnections(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnConnectionsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
+     */
+  def describeClientVpnConnections(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnConnectionsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnConnectionsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
+     */
+  def describeClientVpnConnections(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnConnectionsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnConnectionsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
+     */
+  def describeClientVpnConnections(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnConnectionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnConnectionsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnConnectionsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more Client VPN endpoints in the account.
+     */
+  def describeClientVpnEndpoints(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnEndpointsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more Client VPN endpoints in the account.
+     */
+  def describeClientVpnEndpoints(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnEndpointsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnEndpointsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more Client VPN endpoints in the account.
+     */
+  def describeClientVpnEndpoints(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnEndpointsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnEndpointsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more Client VPN endpoints in the account.
+     */
+  def describeClientVpnEndpoints(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnEndpointsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnEndpointsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnEndpointsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the routes for the specified Client VPN endpoint.
+     */
+  def describeClientVpnRoutes(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the routes for the specified Client VPN endpoint.
+     */
+  def describeClientVpnRoutes(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnRoutesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the routes for the specified Client VPN endpoint.
+     */
+  def describeClientVpnRoutes(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnRoutesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the routes for the specified Client VPN endpoint.
+     */
+  def describeClientVpnRoutes(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnRoutesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnRoutesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the target networks associated with the specified Client VPN endpoint.
+     */
+  def describeClientVpnTargetNetworks(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnTargetNetworksResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the target networks associated with the specified Client VPN endpoint.
+     */
+  def describeClientVpnTargetNetworks(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnTargetNetworksResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnTargetNetworksResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the target networks associated with the specified Client VPN endpoint.
+     */
+  def describeClientVpnTargetNetworks(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnTargetNetworksRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnTargetNetworksResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the target networks associated with the specified Client VPN endpoint.
+     */
+  def describeClientVpnTargetNetworks(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnTargetNetworksRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnTargetNetworksResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeClientVpnTargetNetworksResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Describes one or more of your conversion tasks. For more information, see the VM Import/Export User Guide. For information about the import manifest referenced by this API action, see VM Import Manifest.
      */
   def describeConversionTasks(): awsDashSdkLib.libRequestMod.Request[
@@ -4911,14 +5403,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
+     * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and Region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
      */
   def describeHostReservationOfferings(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeHostReservationOfferingsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
+     * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and Region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
      */
   def describeHostReservationOfferings(
     callback: js.Function2[
@@ -4931,14 +5423,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
+     * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and Region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
      */
   def describeHostReservationOfferings(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeHostReservationOfferingsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeHostReservationOfferingsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
+     * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and Region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
      */
   def describeHostReservationOfferings(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeHostReservationOfferingsRequest,
@@ -4993,14 +5485,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
+     * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the Region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
      */
   def describeHosts(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeHostsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
+     * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the Region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
      */
   def describeHosts(
     callback: js.Function2[
@@ -5013,14 +5505,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
+     * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the Region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
      */
   def describeHosts(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeHostsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeHostsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
+     * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the Region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
      */
   def describeHosts(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeHostsRequest,
@@ -8091,6 +8583,47 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     * Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:   The route that was automatically added for the VPC is deleted   All active client connections are terminated   New client connections are disallowed   The Client VPN endpoint's status changes to pending-associate   
+     */
+  def disassociateClientVpnTargetNetwork(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:   The route that was automatically added for the VPC is deleted   All active client connections are terminated   New client connections are disallowed   The Client VPN endpoint's status changes to pending-associate   
+     */
+  def disassociateClientVpnTargetNetwork(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateClientVpnTargetNetworkResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:   The route that was automatically added for the VPC is deleted   All active client connections are terminated   New client connections are disallowed   The Client VPN endpoint's status changes to pending-associate   
+     */
+  def disassociateClientVpnTargetNetwork(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateClientVpnTargetNetworkRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:   The route that was automatically added for the VPC is deleted   All active client connections are terminated   New client connections are disallowed   The Client VPN endpoint's status changes to pending-associate   
+     */
+  def disassociateClientVpnTargetNetwork(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateClientVpnTargetNetworkRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateClientVpnTargetNetworkResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateClientVpnTargetNetworkResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Disassociates an IAM instance profile from a running or stopped instance. Use DescribeIamInstanceProfileAssociations to get the association ID.
      */
   def disassociateIamInstanceProfile(): awsDashSdkLib.libRequestMod.Request[
@@ -8438,6 +8971,88 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.EnableVpcClassicLinkDnsSupportResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Downloads the client certificate revocation list for the specified Client VPN endpoint.
+     */
+  def exportClientVpnClientCertificateRevocationList(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientCertificateRevocationListResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Downloads the client certificate revocation list for the specified Client VPN endpoint.
+     */
+  def exportClientVpnClientCertificateRevocationList(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientCertificateRevocationListResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientCertificateRevocationListResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Downloads the client certificate revocation list for the specified Client VPN endpoint.
+     */
+  def exportClientVpnClientCertificateRevocationList(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientCertificateRevocationListRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientCertificateRevocationListResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Downloads the client certificate revocation list for the specified Client VPN endpoint.
+     */
+  def exportClientVpnClientCertificateRevocationList(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientCertificateRevocationListRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientCertificateRevocationListResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientCertificateRevocationListResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
+     */
+  def exportClientVpnClientConfiguration(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientConfigurationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
+     */
+  def exportClientVpnClientConfiguration(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientConfigurationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientConfigurationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
+     */
+  def exportClientVpnClientConfiguration(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientConfigurationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
+     */
+  def exportClientVpnClientConfiguration(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientConfigurationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientConfigurationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportClientVpnClientConfigurationResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -8851,6 +9466,47 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
+     */
+  def importClientVpnClientCertificateRevocationList(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ImportClientVpnClientCertificateRevocationListResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
+     */
+  def importClientVpnClientCertificateRevocationList(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ImportClientVpnClientCertificateRevocationListResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ImportClientVpnClientCertificateRevocationListResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
+     */
+  def importClientVpnClientCertificateRevocationList(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ImportClientVpnClientCertificateRevocationListRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ImportClientVpnClientCertificateRevocationListResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
+     */
+  def importClientVpnClientCertificateRevocationList(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ImportClientVpnClientCertificateRevocationListRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ImportClientVpnClientCertificateRevocationListResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ImportClientVpnClientCertificateRevocationListResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI). For more information, see Importing a VM as an Image Using VM Import/Export in the VM Import/Export User Guide.
      */
   def importImage(): awsDashSdkLib.libRequestMod.Request[
@@ -9094,6 +9750,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the specified Client VPN endpoint. You can only modify an endpoint's server certificate information, client connection logging information, DNS server, and description. Modifying the DNS server resets existing client connections.
+     */
+  def modifyClientVpnEndpoint(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the specified Client VPN endpoint. You can only modify an endpoint's server certificate information, client connection logging information, DNS server, and description. Modifying the DNS server resets existing client connections.
+     */
+  def modifyClientVpnEndpoint(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyClientVpnEndpointResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the specified Client VPN endpoint. You can only modify an endpoint's server certificate information, client connection logging information, DNS server, and description. Modifying the DNS server resets existing client connections.
+     */
+  def modifyClientVpnEndpoint(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyClientVpnEndpointRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyClientVpnEndpointResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the specified Client VPN endpoint. You can only modify an endpoint's server certificate information, client connection logging information, DNS server, and description. Modifying the DNS server resets existing client connections.
+     */
+  def modifyClientVpnEndpoint(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyClientVpnEndpointRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyClientVpnEndpointResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyClientVpnEndpointResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -9386,14 +10083,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, or placement group for an instance, the instance must be in the stopped state.
+     * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
      */
   def modifyInstancePlacement(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstancePlacementResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, or placement group for an instance, the instance must be in the stopped state.
+     * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
      */
   def modifyInstancePlacement(
     callback: js.Function2[
@@ -9406,14 +10103,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, or placement group for an instance, the instance must be in the stopped state.
+     * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
      */
   def modifyInstancePlacement(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstancePlacementRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstancePlacementResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, or placement group for an instance, the instance must be in the stopped state.
+     * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
      */
   def modifyInstancePlacement(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstancePlacementRequest,
@@ -10951,6 +11648,47 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Removes an ingress authorization rule from a Client VPN endpoint. 
+     */
+  def revokeClientVpnIngress(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.RevokeClientVpnIngressResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes an ingress authorization rule from a Client VPN endpoint. 
+     */
+  def revokeClientVpnIngress(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.RevokeClientVpnIngressResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.RevokeClientVpnIngressResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes an ingress authorization rule from a Client VPN endpoint. 
+     */
+  def revokeClientVpnIngress(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.RevokeClientVpnIngressRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.RevokeClientVpnIngressResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes an ingress authorization rule from a Client VPN endpoint. 
+     */
+  def revokeClientVpnIngress(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.RevokeClientVpnIngressRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.RevokeClientVpnIngressResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.RevokeClientVpnIngressResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * [EC2-VPC only] Removes one or more egress rules from a security group for EC2-VPC. This action doesn't apply to security groups for use in EC2-Classic. To remove a rule, the values that you specify (for example, ports) must match the existing rule's values exactly. Each rule consists of the protocol and the IPv4 or IPv6 CIDR range or source security group. For the TCP and UDP protocols, you must also specify the destination port or range of ports. For the ICMP protocol, you must also specify the ICMP type and code. If the security group rule has a description, you do not have to specify the description to revoke the rule. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur.
      */
   def revokeSecurityGroupEgress(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -11183,6 +11921,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.StopInstancesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
+     */
+  def terminateClientVpnConnections(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.TerminateClientVpnConnectionsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
+     */
+  def terminateClientVpnConnections(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.TerminateClientVpnConnectionsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.TerminateClientVpnConnectionsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
+     */
+  def terminateClientVpnConnections(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.TerminateClientVpnConnectionsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.TerminateClientVpnConnectionsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
+     */
+  def terminateClientVpnConnections(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.TerminateClientVpnConnectionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.TerminateClientVpnConnectionsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.TerminateClientVpnConnectionsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

@@ -19,7 +19,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container) = this()
+  def this(container: js.Any) = this()
   /**
        * Wrapper for the express server.
        *
@@ -30,7 +30,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router) = this()
   /**
        * Wrapper for the express server.
        *
@@ -41,7 +41,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig) = this()
   /**
        * Wrapper for the express server.
        *
@@ -52,7 +52,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig) = this()
   /**
        * Wrapper for the express server.
        *
@@ -63,7 +63,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application) = this()
   /**
        * Wrapper for the express server.
        *
@@ -74,7 +74,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application) = this()
   /**
        * Wrapper for the express server.
        *
@@ -85,7 +85,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application) = this()
   /**
        * Wrapper for the express server.
        *
@@ -96,7 +96,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application) = this()
   /**
        * Wrapper for the express server.
        *
@@ -107,7 +107,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
   /**
        * Wrapper for the express server.
        *
@@ -118,7 +118,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
   /**
        * Wrapper for the express server.
        *
@@ -129,7 +129,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
   /**
        * Wrapper for the express server.
        *
@@ -140,7 +140,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
   /**
        * Wrapper for the express server.
        *
@@ -151,7 +151,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
   /**
        * Wrapper for the express server.
        *
@@ -162,7 +162,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
   /**
        * Wrapper for the express server.
        *
@@ -173,7 +173,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
   /**
        * Wrapper for the express server.
        *
@@ -184,7 +184,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: scala.Null, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: scala.Null, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider) = this()
   /**
        * Wrapper for the express server.
        *
@@ -195,7 +195,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -206,7 +206,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -217,7 +217,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -228,7 +228,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -239,7 +239,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -250,7 +250,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -261,7 +261,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -272,7 +272,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: scala.Null, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: expressLib.expressMod.eNs.Router, routingConfig: scala.Null, customApp: scala.Null, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -283,7 +283,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -294,7 +294,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: expressLib.expressMod.eNs.Application, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -305,7 +305,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -316,7 +316,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.RoutingConfig, customApp: scala.Null, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -327,7 +327,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -338,7 +338,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: scala.Null, customApp: expressLib.expressMod.eNs.Application, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -349,7 +349,7 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: scala.Null, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: scala.Null, customApp: scala.Null, authProvider: inversifyDashExpressDashUtilsLib.Anon_AuthProvider, forceControllers: scala.Boolean) = this()
   /**
        * Wrapper for the express server.
        *
@@ -360,6 +360,6 @@ class InversifyExpressServer protected ()
        * @param authProvider optional interfaces.AuthProvider auth provider
        * @param forceControllers optional boolean setting to force controllers (defaults do true)
        */
-  def this(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, customRouter: scala.Null, routingConfig: scala.Null, customApp: scala.Null, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
+  def this(container: js.Any, customRouter: scala.Null, routingConfig: scala.Null, customApp: scala.Null, authProvider: scala.Null, forceControllers: scala.Boolean) = this()
 }
 

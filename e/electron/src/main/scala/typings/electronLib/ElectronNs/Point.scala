@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Point extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/point
+  // Docs: http://electronjs.org/docs/api/structures/point
   var x: scala.Double
   var y: scala.Double
 }

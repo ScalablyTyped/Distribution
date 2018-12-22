@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ChainableBase[T, RawValue] extends js.Object {
   var raw: RawValue = js.native
-  def concat(items: (T | js.Array[T])*): sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
+  def concat(items: (js.Array[T] | T)*): sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def copyWithin(target: scala.Double, start: scala.Double): sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[this.type] = js.native
   def copyWithin(target: scala.Double, start: scala.Double, end: scala.Double): sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[this.type] = js.native
   def every(

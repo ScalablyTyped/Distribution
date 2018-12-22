@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Remarkable extends js.Object {
-  var block: remarkableLib.Anon_Ruler = js.native
-  var core: remarkableLib.Anon_Ruler = js.native
+  var block: remarkableLib.Anon_RulerNamespaced = js.native
+  var core: remarkableLib.Anon_RulerNamespacedCoreParsingRule = js.native
   var `inline`: remarkableLib.Anon_Ruler = js.native
   var renderer: remarkableLib.libRendererMod.namespaced = js.native
   /**

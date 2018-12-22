@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait MouseEvent[T] extends SyntheticEvent[T] {
+trait MouseEvent[T, E]
+  extends BaseSyntheticEvent[E, reactLib.EventTarget with T, reactLib.EventTarget] {
   var altKey: scala.Boolean
   var button: scala.Double
   var buttons: scala.Double
@@ -16,8 +17,6 @@ trait MouseEvent[T] extends SyntheticEvent[T] {
   var metaKey: scala.Boolean
   var movementX: scala.Double
   var movementY: scala.Double
-  @JSName("nativeEvent")
-  var nativeEvent_MouseEvent: reactLib.NativeMouseEvent
   var pageX: scala.Double
   var pageY: scala.Double
   var relatedTarget: reactLib.EventTarget

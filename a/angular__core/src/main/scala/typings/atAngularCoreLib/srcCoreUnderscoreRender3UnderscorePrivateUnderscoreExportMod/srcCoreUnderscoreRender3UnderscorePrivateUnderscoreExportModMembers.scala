@@ -278,15 +278,15 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
   def ɵelementStyling(): scala.Unit = js.native
   def ɵelementStyling(
     classDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ]
   ): scala.Unit = js.native
   def ɵelementStyling(
     classDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ],
     styleDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ]
   ): scala.Unit = js.native
   def ɵelementStyling(
@@ -344,7 +344,7 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
   def ɵelementStyling(
     classDeclarations: scala.Null,
     styleDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ]
   ): scala.Unit = js.native
   def ɵelementStyling(

@@ -348,7 +348,7 @@ trait Swiper extends js.Object {
   /**
        * Remove all slides
        */
-  def removeAllSlides(): js.Any = js.native
+  def removeAllSlides(): scala.Unit = js.native
   /**
        * Remove selected slides. slideIndex could be a number with slide index to remove or array with indexes.
        *

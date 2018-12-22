@@ -18,7 +18,7 @@ trait HTMLElement extends js.Object {
   /**
        * ❗ Unprefixed version are not available as of Chrome 68, in Chrome apps ❗
        */
-  def requestFullscreen(): scala.Unit
+  def requestFullscreen(): js.Promise[scala.Unit]
   /**
        * @requires Permissions: 'pointerLock'
        */

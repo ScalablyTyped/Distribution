@@ -37,10 +37,10 @@ trait URI extends js.Object {
   def hasQuery(name: java.lang.String): scala.Boolean = js.native
   def hasQuery(name: java.lang.String, value: java.lang.String): scala.Boolean = js.native
   def hasQuery(name: java.lang.String, value: java.lang.String, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: js.Array[java.lang.String | scala.Boolean | scala.Double]): scala.Boolean = js.native
+  def hasQuery(name: java.lang.String, value: js.Array[scala.Boolean | scala.Double | java.lang.String]): scala.Boolean = js.native
   def hasQuery(
     name: java.lang.String,
-    value: js.Array[java.lang.String | scala.Boolean | scala.Double],
+    value: js.Array[scala.Boolean | scala.Double | java.lang.String],
     withinArray: scala.Boolean
   ): scala.Boolean = js.native
   def hasQuery(name: java.lang.String, value: js.Function): scala.Boolean = js.native
@@ -54,10 +54,10 @@ trait URI extends js.Object {
   def hasQuery(name: js.Any): scala.Boolean = js.native
   def hasQuery(name: js.Any, value: java.lang.String): scala.Boolean = js.native
   def hasQuery(name: js.Any, value: java.lang.String, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: js.Array[java.lang.String | scala.Boolean | scala.Double]): scala.Boolean = js.native
+  def hasQuery(name: js.Any, value: js.Array[scala.Boolean | scala.Double | java.lang.String]): scala.Boolean = js.native
   def hasQuery(
     name: js.Any,
-    value: js.Array[java.lang.String | scala.Boolean | scala.Double],
+    value: js.Array[scala.Boolean | scala.Double | java.lang.String],
     withinArray: scala.Boolean
   ): scala.Boolean = js.native
   def hasQuery(name: js.Any, value: js.Function): scala.Boolean = js.native
@@ -71,10 +71,10 @@ trait URI extends js.Object {
   def hasSearch(name: java.lang.String): scala.Boolean = js.native
   def hasSearch(name: java.lang.String, value: java.lang.String): scala.Boolean = js.native
   def hasSearch(name: java.lang.String, value: java.lang.String, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: js.Array[java.lang.String | scala.Boolean | scala.Double]): scala.Boolean = js.native
+  def hasSearch(name: java.lang.String, value: js.Array[scala.Boolean | scala.Double | java.lang.String]): scala.Boolean = js.native
   def hasSearch(
     name: java.lang.String,
-    value: js.Array[java.lang.String | scala.Boolean | scala.Double],
+    value: js.Array[scala.Boolean | scala.Double | java.lang.String],
     withinArray: scala.Boolean
   ): scala.Boolean = js.native
   def hasSearch(name: java.lang.String, value: js.Function): scala.Boolean = js.native
@@ -88,10 +88,10 @@ trait URI extends js.Object {
   def hasSearch(name: js.Any): scala.Boolean = js.native
   def hasSearch(name: js.Any, value: java.lang.String): scala.Boolean = js.native
   def hasSearch(name: js.Any, value: java.lang.String, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: js.Array[java.lang.String | scala.Boolean | scala.Double]): scala.Boolean = js.native
+  def hasSearch(name: js.Any, value: js.Array[scala.Boolean | scala.Double | java.lang.String]): scala.Boolean = js.native
   def hasSearch(
     name: js.Any,
-    value: js.Array[java.lang.String | scala.Boolean | scala.Double],
+    value: js.Array[scala.Boolean | scala.Double | java.lang.String],
     withinArray: scala.Boolean
   ): scala.Boolean = js.native
   def hasSearch(name: js.Any, value: js.Function): scala.Boolean = js.native

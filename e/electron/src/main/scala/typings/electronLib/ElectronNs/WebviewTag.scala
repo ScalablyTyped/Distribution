@@ -39,6 +39,11 @@ trait WebviewTag
        */
   var enableblinkfeatures: js.UndefOr[java.lang.String] = js.native
   /**
+       * When this attribute is false the guest page in webview will not have access to
+       * the remote module. The remote module is avaiable by default.
+       */
+  var enableremotemodule: js.UndefOr[java.lang.String] = js.native
+  /**
        * Sets the referrer URL for the guest page.
        */
   var httpreferrer: js.UndefOr[java.lang.String] = js.native
@@ -914,7 +919,7 @@ trait WebviewTag
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  // Docs: http://electron.atom.io/docs/api/webview-tag
+  // Docs: http://electronjs.org/docs/api/webview-tag
   /**
        * Fired when a load has committed. This includes navigation within the current
        * document as well as subframe document-level loads, but does not include
@@ -925,7 +930,7 @@ trait WebviewTag
     event: electronLib.electronLibStrings.`load-commit`,
     listener: js.Function1[/* event */ LoadCommitEvent, scala.Unit]
   ): this.type = js.native
-  // Docs: http://electron.atom.io/docs/api/webview-tag
+  // Docs: http://electronjs.org/docs/api/webview-tag
   /**
        * Fired when a load has committed. This includes navigation within the current
        * document as well as subframe document-level loads, but does not include
@@ -1662,6 +1667,10 @@ trait WebviewTag
        */
   def delete(): scala.Unit = js.native
   /**
+       * Initiates a download of the resource at url without navigating.
+       */
+  def downloadURL(url: java.lang.String): scala.Unit = js.native
+  /**
        * Evaluates code in page. If userGesture is set, it will create the user gesture
        * context in the page. HTML APIs like requestFullScreen, which require user
        * action, can take advantage of this option for automation.
@@ -1696,7 +1705,21 @@ trait WebviewTag
   def getTitle(): java.lang.String = js.native
   def getURL(): java.lang.String = js.native
   def getUserAgent(): java.lang.String = js.native
+  /**
+       * It depends on the remote module, it is therefore not available when this module
+       * is disabled.
+       */
   def getWebContents(): WebContents = js.native
+  /**
+       * Sends a request to get current zoom factor, the callback will be called with
+       * callback(zoomFactor).
+       */
+  def getZoomFactor(callback: js.Function1[/* zoomFactor */ scala.Double, scala.Unit]): scala.Unit = js.native
+  /**
+       * Sends a request to get current zoom level, the callback will be called with
+       * callback(zoomLevel).
+       */
+  def getZoomLevel(callback: js.Function1[/* zoomLevel */ scala.Double, scala.Unit]): scala.Unit = js.native
   /**
        * Makes the guest page go back.
        */
@@ -1731,9 +1754,11 @@ trait WebviewTag
   def inspectServiceWorker(): scala.Unit = js.native
   def isAudioMuted(): scala.Boolean = js.native
   def isCrashed(): scala.Boolean = js.native
+  def isCurrentlyAudible(): scala.Boolean = js.native
   def isDevToolsFocused(): scala.Boolean = js.native
   def isDevToolsOpened(): scala.Boolean = js.native
   def isLoading(): scala.Boolean = js.native
+  def isLoadingMainFrame(): scala.Boolean = js.native
   def isWaitingForResponse(): scala.Boolean = js.native
   /**
        * Loads the url in the webview, the url must contain the protocol prefix, e.g. the
@@ -2940,9 +2965,17 @@ trait WebviewTag
        */
   def setAudioMuted(muted: scala.Boolean): scala.Unit = js.native
   /**
+       * Sets the maximum and minimum layout-based (i.e. non-visual) zoom level.
+       */
+  def setLayoutZoomLevelLimits(minimumLevel: scala.Double, maximumLevel: scala.Double): scala.Unit = js.native
+  /**
        * Overrides the user agent for the guest page.
        */
   def setUserAgent(userAgent: java.lang.String): scala.Unit = js.native
+  /**
+       * Sets the maximum and minimum pinch-to-zoom level.
+       */
+  def setVisualZoomLevelLimits(minimumLevel: scala.Double, maximumLevel: scala.Double): scala.Unit = js.native
   /**
        * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
        * divided by 100, so 300% = 3.0.
@@ -2951,7 +2984,8 @@ trait WebviewTag
   /**
        * Changes the zoom level to the specified level. The original size is 0 and each
        * increment above or below represents zooming 20% larger or smaller to default
-       * limits of 300% and 50% of original size, respectively.
+       * limits of 300% and 50% of original size, respectively. The formula for this is
+       * scale := 1.2 ^ level.
        */
   def setZoomLevel(level: scala.Double): scala.Unit = js.native
   /**

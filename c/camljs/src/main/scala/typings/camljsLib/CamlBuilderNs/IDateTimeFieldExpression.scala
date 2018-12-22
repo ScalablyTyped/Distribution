@@ -25,7 +25,7 @@ trait IDateTimeFieldExpression extends js.Object {
   /** Checks whether the value of the field is equal to one of the specified values */
   /** Checks whether the value of the field is equal to one of the specified values.
               The datetime value should be defined in ISO 8601 format! */
-  def In(arrayOfValues: js.Array[java.lang.String | stdLib.Date]): IExpression = js.native
+  def In(arrayOfValues: js.Array[stdLib.Date | java.lang.String]): IExpression = js.native
   /** Checks whether the value of the field was not specified by user */
   def IsNotNull(): IExpression = js.native
   /** Checks whether the value of the field was specified by user */

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait whereStatic
   extends org.scalablytyped.runtime.Instantiable2[
       /* attr */ js.Object, 
-      (/* logic */ java.lang.String) | (/* logic */ js.Object), 
+      (/* logic */ js.Object) | (/* logic */ java.lang.String), 
       where
     ]
      with /**
@@ -33,7 +33,7 @@ trait whereStatic
 org.scalablytyped.runtime.Instantiable3[
       /* attr */ js.Object, 
       /* comparator */ java.lang.String, 
-      (/* logic */ java.lang.String) | (/* logic */ js.Object), 
+      (/* logic */ js.Object) | (/* logic */ java.lang.String), 
       where
     ]
 

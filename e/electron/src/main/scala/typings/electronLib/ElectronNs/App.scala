@@ -121,6 +121,26 @@ trait App extends EventEmitter {
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
+  def `addListener_remote-get-global`(
+    event: electronLib.electronLibStrings.`remote-get-global`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* globalName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  def `addListener_remote-require`(
+    event: electronLib.electronLibStrings.`remote-require`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* moduleName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
   def `addListener_second-instance`(
     event: electronLib.electronLibStrings.`second-instance`,
     listener: js.Function3[
@@ -198,6 +218,11 @@ trait App extends EventEmitter {
        */
   def enableMixedSandbox(): scala.Unit = js.native
   /**
+       * Enables full sandbox mode on the app. This method can only be called before app
+       * is ready.
+       */
+  def enableSandbox(): scala.Unit = js.native
+  /**
        * Exits immediately with exitCode. exitCode defaults to 0. All windows will be
        * closed immediately without asking user and the before-quit and will-quit events
        * will not be emitted.
@@ -236,6 +261,15 @@ trait App extends EventEmitter {
     callback: js.Function2[/* error */ nodeLib.Error, /* icon */ NativeImage, scala.Unit]
   ): scala.Unit = js.native
   def getGPUFeatureStatus(): GPUFeatureStatus = js.native
+  /**
+       * For infoType equal to complete: Promise is fulfilled with Object containing all
+       * the GPU Information as in chromium's GPUInfo object. This includes the version
+       * and driver information that's shown on chrome://gpu page. For infoType equal to
+       * basic: Promise is fulfilled with Object containing fewer attributes than when
+       * requested with complete. Here's an example of basic response: Using basic should
+       * be preferred if only basic information like vendorId or driverId is needed.
+       */
+  def getGPUInfo(infoType: java.lang.String): js.Promise[_] = js.native
   def getJumpListSettings(): JumpListSettings = js.native
   /**
        * To set the locale, you'll want to use a command line switch at app startup,
@@ -279,7 +313,7 @@ trait App extends EventEmitter {
   /**
        * Imports the certificate in pkcs12 format into the platform certificate store.
        * callback is called with the result of import operation, a value of 0 indicates
-       * success while any other value indicates failure according to chromium
+       * success while any other value indicates failure according to Chromium
        * net_error_list.
        */
   def importCertificate(options: ImportCertificateOptions, callback: js.Function1[/* result */ scala.Double, scala.Unit]): scala.Unit = js.native
@@ -330,7 +364,7 @@ trait App extends EventEmitter {
        * message in the error should be informative and tell you exactly what went wrong
        */
   def moveToApplicationsFolder(): scala.Boolean = js.native
-  // Docs: http://electron.atom.io/docs/api/app
+  // Docs: http://electronjs.org/docs/api/app
   /**
        * Emitted when Chrome's accessibility support changes. This event fires when
        * assistive technologies, such as screen readers, are enabled or disabled. See
@@ -526,6 +560,36 @@ trait App extends EventEmitter {
   def on_ready(
     event: electronLib.electronLibStrings.ready,
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
+  ): this.type = js.native
+  /**
+       * Emitted when remote.getGlobal() is called in the renderer process of
+       * webContents. Calling event.preventDefault() will prevent the global from being
+       * returned. Custom value can be returned by setting event.returnValue.
+       */
+  @JSName("on")
+  def `on_remote-get-global`(
+    event: electronLib.electronLibStrings.`remote-get-global`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* globalName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+       * Emitted when remote.require() is called in the renderer process of webContents.
+       * Calling event.preventDefault() will prevent the module from being returned.
+       * Custom value can be returned by setting event.returnValue.
+       */
+  @JSName("on")
+  def `on_remote-require`(
+    event: electronLib.electronLibStrings.`remote-require`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* moduleName */ java.lang.String, 
+      scala.Unit
+    ]
   ): this.type = js.native
   /**
        * This event will be emitted inside the primary instance of your application when
@@ -740,6 +804,26 @@ trait App extends EventEmitter {
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("once")
+  def `once_remote-get-global`(
+    event: electronLib.electronLibStrings.`remote-get-global`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* globalName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def `once_remote-require`(
+    event: electronLib.electronLibStrings.`remote-require`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* moduleName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
   def `once_second-instance`(
     event: electronLib.electronLibStrings.`second-instance`,
     listener: js.Function3[
@@ -951,6 +1035,26 @@ trait App extends EventEmitter {
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
+  def `removeListener_remote-get-global`(
+    event: electronLib.electronLibStrings.`remote-get-global`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* globalName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_remote-require`(
+    event: electronLib.electronLibStrings.`remote-require`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* moduleName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
   def `removeListener_second-instance`(
     event: electronLib.electronLibStrings.`second-instance`,
     listener: js.Function3[
@@ -1148,7 +1252,12 @@ trait App extends EventEmitter {
        */
   def show(): scala.Unit = js.native
   /**
-       * Start accessing a security scoped resource. With this method electron
+       * Show the about panel with the values defined in the app's .plist file or with
+       * the options set via app.setAboutPanelOptions(options).
+       */
+  def showAboutPanel(): scala.Unit = js.native
+  /**
+       * Start accessing a security scoped resource. With this method Electron
        * applications that are packaged for the Mac App Store may reach outside their
        * sandbox to access files chosen by the user. See Apple's documentation for a
        * description of how this system works.
@@ -1159,6 +1268,6 @@ trait App extends EventEmitter {
        * userInfo into its current userInfo dictionary.
        */
   def updateCurrentActivity(`type`: java.lang.String, userInfo: js.Any): scala.Unit = js.native
-  def whenReady(): js.Promise[_] = js.native
+  def whenReady(): js.Promise[scala.Unit] = js.native
 }
 

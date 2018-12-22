@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait WebSource extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/web-source
+  // Docs: http://electronjs.org/docs/api/structures/web-source
   var code: java.lang.String
   /**
        * Default is 1.

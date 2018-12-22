@@ -16,11 +16,11 @@ trait RedisStatic
      with org.scalablytyped.runtime.Instantiable0[ioredisLib.ioredisMod.IORedisNs.Redis]
      with org.scalablytyped.runtime.Instantiable2[
       (/* port */ scala.Double) | (/* host */ java.lang.String), 
-      (/* host */ java.lang.String) | (/* options */ ioredisLib.ioredisMod.IORedisNs.RedisOptions), 
+      (/* options */ ioredisLib.ioredisMod.IORedisNs.RedisOptions) | (/* host */ java.lang.String), 
       ioredisLib.ioredisMod.IORedisNs.Redis
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* port */ scala.Double) | (/* host */ java.lang.String) | (/* options */ ioredisLib.ioredisMod.IORedisNs.RedisOptions), 
+      (/* port */ scala.Double) | (/* options */ ioredisLib.ioredisMod.IORedisNs.RedisOptions) | (/* host */ java.lang.String), 
       ioredisLib.ioredisMod.IORedisNs.Redis
     ] {
   var Cluster: ioredisLib.ioredisMod.IORedisNs.Cluster = js.native

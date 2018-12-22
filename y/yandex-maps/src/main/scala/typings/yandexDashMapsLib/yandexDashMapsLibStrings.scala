@@ -61,6 +61,9 @@ object yandexDashMapsLibStrings {
   sealed trait district extends js.Object
   
   @js.native
+  sealed trait evenOdd extends js.Object
+  
+  @js.native
   sealed trait fullscreenControl extends js.Object
   
   @js.native
@@ -134,6 +137,9 @@ object yandexDashMapsLibStrings {
   
   @js.native
   sealed trait metro extends js.Object
+  
+  @js.native
+  sealed trait nonZero extends js.Object
   
   @js.native
   sealed trait none extends js.Object
@@ -231,6 +237,7 @@ object yandexDashMapsLibStrings {
   def `default#silent`: `default#silent` = "default#silent".asInstanceOf[`default#silent`]
   def `default#transparent`: `default#transparent` = "default#transparent".asInstanceOf[`default#transparent`]
   def district: district = "district".asInstanceOf[district]
+  def evenOdd: evenOdd = "evenOdd".asInstanceOf[evenOdd]
   def fullscreenControl: fullscreenControl = "fullscreenControl".asInstanceOf[fullscreenControl]
   def geolocationControl: geolocationControl = "geolocationControl".asInstanceOf[geolocationControl]
   def hidden: hidden = "hidden".asInstanceOf[hidden]
@@ -256,6 +263,7 @@ object yandexDashMapsLibStrings {
   def medium: medium = "medium".asInstanceOf[medium]
   def mediumMapDefaultSet: mediumMapDefaultSet = "mediumMapDefaultSet".asInstanceOf[mediumMapDefaultSet]
   def metro: metro = "metro".asInstanceOf[metro]
+  def nonZero: nonZero = "nonZero".asInstanceOf[nonZero]
   def none: none = "none".asInstanceOf[none]
   def pedestrian: pedestrian = "pedestrian".asInstanceOf[pedestrian]
   def right: right = "right".asInstanceOf[right]

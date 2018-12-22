@@ -18,7 +18,7 @@ trait Validator extends js.Object {
        * @description
        * Method that performs synchronous validation against the provided control.
        *
-       * @param c The control to validate against.
+       * @param control The control to validate against.
        *
        * @returns A map of validation errors if validation fails,
        * otherwise null.

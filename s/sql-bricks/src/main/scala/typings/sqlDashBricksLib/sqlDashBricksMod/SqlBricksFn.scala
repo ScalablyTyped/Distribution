@@ -260,7 +260,7 @@ trait SqlBricksFn extends js.Object {
      */
   def select(columns: (java.lang.String | sqlDashBricksLib.sqlDashBricksMod.SqlBricksNs.SelectStatement)*): sqlDashBricksLib.sqlDashBricksMod.SqlBricksNs.SelectStatement = js.native
   def select(
-    columns: js.Array[java.lang.String | sqlDashBricksLib.sqlDashBricksMod.SqlBricksNs.SelectStatement]
+    columns: js.Array[sqlDashBricksLib.sqlDashBricksMod.SqlBricksNs.SelectStatement | java.lang.String]
   ): sqlDashBricksLib.sqlDashBricksMod.SqlBricksNs.SelectStatement = js.native
   /**
      * Returns a new UPDATE statement. It can be used with or without the new operator.

@@ -84,6 +84,15 @@ object jasmineLibMembers extends js.Object {
    */
   def expect[T](actual: stdLib.ArrayLike[T]): jasmineLib.jasmineNs.ArrayLikeMatchers[T] = js.native
   /**
+   * Create an asynchronous expectation for a spec. Note that the matchers
+   * that are provided by an asynchronous expectation all return promises
+   * which must be either returned from the spec or waited for using `await`
+   * in order for Jasmine to associate them with the correct spec.
+   * @checkReturnValue see https://tsetse.info/check-return-value
+   * @param actual - Actual computed value to test expectations against.
+   */
+  def expectAsync[T, U](actual: js.Promise[T]): jasmineLib.jasmineNs.AsyncMatchers[T, U] = js.native
+  /**
    * Explicitly mark a spec as failed.
    * @param e
    */
@@ -171,6 +180,11 @@ object jasmineLibMembers extends js.Object {
    * @param method The name of the method to replace with a Spy.
    */
   def spyOn[T](`object`: T, method: java.lang.String): jasmineLib.jasmineNs.Spy = js.native
+  /**
+   * Installs spies on all writable and configurable properties of an object.
+   * @param object The object upon which to install the Spies
+   */
+  def spyOnAllFunctions(`object`: js.Object): jasmineLib.jasmineNs.Spy = js.native
   /**
    * Install a spy on a property onto an existing object.
    * @param object The object upon which to install the Spy

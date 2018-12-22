@@ -23,7 +23,7 @@ class GUI () extends js.Object {
   var useLocalStorage: scala.Boolean = js.native
   var width: scala.Double = js.native
   def add(target: js.Object, propName: java.lang.String): GUIController = js.native
-  def add(target: js.Object, propName: java.lang.String, items: js.Array[java.lang.String | scala.Double]): GUIController = js.native
+  def add(target: js.Object, propName: java.lang.String, items: js.Array[scala.Double | java.lang.String]): GUIController = js.native
   def add(target: js.Object, propName: java.lang.String, items: js.Object): GUIController = js.native
   def add(target: js.Object, propName: java.lang.String, min: scala.Double): GUIController = js.native
   def add(target: js.Object, propName: java.lang.String, min: scala.Double, max: scala.Double): GUIController = js.native

@@ -30,20 +30,20 @@ object ioDashTsModMembers extends js.Object {
   def appendContext(c: Context, key: java.lang.String, `type`: Decoder[_, _]): Context = js.native
   def array[RT /* <: Mixed */](`type`: RT): ArrayType[
     RT, 
-    ioDashTsLib.ioDashTsMod.Global.Array[
+    fpDashTsLib.libArrayMod.Global.Array[
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
     ], 
-    ioDashTsLib.ioDashTsMod.Global.Array[
+    fpDashTsLib.libArrayMod.Global.Array[
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_O))) */js.Any
     ], 
     _
   ] = js.native
   def array[RT /* <: Mixed */](`type`: RT, name: java.lang.String): ArrayType[
     RT, 
-    ioDashTsLib.ioDashTsMod.Global.Array[
+    fpDashTsLib.libArrayMod.Global.Array[
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
     ], 
-    ioDashTsLib.ioDashTsMod.Global.Array[
+    fpDashTsLib.libArrayMod.Global.Array[
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_O))) */js.Any
     ], 
     _
@@ -187,18 +187,18 @@ object ioDashTsModMembers extends js.Object {
   def strict[P /* <: Props */](props: P): StrictType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
   def strict[P /* <: Props */](props: P, name: java.lang.String): StrictType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
   def success[T](value: T): fpDashTsLib.libEitherMod.Either[Errors, T] = js.native
-  def taggedUnion[Tag /* <: java.lang.String */, RTS /* <: ioDashTsLib.ioDashTsMod.Global.Array[Tagged[Tag, _, _]] */](tag: Tag, types: RTS): TaggedUnionType[
+  def taggedUnion[Tag /* <: java.lang.String */, RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Tagged[Tag, _, _]] */](tag: Tag, types: RTS): TaggedUnionType[
     Tag, 
     RTS, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_A))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_O))) */js.Any, 
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_A))) */js.Any, 
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_O))) */js.Any, 
     _
   ] = js.native
-  def taggedUnion[Tag /* <: java.lang.String */, RTS /* <: ioDashTsLib.ioDashTsMod.Global.Array[Tagged[Tag, _, _]] */](tag: Tag, types: RTS, name: java.lang.String): TaggedUnionType[
+  def taggedUnion[Tag /* <: java.lang.String */, RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Tagged[Tag, _, _]] */](tag: Tag, types: RTS, name: java.lang.String): TaggedUnionType[
     Tag, 
     RTS, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_A))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_O))) */js.Any, 
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_A))) */js.Any, 
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_O))) */js.Any, 
     _
   ] = js.native
   def tuple[A /* <: Mixed */](types: js.Array[A]): TupleType[js.Array[A], js.Array[TypeOf[A]], js.Array[OutputOf[A]], mixed] = js.native
@@ -253,16 +253,16 @@ object ioDashTsModMembers extends js.Object {
   ] = js.native
   def `type`[P /* <: Props */](props: P): InterfaceType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
   def `type`[P /* <: Props */](props: P, name: java.lang.String): InterfaceType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
-  def union[RTS /* <: ioDashTsLib.ioDashTsMod.Global.Array[Mixed] */](types: RTS): UnionType[
+  def union[RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Mixed] */](types: RTS): UnionType[
     RTS, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_A))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_O))) */js.Any, 
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_A))) */js.Any, 
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_O))) */js.Any, 
     _
   ] = js.native
-  def union[RTS /* <: ioDashTsLib.ioDashTsMod.Global.Array[Mixed] */](types: RTS, name: java.lang.String): UnionType[
+  def union[RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Mixed] */](types: RTS, name: java.lang.String): UnionType[
     RTS, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_A))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_O))) */js.Any, 
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_A))) */js.Any, 
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_O))) */js.Any, 
     _
   ] = js.native
 }

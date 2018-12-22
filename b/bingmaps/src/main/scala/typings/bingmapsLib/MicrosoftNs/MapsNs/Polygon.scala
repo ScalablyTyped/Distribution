@@ -14,14 +14,14 @@ class Polygon protected () extends IPrimitive {
            * or an array of Location arrays for advanced polygon (multi-polygon, polygon with holes, or combination of polygons).
            * @param options Options used to customize polygon.
            */
-  def this(rings: js.Array[Location | js.Array[Location]]) = this()
+  def this(rings: js.Array[js.Array[Location] | Location]) = this()
   /**
            * @constructor
            * @param rings A Location array for basic polygon with single outer perimeter,
            * or an array of Location arrays for advanced polygon (multi-polygon, polygon with holes, or combination of polygons).
            * @param options Options used to customize polygon.
            */
-  def this(rings: js.Array[Location | js.Array[Location]], options: IPolygonOptions) = this()
+  def this(rings: js.Array[js.Array[Location] | Location], options: IPolygonOptions) = this()
   /**
            * Gets the css cursor value when the primitive has events on it.
            * @returns css cursor string when primitive has events on it.
@@ -89,6 +89,6 @@ class Polygon protected () extends IPrimitive {
            * Sets rings of the polygon.
            * @param rings A Location[][] where each Location[] defines a ring of the polygon.
            */
-  def setRings(rings: js.Array[Location | js.Array[Location]]): scala.Unit = js.native
+  def setRings(rings: js.Array[js.Array[Location] | Location]): scala.Unit = js.native
 }
 

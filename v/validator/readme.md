@@ -1,5 +1,5 @@
 ```
-// Type definitions for validator.js v9.4
+// Type definitions for validator.js v10.9.0
 // Project: https://github.com/chriso/validator.js
 // Definitions by: tgfjt <https://github.com/tgfjt>
 //                 Ilya Mochalov <https://github.com/chrootsu>

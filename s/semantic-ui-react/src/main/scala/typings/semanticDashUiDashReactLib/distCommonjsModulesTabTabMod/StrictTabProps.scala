@@ -31,7 +31,7 @@ trait StrictTabProps extends js.Object {
      */
   var onTabChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ TabProps, 
       scala.Unit
     ]

@@ -123,6 +123,7 @@ package object reactDashNativeMod {
   type NativeComponent = NativeMethodsMixinStatic
   type NativeEventEmitter = EventEmitter
   type NativeMethodsMixin = NativeMethodsMixinStatic
+  type NativeSyntheticEvent[T] = reactLib.reactMod.ReactNs.BaseSyntheticEvent[T, reactDashNativeLib.NodeHandle, reactDashNativeLib.NodeHandle]
   type NavigatorIOSProperties = NavigatorIOSProps
   type NetInfo = NetInfoStatic
   type PanResponder = PanResponderStatic

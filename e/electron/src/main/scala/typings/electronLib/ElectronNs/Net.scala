@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Net extends EventEmitter {
-  // Docs: http://electron.atom.io/docs/api/net
+  // Docs: http://electronjs.org/docs/api/net
   /**
        * Creates a ClientRequest instance using the provided options which are directly
        * forwarded to the ClientRequest constructor. The net.request method would be used
@@ -15,7 +15,7 @@ trait Net extends EventEmitter {
        * protocol scheme in the options object.
        */
   def request(options: java.lang.String): ClientRequest = js.native
-  // Docs: http://electron.atom.io/docs/api/net
+  // Docs: http://electronjs.org/docs/api/net
   /**
        * Creates a ClientRequest instance using the provided options which are directly
        * forwarded to the ClientRequest constructor. The net.request method would be used

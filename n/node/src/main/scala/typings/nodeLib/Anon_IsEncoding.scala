@@ -49,7 +49,7 @@ org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding 
      * @deprecated since v10.0.0 - Use `Buffer.from(buffer)` instead.
      */
 org.scalablytyped.runtime.Instantiable1[
-      (/* str */ java.lang.String) | (/* size */ scala.Double) | (/* array */ stdLib.Uint8Array) | (/* arrayBuffer */ stdLib.ArrayBuffer) | (/* arrayBuffer */ SharedArrayBuffer) | (/* array */ js.Array[js.Any]) | (/* buffer */ Buffer), 
+      (/* array */ js.Array[js.Any]) | (/* arrayBuffer */ stdLib.ArrayBuffer) | (/* buffer */ Buffer) | (/* size */ scala.Double) | (/* arrayBuffer */ SharedArrayBuffer) | (/* str */ java.lang.String) | (/* array */ stdLib.Uint8Array), 
       Buffer
     ] {
   /**

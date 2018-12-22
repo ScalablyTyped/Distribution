@@ -35,6 +35,8 @@ object ConfigurationNs extends js.Object {
   def getRulesDirectories(directories: java.lang.String, relativeTo: java.lang.String): js.Array[java.lang.String] = js.native
   def getRulesDirectories(directories: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def getRulesDirectories(directories: js.Array[java.lang.String], relativeTo: java.lang.String): js.Array[java.lang.String] = js.native
+  def isFileExcluded(filepath: java.lang.String): scala.Boolean = js.native
+  def isFileExcluded(filepath: java.lang.String, configFile: tslintLib.libConfigurationMod.IConfigurationFile): scala.Boolean = js.native
   def loadConfigurationFromPath(): tslintLib.libConfigurationMod.IConfigurationFile = js.native
   def loadConfigurationFromPath(configFilePath: java.lang.String): tslintLib.libConfigurationMod.IConfigurationFile = js.native
   def loadConfigurationFromPath(configFilePath: java.lang.String, _originalFilePath: java.lang.String): tslintLib.libConfigurationMod.IConfigurationFile = js.native

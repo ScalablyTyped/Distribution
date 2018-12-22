@@ -47,10 +47,10 @@ object distCoreModMembers extends js.Object {
   def only[T](): js.UndefOr[T] = js.native
   def only[T](iterable: js.Array[T]): js.UndefOr[T] = js.native
   def only[T](iterable: stdLib.Iterable[T]): js.UndefOr[T] = js.native
-  def pipe[T, U](result: T, next: js.Function1[(/* value */ T) | (/* value */ js.UndefOr[T]), U | js.Promise[U]]): U | js.Promise[U] = js.native
+  def pipe[T, U](result: T, next: js.Function1[(/* value */ T) | (/* value */ js.UndefOr[T]), js.Promise[U] | U]): U | js.Promise[U] = js.native
   def pipe[T, U](
     result: js.Promise[T],
-    next: js.Function1[(/* value */ T) | (/* value */ js.UndefOr[T]), U | js.Promise[U]]
+    next: js.Function1[(/* value */ T) | (/* value */ js.UndefOr[T]), js.Promise[U] | U]
   ): U | js.Promise[U] = js.native
   def pipe[T, U](
     result: js.UndefOr[scala.Nothing],

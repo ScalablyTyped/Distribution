@@ -22,8 +22,8 @@ object whichModMembers extends js.Object {
     cmd: java.lang.String,
     options: (whichLib.whichMod.whichNs.AsyncOptions with (whichLib.whichMod.whichNs.OptionsAll | whichLib.whichMod.whichNs.OptionsFirst)) | whichLib.whichMod.whichNs.AsyncOptions,
     cb: js.Function2[
-      /* err */ stdLib.Error | scala.Null, 
-      /* path */ /* paths */ js.UndefOr[java.lang.String | js.Array[java.lang.String]], 
+      stdLib.Error | scala.Null, 
+      /* path */ /* paths */ js.UndefOr[js.Array[java.lang.String] | java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native

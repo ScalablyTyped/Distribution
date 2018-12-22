@@ -1,5 +1,5 @@
 ```
-// Type definitions for react-navigation 2.13
+// Type definitions for react-navigation 3.0
 // Project: https://github.com/react-navigation/react-navigation
 // Definitions by: Huhuanming <https://github.com/huhuanming>
 //                 mhcgrq <https://github.com/mhcgrq>
@@ -30,10 +30,12 @@
 //                 Jason Killian <https://github.com/jkillian>
 //                 Jeroen Vervaeke <https://github.com/jeroenvervaeke>
 //                 Fellipe Chagas <https://github.com/chagasaway>
+//                 Deniss Borisovs <https://github.com/denissb>
+//                 Kenneth Skovhus <https://github.com/skovhus>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 /**
- * Reference: https://github.com/react-navigation/react-navigation/tree/a37473c5e4833f48796ee6c7c9cb4a8ac49d9c06
+ * Reference: https://github.com/react-navigation/react-navigation/tree/4fb6b163acc4e57bb9d0be169b90b07a7d9bf4a8
  *
  * NOTE: Please update the commit/link above when updating to a new Flow
  * react-navigation/flow/react-navigation.js reference, so we can conveniently just look at diffs on

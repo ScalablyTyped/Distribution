@@ -50,7 +50,8 @@ class BaseExtendedPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   /* protected */ def onInputChange(value: java.lang.String): scala.Unit = js.native
   /* protected */ def onInputClick(
     ev: reactLib.reactMod.ReactNs.MouseEvent[
-      reactLib.HTMLInputElement | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill
+      reactLib.HTMLInputElement | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill, 
+      reactLib.NativeMouseEvent
     ]
   ): scala.Unit = js.native
   /* protected */ def onInputFocus(

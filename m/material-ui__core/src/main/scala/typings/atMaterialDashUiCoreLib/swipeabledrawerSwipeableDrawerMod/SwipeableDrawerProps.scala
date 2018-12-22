@@ -20,7 +20,7 @@ trait SwipeableDrawerProps extends js.Object {
   var onOpen_Original: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = js.native
   var open: scala.Boolean = js.native
   var swipeAreaWidth: js.UndefOr[scala.Double] = js.native
-  def onClose(event: reactLib.reactMod.ReactNs.SyntheticEvent[js.Object]): scala.Unit = js.native
-  def onOpen(event: reactLib.reactMod.ReactNs.SyntheticEvent[js.Object]): scala.Unit = js.native
+  def onClose(event: reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event]): scala.Unit = js.native
+  def onOpen(event: reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event]): scala.Unit = js.native
 }
 

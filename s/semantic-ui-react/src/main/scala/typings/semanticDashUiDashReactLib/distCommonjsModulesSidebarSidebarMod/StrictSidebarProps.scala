@@ -33,7 +33,7 @@ trait StrictSidebarProps extends js.Object {
      */
   var onHidden: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
@@ -46,7 +46,7 @@ trait StrictSidebarProps extends js.Object {
      */
   var onHide: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
@@ -59,7 +59,7 @@ trait StrictSidebarProps extends js.Object {
      */
   var onShow: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]
@@ -72,7 +72,7 @@ trait StrictSidebarProps extends js.Object {
      */
   var onVisible: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SidebarProps, 
       scala.Unit
     ]

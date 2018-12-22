@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MenuItem protected ()
   extends electronLib.ElectronNs.MenuItem {
-  // Docs: http://electron.atom.io/docs/api/menu-item
+  // Docs: http://electronjs.org/docs/api/menu-item
   def this(options: electronLib.ElectronNs.MenuItemConstructorOptions) = this()
 }
 

@@ -9,6 +9,30 @@ import scala.scalajs.js.annotation._
 trait MenuItemConstructorOptions extends js.Object {
   var accelerator: js.UndefOr[Accelerator] = js.undefined
   /**
+       * Inserts this item after the item with the specified label. If the referenced
+       * item doesn't exist the item will be inserted at the end of the menu.
+       */
+  var after: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+       * Provides a means for a single context menu to declare the placement of their
+       * containing group after the containing group of the item with the specified
+       * label.
+       */
+  var afterGroupContaining: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+       * Inserts this item before the item with the specified label. If the referenced
+       * item doesn't exist the item will be inserted at the end of the menu. Also
+       * implies that the menu item in question should be placed in the same “group” as
+       * the item.
+       */
+  var before: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+       * Provides a means for a single context menu to declare the placement of their
+       * containing group before the containing group of the item with the specified
+       * label.
+       */
+  var beforeGroupContaining: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
        * Should only be specified for checkbox or radio type menu items.
        */
   var checked: js.UndefOr[scala.Boolean] = js.undefined
@@ -36,10 +60,10 @@ trait MenuItemConstructorOptions extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var label: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * This field allows fine-grained definition of the specific location within a
-       * given menu.
+       * If false, the accelerator won't be registered with the system, but it will still
+       * be displayed. Defaults to true.
        */
-  var position: js.UndefOr[java.lang.String] = js.undefined
+  var registerAccelerator: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Define the action of the menu item, when specified the click property will be
        * ignored. See .

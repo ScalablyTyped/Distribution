@@ -37,7 +37,7 @@ class Inspector protected () extends js.Object {
   def SaveFormRegion(Page: js.Any, FileName: java.lang.String): scala.Unit = js.native
   def SetControlItemProperty(Control: js.Any, PropertyName: java.lang.String): scala.Unit = js.native
   def SetCurrentFormPage(PageName: java.lang.String): scala.Unit = js.native
-  def SetSchedulingStartTime(Start: stdLib.VarDate): scala.Unit = js.native
+  def SetSchedulingStartTime(Start: activexDashInteropLib.VarDate): scala.Unit = js.native
   def ShowFormPage(PageName: java.lang.String): scala.Unit = js.native
 }
 

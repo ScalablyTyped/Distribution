@@ -12,6 +12,10 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var alexaforbusiness: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.apiVersion] = js.undefined
   var amplify: js.UndefOr[awsDashSdkLib.clientsAmplifyMod.AmplifyNs.apiVersion] = js.undefined
   var apigateway: js.UndefOr[awsDashSdkLib.clientsApigatewayMod.APIGatewayNs.apiVersion] = js.undefined
+  var apigatewaymanagementapi: js.UndefOr[
+    awsDashSdkLib.clientsApigatewaymanagementapiMod.ApiGatewayManagementApiNs.apiVersion
+  ] = js.undefined
+  var apigatewayv2: js.UndefOr[awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.apiVersion] = js.undefined
   var applicationautoscaling: js.UndefOr[
     awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.apiVersion
   ] = js.undefined

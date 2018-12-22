@@ -1,8 +1,5 @@
 ```
 /**
- * Encapsulates options passed into client.flush() function
- */
-/**
  * Data struct to contain only C section with custom fields.
  */
 /**
@@ -23,5 +20,8 @@
 /**
  * Converts the user-friendly enumeration TelemetryType to the underlying schema baseType value
  * @param type Type to convert to BaseData string
+ */
+/**
+ * Encapsulates options passed into client.flush() function
  */
 ```

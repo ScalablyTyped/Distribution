@@ -33,7 +33,7 @@ trait ProtractorHttpMock extends js.Object {
            * @param plugins An array of NPM modules as strings.
            * @param skipDefaults Set true to skip loading of default mocks.
            */
-  def apply(mocks: js.Array[java.lang.String], plugins: js.Array[java.lang.String | Plugin]): ProtractorHttpMock = js.native
+  def apply(mocks: js.Array[java.lang.String], plugins: js.Array[Plugin | java.lang.String]): ProtractorHttpMock = js.native
   /**
            * Instantiate mock modules from files. This must be done before the browser connects.
            *
@@ -50,7 +50,7 @@ trait ProtractorHttpMock extends js.Object {
            */
   def apply(
     mocks: js.Array[java.lang.String],
-    plugins: js.Array[java.lang.String | Plugin],
+    plugins: js.Array[Plugin | java.lang.String],
     skipDefaults: scala.Boolean
   ): ProtractorHttpMock = js.native
   /**

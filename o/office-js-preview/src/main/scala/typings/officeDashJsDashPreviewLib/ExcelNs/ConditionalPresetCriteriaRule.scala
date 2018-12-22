@@ -1,0 +1,24 @@
+package typings
+package officeDashJsDashPreviewLib.ExcelNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+     *
+     * Represents the Preset Criteria Conditional Format Rule
+     *
+     * [Api set: ExcelApi 1.6]
+     */
+
+trait ConditionalPresetCriteriaRule extends js.Object {
+  /**
+           *
+           * The criterion of the conditional format.
+           *
+           * [Api set: ExcelApi 1.6]
+           */
+  var criterion: ConditionalFormatPresetCriterion | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Blanks | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NonBlanks | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Errors | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NonErrors | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Yesterday | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Today | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Tomorrow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LastSevenDays | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LastWeek | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThisWeek | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NextWeek | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LastMonth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThisMonth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NextMonth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AboveAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BelowAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EqualOrAboveAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EqualOrBelowAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.OneStdDevAboveAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.OneStdDevBelowAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TwoStdDevAboveAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TwoStdDevBelowAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThreeStdDevAboveAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThreeStdDevBelowAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.UniqueValues | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DuplicateValues
+}
+

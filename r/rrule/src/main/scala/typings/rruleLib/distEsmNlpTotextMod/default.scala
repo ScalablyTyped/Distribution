@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("rrule/dist/esm/nlp/totext", JSImport.Default)
 @js.native
 class default protected () extends ToText {
-  def this(rrule: rruleLib.distEsmMod.default) = this()
-  def this(rrule: rruleLib.distEsmMod.default, gettext: GetText) = this()
-  def this(rrule: rruleLib.distEsmMod.default, gettext: GetText, language: rruleLib.distEsmNlpI18nMod.Language) = this()
+  def this(rrule: js.Any) = this()
+  def this(rrule: js.Any, gettext: GetText) = this()
+  def this(rrule: js.Any, gettext: GetText, language: rruleLib.distEsmNlpI18nMod.Language) = this()
 }
 
 @JSImport("rrule/dist/esm/nlp/totext", JSImport.Default)
@@ -22,6 +22,6 @@ object default extends js.Object {
        * @param {RRule} rrule
        * @return {Boolean}
        */
-  def isFullyConvertible(rrule: rruleLib.distEsmMod.default): scala.Boolean = js.native
+  def isFullyConvertible(rrule: js.Any): scala.Boolean = js.native
 }
 

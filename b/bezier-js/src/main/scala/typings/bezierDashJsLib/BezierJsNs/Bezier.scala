@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("BezierJs.Bezier")
 @js.native
 class Bezier protected () extends js.Object {
-  def this(points: js.Array[Point | scala.Double]) = this()
+  def this(points: js.Array[scala.Double | Point]) = this()
   def this(p1: Point, p2: Point, p3: Point) = this()
   def this(p1: Point, p2: Point, p3: Point, p4: Point) = this()
   def this(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double, x3: scala.Double, y3: scala.Double) = this()

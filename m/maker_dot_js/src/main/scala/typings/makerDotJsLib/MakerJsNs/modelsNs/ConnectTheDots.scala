@@ -53,7 +53,7 @@ class ConnectTheDots protected ()
            * @param isClosed Flag to specify if last point should connect to the first point.
            * @param points Array of IPoints.
            */
-  def this(isClosed: scala.Boolean, coords: js.Array[makerDotJsLib.MakerJsNs.IPoint | scala.Double]) = this()
+  def this(isClosed: scala.Boolean, coords: js.Array[scala.Double | makerDotJsLib.MakerJsNs.IPoint]) = this()
   /**
            * Create a model by connecting points designated in a string. The model will be 'closed' - i.e. the last point will connect to the first point.
            *

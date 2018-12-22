@@ -32,7 +32,7 @@ class OAuth protected () extends js.Object {
   var _version: java.lang.String = js.native
   /* protected */ def _buildAuthorizationHeaders(orderedParameters: js.Array[js.Array[java.lang.String]]): java.lang.String = js.native
   /* protected */ def _createClient(
-    port: js.UndefOr[java.lang.String | scala.Double],
+    port: js.UndefOr[scala.Double | java.lang.String],
     hostname: js.UndefOr[java.lang.String],
     method: js.UndefOr[java.lang.String],
     path: js.UndefOr[java.lang.String],

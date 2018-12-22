@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 // Command /////////////////////////////////////////////
 
 trait KoliteCommand extends js.Object {
-  var canExecute: js.Any
+  var canExecute: knockoutLib.KnockoutComputed[scala.Boolean]
   def execute(args: js.Any*): js.Any
 }
 

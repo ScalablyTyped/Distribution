@@ -1045,6 +1045,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
     scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var strokeWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties]
   var tabSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var tableLayout: js.UndefOr[
     antdLib.antdLibStrings.fixed | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
@@ -1093,7 +1094,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var textUnderlinePosition: js.UndefOr[java.lang.String] = js.undefined
   var top: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var touchAction: js.UndefOr[java.lang.String] = js.undefined
-  var transform: js.UndefOr[java.lang.String] = js.undefined
+  var transform: js.UndefOr[java.lang.String]
   var transformBox: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`border-box` | antdLib.antdLibStrings.`fill-box` | antdLib.antdLibStrings.`view-box`
   ] = js.undefined

@@ -19,7 +19,7 @@ trait SelectStatement extends Statement {
   def crossJoin(tbl: java.lang.String, criteria: WhereExpression): SelectStatement = js.native
   def crossJoin(tbl: java.lang.String, onCol1: java.lang.String, onCol2: java.lang.String): SelectStatement = js.native
   def distinct(columns: (java.lang.String | SelectStatement)*): SelectStatement = js.native
-  def distinct(columns: js.Array[java.lang.String | SelectStatement]): SelectStatement = js.native
+  def distinct(columns: js.Array[SelectStatement | java.lang.String]): SelectStatement = js.native
   def except(stmt: Statement*): SelectStatement = js.native
   def forUpdate(tbls: java.lang.String*): SelectStatement = js.native
   /**
@@ -162,7 +162,7 @@ trait SelectStatement extends Statement {
        * Appends additional columns to an existing query.
        * @param columns can be passed as multiple arguments, a comma-delimited string or an array.
        */
-  def select(columns: js.Array[java.lang.String | SelectStatement]): SelectStatement = js.native
+  def select(columns: js.Array[SelectStatement | java.lang.String]): SelectStatement = js.native
   def union(stmt: Statement*): SelectStatement = js.native
   /**
        * Joins using USING instead of ON.

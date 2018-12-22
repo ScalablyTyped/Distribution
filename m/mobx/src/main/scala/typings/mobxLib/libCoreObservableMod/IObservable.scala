@@ -18,6 +18,8 @@ trait IObservable extends IDepTreeNode {
   var lastAccessedBy: scala.Double
   var lowestObserverState: mobxLib.libCoreDerivationMod.IDerivationState
   var observers: stdLib.Set[mobxLib.libCoreDerivationMod.IDerivation]
+  var onBecomeObservedListeners: js.UndefOr[stdLib.Set[mobxLib.libUtilsUtilsMod.Lambda]]
+  var onBecomeUnobservedListeners: js.UndefOr[stdLib.Set[mobxLib.libUtilsUtilsMod.Lambda]]
   def onBecomeObserved(): scala.Unit
   def onBecomeUnobserved(): scala.Unit
 }

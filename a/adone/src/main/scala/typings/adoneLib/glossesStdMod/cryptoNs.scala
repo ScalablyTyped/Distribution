@@ -931,9 +931,9 @@ object cryptoNs extends js.Object {
       adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem
     ],
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
-      (/* publicKey */ java.lang.String) | (/* publicKey */ nodeLib.Buffer), 
-      (/* privateKey */ java.lang.String) | (/* privateKey */ nodeLib.Buffer), 
+      nodeLib.Error | scala.Null, 
+      (/* publicKey */ nodeLib.Buffer) | (/* publicKey */ java.lang.String), 
+      (/* privateKey */ nodeLib.Buffer) | (/* privateKey */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -944,9 +944,9 @@ object cryptoNs extends js.Object {
       adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem
     ],
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
-      (/* publicKey */ java.lang.String) | (/* publicKey */ nodeLib.Buffer), 
-      (/* privateKey */ java.lang.String) | (/* privateKey */ nodeLib.Buffer), 
+      nodeLib.Error | scala.Null, 
+      (/* publicKey */ nodeLib.Buffer) | (/* publicKey */ java.lang.String), 
+      (/* privateKey */ nodeLib.Buffer) | (/* privateKey */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -957,9 +957,9 @@ object cryptoNs extends js.Object {
       adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem
     ],
     callback: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
-      (/* publicKey */ java.lang.String) | (/* publicKey */ nodeLib.Buffer), 
-      (/* privateKey */ java.lang.String) | (/* privateKey */ nodeLib.Buffer), 
+      nodeLib.Error | scala.Null, 
+      (/* publicKey */ nodeLib.Buffer) | (/* publicKey */ java.lang.String), 
+      (/* privateKey */ nodeLib.Buffer) | (/* privateKey */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native

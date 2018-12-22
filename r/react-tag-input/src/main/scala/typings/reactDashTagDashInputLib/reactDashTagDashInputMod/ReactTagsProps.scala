@@ -12,6 +12,7 @@ trait ReactTagsProps extends js.Object {
   var allowUnique: js.UndefOr[scala.Boolean] = js.undefined
   var autocomplete: js.UndefOr[scala.Boolean | reactDashTagDashInputLib.reactDashTagDashInputLibNumbers.`1`] = js.undefined
   var autofocus: js.UndefOr[scala.Boolean] = js.undefined
+  var classNames: js.UndefOr[reactDashTagDashInputLib.Anon_Tag] = js.undefined
   var delimiters: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var handleDrag: js.UndefOr[
     js.Function3[

@@ -12,7 +12,7 @@ trait MatrixStatic extends js.Object {
            *
            * @param {any} elements The elements.
            */
-  def Diagonal(elements: js.Array[scala.Double | js.Array[scala.Double]]): sylvesterLib.Matrix = js.native
+  def Diagonal(elements: js.Array[js.Array[scala.Double] | scala.Double]): sylvesterLib.Matrix = js.native
   /**
            * Diagonal matrix - all off-diagonal elements are zero
            *
@@ -67,7 +67,7 @@ trait MatrixStatic extends js.Object {
            *
            * @param {Array<number>|Array<Array<number>>|Vector|Matrix} elements The elements.
            */
-  def create(elements: js.Array[scala.Double | js.Array[scala.Double]]): sylvesterLib.Matrix = js.native
+  def create(elements: js.Array[js.Array[scala.Double] | scala.Double]): sylvesterLib.Matrix = js.native
   /**
            * Constructor function.
            *

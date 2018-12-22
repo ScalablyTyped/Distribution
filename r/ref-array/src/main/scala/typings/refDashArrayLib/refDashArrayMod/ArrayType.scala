@@ -15,7 +15,7 @@ trait ArrayType[T]
       refDashArrayLib.Anon_I[T]
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* length */ scala.Double) | (/* data */ js.Array[scala.Double]) | (/* data */ nodeLib.Buffer), 
+      (/* data */ js.Array[scala.Double]) | (/* data */ nodeLib.Buffer) | (/* length */ scala.Double), 
       refDashArrayLib.Anon_I[T]
     ] {
   var BYTES_PER_ELEMENT: scala.Double = js.native

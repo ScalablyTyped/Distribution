@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "protobufjs__fetch"
-version := "1.1.0-407e0b"
+version := "1.1.0-c7db0b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-d3e3b2",
-  "org.scalablytyped" %%% "protobufjs__inquire" % "1.1.0-cf41d5",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
+  "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-eb4ed7",
+  "org.scalablytyped" %%% "protobufjs__inquire" % "1.1.0-db95a2",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

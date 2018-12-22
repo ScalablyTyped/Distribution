@@ -11,7 +11,7 @@ trait EventEmitter extends js.Object {
   def on_changed(
     `type`: web3Lib.web3LibStrings.changed,
     handler: js.Function1[
-      stdLib.Error | TransactionReceipt | java.lang.String | (/* receipt */ EventLog), 
+      stdLib.Error | (/* receipt */ EventLog) | java.lang.String | TransactionReceipt, 
       scala.Unit
     ]
   ): EventEmitter = js.native
@@ -19,14 +19,14 @@ trait EventEmitter extends js.Object {
   def on_data(
     `type`: web3Lib.web3LibStrings.data,
     handler: js.Function1[
-      stdLib.Error | TransactionReceipt | java.lang.String | (/* event */ EventLog), 
+      stdLib.Error | (/* event */ EventLog) | java.lang.String | TransactionReceipt, 
       scala.Unit
     ]
   ): EventEmitter = js.native
   @JSName("on")
   def on_error(
     `type`: web3Lib.web3LibStrings.error,
-    handler: js.Function1[stdLib.Error | TransactionReceipt | java.lang.String, scala.Unit]
+    handler: js.Function1[(/* error */ stdLib.Error) | java.lang.String | TransactionReceipt, scala.Unit]
   ): EventEmitter = js.native
 }
 

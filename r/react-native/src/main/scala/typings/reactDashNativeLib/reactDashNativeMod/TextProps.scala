@@ -43,6 +43,10 @@ trait TextProps
     reactDashNativeLib.reactDashNativeLibStrings.head | reactDashNativeLib.reactDashNativeLibStrings.middle | reactDashNativeLib.reactDashNativeLibStrings.tail | reactDashNativeLib.reactDashNativeLibStrings.clip
   ] = js.undefined
   /**
+       * Used to reference react managed views from native code.
+       */
+  var nativeID: js.UndefOr[java.lang.String] = js.undefined
+  /**
        * Used to truncate the text with an ellipsis after computing the text
        * layout, including line wrapping, such that the total number of lines
        * does not exceed this number.

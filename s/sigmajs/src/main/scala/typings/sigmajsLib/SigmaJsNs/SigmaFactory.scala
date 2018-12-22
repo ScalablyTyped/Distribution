@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SigmaFactory
   extends org.scalablytyped.runtime.Instantiable0[Sigma]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* container */ java.lang.String) | (/* container */ stdLib.Element) | (/* configuration */ SigmaConfigs), 
+      (/* container */ stdLib.Element) | (/* configuration */ SigmaConfigs) | (/* container */ java.lang.String), 
       Sigma
     ] {
   var canvas: Canvas = js.native

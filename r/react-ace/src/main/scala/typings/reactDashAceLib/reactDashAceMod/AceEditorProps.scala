@@ -11,6 +11,7 @@ trait AceEditorProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var commands: js.UndefOr[js.Array[Command]] = js.undefined
   var cursorStart: js.UndefOr[scala.Double] = js.undefined
+  var debounceChangePeriod: js.UndefOr[scala.Double] = js.undefined
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined
   var editorProps: js.UndefOr[EditorProps] = js.undefined
   var enableBasicAutocompletion: js.UndefOr[scala.Boolean] = js.undefined

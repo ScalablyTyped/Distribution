@@ -12,7 +12,7 @@ class TimeZone protected () extends js.Object {
   val Bias: scala.Double = js.native
   val Class: OlObjectClass = js.native
   val DaylightBias: scala.Double = js.native
-  val DaylightDate: stdLib.VarDate = js.native
+  val DaylightDate: activexDashInteropLib.VarDate = js.native
   val DaylightDesignation: java.lang.String = js.native
   val ID: java.lang.String = js.native
   val Name: java.lang.String = js.native
@@ -20,7 +20,7 @@ class TimeZone protected () extends js.Object {
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   val StandardBias: scala.Double = js.native
-  val StandardDate: stdLib.VarDate = js.native
+  val StandardDate: activexDashInteropLib.VarDate = js.native
   val StandardDesignation: java.lang.String = js.native
 }
 

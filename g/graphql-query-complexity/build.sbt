@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "graphql-query-complexity"
-version := "0.1-dt-20181018Z-7e0041"
+version := "0.1-dt-20181016Z-230c5d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-6c0a30",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181016Z-3245d4",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

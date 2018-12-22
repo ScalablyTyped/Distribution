@@ -24,7 +24,7 @@ trait StrictConfirmProps
      */
   var onCancel: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ ConfirmProps, 
       scala.Unit
     ]
@@ -37,7 +37,7 @@ trait StrictConfirmProps
      */
   var onConfirm: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
       /* data */ ConfirmProps, 
       scala.Unit
     ]

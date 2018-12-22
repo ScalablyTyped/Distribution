@@ -30,7 +30,7 @@ package object hapiMod {
   type ResponseEventHandler = js.Function1[/* request */ Request, scala.Unit]
   type ResponseValue = java.lang.String | js.Object
   type RouteCompressionEncoderSettings = js.Object
-  type RouteEventHandler = js.Function1[/* route */ ServerRoute, scala.Unit]
+  type RouteEventHandler = js.Function1[/* route */ RequestRoute, scala.Unit]
   type RouteOptionsAccessEntity = hapiLib.hapiLibStrings.any | hapiLib.hapiLibStrings.user | hapiLib.hapiLibStrings.app
   type RouteOptionsAccessObject = RouteOptionsAccessScopeObject | RouteOptionsAccessEntityObject | (RouteOptionsAccessScopeObject with RouteOptionsAccessEntityObject)
   type RouteOptionsAccessScope = hapiLib.hapiLibNumbers.`false` | java.lang.String | js.Array[java.lang.String]

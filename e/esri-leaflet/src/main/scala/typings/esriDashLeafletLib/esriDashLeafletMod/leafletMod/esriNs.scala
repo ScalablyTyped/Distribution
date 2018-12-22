@@ -285,7 +285,7 @@ object esriNs extends js.Object {
                  * Requires the Delete capability be enabled on the service. You can check if this operation exists by
                  * checking the metadata of your service under capabilities.
                  */
-    def deleteFeatures(ids: js.Array[java.lang.String | scala.Double]): this.type = js.native
+    def deleteFeatures(ids: js.Array[scala.Double | java.lang.String]): this.type = js.native
     /**
                  * Removes an array of features with the provided ids from the feature layer. This will also remove the
                  * features from the map if they exist.
@@ -296,7 +296,7 @@ object esriNs extends js.Object {
                  * Requires the Delete capability be enabled on the service. You can check if this operation exists by
                  * checking the metadata of your service under capabilities.
                  */
-    def deleteFeatures(ids: js.Array[java.lang.String | scala.Double], callback: ResponseCallbackHandler): this.type = js.native
+    def deleteFeatures(ids: js.Array[scala.Double | java.lang.String], callback: ResponseCallbackHandler): this.type = js.native
     /**
                  * Removes an array of features with the provided ids from the feature layer. This will also remove the
                  * features from the map if they exist.
@@ -307,7 +307,7 @@ object esriNs extends js.Object {
                  * Requires the Delete capability be enabled on the service. You can check if this operation exists by
                  * checking the metadata of your service under capabilities.
                  */
-    def deleteFeatures(ids: js.Array[java.lang.String | scala.Double], callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+    def deleteFeatures(ids: js.Array[scala.Double | java.lang.String], callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
     /**
                  * Calls the passed function against every feature that is currently being displayed.
                  */
@@ -699,7 +699,7 @@ object esriNs extends js.Object {
                  * Requires the Delete capability be enabled on the service. You can check if this operation exists by
                  * checking the metadata of your service under capabilities.
                  */
-    def deleteFeatures(ids: js.Array[java.lang.String | scala.Double]): this.type = js.native
+    def deleteFeatures(ids: js.Array[scala.Double | java.lang.String]): this.type = js.native
     /**
                  * Removes an array of features with the provided ids from the feature layer. This will also remove the
                  * features from the map if they exist.
@@ -710,7 +710,7 @@ object esriNs extends js.Object {
                  * Requires the Delete capability be enabled on the service. You can check if this operation exists by
                  * checking the metadata of your service under capabilities.
                  */
-    def deleteFeatures(ids: js.Array[java.lang.String | scala.Double], callback: ResponseCallbackHandler): this.type = js.native
+    def deleteFeatures(ids: js.Array[scala.Double | java.lang.String], callback: ResponseCallbackHandler): this.type = js.native
     /**
                  * Removes an array of features with the provided ids from the feature layer. This will also remove the
                  * features from the map if they exist.
@@ -721,7 +721,7 @@ object esriNs extends js.Object {
                  * Requires the Delete capability be enabled on the service. You can check if this operation exists by
                  * checking the metadata of your service under capabilities.
                  */
-    def deleteFeatures(ids: js.Array[java.lang.String | scala.Double], callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+    def deleteFeatures(ids: js.Array[scala.Double | java.lang.String], callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
     /**
                  * Returns a new `L.esri.Query` object that can be used to query this layer.
                  */

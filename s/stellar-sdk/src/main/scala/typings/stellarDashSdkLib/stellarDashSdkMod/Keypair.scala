@@ -16,6 +16,7 @@ class Keypair protected () extends js.Object {
   def rawSecretKey(): nodeLib.Buffer = js.native
   def secret(): java.lang.String = js.native
   def sign(data: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def signDecorated(data: nodeLib.Buffer): stellarDashSdkLib.stellarDashSdkMod.xdrNs.DecoratedSignature = js.native
   def signatureHint(): stellarDashSdkLib.stellarDashSdkMod.xdrNs.SignatureHint = js.native
   def verify(data: nodeLib.Buffer, signature: nodeLib.Buffer): scala.Boolean = js.native
 }
@@ -23,6 +24,7 @@ class Keypair protected () extends js.Object {
 @JSImport("stellar-sdk", "Keypair")
 @js.native
 object Keypair extends js.Object {
+  def fromBase58Seed(secretSeed: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.Keypair = js.native
   def fromPublicKey(publicKey: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.Keypair = js.native
   def fromRawEd25519Seed(secretSeed: nodeLib.Buffer): stellarDashSdkLib.stellarDashSdkMod.Keypair = js.native
   def fromSecret(secretKey: java.lang.String): stellarDashSdkLib.stellarDashSdkMod.Keypair = js.native

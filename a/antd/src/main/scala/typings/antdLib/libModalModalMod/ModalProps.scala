@@ -37,9 +37,19 @@ trait ModalProps extends js.Object {
   /** 确认按钮类型*/
   var okType: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
   /** 点击模态框右上角叉、取消按钮、Props.maskClosable 值为 true 时的遮罩层或键盘按下 Esc 时的回调*/
-  var onCancel: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit]] = js.undefined
+  var onCancel: js.UndefOr[
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
+  ] = js.undefined
   /** 点击确定回调*/
-  var onOk: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit]] = js.undefined
+  var onOk: js.UndefOr[
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
+  ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /** 标题*/

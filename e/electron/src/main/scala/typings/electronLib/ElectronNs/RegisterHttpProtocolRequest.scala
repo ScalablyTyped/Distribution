@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait RegisterHttpProtocolRequest extends js.Object {
+  var headers: Headers
   var method: java.lang.String
   var referrer: java.lang.String
   var uploadData: js.Array[UploadData]

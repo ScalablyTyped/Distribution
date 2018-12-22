@@ -50,7 +50,7 @@ trait StrictModalProps
      */
   var onActionClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ ModalProps, 
       scala.Unit
     ]
@@ -64,7 +64,7 @@ trait StrictModalProps
   @JSName("onClose")
   var onClose_StrictModalProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ ModalProps, 
       scala.Unit
     ]
@@ -86,7 +86,7 @@ trait StrictModalProps
   @JSName("onOpen")
   var onOpen_StrictModalProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ ModalProps, 
       scala.Unit
     ]

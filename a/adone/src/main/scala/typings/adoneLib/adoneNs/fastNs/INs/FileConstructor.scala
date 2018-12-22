@@ -10,6 +10,6 @@ trait FileConstructor
   extends org.scalablytyped.runtime.Instantiable0[NullFile]
      with org.scalablytyped.runtime.Instantiable1[
       (/* options */ FileConstructorOptions with adoneLib.Anon_ContentsBuffer) | (/* options */ FileConstructorOptions with adoneLib.Anon_ContentsReadable) | (/* options */ FileConstructorOptions), 
-      BufferFile | StreamFile | NullFile
+      BufferFile | NullFile | StreamFile
     ]
 

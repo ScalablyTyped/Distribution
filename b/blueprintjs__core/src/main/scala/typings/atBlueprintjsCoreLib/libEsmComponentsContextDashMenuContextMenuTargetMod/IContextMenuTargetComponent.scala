@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait IContextMenuTargetComponent
   extends reactLib.reactMod.Component[js.Object, js.Object, js.Any] {
   var onContextMenuClose: js.UndefOr[js.Function0[scala.Unit]] = js.native
-  def renderContextMenu(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.native
+  def renderContextMenu(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.native
 }
 

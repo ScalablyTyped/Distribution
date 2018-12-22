@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BigNumberTrinaryOperator
-  extends Bind1[scala.Double | java.lang.String | sjclLib.sjclMod.sjclNs.BigNumber]
+  extends Bind1[sjclLib.sjclMod.sjclNs.BigNumber | scala.Double | java.lang.String]
 

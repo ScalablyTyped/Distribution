@@ -174,6 +174,18 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def Overlay(props: officeDashUiDashFabricDashReactLib.libComponentsOverlayOverlayDotTypesMod.IOverlayProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def Panel(props: officeDashUiDashFabricDashReactLib.libComponentsPanelPanelDotTypesMod.IPanelProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def PeoplePickerItem(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSelectedProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def PeoplePickerItemBase(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSelectedProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def PeoplePickerItemSuggestion(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSuggestionProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def PeoplePickerItemSuggestionBase(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSuggestionProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def Persona(props: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def PersonaCoin(props: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaCoinProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def Pivot(props: officeDashUiDashFabricDashReactLib.libComponentsPivotPivotDotTypesMod.IPivotProps): reactLib.reactMod.Global.JSXNs.Element = js.native
@@ -257,7 +269,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     canResizeColumns: js.UndefOr[scala.Boolean],
     onColumnClick: js.UndefOr[
       js.Function2[
-        /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+        /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
         /* column */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.IColumn, 
         _
       ]

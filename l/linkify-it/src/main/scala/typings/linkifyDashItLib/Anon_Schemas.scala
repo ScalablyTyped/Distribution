@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_Schemas
   extends org.scalablytyped.runtime.Instantiable0[linkifyDashItLib.linkifyDashItMod.LinkifyItNs.LinkifyIt]
      with org.scalablytyped.runtime.Instantiable2[
-      (/* schemas */ linkifyDashItLib.linkifyDashItMod.LinkifyItNs.SchemaRules) | (/* schemas */ linkifyDashItLib.linkifyDashItMod.LinkifyItNs.Options), 
+      (/* schemas */ linkifyDashItLib.linkifyDashItMod.LinkifyItNs.Options) | (/* schemas */ linkifyDashItLib.linkifyDashItMod.LinkifyItNs.SchemaRules), 
       /* options */ linkifyDashItLib.linkifyDashItMod.LinkifyItNs.Options, 
       linkifyDashItLib.linkifyDashItMod.LinkifyItNs.LinkifyIt
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* schemas */ linkifyDashItLib.linkifyDashItMod.LinkifyItNs.SchemaRules) | (/* schemas */ linkifyDashItLib.linkifyDashItMod.LinkifyItNs.Options), 
+      (/* schemas */ linkifyDashItLib.linkifyDashItMod.LinkifyItNs.Options) | (/* schemas */ linkifyDashItLib.linkifyDashItMod.LinkifyItNs.SchemaRules), 
       linkifyDashItLib.linkifyDashItMod.LinkifyItNs.LinkifyIt
     ] {
   def apply(): linkifyDashItLib.linkifyDashItMod.LinkifyItNs.LinkifyIt = js.native

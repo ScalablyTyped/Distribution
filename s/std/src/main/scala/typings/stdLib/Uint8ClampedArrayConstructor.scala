@@ -16,7 +16,7 @@ trait Uint8ClampedArrayConstructor
       Uint8ClampedArray
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* elements */ Iterable[scala.Double]) | (/* length */ scala.Double) | (/* arrayOrArrayBuffer */ ArrayLike[scala.Double]) | (/* arrayOrArrayBuffer */ ArrayBufferLike), 
+      (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[scala.Double]) | (/* length */ scala.Double) | (/* elements */ Iterable[scala.Double]), 
       Uint8ClampedArray
     ] {
   /**

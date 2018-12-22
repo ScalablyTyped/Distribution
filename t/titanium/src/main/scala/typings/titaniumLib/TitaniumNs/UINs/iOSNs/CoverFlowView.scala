@@ -491,7 +491,7 @@ trait CoverFlowView
   				 */
   def setImages(
     images: js.Array[
-      java.lang.String | titaniumLib.CoverFlowImageType | titaniumLib.TitaniumNs.Blob | titaniumLib.TitaniumNs.FilesystemNs.File
+      titaniumLib.TitaniumNs.Blob | titaniumLib.CoverFlowImageType | titaniumLib.TitaniumNs.FilesystemNs.File | java.lang.String
     ]
   ): scala.Unit = js.native
   /**

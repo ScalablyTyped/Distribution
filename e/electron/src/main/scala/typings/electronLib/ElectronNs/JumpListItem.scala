@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait JumpListItem extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/jump-list-item
+  // Docs: http://electronjs.org/docs/api/structures/jump-list-item
   /**
        * The command line arguments when program is executed. Should only be set if type
        * is task.

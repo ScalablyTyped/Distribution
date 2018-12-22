@@ -14,7 +14,7 @@ object operatorCombineAllMod extends js.Object {
   def combineAll_TR[T, R](`this`: rxjsLib.rxjsMod.Observable[T]): rxjsLib.rxjsMod.Observable[js.Array[R]] = js.native
   @JSName("combineAll")
   def combineAll_TR[T, R](
-    `this`: rxjsLib.rxjsMod.Observable[T | rxjsLib.internalTypesMod.ObservableInput[T]],
+    `this`: rxjsLib.rxjsMod.Observable[rxjsLib.internalTypesMod.ObservableInput[T] | T],
     project: js.Function1[/* repeated */T, R]
   ): rxjsLib.rxjsMod.Observable[R] = js.native
 }

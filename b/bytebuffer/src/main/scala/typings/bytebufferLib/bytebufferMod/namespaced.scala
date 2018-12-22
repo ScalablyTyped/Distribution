@@ -118,7 +118,7 @@ object namespaced extends js.Object {
        */
   def concat(
     buffers: js.Array[
-      bytebufferLib.bytebufferMod.ByteBuffer | stdLib.ArrayBuffer | stdLib.Uint8Array | java.lang.String
+      stdLib.ArrayBuffer | bytebufferLib.bytebufferMod.ByteBuffer | java.lang.String | stdLib.Uint8Array
     ]
   ): bytebufferLib.bytebufferMod.ByteBuffer = js.native
   /**

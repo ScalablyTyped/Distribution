@@ -20,7 +20,7 @@ class Translator protected () extends js.Object {
        *
        * Does not support `transform-origin` CSS property other than the default.
        */
-  def computePosition(clientX: scala.Double, clientY: scala.Double): plottableLib.buildSrcCoreInterfacesMod.Point = js.native
+  def computePosition(clientX: scala.Double, clientY: scala.Double): js.Any = js.native
 }
 
 @JSImport("plottable/build/src/utils/transformAwareTranslator", "Translator")

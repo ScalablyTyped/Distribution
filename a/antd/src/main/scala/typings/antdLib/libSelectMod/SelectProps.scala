@@ -38,10 +38,16 @@ trait SelectProps[T] extends AbstractSelectProps {
     ]
   ] = js.undefined
   var onMouseEnter: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement], _]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
+      _
+    ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement], _]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
+      _
+    ]
   ] = js.undefined
   var onPopupScroll: js.UndefOr[reactLib.reactMod.ReactNs.UIEventHandler[reactLib.HTMLDivElement]] = js.undefined
   var onSelect: js.UndefOr[

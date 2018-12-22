@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait DesktopCapturerSource extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/desktop-capturer-source
+  // Docs: http://electronjs.org/docs/api/structures/desktop-capturer-source
   /**
        * A unique identifier that will correspond to the id of the matching returned by
        * the . On some platforms, this is equivalent to the XX portion of the id field
@@ -22,8 +22,8 @@ trait DesktopCapturerSource extends js.Object {
        */
   var id: java.lang.String
   /**
-       * A screen source will be named either Entire Screen or Screen <index>, while the
-       * name of a window source will match the window title.
+       * A screen source will be named either Entire Screen or Screen , while the name of
+       * a window source will match the window title.
        */
   var name: java.lang.String
   /**

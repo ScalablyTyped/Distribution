@@ -36,7 +36,7 @@ class Request protected () extends Property[RequestDefinition] {
   def removeHeader(toRemove: Header): scala.Unit = js.native
   def removeHeader(toRemove: Header, options: postmanDashCollectionLib.Anon_IgnoreCase): scala.Unit = js.native
   def removeQueryParams(params: java.lang.String): scala.Unit = js.native
-  def removeQueryParams(params: js.Array[java.lang.String | QueryParamDefinition]): scala.Unit = js.native
+  def removeQueryParams(params: js.Array[QueryParamDefinition | java.lang.String]): scala.Unit = js.native
   def removeQueryParams(params: QueryParamDefinition): scala.Unit = js.native
   def update(options: RequestDefinition): scala.Unit = js.native
   def upsertHeader(header: HeaderDefinition): scala.Unit = js.native

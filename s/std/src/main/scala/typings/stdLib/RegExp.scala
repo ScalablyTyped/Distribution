@@ -52,19 +52,6 @@ trait RegExp extends js.Object {
        *               this regular expression will be replaced
        * @param replacer A function that returns the replacement text.
        */
-  /**
-       * Replaces text in a string, using this regular expression.
-       * @param string A String object or string literal whose contents matching against
-       *               this regular expression will be replaced
-       * @param replaceValue A String object or string literal containing the text to replace for every
-       *                     successful match of this regular expression.
-       */
-  /**
-       * Replaces text in a string, using this regular expression.
-       * @param string A String object or string literal whose contents matching against
-       *               this regular expression will be replaced
-       * @param replacer A function that returns the replacement text.
-       */
   @JSName(org.scalablytyped.runtime.Symbol.replace)
   var replace: (js.Function2[/* string */ java.lang.String, /* replaceValue */ java.lang.String, java.lang.String]) with (js.Function2[
     /* string */ java.lang.String, 

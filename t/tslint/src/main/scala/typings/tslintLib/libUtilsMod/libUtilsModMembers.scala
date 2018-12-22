@@ -28,13 +28,17 @@ object libUtilsModMembers extends js.Object {
   ): js.Array[U] = js.native
   def hasOwnProperty(arg: js.Object, key: java.lang.String): scala.Boolean = js.native
   def isCamelCased(name: java.lang.String): scala.Boolean = js.native
+  def isFunctionScopeBoundary(node: typescriptLib.typescriptMod.tsNs.Node): scala.Boolean = js.native
   def isKebabCased(name: java.lang.String): scala.Boolean = js.native
   def isLowerCase(str: java.lang.String): scala.Boolean = js.native
   def isPascalCased(name: java.lang.String): scala.Boolean = js.native
+  def isSnakeCased(name: java.lang.String): scala.Boolean = js.native
   def isUpperCase(str: java.lang.String): scala.Boolean = js.native
   def mapDefined[T, U](inputs: js.Array[T], getOutput: js.Function1[/* input */ T, js.UndefOr[U]]): js.Array[U] = js.native
   def objectify(arg: js.Any): js.Any = js.native
   def readBufferWithDetectedEncoding(buffer: nodeLib.Buffer): java.lang.String = js.native
   def stripComments(content: java.lang.String): java.lang.String = js.native
+  def tryResolvePackage(packageName: java.lang.String): js.UndefOr[java.lang.String] = js.native
+  def tryResolvePackage(packageName: java.lang.String, relativeTo: java.lang.String): js.UndefOr[java.lang.String] = js.native
 }
 

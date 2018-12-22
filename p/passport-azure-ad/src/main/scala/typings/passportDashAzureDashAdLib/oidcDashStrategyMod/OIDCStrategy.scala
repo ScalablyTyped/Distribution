@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class OIDCStrategy protected ()
   extends passportLib.passportMod.passportNs.Strategy {
-  def this(options: IOIDCStrategyOptionWithRequest, verify: VerifyOIDCFunction) = this()
-  def this(options: IOIDCStrategyOption, verify: VerifyOIDCFunctionWithReq) = this()
+  def this(options: IOIDCStrategyOptionWithRequest, verify: VerifyOIDCFunctionWithReq) = this()
+  def this(options: IOIDCStrategyOption, verify: VerifyOIDCFunction) = this()
   @JSName("name")
   var name_OIDCStrategy: java.lang.String = js.native
   def authenticate(req: expressLib.expressMod.eNs.Request): scala.Unit = js.native

@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
      * to handle what happens when the function stops streaming.
      * @beta
      */
+
 @js.native
 trait StreamingHandler[T] extends CancelableHandler {
   /**

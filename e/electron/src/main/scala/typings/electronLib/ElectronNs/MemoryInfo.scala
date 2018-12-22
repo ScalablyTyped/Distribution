@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait MemoryInfo extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/memory-info
+  // Docs: http://electronjs.org/docs/api/structures/memory-info
   /**
        * The maximum amount of memory that has ever been pinned to actual physical RAM.
        * On macOS its value will always be 0.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait UploadFile extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/upload-file
+  // Docs: http://electronjs.org/docs/api/structures/upload-file
   /**
        * Path of file to be uploaded.
        */

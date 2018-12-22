@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TouchBarSegmentedControl protected ()
   extends electronLib.ElectronNs.TouchBarSegmentedControl {
-  // Docs: http://electron.atom.io/docs/api/touch-bar-segmented-control
+  // Docs: http://electronjs.org/docs/api/touch-bar-segmented-control
   def this(options: electronLib.ElectronNs.TouchBarSegmentedControlConstructorOptions) = this()
 }
 

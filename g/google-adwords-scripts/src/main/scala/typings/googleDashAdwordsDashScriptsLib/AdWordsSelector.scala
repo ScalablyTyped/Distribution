@@ -15,7 +15,7 @@ trait AdWordsSelector[E] extends js.Object {
   def get(): AdWordsIterator[E] = js.native
   def orderBy(orderBy: java.lang.String): AdWordsSelector[E] = js.native
   def withCondition(condition: java.lang.String): AdWordsSelector[E] = js.native
-  def withIds(ids: js.Array[scala.Double | js.Array[scala.Double]]): AdWordsSelector[E] = js.native
+  def withIds(ids: js.Array[js.Array[scala.Double] | scala.Double]): AdWordsSelector[E] = js.native
   def withLimit(limit: scala.Double): AdWordsSelector[E] = js.native
 }
 

@@ -38,7 +38,7 @@ class DataTable () extends js.Object {
   def getRowProperty(rowIndex: scala.Double, name: java.lang.String): Properties = js.native
   def getSortedRows(sortColumn: SortByColumn): js.Array[scala.Double] = js.native
   def getSortedRows(sortColumn: scala.Double): js.Array[scala.Double] = js.native
-  def getSortedRows(sortColumns: js.Array[SortByColumn | scala.Double]): js.Array[scala.Double] = js.native
+  def getSortedRows(sortColumns: js.Array[scala.Double | SortByColumn]): js.Array[scala.Double] = js.native
   def getTableProperties(): Properties = js.native
   def getTableProperty(name: java.lang.String): js.Any = js.native
   def getValue(rowIndex: scala.Double, columnIndex: scala.Double): js.Any = js.native
@@ -75,7 +75,7 @@ class DataTable () extends js.Object {
   def setValue(rowIndex: scala.Double, columnIndex: scala.Double, value: js.Any): scala.Unit = js.native
   def sort(sortColumn: SortByColumn): js.Array[scala.Double] = js.native
   def sort(sortColumn: scala.Double): js.Array[scala.Double] = js.native
-  def sort(sortColumns: js.Array[SortByColumn | scala.Double]): js.Array[scala.Double] = js.native
+  def sort(sortColumns: js.Array[scala.Double | SortByColumn]): js.Array[scala.Double] = js.native
   def toJSON(): java.lang.String = js.native
 }
 

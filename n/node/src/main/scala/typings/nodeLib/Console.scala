@@ -104,10 +104,24 @@ trait Console extends js.Object {
   // --- Inspector mode only ---
   /**
        * This method does not display anything unless used in the inspector.
+       *  The console.markTimeline() method is the deprecated form of console.timeStamp().
+       *
+       * @deprecated Use console.timeStamp() instead.
+       */
+  def markTimeline(): scala.Unit = js.native
+  // --- Inspector mode only ---
+  /**
+       * This method does not display anything unless used in the inspector.
+       *  The console.markTimeline() method is the deprecated form of console.timeStamp().
+       *
+       * @deprecated Use console.timeStamp() instead.
+       */
+  def markTimeline(label: java.lang.String): scala.Unit = js.native
+  /**
+       * This method does not display anything unless used in the inspector.
        *  Starts a JavaScript CPU profile with an optional label.
        */
   def profile(): scala.Unit = js.native
-  // --- Inspector mode only ---
   /**
        * This method does not display anything unless used in the inspector.
        *  Starts a JavaScript CPU profile with an optional label.
@@ -118,6 +132,11 @@ trait Console extends js.Object {
        *  Stops the current JavaScript CPU profiling session if one has been started and prints the report to the Profiles panel of the inspector.
        */
   def profileEnd(): scala.Unit = js.native
+  /**
+       * This method does not display anything unless used in the inspector.
+       *  Stops the current JavaScript CPU profiling session if one has been started and prints the report to the Profiles panel of the inspector.
+       */
+  def profileEnd(label: java.lang.String): scala.Unit = js.native
   /**
        * This method does not display anything unless used in the inspector.
        *  Prints to `stdout` the array `array` formatted as a table.
@@ -147,6 +166,10 @@ trait Console extends js.Object {
   /**
        * For a timer that was previously started by calling {@link console.time()}, prints the elapsed time and other `data` arguments to `stdout`.
        */
+  def timeLog(): scala.Unit = js.native
+  /**
+       * For a timer that was previously started by calling {@link console.time()}, prints the elapsed time and other `data` arguments to `stdout`.
+       */
   def timeLog(label: java.lang.String, data: js.Any*): scala.Unit = js.native
   /**
        * This method does not display anything unless used in the inspector.
@@ -158,6 +181,34 @@ trait Console extends js.Object {
        *  Adds an event with the label `label` to the Timeline panel of the inspector.
        */
   def timeStamp(label: java.lang.String): scala.Unit = js.native
+  /**
+       * This method does not display anything unless used in the inspector.
+       *  The console.timeline() method is the deprecated form of console.time().
+       *
+       * @deprecated Use console.time() instead.
+       */
+  def timeline(): scala.Unit = js.native
+  /**
+       * This method does not display anything unless used in the inspector.
+       *  The console.timeline() method is the deprecated form of console.time().
+       *
+       * @deprecated Use console.time() instead.
+       */
+  def timeline(label: java.lang.String): scala.Unit = js.native
+  /**
+       * This method does not display anything unless used in the inspector.
+       *  The console.timelineEnd() method is the deprecated form of console.timeEnd().
+       *
+       * @deprecated Use console.timeEnd() instead.
+       */
+  def timelineEnd(): scala.Unit = js.native
+  /**
+       * This method does not display anything unless used in the inspector.
+       *  The console.timelineEnd() method is the deprecated form of console.timeEnd().
+       *
+       * @deprecated Use console.timeEnd() instead.
+       */
+  def timelineEnd(label: java.lang.String): scala.Unit = js.native
   /**
        * Prints to `stderr` the string 'Trace :', followed by the {@link util.format()} formatted message and stack trace to the current position in the code.
        */

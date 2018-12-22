@@ -16,6 +16,9 @@ trait KnockoutReadonlyObservable[T]
   var valueHasMutated: js.UndefOr[Anon_Void] = js.native
   var valueWillMutate: js.UndefOr[Anon_Void] = js.native
   def apply(): T = js.native
+  /**
+       * Returns the current value of the computed observable without creating a dependency
+       */
   def peek(): T = js.native
 }
 

@@ -66,7 +66,7 @@ trait StrictButtonProps extends js.Object {
      */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
       /* data */ ButtonProps, 
       scala.Unit
     ]

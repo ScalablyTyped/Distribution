@@ -32,6 +32,6 @@ trait Props extends js.Object {
            * @param event The event that triggered file changes
            * @param results The array of files
            */
-  def onChange(event: reactLib.reactMod.ReactNs.SyntheticEvent[_], results: js.Array[Result]): scala.Unit
+  def onChange(event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], results: js.Array[Result]): scala.Unit
 }
 

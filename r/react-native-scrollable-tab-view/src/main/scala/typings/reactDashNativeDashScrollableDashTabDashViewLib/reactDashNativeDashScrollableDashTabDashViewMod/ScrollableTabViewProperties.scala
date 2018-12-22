@@ -58,7 +58,9 @@ trait ScrollableTabViewProperties
   /**
        * style (View.propTypes.style)
        */
-  var style: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
+  var style: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
   /**
        * color of the default tab bar's text when active, defaults to navy
        */
@@ -83,10 +85,14 @@ trait ScrollableTabViewProperties
   /**
        * additional styles to the tab bar's text
        */
-  var tabBarTextStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.TextStyle] = js.undefined
+  var tabBarTextStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
+  ] = js.undefined
   /**
        * style of the default tab bar's underline
        */
-  var tabBarUnderlineStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
+  var tabBarUnderlineStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
 }
 

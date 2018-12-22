@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Task extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/task
+  // Docs: http://electronjs.org/docs/api/structures/task
   /**
        * The command line arguments when program is executed.
        */

@@ -55,7 +55,7 @@ class DownloadItem () extends EventEmitter {
   def getURLChain(): js.Array[java.lang.String] = js.native
   def hasUserGesture(): scala.Boolean = js.native
   def isPaused(): scala.Boolean = js.native
-  // Docs: http://electron.atom.io/docs/api/download-item
+  // Docs: http://electronjs.org/docs/api/download-item
   /**
        * Emitted when the download is in a terminal state. This includes a completed
        * download, a cancelled download (via downloadItem.cancel()), and interrupted

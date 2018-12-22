@@ -39,7 +39,7 @@ trait AngularMeteorCollection2[T, U]
                *               - If an object is passed, the method removes the object with that key from the AngularMeteorCollection.
                *               - If an array is passed, the method removes all objects that matches the keys in the array from the AngularMeteorCollection.
                */
-  def remove(keys: js.Array[java.lang.String | scala.Double]): scala.Unit = js.native
+  def remove(keys: js.Array[scala.Double | java.lang.String]): scala.Unit = js.native
   /**
                * @param [keys] - The keys of the object to remove from the Meteor Collection.
                *               - If nothing is passed, the method removes all the documents from the AngularMeteorCollection.

@@ -17,7 +17,7 @@ org.scalablytyped.runtime.Instantiable2[/* uri */ java.lang.String, /* opts */ C
      with /**
 		 * @see default constructor
 		 */
-org.scalablytyped.runtime.Instantiable1[(/* uri */ java.lang.String) | (/* opts */ ConnectOpts), Manager] {
+org.scalablytyped.runtime.Instantiable1[(/* opts */ ConnectOpts) | (/* uri */ java.lang.String), Manager] {
   /**
   		 * Creates a new Manager with the default URI (window host)
   		 * @param opts Any connection options that we want to use (and pass to engine.io)

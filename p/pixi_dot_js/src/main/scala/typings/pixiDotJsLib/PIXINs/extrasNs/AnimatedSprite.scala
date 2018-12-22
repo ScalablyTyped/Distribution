@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class AnimatedSprite protected ()
   extends pixiDotJsLib.PIXINs.Sprite {
-  def this(textures: js.Array[pixiDotJsLib.PIXINs.Texture | AnimatedSpriteTextureTimeObject]) = this()
-  def this(textures: js.Array[pixiDotJsLib.PIXINs.Texture | AnimatedSpriteTextureTimeObject], autoUpdate: scala.Boolean) = this()
+  def this(textures: js.Array[AnimatedSpriteTextureTimeObject | pixiDotJsLib.PIXINs.Texture]) = this()
+  def this(textures: js.Array[AnimatedSpriteTextureTimeObject | pixiDotJsLib.PIXINs.Texture], autoUpdate: scala.Boolean) = this()
   var _autoUpdate: scala.Boolean = js.native
   var _currentTime: scala.Double = js.native
   var _durations: js.Array[scala.Double] = js.native

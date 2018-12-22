@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_EventValue extends js.Object {
-  var event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.reactMod.ReactNs.FocusEvent[reactLib.Element]]
+  var event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.reactMod.ReactNs.FocusEvent[reactLib.Element], reactLib.Event]
   var value: java.lang.String
 }
 

@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "activex-word"
-version := "14.0-dt-20180910Z-aeabc6"
+version := "14.0-dt-20180513Z-5c902f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "activex-helpers" % "1.0.2-4c3e82",
-  "org.scalablytyped" %%% "activex-interop" % "0.0-dt-20180910Z-539cd9",
-  "org.scalablytyped" %%% "activex-office" % "16.0-dt-20180910Z-09b01c",
-  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20180910Z-37434b",
-  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20180910Z-2c1922",
-  "org.scalablytyped" %%% "activex-vbide" % "14.0-dt-20180910Z-c130e0",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
+  "org.scalablytyped" %%% "activex-helpers" % "1.0.2-78bd79",
+  "org.scalablytyped" %%% "activex-interop" % "0.0-dt-20180721Z-8a36c4",
+  "org.scalablytyped" %%% "activex-office" % "16.0-dt-20180721Z-5bd583",
+  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20180721Z-9c6f49",
+  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20180522Z-4db598",
+  "org.scalablytyped" %%% "activex-vbide" % "14.0-dt-20180513Z-e8ce3c",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -10,12 +10,12 @@ trait ITimeline
   extends ITimelineEvents
      with org.scalablytyped.runtime.Instantiable2[
       /* containerId */ java.lang.String, 
-      (/* data */ java.lang.String) | (/* data */ ITimelineConfig), 
+      (/* data */ ITimelineConfig) | (/* data */ java.lang.String), 
       ITimeline
     ]
      with org.scalablytyped.runtime.Instantiable3[
       /* containerId */ java.lang.String, 
-      (/* data */ java.lang.String) | (/* data */ ITimelineConfig), 
+      (/* data */ ITimelineConfig) | (/* data */ java.lang.String), 
       /* options */ ITimelineOptions, 
       ITimeline
     ] {

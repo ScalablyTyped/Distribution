@@ -34,7 +34,7 @@ trait KnockoutObservableArrayFunctions[T] extends KnockoutReadonlyObservableArra
   def pop(): T = js.native
   /**
        * Adds a new item to the end of array.
-       * @param ...items Items  to be added
+       * @param items Items  to be added
        */
   def push(items: T*): scala.Unit = js.native
   /**
@@ -43,7 +43,7 @@ trait KnockoutObservableArrayFunctions[T] extends KnockoutReadonlyObservableArra
        */
   def remove(item: T): js.Array[T] = js.native
   /**
-       * Removes all values  and returns them as an array.
+       * Removes all values and returns them as an array.
        * @param removeFunction A function used to determine true if item should be removed and fasle otherwise
        */
   def remove(removeFunction: js.Function1[/* item */ T, scala.Boolean]): js.Array[T] = js.native
@@ -89,12 +89,12 @@ trait KnockoutObservableArrayFunctions[T] extends KnockoutReadonlyObservableArra
        * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
        * @param start The zero-based location in the array from which to start removing elements.
        * @param deleteCount The number of elements to remove.
-       * @param ...items Elements to insert into the array in place of the deleted elements.
+       * @param items Elements to insert into the array in place of the deleted elements.
        */
   def splice(start: scala.Double, deleteCount: scala.Double, items: T*): js.Array[T] = js.native
   /**
        * Inserts a new item at the beginning of the array.
-       * @param ...items Items to be added
+       * @param items Items to be added
        */
   def unshift(items: T*): scala.Double = js.native
 }

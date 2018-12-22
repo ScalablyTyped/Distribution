@@ -12,11 +12,11 @@ class File protected () extends js.Object {
   /** File attributes */
   var Attributes: FileAttribute = js.native
   /** Date file was created */
-  val DateCreated: stdLib.VarDate = js.native
+  val DateCreated: activexDashInteropLib.VarDate = js.native
   /** Date file was last accessed */
-  val DateLastAccessed: stdLib.VarDate = js.native
+  val DateLastAccessed: activexDashInteropLib.VarDate = js.native
   /** Date file was last modified */
-  val DateLastModified: stdLib.VarDate = js.native
+  val DateLastModified: activexDashInteropLib.VarDate = js.native
   /** Get drive that contains file */
   val Drive: Drive = js.native
   /** Get name of file */

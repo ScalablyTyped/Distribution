@@ -14,15 +14,15 @@ trait ParseTorrent extends js.Object {
     nodeLib.Buffer
   ] = js.native
   def apply(
-    torrent: magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance | Instance
+    torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance | magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | Instance
   ): Instance = js.native
   def apply(torrent: java.lang.String): magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance = js.native
   def apply(torrent: nodeLib.Buffer): magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance = js.native
   def remote(
-    torrent: magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance | Instance
+    torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance | magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | Instance
   ): scala.Unit = js.native
   def remote(
-    torrent: magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance | Instance,
+    torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance | magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | Instance,
     cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
   ): scala.Unit = js.native
   def remote(torrent: java.lang.String): scala.Unit = js.native

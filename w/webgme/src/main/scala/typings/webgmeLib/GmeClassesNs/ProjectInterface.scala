@@ -458,7 +458,7 @@ trait ProjectInterface extends js.Object {
            * Array.<{@link module:Storage~CommitObject}> <b>result</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def getHistory(start: java.lang.String | webgmeLib.GmeStorageNs.CommitHash, number: scala.Double): js.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
+  def getHistory(start: webgmeLib.GmeStorageNs.CommitHash | java.lang.String, number: scala.Double): js.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
   /**
            * Retrieves an array of commits starting from a branch(es) and/or commitHash(es).
            * <br> The result is ordered by the rules (applied in order)
@@ -473,7 +473,7 @@ trait ProjectInterface extends js.Object {
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
   def getHistory(
-    start: java.lang.String | webgmeLib.GmeStorageNs.CommitHash,
+    start: webgmeLib.GmeStorageNs.CommitHash | java.lang.String,
     number: scala.Double,
     callback: webgmeLib.GmeCommonNs.ResultCallback[js.Array[webgmeLib.GmeStorageNs.CommitObject]]
   ): scala.Unit = js.native

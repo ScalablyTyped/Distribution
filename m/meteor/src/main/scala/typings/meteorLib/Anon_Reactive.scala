@@ -12,6 +12,6 @@ trait Anon_Reactive extends js.Object {
   var reactive: js.UndefOr[scala.Boolean] = js.undefined
   var skip: js.UndefOr[scala.Double] = js.undefined
   var sort: js.UndefOr[meteorLib.MongoNs.SortSpecifier] = js.undefined
-  var transform: js.UndefOr[js.Function] = js.undefined
+  var transform: js.UndefOr[js.Function | scala.Null] = js.undefined
 }
 

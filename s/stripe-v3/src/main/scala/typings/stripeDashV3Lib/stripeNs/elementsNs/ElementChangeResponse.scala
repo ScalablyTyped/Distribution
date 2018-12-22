@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait ElementChangeResponse extends js.Object {
+  var bankName: js.UndefOr[java.lang.String] = js.undefined
   var brand: java.lang.String
   var complete: scala.Boolean
+  var country: js.UndefOr[java.lang.String] = js.undefined
   var elementType: java.lang.String
   var empty: scala.Boolean
   var error: js.UndefOr[stripeDashV3Lib.stripeNs.Error] = js.undefined

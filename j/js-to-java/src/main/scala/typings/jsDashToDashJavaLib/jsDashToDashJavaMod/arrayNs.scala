@@ -14,7 +14,7 @@ object arrayNs extends js.Object {
   def Character(value: js.Array[java.lang.String]): js.Object = js.native
   def Class(className: js.Array[java.lang.String]): js.Object = js.native
   // Note: it doesn't allow [null, "test"], actually it should be allowed
-  def Currency(value: js.Array[java.lang.String | jsDashToDashJavaLib.jsDashToDashJavaMod.Currency | scala.Null]): js.Object = js.native
+  def Currency(value: js.Array[jsDashToDashJavaLib.jsDashToDashJavaMod.Currency | scala.Null | java.lang.String]): js.Object = js.native
   def Dictionary(value: js.Array[js.Object]): js.Object = js.native
   def Double(value: js.Array[scala.Double]): js.Object = js.native
   def Enumeration(value: js.Array[js.Object]): js.Object = js.native

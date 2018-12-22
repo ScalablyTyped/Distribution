@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Cookie extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/cookie
+  // Docs: http://electronjs.org/docs/api/structures/cookie
   /**
        * The domain of the cookie.
        */

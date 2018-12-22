@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ICameraService extends js.Object {
-  def cleanup(): js.Any = js.native
-  def getPicture(): js.Any = js.native
-  def getPicture(options: cordovaDashPluginDashCameraLib.CameraOptions): js.Any = js.native
+  def cleanup(): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def getPicture(): angularLib.angularMod.angularNs.IPromise[java.lang.String] = js.native
+  def getPicture(options: cordovaDashPluginDashCameraLib.CameraOptions): angularLib.angularMod.angularNs.IPromise[java.lang.String] = js.native
 }
 

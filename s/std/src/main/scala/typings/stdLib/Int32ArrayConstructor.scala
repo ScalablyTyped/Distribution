@@ -16,7 +16,7 @@ trait Int32ArrayConstructor
       Int32Array
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* elements */ Iterable[scala.Double]) | (/* length */ scala.Double) | (/* arrayOrArrayBuffer */ ArrayLike[scala.Double]) | (/* arrayOrArrayBuffer */ ArrayBufferLike), 
+      (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[scala.Double]) | (/* length */ scala.Double) | (/* elements */ Iterable[scala.Double]), 
       Int32Array
     ] {
   /**

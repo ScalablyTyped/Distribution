@@ -537,7 +537,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ]
   ): atBabelTypesLib.typesMod.ClassExpression = js.native
   def classExpression(
@@ -546,7 +546,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ],
     mixins: js.Any
   ): atBabelTypesLib.typesMod.ClassExpression = js.native
@@ -556,7 +556,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.typesMod.TSTypeParameterInstantiation
@@ -567,7 +567,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.typesMod.TypeParameterInstantiation
@@ -641,7 +641,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ]
   ): atBabelTypesLib.typesMod.ClassExpression = js.native
   def classExpression(
@@ -650,7 +650,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ],
     mixins: js.Any
   ): atBabelTypesLib.typesMod.ClassExpression = js.native
@@ -660,7 +660,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.typesMod.TSTypeParameterInstantiation
@@ -671,7 +671,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.typesMod.TypeParameterInstantiation
@@ -753,7 +753,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ]
   ): atBabelTypesLib.typesMod.ClassExpression = js.native
   def classExpression(
@@ -762,7 +762,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ],
     mixins: js.Any
   ): atBabelTypesLib.typesMod.ClassExpression = js.native
@@ -772,7 +772,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.typesMod.TSTypeParameterInstantiation
@@ -783,7 +783,7 @@ object typesNs extends js.Object {
     body: atBabelTypesLib.typesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.typesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.typesMod.TSExpressionWithTypeArguments | atBabelTypesLib.typesMod.ClassImplements
+      atBabelTypesLib.typesMod.ClassImplements | atBabelTypesLib.typesMod.TSExpressionWithTypeArguments
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.typesMod.TypeParameterInstantiation
@@ -1469,13 +1469,13 @@ object typesNs extends js.Object {
   def exportNamedDeclaration(
     declaration: atBabelTypesLib.typesMod.Declaration | js.UndefOr[scala.Nothing],
     specifiers: js.Array[
-      atBabelTypesLib.typesMod.ExportSpecifier | atBabelTypesLib.typesMod.ExportDefaultSpecifier | atBabelTypesLib.typesMod.ExportNamespaceSpecifier
+      atBabelTypesLib.typesMod.ExportDefaultSpecifier | atBabelTypesLib.typesMod.ExportNamespaceSpecifier | atBabelTypesLib.typesMod.ExportSpecifier
     ]
   ): atBabelTypesLib.typesMod.ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
     declaration: atBabelTypesLib.typesMod.Declaration | js.UndefOr[scala.Nothing],
     specifiers: js.Array[
-      atBabelTypesLib.typesMod.ExportSpecifier | atBabelTypesLib.typesMod.ExportDefaultSpecifier | atBabelTypesLib.typesMod.ExportNamespaceSpecifier
+      atBabelTypesLib.typesMod.ExportDefaultSpecifier | atBabelTypesLib.typesMod.ExportNamespaceSpecifier | atBabelTypesLib.typesMod.ExportSpecifier
     ],
     source: atBabelTypesLib.typesMod.StringLiteral
   ): atBabelTypesLib.typesMod.ExportNamedDeclaration = js.native

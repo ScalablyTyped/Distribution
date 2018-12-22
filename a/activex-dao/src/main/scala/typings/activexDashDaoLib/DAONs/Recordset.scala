@@ -10,14 +10,14 @@ trait Recordset extends js.Object {
   var AbsolutePosition: scala.Double = js.native
   val BOF: scala.Boolean = js.native
   val BatchCollisionCount: scala.Double = js.native
-  val BatchCollisions: stdLib.SafeArray[Bookmark] = js.native
+  val BatchCollisions: activexDashInteropLib.SafeArray[Bookmark] = js.native
   var BatchSize: scala.Double = js.native
   var Bookmark: Bookmark = js.native
   val Bookmarkable: scala.Boolean = js.native
   var CacheSize: scala.Double = js.native
   var CacheStart: Bookmark = js.native
   var Connection: Connection = js.native
-  val DateCreated: stdLib.VarDate = js.native
+  val DateCreated: activexDashInteropLib.VarDate = js.native
   val EOF: scala.Boolean = js.native
   val EditMode: EditModeEnum = js.native
   @JSName("Fields")
@@ -25,7 +25,7 @@ trait Recordset extends js.Object {
   var Filter: java.lang.String = js.native
   var Index: java.lang.String = js.native
   val LastModified: Bookmark = js.native
-  val LastUpdated: stdLib.VarDate = js.native
+  val LastUpdated: activexDashInteropLib.VarDate = js.native
   var LockEdits: scala.Boolean = js.native
   val Name: java.lang.String = js.native
   val NoMatch: scala.Boolean = js.native

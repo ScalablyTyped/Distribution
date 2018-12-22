@@ -43,7 +43,7 @@ trait IOverlayableProps extends IOverlayLifecycleProps {
        */
   var onClose: js.UndefOr[
     js.Function1[
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement]], 
+      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined

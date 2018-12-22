@@ -33,11 +33,11 @@ trait CanCan extends js.Object {
     ]
   ): scala.Unit = js.native
   def allow[T](model: js.Any, actions: java.lang.String, targets: java.lang.String, condition: js.Object): scala.Unit = js.native
-  def allow[T](model: js.Any, actions: java.lang.String, targets: js.Array[T | java.lang.String]): scala.Unit = js.native
+  def allow[T](model: js.Any, actions: java.lang.String, targets: js.Array[java.lang.String | T]): scala.Unit = js.native
   def allow[T](
     model: js.Any,
     actions: java.lang.String,
-    targets: js.Array[T | java.lang.String],
+    targets: js.Array[java.lang.String | T],
     condition: js.Function3[
       /* performer */ js.Any, 
       /* target */ js.Any, 
@@ -48,7 +48,7 @@ trait CanCan extends js.Object {
   def allow[T](
     model: js.Any,
     actions: java.lang.String,
-    targets: js.Array[T | java.lang.String],
+    targets: js.Array[java.lang.String | T],
     condition: js.Object
   ): scala.Unit = js.native
   def allow[T](model: js.Any, actions: js.Array[java.lang.String], targets: T): scala.Unit = js.native
@@ -82,11 +82,11 @@ trait CanCan extends js.Object {
     targets: java.lang.String,
     condition: js.Object
   ): scala.Unit = js.native
-  def allow[T](model: js.Any, actions: js.Array[java.lang.String], targets: js.Array[T | java.lang.String]): scala.Unit = js.native
+  def allow[T](model: js.Any, actions: js.Array[java.lang.String], targets: js.Array[java.lang.String | T]): scala.Unit = js.native
   def allow[T](
     model: js.Any,
     actions: js.Array[java.lang.String],
-    targets: js.Array[T | java.lang.String],
+    targets: js.Array[java.lang.String | T],
     condition: js.Function3[
       /* performer */ js.Any, 
       /* target */ js.Any, 
@@ -97,7 +97,7 @@ trait CanCan extends js.Object {
   def allow[T](
     model: js.Any,
     actions: js.Array[java.lang.String],
-    targets: js.Array[T | java.lang.String],
+    targets: js.Array[java.lang.String | T],
     condition: js.Object
   ): scala.Unit = js.native
   def authorize(performer: js.Any, action: java.lang.String, target: js.Any): scala.Unit = js.native

@@ -10,8 +10,8 @@ trait Thenable[R] extends js.Object {
   def `then`[U](): Thenable[U] = js.native
   def `then`[U](onFulfilled: js.Function1[/* value */ R, U | Thenable[U]]): Thenable[U] = js.native
   def `then`[U](
-    onFulfilled: js.Function1[/* value */ R, U | Thenable[U]],
-    onRejected: js.Function1[/* error */ js.Any, U | Thenable[U] | scala.Unit]
+    onFulfilled: js.Function1[/* value */ R, Thenable[U] | U],
+    onRejected: js.Function1[/* error */ js.Any, Thenable[U] | U | scala.Unit]
   ): Thenable[U] = js.native
 }
 

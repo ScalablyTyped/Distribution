@@ -7,18 +7,19 @@
 //                 Jeff Kenney <https://github.com/jeffkenney>
 //                 Jimi (Dimitris) Charalampidis <https://github.com/JimiC>
 //                 Teddy Cross <https://github.com/tkazec>
+//                 Steffen Viken Valvåg <https://github.com/steffenvv>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
+// TypeScript Version: 2.8
 // The following TSLint rules have been disabled:
 // unified-signatures: Because there is useful information in the argument names of the overloaded signatures
 // Convention:
 // Use 'union types' when:
-//  - parameter types have similar signature type (i.e. 'string | string[]')
+//  - parameter types have similar signature type (i.e. 'string | ReadonlyArray<string>')
 //  - parameter names have the same semantic meaning (i.e. ['command', 'commands'] , ['key', 'keys'])
 //    An example for not using 'union types' is the declaration of 'env' where `prefix` and `enable` parameters
 //    have different semantics. On the other hand, in the declaration of 'usage', a `command: string` parameter
-//    has the same semantic meaning with declaring an overload method by using `commands: string[]`, thus
-//    it's prefered to use `command: string | string[]`
+//    has the same semantic meaning with declaring an overload method by using `commands: ReadonlyArray<string>`,
+//    thus it's preferred to use `command: string | ReadonlyArray<string>`
 // Use parameterless declaration instead of declaring all parameters optional,
 // when all parameters are optional and more than one
 ```

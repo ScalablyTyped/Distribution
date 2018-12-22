@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Tracer
-  extends opentracingLib.opentracingMod.Tracer {
+/* RemoveDifficultInheritance: 
+- Dropped any */ @js.native
+trait Tracer extends js.Object {
   @JSName("addEventListener")
   def addEventListener_error(method: datadogDashTracerLib.datadogDashTracerLibStrings.error): scala.Unit = js.native
   @JSName("addEventListener")

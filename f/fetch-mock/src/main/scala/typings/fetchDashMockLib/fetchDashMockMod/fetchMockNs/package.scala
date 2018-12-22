@@ -6,7 +6,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fetchMockNs {
-  type MockCall = js.Tuple2[java.lang.String, MockRequest]
+  /**
+       * Inspection filter. Can be one of the following:
+       * boolean:
+       *   * true retrieves all calls matched by fetch.
+       *     fetchMock.MATCHED is an alias for true and may be used to make tests
+       *     more readable.
+       *   * false retrieves all calls not matched by fetch (i.e. those handled
+       *     by catch() or spy(). fetchMock.UNMATCHED is an alias for false and
+       *     may be used to make tests more readable.
+       * MockMatcher (routeIdentifier):
+       *   All routes have an identifier:
+       *    * If it’s a named route, the identifier is the route’s name
+       *    * If the route is unnamed, the identifier is the matcher passed in to
+       *      .mock()
+       *   All calls that were handled by the route with the given identifier
+       *   will be retrieved
+       * MockMatcher (matcher):
+       *   Any matcher compatible with the mocking api can be passed in to filter
+       *   the calls arbitrarily.
+       */
+  type InspectionFilter = MockMatcher | scala.Boolean
+  /**
+       * Either an object compatible with the mocking api or a string specifying
+       * a http method to filter by. This will be used to filter the list of
+       * calls further.
+       */
+  type InspectionOptions = MockOptions | java.lang.String
   /**
        * Mock matcher. Can be one of following:
        * string: Either

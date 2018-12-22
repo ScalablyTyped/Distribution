@@ -349,7 +349,7 @@ trait ObservableStatic extends js.Object {
   def create[T](
     subscribe: js.Function1[
       /* observer */ Observer[T], 
-      rxDashCoreLib.RxNs.IDisposable | scala.Unit | js.Function0[scala.Unit]
+      js.Function0[scala.Unit] | rxDashCoreLib.RxNs.IDisposable | scala.Unit
     ]
   ): Observable[T] = js.native
   def createWithDisposable[T](subscribe: js.Function1[/* observer */ Observer[T], rxDashCoreLib.RxNs.IDisposable]): Observable[T] = js.native

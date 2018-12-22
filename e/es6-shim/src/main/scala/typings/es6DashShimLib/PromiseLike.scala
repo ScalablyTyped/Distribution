@@ -28,8 +28,8 @@ trait PromiseLike[T] extends js.Object {
       * @returns A Promise for the completion of which ever callback is executed.
       */
   def `then`[TResult](
-    onfulfilled: js.Function1[/* value */ T, TResult | PromiseLike[TResult]],
-    onrejected: js.Function1[/* reason */ js.Any, TResult | PromiseLike[TResult] | scala.Unit]
+    onfulfilled: js.Function1[/* value */ T, PromiseLike[TResult] | TResult],
+    onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | scala.Unit]
   ): PromiseLike[TResult] = js.native
 }
 

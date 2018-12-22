@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait ScrollspyOption extends js.Object {
   /**
-       * TODO: https://github.com/twbs/bootstrap/issues/25799
+       * Finds which section the spied element is in:
+       * * `auto` will choose the best method get scroll coordinates.
+       * * `offset` will use jQuery offset method to get scroll coordinates.
+       * * `position` will use jQuery position method to get scroll coordinates.
        *
        * @default "auto"
        */

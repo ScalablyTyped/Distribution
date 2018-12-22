@@ -26,7 +26,7 @@ class DataView protected () extends js.Object {
   def getRowProperty(rowIndex: scala.Double, name: java.lang.String): Properties = js.native
   def getSortedRows(sortColumn: SortByColumn): js.Array[scala.Double] = js.native
   def getSortedRows(sortColumn: scala.Double): js.Array[scala.Double] = js.native
-  def getSortedRows(sortColumns: js.Array[SortByColumn | scala.Double]): js.Array[scala.Double] = js.native
+  def getSortedRows(sortColumns: js.Array[scala.Double | SortByColumn]): js.Array[scala.Double] = js.native
   def getTableColumnIndex(viewColumnIndex: scala.Double): scala.Double = js.native
   def getTableProperty(name: java.lang.String): js.Any = js.native
   def getTableRowIndex(viewRowIndex: scala.Double): scala.Double = js.native

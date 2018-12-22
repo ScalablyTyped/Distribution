@@ -68,7 +68,7 @@ class Tracer () extends js.Object {
        *         for a description of the carrier object.
        */
   def inject(
-    spanContext: opentracingLib.libSpanMod.default | opentracingLib.libSpanUnderscoreContextMod.default,
+    spanContext: opentracingLib.libSpanUnderscoreContextMod.default | opentracingLib.libSpanMod.default,
     format: java.lang.String,
     carrier: js.Any
   ): scala.Unit = js.native

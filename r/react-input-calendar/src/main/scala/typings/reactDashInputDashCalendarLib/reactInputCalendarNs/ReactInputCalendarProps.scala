@@ -63,7 +63,7 @@ trait ReactInputCalendarProps extends js.Object {
           */
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[ReactInputCalendar], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[ReactInputCalendar, reactLib.Event], 
       /* computableDate */ java.lang.String, 
       scala.Unit
     ]
@@ -77,7 +77,7 @@ trait ReactInputCalendarProps extends js.Object {
           */
   var onFocus: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[ReactInputCalendar], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[ReactInputCalendar, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined

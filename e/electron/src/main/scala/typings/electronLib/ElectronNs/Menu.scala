@@ -36,7 +36,7 @@ class Menu () extends js.Object {
        * Inserts the menuItem to the pos position of the menu.
        */
   def insert(pos: scala.Double, menuItem: MenuItem): scala.Unit = js.native
-  // Docs: http://electron.atom.io/docs/api/menu
+  // Docs: http://electronjs.org/docs/api/menu
   /**
        * Emitted when a popup is closed either manually or with menu.closePopup().
        */
@@ -63,6 +63,10 @@ class Menu () extends js.Object {
     event: electronLib.electronLibStrings.`menu-will-show`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
+  /**
+       * Pops up this menu as a context menu in the BrowserWindow.
+       */
+  def popup(): scala.Unit = js.native
   /**
        * Pops up this menu as a context menu in the BrowserWindow.
        */

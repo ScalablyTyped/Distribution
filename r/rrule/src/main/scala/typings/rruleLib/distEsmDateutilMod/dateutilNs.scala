@@ -75,7 +75,7 @@ object dateutilNs extends js.Object {
   val PY_WEEKDAYS: js.Array[scala.Double] = js.native
   def clone(date: Time): stdLib.Date = js.native
   def clone(date: stdLib.Date): stdLib.Date = js.native
-  def cloneDates(dates: js.Array[Time | stdLib.Date]): js.Array[stdLib.Date] = js.native
+  def cloneDates(dates: js.Array[stdLib.Date | Time]): js.Array[stdLib.Date] = js.native
   /**
        * @see: <http://docs.python.org/library/datetime.html#datetime.datetime.combine>
        */

@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object chromaDashJsLibStrings {
   @js.native
-  sealed trait Color extends js.Object
-  
-  @js.native
   sealed trait alpha extends js.Object
   
   @js.native
@@ -99,7 +96,6 @@ object chromaDashJsLibStrings {
   @js.native
   sealed trait temperature extends js.Object
   
-  def Color: Color = "Color".asInstanceOf[Color]
   def alpha: alpha = "alpha".asInstanceOf[alpha]
   def auto: auto = "auto".asInstanceOf[auto]
   def brighten: brighten = "brighten".asInstanceOf[brighten]

@@ -20,6 +20,6 @@ class ErrorMessageTracker () extends js.Object {
        *
        * @param connection The connection established between client and server.
        */
-  def sendErrors(connection: vscodeDashLanguageserverLib.Anon_WindowRemoteWindow): scala.Unit = js.native
+  def sendErrors(connection: vscodeDashLanguageserverLib.Anon_Window): scala.Unit = js.native
 }
 

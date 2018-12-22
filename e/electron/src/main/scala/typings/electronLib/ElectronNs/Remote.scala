@@ -12,7 +12,7 @@ trait Remote extends MainInterface {
        * remote.getGlobal('process') but is cached.
        */
   var process: js.UndefOr[js.Any] = js.undefined
-  // Docs: http://electron.atom.io/docs/api/remote
+  // Docs: http://electronjs.org/docs/api/remote
   def getCurrentWebContents(): WebContents
   /**
        * Note: Do not use removeAllListeners on BrowserWindow. Use of this can remove all

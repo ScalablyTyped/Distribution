@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DesktopCapturer extends EventEmitter {
-  // Docs: http://electron.atom.io/docs/api/desktop-capturer
+  // Docs: http://electronjs.org/docs/api/desktop-capturer
   /**
        * Starts gathering information about all available desktop media sources, and
        * calls callback(error, sources) when finished. sources is an array of

@@ -16,6 +16,7 @@ object StackActionsNs extends js.Object {
   val RESET: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/RESET` = js.native
   def completeTransition(payload: reactDashNavigationLib.reactDashNavigationMod.NavigationCompleteTransitionActionPayload): reactDashNavigationLib.reactDashNavigationMod.NavigationCompleteTransitionAction = js.native
   def pop(options: reactDashNavigationLib.reactDashNavigationMod.NavigationPopActionPayload): reactDashNavigationLib.reactDashNavigationMod.NavigationPopAction = js.native
+  def popToTop(): reactDashNavigationLib.reactDashNavigationMod.NavigationPopToTopAction = js.native
   def popToTop(options: reactDashNavigationLib.reactDashNavigationMod.NavigationPopToTopActionPayload): reactDashNavigationLib.reactDashNavigationMod.NavigationPopToTopAction = js.native
   def push(options: reactDashNavigationLib.reactDashNavigationMod.NavigationPushActionPayload): reactDashNavigationLib.reactDashNavigationMod.NavigationPushAction = js.native
   def replace(options: reactDashNavigationLib.reactDashNavigationMod.NavigationReplaceActionPayload): reactDashNavigationLib.reactDashNavigationMod.NavigationReplaceAction = js.native

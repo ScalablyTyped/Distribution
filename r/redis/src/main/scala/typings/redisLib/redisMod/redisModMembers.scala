@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("redis", JSImport.Namespace)
 @js.native
 object redisModMembers extends js.Object {
-  val Multi: redisLib.Anon_Multi = js.native
-  val RedisClient: redisLib.Anon_Options = js.native
+  val Multi: org.scalablytyped.runtime.Instantiable0[Multi] = js.native
+  val RedisClient: org.scalablytyped.runtime.Instantiable1[/* options */ ClientOpts, RedisClient] = js.native
   var debug_mode: scala.Boolean = js.native
   def createClient(): RedisClient = js.native
   def createClient(options: ClientOpts): RedisClient = js.native

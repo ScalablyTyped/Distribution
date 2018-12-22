@@ -24,6 +24,6 @@ trait IDashboardResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the user array.
            *
            */
-  def getDashboard(section: java.lang.String): js.Any
+  def getDashboard(section: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 

@@ -37,7 +37,7 @@ org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding 
      * @param array The octets to store.
      */
 org.scalablytyped.runtime.Instantiable1[
-      (/* str */ java.lang.String) | (/* size */ scala.Double) | (/* array */ stdLib.Uint8Array) | (/* array */ js.Array[js.Any]), 
+      (/* array */ js.Array[js.Any]) | (/* size */ scala.Double) | (/* str */ java.lang.String) | (/* array */ stdLib.Uint8Array), 
       Buffer
     ] {
   /**

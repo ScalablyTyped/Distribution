@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_ByteLength
   extends org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ java.lang.String, Buffer]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* str */ java.lang.String) | (/* size */ scala.Double) | (/* size */ stdLib.Uint8Array) | (/* array */ js.Array[js.Any]), 
+      (/* array */ js.Array[js.Any]) | (/* size */ scala.Double) | (/* str */ java.lang.String) | (/* size */ stdLib.Uint8Array), 
       Buffer
     ] {
   def byteLength(string: java.lang.String): scala.Double = js.native

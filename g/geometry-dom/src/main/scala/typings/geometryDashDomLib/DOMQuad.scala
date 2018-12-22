@@ -27,7 +27,7 @@ object DOMQuad
       geometryDashDomLib.GeometryDomNs.DOMQuad
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* rect */ DOMRectInit) | (/* p1 */ DOMPointInit), 
+      (/* p1 */ DOMPointInit) | (/* rect */ DOMRectInit), 
       geometryDashDomLib.GeometryDomNs.DOMQuad
     ]
      with org.scalablytyped.runtime.Instantiable0[geometryDashDomLib.GeometryDomNs.DOMQuad]

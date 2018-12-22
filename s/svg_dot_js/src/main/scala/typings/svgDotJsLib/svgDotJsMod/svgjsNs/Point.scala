@@ -10,7 +10,7 @@ trait Point
   extends org.scalablytyped.runtime.Instantiable0[Point]
      with org.scalablytyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, Point]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* position */ ArrayPoint) | (/* point */ Point) | (/* position */ svgDotJsLib.Anon_Y), 
+      (/* position */ svgDotJsLib.Anon_Y) | (/* position */ ArrayPoint) | (/* point */ Point), 
       Point
     ] {
   var x: scala.Double = js.native

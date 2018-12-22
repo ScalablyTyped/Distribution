@@ -599,7 +599,7 @@ object fsNsMembers extends js.Object {
            */
   def readFile(
     filepath: adoneLib.adoneNs.fsNs.INs.URL,
-    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_1576448709 | adoneLib.Anon_EncodingNull | adoneLib.Anon_Encoding_1594618402)) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions | adoneLib.adoneNs.fsNs.INs.Encoding
+    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_1576448709 | adoneLib.Anon_EncodingNull | adoneLib.Anon_Encoding_1594618402)) | adoneLib.adoneNs.fsNs.INs.Encoding | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): js.Promise[nodeLib.Buffer | scala.Null] = js.native
   def readFile(filepath: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
   /**
@@ -607,7 +607,7 @@ object fsNsMembers extends js.Object {
            */
   def readFile(
     filepath: java.lang.String,
-    encoding: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_1576448709 | adoneLib.Anon_EncodingNull | adoneLib.Anon_Encoding_1594618402)) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions | adoneLib.adoneNs.fsNs.INs.Encoding
+    encoding: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_1576448709 | adoneLib.Anon_EncodingNull | adoneLib.Anon_Encoding_1594618402)) | adoneLib.adoneNs.fsNs.INs.Encoding | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): js.Promise[java.lang.String] = js.native
   def readFile(filepath: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   /**
@@ -615,7 +615,7 @@ object fsNsMembers extends js.Object {
            */
   def readFile(
     filepath: nodeLib.Buffer,
-    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_1576448709 | adoneLib.Anon_EncodingNull | adoneLib.Anon_Encoding_1594618402)) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions | adoneLib.adoneNs.fsNs.INs.Encoding
+    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_1576448709 | adoneLib.Anon_EncodingNull | adoneLib.Anon_Encoding_1594618402)) | adoneLib.adoneNs.fsNs.INs.Encoding | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): js.Promise[nodeLib.Buffer | scala.Null] = js.native
   def readFileSync(filepath: adoneLib.adoneNs.fsNs.INs.URL): nodeLib.Buffer = js.native
   def readFileSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native

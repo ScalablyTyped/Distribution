@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_LocalesOptions
   extends org.scalablytyped.runtime.Instantiable0[stdLib.IntlNs.DateTimeFormat]
      with org.scalablytyped.runtime.Instantiable2[
-      (/* locales */ java.lang.String) | (/* locales */ js.Array[java.lang.String]), 
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       /* options */ stdLib.IntlNs.DateTimeFormatOptions, 
       stdLib.IntlNs.DateTimeFormat
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* locales */ java.lang.String) | (/* locales */ js.Array[java.lang.String]), 
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       stdLib.IntlNs.DateTimeFormat
     ] {
   def apply(): stdLib.IntlNs.DateTimeFormat = js.native

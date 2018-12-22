@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Element extends js.Object {
   def animate(): Animation = js.native
-  def animate(effect: js.Array[stdLib.Keyframe | AnimationKeyFrame], timing: scala.Double): Animation = js.native
+  def animate(effect: js.Array[AnimationKeyFrame | stdLib.Keyframe], timing: scala.Double): Animation = js.native
   def animate(effect: js.Array[AnimationKeyFrame], timing: AnimationEffectTiming): Animation = js.native
   def animate(effect: scala.Null, timing: scala.Double): Animation = js.native
   def animate(effect: scala.Null, timing: AnimationEffectTiming): Animation = js.native

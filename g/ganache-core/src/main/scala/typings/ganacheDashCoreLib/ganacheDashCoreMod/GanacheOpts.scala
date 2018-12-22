@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait GanacheOpts extends js.Object {
+  var db_path: js.UndefOr[java.lang.String] = js.undefined
   var gasLimit: js.UndefOr[scala.Double] = js.undefined
   var logger: js.UndefOr[ganacheDashCoreLib.Anon_Log] = js.undefined
   var mnemonic: js.UndefOr[java.lang.String] = js.undefined

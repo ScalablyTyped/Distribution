@@ -13,10 +13,10 @@ class Vectorizer protected () extends js.Object {
   def this(el: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   def this(el: stdLib.SVGElement, attrs: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   def this(el: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: Vectorizer) = this()
-  def this(el: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: js.Array[Vectorizer | stdLib.SVGElement]) = this()
+  def this(el: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: js.Array[stdLib.SVGElement | Vectorizer]) = this()
   def this(el: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: stdLib.SVGElement) = this()
   def this(el: stdLib.SVGElement, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: Vectorizer) = this()
-  def this(el: stdLib.SVGElement, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: js.Array[Vectorizer | stdLib.SVGElement]) = this()
+  def this(el: stdLib.SVGElement, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: js.Array[stdLib.SVGElement | Vectorizer]) = this()
   def this(el: stdLib.SVGElement, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: stdLib.SVGElement) = this()
   var id: java.lang.String = js.native
   var node: stdLib.SVGElement = js.native
@@ -24,7 +24,7 @@ class Vectorizer protected () extends js.Object {
   def animateAlongPath(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], path: Vectorizer): scala.Unit = js.native
   def animateAlongPath(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], path: stdLib.SVGElement): scala.Unit = js.native
   def append(els: Vectorizer): this.type = js.native
-  def append(els: js.Array[Vectorizer | stdLib.SVGElement]): this.type = js.native
+  def append(els: js.Array[stdLib.SVGElement | Vectorizer]): this.type = js.native
   def append(els: stdLib.SVGElement): this.type = js.native
   def appendTo(el: Vectorizer): this.type = js.native
   def appendTo(el: stdLib.SVGElement): this.type = js.native
@@ -37,7 +37,7 @@ class Vectorizer protected () extends js.Object {
   def bbox(withoutTransformations: scala.Boolean, target: Vectorizer): jointjsLib.jointjsMod.gNs.Rect = js.native
   def bbox(withoutTransformations: scala.Boolean, target: stdLib.SVGElement): jointjsLib.jointjsMod.gNs.Rect = js.native
   def before(els: Vectorizer): this.type = js.native
-  def before(els: js.Array[Vectorizer | stdLib.SVGElement]): this.type = js.native
+  def before(els: js.Array[stdLib.SVGElement | Vectorizer]): this.type = js.native
   def before(els: stdLib.SVGElement): this.type = js.native
   def children(): js.Array[Vectorizer] = js.native
   def contains(el: Vectorizer): scala.Boolean = js.native
@@ -60,7 +60,7 @@ class Vectorizer protected () extends js.Object {
   def index(): scala.Double = js.native
   def normalizePath(): this.type = js.native
   def prepend(els: Vectorizer): this.type = js.native
-  def prepend(els: js.Array[Vectorizer | stdLib.SVGElement]): this.type = js.native
+  def prepend(els: js.Array[stdLib.SVGElement | Vectorizer]): this.type = js.native
   def prepend(els: stdLib.SVGElement): this.type = js.native
   def remove(): this.type = js.native
   def removeAttr(name: java.lang.String): this.type = js.native

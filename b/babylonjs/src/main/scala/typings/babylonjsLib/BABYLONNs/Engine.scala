@@ -2771,7 +2771,7 @@ class Engine protected () extends js.Object {
   def updateAndBindInstancesBuffer(
     instancesBuffer: babylonjsLib.WebGLBuffer,
     data: stdLib.Float32Array,
-    offsetLocations: js.Array[InstancingAttributeInfo | scala.Double]
+    offsetLocations: js.Array[scala.Double | InstancingAttributeInfo]
   ): scala.Unit = js.native
   /**
            * update the bound buffer with the given data

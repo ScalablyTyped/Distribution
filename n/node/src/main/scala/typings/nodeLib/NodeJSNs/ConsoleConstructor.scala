@@ -15,7 +15,7 @@ trait ConsoleConstructor
       nodeLib.Console
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* stdout */ WritableStream) | (/* options */ ConsoleConstructorOptions), 
+      (/* options */ ConsoleConstructorOptions) | (/* stdout */ WritableStream), 
       nodeLib.Console
     ]
 

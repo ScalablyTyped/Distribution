@@ -13,7 +13,10 @@ trait TablePaginationActionsProps
   var nextIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconbuttonIconButtonMod.IconButtonProps]] = js.native
   var page: scala.Double = js.native
   var rowsPerPage: scala.Double = js.native
-  def onChangePage(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement], page: scala.Double): scala.Unit = js.native
+  def onChangePage(
+    event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent],
+    page: scala.Double
+  ): scala.Unit = js.native
   def onChangePage(event: scala.Null, page: scala.Double): scala.Unit = js.native
 }
 

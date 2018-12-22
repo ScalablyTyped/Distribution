@@ -67,6 +67,9 @@ object electronLibStrings {
   sealed trait always extends js.Object
   
   @js.native
+  sealed trait `always-on-top-changed` extends js.Object
+  
+  @js.native
   sealed trait animationcancel extends js.Object
   
   @js.native
@@ -86,6 +89,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait `appearance-based` extends js.Object
+  
+  @js.native
+  sealed trait `appearance-changed` extends js.Object
   
   @js.native
   sealed trait array extends js.Object
@@ -155,6 +161,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait buttons extends js.Object
+  
+  @js.native
+  sealed trait camera extends js.Object
   
   @js.native
   sealed trait cancel extends js.Object
@@ -277,6 +286,9 @@ object electronLibStrings {
   sealed trait deferred extends js.Object
   
   @js.native
+  sealed trait denied extends js.Object
+  
+  @js.native
   sealed trait desktop extends js.Object
   
   @js.native
@@ -323,6 +335,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait `did-navigate-in-page` extends js.Object
+  
+  @js.native
+  sealed trait `did-redirect-navigation` extends js.Object
   
   @js.native
   sealed trait `did-start-loading` extends js.Object
@@ -482,6 +497,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait `gpu-process-crashed` extends js.Object
+  
+  @js.native
+  sealed trait granted extends js.Object
   
   @js.native
   sealed trait hidden extends js.Object
@@ -652,6 +670,9 @@ object electronLibStrings {
   sealed trait method extends js.Object
   
   @js.native
+  sealed trait microphone extends js.Object
+  
+  @js.native
   sealed trait minimize extends js.Object
   
   @js.native
@@ -731,6 +752,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait normal extends js.Object
+  
+  @js.native
+  sealed trait `not-determined` extends js.Object
   
   @js.native
   sealed trait ntlm extends js.Object
@@ -880,6 +904,12 @@ object electronLibStrings {
   sealed trait redirect extends js.Object
   
   @js.native
+  sealed trait `remote-get-global` extends js.Object
+  
+  @js.native
+  sealed trait `remote-require` extends js.Object
+  
+  @js.native
   sealed trait replace extends js.Object
   
   @js.native
@@ -902,6 +932,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait restored extends js.Object
+  
+  @js.native
+  sealed trait restricted extends js.Object
   
   @js.native
   sealed trait resume extends js.Object
@@ -1174,6 +1207,9 @@ object electronLibStrings {
   sealed trait `will-finish-launching` extends js.Object
   
   @js.native
+  sealed trait `will-move` extends js.Object
+  
+  @js.native
   sealed trait `will-navigate` extends js.Object
   
   @js.native
@@ -1181,6 +1217,12 @@ object electronLibStrings {
   
   @js.native
   sealed trait `will-quit` extends js.Object
+  
+  @js.native
+  sealed trait `will-redirect` extends js.Object
+  
+  @js.native
+  sealed trait `will-resize` extends js.Object
   
   @js.native
   sealed trait window extends js.Object
@@ -1214,6 +1256,7 @@ object electronLibStrings {
   def `active-caption-gradient`: `active-caption-gradient` = "active-caption-gradient".asInstanceOf[`active-caption-gradient`]
   def `activity-was-continued`: `activity-was-continued` = "activity-was-continued".asInstanceOf[`activity-was-continued`]
   def always: always = "always".asInstanceOf[always]
+  def `always-on-top-changed`: `always-on-top-changed` = "always-on-top-changed".asInstanceOf[`always-on-top-changed`]
   def animationcancel: animationcancel = "animationcancel".asInstanceOf[animationcancel]
   def animationend: animationend = "animationend".asInstanceOf[animationend]
   def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
@@ -1221,6 +1264,7 @@ object electronLibStrings {
   def `app-command`: `app-command` = "app-command".asInstanceOf[`app-command`]
   def `app-workspace`: `app-workspace` = "app-workspace".asInstanceOf[`app-workspace`]
   def `appearance-based`: `appearance-based` = "appearance-based".asInstanceOf[`appearance-based`]
+  def `appearance-changed`: `appearance-changed` = "appearance-changed".asInstanceOf[`appearance-changed`]
   def array: array = "array".asInstanceOf[array]
   def audio: audio = "audio".asInstanceOf[audio]
   def automatic: automatic = "automatic".asInstanceOf[automatic]
@@ -1244,6 +1288,7 @@ object electronLibStrings {
   def button: button = "button".asInstanceOf[button]
   def `button-text`: `button-text` = "button-text".asInstanceOf[`button-text`]
   def buttons: buttons = "buttons".asInstanceOf[buttons]
+  def camera: camera = "camera".asInstanceOf[camera]
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   def canplay: canplay = "canplay".asInstanceOf[canplay]
@@ -1284,6 +1329,7 @@ object electronLibStrings {
   def default_public_and_private_interfaces: default_public_and_private_interfaces = "default_public_and_private_interfaces".asInstanceOf[default_public_and_private_interfaces]
   def default_public_interface_only: default_public_interface_only = "default_public_interface_only".asInstanceOf[default_public_interface_only]
   def deferred: deferred = "deferred".asInstanceOf[deferred]
+  def denied: denied = "denied".asInstanceOf[denied]
   def desktop: desktop = "desktop".asInstanceOf[desktop]
   def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   def detach: detach = "detach".asInstanceOf[detach]
@@ -1300,6 +1346,7 @@ object electronLibStrings {
   def `did-frame-navigate`: `did-frame-navigate` = "did-frame-navigate".asInstanceOf[`did-frame-navigate`]
   def `did-navigate`: `did-navigate` = "did-navigate".asInstanceOf[`did-navigate`]
   def `did-navigate-in-page`: `did-navigate-in-page` = "did-navigate-in-page".asInstanceOf[`did-navigate-in-page`]
+  def `did-redirect-navigation`: `did-redirect-navigation` = "did-redirect-navigation".asInstanceOf[`did-redirect-navigation`]
   def `did-start-loading`: `did-start-loading` = "did-start-loading".asInstanceOf[`did-start-loading`]
   def `did-start-navigation`: `did-start-navigation` = "did-start-navigation".asInstanceOf[`did-start-navigation`]
   def `did-stop-loading`: `did-stop-loading` = "did-stop-loading".asInstanceOf[`did-stop-loading`]
@@ -1353,6 +1400,7 @@ object electronLibStrings {
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   def `gpu-crashed`: `gpu-crashed` = "gpu-crashed".asInstanceOf[`gpu-crashed`]
   def `gpu-process-crashed`: `gpu-process-crashed` = "gpu-process-crashed".asInstanceOf[`gpu-process-crashed`]
+  def granted: granted = "granted".asInstanceOf[granted]
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   def hiddenInset: hiddenInset = "hiddenInset".asInstanceOf[hiddenInset]
   def hide: hide = "hide".asInstanceOf[hide]
@@ -1409,6 +1457,7 @@ object electronLibStrings {
   def menubar: menubar = "menubar".asInstanceOf[menubar]
   def message: message = "message".asInstanceOf[message]
   def method: method = "method".asInstanceOf[method]
+  def microphone: microphone = "microphone".asInstanceOf[microphone]
   def minimize: minimize = "minimize".asInstanceOf[minimize]
   def mobile: mobile = "mobile".asInstanceOf[mobile]
   def `modal-panel`: `modal-panel` = "modal-panel".asInstanceOf[`modal-panel`]
@@ -1436,6 +1485,7 @@ object electronLibStrings {
   def noResolveAliases: noResolveAliases = "noResolveAliases".asInstanceOf[noResolveAliases]
   def none: none = "none".asInstanceOf[none]
   def normal: normal = "normal".asInstanceOf[normal]
+  def `not-determined`: `not-determined` = "not-determined".asInstanceOf[`not-determined`]
   def ntlm: ntlm = "ntlm".asInstanceOf[ntlm]
   def `on-ac`: `on-ac` = "on-ac".asInstanceOf[`on-ac`]
   def `on-battery`: `on-battery` = "on-battery".asInstanceOf[`on-battery`]
@@ -1485,6 +1535,8 @@ object electronLibStrings {
   def `ready-to-show`: `ready-to-show` = "ready-to-show".asInstanceOf[`ready-to-show`]
   def recent: recent = "recent".asInstanceOf[recent]
   def redirect: redirect = "redirect".asInstanceOf[redirect]
+  def `remote-get-global`: `remote-get-global` = "remote-get-global".asInstanceOf[`remote-get-global`]
+  def `remote-require`: `remote-require` = "remote-require".asInstanceOf[`remote-require`]
   def replace: replace = "replace".asInstanceOf[replace]
   def reply: reply = "reply".asInstanceOf[reply]
   def reset: reset = "reset".asInstanceOf[reset]
@@ -1493,6 +1545,7 @@ object electronLibStrings {
   def responsive: responsive = "responsive".asInstanceOf[responsive]
   def restore: restore = "restore".asInstanceOf[restore]
   def restored: restored = "restored".asInstanceOf[restored]
+  def restricted: restricted = "restricted".asInstanceOf[restricted]
   def resume: resume = "resume".asInstanceOf[resume]
   def right: right = "right".asInstanceOf[right]
   def `right-click`: `right-click` = "right-click".asInstanceOf[`right-click`]
@@ -1583,9 +1636,12 @@ object electronLibStrings {
   def `will-continue-activity`: `will-continue-activity` = "will-continue-activity".asInstanceOf[`will-continue-activity`]
   def `will-download`: `will-download` = "will-download".asInstanceOf[`will-download`]
   def `will-finish-launching`: `will-finish-launching` = "will-finish-launching".asInstanceOf[`will-finish-launching`]
+  def `will-move`: `will-move` = "will-move".asInstanceOf[`will-move`]
   def `will-navigate`: `will-navigate` = "will-navigate".asInstanceOf[`will-navigate`]
   def `will-prevent-unload`: `will-prevent-unload` = "will-prevent-unload".asInstanceOf[`will-prevent-unload`]
   def `will-quit`: `will-quit` = "will-quit".asInstanceOf[`will-quit`]
+  def `will-redirect`: `will-redirect` = "will-redirect".asInstanceOf[`will-redirect`]
+  def `will-resize`: `will-resize` = "will-resize".asInstanceOf[`will-resize`]
   def window: window = "window".asInstanceOf[window]
   def `window-all-closed`: `window-all-closed` = "window-all-closed".asInstanceOf[`window-all-closed`]
   def `window-frame`: `window-frame` = "window-frame".asInstanceOf[`window-frame`]

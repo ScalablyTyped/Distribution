@@ -26,7 +26,7 @@ class HasOne () extends Relation {
   def removeRelated(model: backboneLib.backboneMod.Model, coll: js.Any, options: js.Any): scala.Unit = js.native
   def setKeyContents(keyContents: backboneLib.backboneMod.Collection[backboneLib.backboneMod.Model]): scala.Unit = js.native
   def setKeyContents(keyContents: java.lang.String): scala.Unit = js.native
-  def setKeyContents(keyContents: js.Array[java.lang.String | scala.Double]): scala.Unit = js.native
+  def setKeyContents(keyContents: js.Array[scala.Double | java.lang.String]): scala.Unit = js.native
   def setKeyContents(keyContents: scala.Double): scala.Unit = js.native
   def tryAddRelated(model: backboneLib.backboneMod.Model, coll: js.Any, options: js.Any): scala.Unit = js.native
 }

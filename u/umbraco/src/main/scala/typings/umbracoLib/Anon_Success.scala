@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait Anon_Success extends js.Object {
+trait Anon_Success[T] extends js.Object {
   var errorMsg: java.lang.String
-  var success: js.Any
+  var success: angularLib.angularMod.angularNs.IHttpPromiseCallback[T]
 }
 

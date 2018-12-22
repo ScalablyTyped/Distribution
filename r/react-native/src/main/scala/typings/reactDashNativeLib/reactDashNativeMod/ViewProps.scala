@@ -24,6 +24,10 @@ trait ViewProps
        */
   var hitSlop: js.UndefOr[Insets] = js.undefined
   /**
+       * Used to reference react managed views from native code.
+       */
+  var nativeID: js.UndefOr[java.lang.String] = js.undefined
+  /**
        * Invoked on mount and layout changes with
        *
        * {nativeEvent: { layout: {x, y, width, height}}}.

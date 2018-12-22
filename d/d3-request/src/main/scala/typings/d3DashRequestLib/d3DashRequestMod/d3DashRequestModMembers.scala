@@ -18,7 +18,7 @@ object d3DashRequestModMembers extends js.Object {
       scala.Unit
     ]
   ): DsvRequest = js.native
-  def csv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
+  def csv[ParsedRow /* <: js.Object */](
     url: java.lang.String,
     row: js.Function3[
       /* rawRow */ d3DashDsvLib.d3DashDsvMod.DSVRowString, 
@@ -63,7 +63,7 @@ object d3DashRequestModMembers extends js.Object {
       scala.Unit
     ]
   ): DsvRequest = js.native
-  def tsv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
+  def tsv[ParsedRow /* <: js.Object */](
     url: java.lang.String,
     row: js.Function3[
       /* rawRow */ d3DashDsvLib.d3DashDsvMod.DSVRowString, 

@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 
 trait IShowDialogArgs extends js.Object {
   var action: IShowDialogAction
-  var scope: js.Any
+  var scope: angularLib.angularMod.angularNs.IScope
 }
 

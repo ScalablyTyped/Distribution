@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Transaction extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/transaction
+  // Docs: http://electronjs.org/docs/api/structures/transaction
   /**
        * The error code if an error occurred while processing the transaction.
        */

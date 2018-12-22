@@ -44,7 +44,10 @@ trait MenuProps
      * */
   var limitHeight: js.UndefOr[scala.Boolean] = js.undefined
   var onContextMenu: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]
+    js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   var position: js.UndefOr[reactDashMdLib.libHelpersLayoverMod.LayoverPositions] = js.undefined
   var preventContextMenu: js.UndefOr[scala.Boolean] = js.undefined

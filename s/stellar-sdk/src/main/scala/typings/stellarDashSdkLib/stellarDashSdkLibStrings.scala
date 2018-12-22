@@ -34,12 +34,6 @@ object stellarDashSdkLibStrings {
   sealed trait create_passive_offer extends js.Object
   
   @js.native
-  sealed trait credit_alphanum12 extends js.Object
-  
-  @js.native
-  sealed trait credit_alphanum4 extends js.Object
-  
-  @js.native
   sealed trait desc extends js.Object
   
   @js.native
@@ -59,9 +53,6 @@ object stellarDashSdkLibStrings {
   
   @js.native
   sealed trait manage_offer extends js.Object
-  
-  @js.native
-  sealed trait native extends js.Object
   
   @js.native
   sealed trait none extends js.Object
@@ -90,8 +81,6 @@ object stellarDashSdkLibStrings {
   def change_trust: change_trust = "change_trust".asInstanceOf[change_trust]
   def create_account: create_account = "create_account".asInstanceOf[create_account]
   def create_passive_offer: create_passive_offer = "create_passive_offer".asInstanceOf[create_passive_offer]
-  def credit_alphanum12: credit_alphanum12 = "credit_alphanum12".asInstanceOf[credit_alphanum12]
-  def credit_alphanum4: credit_alphanum4 = "credit_alphanum4".asInstanceOf[credit_alphanum4]
   def desc: desc = "desc".asInstanceOf[desc]
   def ed25519: ed25519 = "ed25519".asInstanceOf[ed25519]
   def hash: hash = "hash".asInstanceOf[hash]
@@ -99,7 +88,6 @@ object stellarDashSdkLibStrings {
   def inflation: inflation = "inflation".asInstanceOf[inflation]
   def manage_data: manage_data = "manage_data".asInstanceOf[manage_data]
   def manage_offer: manage_offer = "manage_offer".asInstanceOf[manage_offer]
-  def native: native = "native".asInstanceOf[native]
   def none: none = "none".asInstanceOf[none]
   def path_payment: path_payment = "path_payment".asInstanceOf[path_payment]
   def payment: payment = "payment".asInstanceOf[payment]

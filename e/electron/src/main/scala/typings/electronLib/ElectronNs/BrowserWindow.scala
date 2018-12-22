@@ -12,6 +12,11 @@ class BrowserWindow () extends EventEmitter {
   var id: scala.Double = js.native
   var webContents: WebContents = js.native
   @JSName("addListener")
+  def `addListener_always-on-top-changed`(
+    event: electronLib.electronLibStrings.`always-on-top-changed`,
+    listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ scala.Boolean, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def `addListener_app-command`(
     event: electronLib.electronLibStrings.`app-command`,
     listener: js.Function2[/* event */ Event, /* command */ java.lang.String, scala.Unit]
@@ -80,6 +85,16 @@ class BrowserWindow () extends EventEmitter {
   def addListener_unmaximize(event: electronLib.electronLibStrings.unmaximize, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_unresponsive(event: electronLib.electronLibStrings.unresponsive, listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  def `addListener_will-move`(
+    event: electronLib.electronLibStrings.`will-move`,
+    listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def `addListener_will-resize`(
+    event: electronLib.electronLibStrings.`will-resize`,
+    listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
+  ): this.type = js.native
   /**
        * Adds a window as a tab on this window, after the tab for the window instance.
        */
@@ -142,6 +157,13 @@ class BrowserWindow () extends EventEmitter {
        * (unsigned long) on Linux.
        */
   def getNativeWindowHandle(): nodeLib.Buffer = js.native
+  /**
+       * Note: whatever the current state of the window : maximized, minimized or in
+       * fullscreen, this function always returns the position and size of the window in
+       * normal state. In normal state, getBounds and getNormalBounds returns the same
+       * Rectangle.
+       */
+  def getNormalBounds(): Rectangle = js.native
   def getOpacity(): scala.Double = js.native
   def getParentWindow(): BrowserWindow = js.native
   def getPosition(): js.Array[scala.Double] = js.native
@@ -193,6 +215,7 @@ class BrowserWindow () extends EventEmitter {
        * On Linux always returns true.
        */
   def isMovable(): scala.Boolean = js.native
+  def isNormal(): scala.Boolean = js.native
   def isResizable(): scala.Boolean = js.native
   def isSimpleFullScreen(): scala.Boolean = js.native
   def isVisible(): scala.Boolean = js.native
@@ -206,6 +229,11 @@ class BrowserWindow () extends EventEmitter {
        * to the root of your application.  See the webContents docs for more information.
        */
   def loadFile(filePath: java.lang.String): scala.Unit = js.native
+  /**
+       * Same as webContents.loadFile, filePath should be a path to an HTML file relative
+       * to the root of your application.  See the webContents docs for more information.
+       */
+  def loadFile(filePath: java.lang.String, options: LoadFileOptions): scala.Unit = js.native
   /**
        * Same as webContents.loadURL(url[, options]). The url can be a remote address
        * (e.g. http://) or a path to a local HTML file using the file:// protocol. To
@@ -246,7 +274,15 @@ class BrowserWindow () extends EventEmitter {
        * Moves window to top(z-order) regardless of focus
        */
   def moveTop(): scala.Unit = js.native
-  // Docs: http://electron.atom.io/docs/api/browser-window
+  // Docs: http://electronjs.org/docs/api/browser-window
+  /**
+       * Emitted when the window is set or unset to show always on top of other windows.
+       */
+  @JSName("on")
+  def `on_always-on-top-changed`(
+    event: electronLib.electronLibStrings.`always-on-top-changed`,
+    listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ scala.Boolean, scala.Unit]
+  ): this.type = js.native
   /**
        * Emitted when an App Command is invoked. These are typically related to keyboard
        * media keys or browser commands, as well as the "Back" button built into some
@@ -356,7 +392,7 @@ class BrowserWindow () extends EventEmitter {
   @JSName("on")
   def `on_ready-to-show`(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
   /**
-       * Emitted when the window is being resized.
+       * Emitted after the window has been resized.
        */
   @JSName("on")
   def on_resize(event: electronLib.electronLibStrings.resize, listener: js.Function): this.type = js.native
@@ -424,6 +460,33 @@ class BrowserWindow () extends EventEmitter {
        */
   @JSName("on")
   def on_unresponsive(event: electronLib.electronLibStrings.unresponsive, listener: js.Function): this.type = js.native
+  /**
+       * Emitted before the window is moved. Calling event.preventDefault() will prevent
+       * the window from being moved. Note that this is only emitted when the window is
+       * being resized manually. Resizing the window with setBounds/setSize will not emit
+       * this event.
+       */
+  @JSName("on")
+  def `on_will-move`(
+    event: electronLib.electronLibStrings.`will-move`,
+    listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
+  ): this.type = js.native
+  /**
+       * Emitted before the window is resized. Calling event.preventDefault() will
+       * prevent the window from being resized. Note that this is only emitted when the
+       * window is being resized manually. Resizing the window with setBounds/setSize
+       * will not emit this event.
+       */
+  @JSName("on")
+  def `on_will-resize`(
+    event: electronLib.electronLibStrings.`will-resize`,
+    listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def `once_always-on-top-changed`(
+    event: electronLib.electronLibStrings.`always-on-top-changed`,
+    listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ scala.Boolean, scala.Unit]
+  ): this.type = js.native
   @JSName("once")
   def `once_app-command`(
     event: electronLib.electronLibStrings.`app-command`,
@@ -493,6 +556,16 @@ class BrowserWindow () extends EventEmitter {
   def once_unmaximize(event: electronLib.electronLibStrings.unmaximize, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_unresponsive(event: electronLib.electronLibStrings.unresponsive, listener: js.Function): this.type = js.native
+  @JSName("once")
+  def `once_will-move`(
+    event: electronLib.electronLibStrings.`will-move`,
+    listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def `once_will-resize`(
+    event: electronLib.electronLibStrings.`will-resize`,
+    listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
+  ): this.type = js.native
   /**
        * Uses Quick Look to preview a file at a given path.
        */
@@ -505,6 +578,11 @@ class BrowserWindow () extends EventEmitter {
        * Same as webContents.reload.
        */
   def reload(): scala.Unit = js.native
+  @JSName("removeListener")
+  def `removeListener_always-on-top-changed`(
+    event: electronLib.electronLibStrings.`always-on-top-changed`,
+    listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ scala.Boolean, scala.Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def `removeListener_app-command`(
     event: electronLib.electronLibStrings.`app-command`,
@@ -574,6 +652,16 @@ class BrowserWindow () extends EventEmitter {
   def removeListener_unmaximize(event: electronLib.electronLibStrings.unmaximize, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_unresponsive(event: electronLib.electronLibStrings.unresponsive, listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_will-move`(
+    event: electronLib.electronLibStrings.`will-move`,
+    listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_will-resize`(
+    event: electronLib.electronLibStrings.`will-resize`,
+    listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
+  ): this.type = js.native
   /**
        * Restores the window from minimized state to its previous state.
        */
@@ -759,11 +847,17 @@ class BrowserWindow () extends EventEmitter {
        */
   def setAutoHideMenuBar(hide: scala.Boolean): scala.Unit = js.native
   /**
-       * Resizes and moves the window to the supplied bounds
+       * Sets the background color of the window. See Setting backgroundColor.
+       */
+  def setBackgroundColor(backgroundColor: java.lang.String): scala.Unit = js.native
+  /**
+       * Resizes and moves the window to the supplied bounds. Any properties that are not
+       * supplied will default to their current values.
        */
   def setBounds(bounds: Rectangle): scala.Unit = js.native
   /**
-       * Resizes and moves the window to the supplied bounds
+       * Resizes and moves the window to the supplied bounds. Any properties that are not
+       * supplied will default to their current values.
        */
   def setBounds(bounds: Rectangle, animate: scala.Boolean): scala.Unit = js.native
   def setBrowserView(browserView: BrowserView): scala.Unit = js.native
@@ -989,7 +1083,8 @@ class BrowserWindow () extends EventEmitter {
   /**
        * Sets the region of the window to show as the thumbnail image displayed when
        * hovering over the window in the taskbar. You can reset the thumbnail to be the
-       * entire window by specifying an empty region: {x: 0, y: 0, width: 0, height: 0}.
+       * entire window by specifying an empty region: { x: 0, y: 0, width: 0, height: 0
+       * }.
        */
   def setThumbnailClip(region: Rectangle): scala.Unit = js.native
   /**
@@ -1020,6 +1115,16 @@ class BrowserWindow () extends EventEmitter {
        * nothing on Windows.
        */
   def setVisibleOnAllWorkspaces(visible: scala.Boolean): scala.Unit = js.native
+  /**
+       * Sets whether the window should be visible on all workspaces. Note: This API does
+       * nothing on Windows.
+       */
+  def setVisibleOnAllWorkspaces(visible: scala.Boolean, options: VisibleOnAllWorkspacesOptions): scala.Unit = js.native
+  /**
+       * Sets whether the window traffic light buttons should be visible. This cannot be
+       * called when titleBarStyle is set to customButtonsOnHover.
+       */
+  def setWindowButtonVisibility(visible: scala.Boolean): scala.Unit = js.native
   /**
        * Shows and gives focus to the window.
        */

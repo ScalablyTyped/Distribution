@@ -23,6 +23,6 @@ class Path ()
            * Creates a new path item and places it at the top of the active layer.
            * @param segments [optional] - An array of segments (or points to be converted to segments) that will be added to the path
            */
-  def this(segments: js.Array[paperLib.paperNs.Point | paperLib.paperNs.Segment | js.Array[scala.Double]]) = this()
+  def this(segments: js.Array[js.Array[scala.Double] | paperLib.paperNs.Point | paperLib.paperNs.Segment]) = this()
 }
 

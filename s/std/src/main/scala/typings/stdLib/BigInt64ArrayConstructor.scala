@@ -16,7 +16,7 @@ trait BigInt64ArrayConstructor
       BigInt64Array
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* length */ scala.Double) | (/* array */ Iterable[BigInt]) | (/* buffer */ ArrayBufferLike), 
+      (/* buffer */ ArrayBufferLike) | (/* length */ scala.Double) | (/* array */ Iterable[BigInt]), 
       BigInt64Array
     ] {
   /** The size in bytes of each element in the array. */

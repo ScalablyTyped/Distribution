@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait IAppAvailabilityService extends js.Object {
-  def check(urlScheme: java.lang.String): js.Any
+  def check(urlScheme: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]
 }
 

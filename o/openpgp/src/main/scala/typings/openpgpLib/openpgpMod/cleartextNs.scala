@@ -31,10 +31,6 @@ object cleartextNs extends js.Object {
     def verify(keys: js.Array[openpgpLib.openpgpMod.keyNs.Key]): js.Array[openpgpLib.openpgpMod.VerifiedMessage]
   }
   
-  /** creates new message object from binary data
-          @param bytes
-       */
-  def fromBinary(bytes: java.lang.String): CleartextMessage = js.native
   /** creates new message object from text
           @param text
        */

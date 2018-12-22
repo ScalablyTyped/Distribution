@@ -70,8 +70,13 @@ trait IModule extends js.Object {
            * @param name Name of the directive in camel-case (i.e. ngBind which will match as ng-bind)
            * @param directiveFactory An injectable directive factory function.
            */
-  def directive[TScope /* <: IScope */](name: java.lang.String, directiveFactory: Injectable[IDirectiveFactory[TScope]]): IModule = js.native
-  def directive[TScope /* <: IScope */](`object`: org.scalablytyped.runtime.StringDictionary[Injectable[IDirectiveFactory[TScope]]]): IModule = js.native
+  def directive[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](
+    name: java.lang.String,
+    directiveFactory: Injectable[IDirectiveFactory[TScope, TElement, TAttributes, TController]]
+  ): IModule = js.native
+  def directive[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](
+    `object`: org.scalablytyped.runtime.StringDictionary[Injectable[IDirectiveFactory[TScope, TElement, TAttributes, TController]]]
+  ): IModule = js.native
   /**
            * Register a service factory, which will be called to return the service instance. This is short for registering a service where its provider consists of only a $get property, which is the given service factory function. You should use $provide.factory(getFn) if you do not need to configure your service in a provider.
            *

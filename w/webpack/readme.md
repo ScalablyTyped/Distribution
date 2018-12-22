@@ -16,6 +16,7 @@
 //                 John Reilly <https://github.com/johnnyreilly>
 //                 Ryan Waskiewicz <https://github.com/rwaskiewicz>
 //                 Kyle Uehlein <https://github.com/kuehlein>
+//                 Grgur Grisogono <https://github.com/grgur>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 ```

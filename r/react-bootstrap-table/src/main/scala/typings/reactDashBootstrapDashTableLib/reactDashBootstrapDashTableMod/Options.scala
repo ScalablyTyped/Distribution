@@ -92,7 +92,10 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var clearSearchBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit], 
+      /* onClick */ js.Function1[
+        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+        scala.Unit
+      ], 
       reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
@@ -123,7 +126,10 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var deleteBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit], 
+      /* onClick */ js.Function1[
+        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+        scala.Unit
+      ], 
       reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
@@ -183,7 +189,10 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var exportCSVBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit], 
+      /* onClick */ js.Function1[
+        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+        scala.Unit
+      ], 
       reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
@@ -240,7 +249,10 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var insertBtn: js.UndefOr[
     js.Function1[
-      /* onClick */ js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit], 
+      /* onClick */ js.Function1[
+        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+        scala.Unit
+      ], 
       reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
@@ -414,7 +426,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     js.Function3[
       /* rowKey */ scala.Double | java.lang.String, 
       /* isExpand */ scala.Boolean, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -459,7 +471,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* row */ TRow, 
       /* columnIndex */ scala.Double, 
       /* rowIndex */ scala.Double, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -470,7 +482,11 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 *   `event`: the double click event.
   	 */
   var onRowDoubleClick: js.UndefOr[
-    js.Function2[/* row */ TRow, /* event */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit]
+    js.Function2[
+      /* row */ TRow, 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   /**
   	 * Assign a callback function which will be called when mouse leaves a row in table.
@@ -479,7 +495,11 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 *   `e`: the mouse event data
   	 */
   var onRowMouseOut: js.UndefOr[
-    js.Function2[/* row */ TRow, /* e */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit]
+    js.Function2[
+      /* row */ TRow, 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   /**
   	 * Assign a callback function which will be called when the mouse enters a row in table.
@@ -488,7 +508,11 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 *   `e`: the mouse event data
   	 */
   var onRowMouseOver: js.UndefOr[
-    js.Function2[/* row */ TRow, /* e */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit]
+    js.Function2[
+      /* row */ TRow, 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   /**
   	 * Assign a callback function which will be called when search text changes. This function takes
@@ -630,7 +654,10 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 */
   var showSelectedOnlyBtn: js.UndefOr[
     js.Function2[
-      /* onClick */ js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit], 
+      /* onClick */ js.Function1[
+        /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+        scala.Unit
+      ], 
       /* showSelected */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactElement[_]
     ]

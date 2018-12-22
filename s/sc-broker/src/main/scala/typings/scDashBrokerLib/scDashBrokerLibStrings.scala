@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object scDashBrokerLibStrings {
   @js.native
+  sealed trait broker extends js.Object
+  
+  @js.native
   sealed trait brokerMessage extends js.Object
   
   @js.native
@@ -34,6 +37,9 @@ object scDashBrokerLibStrings {
   sealed trait publish extends js.Object
   
   @js.native
+  sealed trait publishIn extends js.Object
+  
+  @js.native
   sealed trait ready extends js.Object
   
   @js.native
@@ -48,6 +54,7 @@ object scDashBrokerLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  def broker: broker = "broker".asInstanceOf[broker]
   def brokerMessage: brokerMessage = "brokerMessage".asInstanceOf[brokerMessage]
   def connected: connected = "connected".asInstanceOf[connected]
   def connecting: connecting = "connecting".asInstanceOf[connecting]
@@ -57,6 +64,7 @@ object scDashBrokerLibStrings {
   def masterMessage: masterMessage = "masterMessage".asInstanceOf[masterMessage]
   def message: message = "message".asInstanceOf[message]
   def publish: publish = "publish".asInstanceOf[publish]
+  def publishIn: publishIn = "publishIn".asInstanceOf[publishIn]
   def ready: ready = "ready".asInstanceOf[ready]
   def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
   def subscribeFail: subscribeFail = "subscribeFail".asInstanceOf[subscribeFail]

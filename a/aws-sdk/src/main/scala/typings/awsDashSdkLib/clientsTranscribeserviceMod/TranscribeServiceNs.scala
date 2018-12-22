@@ -139,7 +139,7 @@ object TranscribeServiceNs extends js.Object {
          */
     var NextToken: js.UndefOr[NextToken] = js.undefined
     /**
-         * When specified, returns only transcription jobs with the specified status.
+         * When specified, returns only transcription jobs with the specified status. Jobs are ordered by creation date, with the newest jobs returned first. If you don’t specify a status, Amazon Transcribe returns all transcription jobs ordered by creation date. 
          */
     var Status: js.UndefOr[TranscriptionJobStatus] = js.undefined
   }
@@ -199,7 +199,7 @@ object TranscribeServiceNs extends js.Object {
   
   trait Media extends js.Object {
     /**
-         * The S3 location of the input media file. The URI must be in the same region as the API endpoint that you are calling. The general form is:   https://&lt;aws-region&gt;.amazonaws.com/&lt;bucket-name&gt;/&lt;keyprefix&gt;/&lt;objectkey&gt;   For example:  https://s3-us-east-1.amazonaws.com/examplebucket/example.mp4   https://s3-us-east-1.amazonaws.com/examplebucket/mediadocs/example.mp4  For more information about S3 object names, see Object Keys in the Amazon S3 Developer Guide.
+         * The S3 location of the input media file. The URI must be in the same region as the API endpoint that you are calling. The general form is:   https://s3-&lt;aws-region&gt;.amazonaws.com/&lt;bucket-name&gt;/&lt;keyprefix&gt;/&lt;objectkey&gt;   For example:  https://s3-us-east-1.amazonaws.com/examplebucket/example.mp4   https://s3-us-east-1.amazonaws.com/examplebucket/mediadocs/example.mp4  For more information about S3 object names, see Object Keys in the Amazon S3 Developer Guide.
          */
     var MediaFileUri: js.UndefOr[Uri] = js.undefined
   }
@@ -358,11 +358,11 @@ object TranscribeServiceNs extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-       * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message. 
+       * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. 
        */
     def createVocabulary(): awsDashSdkLib.libRequestMod.Request[CreateVocabularyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message. 
+       * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. 
        */
     def createVocabulary(
       callback: js.Function2[
@@ -372,11 +372,11 @@ object TranscribeServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateVocabularyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message. 
+       * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. 
        */
     def createVocabulary(params: CreateVocabularyRequest): awsDashSdkLib.libRequestMod.Request[CreateVocabularyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message. 
+       * Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. 
        */
     def createVocabulary(
       params: CreateVocabularyRequest,
@@ -458,11 +458,11 @@ object TranscribeServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetTranscriptionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets information about a vocabulary. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+       * Gets information about a vocabulary. 
        */
     def getVocabulary(): awsDashSdkLib.libRequestMod.Request[GetVocabularyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets information about a vocabulary. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+       * Gets information about a vocabulary. 
        */
     def getVocabulary(
       callback: js.Function2[
@@ -472,11 +472,11 @@ object TranscribeServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetVocabularyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets information about a vocabulary. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+       * Gets information about a vocabulary. 
        */
     def getVocabulary(params: GetVocabularyRequest): awsDashSdkLib.libRequestMod.Request[GetVocabularyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets information about a vocabulary. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+       * Gets information about a vocabulary. 
        */
     def getVocabulary(
       params: GetVocabularyRequest,
@@ -545,11 +545,11 @@ object TranscribeServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListVocabulariesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts an asynchronous job to transcribe speech to text. Note that en-AU, en-UK, and fr-CA languages are in preview and are only available to whitelisted customers. 
+       * Starts an asynchronous job to transcribe speech to text. 
        */
     def startTranscriptionJob(): awsDashSdkLib.libRequestMod.Request[StartTranscriptionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts an asynchronous job to transcribe speech to text. Note that en-AU, en-UK, and fr-CA languages are in preview and are only available to whitelisted customers. 
+       * Starts an asynchronous job to transcribe speech to text. 
        */
     def startTranscriptionJob(
       callback: js.Function2[
@@ -559,11 +559,11 @@ object TranscribeServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartTranscriptionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts an asynchronous job to transcribe speech to text. Note that en-AU, en-UK, and fr-CA languages are in preview and are only available to whitelisted customers. 
+       * Starts an asynchronous job to transcribe speech to text. 
        */
     def startTranscriptionJob(params: StartTranscriptionJobRequest): awsDashSdkLib.libRequestMod.Request[StartTranscriptionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts an asynchronous job to transcribe speech to text. Note that en-AU, en-UK, and fr-CA languages are in preview and are only available to whitelisted customers. 
+       * Starts an asynchronous job to transcribe speech to text. 
        */
     def startTranscriptionJob(
       params: StartTranscriptionJobRequest,
@@ -574,11 +574,11 @@ object TranscribeServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartTranscriptionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+       * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. 
        */
     def updateVocabulary(): awsDashSdkLib.libRequestMod.Request[UpdateVocabularyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+       * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. 
        */
     def updateVocabulary(
       callback: js.Function2[
@@ -588,11 +588,11 @@ object TranscribeServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateVocabularyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+       * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. 
        */
     def updateVocabulary(params: UpdateVocabularyRequest): awsDashSdkLib.libRequestMod.Request[UpdateVocabularyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message.
+       * Updates an existing vocabulary with new values. The UpdateVocabulary operation overwrites all of the existing information with the values that you provide in the request. 
        */
     def updateVocabulary(
       params: UpdateVocabularyRequest,
@@ -665,7 +665,7 @@ object TranscribeServiceNs extends js.Object {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DateTime = stdLib.Date
   type FailureReason = java.lang.String
-  type LanguageCode = awsDashSdkLib.awsDashSdkLibStrings.`en-US` | awsDashSdkLib.awsDashSdkLibStrings.`es-US` | awsDashSdkLib.awsDashSdkLibStrings.`en-AU` | awsDashSdkLib.awsDashSdkLibStrings.`fr-CA` | awsDashSdkLib.awsDashSdkLibStrings.`en-GB` | awsDashSdkLib.awsDashSdkLibStrings.`de-DE` | awsDashSdkLib.awsDashSdkLibStrings.`pt-BR` | awsDashSdkLib.awsDashSdkLibStrings.`fr-FR` | java.lang.String
+  type LanguageCode = awsDashSdkLib.awsDashSdkLibStrings.`en-US` | awsDashSdkLib.awsDashSdkLibStrings.`es-US` | awsDashSdkLib.awsDashSdkLibStrings.`en-AU` | awsDashSdkLib.awsDashSdkLibStrings.`fr-CA` | awsDashSdkLib.awsDashSdkLibStrings.`en-GB` | awsDashSdkLib.awsDashSdkLibStrings.`de-DE` | awsDashSdkLib.awsDashSdkLibStrings.`pt-BR` | awsDashSdkLib.awsDashSdkLibStrings.`fr-FR` | awsDashSdkLib.awsDashSdkLibStrings.`it-IT` | java.lang.String
   type MaxResults = scala.Double
   type MaxSpeakers = scala.Double
   type MediaFormat = awsDashSdkLib.awsDashSdkLibStrings.mp3 | awsDashSdkLib.awsDashSdkLibStrings.mp4 | awsDashSdkLib.awsDashSdkLibStrings.wav | awsDashSdkLib.awsDashSdkLibStrings.flac | java.lang.String

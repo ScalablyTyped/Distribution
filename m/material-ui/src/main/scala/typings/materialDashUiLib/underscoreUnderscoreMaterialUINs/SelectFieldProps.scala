@@ -33,7 +33,7 @@ trait SelectFieldProps extends js.Object {
   var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[js.Object]] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
       /* index */ scala.Double, 
       /* menuItemValue */ js.Any, 
       scala.Unit

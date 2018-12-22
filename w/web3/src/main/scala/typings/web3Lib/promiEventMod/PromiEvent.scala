@@ -28,17 +28,26 @@ trait PromiEvent[T]
   @JSName("on")
   def on_error(
     `type`: web3Lib.web3LibStrings.error,
-    handler: js.Function1[stdLib.Error | web3Lib.typesMod.TransactionReceipt | java.lang.String, scala.Unit]
+    handler: js.Function1[
+      (/* error */ stdLib.Error) | java.lang.String | web3Lib.typesMod.TransactionReceipt, 
+      scala.Unit
+    ]
   ): PromiEvent[T] = js.native
   @JSName("on")
   def on_receipt(
     `type`: web3Lib.web3LibStrings.receipt,
-    handler: js.Function1[stdLib.Error | web3Lib.typesMod.TransactionReceipt | java.lang.String, scala.Unit]
+    handler: js.Function1[
+      stdLib.Error | java.lang.String | (/* receipt */ web3Lib.typesMod.TransactionReceipt), 
+      scala.Unit
+    ]
   ): PromiEvent[T] = js.native
   @JSName("on")
   def on_transactionHash(
     `type`: web3Lib.web3LibStrings.transactionHash,
-    handler: js.Function1[stdLib.Error | web3Lib.typesMod.TransactionReceipt | java.lang.String, scala.Unit]
+    handler: js.Function1[
+      stdLib.Error | (/* receipt */ java.lang.String) | web3Lib.typesMod.TransactionReceipt, 
+      scala.Unit
+    ]
   ): PromiEvent[T] = js.native
   def once(
     `type`: PromiEventType,

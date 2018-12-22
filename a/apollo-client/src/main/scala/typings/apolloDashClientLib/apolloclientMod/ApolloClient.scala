@@ -30,7 +30,9 @@ trait ApolloClient[TCacheShape]
   def extract(): TCacheShape = js.native
   def extract(optimistic: scala.Boolean): TCacheShape = js.native
   def initQueryManager(): apolloDashClientLib.coreQueryManagerMod.QueryManager[TCacheShape] = js.native
-  def mutate[T, TVariables](options: apolloDashClientLib.coreWatchQueryOptionsMod.MutationOptions[T, TVariables]): js.Promise[apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _]]] = js.native
+  def mutate[T, TVariables](options: apolloDashClientLib.coreWatchQueryOptionsMod.MutationOptions[T, TVariables]): js.Promise[
+    apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
+  ] = js.native
   def onResetStore(cb: js.Function0[js.Promise[_]]): js.Function0[scala.Unit] = js.native
   def query[T, TVariables](options: apolloDashClientLib.coreWatchQueryOptionsMod.QueryOptions[TVariables]): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[T]] = js.native
   def reFetchObservableQueries(): js.Promise[js.Array[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]]] | js.Promise[scala.Null] = js.native

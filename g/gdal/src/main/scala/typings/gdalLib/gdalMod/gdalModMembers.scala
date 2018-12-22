@@ -170,7 +170,7 @@ object gdalModMembers extends js.Object {
   def open_w(
     path: java.lang.String,
     mode: js.UndefOr[gdalLib.gdalLibStrings.w],
-    drivers: js.UndefOr[java.lang.String | js.Array[java.lang.String]],
+    drivers: js.UndefOr[js.Array[java.lang.String] | java.lang.String],
     x_size: js.UndefOr[scala.Double],
     y_size: js.UndefOr[scala.Double],
     band_count: js.UndefOr[scala.Double],

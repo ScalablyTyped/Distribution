@@ -30,7 +30,7 @@ class Cookies () extends EventEmitter {
     filter: Filter,
     callback: js.Function2[/* error */ nodeLib.Error, /* cookies */ js.Array[Cookie], scala.Unit]
   ): scala.Unit = js.native
-  // Docs: http://electron.atom.io/docs/api/cookies
+  // Docs: http://electronjs.org/docs/api/cookies
   /**
        * Emitted when a cookie is changed because it was added, edited, removed, or
        * expired.

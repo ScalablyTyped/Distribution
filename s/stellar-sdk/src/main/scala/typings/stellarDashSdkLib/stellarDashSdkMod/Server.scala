@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Server protected () extends js.Object {
   def this(serverURL: java.lang.String) = this()
-  def this(serverURL: java.lang.String, options: stellarDashSdkLib.Anon_AllowHttp) = this()
+  def this(serverURL: java.lang.String, options: ServerOptions) = this()
+  var serverURL: js.Any = js.native
   def accounts(): AccountCallBuilder = js.native
   def assets(): AssetsCallBuilder = js.native
   def effects(): EffectCallBuilder = js.native
@@ -25,7 +26,7 @@ class Server protected () extends js.Object {
     destinationAmount: java.lang.String
   ): PathCallBuilder = js.native
   def payments(): PaymentCallBuilder = js.native
-  def submitTransaction(transaction: Transaction): js.Promise[_] = js.native
+  def submitTransaction(transaction: Transaction): js.Promise[TransactionRecord] = js.native
   def tradeAggregation(base: Asset, counter: Asset, startTime: stdLib.Date, endTime: stdLib.Date, resolution: stdLib.Date): TradeAggregationCallBuilder = js.native
   def trades(): TradesCallBuilder = js.native
   def transactions(): TransactionCallBuilder = js.native

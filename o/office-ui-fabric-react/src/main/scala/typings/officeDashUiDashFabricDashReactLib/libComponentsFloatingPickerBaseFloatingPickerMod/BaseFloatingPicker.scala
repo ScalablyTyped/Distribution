@@ -40,8 +40,16 @@ class BaseFloatingPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   /* protected */ def onChange(item: T): scala.Unit = js.native
   /* protected */ def onKeyDown(ev: reactLib.MouseEvent): scala.Unit = js.native
   /* protected */ def onSelectionChange(): scala.Unit = js.native
-  /* protected */ def onSuggestionClick(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], item: T, index: scala.Double): scala.Unit = js.native
-  /* protected */ def onSuggestionRemove(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], item: T, index: scala.Double): scala.Unit = js.native
+  /* protected */ def onSuggestionClick(
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent],
+    item: T,
+    index: scala.Double
+  ): scala.Unit = js.native
+  /* protected */ def onSuggestionRemove(
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent],
+    item: T,
+    index: scala.Double
+  ): scala.Unit = js.native
   /* protected */ def renderSuggestions(): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   /* protected */ def updateSuggestionWithZeroState(): scala.Unit = js.native
   def updateSuggestions(suggestions: js.Array[T]): scala.Unit = js.native

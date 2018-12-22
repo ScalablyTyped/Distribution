@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("app-builder-lib", "PlatformPackager")
 @js.native
-abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions */] protected ()
+abstract class PlatformPackager[DC /* <: js.Any */] protected ()
   extends appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[DC] {
-  protected def this(info: appDashBuilderDashLibLib.outMod.Packager, platform: appDashBuilderDashLibLib.outMod.Platform) = this()
+  protected def this(info: js.Any, platform: js.Any) = this()
 }
 
 @JSImport("app-builder-lib", "PlatformPackager")

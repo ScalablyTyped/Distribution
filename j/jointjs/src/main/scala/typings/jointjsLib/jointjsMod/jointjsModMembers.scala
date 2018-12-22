@@ -18,7 +18,7 @@ object jointjsModMembers extends js.Object {
   def V(
     svg: java.lang.String,
     attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
-    children: js.Array[Vectorizer | stdLib.SVGElement]
+    children: js.Array[stdLib.SVGElement | Vectorizer]
   ): Vectorizer = js.native
   def V(
     svg: java.lang.String,
@@ -31,7 +31,7 @@ object jointjsModMembers extends js.Object {
   def V(
     svg: Vectorizer,
     attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
-    children: js.Array[Vectorizer | stdLib.SVGElement]
+    children: js.Array[stdLib.SVGElement | Vectorizer]
   ): Vectorizer = js.native
   def V(
     svg: Vectorizer,
@@ -48,7 +48,7 @@ object jointjsModMembers extends js.Object {
   def V(
     svg: stdLib.SVGElement,
     attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
-    children: js.Array[Vectorizer | stdLib.SVGElement]
+    children: js.Array[stdLib.SVGElement | Vectorizer]
   ): Vectorizer = js.native
   def V(
     svg: stdLib.SVGElement,

@@ -38,6 +38,7 @@ trait Spec
   def results(): NestedResults = js.native
   def runs(func: SpecFunction): Spec = js.native
   def spyOn(obj: js.Any, methodName: java.lang.String, ignoreMethodDoesntExist: scala.Boolean): Spy = js.native
+  def spyOnAllFunctions(`object`: js.Any): Spy = js.native
   def spyOnProperty(`object`: js.Any, property: java.lang.String): Spy = js.native
   @JSName("spyOnProperty")
   def spyOnProperty_get(`object`: js.Any, property: java.lang.String, accessType: jasmineLib.jasmineLibStrings.get): Spy = js.native

@@ -46,7 +46,7 @@ trait PlotData extends js.Object {
   var text: java.lang.String | js.Array[java.lang.String]
   var transforms: js.Array[DataTransform]
   var transpose: scala.Boolean
-  var `type`: plotlyDotJsLib.plotlyDotJsLibStrings.bar | plotlyDotJsLib.plotlyDotJsLibStrings.box | plotlyDotJsLib.plotlyDotJsLibStrings.heatmap | plotlyDotJsLib.plotlyDotJsLibStrings.histogram | plotlyDotJsLib.plotlyDotJsLibStrings.pointcloud | plotlyDotJsLib.plotlyDotJsLibStrings.scatter | plotlyDotJsLib.plotlyDotJsLibStrings.scattergl | plotlyDotJsLib.plotlyDotJsLibStrings.scatter3d | plotlyDotJsLib.plotlyDotJsLibStrings.surface
+  var `type`: plotlyDotJsLib.plotlyDotJsLibStrings.bar | plotlyDotJsLib.plotlyDotJsLibStrings.box | plotlyDotJsLib.plotlyDotJsLibStrings.candlestick | plotlyDotJsLib.plotlyDotJsLibStrings.choropleth | plotlyDotJsLib.plotlyDotJsLibStrings.contour | plotlyDotJsLib.plotlyDotJsLibStrings.heatmap | plotlyDotJsLib.plotlyDotJsLibStrings.histogram | plotlyDotJsLib.plotlyDotJsLibStrings.mesh3d | plotlyDotJsLib.plotlyDotJsLibStrings.ohlc | plotlyDotJsLib.plotlyDotJsLibStrings.parcoords | plotlyDotJsLib.plotlyDotJsLibStrings.pointcloud | plotlyDotJsLib.plotlyDotJsLibStrings.scatter | plotlyDotJsLib.plotlyDotJsLibStrings.scatter3d | plotlyDotJsLib.plotlyDotJsLibStrings.scattergeo | plotlyDotJsLib.plotlyDotJsLibStrings.scattergl | plotlyDotJsLib.plotlyDotJsLibStrings.scatterternary | plotlyDotJsLib.plotlyDotJsLibStrings.surface
   var visible: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibStrings.legendonly
   var x: js.Array[Datum] | js.Array[js.Array[Datum]] | TypedArray
   var xaxis: java.lang.String

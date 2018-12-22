@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait IDirectivePrePost[TScope /* <: IScope */] extends js.Object {
-  var post: js.UndefOr[IDirectiveLinkFn[TScope]] = js.undefined
-  var pre: js.UndefOr[IDirectiveLinkFn[TScope]] = js.undefined
+trait IDirectivePrePost[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] extends js.Object {
+  var post: js.UndefOr[IDirectiveLinkFn[TScope, TElement, TAttributes, TController]] = js.undefined
+  var pre: js.UndefOr[IDirectiveLinkFn[TScope, TElement, TAttributes, TController]] = js.undefined
 }
 

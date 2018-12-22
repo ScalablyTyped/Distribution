@@ -14,7 +14,7 @@ object libModMembers extends js.Object {
   val REFERENCE_CHILD_OF: /* child_of */ java.lang.String = js.native
   val REFERENCE_FOLLOWS_FROM: /* follows_from */ java.lang.String = js.native
   def childOf(
-    spanContext: opentracingLib.libSpanMod.default | opentracingLib.libSpanUnderscoreContextMod.default
+    spanContext: opentracingLib.libSpanUnderscoreContextMod.default | opentracingLib.libSpanMod.default
   ): opentracingLib.libReferenceMod.default = js.native
   def followsFrom(spanContext: opentracingLib.libSpanUnderscoreContextMod.default): opentracingLib.libReferenceMod.default = js.native
   def globalTracer(): opentracingLib.libTracerMod.default = js.native

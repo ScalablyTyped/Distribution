@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait SCServerOptions extends js.Object {
+trait SCServerOptions
+  extends /* additionalOptions */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   // In milliseconds, the timeout for calling res(err, data) when
   // your emit() call expects an ACK response from the other side
   // (when callback is provided to emit)

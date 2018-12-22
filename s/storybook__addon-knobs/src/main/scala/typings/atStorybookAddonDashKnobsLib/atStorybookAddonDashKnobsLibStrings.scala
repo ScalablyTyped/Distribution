@@ -22,6 +22,9 @@ object atStorybookAddonDashKnobsLibStrings {
   sealed trait `object` extends js.Object
   
   @js.native
+  sealed trait radios extends js.Object
+  
+  @js.native
   sealed trait select extends js.Object
   
   @js.native
@@ -32,6 +35,7 @@ object atStorybookAddonDashKnobsLibStrings {
   def date: date = "date".asInstanceOf[date]
   def number: number = "number".asInstanceOf[number]
   def `object`: `object` = "object".asInstanceOf[`object`]
+  def radios: radios = "radios".asInstanceOf[radios]
   def select: select = "select".asInstanceOf[select]
   def text: text = "text".asInstanceOf[text]
 }

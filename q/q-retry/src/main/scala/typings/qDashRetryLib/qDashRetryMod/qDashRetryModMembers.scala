@@ -109,24 +109,24 @@ object qDashRetryModMembers extends js.Object {
   def reject[T](reason: js.Any): qLib.qMod.QNs.Promise[T] = js.native
   def resolve[T](): qLib.qMod.QNs.Promise[T] = js.native
   def resolve[T](`object`: qLib.qMod.QNs.IWhenable[T]): qLib.qMod.QNs.Promise[T] = js.native
-  def retry[U](process: js.Function0[U | qLib.qMod.QNs.IPromise[U]]): qDashRetryLib.qDashRetryMod.qMod.Promise[U] = js.native
-  def retry[U](process: js.Function0[U | qLib.qMod.QNs.IPromise[U]], limit: scala.Double): qDashRetryLib.qDashRetryMod.qMod.Promise[U] = js.native
+  def retry[U](process: js.Function0[qLib.qMod.QNs.IPromise[U] | U]): qDashRetryLib.qDashRetryMod.qMod.Promise[U] = js.native
+  def retry[U](process: js.Function0[qLib.qMod.QNs.IPromise[U] | U], limit: scala.Double): qDashRetryLib.qDashRetryMod.qMod.Promise[U] = js.native
   def retry[U](
-    process: js.Function0[U | qLib.qMod.QNs.IPromise[U]],
+    process: js.Function0[qLib.qMod.QNs.IPromise[U] | U],
     onFail: js.Function2[/* reason */ js.Any, /* retries */ scala.Double, scala.Unit]
   ): qDashRetryLib.qDashRetryMod.qMod.Promise[U] = js.native
   def retry[U](
-    process: js.Function0[U | qLib.qMod.QNs.IPromise[U]],
+    process: js.Function0[qLib.qMod.QNs.IPromise[U] | U],
     onFail: js.Function2[/* reason */ js.Any, /* retries */ scala.Double, scala.Unit],
     limit: scala.Double
   ): qDashRetryLib.qDashRetryMod.qMod.Promise[U] = js.native
   def retry[U](
-    process: js.Function0[U | qLib.qMod.QNs.IPromise[U]],
+    process: js.Function0[qLib.qMod.QNs.IPromise[U] | U],
     onFail: js.Function2[/* reason */ js.Any, /* retries */ scala.Double, scala.Unit],
     options: qDashRetryLib.qDashRetryMod.qMod.IRetryOptions
   ): qDashRetryLib.qDashRetryMod.qMod.Promise[U] = js.native
   def retry[U](
-    process: js.Function0[U | qLib.qMod.QNs.IPromise[U]],
+    process: js.Function0[qLib.qMod.QNs.IPromise[U] | U],
     options: qDashRetryLib.qDashRetryMod.qMod.IRetryOptions
   ): qDashRetryLib.qDashRetryMod.qMod.Promise[U] = js.native
   def send[T](obj: js.Any, functionName: java.lang.String, args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native

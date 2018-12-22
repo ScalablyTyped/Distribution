@@ -25,7 +25,7 @@ class IncomingMessage () extends EventEmitter {
   def addListener_end(event: electronLib.electronLibStrings.end, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: electronLib.electronLibStrings.error, listener: js.Function): this.type = js.native
-  // Docs: http://electron.atom.io/docs/api/incoming-message
+  // Docs: http://electronjs.org/docs/api/incoming-message
   /**
        * Emitted when a request has been canceled during an ongoing HTTP transaction.
        */

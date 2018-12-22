@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait KeyboardEvent[T] extends SyntheticEvent[T] {
+trait KeyboardEvent[T]
+  extends BaseSyntheticEvent[reactLib.NativeKeyboardEvent, reactLib.EventTarget with T, reactLib.EventTarget] {
   var altKey: scala.Boolean
   var charCode: scala.Double
   var ctrlKey: scala.Boolean
@@ -18,8 +19,6 @@ trait KeyboardEvent[T] extends SyntheticEvent[T] {
   var locale: java.lang.String
   var location: scala.Double
   var metaKey: scala.Boolean
-  @JSName("nativeEvent")
-  var nativeEvent_KeyboardEvent: reactLib.NativeKeyboardEvent
   var repeat: scala.Boolean
   var shiftKey: scala.Boolean
   var which: scala.Double

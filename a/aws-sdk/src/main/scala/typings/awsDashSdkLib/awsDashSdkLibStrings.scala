@@ -559,6 +559,9 @@ object awsDashSdkLibStrings {
   sealed trait `2018-11-14` extends js.Object
   
   @js.native
+  sealed trait `2018-11-29` extends js.Object
+  
+  @js.native
   sealed trait `237` extends js.Object
   
   @js.native
@@ -9991,6 +9994,9 @@ object awsDashSdkLibStrings {
   sealed trait TEST_VALUE extends js.Object
   
   @js.native
+  sealed trait TFRecord extends js.Object
+  
+  @js.native
   sealed trait THEME_NAME extends js.Object
   
   @js.native
@@ -11002,6 +11008,9 @@ object awsDashSdkLibStrings {
   sealed trait WEBKIT_LOG extends js.Object
   
   @js.native
+  sealed trait WEBSOCKET extends js.Object
+  
+  @js.native
   sealed trait WEBVTT extends js.Object
   
   @js.native
@@ -11036,6 +11045,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait WEIGHTED extends js.Object
+  
+  @js.native
+  sealed trait WHEN_NO_MATCH extends js.Object
+  
+  @js.native
+  sealed trait WHEN_NO_TEMPLATES extends js.Object
   
   @js.native
   sealed trait WHEN_POSSIBLE extends js.Object
@@ -11353,6 +11368,9 @@ object awsDashSdkLibStrings {
   sealed trait associating extends js.Object
   
   @js.native
+  sealed trait `association-failed` extends js.Object
+  
+  @js.native
   sealed trait attached extends js.Object
   
   @js.native
@@ -11360,6 +11378,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait attachment extends js.Object
+  
+  @js.native
+  sealed trait auditReportCreated extends js.Object
   
   @js.native
   sealed trait authenticate extends js.Object
@@ -11372,6 +11393,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `authenticated-read` extends js.Object
+  
+  @js.native
+  sealed trait authorizing extends js.Object
   
   @js.native
   sealed trait autoEnableIO extends js.Object
@@ -11567,6 +11591,15 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait cdc extends js.Object
+  
+  @js.native
+  sealed trait `certificate-authentication` extends js.Object
+  
+  @js.native
+  sealed trait certificateAuthorityCSRCreated extends js.Object
+  
+  @js.native
+  sealed trait certificateIssued extends js.Object
   
   @js.native
   sealed trait certificateValidated extends js.Object
@@ -11914,6 +11947,9 @@ object awsDashSdkLibStrings {
   sealed trait `dhcp-options` extends js.Object
   
   @js.native
+  sealed trait `directory-service-authentication` extends js.Object
+  
+  @js.native
   sealed trait disable extends js.Object
   
   @js.native
@@ -12181,7 +12217,13 @@ object awsDashSdkLibStrings {
   sealed trait `failed-provision` extends js.Object
   
   @js.native
+  sealed trait `failed-to-terminate` extends js.Object
+  
+  @js.native
   sealed trait failing extends js.Object
+  
+  @js.native
+  sealed trait `false` extends js.Object
   
   @js.native
   sealed trait fi extends js.Object
@@ -13213,6 +13255,9 @@ object awsDashSdkLibStrings {
   sealed trait open extends js.Object
   
   @js.native
+  sealed trait openvpn extends js.Object
+  
+  @js.native
   sealed trait optimizing extends js.Object
   
   @js.native
@@ -13252,6 +13297,9 @@ object awsDashSdkLibStrings {
   sealed trait paravirtual extends js.Object
   
   @js.native
+  sealed trait partition extends js.Object
+  
+  @js.native
   sealed trait passed extends js.Object
   
   @js.native
@@ -13277,6 +13325,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `pending-acceptance` extends js.Object
+  
+  @js.native
+  sealed trait `pending-associate` extends js.Object
   
   @js.native
   sealed trait `pending-deprovision` extends js.Object
@@ -14053,6 +14104,9 @@ object awsDashSdkLibStrings {
   sealed trait terminated extends js.Object
   
   @js.native
+  sealed trait terminating extends js.Object
+  
+  @js.native
   sealed trait termination extends js.Object
   
   @js.native
@@ -14524,6 +14578,7 @@ object awsDashSdkLibStrings {
   def `2018-11-05`: `2018-11-05` = "2018-11-05".asInstanceOf[`2018-11-05`]
   def `2018-11-09`: `2018-11-09` = "2018-11-09".asInstanceOf[`2018-11-09`]
   def `2018-11-14`: `2018-11-14` = "2018-11-14".asInstanceOf[`2018-11-14`]
+  def `2018-11-29`: `2018-11-29` = "2018-11-29".asInstanceOf[`2018-11-29`]
   def `237`: `237` = "237".asInstanceOf[`237`]
   def `28DOT4`: `28DOT4` = "28.4".asInstanceOf[`28DOT4`]
   def `58DOT2`: `58DOT2` = "58.2".asInstanceOf[`58DOT2`]
@@ -17668,6 +17723,7 @@ object awsDashSdkLibStrings {
   def TEST_TREATMENT_PROCEDURE: TEST_TREATMENT_PROCEDURE = "TEST_TREATMENT_PROCEDURE".asInstanceOf[TEST_TREATMENT_PROCEDURE]
   def TEST_UNITS: TEST_UNITS = "TEST_UNITS".asInstanceOf[TEST_UNITS]
   def TEST_VALUE: TEST_VALUE = "TEST_VALUE".asInstanceOf[TEST_VALUE]
+  def TFRecord: TFRecord = "TFRecord".asInstanceOf[TFRecord]
   def THEME_NAME: THEME_NAME = "THEME_NAME".asInstanceOf[THEME_NAME]
   def THING: THING = "THING".asInstanceOf[THING]
   def THING_GROUP: THING_GROUP = "THING_GROUP".asInstanceOf[THING_GROUP]
@@ -18005,6 +18061,7 @@ object awsDashSdkLibStrings {
   def WEB: WEB = "WEB".asInstanceOf[WEB]
   def WEBEX: WEBEX = "WEBEX".asInstanceOf[WEBEX]
   def WEBKIT_LOG: WEBKIT_LOG = "WEBKIT_LOG".asInstanceOf[WEBKIT_LOG]
+  def WEBSOCKET: WEBSOCKET = "WEBSOCKET".asInstanceOf[WEBSOCKET]
   def WEBVTT: WEBVTT = "WEBVTT".asInstanceOf[WEBVTT]
   def WEB_ACL_MISSING_RULE_GROUP: WEB_ACL_MISSING_RULE_GROUP = "WEB_ACL_MISSING_RULE_GROUP".asInstanceOf[WEB_ACL_MISSING_RULE_GROUP]
   def WEB_APP: WEB_APP = "WEB_APP".asInstanceOf[WEB_APP]
@@ -18017,6 +18074,8 @@ object awsDashSdkLibStrings {
   def WEEK: WEEK = "WEEK".asInstanceOf[WEEK]
   def WEEKLY: WEEKLY = "WEEKLY".asInstanceOf[WEEKLY]
   def WEIGHTED: WEIGHTED = "WEIGHTED".asInstanceOf[WEIGHTED]
+  def WHEN_NO_MATCH: WHEN_NO_MATCH = "WHEN_NO_MATCH".asInstanceOf[WHEN_NO_MATCH]
+  def WHEN_NO_TEMPLATES: WHEN_NO_TEMPLATES = "WHEN_NO_TEMPLATES".asInstanceOf[WHEN_NO_TEMPLATES]
   def WHEN_POSSIBLE: WHEN_POSSIBLE = "WHEN_POSSIBLE".asInstanceOf[WHEN_POSSIBLE]
   def WHITE: WHITE = "WHITE".asInstanceOf[WHITE]
   def WINDOWS: WINDOWS = "WINDOWS".asInstanceOf[WINDOWS]
@@ -18122,13 +18181,16 @@ object awsDashSdkLibStrings {
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   def associated: associated = "associated".asInstanceOf[associated]
   def associating: associating = "associating".asInstanceOf[associating]
+  def `association-failed`: `association-failed` = "association-failed".asInstanceOf[`association-failed`]
   def attached: attached = "attached".asInstanceOf[attached]
   def attaching: attaching = "attaching".asInstanceOf[attaching]
   def attachment: attachment = "attachment".asInstanceOf[attachment]
+  def auditReportCreated: auditReportCreated = "auditReportCreated".asInstanceOf[auditReportCreated]
   def authenticate: authenticate = "authenticate".asInstanceOf[authenticate]
   def `authenticate-cognito`: `authenticate-cognito` = "authenticate-cognito".asInstanceOf[`authenticate-cognito`]
   def `authenticate-oidc`: `authenticate-oidc` = "authenticate-oidc".asInstanceOf[`authenticate-oidc`]
   def `authenticated-read`: `authenticated-read` = "authenticated-read".asInstanceOf[`authenticated-read`]
+  def authorizing: authorizing = "authorizing".asInstanceOf[authorizing]
   def autoEnableIO: autoEnableIO = "autoEnableIO".asInstanceOf[autoEnableIO]
   def autoscaling: autoscaling = "autoscaling".asInstanceOf[autoscaling]
   def `autoscaling:autoScalingGroup:DesiredCapacity`: `autoscaling:autoScalingGroup:DesiredCapacity` = "autoscaling:autoScalingGroup:DesiredCapacity".asInstanceOf[`autoscaling:autoScalingGroup:DesiredCapacity`]
@@ -18194,6 +18256,9 @@ object awsDashSdkLibStrings {
   def cancelled_terminating: cancelled_terminating = "cancelled_terminating".asInstanceOf[cancelled_terminating]
   def cancelling: cancelling = "cancelling".asInstanceOf[cancelling]
   def cdc: cdc = "cdc".asInstanceOf[cdc]
+  def `certificate-authentication`: `certificate-authentication` = "certificate-authentication".asInstanceOf[`certificate-authentication`]
+  def certificateAuthorityCSRCreated: certificateAuthorityCSRCreated = "certificateAuthorityCSRCreated".asInstanceOf[certificateAuthorityCSRCreated]
+  def certificateIssued: certificateIssued = "certificateIssued".asInstanceOf[certificateIssued]
   def certificateValidated: certificateValidated = "certificateValidated".asInstanceOf[certificateValidated]
   def changeSetCreateComplete: changeSetCreateComplete = "changeSetCreateComplete".asInstanceOf[changeSetCreateComplete]
   def chinBottom: chinBottom = "chinBottom".asInstanceOf[chinBottom]
@@ -18309,6 +18374,7 @@ object awsDashSdkLibStrings {
   def detaching: detaching = "detaching".asInstanceOf[detaching]
   def devpay: devpay = "devpay".asInstanceOf[devpay]
   def `dhcp-options`: `dhcp-options` = "dhcp-options".asInstanceOf[`dhcp-options`]
+  def `directory-service-authentication`: `directory-service-authentication` = "directory-service-authentication".asInstanceOf[`directory-service-authentication`]
   def disable: disable = "disable".asInstanceOf[disable]
   def disableApiTermination: disableApiTermination = "disableApiTermination".asInstanceOf[disableApiTermination]
   def disabled: disabled = "disabled".asInstanceOf[disabled]
@@ -18398,7 +18464,9 @@ object awsDashSdkLibStrings {
   def failed: failed = "failed".asInstanceOf[failed]
   def `failed-deprovision`: `failed-deprovision` = "failed-deprovision".asInstanceOf[`failed-deprovision`]
   def `failed-provision`: `failed-provision` = "failed-provision".asInstanceOf[`failed-provision`]
+  def `failed-to-terminate`: `failed-to-terminate` = "failed-to-terminate".asInstanceOf[`failed-to-terminate`]
   def failing: failing = "failing".asInstanceOf[failing]
+  def `false`: `false` = "false".asInstanceOf[`false`]
   def fi: fi = "fi".asInstanceOf[fi]
   def `file-system-id`: `file-system-id` = "file-system-id".asInstanceOf[`file-system-id`]
   def firstUsedTime: firstUsedTime = "firstUsedTime".asInstanceOf[firstUsedTime]
@@ -18742,6 +18810,7 @@ object awsDashSdkLibStrings {
   def one: one = "one".asInstanceOf[one]
   def `one-time`: `one-time` = "one-time".asInstanceOf[`one-time`]
   def open: open = "open".asInstanceOf[open]
+  def openvpn: openvpn = "openvpn".asInstanceOf[openvpn]
   def optimizing: optimizing = "optimizing".asInstanceOf[optimizing]
   def ordering: ordering = "ordering".asInstanceOf[ordering]
   def `origin-request`: `origin-request` = "origin-request".asInstanceOf[`origin-request`]
@@ -18755,6 +18824,7 @@ object awsDashSdkLibStrings {
   def ovm: ovm = "ovm".asInstanceOf[ovm]
   def owner: owner = "owner".asInstanceOf[owner]
   def paravirtual: paravirtual = "paravirtual".asInstanceOf[paravirtual]
+  def partition: partition = "partition".asInstanceOf[partition]
   def passed: passed = "passed".asInstanceOf[passed]
   def password: password = "password".asInstanceOf[password]
   def `password-not-available`: `password-not-available` = "password-not-available".asInstanceOf[`password-not-available`]
@@ -18764,6 +18834,7 @@ object awsDashSdkLibStrings {
   def pcm: pcm = "pcm".asInstanceOf[pcm]
   def pending: pending = "pending".asInstanceOf[pending]
   def `pending-acceptance`: `pending-acceptance` = "pending-acceptance".asInstanceOf[`pending-acceptance`]
+  def `pending-associate`: `pending-associate` = "pending-associate".asInstanceOf[`pending-associate`]
   def `pending-deprovision`: `pending-deprovision` = "pending-deprovision".asInstanceOf[`pending-deprovision`]
   def `pending-fulfillment`: `pending-fulfillment` = "pending-fulfillment".asInstanceOf[`pending-fulfillment`]
   def `pending-provision`: `pending-provision` = "pending-provision".asInstanceOf[`pending-provision`]
@@ -19022,6 +19093,7 @@ object awsDashSdkLibStrings {
   def tcp: tcp = "tcp".asInstanceOf[tcp]
   def terminate: terminate = "terminate".asInstanceOf[terminate]
   def terminated: terminated = "terminated".asInstanceOf[terminated]
+  def terminating: terminating = "terminating".asInstanceOf[terminating]
   def termination: termination = "termination".asInstanceOf[termination]
   def test: test = "test".asInstanceOf[test]
   def testConnectionSucceeds: testConnectionSucceeds = "testConnectionSucceeds".asInstanceOf[testConnectionSucceeds]

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Session () extends EventEmitter {
   var cookies: Cookies = js.native
+  var netLog: NetLog = js.native
   var protocol: Protocol = js.native
   var webRequest: WebRequest = js.native
   @JSName("addListener")
@@ -134,6 +135,32 @@ class Session () extends EventEmitter {
        */
   def setDownloadPath(path: java.lang.String): scala.Unit = js.native
   /**
+       * Sets the handler which can be used to respond to permission checks for the
+       * session. Returning true will allow the permission and false will reject it. To
+       * clear the handler, call setPermissionCheckHandler(null).
+       */
+  def setPermissionCheckHandler(): scala.Unit = js.native
+  /**
+       * Sets the handler which can be used to respond to permission checks for the
+       * session. Returning true will allow the permission and false will reject it. To
+       * clear the handler, call setPermissionCheckHandler(null).
+       */
+  def setPermissionCheckHandler(
+    handler: js.Function4[
+      /* webContents */ WebContents, 
+      /* permission */ java.lang.String, 
+      /* requestingOrigin */ java.lang.String, 
+      /* details */ PermissionCheckHandlerDetails, 
+      scala.Boolean
+    ]
+  ): scala.Unit = js.native
+  /**
+       * Sets the handler which can be used to respond to permission requests for the
+       * session. Calling callback(true) will allow the permission and callback(false)
+       * will reject it. To clear the handler, call setPermissionRequestHandler(null).
+       */
+  def setPermissionRequestHandler(): scala.Unit = js.native
+  /**
        * Sets the handler which can be used to respond to permission requests for the
        * session. Calling callback(true) will allow the permission and callback(false)
        * will reject it. To clear the handler, call setPermissionRequestHandler(null).
@@ -144,7 +171,7 @@ class Session () extends EventEmitter {
       /* permission */ java.lang.String, 
       /* callback */ js.Function1[/* permissionGranted */ scala.Boolean, scala.Unit], 
       /* details */ PermissionRequestHandlerDetails, 
-      scala.Unit | scala.Null
+      scala.Unit
     ]
   ): scala.Unit = js.native
   /**
@@ -184,7 +211,7 @@ object Session extends js.Object {
        * A Session object, the default session object of the app.
        */
   var defaultSession: js.UndefOr[electronLib.ElectronNs.Session] = js.native
-  // Docs: http://electron.atom.io/docs/api/session
+  // Docs: http://electronjs.org/docs/api/session
   /**
        * If partition starts with persist:, the page will use a persistent session
        * available to all pages in the app with the same partition. if there is no
@@ -194,7 +221,7 @@ object Session extends js.Object {
        * before. There is no way to change the options of an existing Session object.
        */
   def fromPartition(partition: java.lang.String): electronLib.ElectronNs.Session = js.native
-  // Docs: http://electron.atom.io/docs/api/session
+  // Docs: http://electronjs.org/docs/api/session
   /**
        * If partition starts with persist:, the page will use a persistent session
        * available to all pages in the app with the same partition. if there is no

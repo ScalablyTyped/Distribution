@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ID3PieClass
   extends org.scalablytyped.runtime.Instantiable2[
-      (/* id */ java.lang.String) | (/* id */ stdLib.HTMLElement), 
+      (/* id */ stdLib.HTMLElement) | (/* id */ java.lang.String), 
       /* options */ ID3PieOptions, 
       ID3PieChart
     ]

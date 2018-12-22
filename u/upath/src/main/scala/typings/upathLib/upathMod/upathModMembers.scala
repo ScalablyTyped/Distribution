@@ -34,7 +34,7 @@ object upathModMembers extends js.Object {
   def extname(p: java.lang.String): java.lang.String = js.native
   def format(pathObject: ParsedPath): java.lang.String = js.native
   def isAbsolute(path: java.lang.String): scala.Boolean = js.native
-  def join(paths: (java.lang.String | js.Any)*): java.lang.String = js.native
+  def join(paths: (js.Any | java.lang.String)*): java.lang.String = js.native
   def joinSafe(p: js.Any*): java.lang.String = js.native
   def normalize(p: java.lang.String): java.lang.String = js.native
   def normalizeSafe(p: java.lang.String): java.lang.String = js.native

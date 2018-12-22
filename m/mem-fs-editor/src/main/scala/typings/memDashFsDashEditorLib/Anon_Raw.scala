@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Raw extends js.Object {
   var defaults: java.lang.String
-  var raw: scala.Boolean
+  var raw: js.UndefOr[scala.Boolean] = js.undefined
 }
 

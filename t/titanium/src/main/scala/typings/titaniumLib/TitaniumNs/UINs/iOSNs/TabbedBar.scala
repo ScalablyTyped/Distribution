@@ -484,7 +484,7 @@ trait TabbedBar
   /**
   				 * Sets the value of the <Titanium.UI.iOS.TabbedBar.labels> property.
   				 */
-  def setLabels(labels: js.Array[java.lang.String | titaniumLib.BarItemType]): scala.Unit = js.native
+  def setLabels(labels: js.Array[titaniumLib.BarItemType | java.lang.String]): scala.Unit = js.native
   /**
   				 * Sets the value of the <Titanium.UI.iOS.TabbedBar.layout> property.
   				 */

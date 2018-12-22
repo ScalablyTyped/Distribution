@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "enhanced-resolve"
-version := "v3.0.0-dt-20180910Z-cbb3fc"
+version := "v3.0.0-dt-20180712Z-262496"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
-  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180910Z-ea4dd1")
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
+  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-48b551")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

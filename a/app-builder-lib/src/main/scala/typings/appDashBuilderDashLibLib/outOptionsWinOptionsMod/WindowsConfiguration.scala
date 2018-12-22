@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
-trait WindowsConfiguration
-  extends appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions {
+/* RemoveDifficultInheritance: 
+- Dropped any */ 
+trait WindowsConfiguration extends js.Object {
   /**
        * The path to an additional certificate file you want to add to the signature block.
        */
@@ -30,6 +30,11 @@ trait WindowsConfiguration
        * The name of the subject of the signing certificate. Required only for EV Code Signing and works only on Windows (or on macOS if [Parallels Desktop](https://www.parallels.com/products/desktop/) Windows 10 virtual machines exits).
        */
   val certificateSubjectName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /**
+       * The path to application icon.
+       * @default build/icon.ico
+       */
+  val icon: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
        * The trademarks and registered trademarks.
        */
@@ -84,8 +89,7 @@ trait WindowsConfiguration
        *
        * @default nsis
       */
-  @JSName("target")
-  val target_WindowsConfiguration: js.UndefOr[appDashBuilderDashLibLib.outCoreMod.TargetConfigType] = js.undefined
+  val target: js.UndefOr[js.Any] = js.undefined
   /**
        * The URL of the time stamp server.
        * @default http://timestamp.verisign.com/scripts/timstamp.dll

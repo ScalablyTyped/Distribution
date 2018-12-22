@@ -7,5 +7,6 @@
 //                 Adam Cmiel <https://github.com/adamcmiel>
 //                 Justin Leider <https://github.com/jleider>
 //                 Kamil Gałuszka <https://github.com/galuszkak>
+//                 Stefan Langeder <https://github.com/slangeder>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

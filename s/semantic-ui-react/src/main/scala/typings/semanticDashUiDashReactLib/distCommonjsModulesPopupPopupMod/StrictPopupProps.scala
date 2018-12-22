@@ -55,7 +55,7 @@ trait StrictPopupProps
   @JSName("onClose")
   var onClose_StrictPopupProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PopupProps, 
       scala.Unit
     ]
@@ -77,7 +77,7 @@ trait StrictPopupProps
   @JSName("onOpen")
   var onOpen_StrictPopupProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PopupProps, 
       scala.Unit
     ]

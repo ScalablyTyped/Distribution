@@ -11,7 +11,7 @@ object srcViewElementMod extends js.Object {
   def anchorDef(
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     matchedQueriesDsl: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+      js.Tuple2[scala.Double | java.lang.String, atAngularCoreLib.srcViewTypesMod.QueryValueType]
     ],
     ngContentIndex: scala.Double,
     childCount: scala.Double
@@ -48,7 +48,7 @@ object srcViewElementMod extends js.Object {
   def anchorDef(
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     matchedQueriesDsl: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+      js.Tuple2[scala.Double | java.lang.String, atAngularCoreLib.srcViewTypesMod.QueryValueType]
     ],
     ngContentIndex: scala.Null,
     childCount: scala.Double

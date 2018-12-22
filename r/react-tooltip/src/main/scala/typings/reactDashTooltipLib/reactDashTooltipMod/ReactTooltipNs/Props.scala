@@ -29,6 +29,7 @@ trait Props extends js.Object {
   var place: js.UndefOr[Place] = js.undefined
   var resizeHide: js.UndefOr[scala.Boolean] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
+  var sanitizeHtmlOptions: js.UndefOr[SanitizeHtmlOptions] = js.undefined
   var scrollHide: js.UndefOr[scala.Boolean] = js.undefined
   var `type`: js.UndefOr[Type] = js.undefined
   var watchWindow: js.UndefOr[scala.Boolean] = js.undefined

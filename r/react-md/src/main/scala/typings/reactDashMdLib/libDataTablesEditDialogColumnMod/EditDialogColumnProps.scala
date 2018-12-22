@@ -53,7 +53,7 @@ trait EditDialogColumnProps
   var onCancelClick: js.UndefOr[
     js.Function2[
       /* value */ scala.Double | java.lang.String, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -67,12 +67,15 @@ trait EditDialogColumnProps
   var onOkClick: js.UndefOr[
     js.Function2[
       /* value */ scala.Double | java.lang.String, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onOutsideClick: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]
+    js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   /**
      * @deprecated

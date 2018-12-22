@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait TDocumentDefinitions extends js.Object {
+  var compress: js.UndefOr[scala.Boolean] = js.undefined
   var content: java.lang.String | Content
   var defaultStyle: js.UndefOr[Style] = js.undefined
   var footer: js.UndefOr[TDocumentHeaderFooterFunction] = js.undefined

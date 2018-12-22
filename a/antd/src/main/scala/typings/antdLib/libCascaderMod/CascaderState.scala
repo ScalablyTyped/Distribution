@@ -11,6 +11,7 @@ trait CascaderState extends js.Object {
   var inputFocused: scala.Boolean
   var inputValue: java.lang.String
   var popupVisible: js.UndefOr[scala.Boolean]
+  var prevProps: CascaderProps
   var value: js.Array[java.lang.String]
 }
 

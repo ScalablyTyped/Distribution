@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Resolvers extends js.Object {
-  var resolvers: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[Anon_Duration]
+  var resolvers: js.Array[Anon_Duration]
 }
 

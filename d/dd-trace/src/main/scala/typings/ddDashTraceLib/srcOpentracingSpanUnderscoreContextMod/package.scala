@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcOpentracingSpanUnderscoreContextMod {
-  type DatadogSpanContext = opentracingLib.opentracingMod.SpanContext
+  type DatadogSpanContext = js.Any
 }

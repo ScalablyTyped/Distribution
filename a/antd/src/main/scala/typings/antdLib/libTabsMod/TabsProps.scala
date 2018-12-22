@@ -15,7 +15,7 @@ trait TabsProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* activeKey */ java.lang.String, scala.Unit]] = js.undefined
   var onEdit: js.UndefOr[
     js.Function2[
-      /* targetKey */ java.lang.String | reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* targetKey */ java.lang.String | (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]), 
       /* action */ js.Any, 
       scala.Unit
     ]

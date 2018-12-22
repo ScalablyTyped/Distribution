@@ -134,7 +134,9 @@ trait IDetailsListProps
   /** Callback for when the user clicks on the column header. */
   var onColumnHeaderClick: js.UndefOr[
     js.Function2[
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+      ], 
       /* column */ js.UndefOr[IColumn], 
       scala.Unit
     ]
@@ -143,7 +145,9 @@ trait IDetailsListProps
   var onColumnHeaderContextMenu: js.UndefOr[
     js.Function2[
       /* column */ js.UndefOr[IColumn], 
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+      ], 
       scala.Unit
     ]
   ] = js.undefined

@@ -43,11 +43,17 @@ trait ExpansionPanelProps
   var headerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var label: reactLib.reactMod.ReactNs.ReactNode
   var onCancel: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]
+    js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   var onExpandToggle: js.UndefOr[js.Function1[/* expanded */ scala.Boolean, scala.Unit]] = js.undefined
   var onSave: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]
+    js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   var saveLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var savePrimary: js.UndefOr[scala.Boolean] = js.undefined

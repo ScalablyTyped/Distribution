@@ -13,7 +13,7 @@ trait ToggleButtonGroupProps
   var exclusive: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* value */ js.Any, 
       scala.Unit
     ]

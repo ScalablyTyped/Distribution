@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation._
  */
 @JSImport("remarkable/lib/ruler", JSImport.Namespace)
 @js.native
-class namespaced () extends Ruler
+class namespaced[RULE] () extends Ruler[RULE]
 

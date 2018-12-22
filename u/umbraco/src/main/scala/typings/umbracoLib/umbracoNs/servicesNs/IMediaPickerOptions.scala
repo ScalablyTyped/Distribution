@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait IMediaPickerOptions extends js.Object {
   /*callback function*/
-  var callback: js.Function
+  var callback: angularLib.angularMod.Global.Function
   /*Only display files that have an image file-extension*/
   var onlyImages: scala.Boolean
 }

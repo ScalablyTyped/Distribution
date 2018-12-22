@@ -58,7 +58,7 @@ object libModMembers extends js.Object {
   def isBlockScopedVariable(node: typescriptLib.typescriptMod.tsNs.VariableDeclaration): scala.Boolean = js.native
   def isBlockScopedVariable(node: typescriptLib.typescriptMod.tsNs.VariableStatement): scala.Boolean = js.native
   def isCombinedModifierFlagSet(
-    node: typescriptLib.typescriptMod.tsNs.Node,
+    node: typescriptLib.typescriptMod.tsNs.Declaration,
     flagToCheck: typescriptLib.typescriptMod.tsNs.ModifierFlags
   ): scala.Boolean = js.native
   def isCombinedNodeFlagSet(

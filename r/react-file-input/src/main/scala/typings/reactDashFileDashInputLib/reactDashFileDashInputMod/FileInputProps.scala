@@ -12,6 +12,6 @@ trait FileInputProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var name: java.lang.String
   var placeholder: java.lang.String
-  def onChange(event: reactLib.reactMod.ReactNs.SyntheticEvent[_]): scala.Unit
+  def onChange(event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]): scala.Unit
 }
 

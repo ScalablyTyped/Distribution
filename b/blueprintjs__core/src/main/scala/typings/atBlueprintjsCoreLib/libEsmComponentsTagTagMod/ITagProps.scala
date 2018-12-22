@@ -52,7 +52,10 @@ trait ITagProps
        */
   @JSName("onClick")
   var onClick_ITagProps: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   /**
        * Click handler for remove button.
@@ -60,7 +63,7 @@ trait ITagProps
        */
   var onRemove: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
       /* tagProps */ ITagProps, 
       scala.Unit
     ]

@@ -16,11 +16,11 @@ trait LodashOrderBy3x4[T] extends js.Object {
   ): LodashOrderBy4x5[T] = js.native
   def apply(
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      (lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]) | (js.Function1[
+      (js.Function1[
         /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
         lodashLib.lodashMod.underscoreNs.NotVoid
+      ]) | (lodashLib.lodashMod.underscoreNs.ValueIteratee[
+        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
       ])
     ],
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc]

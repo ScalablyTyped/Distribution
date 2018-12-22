@@ -26,7 +26,11 @@ trait WrapperProps[T /* <: reactLib.HTMLElement */]
   	 * the React `SyntheticEvent`.
   	 */
   var onSelection: js.UndefOr[
-    js.Function2[/* value */ js.Any, /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[T], _]
+    js.Function2[
+      /* value */ js.Any, 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[T, reactLib.Event], 
+      _
+    ]
   ] = js.undefined
   var tag: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(tagName))) */js.UndefOr[
     /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(tagName))) */js.Any

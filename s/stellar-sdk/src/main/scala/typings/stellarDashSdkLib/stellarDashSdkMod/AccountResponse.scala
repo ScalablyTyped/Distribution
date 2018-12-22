@@ -13,6 +13,7 @@ class AccountResponse protected () extends AccountRecord {
   override var _links: org.scalablytyped.runtime.StringDictionary[RecordLink] = js.native
   @JSName("_links")
   var _links_AccountResponse: org.scalablytyped.runtime.StringDictionary[stellarDashSdkLib.Anon_Href] = js.native
+  var inflation_destination: js.UndefOr[js.Any] = js.native
   def accountId(): java.lang.String = js.native
   def incrementSequenceNumber(): scala.Unit = js.native
   def sequenceNumber(): java.lang.String = js.native

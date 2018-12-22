@@ -32,7 +32,7 @@ class Url protected () extends PropertyBase[UrlDefinition] {
   def getRemote(): java.lang.String = js.native
   def getRemote(options: postmanDashCollectionLib.Anon_ForcePort): java.lang.String = js.native
   def removeQueryParams(params: java.lang.String): scala.Unit = js.native
-  def removeQueryParams(params: js.Array[java.lang.String | QueryParamDefinition]): scala.Unit = js.native
+  def removeQueryParams(params: js.Array[QueryParamDefinition | java.lang.String]): scala.Unit = js.native
   def removeQueryParams(params: QueryParamDefinition): scala.Unit = js.native
   def toString(forceProtocol: scala.Boolean): java.lang.String = js.native
   def update(url: java.lang.String): scala.Unit = js.native

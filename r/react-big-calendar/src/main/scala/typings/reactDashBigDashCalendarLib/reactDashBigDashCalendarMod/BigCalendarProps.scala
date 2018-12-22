@@ -40,7 +40,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var onDoubleClickEvent: js.UndefOr[
     js.Function2[
       /* event */ TEvent, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -51,7 +51,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var onSelectEvent: js.UndefOr[
     js.Function2[
       /* event */ TEvent, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined

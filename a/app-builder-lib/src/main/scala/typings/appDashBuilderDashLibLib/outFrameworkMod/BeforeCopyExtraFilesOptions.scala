@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait BeforeCopyExtraFilesOptions extends js.Object {
   var appOutDir: java.lang.String
   var asarIntegrity: appDashBuilderDashLibLib.outAsarIntegrityMod.AsarIntegrity | scala.Null
-  var packager: appDashBuilderDashLibLib.outMod.PlatformPackager[_]
+  var packager: js.Any
   var platformName: java.lang.String
 }
 

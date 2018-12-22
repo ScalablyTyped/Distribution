@@ -19,7 +19,7 @@ object DOMMatrix
       geometryDashDomLib.GeometryDomNs.DOMMatrix
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* transformList */ java.lang.String) | (/* other */ geometryDashDomLib.GeometryDomNs.DOMMatrixReadOnly) | (/* array */ js.Array[scala.Double]), 
+      (/* array */ js.Array[scala.Double]) | (/* other */ geometryDashDomLib.GeometryDomNs.DOMMatrixReadOnly) | (/* transformList */ java.lang.String), 
       geometryDashDomLib.GeometryDomNs.DOMMatrix
     ]
 

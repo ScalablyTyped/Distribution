@@ -45,7 +45,8 @@ trait IMessageBarProps
     js.Function1[
       /* ev */ js.UndefOr[
         reactLib.reactMod.ReactNs.MouseEvent[
-          reactLib.HTMLButtonElement | officeDashUiDashFabricDashReactLib.libButtonMod.BaseButton | reactLib.HTMLAnchorElement | reactLib.HTMLDivElement | officeDashUiDashFabricDashReactLib.libButtonMod.Button
+          reactLib.HTMLButtonElement | officeDashUiDashFabricDashReactLib.libButtonMod.BaseButton | reactLib.HTMLAnchorElement | reactLib.HTMLDivElement | officeDashUiDashFabricDashReactLib.libButtonMod.Button, 
+          reactLib.NativeMouseEvent
         ]
       ], 
       _

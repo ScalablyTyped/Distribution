@@ -109,6 +109,9 @@ object plotlyDotJsLibStrings {
   sealed trait box extends js.Object
   
   @js.native
+  sealed trait candlestick extends js.Object
+  
+  @js.native
   sealed trait category extends js.Object
   
   @js.native
@@ -122,6 +125,9 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait chinese extends js.Object
+  
+  @js.native
+  sealed trait choropleth extends js.Object
   
   @js.native
   sealed trait circle extends js.Object
@@ -146,6 +152,9 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait contain extends js.Object
+  
+  @js.native
+  sealed trait contour extends js.Object
   
   @js.native
   sealed trait coptic extends js.Object
@@ -388,6 +397,9 @@ object plotlyDotJsLibStrings {
   sealed trait median extends js.Object
   
   @js.native
+  sealed trait mesh3d extends js.Object
+  
+  @js.native
   sealed trait middle extends js.Object
   
   @js.native
@@ -421,6 +433,9 @@ object plotlyDotJsLibStrings {
   sealed trait normal extends js.Object
   
   @js.native
+  sealed trait ohlc extends js.Object
+  
+  @js.native
   sealed trait onoff extends js.Object
   
   @js.native
@@ -452,6 +467,9 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait paper extends js.Object
+  
+  @js.native
+  sealed trait parcoords extends js.Object
   
   @js.native
   sealed trait path extends js.Object
@@ -637,7 +655,13 @@ object plotlyDotJsLibStrings {
   sealed trait scatter3d extends js.Object
   
   @js.native
+  sealed trait scattergeo extends js.Object
+  
+  @js.native
   sealed trait scattergl extends js.Object
+  
+  @js.native
+  sealed trait scatterternary extends js.Object
   
   @js.native
   sealed trait sd extends js.Object
@@ -979,11 +1003,13 @@ object plotlyDotJsLibStrings {
   def `bounce-in-out`: `bounce-in-out` = "bounce-in-out".asInstanceOf[`bounce-in-out`]
   def `bounce-out`: `bounce-out` = "bounce-out".asInstanceOf[`bounce-out`]
   def box: box = "box".asInstanceOf[box]
+  def candlestick: candlestick = "candlestick".asInstanceOf[candlestick]
   def category: category = "category".asInstanceOf[category]
   def `category ascending`: `category ascending` = "category ascending".asInstanceOf[`category ascending`]
   def `category descending`: `category descending` = "category descending".asInstanceOf[`category descending`]
   def center: center = "center".asInstanceOf[center]
   def chinese: chinese = "chinese".asInstanceOf[chinese]
+  def choropleth: choropleth = "choropleth".asInstanceOf[choropleth]
   def circle: circle = "circle".asInstanceOf[circle]
   def `circle-in`: `circle-in` = "circle-in".asInstanceOf[`circle-in`]
   def `circle-in-out`: `circle-in-out` = "circle-in-out".asInstanceOf[`circle-in-out`]
@@ -992,6 +1018,7 @@ object plotlyDotJsLibStrings {
   def closest: closest = "closest".asInstanceOf[closest]
   def constant: constant = "constant".asInstanceOf[constant]
   def contain: contain = "contain".asInstanceOf[contain]
+  def contour: contour = "contour".asInstanceOf[contour]
   def coptic: coptic = "coptic".asInstanceOf[coptic]
   def count: count = "count".asInstanceOf[count]
   def counterclockwise: counterclockwise = "counterclockwise".asInstanceOf[counterclockwise]
@@ -1072,6 +1099,7 @@ object plotlyDotJsLibStrings {
   def max: max = "max".asInstanceOf[max]
   def mayan: mayan = "mayan".asInstanceOf[mayan]
   def median: median = "median".asInstanceOf[median]
+  def mesh3d: mesh3d = "mesh3d".asInstanceOf[mesh3d]
   def middle: middle = "middle".asInstanceOf[middle]
   def min: min = "min".asInstanceOf[min]
   def minute: minute = "minute".asInstanceOf[minute]
@@ -1083,6 +1111,7 @@ object plotlyDotJsLibStrings {
   def none: none = "none".asInstanceOf[none]
   def nonnegative: nonnegative = "nonnegative".asInstanceOf[nonnegative]
   def normal: normal = "normal".asInstanceOf[normal]
+  def ohlc: ohlc = "ohlc".asInstanceOf[ohlc]
   def onoff: onoff = "onoff".asInstanceOf[onoff]
   def onout: onout = "onout".asInstanceOf[onout]
   def opaque: opaque = "opaque".asInstanceOf[opaque]
@@ -1094,6 +1123,7 @@ object plotlyDotJsLibStrings {
   def pan2d: pan2d = "pan2d".asInstanceOf[pan2d]
   def pan3d: pan3d = "pan3d".asInstanceOf[pan3d]
   def paper: paper = "paper".asInstanceOf[paper]
+  def parcoords: parcoords = "parcoords".asInstanceOf[parcoords]
   def path: path = "path".asInstanceOf[path]
   def percent: percent = "percent".asInstanceOf[percent]
   def persian: persian = "persian".asInstanceOf[persian]
@@ -1155,7 +1185,9 @@ object plotlyDotJsLibStrings {
   def sample: sample = "sample".asInstanceOf[sample]
   def scatter: scatter = "scatter".asInstanceOf[scatter]
   def scatter3d: scatter3d = "scatter3d".asInstanceOf[scatter3d]
+  def scattergeo: scattergeo = "scattergeo".asInstanceOf[scattergeo]
   def scattergl: scattergl = "scattergl".asInstanceOf[scattergl]
+  def scatterternary: scatterternary = "scatterternary".asInstanceOf[scatterternary]
   def sd: sd = "sd".asInstanceOf[sd]
   def second: second = "second".asInstanceOf[second]
   def select: select = "select".asInstanceOf[select]

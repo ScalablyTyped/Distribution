@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ContentTracing extends EventEmitter {
-  // Docs: http://electron.atom.io/docs/api/content-tracing
+  // Docs: http://electronjs.org/docs/api/content-tracing
   /**
        * Get the current monitoring traced data. Child processes typically cache trace
        * data and only rarely flush and send trace data back to the main process. This is

@@ -98,7 +98,7 @@ class Command protected () extends js.Object {
            * * If the command specifies a row-returning query, then the method will return a new read-only, forward-only **Recordset** object with the results.
            * * If the command isn't intended to return results (e.g. an `UPDATE` statement), a closed empty **Recordset** will be returned.
            */
-  def Execute(RecordsAffected: js.UndefOr[scala.Nothing], Parameters: stdLib.SafeArray[_]): Recordset | scala.Null = js.native
+  def Execute(RecordsAffected: js.UndefOr[scala.Nothing], Parameters: activexDashInteropLib.SafeArray[_]): Recordset | scala.Null = js.native
   /**
            * @param Options [Options=-1]
            *
@@ -110,7 +110,11 @@ class Command protected () extends js.Object {
            * * If the command specifies a row-returning query, then the method will return a new read-only, forward-only **Recordset** object with the results.
            * * If the command isn't intended to return results (e.g. an `UPDATE` statement), a closed empty **Recordset** will be returned.
            */
-  def Execute(RecordsAffected: js.UndefOr[scala.Nothing], Parameters: stdLib.SafeArray[_], Options: scala.Double): Recordset | scala.Null = js.native
+  def Execute(
+    RecordsAffected: js.UndefOr[scala.Nothing],
+    Parameters: activexDashInteropLib.SafeArray[_],
+    Options: scala.Double
+  ): Recordset | scala.Null = js.native
   def Parameters(Index: java.lang.String): Parameter = js.native
   def Parameters(Index: scala.Double): Parameter = js.native
   def Properties(Index: java.lang.String): Property = js.native

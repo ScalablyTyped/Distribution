@@ -677,7 +677,7 @@ class Application protected () extends js.Object {
   def Rows(RowIndex: scala.Double): Range = js.native
   def Rows(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def Run(
-    Macro: js.UndefOr[Range | java.lang.String | scala.Double],
+    Macro: js.UndefOr[scala.Double | Range | java.lang.String],
     Arg1: js.UndefOr[js.Any],
     Arg2: js.UndefOr[js.Any],
     Arg3: js.UndefOr[js.Any],

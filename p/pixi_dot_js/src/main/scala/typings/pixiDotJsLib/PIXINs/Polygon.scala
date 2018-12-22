@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class Polygon protected () extends HitArea {
   // Note - Rest Params cannot be combined with |
   //tslint:disable-next-line:unified-signatures
-  def this(points: (Point | scala.Double)*) = this()
-  def this(points: js.Array[Point | scala.Double]) = this()
+  def this(points: (scala.Double | Point)*) = this()
+  def this(points: js.Array[scala.Double | Point]) = this()
   var closed: scala.Boolean = js.native
   var points: js.Array[scala.Double] = js.native
   var `type`: scala.Double = js.native

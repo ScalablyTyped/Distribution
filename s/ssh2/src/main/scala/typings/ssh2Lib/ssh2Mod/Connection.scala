@@ -44,7 +44,7 @@ trait Connection
     listener: js.Function4[
       (/* accept */ js.Function0[scala.Unit]) | (/* accept */ js.Function1[/* chosenPort */ js.UndefOr[scala.Double], scala.Unit]), 
       /* reject */ js.Function0[scala.Unit], 
-      /* name */ ssh2Lib.ssh2LibStrings.`tcpip-forward` | ssh2Lib.ssh2LibStrings.`cancel-tcpip-forward` | ssh2Lib.ssh2LibStrings.`streamlocal-forward@opensshDOTcom` | ssh2Lib.ssh2LibStrings.`cancel-streamlocal-forward@opensshDOTcom`, 
+      ssh2Lib.ssh2LibStrings.`cancel-streamlocal-forward@opensshDOTcom` | ssh2Lib.ssh2LibStrings.`cancel-tcpip-forward` | ssh2Lib.ssh2LibStrings.`streamlocal-forward@opensshDOTcom` | ssh2Lib.ssh2LibStrings.`tcpip-forward`, 
       (/* info */ SocketBindInfo) | (/* info */ TcpipBindInfo), 
       scala.Unit
     ]

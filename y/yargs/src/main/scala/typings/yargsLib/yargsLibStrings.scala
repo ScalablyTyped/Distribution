@@ -7,6 +7,18 @@ import scala.scalajs.js.annotation._
 
 object yargsLibStrings {
   @js.native
+  sealed trait Argv extends js.Object
+  
+  @js.native
+  sealed trait Defined extends js.Object
+  
+  @js.native
+  sealed trait InferredOptionTypes extends js.Object
+  
+  @js.native
+  sealed trait Omit extends js.Object
+  
+  @js.native
   sealed trait array extends js.Object
   
   @js.native
@@ -21,6 +33,10 @@ object yargsLibStrings {
   @js.native
   sealed trait string extends js.Object
   
+  def Argv: Argv = "Argv".asInstanceOf[Argv]
+  def Defined: Defined = "Defined".asInstanceOf[Defined]
+  def InferredOptionTypes: InferredOptionTypes = "InferredOptionTypes".asInstanceOf[InferredOptionTypes]
+  def Omit: Omit = "Omit".asInstanceOf[Omit]
   def array: array = "array".asInstanceOf[array]
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   def count: count = "count".asInstanceOf[count]

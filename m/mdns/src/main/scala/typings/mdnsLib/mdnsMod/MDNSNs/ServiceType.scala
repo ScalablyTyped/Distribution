@@ -14,7 +14,7 @@ trait ServiceType
       ServiceType
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* serviceTypeIdentifier */ java.lang.String) | (/* serviceTypeIdentifier */ js.Array[java.lang.String]) | (/* serviceTypeIdentifier */ mdnsLib.Anon_Name) | (/* serviceType */ ServiceType), 
+      (/* serviceTypeIdentifier */ mdnsLib.Anon_Name) | (/* serviceTypeIdentifier */ js.Array[java.lang.String]) | (/* serviceType */ ServiceType) | (/* serviceTypeIdentifier */ java.lang.String), 
       ServiceType
     ] {
   var fullyQualified: scala.Boolean = js.native

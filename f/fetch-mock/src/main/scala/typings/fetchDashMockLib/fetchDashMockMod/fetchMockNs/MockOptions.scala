@@ -15,6 +15,11 @@ trait MockOptions extends js.Object {
            */
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
+           * Automatically sets a content-length header on each response.
+           * @default true
+           */
+  var includeContentLength: js.UndefOr[scala.Boolean] = js.undefined
+  /**
            * as specified above
            */
   var matcher: js.UndefOr[MockMatcher] = js.undefined
@@ -54,5 +59,13 @@ trait MockOptions extends js.Object {
            * as specified above
            */
   var response: js.UndefOr[MockResponse | MockResponseFunction] = js.undefined
+  /**
+           * Convert objects into JSON before delivering as stub reponses. Can
+           * be useful to set to false globally if e.g. dealing with a lot of
+           * array buffers. If true, will also add content-type: application/json
+           * header.
+           * @default true
+           */
+  var sendAsJson: js.UndefOr[scala.Boolean] = js.undefined
 }
 

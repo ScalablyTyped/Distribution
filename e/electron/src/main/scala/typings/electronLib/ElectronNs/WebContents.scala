@@ -163,11 +163,25 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
+  def `addListener_did-redirect-navigation`(
+    event: electronLib.electronLibStrings.`did-redirect-navigation`,
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ java.lang.String, 
+      /* isInPlace */ scala.Boolean, 
+      /* isMainFrame */ scala.Boolean, 
+      /* frameProcessId */ scala.Double, 
+      /* frameRoutingId */ scala.Double, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
   def `addListener_did-start-loading`(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def `addListener_did-start-navigation`(
     event: electronLib.electronLibStrings.`did-start-navigation`,
-    listener: js.Function5[
+    listener: js.Function6[
+      /* event */ Event, 
       /* url */ java.lang.String, 
       /* isInPlace */ scala.Boolean, 
       /* isMainFrame */ scala.Boolean, 
@@ -224,6 +238,16 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
+  def `addListener_remote-get-global`(
+    event: electronLib.electronLibStrings.`remote-get-global`,
+    listener: js.Function2[/* event */ Event, /* globalName */ java.lang.String, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def `addListener_remote-require`(
+    event: electronLib.electronLibStrings.`remote-require`,
+    listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_responsive(event: electronLib.electronLibStrings.responsive, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def `addListener_select-bluetooth-device`(
@@ -267,6 +291,19 @@ class WebContents () extends EventEmitter {
   def `addListener_will-prevent-unload`(
     event: electronLib.electronLibStrings.`will-prevent-unload`,
     listener: js.Function1[/* event */ Event, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def `addListener_will-redirect`(
+    event: electronLib.electronLibStrings.`will-redirect`,
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ java.lang.String, 
+      /* isInPlace */ scala.Boolean, 
+      /* isMainFrame */ scala.Boolean, 
+      /* frameProcessId */ scala.Double, 
+      /* frameRoutingId */ scala.Double, 
+      scala.Unit
+    ]
   ): this.type = js.native
   /**
        * Adds the specified path to DevTools workspace. Must be used after DevTools
@@ -461,6 +498,7 @@ class WebContents () extends EventEmitter {
   def invalidate(): scala.Unit = js.native
   def isAudioMuted(): scala.Boolean = js.native
   def isCrashed(): scala.Boolean = js.native
+  def isCurrentlyAudible(): scala.Boolean = js.native
   def isDestroyed(): scala.Boolean = js.native
   def isDevToolsFocused(): scala.Boolean = js.native
   def isDevToolsOpened(): scala.Boolean = js.native
@@ -476,6 +514,12 @@ class WebContents () extends EventEmitter {
        * this: Would require code like this
        */
   def loadFile(filePath: java.lang.String): scala.Unit = js.native
+  /**
+       * Loads the given file in the window, filePath should be a path to an HTML file
+       * relative to the root of your application.  For instance an app structure like
+       * this: Would require code like this
+       */
+  def loadFile(filePath: java.lang.String, options: LoadFileOptions): scala.Unit = js.native
   /**
        * Loads the url in the window. The url must contain the protocol prefix, e.g. the
        * http:// or file://. If the load should bypass http cache then use the pragma
@@ -729,6 +773,24 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   /**
+       * Emitted after a server side redirect occurs during navigation.  For example a
+       * 302 redirect. This event can not be prevented, if you want to prevent redirects
+       * you should checkout out the will-redirect event above.
+       */
+  @JSName("on")
+  def `on_did-redirect-navigation`(
+    event: electronLib.electronLibStrings.`did-redirect-navigation`,
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ java.lang.String, 
+      /* isInPlace */ scala.Boolean, 
+      /* isMainFrame */ scala.Boolean, 
+      /* frameProcessId */ scala.Double, 
+      /* frameRoutingId */ scala.Double, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
        * Corresponds to the points in time when the spinner of the tab started spinning.
        */
   @JSName("on")
@@ -740,7 +802,8 @@ class WebContents () extends EventEmitter {
   @JSName("on")
   def `on_did-start-navigation`(
     event: electronLib.electronLibStrings.`did-start-navigation`,
-    listener: js.Function5[
+    listener: js.Function6[
+      /* event */ Event, 
       /* url */ java.lang.String, 
       /* isInPlace */ scala.Boolean, 
       /* isMainFrame */ scala.Boolean, 
@@ -824,6 +887,26 @@ class WebContents () extends EventEmitter {
       /* version */ java.lang.String, 
       scala.Unit
     ]
+  ): this.type = js.native
+  /**
+       * Emitted when remote.getGlobal() is called in the renderer process. Calling
+       * event.preventDefault() will prevent the global from being returned. Custom value
+       * can be returned by setting event.returnValue.
+       */
+  @JSName("on")
+  def `on_remote-get-global`(
+    event: electronLib.electronLibStrings.`remote-get-global`,
+    listener: js.Function2[/* event */ Event, /* globalName */ java.lang.String, scala.Unit]
+  ): this.type = js.native
+  /**
+       * Emitted when remote.require() is called in the renderer process. Calling
+       * event.preventDefault() will prevent the module from being returned. Custom value
+       * can be returned by setting event.returnValue.
+       */
+  @JSName("on")
+  def `on_remote-require`(
+    event: electronLib.electronLibStrings.`remote-require`,
+    listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
   ): this.type = js.native
   /**
        * Emitted when the unresponsive web page becomes responsive again.
@@ -911,6 +994,25 @@ class WebContents () extends EventEmitter {
   def `on_will-prevent-unload`(
     event: electronLib.electronLibStrings.`will-prevent-unload`,
     listener: js.Function1[/* event */ Event, scala.Unit]
+  ): this.type = js.native
+  /**
+       * Emitted as a server side redirect occurs during navigation.  For example a 302
+       * redirect. This event will be emitted after did-start-navigation and always
+       * before the did-redirect-navigation event for the same navigation. Calling
+       * event.preventDefault() will prevent the navigation (not just the redirect).
+       */
+  @JSName("on")
+  def `on_will-redirect`(
+    event: electronLib.electronLibStrings.`will-redirect`,
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ java.lang.String, 
+      /* isInPlace */ scala.Boolean, 
+      /* isMainFrame */ scala.Boolean, 
+      /* frameProcessId */ scala.Double, 
+      /* frameRoutingId */ scala.Double, 
+      scala.Unit
+    ]
   ): this.type = js.native
   def once(
     event: electronLib.electronLibStrings.`new-window`,
@@ -1062,11 +1164,25 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
+  def `once_did-redirect-navigation`(
+    event: electronLib.electronLibStrings.`did-redirect-navigation`,
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ java.lang.String, 
+      /* isInPlace */ scala.Boolean, 
+      /* isMainFrame */ scala.Boolean, 
+      /* frameProcessId */ scala.Double, 
+      /* frameRoutingId */ scala.Double, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
   def `once_did-start-loading`(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
   @JSName("once")
   def `once_did-start-navigation`(
     event: electronLib.electronLibStrings.`did-start-navigation`,
-    listener: js.Function5[
+    listener: js.Function6[
+      /* event */ Event, 
       /* url */ java.lang.String, 
       /* isInPlace */ scala.Boolean, 
       /* isMainFrame */ scala.Boolean, 
@@ -1123,6 +1239,16 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
+  def `once_remote-get-global`(
+    event: electronLib.electronLibStrings.`remote-get-global`,
+    listener: js.Function2[/* event */ Event, /* globalName */ java.lang.String, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def `once_remote-require`(
+    event: electronLib.electronLibStrings.`remote-require`,
+    listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_responsive(event: electronLib.electronLibStrings.responsive, listener: js.Function): this.type = js.native
   @JSName("once")
   def `once_select-bluetooth-device`(
@@ -1167,6 +1293,19 @@ class WebContents () extends EventEmitter {
     event: electronLib.electronLibStrings.`will-prevent-unload`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
+  @JSName("once")
+  def `once_will-redirect`(
+    event: electronLib.electronLibStrings.`will-redirect`,
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ java.lang.String, 
+      /* isInPlace */ scala.Boolean, 
+      /* isMainFrame */ scala.Boolean, 
+      /* frameProcessId */ scala.Double, 
+      /* frameRoutingId */ scala.Double, 
+      scala.Unit
+    ]
+  ): this.type = js.native
   /**
        * Opens the devtools. When contents is a <webview> tag, the mode would be detach
        * by default, explicitly passing an empty mode can force using last used dock
@@ -1191,24 +1330,24 @@ class WebContents () extends EventEmitter {
        * Prints window's web page. When silent is set to true, Electron will pick the
        * system's default printer if deviceName is empty and the default settings for
        * printing. Calling window.print() in web page is equivalent to calling
-       * webContents.print({silent: false, printBackground: false, deviceName: ''}). Use
-       * page-break-before: always; CSS style to force to print to a new page.
+       * webContents.print({ silent: false, printBackground: false, deviceName: '' }).
+       * Use page-break-before: always; CSS style to force to print to a new page.
        */
   def print(): scala.Unit = js.native
   /**
        * Prints window's web page. When silent is set to true, Electron will pick the
        * system's default printer if deviceName is empty and the default settings for
        * printing. Calling window.print() in web page is equivalent to calling
-       * webContents.print({silent: false, printBackground: false, deviceName: ''}). Use
-       * page-break-before: always; CSS style to force to print to a new page.
+       * webContents.print({ silent: false, printBackground: false, deviceName: '' }).
+       * Use page-break-before: always; CSS style to force to print to a new page.
        */
   def print(options: PrintOptions): scala.Unit = js.native
   /**
        * Prints window's web page. When silent is set to true, Electron will pick the
        * system's default printer if deviceName is empty and the default settings for
        * printing. Calling window.print() in web page is equivalent to calling
-       * webContents.print({silent: false, printBackground: false, deviceName: ''}). Use
-       * page-break-before: always; CSS style to force to print to a new page.
+       * webContents.print({ silent: false, printBackground: false, deviceName: '' }).
+       * Use page-break-before: always; CSS style to force to print to a new page.
        */
   def print(options: PrintOptions, callback: js.Function1[/* success */ scala.Boolean, scala.Unit]): scala.Unit = js.native
   /**
@@ -1385,11 +1524,25 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
+  def `removeListener_did-redirect-navigation`(
+    event: electronLib.electronLibStrings.`did-redirect-navigation`,
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ java.lang.String, 
+      /* isInPlace */ scala.Boolean, 
+      /* isMainFrame */ scala.Boolean, 
+      /* frameProcessId */ scala.Double, 
+      /* frameRoutingId */ scala.Double, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
   def `removeListener_did-start-loading`(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def `removeListener_did-start-navigation`(
     event: electronLib.electronLibStrings.`did-start-navigation`,
-    listener: js.Function5[
+    listener: js.Function6[
+      /* event */ Event, 
       /* url */ java.lang.String, 
       /* isInPlace */ scala.Boolean, 
       /* isMainFrame */ scala.Boolean, 
@@ -1446,6 +1599,16 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
+  def `removeListener_remote-get-global`(
+    event: electronLib.electronLibStrings.`remote-get-global`,
+    listener: js.Function2[/* event */ Event, /* globalName */ java.lang.String, scala.Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_remote-require`(
+    event: electronLib.electronLibStrings.`remote-require`,
+    listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
   def removeListener_responsive(event: electronLib.electronLibStrings.responsive, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def `removeListener_select-bluetooth-device`(
@@ -1489,6 +1652,19 @@ class WebContents () extends EventEmitter {
   def `removeListener_will-prevent-unload`(
     event: electronLib.electronLibStrings.`will-prevent-unload`,
     listener: js.Function1[/* event */ Event, scala.Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_will-redirect`(
+    event: electronLib.electronLibStrings.`will-redirect`,
+    listener: js.Function6[
+      /* event */ Event, 
+      /* url */ java.lang.String, 
+      /* isInPlace */ scala.Boolean, 
+      /* isMainFrame */ scala.Boolean, 
+      /* frameProcessId */ scala.Double, 
+      /* frameRoutingId */ scala.Double, 
+      scala.Unit
+    ]
   ): this.type = js.native
   /**
        * Removes the specified path from DevTools workspace.
@@ -1544,6 +1720,11 @@ class WebContents () extends EventEmitter {
        * Mute the audio on the current web page.
        */
   def setAudioMuted(muted: scala.Boolean): scala.Unit = js.native
+  /**
+       * Controls whether or not this WebContents will throttle animations and timers
+       * when the page becomes backgrounded. This also affects the Page Visibility API.
+       */
+  def setBackgroundThrottling(allowed: scala.Boolean): scala.Unit = js.native
   /**
        * Uses the devToolsWebContents as the target WebContents to show devtools. The
        * devToolsWebContents must not have done any navigation, and it should not be used
@@ -1652,6 +1833,10 @@ class WebContents () extends EventEmitter {
        */
   def stopPainting(): scala.Unit = js.native
   /**
+       * Takes a V8 heap snapshot and saves it to filePath.
+       */
+  def takeHeapSnapshot(filePath: java.lang.String): js.Promise[scala.Unit] = js.native
+  /**
        * Toggles the developer tools.
        */
   def toggleDevTools(): scala.Unit = js.native
@@ -1674,7 +1859,7 @@ class WebContents () extends EventEmitter {
 @JSGlobal("Electron.WebContents")
 @js.native
 object WebContents extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/web-contents
+  // Docs: http://electronjs.org/docs/api/web-contents
   def fromId(id: scala.Double): electronLib.ElectronNs.WebContents = js.native
   def getAllWebContents(): js.Array[electronLib.ElectronNs.WebContents] = js.native
   def getFocusedWebContents(): electronLib.ElectronNs.WebContents = js.native

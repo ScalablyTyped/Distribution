@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Mutations[S] extends js.Object {
-  var actions: js.UndefOr[vuexLib.vuexMod.ActionTree[S, S]] = js.undefined
-  var getters: js.UndefOr[vuexLib.vuexMod.GetterTree[S, S]] = js.undefined
-  var modules: js.UndefOr[vuexLib.vuexMod.ModuleTree[S]] = js.undefined
-  var mutations: js.UndefOr[vuexLib.vuexMod.MutationTree[S]] = js.undefined
+  var actions: js.UndefOr[vuexLib.typesMod.ActionTree[S, S]] = js.undefined
+  var getters: js.UndefOr[vuexLib.typesMod.GetterTree[S, S]] = js.undefined
+  var modules: js.UndefOr[vuexLib.typesMod.ModuleTree[S]] = js.undefined
+  var mutations: js.UndefOr[vuexLib.typesMod.MutationTree[S]] = js.undefined
 }
 

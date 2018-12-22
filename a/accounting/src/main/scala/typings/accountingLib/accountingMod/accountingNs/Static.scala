@@ -10,29 +10,29 @@ trait Static extends js.Object {
   // settings object that controls default parameters for library methods
   var settings: Settings = js.native
   // format a list of values for column-display
-  def formatColumn(numbers: js.Array[scala.Double | js.Array[scala.Double]]): js.Array[java.lang.String] = js.native
+  def formatColumn(numbers: js.Array[js.Array[scala.Double] | scala.Double]): js.Array[java.lang.String] = js.native
   def formatColumn(
-    numbers: js.Array[scala.Double | js.Array[scala.Double]],
+    numbers: js.Array[js.Array[scala.Double] | scala.Double],
     options: CurrencySettings[CurrencyFormat | java.lang.String]
   ): js.Array[java.lang.String] = js.native
   // format a list of values for column-display
-  def formatColumn(numbers: js.Array[scala.Double | js.Array[scala.Double]], symbol: java.lang.String): js.Array[java.lang.String] = js.native
+  def formatColumn(numbers: js.Array[js.Array[scala.Double] | scala.Double], symbol: java.lang.String): js.Array[java.lang.String] = js.native
   // format a list of values for column-display
   def formatColumn(
-    numbers: js.Array[scala.Double | js.Array[scala.Double]],
+    numbers: js.Array[js.Array[scala.Double] | scala.Double],
     symbol: java.lang.String,
     precision: scala.Double
   ): js.Array[java.lang.String] = js.native
   // format a list of values for column-display
   def formatColumn(
-    numbers: js.Array[scala.Double | js.Array[scala.Double]],
+    numbers: js.Array[js.Array[scala.Double] | scala.Double],
     symbol: java.lang.String,
     precision: scala.Double,
     thousand: java.lang.String
   ): js.Array[java.lang.String] = js.native
   // format a list of values for column-display
   def formatColumn(
-    numbers: js.Array[scala.Double | js.Array[scala.Double]],
+    numbers: js.Array[js.Array[scala.Double] | scala.Double],
     symbol: java.lang.String,
     precision: scala.Double,
     thousand: java.lang.String,
@@ -40,7 +40,7 @@ trait Static extends js.Object {
   ): js.Array[java.lang.String] = js.native
   // format a list of values for column-display
   def formatColumn(
-    numbers: js.Array[scala.Double | js.Array[scala.Double]],
+    numbers: js.Array[js.Array[scala.Double] | scala.Double],
     symbol: java.lang.String,
     precision: scala.Double,
     thousand: java.lang.String,

@@ -12,7 +12,7 @@ trait FingerprintStatic
      * Create Fingerprint object.
      */
 org.scalablytyped.runtime.Instantiable1[
-      (/* hasher */ js.Function2[/* key */ java.lang.String, /* seed */ scala.Double, scala.Double]) | (/* option */ FingerprintOption), 
+      (/* option */ FingerprintOption) | (/* hasher */ js.Function2[/* key */ java.lang.String, /* seed */ scala.Double, scala.Double]), 
       Fingerprint
     ]
 

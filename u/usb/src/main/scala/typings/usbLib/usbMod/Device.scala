@@ -27,7 +27,7 @@ class Device () extends js.Object {
     wIndex: scala.Double,
     data_or_length: js.Any,
     callback: js.Function2[
-      /* error */ js.UndefOr[java.lang.String], 
+      /* error */ js.UndefOr[LibUSBException], 
       /* buf */ js.UndefOr[nodeLib.Buffer], 
       scala.Unit
     ]

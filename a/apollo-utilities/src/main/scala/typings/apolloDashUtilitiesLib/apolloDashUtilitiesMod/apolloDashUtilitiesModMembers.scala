@@ -68,10 +68,18 @@ object apolloDashUtilitiesModMembers extends js.Object {
   def isScalarValue(value: graphqlLib.languageAstMod.ValueNode): /* is ScalarValue */scala.Boolean = js.native
   def isTest(): scala.Boolean = js.native
   def maybeDeepFreeze(obj: js.Any): js.Any = js.native
+  def removeArgumentsFromDocument(
+    config: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveArgumentsConfig],
+    query: graphqlLib.languageAstMod.DocumentNode
+  ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
   def removeConnectionDirectiveFromDocument(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def removeDirectivesFromDocument(
     directives: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveDirectiveConfig],
     doc: graphqlLib.languageAstMod.DocumentNode
+  ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
+  def removeFragmentSpreadFromDocument(
+    config: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveFragmentSpreadConfig],
+    query: graphqlLib.languageAstMod.DocumentNode
   ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
   def resultKeyNameFromField(field: graphqlLib.languageAstMod.FieldNode): java.lang.String = js.native
   def shouldInclude(selection: graphqlLib.languageAstMod.SelectionNode): scala.Boolean = js.native

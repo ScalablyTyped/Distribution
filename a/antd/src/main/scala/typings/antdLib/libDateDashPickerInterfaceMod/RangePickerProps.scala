@@ -31,7 +31,9 @@ trait RangePickerProps extends PickerProps {
       scala.Unit
     ]
   ] = js.undefined
-  var onOk: js.UndefOr[js.Function1[/* selectedTime */ momentLib.momentMod.momentNs.Moment, scala.Unit]] = js.undefined
+  var onOk: js.UndefOr[
+    js.Function1[/* selectedTime */ js.Array[momentLib.momentMod.momentNs.Moment], scala.Unit]
+  ] = js.undefined
   var onPanelChange: js.UndefOr[
     js.Function2[
       /* value */ js.UndefOr[RangePickerValue], 

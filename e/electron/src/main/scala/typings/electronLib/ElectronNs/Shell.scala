@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Shell extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/shell
+  // Docs: http://electronjs.org/docs/api/shell
   /**
        * Play the beep sound.
        */

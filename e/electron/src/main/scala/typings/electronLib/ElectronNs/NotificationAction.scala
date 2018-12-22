@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait NotificationAction extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/notification-action
+  // Docs: http://electronjs.org/docs/api/structures/notification-action
   /**
        * The label for the given action.
        */

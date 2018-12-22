@@ -23,7 +23,7 @@ trait TableHeaderProps
   var numeric: js.UndefOr[scala.Boolean] = js.undefined
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[TableHeader], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[TableHeader, reactLib.NativeMouseEvent], 
       /* name */ java.lang.String, 
       _
     ]

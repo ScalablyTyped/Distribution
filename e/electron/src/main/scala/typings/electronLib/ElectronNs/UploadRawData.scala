@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait UploadRawData extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/upload-raw-data
+  // Docs: http://electronjs.org/docs/api/structures/upload-raw-data
   /**
        * Data to be uploaded.
        */

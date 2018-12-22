@@ -68,13 +68,13 @@ object WSH extends js.Object {
        * @param strProgiID
        * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
        */
-  def CreateObject[K /* <: windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WSHController | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WScriptDOTNetwork | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WScriptDOTShell | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.ScriptingDOTSigner */](strProgID: K): js.Any = js.native
+  def CreateObject[K /* <: java.lang.String */](strProgID: K): js.Any = js.native
   /**
        * Creates a COM object.
        * @param strProgiID
        * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
        */
-  def CreateObject[K /* <: windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WSHController | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WScriptDOTNetwork | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WScriptDOTShell | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.ScriptingDOTSigner */](strProgID: K, strPrefix: java.lang.String): js.Any = js.native
+  def CreateObject[K /* <: java.lang.String */](strProgID: K, strPrefix: java.lang.String): js.Any = js.native
   /**
        * Disconnects a COM object from its event sources.
        */
@@ -99,7 +99,7 @@ object WSH extends js.Object {
        * @param strProgID
        * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
        */
-  def GetObject[K /* <: windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WSHController | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WScriptDOTNetwork | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WScriptDOTShell | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.ScriptingDOTSigner */](strPathname: java.lang.String, strProgID: K): js.Any = js.native
+  def GetObject[K /* <: java.lang.String */](strPathname: java.lang.String, strProgID: K): js.Any = js.native
   /**
        * Retrieves an existing object with the specified ProgID from memory, or creates a new one from a file.
        * @param strPathname Fully qualified path to the file containing the object persisted to disk.
@@ -107,7 +107,7 @@ object WSH extends js.Object {
        * @param strProgID
        * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
        */
-  def GetObject[K /* <: windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WSHController | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WScriptDOTNetwork | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.WScriptDOTShell | windowsDashScriptDashHostLib.windowsDashScriptDashHostLibStrings.ScriptingDOTSigner */](strPathname: java.lang.String, strProgID: K, strPrefix: java.lang.String): js.Any = js.native
+  def GetObject[K /* <: java.lang.String */](strPathname: java.lang.String, strProgID: K, strPrefix: java.lang.String): js.Any = js.native
   /**
        * Forces the script to stop immediately, with an optional exit code.
        */

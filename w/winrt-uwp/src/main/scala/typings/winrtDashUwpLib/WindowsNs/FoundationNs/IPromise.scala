@@ -18,8 +18,8 @@ trait IPromise[TResult]
     progress: js.Function1[/* progress */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def `then`[U](
-    success: js.Function1[/* value */ TResult, U | IPromise[U]],
-    error: js.Function1[/* error */ js.Any, U | IPromise[U]],
+    success: js.Function1[/* value */ TResult, IPromise[U] | U],
+    error: js.Function1[/* error */ js.Any, IPromise[U] | U],
     progress: js.Function1[/* progress */ js.Any, scala.Unit]
   ): IPromise[U] = js.native
 }

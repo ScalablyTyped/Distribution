@@ -17,7 +17,7 @@ object Session extends js.Object {
        * A Session object, the default session object of the app.
        */
   var defaultSession: js.UndefOr[electronLib.ElectronNs.Session] = js.native
-  // Docs: http://electron.atom.io/docs/api/session
+  // Docs: http://electronjs.org/docs/api/session
   /**
        * If partition starts with persist:, the page will use a persistent session
        * available to all pages in the app with the same partition. if there is no
@@ -27,7 +27,7 @@ object Session extends js.Object {
        * before. There is no way to change the options of an existing Session object.
        */
   def fromPartition(partition: java.lang.String): electronLib.ElectronNs.Session = js.native
-  // Docs: http://electron.atom.io/docs/api/session
+  // Docs: http://electronjs.org/docs/api/session
   /**
        * If partition starts with persist:, the page will use a persistent session
        * available to all pages in the app with the same partition. if there is no

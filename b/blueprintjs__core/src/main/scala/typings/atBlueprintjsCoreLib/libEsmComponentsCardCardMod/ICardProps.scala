@@ -33,7 +33,10 @@ trait ICardProps
        */
   @JSName("onClick")
   var onClick_ICardProps: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
 }
 

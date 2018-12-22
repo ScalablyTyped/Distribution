@@ -18,6 +18,7 @@ trait Collection[TOut, TIn]
      with CollectionEvents
      with CollectionData
      with CollectionPosition
+     with CollectionTraversing
      with CollectionLayout
      with CollectionSelection
      with CollectionStyle

@@ -125,107 +125,7 @@ object libInternalModMembers extends js.Object {
   def extendObservableObjectWithProperties(target: js.Any, properties: js.Any, decorators: js.Any, defaultDecorator: js.Any): scala.Unit = js.native
   def fail(message: java.lang.String): scala.Nothing = js.native
   def fail(message: scala.Boolean): scala.Nothing = js.native
-  def flow[R](generator: js.Function0[mobxLib.libApiFlowMod.FlowIterator[_]]): js.Function0[mobxLib.libApiFlowMod.CancellablePromise[R]] = js.native
-  def flow[A1](generator: js.Function1[/* a1 */ A1, mobxLib.libApiFlowMod.FlowIterator[_]]): js.Function1[/* a1 */ A1, mobxLib.libApiFlowMod.CancellablePromise[_]] = js.native
-  def flow[A1, A2](generator: js.Function2[/* a1 */ A1, /* a2 */ A2, mobxLib.libApiFlowMod.FlowIterator[_]]): js.Function2[/* a1 */ A1, /* a2 */ A2, mobxLib.libApiFlowMod.CancellablePromise[_]] = js.native
-  def flow[A1, A2, A3](
-    generator: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, mobxLib.libApiFlowMod.FlowIterator[_]]
-  ): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, mobxLib.libApiFlowMod.CancellablePromise[_]] = js.native
-  def flow[A1, A2, A3, A4](
-    generator: js.Function4[
-      /* a1 */ A1, 
-      /* a2 */ A2, 
-      /* a3 */ A3, 
-      /* a4 */ A4, 
-      mobxLib.libApiFlowMod.FlowIterator[_]
-    ]
-  ): js.Function4[
-    /* a1 */ A1, 
-    /* a2 */ A2, 
-    /* a3 */ A3, 
-    /* a4 */ A4, 
-    mobxLib.libApiFlowMod.CancellablePromise[_]
-  ] = js.native
-  def flow[A1, A2, A3, A4, A5](
-    generator: js.Function5[
-      /* a1 */ A1, 
-      /* a2 */ A2, 
-      /* a3 */ A3, 
-      /* a4 */ A4, 
-      /* a5 */ A5, 
-      mobxLib.libApiFlowMod.FlowIterator[_]
-    ]
-  ): js.Function5[
-    /* a1 */ A1, 
-    /* a2 */ A2, 
-    /* a3 */ A3, 
-    /* a4 */ A4, 
-    /* a5 */ A5, 
-    mobxLib.libApiFlowMod.CancellablePromise[_]
-  ] = js.native
-  def flow[A1, A2, A3, A4, A5, A6](
-    generator: js.Function6[
-      /* a1 */ A1, 
-      /* a2 */ A2, 
-      /* a3 */ A3, 
-      /* a4 */ A4, 
-      /* a5 */ A5, 
-      /* a6 */ A6, 
-      mobxLib.libApiFlowMod.FlowIterator[_]
-    ]
-  ): js.Function6[
-    /* a1 */ A1, 
-    /* a2 */ A2, 
-    /* a3 */ A3, 
-    /* a4 */ A4, 
-    /* a5 */ A5, 
-    /* a6 */ A6, 
-    mobxLib.libApiFlowMod.CancellablePromise[_]
-  ] = js.native
-  def flow[A1, A2, A3, A4, A5, A6, A7](
-    generator: js.Function7[
-      /* a1 */ A1, 
-      /* a2 */ A2, 
-      /* a3 */ A3, 
-      /* a4 */ A4, 
-      /* a5 */ A5, 
-      /* a6 */ A6, 
-      /* a7 */ A7, 
-      mobxLib.libApiFlowMod.FlowIterator[_]
-    ]
-  ): js.Function7[
-    /* a1 */ A1, 
-    /* a2 */ A2, 
-    /* a3 */ A3, 
-    /* a4 */ A4, 
-    /* a5 */ A5, 
-    /* a6 */ A6, 
-    /* a7 */ A7, 
-    mobxLib.libApiFlowMod.CancellablePromise[_]
-  ] = js.native
-  def flow[A1, A2, A3, A4, A5, A6, A7, A8](
-    generator: js.Function8[
-      /* a1 */ A1, 
-      /* a2 */ A2, 
-      /* a3 */ A3, 
-      /* a4 */ A4, 
-      /* a5 */ A5, 
-      /* a6 */ A6, 
-      /* a7 */ A7, 
-      /* a8 */ A8, 
-      mobxLib.libApiFlowMod.FlowIterator[_]
-    ]
-  ): js.Function8[
-    /* a1 */ A1, 
-    /* a2 */ A2, 
-    /* a3 */ A3, 
-    /* a4 */ A4, 
-    /* a5 */ A5, 
-    /* a6 */ A6, 
-    /* a7 */ A7, 
-    /* a8 */ A8, 
-    mobxLib.libApiFlowMod.CancellablePromise[_]
-  ] = js.native
+  def flow[T, U /* <: js.Array[_] */](generator: js.Function1[/* args */ U, mobxLib.libApiFlowMod.FlowIterator[_]]): js.Function1[/* args */ U, mobxLib.libApiFlowMod.CancellablePromise[T]] = js.native
   def generateComputedPropConfig(propName: js.Any): js.Any = js.native
   def generateObservablePropConfig(propName: js.Any): js.Any = js.native
   def get[T /* <: js.Object */](obj: T, key: java.lang.String): js.Any = js.native
@@ -337,7 +237,7 @@ object libInternalModMembers extends js.Object {
     /* target */ js.Any, 
     /* prop */ js.Any, 
     /* descriptor */ mobxLib.libUtilsDecoratorsMod.BabelDescriptor, 
-    _
+    scala.Unit | mobxLib.Anon_Enumerable | mobxLib.Anon_InitializerConfigurable
   ] = js.native
   def noop(): scala.Unit = js.native
   def notifyListeners[T](listenable: mobxLib.libTypesListenDashUtilsMod.IListenable, change: T): scala.Unit = js.native

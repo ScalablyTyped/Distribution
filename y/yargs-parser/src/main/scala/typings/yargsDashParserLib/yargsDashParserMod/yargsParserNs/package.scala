@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object yargsParserNs {
-  type Arguments = yargsLib.yargsMod.yargsNs.Arguments
+  type Arguments = yargsLib.yargsMod.yargsNs.Arguments[js.Object]
 }

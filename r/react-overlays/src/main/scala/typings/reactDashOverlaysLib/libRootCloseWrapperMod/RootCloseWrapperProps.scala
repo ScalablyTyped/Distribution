@@ -25,6 +25,8 @@ trait RootCloseWrapperProps extends js.Object {
   /**
      * Callback fired after click or mousedown. Also triggers when user hits `esc`.
      */
-  var onRootClose: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[_], scala.Unit]] = js.undefined
+  var onRootClose: js.UndefOr[
+    js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], scala.Unit]
+  ] = js.undefined
 }
 

@@ -33,7 +33,7 @@ trait IStylesheetResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the stylesheets.
            *
            */
-  def getAll(): js.Any
+  def getAll(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.stylesheetResource#getRules
@@ -53,7 +53,7 @@ trait IStylesheetResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the rules.
            *
            */
-  def getRules(id: scala.Double): js.Any
+  def getRules(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.stylesheetResource#getRulesByName
@@ -73,6 +73,6 @@ trait IStylesheetResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the rules.
            *
            */
-  def getRulesByName(name: java.lang.String): js.Any
+  def getRulesByName(name: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 

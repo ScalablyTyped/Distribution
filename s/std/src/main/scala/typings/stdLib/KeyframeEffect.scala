@@ -28,7 +28,7 @@ object KeyframeEffect
      with org.scalablytyped.runtime.Instantiable1[(/* target */ Element) | (/* source */ KeyframeEffect), KeyframeEffect]
      with org.scalablytyped.runtime.Instantiable3[
       (/* target */ Element) | (/* target */ scala.Null), 
-      (/* keyframes */ js.Array[Keyframe]) | (/* keyframes */ PropertyIndexedKeyframes) | (/* keyframes */ scala.Null), 
+      (/* keyframes */ js.Array[Keyframe]) | (/* keyframes */ scala.Null) | (/* keyframes */ PropertyIndexedKeyframes), 
       (/* options */ scala.Double) | (/* options */ KeyframeEffectOptions), 
       KeyframeEffect
     ]

@@ -17,7 +17,7 @@ org.scalablytyped.runtime.Instantiable0[commonDashTagsLib.commonDashTagsMod.Temp
      * @deprecated
      */
 org.scalablytyped.runtime.Instantiable1[
-      (/* transformers */ js.Array[commonDashTagsLib.commonDashTagsMod.TemplateTransformer[js.Any]]) | (/* transformers (repeated) */ commonDashTagsLib.commonDashTagsMod.TemplateTransformer[js.Any]) | (/* pluginFunctions (repeated) */ commonDashTagsLib.commonDashTagsMod.PluginFunction), 
+      (/* transformers */ js.Array[commonDashTagsLib.commonDashTagsMod.TemplateTransformer[js.Any]]) | (/* pluginFunctions (repeated) */ commonDashTagsLib.commonDashTagsMod.PluginFunction) | (/* transformers (repeated) */ commonDashTagsLib.commonDashTagsMod.TemplateTransformer[js.Any]), 
       commonDashTagsLib.commonDashTagsMod.TemplateTag
     ]
 

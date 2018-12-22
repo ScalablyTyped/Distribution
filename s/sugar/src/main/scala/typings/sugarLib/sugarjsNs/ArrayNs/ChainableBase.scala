@@ -25,7 +25,7 @@ trait ChainableBase[T, RawValue] extends js.Object {
   def average[U](map: mapFn[T, U]): sugarLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native
   def compact(): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def compact(all: scala.Boolean): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
-  def concat(items: (T | js.Array[T])*): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
+  def concat(items: (js.Array[T] | T)*): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def copyWithin(target: scala.Double, start: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[this.type] = js.native
   def copyWithin(target: scala.Double, start: scala.Double, end: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[this.type] = js.native
   def count(search: T): sugarLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native

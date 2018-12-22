@@ -18,8 +18,9 @@ trait AbstractSelectProps extends js.Object {
   var dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined
   var dropdownMenuStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var dropdownRender: js.UndefOr[
-    js.Function1[
-      /* menu */ reactLib.reactMod.ReactNs.ReactNode, 
+    js.Function2[
+      /* menu */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], 
+      /* props */ js.UndefOr[SelectProps[SelectValue]], 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined

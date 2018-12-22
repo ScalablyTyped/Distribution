@@ -23,7 +23,7 @@ trait IContentTypeResource extends js.Object {
            * @returns {Promise} resourcePromise object.
            *
            */
-  def getAllPropertyTypeAliases(): js.Any
+  def getAllPropertyTypeAliases(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.contentTypeResource#getAllowedTypes
@@ -43,6 +43,6 @@ trait IContentTypeResource extends js.Object {
            * @returns {Promise} resourcePromise object.
            *
            */
-  def getAllowedTypes(contentId: scala.Double): js.Any
+  def getAllowedTypes(contentId: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 

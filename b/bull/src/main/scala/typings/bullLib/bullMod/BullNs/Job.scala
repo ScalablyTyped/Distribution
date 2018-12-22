@@ -15,7 +15,15 @@ trait Job[T] extends js.Object {
        * The custom data passed when the job was created
        */
   var data: T = js.native
+  /**
+       * When this job was completed (unix milliseconds)
+       */
+  var finishedOn: js.UndefOr[scala.Double] = js.native
   var id: JobId = js.native
+  /**
+       * When this job was started (unix milliseconds)
+       */
+  var processedOn: js.UndefOr[scala.Double] = js.native
   /**
        * Ensure this job is never ran again even if attemptsMade is less than job.attempts.
        */

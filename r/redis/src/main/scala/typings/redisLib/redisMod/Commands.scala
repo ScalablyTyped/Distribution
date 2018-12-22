@@ -64,7 +64,7 @@ trait Commands[R] extends js.Object {
   @JSName("HMGET")
   var HMGET_Original: OverloadedKeyCommand[java.lang.String, js.Array[java.lang.String], R] = js.native
   @JSName("HMSET")
-  var HMSET_Original: OverloadedSetCommand[java.lang.String | scala.Double, scala.Boolean, R] = js.native
+  var HMSET_Original: OverloadedSetCommand[java.lang.String | scala.Double, redisLib.redisLibStrings.OK, R] = js.native
   @JSName("HSCAN")
   var HSCAN_Original: OverloadedKeyCommand[java.lang.String, js.Tuple2[java.lang.String, js.Array[java.lang.String]], R] = js.native
   @JSName("LPUSH")
@@ -289,7 +289,7 @@ trait Commands[R] extends js.Object {
        * Set multiple hash fields to multiple values.
        */
   @JSName("hmset")
-  var hmset_Original: OverloadedSetCommand[java.lang.String | scala.Double, scala.Boolean, R] = js.native
+  var hmset_Original: OverloadedSetCommand[java.lang.String | scala.Double, redisLib.redisLibStrings.OK, R] = js.native
   /**
        * Incrementally iterate hash fields and associated values.
        */
@@ -1786,7 +1786,8 @@ trait Commands[R] extends js.Object {
   def FLUSHALL(): R = js.native
   def FLUSHALL(cb: Callback[java.lang.String]): R = js.native
   def FLUSHDB(): R = js.native
-  def FLUSHDB(cb: Callback[java.lang.String]): R = js.native
+  @JSName("FLUSHDB")
+  def FLUSHDB_OK(cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
   def GEOADD(args: (java.lang.String | scala.Double | Callback[scala.Double])*): R = js.native
   def GEOADD(key: java.lang.String, arg1: java.lang.String | scala.Double): R = js.native
   def GEOADD(
@@ -3807,26 +3808,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     arg6: java.lang.String | scala.Double
   ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String | scala.Double,
-    arg2: java.lang.String | scala.Double,
-    arg3: java.lang.String | scala.Double,
-    arg4: java.lang.String | scala.Double,
-    arg5: java.lang.String | scala.Double,
-    arg6: java.lang.String | scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String | scala.Double,
-    arg2: java.lang.String | scala.Double,
-    arg3: java.lang.String | scala.Double,
-    arg4: java.lang.String | scala.Double,
-    arg5: java.lang.String | scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(key: java.lang.String, arg1: java.lang.String | scala.Double, cb: Callback[scala.Boolean]): R = js.native
   def HMSET(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   def HMSET(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   def HMSET(
@@ -3841,30 +3822,7 @@ trait Commands[R] extends js.Object {
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
     arg4: scala.Double
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
-    cb: Callback[scala.Boolean]
   ): R = js.native
   def HMSET(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
   def HMSET(
@@ -3879,32 +3837,8 @@ trait Commands[R] extends js.Object {
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: scala.Double,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: scala.Double,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
   def HMSET(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double): R = js.native
   def HMSET(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
   def HMSET(
@@ -3919,30 +3853,7 @@ trait Commands[R] extends js.Object {
     arg1: java.lang.String,
     arg2: scala.Double,
     arg3: java.lang.String,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: java.lang.String,
     arg4: scala.Double
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: java.lang.String,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: java.lang.String,
-    cb: Callback[scala.Boolean]
   ): R = js.native
   def HMSET(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
   def HMSET(
@@ -3957,46 +3868,12 @@ trait Commands[R] extends js.Object {
     arg1: java.lang.String,
     arg2: scala.Double,
     arg3: scala.Double,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: scala.Double,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, cb: Callback[scala.Boolean]): R = js.native
   def HMSET(key: java.lang.String, arg1: js.Array[java.lang.String | scala.Double]): R = js.native
   def HMSET(
     key: java.lang.String,
-    arg1: js.Array[java.lang.String | scala.Double],
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
     arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
-    cb: Callback[scala.Boolean]
   ): R = js.native
   def HMSET(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String): R = js.native
   def HMSET(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
@@ -4012,30 +3889,7 @@ trait Commands[R] extends js.Object {
     arg1: scala.Double,
     arg2: java.lang.String,
     arg3: java.lang.String,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
     arg4: scala.Double
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
-    cb: Callback[scala.Boolean]
   ): R = js.native
   def HMSET(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
   def HMSET(
@@ -4050,32 +3904,8 @@ trait Commands[R] extends js.Object {
     arg1: scala.Double,
     arg2: java.lang.String,
     arg3: scala.Double,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: scala.Double,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
   def HMSET(key: java.lang.String, arg1: scala.Double, arg2: scala.Double): R = js.native
   def HMSET(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
   def HMSET(
@@ -4090,30 +3920,7 @@ trait Commands[R] extends js.Object {
     arg1: scala.Double,
     arg2: scala.Double,
     arg3: java.lang.String,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: scala.Double,
-    arg3: java.lang.String,
     arg4: scala.Double
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: scala.Double,
-    arg3: java.lang.String,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: scala.Double,
-    arg3: java.lang.String,
-    cb: Callback[scala.Boolean]
   ): R = js.native
   def HMSET(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
   def HMSET(
@@ -4128,33 +3935,288 @@ trait Commands[R] extends js.Object {
     arg1: scala.Double,
     arg2: scala.Double,
     arg3: scala.Double,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
+    arg4: scala.Double
   ): R = js.native
-  def HMSET(
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String | scala.Double,
+    arg2: java.lang.String | scala.Double,
+    arg3: java.lang.String | scala.Double,
+    arg4: java.lang.String | scala.Double,
+    arg5: java.lang.String | scala.Double,
+    arg6: java.lang.String | scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String | scala.Double,
+    arg2: java.lang.String | scala.Double,
+    arg3: java.lang.String | scala.Double,
+    arg4: java.lang.String | scala.Double,
+    arg5: java.lang.String | scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String | scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: scala.Double,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: scala.Double,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: js.Array[java.lang.String | scala.Double],
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
     key: java.lang.String,
     arg1: scala.Double,
     arg2: scala.Double,
     arg3: scala.Double,
-    arg4: scala.Double
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  def HMSET(
+  @JSName("HMSET")
+  def HMSET_OK(
     key: java.lang.String,
     arg1: scala.Double,
     arg2: scala.Double,
     arg3: scala.Double,
     arg4: scala.Double,
-    cb: Callback[scala.Boolean]
+    cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  def HMSET(
+  @JSName("HMSET")
+  def HMSET_OK(
     key: java.lang.String,
     arg1: scala.Double,
     arg2: scala.Double,
     arg3: scala.Double,
-    cb: Callback[scala.Boolean]
+    cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  def HMSET(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, cb: Callback[scala.Boolean]): R = js.native
-  def HMSET(key: java.lang.String, args: (java.lang.String | scala.Double | Callback[scala.Boolean])*): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  @JSName("HMSET")
+  def HMSET_OK(
+    key: java.lang.String,
+    args: (java.lang.String | scala.Double | Callback[redisLib.redisLibStrings.OK])*
+  ): R = js.native
   def HSCAN(args: (java.lang.String | (Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]))*): R = js.native
   def HSCAN(key: java.lang.String, arg1: java.lang.String): R = js.native
   def HSCAN(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
@@ -10657,7 +10719,8 @@ trait Commands[R] extends js.Object {
   /**
        * Remove all keys from the current database.
        */
-  def flushdb(cb: Callback[java.lang.String]): R = js.native
+  @JSName("flushdb")
+  def flushdb_OK(cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
   /**
        * Add one or more geospatial items in the geospatial index represented using a sorted set.
        */
@@ -13590,35 +13653,6 @@ trait Commands[R] extends js.Object {
   /**
        * Set multiple hash fields to multiple values.
        */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String | scala.Double,
-    arg2: java.lang.String | scala.Double,
-    arg3: java.lang.String | scala.Double,
-    arg4: java.lang.String | scala.Double,
-    arg5: java.lang.String | scala.Double,
-    arg6: java.lang.String | scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String | scala.Double,
-    arg2: java.lang.String | scala.Double,
-    arg3: java.lang.String | scala.Double,
-    arg4: java.lang.String | scala.Double,
-    arg5: java.lang.String | scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(key: java.lang.String, arg1: java.lang.String | scala.Double, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
        * Set multiple hash fields to multiple values.
@@ -13642,39 +13676,7 @@ trait Commands[R] extends js.Object {
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
     arg4: scala.Double
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
-    cb: Callback[scala.Boolean]
   ): R = js.native
   /**
        * Set multiple hash fields to multiple values.
@@ -13698,44 +13700,8 @@ trait Commands[R] extends js.Object {
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: scala.Double,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: scala.Double,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: java.lang.String,
-    arg3: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
   /**
        * Set multiple hash fields to multiple values.
        */
@@ -13762,39 +13728,7 @@ trait Commands[R] extends js.Object {
     arg1: java.lang.String,
     arg2: scala.Double,
     arg3: java.lang.String,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: java.lang.String,
     arg4: scala.Double
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: java.lang.String,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: java.lang.String,
-    cb: Callback[scala.Boolean]
   ): R = js.native
   /**
        * Set multiple hash fields to multiple values.
@@ -13818,44 +13752,8 @@ trait Commands[R] extends js.Object {
     arg1: java.lang.String,
     arg2: scala.Double,
     arg3: scala.Double,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: scala.Double,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: java.lang.String,
-    arg2: scala.Double,
-    arg3: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, cb: Callback[scala.Boolean]): R = js.native
   /**
        * Set multiple hash fields to multiple values.
        */
@@ -13865,23 +13763,7 @@ trait Commands[R] extends js.Object {
        */
   def hmset(
     key: java.lang.String,
-    arg1: js.Array[java.lang.String | scala.Double],
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
     arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
-    cb: Callback[scala.Boolean]
   ): R = js.native
   /**
        * Set multiple hash fields to multiple values.
@@ -13909,39 +13791,7 @@ trait Commands[R] extends js.Object {
     arg1: scala.Double,
     arg2: java.lang.String,
     arg3: java.lang.String,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
     arg4: scala.Double
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: java.lang.String,
-    cb: Callback[scala.Boolean]
   ): R = js.native
   /**
        * Set multiple hash fields to multiple values.
@@ -13965,44 +13815,8 @@ trait Commands[R] extends js.Object {
     arg1: scala.Double,
     arg2: java.lang.String,
     arg3: scala.Double,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: scala.Double,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: java.lang.String,
-    arg3: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
   /**
        * Set multiple hash fields to multiple values.
        */
@@ -14029,39 +13843,7 @@ trait Commands[R] extends js.Object {
     arg1: scala.Double,
     arg2: scala.Double,
     arg3: java.lang.String,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: scala.Double,
-    arg3: java.lang.String,
     arg4: scala.Double
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: scala.Double,
-    arg3: java.lang.String,
-    arg4: scala.Double,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: scala.Double,
-    arg3: java.lang.String,
-    cb: Callback[scala.Boolean]
   ): R = js.native
   /**
        * Set multiple hash fields to multiple values.
@@ -14085,48 +13867,390 @@ trait Commands[R] extends js.Object {
     arg1: scala.Double,
     arg2: scala.Double,
     arg3: scala.Double,
-    arg4: java.lang.String,
-    cb: Callback[scala.Boolean]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: scala.Double,
-    arg2: scala.Double,
-    arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
   /**
        * Set multiple hash fields to multiple values.
        */
-  def hmset(
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String | scala.Double,
+    arg2: java.lang.String | scala.Double,
+    arg3: java.lang.String | scala.Double,
+    arg4: java.lang.String | scala.Double,
+    arg5: java.lang.String | scala.Double,
+    arg6: java.lang.String | scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String | scala.Double,
+    arg2: java.lang.String | scala.Double,
+    arg3: java.lang.String | scala.Double,
+    arg4: java.lang.String | scala.Double,
+    arg5: java.lang.String | scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String | scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: scala.Double,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: scala.Double,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    arg3: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: java.lang.String,
+    arg2: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: js.Array[java.lang.String | scala.Double],
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    arg3: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    arg4: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: scala.Double,
+    arg3: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: scala.Double,
+    arg3: scala.Double,
+    arg4: java.lang.String,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  @JSName("hmset")
+  def hmset_OK(
     key: java.lang.String,
     arg1: scala.Double,
     arg2: scala.Double,
     arg3: scala.Double,
     arg4: scala.Double,
-    cb: Callback[scala.Boolean]
+    cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
   /**
        * Set multiple hash fields to multiple values.
        */
-  def hmset(
+  @JSName("hmset")
+  def hmset_OK(
     key: java.lang.String,
     arg1: scala.Double,
     arg2: scala.Double,
     arg3: scala.Double,
-    cb: Callback[scala.Boolean]
+    cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
   /**
        * Set multiple hash fields to multiple values.
        */
-  def hmset(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, cb: Callback[scala.Boolean]): R = js.native
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    arg1: scala.Double,
+    arg2: scala.Double,
+    cb: Callback[redisLib.redisLibStrings.OK]
+  ): R = js.native
   /**
        * Set multiple hash fields to multiple values.
        */
-  def hmset(key: java.lang.String, args: (java.lang.String | scala.Double | Callback[scala.Boolean])*): R = js.native
+  @JSName("hmset")
+  def hmset_OK(
+    key: java.lang.String,
+    args: (java.lang.String | scala.Double | Callback[redisLib.redisLibStrings.OK])*
+  ): R = js.native
   /**
        * Incrementally iterate hash fields and associated values.
        */

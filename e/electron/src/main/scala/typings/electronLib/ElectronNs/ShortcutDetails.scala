@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ShortcutDetails extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/shortcut-details
+  // Docs: http://electronjs.org/docs/api/structures/shortcut-details
   /**
        * The Application User Model ID. Default is empty.
        */

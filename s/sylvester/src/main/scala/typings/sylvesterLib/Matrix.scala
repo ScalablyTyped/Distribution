@@ -186,7 +186,7 @@ trait Matrix extends js.Object {
        *
        * @param {Array<number>|Array<Array<number>>|Vector|Matrix} matrix The elements.
        */
-  def setElements(matrix: js.Array[scala.Double | js.Array[scala.Double]]): Matrix = js.native
+  def setElements(matrix: js.Array[js.Array[scala.Double] | scala.Double]): Matrix = js.native
   /**
        * Set the matrix's elements from an array. If the argument passed is a vector, the resulting matrix
        * will be a single column.

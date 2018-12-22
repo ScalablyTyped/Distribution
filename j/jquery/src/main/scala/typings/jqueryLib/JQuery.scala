@@ -80,6 +80,7 @@ trait JQuery[TElement]
   ```
        */
   var length: scala.Double = js.native
+  // TODO: The return type should reflect newly selected types.
   /**
        * Create a new jQuery object with elements added to the set of matched elements.
        * @param selector_elements_html_selection _&#x40;param_ `selector_elements_html_selection`
@@ -224,8 +225,9 @@ trait JQuery[TElement]
   ```
        */
   def add(
-    selector_elements_html_selection: jqueryLib.JQueryNs.Selector | jqueryLib.JQueryNs.htmlString | jqueryLib.JQueryNs.TypeOrArray[stdLib.Element]
+    selector_elements_html_selection: jqueryLib.JQueryNs.Node | jqueryLib.JQueryNs.Selector | jqueryLib.JQueryNs.TypeOrArray[stdLib.Element] | jqueryLib.JQueryNs.htmlString
   ): this.type = js.native
+  // TODO: The return type should reflect newly selected types.
   /**
        * Create a new jQuery object with elements added to the set of matched elements.
        * @param selector_elements_html_selection _&#x40;param_ `selector_elements_html_selection`
@@ -1781,7 +1783,7 @@ trait JQuery[TElement]
   ```
        */
   def appendTo(
-    target: jqueryLib.JQueryNs.Selector | jqueryLib.JQueryNs.htmlString | (jqueryLib.JQueryNs.TypeOrArray[stdLib.Element | stdLib.DocumentFragment])
+    target: jqueryLib.JQueryNs.Selector | (jqueryLib.JQueryNs.TypeOrArray[stdLib.Element | stdLib.DocumentFragment]) | jqueryLib.JQueryNs.htmlString
   ): this.type = js.native
   /**
        * Insert every element in the set of matched elements to the end of the target.
@@ -10698,6 +10700,79 @@ trait JQuery[TElement]
   </html>
   ```
        */
+  def html(htmlString_function: jqueryLib.JQueryNs.Node): this.type = js.native
+  /**
+       * Set the HTML contents of each element in the set of matched elements.
+       * @param htmlString_function _&#x40;param_ `htmlString_function`
+       * <br>
+       * * `htmlString` — A string of HTML to set as the content of each matched element. <br>
+       * * `function` — A function returning the HTML content to set. Receives the index position of the element in the set
+       *                and the old HTML value as arguments. jQuery empties the element before calling the function; use the
+       *                oldhtml argument to reference the previous content. Within the function, `this` refers to the current
+       *                element in the set.
+       * @see \`{@link https://api.jquery.com/html/ }\`
+       * @since 1.0
+       * @since 1.4
+       * @example ​ ````Add some html to each div.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>html demo</title>
+    <style>
+    .red {
+      color: red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <span>Hello</span>
+  <div></div>
+  <div></div>
+  <div></div>
+  ​
+  <script>
+  $( "div" ).html( "<span class='red'>Hello <b>Again</b></span>" );
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````Add some html to each div then immediately do further manipulations to the inserted html.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>html demo</title>
+    <style>
+    div {
+      color: blue;
+      font-size: 18px;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <div></div>
+  <div></div>
+  <div></div>
+  ​
+  <script>
+  $( "div" ).html( "<b>Wow!</b> Such excitement..." );
+  $( "div b" )
+    .append( document.createTextNode( "!!!" ) )
+    .css( "color", "red" );
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       */
   def html(htmlString_function: jqueryLib.JQueryNs.htmlString): this.type = js.native
   /**
        * Set the HTML contents of each element in the set of matched elements.
@@ -10776,7 +10851,7 @@ trait JQuery[TElement]
       /* this */ TElement, 
       /* index */ scala.Double, 
       /* oldhtml */ jqueryLib.JQueryNs.htmlString, 
-      jqueryLib.JQueryNs.htmlString
+      jqueryLib.JQueryNs.htmlString | jqueryLib.JQueryNs.Node
     ]
   ): this.type = js.native
   /**
@@ -12057,7 +12132,7 @@ trait JQuery[TElement]
   ```
        */
   def insertAfter(
-    target: jqueryLib.JQueryNs.Selector | jqueryLib.JQueryNs.htmlString | jqueryLib.JQueryNs.TypeOrArray[stdLib.Node]
+    target: jqueryLib.JQueryNs.Selector | jqueryLib.JQueryNs.TypeOrArray[stdLib.Node] | jqueryLib.JQueryNs.htmlString
   ): this.type = js.native
   /**
        * Insert every element in the set of matched elements after the target.
@@ -12127,7 +12202,7 @@ trait JQuery[TElement]
   ```
        */
   def insertBefore(
-    target: jqueryLib.JQueryNs.Selector | jqueryLib.JQueryNs.htmlString | jqueryLib.JQueryNs.TypeOrArray[stdLib.Node]
+    target: jqueryLib.JQueryNs.Selector | jqueryLib.JQueryNs.TypeOrArray[stdLib.Node] | jqueryLib.JQueryNs.htmlString
   ): this.type = js.native
   /**
        * Insert every element in the set of matched elements before the target.
@@ -20125,7 +20200,7 @@ trait JQuery[TElement]
   ```
        */
   def prependTo(
-    target: jqueryLib.JQueryNs.Selector | jqueryLib.JQueryNs.htmlString | (jqueryLib.JQueryNs.TypeOrArray[stdLib.Element | stdLib.DocumentFragment])
+    target: jqueryLib.JQueryNs.Selector | (jqueryLib.JQueryNs.TypeOrArray[stdLib.Element | stdLib.DocumentFragment]) | jqueryLib.JQueryNs.htmlString
   ): this.type = js.native
   /**
        * Insert every element in the set of matched elements to the beginning of the target.
@@ -22434,7 +22509,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def replaceWith(newContent_function: JQuery[stdLib.HTMLElement]): this.type = js.native
+  def replaceWith(newContent_function: jqueryLib.JQueryNs.Node | jqueryLib.JQueryNs.TypeOrArray[stdLib.Element]): this.type = js.native
   /**
        * Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed.
        * @param newContent_function _&#x40;param_ `newContent_function`
@@ -22585,7 +22660,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def replaceWith(newContent_function: jqueryLib.JQueryNs.TypeOrArray[stdLib.Element]): this.type = js.native
+  def replaceWith(newContent_function: JQuery[jqueryLib.JQueryNs.Node]): this.type = js.native
   /**
        * Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed.
        * @param newContent_function _&#x40;param_ `newContent_function`
@@ -22887,7 +22962,14 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def replaceWith(newContent_function: js.ThisFunction0[/* this */ TElement, _]): this.type = js.native
+  def replaceWith(
+    newContent_function: js.ThisFunction2[
+      /* this */ TElement, 
+      /* index */ scala.Double, 
+      /* oldhtml */ jqueryLib.JQueryNs.htmlString, 
+      jqueryLib.JQueryNs.htmlString | JQuery[jqueryLib.JQueryNs.Node] | jqueryLib.JQueryNs.TypeOrArray[stdLib.Element] | jqueryLib.JQueryNs.Node
+    ]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "resize" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.

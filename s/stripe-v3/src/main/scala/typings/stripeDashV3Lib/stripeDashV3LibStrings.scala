@@ -91,6 +91,9 @@ object stripeDashV3LibStrings {
   sealed trait focus extends js.Object
   
   @js.native
+  sealed trait iban extends js.Object
+  
+  @js.native
   sealed trait invalid_shipping_address extends js.Object
   
   @js.native
@@ -211,6 +214,7 @@ object stripeDashV3LibStrings {
   def errored: errored = "errored".asInstanceOf[errored]
   def fail: fail = "fail".asInstanceOf[fail]
   def focus: focus = "focus".asInstanceOf[focus]
+  def iban: iban = "iban".asInstanceOf[iban]
   def invalid_shipping_address: invalid_shipping_address = "invalid_shipping_address".asInstanceOf[invalid_shipping_address]
   def light: light = "light".asInstanceOf[light]
   def `light-outline`: `light-outline` = "light-outline".asInstanceOf[`light-outline`]

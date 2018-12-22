@@ -13,6 +13,10 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var alexaforbusiness: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ClientConfiguration] = js.native
   var amplify: js.UndefOr[awsDashSdkLib.clientsAmplifyMod.AmplifyNs.ClientConfiguration] = js.native
   var apigateway: js.UndefOr[awsDashSdkLib.clientsApigatewayMod.APIGatewayNs.ClientConfiguration] = js.native
+  var apigatewaymanagementapi: js.UndefOr[
+    awsDashSdkLib.clientsApigatewaymanagementapiMod.ApiGatewayManagementApiNs.ClientConfiguration
+  ] = js.native
+  var apigatewayv2: js.UndefOr[awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.ClientConfiguration] = js.native
   var applicationautoscaling: js.UndefOr[
     awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.ClientConfiguration
   ] = js.native

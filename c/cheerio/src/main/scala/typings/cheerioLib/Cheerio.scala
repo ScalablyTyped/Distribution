@@ -50,7 +50,7 @@ trait Cheerio
     func: js.Function2[
       /* index */ scala.Double, 
       /* value */ java.lang.String, 
-      java.lang.String | scala.Double
+      scala.Double | java.lang.String
     ]
   ): Cheerio = js.native
   def css(propertyName: java.lang.String, value: java.lang.String): Cheerio = js.native

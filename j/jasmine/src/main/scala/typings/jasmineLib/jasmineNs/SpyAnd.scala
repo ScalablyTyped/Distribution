@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait SpyAnd extends js.Object {
+  var identity: java.lang.String
   /** By chaining the spy with and.callFake, all calls to the spy will delegate to the supplied function. */
   def callFake(fn: js.Function): Spy
   /** By chaining the spy with and.callThrough, the spy will still track all calls to it but in addition it will delegate to the actual implementation. */

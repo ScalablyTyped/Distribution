@@ -20,7 +20,7 @@ org.scalablytyped.runtime.Instantiable0[HttpError]
      *                                           If config is an Error object, it will be treated as config.cause.
      */
 org.scalablytyped.runtime.Instantiable1[
-      (/* config */ java.lang.String) | (/* config */ stdLib.Error) | (/* config */ Config), 
+      (/* config */ Config) | (/* config */ stdLib.Error) | (/* config */ java.lang.String), 
       HttpError
     ] {
   /**

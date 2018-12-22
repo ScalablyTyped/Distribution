@@ -10,7 +10,7 @@ package object reactDashSortableDashHocMod {
   type ContainerGetter = js.Function1[/* element */ reactLib.reactMod.ReactNs.ReactElement[js.Any], reactLib.HTMLElement]
   type Offset = scala.Double | java.lang.String
   type SortEndHandler = js.Function2[/* sort */ SortEnd, /* event */ SortEvent, scala.Unit]
-  type SortEvent = reactLib.reactMod.ReactNs.MouseEvent[js.Any] | reactLib.reactMod.ReactNs.TouchEvent[js.Any]
+  type SortEvent = (reactLib.reactMod.ReactNs.MouseEvent[js.Any, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[js.Any]
   type SortEventWithTag = SortEvent with reactDashSortableDashHocLib.Anon_Target
   type SortMoveHandler = js.Function1[/* event */ SortEvent, scala.Unit]
   type SortStartHandler = js.Function2[/* sort */ SortStart, /* event */ SortEvent, scala.Unit]

@@ -221,7 +221,7 @@ object srcCoreModMembers extends js.Object {
   def ɵand(
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     matchedQueriesDsl: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+      js.Tuple2[scala.Double | java.lang.String, atAngularCoreLib.srcViewTypesMod.QueryValueType]
     ],
     ngContentIndex: scala.Double,
     childCount: scala.Double
@@ -258,7 +258,7 @@ object srcCoreModMembers extends js.Object {
   def ɵand(
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     matchedQueriesDsl: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+      js.Tuple2[scala.Double | java.lang.String, atAngularCoreLib.srcViewTypesMod.QueryValueType]
     ],
     ngContentIndex: scala.Null,
     childCount: scala.Double
@@ -420,21 +420,21 @@ object srcCoreModMembers extends js.Object {
     checkIndex: scala.Double,
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     matchedQueries: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+      js.Tuple2[scala.Double | java.lang.String, atAngularCoreLib.srcViewTypesMod.QueryValueType]
     ],
     childCount: scala.Double,
     ctor: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _]
+    deps: js.Array[_ | (js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _])]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     matchedQueries: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+      js.Tuple2[scala.Double | java.lang.String, atAngularCoreLib.srcViewTypesMod.QueryValueType]
     ],
     childCount: scala.Double,
     ctor: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
+    deps: js.Array[_ | (js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _])],
     props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
@@ -467,7 +467,7 @@ object srcCoreModMembers extends js.Object {
     matchedQueries: scala.Null,
     childCount: scala.Double,
     ctor: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _]
+    deps: js.Array[_ | (js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _])]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -475,7 +475,7 @@ object srcCoreModMembers extends js.Object {
     matchedQueries: scala.Null,
     childCount: scala.Double,
     ctor: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
+    deps: js.Array[_ | (js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _])],
     props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
@@ -676,15 +676,15 @@ object srcCoreModMembers extends js.Object {
   def ɵelementStyling(): scala.Unit = js.native
   def ɵelementStyling(
     classDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ]
   ): scala.Unit = js.native
   def ɵelementStyling(
     classDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ],
     styleDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ]
   ): scala.Unit = js.native
   def ɵelementStyling(
@@ -742,7 +742,7 @@ object srcCoreModMembers extends js.Object {
   def ɵelementStyling(
     classDeclarations: scala.Null,
     styleDeclarations: js.Array[
-      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+      scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags | java.lang.String
     ]
   ): scala.Unit = js.native
   def ɵelementStyling(

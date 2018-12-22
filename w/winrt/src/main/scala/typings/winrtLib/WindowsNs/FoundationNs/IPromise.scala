@@ -35,14 +35,14 @@ trait IPromise[T] extends js.Object {
     progress: js.Function1[/* progress */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def `then`[U](): IPromise[U] = js.native
-  def `then`[U](success: js.Function1[/* value */ T, U | IPromise[U]]): IPromise[U] = js.native
+  def `then`[U](success: js.Function1[/* value */ T, IPromise[U] | U]): IPromise[U] = js.native
   def `then`[U](
-    success: js.Function1[/* value */ T, U | IPromise[U]],
-    error: js.Function1[/* error */ js.Any, U | IPromise[U]]
+    success: js.Function1[/* value */ T, IPromise[U] | U],
+    error: js.Function1[/* error */ js.Any, IPromise[U] | U]
   ): IPromise[U] = js.native
   def `then`[U](
-    success: js.Function1[/* value */ T, U | IPromise[U]],
-    error: js.Function1[/* error */ js.Any, U | IPromise[U]],
+    success: js.Function1[/* value */ T, IPromise[U] | U],
+    error: js.Function1[/* error */ js.Any, IPromise[U] | U],
     progress: js.Function1[/* progress */ js.Any, scala.Unit]
   ): IPromise[U] = js.native
 }

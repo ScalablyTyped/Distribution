@@ -260,6 +260,11 @@ trait IOptions[T, U] extends js.Object {
            */
   var persist: js.UndefOr[scala.Boolean] = js.undefined
   /**
+           * The placeholder of the control (displayed when nothing is selected / typed).
+           * Defaults to input element's placeholder, unless this one is specified.
+           */
+  var placeholder: js.UndefOr[java.lang.String] = js.undefined
+  /**
            * Plugins to use
            *
            * Default: null

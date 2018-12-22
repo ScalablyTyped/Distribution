@@ -15,7 +15,7 @@ trait NetLog extends EventEmitter {
        * A String property that returns the path to the current log file.
        */
   var currentlyLoggingPath: js.UndefOr[java.lang.String] = js.native
-  // Docs: http://electron.atom.io/docs/api/net-log
+  // Docs: http://electronjs.org/docs/api/net-log
   /**
        * Starts recording network events to path.
        */

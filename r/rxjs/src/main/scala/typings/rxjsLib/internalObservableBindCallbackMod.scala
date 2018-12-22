@@ -671,10 +671,10 @@ object internalObservableBindCallbackMod extends js.Object {
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
   ): js.Function1[/* arg1 */ A1, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindCallback")
-  def bindCallback_ARFunction1[A, R](callbackFunc: js.Function1[/* repeated */A | (js.Function1[/* result */ R, _]), _]): js.Function1[/* repeated */A, rxjsLib.internalObservableMod.Observable[R]] = js.native
+  def bindCallback_ARFunction1[A, R](callbackFunc: js.Function1[A | (js.Function1[/* result */ R, _]), _]): js.Function1[/* repeated */A, rxjsLib.internalObservableMod.Observable[R]] = js.native
   @JSName("bindCallback")
   def bindCallback_ARFunction1[A, R](
-    callbackFunc: js.Function1[/* repeated */A | (js.Function1[/* result */ R, _]), _],
+    callbackFunc: js.Function1[A | (js.Function1[/* result */ R, _]), _],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
   ): js.Function1[/* repeated */A, rxjsLib.internalObservableMod.Observable[R]] = js.native
   @JSName("bindCallback")

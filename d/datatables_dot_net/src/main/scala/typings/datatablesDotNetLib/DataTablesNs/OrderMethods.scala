@@ -18,7 +18,7 @@ trait OrderMethods extends js.Object {
            *
            * @param order Order Model
            */
-  def apply(order: js.Array[java.lang.String | scala.Double | (js.Array[java.lang.String | scala.Double])]): Api = js.native
+  def apply(order: js.Array[(js.Array[java.lang.String | scala.Double]) | scala.Double | java.lang.String]): Api = js.native
   def apply(order: js.Array[java.lang.String | scala.Double], args: js.Any*): Api = js.native
   /**
            * Get the fixed ordering that is applied to the table. If there is more than one table in the API's context,

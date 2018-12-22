@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CrashReporter extends EventEmitter {
-  // Docs: http://electron.atom.io/docs/api/crash-reporter
+  // Docs: http://electronjs.org/docs/api/crash-reporter
   /**
        * Set an extra parameter to be sent with the crash report. The values specified
        * here will be sent in addition to any values set via the extra option when start

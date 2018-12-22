@@ -223,7 +223,7 @@ object DateTime extends js.Object {
     second: js.UndefOr[scala.Double],
     millisecond: js.UndefOr[scala.Double],
     zone: js.UndefOr[
-      scala.Null | js.UndefOr[scala.Nothing] | timezonecompleteLib.distLibTimezoneMod.TimeZone
+      scala.Null | timezonecompleteLib.distLibTimezoneMod.TimeZone | js.UndefOr[scala.Nothing]
     ],
     allowPre1970: js.UndefOr[scala.Boolean]
   ): scala.Boolean = js.native

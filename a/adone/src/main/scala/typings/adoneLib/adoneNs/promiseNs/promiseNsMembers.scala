@@ -282,7 +282,7 @@ object promiseNsMembers extends js.Object {
     options: adoneLib.adoneNs.promiseNs.INs.PromisifyOptions
   ): js.Function1[/* a */ T, js.Promise[R]] = js.native
   def props[T](obj: adoneLib.adoneNs.promiseNs.INs.ResolvableProps[T]): js.Promise[T] = js.native
-  def retry[T](fn: js.Function1[/* info */ adoneLib.Anon_Current, js.Thenable[T] | T]): js.Promise[T] = js.native
+  def retry[T](fn: js.Function1[/* info */ adoneLib.Anon_Current, T | js.Thenable[T]]): js.Promise[T] = js.native
   def retry[T](
     fn: js.Function1[/* info */ adoneLib.Anon_Current, js.Thenable[T] | T],
     options: adoneLib.adoneNs.promiseNs.INs.RetryOptions

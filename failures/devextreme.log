@@ -2,15 +2,15 @@
 [debug] PhaseRunner.scala:81 Success [id => devextreme, phase => typescript] 
 [debug] PhaseRunner.scala:81 Success [id => devextreme, phase => typescript] 
 [debug] PhaseRunner.scala:81 Success [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:153 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/events.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, events))) [id => devextreme, phase => typescript] 
-[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, events)) [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:153 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/localization.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, localization))) [id => devextreme, phase => typescript] 
-[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, localization)) [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:153 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/utils.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, utils))) [id => devextreme, phase => typescript] 
-[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, utils)) [id => devextreme, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:153 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/bundles/dx.all.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, bundles, dx.all))) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:158 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/bundles/dx.all.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, bundles, dx.all))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, bundles, dx.all)) [id => devextreme, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(devextreme) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:158 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/events.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, events))) [id => devextreme, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, events)) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:158 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/localization.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, localization))) [id => devextreme, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, localization)) [id => devextreme, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:158 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/utils.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, utils))) [id => devextreme, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, utils)) [id => devextreme, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:196 Processing TsIdentLibrarySimple(devextreme) [id => devextreme, phase => typescript] 
 [warn ] ResolveTypeQueries.scala:98 Couldn't resolve TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(devextreme), TsIdentModule(None,List(devextreme, bundles, dx.all)), TsIdentNamespace(default), TsIdentNamespace(events), TsIdentSimple(on)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(on) / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:98 Couldn't resolve TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(devextreme), TsIdentModule(None,List(devextreme, bundles, dx.all)), TsIdentNamespace(default), TsIdentNamespace(events), TsIdentSimple(one)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(one) / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:98 Couldn't resolve TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(devextreme), TsIdentModule(None,List(devextreme, bundles, dx.all)), TsIdentNamespace(default), TsIdentNamespace(events), TsIdentSimple(off)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(off) / TsTypeQuery())] 
@@ -414,7 +414,7 @@
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_CustomSave) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(GridBaseOptions) / TsMemberProperty(stateStoring) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_ModelData) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(GridBaseOptions) / TsMemberFunction(onRowUpdated) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_ModelEventElementHandled) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(GridBaseOptions) / TsMemberFunction(onKeyDown) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_IndicatorSrc) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(GridBaseOptions) / TsMemberProperty(loadPanel) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Shading) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(GridBaseOptions) / TsMemberProperty(loadPanel) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_CancelModelDataElement) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(GridBaseOptions) / TsMemberFunction(onRowInserting) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_CancelModelElement) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(GridBaseOptions) / TsMemberFunction(onRowUpdating) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_FilterEnabledHint) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(GridBaseOptions) / TsMemberProperty(filterPanel) / TsTypeObject() / TsMemberProperty(texts) / TsTypeObject())] 
@@ -502,10 +502,13 @@
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_ModelAppointmentData) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberFunction(onAppointmentUpdated) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_CancelModelEvent) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberProperty(onAppointmentDblClick) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_CancelCellElement) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberProperty(onCellClick) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_IsCompact) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberProperty(appointmentCollectorTemplate) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_ModelEventAppointmentData) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberProperty(onAppointmentContextMenu) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_ModelAppointmentDataTargetedAppointmentData) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberFunction(onAppointmentRendered) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_IsCompact) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberProperty(views) / TsTypeRef() / TsTypeUnion() / TsTypeObject() / TsMemberProperty(appointmentCollectorTemplate) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_DataCellTemplate) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberProperty(views) / TsTypeRef() / TsTypeUnion() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_UseColorAsDefault) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberProperty(resources) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_StartDate) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberFunction(customizeDateNavigatorText) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_AllowResizing) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberProperty(editing) / TsTypeUnion() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_CancelModelEvent) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberProperty(onAppointmentClick) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_ModelAppointmentData) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxSchedulerOptions) / TsMemberFunction(onAppointmentAdded) / TsFunSig() / TsFunParam() / TsTypeObject())] 
@@ -516,7 +519,6 @@
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_StartsWithIsNotBlank) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxFilterBuilderOptions) / TsMemberProperty(filterOperationDescriptions) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_ComponentRow) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxDataGridEditing) / TsMemberProperty(allowDeleting) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_ComponentRow) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxDataGridEditing) / TsMemberProperty(allowUpdating) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_ComponentRow) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxDataGridEditing) / TsMemberProperty(allowAdding) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_OriginalRoute) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxMapOptions) / TsMemberFunction(onRouteAdded) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_LocationModel) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxMapOptions) / TsMemberProperty(onClick) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Locations) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxMapOptions) / TsMemberProperty(routes) / TsTypeRef() / TsTypeObject())] 
@@ -540,7 +542,7 @@
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_CollapseAll) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPivotGridOptions) / TsMemberProperty(texts) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Mode) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPivotGridOptions) / TsMemberProperty(scrolling) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_CellElementArea) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPivotGridOptions) / TsMemberFunction(onCellPrepared) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_IndicatorSrcEnabled) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPivotGridOptions) / TsMemberProperty(loadPanel) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_IndicatorSrc) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPivotGridOptions) / TsMemberProperty(loadPanel) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_CancelCellElementArea) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPivotGridOptions) / TsMemberFunction(onCellClick) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_FormatCancelModelDataFileName) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPivotGridOptions) / TsMemberFunction(onFileSaving) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_ProxyUrl) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxPivotGridOptions) / TsMemberProperty(export) / TsTypeObject())] 
@@ -644,7 +646,7 @@
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_GroupIntervalTarget) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(GridBaseColumn) / TsMemberFunction(customizeText) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_LocationLeft) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxFormSimpleItem) / TsMemberProperty(label) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_DataFieldComponentEditorType) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(ui) / TsDeclInterface(dxFormSimpleItem) / TsMemberProperty(template) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[error] PhaseRes.scala:75 Caught exception: Could not derive unique name [id => devextreme, phase => typescript] java.lang.RuntimeException: Could not derive unique name
+[error] PhaseRes.scala:76 Caught exception: Could not derive unique name [id => devextreme, phase => typescript] java.lang.RuntimeException: Could not derive unique name
 	at scala.sys.package$.error(package.scala:30)
 	at com.olvind.tso.ts.DeriveNonConflictingName$.$anonfun$apply$1(DeriveNonConflictingName.scala:55)
 	at scala.Option.getOrElse(Option.scala:138)
@@ -749,23 +751,23 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:329)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsParsedFile(TreeTransformationScopedChanges.scala:3)
 	at com.olvind.tso.ts.transforms.ExtractInterfaces$.apply(ExtractInterfaces.scala:38)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$42(Phase1ReadTypescript.scala:188)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$44(Phase1ReadTypescript.scala:192)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$40(Phase1ReadTypescript.scala:193)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$42(Phase1ReadTypescript.scala:197)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
 	at scala.collection.immutable.List.foldLeft(List.scala:89)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$26(Phase1ReadTypescript.scala:192)
-	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:15)
-	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:13)
-	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:29)
-	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:145)
-	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:15)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$24(Phase1ReadTypescript.scala:197)
+	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
+	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
+	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)
+	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:148)
+	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:17)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$6(PhaseRunner.scala:75)
-	at com.olvind.tso.phases.PhaseRes$.attempt(PhaseRes.scala:70)
+	at com.olvind.tso.phases.PhaseRes$.attempt(PhaseRes.scala:71)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:75)
-	at com.olvind.tso.phases.PhaseRes.flatMap(PhaseRes.scala:22)
-	at com.olvind.tso.phases.PhaseRes.flatMap$(PhaseRes.scala:20)
-	at com.olvind.tso.phases.PhaseRes$Ok.flatMap(PhaseRes.scala:29)
+	at com.olvind.tso.phases.PhaseRes.flatMap(PhaseRes.scala:23)
+	at com.olvind.tso.phases.PhaseRes.flatMap$(PhaseRes.scala:21)
+	at com.olvind.tso.phases.PhaseRes$Ok.flatMap(PhaseRes.scala:30)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:75)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:46)
 	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
@@ -794,7 +796,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:46)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:29)
-	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:186)
+	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:188)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:116)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:113)
 	at scala.collection.parallel.immutable.ParVector$ParVectorIterator.map2combiner(ParVector.scala:66)
@@ -806,6 +808,21 @@
 	at scala.collection.parallel.Task.tryLeaf$(Tasks.scala:50)
 	at scala.collection.parallel.ParIterableLike$Map.tryLeaf(ParIterableLike.scala:1053)
 	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal(Tasks.scala:170)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal$(Tasks.scala:157)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.internal(Tasks.scala:440)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute(Tasks.scala:150)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute$(Tasks.scala:149)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.compute(Tasks.scala:440)
+	at java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool.helpStealer(ForkJoinPool.java:1958)
+	at java.util.concurrent.ForkJoinPool.awaitJoin(ForkJoinPool.java:2047)
+	at java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:390)
+	at java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)
+	at scala.collection.parallel.ForkJoinTasks$WrappedTask.sync(Tasks.scala:379)
+	at scala.collection.parallel.ForkJoinTasks$WrappedTask.sync$(Tasks.scala:379)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.sync(Tasks.scala:440)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal(Tasks.scala:174)
 	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal$(Tasks.scala:157)
 	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.internal(Tasks.scala:440)
 	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute(Tasks.scala:150)

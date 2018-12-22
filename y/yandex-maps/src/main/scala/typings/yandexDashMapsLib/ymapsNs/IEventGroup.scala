@@ -20,17 +20,17 @@ trait IEventGroup extends js.Object {
     priority: scala.Double
   ): this.type = js.native
   def add(
-    types: js.Array[java.lang.String | js.Array[java.lang.String]],
-    callback: js.Function1[/* event */ js.Object | IEvent, scala.Unit]
+    types: js.Array[js.Array[java.lang.String] | java.lang.String],
+    callback: js.Function1[IEvent | js.Object, scala.Unit]
   ): this.type = js.native
   def add(
-    types: js.Array[java.lang.String | js.Array[java.lang.String]],
-    callback: js.Function1[/* event */ js.Object | IEvent, scala.Unit],
+    types: js.Array[js.Array[java.lang.String] | java.lang.String],
+    callback: js.Function1[IEvent | js.Object, scala.Unit],
     context: js.Object
   ): this.type = js.native
   def add(
-    types: js.Array[java.lang.String | js.Array[java.lang.String]],
-    callback: js.Function1[/* event */ js.Object | IEvent, scala.Unit],
+    types: js.Array[js.Array[java.lang.String] | java.lang.String],
+    callback: js.Function1[IEvent | js.Object, scala.Unit],
     context: js.Object,
     priority: scala.Double
   ): this.type = js.native
@@ -47,17 +47,17 @@ trait IEventGroup extends js.Object {
     priority: scala.Double
   ): this.type = js.native
   def remove(
-    types: js.Array[java.lang.String | js.Array[java.lang.String]],
-    callback: js.Function1[/* event */ js.Object | IEvent, scala.Unit]
+    types: js.Array[js.Array[java.lang.String] | java.lang.String],
+    callback: js.Function1[IEvent | js.Object, scala.Unit]
   ): this.type = js.native
   def remove(
-    types: js.Array[java.lang.String | js.Array[java.lang.String]],
-    callback: js.Function1[/* event */ js.Object | IEvent, scala.Unit],
+    types: js.Array[js.Array[java.lang.String] | java.lang.String],
+    callback: js.Function1[IEvent | js.Object, scala.Unit],
     context: js.Object
   ): this.type = js.native
   def remove(
-    types: js.Array[java.lang.String | js.Array[java.lang.String]],
-    callback: js.Function1[/* event */ js.Object | IEvent, scala.Unit],
+    types: js.Array[js.Array[java.lang.String] | java.lang.String],
+    callback: js.Function1[IEvent | js.Object, scala.Unit],
     context: js.Object,
     priority: scala.Double
   ): this.type = js.native

@@ -55,7 +55,7 @@ trait IAlertProps
        */
   var onCancel: js.UndefOr[
     js.Function1[
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement]], 
+      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -67,7 +67,7 @@ trait IAlertProps
   var onClose: js.UndefOr[
     js.Function2[
       /* confirmed */ scala.Boolean, 
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement]], 
+      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -78,7 +78,7 @@ trait IAlertProps
        */
   var onConfirm: js.UndefOr[
     js.Function1[
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement]], 
+      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined

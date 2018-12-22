@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("redis-mock", JSImport.Namespace)
 @js.native
 object redisDashMockModMembers extends js.Object {
-  val Multi: redisLib.Anon_Multi = js.native
-  val RedisClient: redisLib.Anon_Options = js.native
+  val Multi: org.scalablytyped.runtime.Instantiable0[redisLib.redisMod.Multi] = js.native
+  val RedisClient: org.scalablytyped.runtime.Instantiable1[/* options */ redisLib.redisMod.ClientOpts, redisLib.redisMod.RedisClient] = js.native
   var debug_mode: scala.Boolean = js.native
   def createClient(): redisLib.redisMod.RedisClient = js.native
   def createClient(options: redisLib.redisMod.ClientOpts): redisLib.redisMod.RedisClient = js.native

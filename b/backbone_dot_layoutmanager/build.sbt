@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "backbone_dot_layoutmanager"
-version := "0.9.5-dt-20181120Z-f3658c"
+version := "0.9.5-dt-20181116Z-43bdd2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20181206Z-21fb72",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181214Z-7b71e9",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-e65330",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
-  "org.scalablytyped" %%% "underscore" % "1.8-dt-20180910Z-1e442c")
+  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20181124Z-40535c",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-f533e1",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3a6abd",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
+  "org.scalablytyped" %%% "underscore" % "1.8-dt-20180808Z-09fcd3")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

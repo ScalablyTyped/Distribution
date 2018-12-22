@@ -78,7 +78,7 @@ class Tray protected () extends EventEmitter {
   def getBounds(): Rectangle = js.native
   def getIgnoreDoubleClickEvents(): scala.Boolean = js.native
   def isDestroyed(): scala.Boolean = js.native
-  // Docs: http://electron.atom.io/docs/api/tray
+  // Docs: http://electronjs.org/docs/api/tray
   /**
        * Emitted when the tray balloon is clicked.
        */

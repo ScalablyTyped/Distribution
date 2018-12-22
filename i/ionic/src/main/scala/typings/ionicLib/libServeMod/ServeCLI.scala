@@ -41,9 +41,21 @@ abstract class ServeCLI[T /* <: ServeCLIOptions */] protected ()
   /* protected */ def createLoggerStream(): nodeLib.NodeJSNs.WritableStream = js.native
   /* protected */ def createStreamFilter(filter: js.Function1[/* line */ java.lang.String, scala.Boolean]): nodeLib.streamMod.Transform = js.native
   @JSName("emit")
+  def emit_compile(event: ionicLib.ionicLibStrings.compile, chunks: scala.Double): scala.Boolean = js.native
+  @JSName("emit")
   def emit_ready(event: ionicLib.ionicLibStrings.ready): scala.Boolean = js.native
   @JSName("on")
+  def on_compile(
+    event: ionicLib.ionicLibStrings.compile,
+    handler: js.Function1[/* chunks */ scala.Double, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
   def on_ready(event: ionicLib.ionicLibStrings.ready, handler: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("once")
+  def once_compile(
+    event: ionicLib.ionicLibStrings.compile,
+    handler: js.Function1[/* chunks */ scala.Double, scala.Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_ready(event: ionicLib.ionicLibStrings.ready, handler: js.Function0[scala.Unit]): this.type = js.native
   /* protected */ def promptToInstall(): js.Promise[scala.Boolean] = js.native

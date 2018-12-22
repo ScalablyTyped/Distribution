@@ -18,7 +18,17 @@ trait SocketCluster
   val EVENT_WORKER_CLUSTER_START: socketclusterLib.socketclusterLibStrings.workerClusterStart = js.native
   val EVENT_WORKER_EXIT: socketclusterLib.socketclusterLibStrings.workerExit = js.native
   val EVENT_WORKER_START: socketclusterLib.socketclusterLibStrings.workerStart = js.native
-  var options: socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions = js.native
+  var options: js.Any = js.native
+  def colorText(message: java.lang.String): java.lang.String = js.native
+  def colorText(message: java.lang.String, color: scala.Double): java.lang.String = js.native
+  def colorText(message: java.lang.String, color: socketclusterLib.ColorCodes): java.lang.String = js.native
+  def destroy(): scala.Unit = js.native
+  def destroy(callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def killBrokers(): scala.Unit = js.native
+  def killWorkers(): scala.Unit = js.native
+  def killWorkers(options: KillWorkersOptions): scala.Unit = js.native
+  def log(message: java.lang.String): scala.Unit = js.native
+  def log(message: java.lang.String, time: scala.Double): scala.Unit = js.native
   @JSName("on")
   def on_brokerExit(
     event: socketclusterLib.socketclusterLibStrings.brokerExit,
@@ -75,5 +85,23 @@ trait SocketCluster
     event: socketclusterLib.socketclusterLibStrings.workerStart,
     listener: js.Function1[/* workerInfo */ WorkerStartInfo, scala.Unit]
   ): this.type = js.native
+  def run(): scala.Unit = js.native
+  def sendToBroker(brokerId: scala.Double, data: js.Any): scala.Unit = js.native
+  def sendToBroker(
+    brokerId: scala.Double,
+    data: js.Any,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* responseData */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
+  def sendToWorker(workerId: scala.Double, data: js.Any): scala.Unit = js.native
+  def sendToWorker(
+    workerId: scala.Double,
+    data: js.Any,
+    callback: js.Function3[
+      /* err */ nodeLib.Error, 
+      /* responseData */ js.Any, 
+      /* workerId */ scala.Double, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
 }
 

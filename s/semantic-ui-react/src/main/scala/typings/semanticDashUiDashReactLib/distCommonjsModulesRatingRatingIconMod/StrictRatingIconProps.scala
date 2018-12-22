@@ -23,7 +23,7 @@ trait StrictRatingIconProps extends js.Object {
      */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ RatingIconProps, 
       scala.Unit
     ]
@@ -36,7 +36,7 @@ trait StrictRatingIconProps extends js.Object {
      */
   var onKeyUp: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ RatingIconProps, 
       scala.Unit
     ]
@@ -49,7 +49,7 @@ trait StrictRatingIconProps extends js.Object {
      */
   var onMouseEnter: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ RatingIconProps, 
       scala.Unit
     ]

@@ -43,6 +43,6 @@ class Listener () extends js.Object {
   def stop_listening(): scala.Unit = js.native
   def unregister_combo(combo: java.lang.String): scala.Unit = js.native
   def unregister_combo(combo: Combo): scala.Unit = js.native
-  def unregister_many(combos: js.Array[java.lang.String | Combo]): scala.Unit = js.native
+  def unregister_many(combos: js.Array[Combo | java.lang.String]): scala.Unit = js.native
 }
 

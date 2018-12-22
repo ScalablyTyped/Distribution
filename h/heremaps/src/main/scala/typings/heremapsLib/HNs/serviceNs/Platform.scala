@@ -42,7 +42,7 @@ class Platform protected () extends js.Object {
     opt_lang: js.UndefOr[java.lang.String],
     opt_secondaryLang: js.UndefOr[java.lang.String],
     opt_style: js.UndefOr[java.lang.String],
-    opt_pois: js.UndefOr[java.lang.String | scala.Boolean]
+    opt_pois: js.UndefOr[scala.Boolean | java.lang.String]
   ): DefaultLayers = js.native
   /**
                * This method returns the currently used base URL.

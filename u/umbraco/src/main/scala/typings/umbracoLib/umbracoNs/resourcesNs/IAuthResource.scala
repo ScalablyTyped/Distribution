@@ -36,7 +36,7 @@ trait IAuthResource extends js.Object {
            * @returns {Promise} resourcePromise object
            *
            */
-  def getCurrentUser(): js.Any
+  def getCurrentUser(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.authResource#getRemainingTimeoutSeconds
@@ -55,7 +55,7 @@ trait IAuthResource extends js.Object {
            * @returns {Promise} resourcePromise object
            *
            */
-  def getRemainingTimeoutSeconds(): js.Any
+  def getRemainingTimeoutSeconds(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.authResource#isAuthenticated
@@ -74,7 +74,7 @@ trait IAuthResource extends js.Object {
            * @returns {Promise} resourcePromise object
            *
            */
-  def isAuthenticated(): js.Any
+  def isAuthenticated(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.authResource#performLogin
@@ -95,7 +95,7 @@ trait IAuthResource extends js.Object {
            * @returns {Promise} resourcePromise object
            *
            */
-  def performLogin(username: java.lang.String, password: java.lang.String): js.Any
+  def performLogin(username: java.lang.String, password: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.authResource#performLogout
@@ -114,6 +114,6 @@ trait IAuthResource extends js.Object {
            * @returns {Promise} resourcePromise object
            *
            */
-  def performLogout(): js.Any
+  def performLogout(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 

@@ -83,7 +83,7 @@ class Graphics () extends Container {
   def containsPoint(point: Point): scala.Boolean = js.native
   def drawCircle(x: scala.Double, y: scala.Double, radius: scala.Double): Graphics = js.native
   def drawEllipse(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): Graphics = js.native
-  def drawPolygon(path: js.Array[Point | scala.Double]): Graphics = js.native
+  def drawPolygon(path: js.Array[scala.Double | Point]): Graphics = js.native
   def drawPolygon(path: Polygon): Graphics = js.native
   def drawRect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): Graphics = js.native
   def drawRoundedRect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double, radius: scala.Double): Graphics = js.native

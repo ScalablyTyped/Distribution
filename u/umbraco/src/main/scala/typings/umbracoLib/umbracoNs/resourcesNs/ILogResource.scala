@@ -34,7 +34,7 @@ trait ILogResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the log.
            *
            */
-  def getEntityLog(id: scala.Double): js.Any
+  def getEntityLog(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.logResource#getLog
@@ -56,7 +56,7 @@ trait ILogResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the log.
            *
            */
-  def getLog(`type`: LogType, since: stdLib.Date): js.Any
+  def getLog(`type`: LogType, since: stdLib.Date): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.logResource#getUserLog
@@ -78,6 +78,6 @@ trait ILogResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the log.
            *
            */
-  def getUserLog(`type`: LogType, since: stdLib.Date): js.Any
+  def getUserLog(`type`: LogType, since: stdLib.Date): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 

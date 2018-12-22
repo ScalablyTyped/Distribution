@@ -11,10 +11,10 @@ object operatorScanMod extends js.Object {
   def scan[T](
     `this`: rxjsLib.rxjsMod.Observable[T],
     accumulator: js.Function3[
-      (/* acc */ T) | (/* acc */ js.Array[T]), 
+      (/* acc */ js.Array[T]) | (/* acc */ T), 
       /* value */ T, 
       /* index */ scala.Double, 
-      T | js.Array[T]
+      js.Array[T] | T
     ]
   ): rxjsLib.rxjsMod.Observable[T] = js.native
   def scan[T](

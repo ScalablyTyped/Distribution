@@ -22,7 +22,7 @@ class JWT protected ()
        * @param key_id the ID of the key
        */
   def this(options: JWTOptions) = this()
-  def this(email: js.UndefOr[java.lang.String], keyFile: js.UndefOr[java.lang.String], key: js.UndefOr[java.lang.String], scopes: js.UndefOr[java.lang.String | js.Array[java.lang.String]], subject: js.UndefOr[java.lang.String], keyId: js.UndefOr[java.lang.String]) = this()
+  def this(email: js.UndefOr[java.lang.String], keyFile: js.UndefOr[java.lang.String], key: js.UndefOr[java.lang.String], scopes: js.UndefOr[js.Array[java.lang.String] | java.lang.String], subject: js.UndefOr[java.lang.String], keyId: js.UndefOr[java.lang.String]) = this()
   var access: js.UndefOr[js.Any] = js.native
   var additionalClaims: js.UndefOr[js.Object] = js.native
   var authorizeAsync: js.Any = js.native

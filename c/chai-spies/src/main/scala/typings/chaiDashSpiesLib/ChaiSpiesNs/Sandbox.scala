@@ -17,7 +17,7 @@ trait Sandbox extends js.Object {
          * @param {function} fn replacement function
          * @returns function to actually call
          */
-  def on(`object`: js.Object, methodNames: java.lang.String): js.Any = js.native
+  def on(`object`: chaiLib.Object, methodNames: java.lang.String): js.Any = js.native
   /**
          * #### chai.spy.on (function)
          *
@@ -29,7 +29,7 @@ trait Sandbox extends js.Object {
          * @returns function to actually call
          */
   def on(
-    `object`: js.Object,
+    `object`: chaiLib.Object,
     methodNames: java.lang.String,
     fn: js.Function1[/* parameters */ js.Array[_] | js.Any, _]
   ): js.Any = js.native
@@ -43,7 +43,7 @@ trait Sandbox extends js.Object {
          * @param {function} fn replacement function
          * @returns function to actually call
          */
-  def on(`object`: js.Object, methodNames: js.Array[java.lang.String]): js.Any = js.native
+  def on(`object`: chaiLib.Object, methodNames: js.Array[java.lang.String]): js.Any = js.native
   /**
          * #### chai.spy.on (function)
          *
@@ -55,7 +55,7 @@ trait Sandbox extends js.Object {
          * @returns function to actually call
          */
   def on(
-    `object`: js.Object,
+    `object`: chaiLib.Object,
     methodNames: js.Array[java.lang.String],
     fn: js.Function1[/* parameters */ js.Array[_] | js.Any, _]
   ): js.Any = js.native
@@ -82,7 +82,7 @@ trait Sandbox extends js.Object {
          * @param {String|String[]} [methods] name or names
          * @return {Sandbox} Sandbox instance
          */
-  def restore(`object`: js.Object): scala.Unit = js.native
+  def restore(`object`: chaiLib.Object): scala.Unit = js.native
   /**
          * #### chai.spy.restore (function)
          *
@@ -94,7 +94,7 @@ trait Sandbox extends js.Object {
          * @param {String|String[]} [methods] name or names
          * @return {Sandbox} Sandbox instance
          */
-  def restore(`object`: js.Object, methodNames: java.lang.String): scala.Unit = js.native
+  def restore(`object`: chaiLib.Object, methodNames: java.lang.String): scala.Unit = js.native
   /**
          * #### chai.spy.restore (function)
          *
@@ -106,6 +106,6 @@ trait Sandbox extends js.Object {
          * @param {String|String[]} [methods] name or names
          * @return {Sandbox} Sandbox instance
          */
-  def restore(`object`: js.Object, methodNames: js.Array[java.lang.String]): scala.Unit = js.native
+  def restore(`object`: chaiLib.Object, methodNames: js.Array[java.lang.String]): scala.Unit = js.native
 }
 

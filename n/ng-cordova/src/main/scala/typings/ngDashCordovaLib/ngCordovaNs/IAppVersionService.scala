@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IAppVersionService extends js.Object {
-  def getVersionCode(): js.Any
-  def getVersionNumber(): js.Any
+  def getVersionCode(): angularLib.angularMod.angularNs.IPromise[java.lang.String]
+  def getVersionNumber(): angularLib.angularMod.angularNs.IPromise[java.lang.String]
 }
 

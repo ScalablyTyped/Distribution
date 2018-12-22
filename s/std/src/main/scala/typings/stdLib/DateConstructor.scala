@@ -45,7 +45,7 @@ trait DateConstructor
       Date
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* vd */ VarDate) | (/* value */ scala.Double) | (/* value */ java.lang.String) | (/* value */ Date), 
+      (/* value */ Date) | (/* value */ scala.Double) | (/* value */ java.lang.String) | (/* vd */ VarDate), 
       Date
     ] {
   def apply(): java.lang.String = js.native

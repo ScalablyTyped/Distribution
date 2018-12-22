@@ -10,7 +10,7 @@ trait Anon_Delay extends js.Object {
   var delay: scala.Double = js.native
   var requests: moxiosLib.moxiosMod.Tracker = js.native
   var stubs: moxiosLib.moxiosMod.Tracker = js.native
-  var timeoutException: stdLib.Error = js.native
+  var timeoutException: nodeLib.Error = js.native
   /**
        * Install the mock adapter for axios
        */

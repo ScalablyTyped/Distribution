@@ -10,8 +10,6 @@ trait Spin
   extends reactLib.reactMod.Component[SpinProps, SpinState, js.Any] {
   var debounceTimeout: scala.Double = js.native
   var delayTimeout: scala.Double = js.native
-  @JSName("componentDidMount")
-  def componentDidMount_MSpin(): scala.Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MSpin(): scala.Unit = js.native
   @JSName("componentWillUnmount")

@@ -1111,7 +1111,7 @@ object fsNs extends js.Object {
     options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* folder */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1126,7 +1126,7 @@ object fsNs extends js.Object {
     options: java.lang.String,
     callback: js.Function2[
       (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* folder */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1184,7 +1184,7 @@ object fsNs extends js.Object {
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* folder */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1626,7 +1626,7 @@ object fsNs extends js.Object {
     options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* data */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1650,7 +1650,7 @@ object fsNs extends js.Object {
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1716,7 +1716,7 @@ object fsNs extends js.Object {
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1749,7 +1749,7 @@ object fsNs extends js.Object {
     options: mzLib.Anon_EncodingFlag | nodeLib.Anon_EncodingFlag | js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1766,7 +1766,7 @@ object fsNs extends js.Object {
     options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* data */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1820,7 +1820,7 @@ object fsNs extends js.Object {
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2038,7 +2038,7 @@ object fsNs extends js.Object {
     options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
+      (/* files */ js.Array[java.lang.String]) | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2122,7 +2122,7 @@ object fsNs extends js.Object {
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
+      (/* files */ js.Array[java.lang.String]) | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2229,7 +2229,7 @@ object fsNs extends js.Object {
     options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* linkString */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2299,7 +2299,7 @@ object fsNs extends js.Object {
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* linkString */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2400,7 +2400,7 @@ object fsNs extends js.Object {
     options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2470,7 +2470,7 @@ object fsNs extends js.Object {
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3216,7 +3216,11 @@ object fsNs extends js.Object {
   def watch(
     filename: nodeLib.fsMod.PathLike,
     options: scala.Null,
-    listener: js.Function2[/* event */ java.lang.String, java.lang.String | nodeLib.Buffer, scala.Unit]
+    listener: js.Function2[
+      /* event */ java.lang.String, 
+      nodeLib.Buffer | (/* filename */ java.lang.String), 
+      scala.Unit
+    ]
   ): nodeLib.fsMod.FSWatcher = js.native
   /**
        * Watch for changes on `filename`. The callback `listener` will be called each time the file is accessed.
@@ -6061,7 +6065,7 @@ object fsNs extends js.Object {
       options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
       callback: js.Function2[
           /* err */ nodeLib.NodeJSNs.ErrnoException, 
-          java.lang.String | nodeLib.Buffer, 
+          nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
           scala.Unit
         ]
     ): scala.Unit = js.native
@@ -6106,7 +6110,7 @@ object fsNs extends js.Object {
       options: scala.Null,
       callback: js.Function2[
           /* err */ nodeLib.NodeJSNs.ErrnoException, 
-          java.lang.String | nodeLib.Buffer, 
+          nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
           scala.Unit
         ]
     ): scala.Unit = js.native

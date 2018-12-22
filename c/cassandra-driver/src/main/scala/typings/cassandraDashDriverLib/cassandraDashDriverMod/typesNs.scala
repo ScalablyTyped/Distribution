@@ -235,14 +235,14 @@ object typesNs extends js.Object {
        with org.scalablytyped.runtime.Instantiable4[
           /* value */ stdLib.Date, 
           /* ticks */ scala.Double, 
-          (/* nodeId */ java.lang.String) | (/* nodeId */ nodeLib.Buffer), 
-          (/* clockId */ java.lang.String) | (/* clockId */ nodeLib.Buffer), 
+          (/* nodeId */ nodeLib.Buffer) | (/* nodeId */ java.lang.String), 
+          (/* clockId */ nodeLib.Buffer) | (/* clockId */ java.lang.String), 
           TimeUuid
         ]
        with org.scalablytyped.runtime.Instantiable3[
           /* value */ stdLib.Date, 
           /* ticks */ scala.Double, 
-          (/* nodeId */ java.lang.String) | (/* nodeId */ nodeLib.Buffer), 
+          (/* nodeId */ nodeLib.Buffer) | (/* nodeId */ java.lang.String), 
           TimeUuid
         ]
        with org.scalablytyped.runtime.Instantiable2[/* value */ stdLib.Date, /* ticks */ scala.Double, TimeUuid]

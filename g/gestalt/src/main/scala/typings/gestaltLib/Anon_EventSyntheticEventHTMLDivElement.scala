@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_EventSyntheticEventHTMLDivElement extends js.Object {
-  var event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement]
+  var event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event]
 }
 

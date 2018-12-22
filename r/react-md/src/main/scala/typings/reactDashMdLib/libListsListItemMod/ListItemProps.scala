@@ -13,7 +13,10 @@ trait ListItemProps
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var actionButtonIcon: js.UndefOr[java.lang.String] = js.undefined
   var actionButtonOnClick: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]
+    js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   var actionButtonPrimary: js.UndefOr[scala.Boolean] = js.undefined
   var active: js.UndefOr[scala.Boolean] = js.undefined

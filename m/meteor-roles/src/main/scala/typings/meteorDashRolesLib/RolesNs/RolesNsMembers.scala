@@ -201,7 +201,7 @@ object RolesNsMembers extends js.Object {
        *                         Roles.GLOBAL_GROUP group will be automatically
        *                         included in checks for any group.
        */
-  def addUsersToRoles(user: js.Array[java.lang.String | js.Object], roles: java.lang.String): scala.Unit = js.native
+  def addUsersToRoles(user: js.Array[js.Object | java.lang.String], roles: java.lang.String): scala.Unit = js.native
   /**
        * Add users to roles. Will create roles as needed.
        *
@@ -233,7 +233,7 @@ object RolesNsMembers extends js.Object {
        *                         Roles.GLOBAL_GROUP group will be automatically
        *                         included in checks for any group.
        */
-  def addUsersToRoles(user: js.Array[java.lang.String | js.Object], roles: java.lang.String, group: java.lang.String): scala.Unit = js.native
+  def addUsersToRoles(user: js.Array[js.Object | java.lang.String], roles: java.lang.String, group: java.lang.String): scala.Unit = js.native
   /**
        * Add users to roles. Will create roles as needed.
        *
@@ -265,7 +265,7 @@ object RolesNsMembers extends js.Object {
        *                         Roles.GLOBAL_GROUP group will be automatically
        *                         included in checks for any group.
        */
-  def addUsersToRoles(user: js.Array[java.lang.String | js.Object], roles: js.Array[java.lang.String]): scala.Unit = js.native
+  def addUsersToRoles(user: js.Array[js.Object | java.lang.String], roles: js.Array[java.lang.String]): scala.Unit = js.native
   /**
        * Add users to roles. Will create roles as needed.
        *
@@ -298,7 +298,7 @@ object RolesNsMembers extends js.Object {
        *                         included in checks for any group.
        */
   def addUsersToRoles(
-    user: js.Array[java.lang.String | js.Object],
+    user: js.Array[js.Object | java.lang.String],
     roles: js.Array[java.lang.String],
     group: java.lang.String
   ): scala.Unit = js.native
@@ -714,7 +714,7 @@ object RolesNsMembers extends js.Object {
        * @param {String} [group] Optional. Group name. If supplied, only that
        *                         group will have roles removed.
        */
-  def removeUsersFromRoles(user: js.Array[java.lang.String | js.Object]): scala.Unit = js.native
+  def removeUsersFromRoles(user: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
   /**
        * Remove users from roles
        *
@@ -730,7 +730,7 @@ object RolesNsMembers extends js.Object {
        * @param {String} [group] Optional. Group name. If supplied, only that
        *                         group will have roles removed.
        */
-  def removeUsersFromRoles(user: js.Array[java.lang.String | js.Object], roles: js.Array[java.lang.String]): scala.Unit = js.native
+  def removeUsersFromRoles(user: js.Array[js.Object | java.lang.String], roles: js.Array[java.lang.String]): scala.Unit = js.native
   /**
        * Remove users from roles
        *
@@ -747,7 +747,7 @@ object RolesNsMembers extends js.Object {
        *                         group will have roles removed.
        */
   def removeUsersFromRoles(
-    user: js.Array[java.lang.String | js.Object],
+    user: js.Array[js.Object | java.lang.String],
     roles: js.Array[java.lang.String],
     group: java.lang.String
   ): scala.Unit = js.native
@@ -923,7 +923,7 @@ object RolesNsMembers extends js.Object {
        *                         Roles.GLOBAL_GROUP group will be automatically
        *                         included in checks for any group.
        */
-  def setUserRoles(user: js.Array[java.lang.String | js.Object], roles: java.lang.String): scala.Unit = js.native
+  def setUserRoles(user: js.Array[js.Object | java.lang.String], roles: java.lang.String): scala.Unit = js.native
   /**
        * Set a users roles/permissions.
        *
@@ -948,7 +948,7 @@ object RolesNsMembers extends js.Object {
        *                         Roles.GLOBAL_GROUP group will be automatically
        *                         included in checks for any group.
        */
-  def setUserRoles(user: js.Array[java.lang.String | js.Object], roles: java.lang.String, group: java.lang.String): scala.Unit = js.native
+  def setUserRoles(user: js.Array[js.Object | java.lang.String], roles: java.lang.String, group: java.lang.String): scala.Unit = js.native
   /**
        * Set a users roles/permissions.
        *
@@ -973,7 +973,7 @@ object RolesNsMembers extends js.Object {
        *                         Roles.GLOBAL_GROUP group will be automatically
        *                         included in checks for any group.
        */
-  def setUserRoles(user: js.Array[java.lang.String | js.Object], roles: js.Array[java.lang.String]): scala.Unit = js.native
+  def setUserRoles(user: js.Array[js.Object | java.lang.String], roles: js.Array[java.lang.String]): scala.Unit = js.native
   /**
        * Set a users roles/permissions.
        *
@@ -999,7 +999,7 @@ object RolesNsMembers extends js.Object {
        *                         included in checks for any group.
        */
   def setUserRoles(
-    user: js.Array[java.lang.String | js.Object],
+    user: js.Array[js.Object | java.lang.String],
     roles: js.Array[java.lang.String],
     group: java.lang.String
   ): scala.Unit = js.native
@@ -1252,7 +1252,7 @@ object RolesNsMembers extends js.Object {
        *                         whether group is specified or not.
        * @return {Boolean} true if user is in _any_ of the target roles
        */
-  def userIsInRole(user: js.Array[java.lang.String | js.Object], roles: java.lang.String): scala.Boolean = js.native
+  def userIsInRole(user: js.Array[js.Object | java.lang.String], roles: java.lang.String): scala.Boolean = js.native
   /**
        * Check if user has specified permissions/roles
        *
@@ -1282,7 +1282,7 @@ object RolesNsMembers extends js.Object {
        *                         whether group is specified or not.
        * @return {Boolean} true if user is in _any_ of the target roles
        */
-  def userIsInRole(user: js.Array[java.lang.String | js.Object], roles: java.lang.String, group: java.lang.String): scala.Boolean = js.native
+  def userIsInRole(user: js.Array[js.Object | java.lang.String], roles: java.lang.String, group: java.lang.String): scala.Boolean = js.native
   /**
        * Check if user has specified permissions/roles
        *
@@ -1312,7 +1312,7 @@ object RolesNsMembers extends js.Object {
        *                         whether group is specified or not.
        * @return {Boolean} true if user is in _any_ of the target roles
        */
-  def userIsInRole(user: js.Array[java.lang.String | js.Object], roles: js.Array[java.lang.String]): scala.Boolean = js.native
+  def userIsInRole(user: js.Array[js.Object | java.lang.String], roles: js.Array[java.lang.String]): scala.Boolean = js.native
   /**
        * Check if user has specified permissions/roles
        *
@@ -1343,7 +1343,7 @@ object RolesNsMembers extends js.Object {
        * @return {Boolean} true if user is in _any_ of the target roles
        */
   def userIsInRole(
-    user: js.Array[java.lang.String | js.Object],
+    user: js.Array[js.Object | java.lang.String],
     roles: js.Array[java.lang.String],
     group: java.lang.String
   ): scala.Boolean = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BrowserWindowProxy () extends EventEmitter {
   var closed: scala.Boolean = js.native
-  // Docs: http://electron.atom.io/docs/api/browser-window-proxy
+  // Docs: http://electronjs.org/docs/api/browser-window-proxy
   /**
        * Removes focus from the child window.
        */

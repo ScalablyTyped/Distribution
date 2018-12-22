@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CrashReport extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/crash-report
+  // Docs: http://electronjs.org/docs/api/structures/crash-report
   var date: stdLib.Date
   var id: java.lang.String
 }

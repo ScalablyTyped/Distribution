@@ -15,7 +15,7 @@ trait ListStreamConstructor
     ]
      with org.scalablytyped.runtime.Instantiable0[ListStream]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* callback */ js.Function2[/* err */ nodeLib.Error, /* data */ js.Array[js.Any], scala.Unit]) | (/* options */ nodeLib.streamMod.internalNs.DuplexOptions), 
+      (/* options */ nodeLib.streamMod.internalNs.DuplexOptions) | (/* callback */ js.Function2[/* err */ nodeLib.Error, /* data */ js.Array[js.Any], scala.Unit]), 
       ListStream
     ] {
   @JSName("obj")

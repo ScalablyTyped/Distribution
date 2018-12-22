@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_EventFullscreen extends js.Object {
-  var event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement]
+  var event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event]
   var fullscreen: scala.Boolean
 }
 

@@ -1,33 +1,33 @@
 organization := "org.scalablytyped"
 name := "koa-logger-winston"
-version := "0.0-dt-20180910Z-3471e1"
+version := "0.0-dt-20180703Z-5d00b0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180910Z-5e1aa3",
-  "org.scalablytyped" %%% "async" % "2.0.1-dt-20181020Z-6ba948",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-addcd5",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-564d85",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180910Z-e4e79e",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20180910Z-50ee2c",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-a97c36",
-  "org.scalablytyped" %%% "http-assert" % "1.3-dt-20181121Z-d4127c",
-  "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180910Z-183e9d",
-  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180910Z-22f4ec",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20181120Z-23d243",
-  "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20180910Z-c1542c",
-  "org.scalablytyped" %%% "logform" % "1.2-dt-20180910Z-756084",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-1d49f8",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181208Z-481dd9",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-eb00ce",
-  "org.scalablytyped" %%% "stack-trace" % "0.0-unknown-dt-20180910Z-51b373",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
-  "org.scalablytyped" %%% "triple-beam" % "1.3-dt-20180910Z-a38732",
-  "org.scalablytyped" %%% "winston" % "3.1.0-a9d3f9",
-  "org.scalablytyped" %%% "winston-transport" % "4.2.0-e5ffa5")
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-208775",
+  "org.scalablytyped" %%% "async" % "2.0.1-dt-20181121Z-7389a9",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e65c03",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-38b4a6",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-a1165f",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-05cc5e",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-776b92",
+  "org.scalablytyped" %%% "http-assert" % "1.3-dt-20181121Z-341460",
+  "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180214Z-2b8873",
+  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-ef7ada",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20181106Z-d33f50",
+  "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20180214Z-2abf67",
+  "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-1dd23a",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-b650df",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-ef877c",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-f8f5d7",
+  "org.scalablytyped" %%% "stack-trace" % "0.0-unknown-dt-20180214Z-0bd5f5",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
+  "org.scalablytyped" %%% "triple-beam" % "1.3-dt-20180828Z-ca97c1",
+  "org.scalablytyped" %%% "winston" % "3.1.0-cbac64",
+  "org.scalablytyped" %%% "winston-transport" % "4.2.0-ca0971")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

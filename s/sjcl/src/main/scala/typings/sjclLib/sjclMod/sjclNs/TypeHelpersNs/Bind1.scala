@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Bind1[T]
-  extends Two[scala.Double | java.lang.String | sjclLib.sjclMod.sjclNs.BigNumber, T]
+  extends Two[sjclLib.sjclMod.sjclNs.BigNumber | scala.Double | java.lang.String, T]
 

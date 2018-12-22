@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object graphqlDashErrorsModMembers extends js.Object {
   def maskErrors(schema: graphqlLib.graphqlMod.GraphQLSchema): scala.Unit = js.native
-  def maskErrors(schema: graphqlLib.graphqlMod.GraphQLSchema, fn: handlerFunction): scala.Unit = js.native
-  def setDefaultHandler(fn: handlerFunction): scala.Unit = js.native
+  def maskErrors(schema: graphqlLib.graphqlMod.GraphQLSchema, fn: HandlerFunction): scala.Unit = js.native
+  def setDefaultHandler(fn: HandlerFunction): scala.Unit = js.native
 }
 

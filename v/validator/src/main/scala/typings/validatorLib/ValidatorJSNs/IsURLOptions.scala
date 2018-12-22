@@ -11,6 +11,7 @@ trait IsURLOptions extends js.Object {
   var allow_protocol_relative_urls: js.UndefOr[scala.Boolean] = js.undefined
   var allow_trailing_dot: js.UndefOr[scala.Boolean] = js.undefined
   var allow_underscores: js.UndefOr[scala.Boolean] = js.undefined
+  var disallow_auth: js.UndefOr[scala.Boolean] = js.undefined
   var host_blacklist: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp]] = js.undefined
   var host_whitelist: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp]] = js.undefined
   var protocols: js.UndefOr[js.Array[java.lang.String]] = js.undefined

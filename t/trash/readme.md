@@ -3,5 +3,12 @@
 // Project: https://github.com/sindresorhus/trash#readme
 // Definitions by: Matthew James <https://github.com/matthew-matvei>
 //                 Keiichiro Amemiya <https://github.com/hoishin>
+//                 BendingBender <https://github.com/BendingBender>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+ * Move files and folders to the trash
+ *
+ * @param paths Accepts paths and [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
+ * @param options.glob Enable globbing when matching file paths
+ */
 ```

@@ -33,7 +33,7 @@ trait BufferStream
   
   		disables given tokens. wont flush until no splitter tokens are left.
   	*/
-  def disable(tokens: js.Array[java.lang.String | nodeLib.Buffer]): scala.Unit = js.native
+  def disable(tokens: js.Array[nodeLib.Buffer | java.lang.String]): scala.Unit = js.native
    // can be one of ['none', 'flexible', <number>]
   /*
   		enables stream buffering default
@@ -66,6 +66,6 @@ trait BufferStream
   
   		token[s] buffer splitters (should be String or Buffer)
   	*/
-  def split(tokens: js.Array[java.lang.String | nodeLib.Buffer]): scala.Unit = js.native
+  def split(tokens: js.Array[nodeLib.Buffer | java.lang.String]): scala.Unit = js.native
 }
 

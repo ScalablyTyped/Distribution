@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BatchedGraphQLClient protected () extends js.Object {
   def this(uri: java.lang.String) = this()
-  def this(uri: java.lang.String, options: httpDashLinkDashDataloaderLib.distSrcTypesMod.Options with httpDashLinkDashDataloaderLib.distSrcTypesMod.ClientOptions) = this()
+  def this(uri: java.lang.String, options: httpDashLinkDashDataloaderLib.distSrcTypesMod.Options with js.Any) = this()
   var dataloader: js.Any = js.native
   var options: httpDashLinkDashDataloaderLib.distSrcTypesMod.Options = js.native
   var uri: java.lang.String = js.native

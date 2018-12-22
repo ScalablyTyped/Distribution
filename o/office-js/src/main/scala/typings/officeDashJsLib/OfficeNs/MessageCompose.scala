@@ -657,20 +657,20 @@ trait MessageCompose extends Message {
            * 
            * In addition to this signature, the method also has the following signatures:
            * 
-           * `removeAttachmentAsync(attachmentIndex: string): void;`
+           * `removeAttachmentAsync(attachmentId: string): void;`
            * 
-           * `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
+           * `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
            * 
-           * `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
+           * `removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;`
            *
-           * @param attachmentIndex The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+           * @param attachmentId The identifier of the attachment to remove.
            * @param options Optional. An object literal that contains one or more of the following properties.
            *        asyncContext: Developers can provide any object they wish to access in the callback method.
            * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
            *                 type Office.AsyncResult. 
            *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
            */
-  def removeAttachmentAsync(attachmentIndex: java.lang.String): scala.Unit = js.native
+  def removeAttachmentAsync(attachmentId: java.lang.String): scala.Unit = js.native
   /**
            * Removes an attachment from a message or appointment.
            *
@@ -690,13 +690,13 @@ trait MessageCompose extends Message {
            *
            * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
            *
-           * @param attachmentIndex The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+           * @param attachmentId The identifier of the attachment to remove.
            * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
            *                 type Office.AsyncResult. 
            *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
            */
   def removeAttachmentAsync(
-    attachmentIndex: java.lang.String,
+    attachmentId: java.lang.String,
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -720,20 +720,20 @@ trait MessageCompose extends Message {
            * 
            * In addition to this signature, the method also has the following signatures:
            * 
-           * `removeAttachmentAsync(attachmentIndex: string): void;`
+           * `removeAttachmentAsync(attachmentId: string): void;`
            * 
-           * `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
+           * `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
            * 
-           * `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
+           * `removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;`
            *
-           * @param attachmentIndex The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+           * @param attachmentId The identifier of the attachment to remove.
            * @param options Optional. An object literal that contains one or more of the following properties.
            *        asyncContext: Developers can provide any object they wish to access in the callback method.
            * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
            *                 type Office.AsyncResult. 
            *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
            */
-  def removeAttachmentAsync(attachmentIndex: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
+  def removeAttachmentAsync(attachmentId: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   /**
            * Removes an attachment from a message or appointment.
            *
@@ -755,13 +755,13 @@ trait MessageCompose extends Message {
            * 
            * In addition to this signature, the method also has the following signatures:
            * 
-           * `removeAttachmentAsync(attachmentIndex: string): void;`
+           * `removeAttachmentAsync(attachmentId: string): void;`
            * 
-           * `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
+           * `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
            * 
-           * `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
+           * `removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;`
            *
-           * @param attachmentIndex The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+           * @param attachmentId The identifier of the attachment to remove.
            * @param options Optional. An object literal that contains one or more of the following properties.
            *        asyncContext: Developers can provide any object they wish to access in the callback method.
            * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
@@ -769,7 +769,7 @@ trait MessageCompose extends Message {
            *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
            */
   def removeAttachmentAsync(
-    attachmentIndex: java.lang.String,
+    attachmentId: java.lang.String,
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native

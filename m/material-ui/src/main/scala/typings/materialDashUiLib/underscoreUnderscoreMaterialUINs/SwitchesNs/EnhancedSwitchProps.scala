@@ -18,7 +18,7 @@ trait EnhancedSwitchProps extends CommonEnhancedSwitchProps[EnhancedSwitch] {
   var labelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var onSwitch: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* isInputChecked */ scala.Boolean, 
       scala.Unit
     ]

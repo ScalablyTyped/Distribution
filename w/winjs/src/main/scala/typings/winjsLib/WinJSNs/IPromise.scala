@@ -17,14 +17,14 @@ trait IPromise[T] extends js.Object {
     onProgress: js.Function1[/* progress */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def `then`[U](): IPromise[U] = js.native
-  def `then`[U](onComplete: js.Function1[/* value */ T, U | scala.Unit | IPromise[U]]): IPromise[U] = js.native
+  def `then`[U](onComplete: js.Function1[/* value */ T, IPromise[U] | U | scala.Unit]): IPromise[U] = js.native
   def `then`[U](
-    onComplete: js.Function1[/* value */ T, U | scala.Unit | IPromise[U]],
-    onError: js.Function1[/* error */ js.Any, U | scala.Unit | IPromise[U]]
+    onComplete: js.Function1[/* value */ T, IPromise[U] | U | scala.Unit],
+    onError: js.Function1[/* error */ js.Any, IPromise[U] | U | scala.Unit]
   ): IPromise[U] = js.native
   def `then`[U](
-    onComplete: js.Function1[/* value */ T, U | scala.Unit | IPromise[U]],
-    onError: js.Function1[/* error */ js.Any, U | scala.Unit | IPromise[U]],
+    onComplete: js.Function1[/* value */ T, IPromise[U] | U | scala.Unit],
+    onError: js.Function1[/* error */ js.Any, IPromise[U] | U | scala.Unit],
     onProgress: js.Function1[/* progress */ js.Any, scala.Unit]
   ): IPromise[U] = js.native
 }

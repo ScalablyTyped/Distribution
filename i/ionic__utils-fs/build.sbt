@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "ionic__utils-fs"
-version := "0.0.5-c58f0c"
+version := "0.0.6-151988"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-9f2619",
-  "org.scalablytyped" %%% "ncp" % "v2.0.0-dt-20180910Z-5f3ce0",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
-  "org.scalablytyped" %%% "through2" % "2.0-dt-20180910Z-c75d0b",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-866b29")
+  "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-e4c78d",
+  "org.scalablytyped" %%% "ncp" % "v2.0.0-dt-20180214Z-7ac39d",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
+  "org.scalablytyped" %%% "through2" % "2.0-dt-20180906Z-467a57",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-417c1f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

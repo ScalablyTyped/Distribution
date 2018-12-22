@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "splunk-bunyan-logger"
-version := "0.9-dt-20180910Z-246d8a"
+version := "0.9-dt-20180705Z-d85437"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-6cac35",
-  "org.scalablytyped" %%% "caseless" % "0.12-dt-20180910Z-a94dbd",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-26a7b4",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20181105Z-ee0213",
-  "org.scalablytyped" %%% "splunk-logging" % "0.9-dt-20180910Z-666ae3",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
-  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181104Z-eb91fb")
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-5e1bdd",
+  "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-e33499",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-bda47a",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20181105Z-2246af",
+  "org.scalablytyped" %%% "splunk-logging" % "0.9-dt-20180705Z-5ab206",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181015Z-a6a64a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -20,7 +20,7 @@ class Gradient ()
            * @param radial [optional] - Whether the gradient is radial or linear
            */
   def this(stops: js.Array[
-      java.lang.String | paperLib.paperNs.GradientStop | (js.Array[java.lang.String | scala.Double])
+      (js.Array[java.lang.String | scala.Double]) | paperLib.paperNs.GradientStop | java.lang.String
     ]) = this()
   /**
            * Creates a Gradient object.
@@ -28,7 +28,7 @@ class Gradient ()
            * @param radial [optional] - Whether the gradient is radial or linear
            */
   def this(stops: js.Array[
-      java.lang.String | paperLib.paperNs.GradientStop | (js.Array[java.lang.String | scala.Double])
+      (js.Array[java.lang.String | scala.Double]) | paperLib.paperNs.GradientStop | java.lang.String
     ], radial: scala.Boolean) = this()
 }
 

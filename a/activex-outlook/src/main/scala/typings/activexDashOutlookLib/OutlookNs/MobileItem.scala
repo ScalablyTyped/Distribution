@@ -19,14 +19,14 @@ class MobileItem protected () extends js.Object {
   val ConversationIndex: java.lang.String = js.native
   val ConversationTopic: java.lang.String = js.native
   val Count: scala.Double = js.native
-  val CreationTime: stdLib.VarDate = js.native
+  val CreationTime: activexDashInteropLib.VarDate = js.native
   val EntryID: java.lang.String = js.native
   val FormDescription: FormDescription = js.native
   val GetInspector: Inspector = js.native
   var HTMLBody: java.lang.String = js.native
   var Importance: OlImportance = js.native
   val ItemProperties: ItemProperties = js.native
-  val LastModificationTime: stdLib.VarDate = js.native
+  val LastModificationTime: activexDashInteropLib.VarDate = js.native
   val MAPIOBJECT: js.Any = js.native
   var MessageClass: java.lang.String = js.native
   var Mileage: java.lang.String = js.native
@@ -39,7 +39,7 @@ class MobileItem protected () extends js.Object {
   val PropertyAccessor: PropertyAccessor = js.native
   val ReceivedByEntryID: java.lang.String = js.native
   val ReceivedByName: java.lang.String = js.native
-  val ReceivedTime: stdLib.VarDate = js.native
+  val ReceivedTime: activexDashInteropLib.VarDate = js.native
   val Recipients: Recipients = js.native
   val ReplyRecipientNames: java.lang.String = js.native
   val ReplyRecipients: Recipients = js.native
@@ -51,7 +51,7 @@ class MobileItem protected () extends js.Object {
   val SenderName: java.lang.String = js.native
   var Sensitivity: OlSensitivity = js.native
   val Sent: scala.Boolean = js.native
-  val SentOn: stdLib.VarDate = js.native
+  val SentOn: activexDashInteropLib.VarDate = js.native
   val Session: NameSpace = js.native
   val Size: scala.Double = js.native
   var Subject: java.lang.String = js.native

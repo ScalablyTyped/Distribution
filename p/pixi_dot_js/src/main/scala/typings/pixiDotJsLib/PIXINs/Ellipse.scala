@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class Ellipse () extends HitArea {
   def this(x: scala.Double) = this()
   def this(x: scala.Double, y: scala.Double) = this()
-  def this(x: scala.Double, y: scala.Double, width: scala.Double) = this()
-  def this(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double, halfWidth: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double, halfWidth: scala.Double, halfHeight: scala.Double) = this()
   var height: scala.Double = js.native
   var `type`: scala.Double = js.native
   var width: scala.Double = js.native

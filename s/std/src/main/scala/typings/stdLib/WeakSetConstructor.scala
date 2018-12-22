@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait WeakSetConstructor
   extends org.scalablytyped.runtime.Instantiable0[WeakSet[js.Object]]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* iterable */ Iterable[js.Object]) | (/* values */ js.Array[js.Object]), 
+      (/* values */ js.Array[js.Object]) | (/* iterable */ Iterable[js.Object]), 
       WeakSet[js.Object]
     ]
 

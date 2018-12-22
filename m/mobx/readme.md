@@ -1,5 +1,12 @@
 ```
 /**
+ * During a transaction no views are updated until the end of the transaction.
+ * The transaction will be run synchronously nonetheless.
+ *
+ * @param action a function that updates some reactive state
+ * @returns any value that was returned by the 'action' parameter.
+ */
+/**
  * (c) Michel Weststrate 2015 - 2018
  * MIT Licensed
  *
@@ -15,12 +22,5 @@
  * - types/   All the magic that is need to have observable objects, arrays and values is in this folder. Including the modifiers like `asFlat`.
  * - utils/   Utility stuff.
  *
- */
-/**
- * During a transaction no views are updated until the end of the transaction.
- * The transaction will be run synchronously nonetheless.
- *
- * @param action a function that updates some reactive state
- * @returns any value that was returned by the 'action' parameter.
  */
 ```

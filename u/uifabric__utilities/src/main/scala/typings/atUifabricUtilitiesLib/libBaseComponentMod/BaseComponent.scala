@@ -101,10 +101,10 @@ class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
   @JSName("componentDidMount")
   def componentDidMount_MBaseComponent(): scala.Unit = js.native
   /**
-       * When the component will receive props, make sure the componentRef is updated.
+       * When the component receives props, make sure the componentRef is updated.
        */
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MBaseComponent(newProps: stdLib.Readonly[TProps], newContext: js.Any): scala.Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MBaseComponent(prevProps: TProps, prevState: TState): scala.Unit = js.native
   /**
        * If we have disposables, dispose them automatically on unmount.
        */

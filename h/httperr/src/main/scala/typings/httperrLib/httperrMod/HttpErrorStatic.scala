@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 trait HttpErrorStatic
   extends org.scalablytyped.runtime.Instantiable0[HttpError]
      with org.scalablytyped.runtime.Instantiable2[
-      (/* config */ java.lang.String) | (/* config */ stdLib.Error) | (/* config */ Config), 
+      (/* config */ Config) | (/* config */ stdLib.Error) | (/* config */ java.lang.String), 
       /* extra */ js.Object, 
       HttpError
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* config */ java.lang.String) | (/* config */ stdLib.Error) | (/* config */ Config), 
+      (/* config */ Config) | (/* config */ stdLib.Error) | (/* config */ java.lang.String), 
       HttpError
     ]
 

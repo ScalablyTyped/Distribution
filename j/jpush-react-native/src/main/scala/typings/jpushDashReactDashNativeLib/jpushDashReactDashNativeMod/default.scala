@@ -209,6 +209,10 @@ object default extends js.Object {
   /**
      * Android Only
      */
+  def setGeofenceInterval(interval: scala.Double): scala.Unit = js.native
+  /**
+     * Android Only
+     */
   def setLatestNotificationNumber(maxNumber: scala.Double): scala.Unit = js.native
   /**
      * iOS Only
@@ -303,6 +307,10 @@ object default extends js.Object {
     userInfo: js.Any,
     soundName: java.lang.String
   ): scala.Unit = js.native
+  /**
+     * Android Only
+     */
+  def setMaxGeofenceNumber(maxNumber: scala.Double): scala.Unit = js.native
   /**
      * Android Only
      * @param {object} config = {"days": Array, "startHour": Number, "endHour": Number}

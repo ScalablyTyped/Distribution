@@ -34,15 +34,15 @@ object SQLiteNs extends js.Object {
   @js.native
   trait Transaction extends js.Object {
     def executeSql(sqlStatement: java.lang.String): scala.Unit = js.native
-    def executeSql(sqlStatement: java.lang.String, arguments: js.Array[java.lang.String | scala.Double]): scala.Unit = js.native
+    def executeSql(sqlStatement: java.lang.String, arguments: js.Array[scala.Double | java.lang.String]): scala.Unit = js.native
     def executeSql(
       sqlStatement: java.lang.String,
-      arguments: js.Array[java.lang.String | scala.Double],
+      arguments: js.Array[scala.Double | java.lang.String],
       success: js.Function2[/* transaction */ this.type, /* resultSet */ ResultSet, _]
     ): scala.Unit = js.native
     def executeSql(
       sqlStatement: java.lang.String,
-      arguments: js.Array[java.lang.String | scala.Double],
+      arguments: js.Array[scala.Double | java.lang.String],
       success: js.Function2[/* transaction */ this.type, /* resultSet */ ResultSet, _],
       error: js.Function2[/* transaction */ this.type, /* error */ Error, _]
     ): scala.Unit = js.native

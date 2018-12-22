@@ -31,7 +31,7 @@ class Debugger () extends EventEmitter {
        */
   def detach(): scala.Unit = js.native
   def isAttached(): scala.Boolean = js.native
-  // Docs: http://electron.atom.io/docs/api/debugger
+  // Docs: http://electronjs.org/docs/api/debugger
   /**
        * Emitted when debugging session is terminated. This happens either when
        * webContents is closed or devtools is invoked for the attached webContents.

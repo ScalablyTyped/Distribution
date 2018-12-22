@@ -18,13 +18,13 @@ class Gradient () extends js.Object {
            * @param stops [optional] - Array of GradientStops
            * @param radial [optional] - Whether the gradient is radial or linear
            */
-  def this(stops: js.Array[java.lang.String | GradientStop | (js.Array[java.lang.String | scala.Double])]) = this()
+  def this(stops: js.Array[(js.Array[java.lang.String | scala.Double]) | GradientStop | java.lang.String]) = this()
   /**
            * Creates a Gradient object.
            * @param stops [optional] - Array of GradientStops
            * @param radial [optional] - Whether the gradient is radial or linear
            */
-  def this(stops: js.Array[java.lang.String | GradientStop | (js.Array[java.lang.String | scala.Double])], radial: scala.Boolean) = this()
+  def this(stops: js.Array[(js.Array[java.lang.String | scala.Double]) | GradientStop | java.lang.String], radial: scala.Boolean) = this()
   /**
            * Specifies whether the gradient is radial or linear.
            */

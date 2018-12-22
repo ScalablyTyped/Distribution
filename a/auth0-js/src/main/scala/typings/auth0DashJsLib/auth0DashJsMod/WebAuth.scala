@@ -90,6 +90,12 @@ class WebAuth protected () extends js.Object {
     callback: Auth0Callback[Auth0DecodedHash | scala.Null, Auth0ParseHashError]
   ): scala.Unit = js.native
   /**
+       * Logs in a user with the verification code sent to the user
+       * @param options
+       * @param callback
+       */
+  def passwordlessLogin(options: PasswordlessLoginOptions, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
+  /**
        * Initialices a passwordless authentication transaction
        *
        * @param options: https://auth0.com/docs/api/authentication#passwordless

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-instantsearch-native"
-version := "5.3-dt-20181104Z-85d3a6"
+version := "5.3-dt-20181024Z-a633b9"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-eb24f4",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-32d5ea",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-7d04f8",
-  "org.scalablytyped" %%% "react-instantsearch-core" % "5.2-dt-20181208Z-ef9858",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
+  "org.scalablytyped" %%% "csstype" % "2.5.8-28635b",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-3109dd",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-b38950",
+  "org.scalablytyped" %%% "react-instantsearch-core" % "5.2-dt-20181206Z-d6e257",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -119,8 +119,8 @@ trait Select[OptionType]
   // ==============================
   // Mouse Handlers
   // ==============================
-  def onMenuMouseDown(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): scala.Unit = js.native
-  def onMenuMouseMove(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def onMenuMouseDown(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def onMenuMouseMove(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
   // ==============================
   // Consumer Handlers
   // ==============================

@@ -27,7 +27,16 @@ package object awsDashLambdaMod {
   type CloudFrontResponseHandler = Handler[CloudFrontResponseEvent, CloudFrontResponseResult]
   type CloudFrontResponseResult = js.UndefOr[scala.Null | CloudFrontResultResponse]
   type CloudWatchLogsHandler = Handler[CloudWatchLogsEvent, scala.Unit]
+  type CodePipelineActionCategory = awsDashLambdaLib.awsDashLambdaLibStrings.Approval | awsDashLambdaLib.awsDashLambdaLibStrings.Build | awsDashLambdaLib.awsDashLambdaLibStrings.Deploy | awsDashLambdaLib.awsDashLambdaLibStrings.Invoke | awsDashLambdaLib.awsDashLambdaLibStrings.Source | awsDashLambdaLib.awsDashLambdaLibStrings.Test
+  type CodePipelineActionState = awsDashLambdaLib.awsDashLambdaLibStrings.STARTED | awsDashLambdaLib.awsDashLambdaLibStrings.SUCCEEDED | awsDashLambdaLib.awsDashLambdaLibStrings.FAILED | awsDashLambdaLib.awsDashLambdaLibStrings.CANCELED
+  type CodePipelineCloudWatchActionHandler = Handler[CodePipelineCloudWatchActionEvent, scala.Unit]
+  type CodePipelineCloudWatchEvent = CodePipelineCloudWatchPipelineEvent | CodePipelineCloudWatchStageEvent | CodePipelineCloudWatchActionEvent
+  type CodePipelineCloudWatchHandler = Handler[CodePipelineCloudWatchEvent, scala.Unit]
+  type CodePipelineCloudWatchPipelineHandler = Handler[CodePipelineCloudWatchPipelineEvent, scala.Unit]
+  type CodePipelineCloudWatchStageHandler = Handler[CodePipelineCloudWatchStageEvent, scala.Unit]
   type CodePipelineHandler = Handler[CodePipelineEvent, scala.Unit]
+  type CodePipelineStageState = awsDashLambdaLib.awsDashLambdaLibStrings.STARTED | awsDashLambdaLib.awsDashLambdaLibStrings.SUCCEEDED | awsDashLambdaLib.awsDashLambdaLibStrings.RESUMED | awsDashLambdaLib.awsDashLambdaLibStrings.FAILED | awsDashLambdaLib.awsDashLambdaLibStrings.CANCELED
+  type CodePipelineState = awsDashLambdaLib.awsDashLambdaLibStrings.STARTED | awsDashLambdaLib.awsDashLambdaLibStrings.SUCCEEDED | awsDashLambdaLib.awsDashLambdaLibStrings.RESUMED | awsDashLambdaLib.awsDashLambdaLibStrings.FAILED | awsDashLambdaLib.awsDashLambdaLibStrings.CANCELED | awsDashLambdaLib.awsDashLambdaLibStrings.SUPERSEDED
   type CognitoUserPoolEvent = CognitoUserPoolTriggerEvent
   type CognitoUserPoolTriggerHandler = Handler[CognitoUserPoolTriggerEvent, js.Any]
   type CustomAuthorizerCallback = Callback[CustomAuthorizerResult]

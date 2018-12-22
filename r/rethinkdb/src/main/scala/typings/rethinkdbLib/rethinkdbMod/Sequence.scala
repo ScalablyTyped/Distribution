@@ -69,7 +69,7 @@ trait Sequence
   def merge(cb: ExpressionFunction[Expression[_]]): Sequence = js.native
   def merge(`object`: js.Object): Sequence = js.native
   def nth(n: scala.Double): Expression[_] = js.native
-  def orderBy(keys: (java.lang.String | Sort)*): Sequence = js.native
+  def orderBy(keys: (Sort | java.lang.String)*): Sequence = js.native
   def outerJoin(sequence: Sequence, join: JoinFunction[scala.Boolean]): Sequence = js.native
   // Manipulation
   def pluck(props: java.lang.String*): Sequence = js.native

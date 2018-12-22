@@ -29,12 +29,12 @@ class KeyValuePipe protected ()
       scala.Double
     ]
   ): js.Array[KeyValue[java.lang.String, V]] = js.native
-  def transform[V](input: stdLib.Map[java.lang.String | scala.Double, V]): js.Array[KeyValue[java.lang.String, V]] = js.native
+  def transform[V](input: stdLib.Map[scala.Double | java.lang.String, V]): js.Array[KeyValue[java.lang.String, V]] = js.native
   def transform[V](
-    input: stdLib.Map[java.lang.String | scala.Double, V],
+    input: stdLib.Map[scala.Double | java.lang.String, V],
     compareFn: js.Function2[
-      /* a */ KeyValue[java.lang.String | scala.Double, V], 
-      /* b */ KeyValue[java.lang.String | scala.Double, V], 
+      /* a */ KeyValue[scala.Double | java.lang.String, V], 
+      /* b */ KeyValue[scala.Double | java.lang.String, V], 
       scala.Double
     ]
   ): js.Array[KeyValue[java.lang.String, V]] = js.native

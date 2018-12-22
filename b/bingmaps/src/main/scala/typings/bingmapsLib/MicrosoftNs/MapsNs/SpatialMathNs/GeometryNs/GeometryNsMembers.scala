@@ -824,7 +824,7 @@ object GeometryNsMembers extends js.Object {
   ): js.Array[bingmapsLib.MicrosoftNs.MapsNs.Polygon] = js.native
   def voronoiDiagram(
     shapes: js.Array[
-      bingmapsLib.MicrosoftNs.MapsNs.Location | bingmapsLib.MicrosoftNs.MapsNs.IPrimitive
+      bingmapsLib.MicrosoftNs.MapsNs.IPrimitive | bingmapsLib.MicrosoftNs.MapsNs.Location
     ]
   ): js.Array[bingmapsLib.MicrosoftNs.MapsNs.Polygon] = js.native
   def voronoiDiagram(

@@ -29,6 +29,15 @@ trait ReplicateOptions extends js.Object {
                * so the maximum docs in memory at once would equal batch_size × batches_limit.
                */
   var batches_limit: js.UndefOr[scala.Double] = js.undefined
+  /**
+               * Can be used if you want to disable checkpoints on the source, target, or both.
+               * Setting this option to false will prevent writing checkpoints on both source and target.
+               * Setting it to source will only write checkpoints on the source.
+               * Setting it to target will only write checkpoints on the target.
+               */
+  var checkpoint: js.UndefOr[
+    scala.Boolean | pouchdbDashReplicationLib.pouchdbDashReplicationLibStrings.target | pouchdbDashReplicationLib.pouchdbDashReplicationLibStrings.source
+  ] = js.undefined
   /** Only show changes for docs with these ids (array of strings). */
   var doc_ids: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**

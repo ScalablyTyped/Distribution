@@ -102,6 +102,7 @@ object PinpointSMSVoiceNs extends js.Object {
          * A name that identifies the event destination configuration.
          */
     var Name: js.UndefOr[String] = js.undefined
+    var SnsDestination: js.UndefOr[SnsDestination] = js.undefined
   }
   
   
@@ -113,6 +114,7 @@ object PinpointSMSVoiceNs extends js.Object {
     var Enabled: js.UndefOr[Boolean] = js.undefined
     var KinesisFirehoseDestination: js.UndefOr[KinesisFirehoseDestination] = js.undefined
     var MatchingEventTypes: js.UndefOr[EventTypes] = js.undefined
+    var SnsDestination: js.UndefOr[SnsDestination] = js.undefined
   }
   
   
@@ -199,6 +201,14 @@ object PinpointSMSVoiceNs extends js.Object {
          * A unique identifier for the voice message.
          */
     var MessageId: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait SnsDestination extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the Amazon SNS topic that you want to publish events to.
+         */
+    var TopicArn: js.UndefOr[String] = js.undefined
   }
   
   @js.native

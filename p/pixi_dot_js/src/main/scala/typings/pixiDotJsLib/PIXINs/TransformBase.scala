@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PIXI.TransformBase")
 @js.native
 class TransformBase () extends js.Object {
+  var _parentID: scala.Double = js.native
   var _worldID: scala.Double = js.native
   var localTransform: Matrix = js.native
   var worldTransform: Matrix = js.native

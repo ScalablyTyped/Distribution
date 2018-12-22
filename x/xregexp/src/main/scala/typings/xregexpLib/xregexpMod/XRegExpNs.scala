@@ -57,7 +57,7 @@ object XRegExpNs extends js.Object {
   def `match`(str: java.lang.String, regex: stdLib.RegExp, scope: java.lang.String): js.Any = js.native
   def matchChain(
     str: java.lang.String,
-    chain: js.Array[stdLib.RegExp | xregexpLib.Anon_Backref | xregexpLib.Anon_BackrefRegex]
+    chain: js.Array[xregexpLib.Anon_Backref | xregexpLib.Anon_BackrefRegex | stdLib.RegExp]
   ): js.Array[java.lang.String] = js.native
   def matchRecursive(str: java.lang.String, left: java.lang.String, right: java.lang.String): js.Array[java.lang.String] = js.native
   def matchRecursive(str: java.lang.String, left: java.lang.String, right: java.lang.String, flags: java.lang.String): js.Array[java.lang.String] = js.native

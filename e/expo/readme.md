@@ -14,6 +14,7 @@
 //                 Martin Olsson <https://github.com/mo>
 //                 Levan Basharuli <https://github.com/levansuper>
 //                 Pavel Ihm <https://github.com/ihmpavel>
+//                 Bartosz Dotryw <https://github.com/burtek>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

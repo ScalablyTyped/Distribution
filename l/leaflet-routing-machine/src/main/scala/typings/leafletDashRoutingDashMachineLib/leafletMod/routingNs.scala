@@ -23,12 +23,12 @@ object routingNs extends js.Object {
   def osrmv1(options: leafletDashRoutingDashMachineLib.leafletMod.RoutingNs.OSRMOptions): leafletDashRoutingDashMachineLib.leafletMod.RoutingNs.OSRMv1 = js.native
   def plan(
     waypoints: js.Array[
-      leafletDashRoutingDashMachineLib.leafletMod.RoutingNs.Waypoint | leafletLib.leafletMod.LatLng
+      leafletLib.leafletMod.LatLng | leafletDashRoutingDashMachineLib.leafletMod.RoutingNs.Waypoint
     ]
   ): leafletDashRoutingDashMachineLib.leafletMod.RoutingNs.Plan = js.native
   def plan(
     waypoints: js.Array[
-      leafletDashRoutingDashMachineLib.leafletMod.RoutingNs.Waypoint | leafletLib.leafletMod.LatLng
+      leafletLib.leafletMod.LatLng | leafletDashRoutingDashMachineLib.leafletMod.RoutingNs.Waypoint
     ],
     options: leafletDashRoutingDashMachineLib.leafletMod.RoutingNs.PlanOptions
   ): leafletDashRoutingDashMachineLib.leafletMod.RoutingNs.Plan = js.native

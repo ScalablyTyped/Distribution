@@ -24,7 +24,7 @@ trait IAngularHelper extends js.Object {
           * @description
           * Returns the current form object applied to the scope or null if one is not found
           */
-  def getCurrentForm(scope: js.Any): js.Any
+  def getCurrentForm(scope: angularLib.angularMod.angularNs.IScope): js.Any
   /**
           * @ngdoc function
           * @name getNullForm
@@ -38,7 +38,7 @@ trait IAngularHelper extends js.Object {
           *
           * @param {string} formName The form name to assign
           */
-  def getNullForm(formName: java.lang.String): js.Any
+  def getNullForm(formName: java.lang.String): angularLib.angularMod.angularNs.IFormController
   /**
           * @ngdoc function
           * @name validateHasForm
@@ -49,7 +49,7 @@ trait IAngularHelper extends js.Object {
           * This will validate that the current scope has an assigned form object, if it doesn't an exception is thrown, if
           * it does we return the form object.
           */
-  def getRequiredCurrentForm(scope: js.Any): js.Object
+  def getRequiredCurrentForm(scope: angularLib.angularMod.angularNs.IScope): js.Object
   /**
           * @ngdoc function
           * @name umbraco.services.angularHelper#rejectedPromise
@@ -72,6 +72,6 @@ trait IAngularHelper extends js.Object {
           * @description
           * This checks if a digest/apply is already occuring, if not it will force an apply call
           */
-  def safeApply(scope: js.Any, fn: js.Function): scala.Unit
+  def safeApply(scope: angularLib.angularMod.angularNs.IScope, fn: angularLib.angularMod.Global.Function): scala.Unit
 }
 

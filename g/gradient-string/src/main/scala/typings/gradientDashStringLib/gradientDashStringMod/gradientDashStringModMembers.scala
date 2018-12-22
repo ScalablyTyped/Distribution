@@ -22,7 +22,7 @@ object gradientDashStringModMembers extends js.Object {
   val teen: gradientDashStringLib.gradientDashStringMod.gradientNs.Gradient = js.native
   val vice: gradientDashStringLib.gradientDashStringMod.gradientNs.Gradient = js.native
   def apply(
-    colors: (gradientDashStringLib.gradientDashStringMod.gradientNs.PositionedColorInput | tinycolor2Lib.tinycolor2Mod.tinycolorNs.ColorInput)*
+    colors: (tinycolor2Lib.tinycolor2Mod.tinycolorNs.ColorInput | gradientDashStringLib.gradientDashStringMod.gradientNs.PositionedColorInput)*
   ): gradientDashStringLib.gradientDashStringMod.gradientNs.Gradient = js.native
   def apply(
     colors: js.Array[tinycolor2Lib.tinycolor2Mod.tinycolorNs.ColorInput] | js.Array[gradientDashStringLib.gradientDashStringMod.gradientNs.PositionedColorInput]

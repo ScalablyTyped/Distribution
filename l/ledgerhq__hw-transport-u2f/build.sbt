@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "ledgerhq__hw-transport-u2f"
-version := "4.21-dt-20180929Z-0b41b6"
+version := "4.21-dt-20180927Z-540dbb"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ledgerhq__hw-transport" % "4.21-dt-20180929Z-adb74e",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
+  "org.scalablytyped" %%% "ledgerhq__hw-transport" % "4.21-dt-20180927Z-72701b",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

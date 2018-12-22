@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TouchBarSlider protected ()
   extends electronLib.ElectronNs.TouchBarSlider {
-  // Docs: http://electron.atom.io/docs/api/touch-bar-slider
+  // Docs: http://electronjs.org/docs/api/touch-bar-slider
   def this(options: electronLib.ElectronNs.TouchBarSliderConstructorOptions) = this()
 }
 

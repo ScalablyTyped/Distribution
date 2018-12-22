@@ -58,7 +58,7 @@ class NativeImage () extends js.Object {
 @JSGlobal("Electron.NativeImage")
 @js.native
 object NativeImage extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/native-image
+  // Docs: http://electronjs.org/docs/api/native-image
   /**
        * Creates an empty NativeImage instance.
        */

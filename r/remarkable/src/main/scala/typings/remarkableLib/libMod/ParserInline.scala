@@ -13,8 +13,8 @@ trait ParserInline extends js.Object {
     env: remarkableLib.libMod.RemarkableNs.Env,
     tokens: js.Array[remarkableLib.libMod.RemarkableNs.Token]
   ): scala.Unit
-  def skipToken(state: remarkableLib.libMod.RemarkableNs.ParsingState): scala.Unit
-  def tokenize(state: remarkableLib.libMod.RemarkableNs.ParsingState): scala.Unit
+  def skipToken(state: remarkableLib.libMod.RemarkableNs.StateInline): scala.Unit
+  def tokenize(state: remarkableLib.libMod.RemarkableNs.StateInline): scala.Unit
   def validateLink(url: java.lang.String): scala.Boolean
 }
 

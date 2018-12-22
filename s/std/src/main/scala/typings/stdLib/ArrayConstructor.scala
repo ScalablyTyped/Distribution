@@ -18,14 +18,14 @@ trait ArrayConstructor
   def apply(arrayLength: scala.Double): js.Array[_] = js.native
   def apply[T](items: T*): js.Array[T] = js.native
   /**
-       * Creates an array from an iterable object.
-       * @param iterable An iterable object to convert to an array.
-       */
-  /**
        * Creates an array from an array-like object.
        * @param arrayLike An array-like object to convert to an array.
        */
-  def from[T](iterable: ArrayLike[T]): js.Array[T] = js.native
+  /**
+       * Creates an array from an iterable object.
+       * @param iterable An iterable object to convert to an array.
+       */
+  def from[T](arrayLike: ArrayLike[T]): js.Array[T] = js.native
   /**
        * Creates an array from an iterable object.
        * @param iterable An iterable object to convert to an array.
@@ -33,30 +33,30 @@ trait ArrayConstructor
   def from[T](iterable: Iterable[T]): js.Array[T] = js.native
   /**
        * Creates an array from an iterable object.
-       * @param iterable An iterable object to convert to an array.
-       * @param mapfn A mapping function to call on every element of the array.
-       * @param thisArg Value of 'this' used to invoke the mapfn.
-       */
-  /**
-       * Creates an array from an iterable object.
        * @param arrayLike An array-like object to convert to an array.
        * @param mapfn A mapping function to call on every element of the array.
        * @param thisArg Value of 'this' used to invoke the mapfn.
        */
-  def from[T, U](iterable: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ scala.Double, U]): js.Array[U] = js.native
   /**
        * Creates an array from an iterable object.
        * @param iterable An iterable object to convert to an array.
        * @param mapfn A mapping function to call on every element of the array.
        * @param thisArg Value of 'this' used to invoke the mapfn.
        */
+  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ scala.Double, U]): js.Array[U] = js.native
   /**
        * Creates an array from an iterable object.
        * @param arrayLike An array-like object to convert to an array.
        * @param mapfn A mapping function to call on every element of the array.
        * @param thisArg Value of 'this' used to invoke the mapfn.
        */
-  def from[T, U](iterable: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ scala.Double, U], thisArg: js.Any): js.Array[U] = js.native
+  /**
+       * Creates an array from an iterable object.
+       * @param iterable An iterable object to convert to an array.
+       * @param mapfn A mapping function to call on every element of the array.
+       * @param thisArg Value of 'this' used to invoke the mapfn.
+       */
+  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ scala.Double, U], thisArg: js.Any): js.Array[U] = js.native
   /**
        * Creates an array from an iterable object.
        * @param iterable An iterable object to convert to an array.

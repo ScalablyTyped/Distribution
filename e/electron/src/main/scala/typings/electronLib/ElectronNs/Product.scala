@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Product extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/product
+  // Docs: http://electronjs.org/docs/api/structures/product
   /**
        * The total size of the content, in bytes.
        */

@@ -13,6 +13,7 @@ class ListPeoplePickerBase ()
 @JSImport("office-ui-fabric-react/lib/components/pickers", "ListPeoplePickerBase")
 @js.native
 object ListPeoplePickerBase extends js.Object {
+  /** Default props for ListPeoplePicker. */
   var defaultProps: officeDashUiDashFabricDashReactLib.Anon_CreateGenericItem = js.native
 }
 

@@ -51,7 +51,7 @@ trait IContextualMenuItemProps
   var onCheckmarkClick: js.UndefOr[
     js.Function2[
       /* item */ officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuItem, 
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

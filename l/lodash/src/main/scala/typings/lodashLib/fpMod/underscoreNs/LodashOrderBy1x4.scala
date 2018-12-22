@@ -12,7 +12,7 @@ trait LodashOrderBy1x4[T] extends js.Object {
   ): LodashOrderBy2x5[T] = js.native
   def apply(
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[T] | (js.Function1[/* value */ T, lodashLib.lodashMod.underscoreNs.NotVoid])
+      (js.Function1[/* value */ T, lodashLib.lodashMod.underscoreNs.NotVoid]) | lodashLib.lodashMod.underscoreNs.ValueIteratee[T]
     ],
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc]
   ): js.Array[T] = js.native

@@ -65,7 +65,7 @@ trait Converter
   // tslint:disable-next-line ban-types
   def on(
     event: java.lang.String,
-    listener: DataEventHandler | DoneEventHandler | EndParsedEventHandler | ErrorEventHandler | CsvEventHandler | JsonEventHandler
+    listener: CsvEventHandler | DataEventHandler | DoneEventHandler | EndParsedEventHandler | ErrorEventHandler | JsonEventHandler
   ): this.type = js.native
   /**
            * Adds a listener function to the end of the listeners array for an event.

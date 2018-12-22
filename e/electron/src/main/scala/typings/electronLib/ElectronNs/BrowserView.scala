@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Electron.BrowserView")
 @js.native
 class BrowserView () extends EventEmitter {
-  // Docs: http://electron.atom.io/docs/api/browser-view
+  // Docs: http://electronjs.org/docs/api/browser-view
   def this(options: BrowserViewConstructorOptions) = this()
   var id: scala.Double = js.native
   var webContents: WebContents = js.native

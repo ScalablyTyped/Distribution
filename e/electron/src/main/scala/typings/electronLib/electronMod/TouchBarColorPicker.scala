@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TouchBarColorPicker protected ()
   extends electronLib.ElectronNs.TouchBarColorPicker {
-  // Docs: http://electron.atom.io/docs/api/touch-bar-color-picker
+  // Docs: http://electronjs.org/docs/api/touch-bar-color-picker
   def this(options: electronLib.ElectronNs.TouchBarColorPickerConstructorOptions) = this()
 }
 

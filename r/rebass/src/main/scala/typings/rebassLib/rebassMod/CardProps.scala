@@ -11,9 +11,9 @@ trait CardProps extends BoxProps {
   var backgroundPosition: js.UndefOr[java.lang.String] = js.undefined
   var backgroundRepeat: js.UndefOr[java.lang.String] = js.undefined
   var backgroundSize: js.UndefOr[java.lang.String] = js.undefined
-  var border: js.UndefOr[scala.Double] = js.undefined
+  var border: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var borderColor: js.UndefOr[java.lang.String] = js.undefined
-  var borderRadius: js.UndefOr[scala.Double] = js.undefined
+  var borderRadius: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var boxShadow: js.UndefOr[java.lang.String] = js.undefined
   var opacity: js.UndefOr[scala.Double] = js.undefined
   var variant: js.UndefOr[java.lang.String] = js.undefined

@@ -1218,7 +1218,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
          */
     var UserPoolId: UserPoolIdType
     /**
-         * The write attributes.
+         * The user pool attributes that the app client can write to. If your app client allows users to sign in through an identity provider, this array must include all attributes that are mapped to identity provider attributes. Amazon Cognito updates mapped attributes when users sign in to your application through an identity provider. If your app client lacks write access to a mapped attribute, Amazon Cognito throws an error when it attempts to update the attribute. For more information, see Specifying Identity Provider Attribute Mappings for Your User Pool.
          */
     var WriteAttributes: js.UndefOr[ClientPermissionListType] = js.undefined
   }
@@ -1234,7 +1234,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   
   trait CreateUserPoolDomainRequest extends js.Object {
     /**
-         * The configuration for a custom domain that hosts the sign-up and sign-in webpages for your application. Provide this parameter only if you want to use own custom domain for your user pool. Otherwise, you can exclude this parameter and use the Amazon Cognito hosted domain instead. For more information about the hosted domain and custom domains, see Configuring a User Pool Domain.
+         * The configuration for a custom domain that hosts the sign-up and sign-in webpages for your application. Provide this parameter only if you want to use a custom domain for your user pool. Otherwise, you can exclude this parameter and use the Amazon Cognito hosted domain instead. For more information about the hosted domain and custom domains, see Configuring a User Pool Domain.
          */
     var CustomDomainConfig: js.UndefOr[CustomDomainConfigType] = js.undefined
     /**
@@ -2736,7 +2736,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
          */
     var DeveloperOnlyAttribute: js.UndefOr[BooleanType] = js.undefined
     /**
-         * Specifies whether the value of the attribute can be changed.
+         * Specifies whether the value of the attribute can be changed. For any user pool attribute that's mapped to an identity provider attribute, you must set this parameter to true. Amazon Cognito updates mapped attributes when users sign in to your application through an identity provider. If an attribute is immutable, Amazon Cognito throws an error when it attempts to update the attribute. For more information, see Specifying Identity Provider Attribute Mappings for Your User Pool.
          */
     var Mutable: js.UndefOr[BooleanType] = js.undefined
     /**
@@ -5634,6 +5634,35 @@ object CognitoIdentityServiceProviderNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateUserPoolClientResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your user pool. You can use this operation to provide the Amazon Resource Name (ARN) of a new certificate to Amazon Cognito. You cannot use it to change the domain for a user pool. A custom domain is used to host the Amazon Cognito hosted UI, which provides sign-up and sign-in pages for your application. When you set up a custom domain, you provide a certificate that you manage with AWS Certificate Manager (ACM). When necessary, you can use this operation to change the certificate that you applied to your custom domain. Usually, this is unnecessary following routine certificate renewal with ACM. When you renew your existing certificate in ACM, the ARN for your certificate remains the same, and your custom domain uses the new certificate automatically. However, if you replace your existing certificate with a new one, ACM gives the new certificate a new ARN. To apply the new certificate to your custom domain, you must provide this ARN to Amazon Cognito. When you add your new certificate in ACM, you must choose US East (N. Virginia) as the AWS Region. After you submit your request, Amazon Cognito requires up to 1 hour to distribute your new certificate to your custom domain. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
+       */
+    def updateUserPoolDomain(): awsDashSdkLib.libRequestMod.Request[UpdateUserPoolDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your user pool. You can use this operation to provide the Amazon Resource Name (ARN) of a new certificate to Amazon Cognito. You cannot use it to change the domain for a user pool. A custom domain is used to host the Amazon Cognito hosted UI, which provides sign-up and sign-in pages for your application. When you set up a custom domain, you provide a certificate that you manage with AWS Certificate Manager (ACM). When necessary, you can use this operation to change the certificate that you applied to your custom domain. Usually, this is unnecessary following routine certificate renewal with ACM. When you renew your existing certificate in ACM, the ARN for your certificate remains the same, and your custom domain uses the new certificate automatically. However, if you replace your existing certificate with a new one, ACM gives the new certificate a new ARN. To apply the new certificate to your custom domain, you must provide this ARN to Amazon Cognito. When you add your new certificate in ACM, you must choose US East (N. Virginia) as the AWS Region. After you submit your request, Amazon Cognito requires up to 1 hour to distribute your new certificate to your custom domain. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
+       */
+    def updateUserPoolDomain(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateUserPoolDomainResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateUserPoolDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your user pool. You can use this operation to provide the Amazon Resource Name (ARN) of a new certificate to Amazon Cognito. You cannot use it to change the domain for a user pool. A custom domain is used to host the Amazon Cognito hosted UI, which provides sign-up and sign-in pages for your application. When you set up a custom domain, you provide a certificate that you manage with AWS Certificate Manager (ACM). When necessary, you can use this operation to change the certificate that you applied to your custom domain. Usually, this is unnecessary following routine certificate renewal with ACM. When you renew your existing certificate in ACM, the ARN for your certificate remains the same, and your custom domain uses the new certificate automatically. However, if you replace your existing certificate with a new one, ACM gives the new certificate a new ARN. To apply the new certificate to your custom domain, you must provide this ARN to Amazon Cognito. When you add your new certificate in ACM, you must choose US East (N. Virginia) as the AWS Region. After you submit your request, Amazon Cognito requires up to 1 hour to distribute your new certificate to your custom domain. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
+       */
+    def updateUserPoolDomain(params: UpdateUserPoolDomainRequest): awsDashSdkLib.libRequestMod.Request[UpdateUserPoolDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your user pool. You can use this operation to provide the Amazon Resource Name (ARN) of a new certificate to Amazon Cognito. You cannot use it to change the domain for a user pool. A custom domain is used to host the Amazon Cognito hosted UI, which provides sign-up and sign-in pages for your application. When you set up a custom domain, you provide a certificate that you manage with AWS Certificate Manager (ACM). When necessary, you can use this operation to change the certificate that you applied to your custom domain. Usually, this is unnecessary following routine certificate renewal with ACM. When you renew your existing certificate in ACM, the ARN for your certificate remains the same, and your custom domain uses the new certificate automatically. However, if you replace your existing certificate with a new one, ACM gives the new certificate a new ARN. To apply the new certificate to your custom domain, you must provide this ARN to Amazon Cognito. When you add your new certificate in ACM, you must choose US East (N. Virginia) as the AWS Region. After you submit your request, Amazon Cognito requires up to 1 hour to distribute your new certificate to your custom domain. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
+       */
+    def updateUserPoolDomain(
+      params: UpdateUserPoolDomainRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateUserPoolDomainResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateUserPoolDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Use this API to register a user's entered TOTP code and mark the user's software token MFA status as "verified" if successful. The request takes an access token or a session string, but not both.
        */
     def verifySoftwareToken(): awsDashSdkLib.libRequestMod.Request[VerifySoftwareTokenResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -5953,6 +5982,30 @@ object CognitoIdentityServiceProviderNs extends js.Object {
          * The user pool client value from the response from the server when an update user pool client request is made.
          */
     var UserPoolClient: js.UndefOr[UserPoolClientType] = js.undefined
+  }
+  
+  
+  trait UpdateUserPoolDomainRequest extends js.Object {
+    /**
+         * The configuration for a custom domain that hosts the sign-up and sign-in pages for your application. Use this object to specify an SSL certificate that is managed by ACM.
+         */
+    var CustomDomainConfig: CustomDomainConfigType
+    /**
+         * The domain name for the custom domain that hosts the sign-up and sign-in pages for your application. For example: auth.example.com.  This string can include only lowercase letters, numbers, and hyphens. Do not use a hyphen for the first or last character. Use periods to separate subdomain names.
+         */
+    var Domain: DomainType
+    /**
+         * The ID of the user pool that is associated with the custom domain that you are updating the certificate for.
+         */
+    var UserPoolId: UserPoolIdType
+  }
+  
+  
+  trait UpdateUserPoolDomainResponse extends js.Object {
+    /**
+         * The Amazon CloudFront endpoint that Amazon Cognito set up when you added the custom domain to your user pool.
+         */
+    var CloudFrontDomain: js.UndefOr[DomainType] = js.undefined
   }
   
   

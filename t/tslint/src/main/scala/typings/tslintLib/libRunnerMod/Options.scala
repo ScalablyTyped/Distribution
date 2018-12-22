@@ -52,6 +52,10 @@ trait Options extends js.Object {
        */
   var project: js.UndefOr[java.lang.String] = js.undefined
   /**
+       * Whether to hide warnings
+       */
+  var quiet: js.UndefOr[scala.Boolean] = js.undefined
+  /**
        * Rules directory paths.
        */
   var rulesDirectory: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

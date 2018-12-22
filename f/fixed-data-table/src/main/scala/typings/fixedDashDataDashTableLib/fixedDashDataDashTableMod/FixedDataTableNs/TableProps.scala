@@ -66,7 +66,7 @@ trait TableProps
             */
   var onRowClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table, reactLib.Event], 
       /* rowIndex */ scala.Double, 
       scala.Unit
     ]
@@ -76,7 +76,7 @@ trait TableProps
             */
   var onRowDoubleClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table, reactLib.Event], 
       /* rowIndex */ scala.Double, 
       scala.Unit
     ]
@@ -87,7 +87,7 @@ trait TableProps
             */
   var onRowMouseDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table, reactLib.Event], 
       /* rowIndex */ scala.Double, 
       scala.Unit
     ]
@@ -98,7 +98,7 @@ trait TableProps
             */
   var onRowMouseEnter: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table, reactLib.Event], 
       /* rowIndex */ scala.Double, 
       scala.Unit
     ]
@@ -109,7 +109,7 @@ trait TableProps
             */
   var onRowMouseLeave: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table, reactLib.Event], 
       /* rowIndex */ scala.Double, 
       scala.Unit
     ]

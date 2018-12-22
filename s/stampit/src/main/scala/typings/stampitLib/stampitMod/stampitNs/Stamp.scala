@@ -124,7 +124,7 @@ trait Stamp extends js.Object {
   /**
            * @deprecated Use .init() instead.
            */
-  def enclose(functions: (js.Object | stampitLib.Init)*): Stamp = js.native
+  def enclose(functions: (stampitLib.Init | js.Object)*): Stamp = js.native
   /**
            * Take in a variable number of functions and add them to the enclose
            * prototype as initializers.

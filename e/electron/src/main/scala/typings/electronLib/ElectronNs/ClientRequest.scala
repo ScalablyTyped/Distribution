@@ -98,7 +98,7 @@ class ClientRequest protected () extends EventEmitter {
        * a file upload or other data transfer.
        */
   def getUploadProgress(): UploadProgress = js.native
-  // Docs: http://electron.atom.io/docs/api/client-request
+  // Docs: http://electronjs.org/docs/api/client-request
   /**
        * Emitted when the request is aborted. The abort event will not be fired if the
        * request is already closed.

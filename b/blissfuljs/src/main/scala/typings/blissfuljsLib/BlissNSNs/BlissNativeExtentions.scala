@@ -126,17 +126,6 @@ trait BlissNativeExtentions[T] extends js.Object {
     useCapture: scala.Boolean
   ): T = js.native
   @JSName("addEventListener")
-  def addEventListener_MSManipulationStateChanged(
-    `type`: blissfuljsLib.blissfuljsLibStrings.MSManipulationStateChanged,
-    listener: js.Function1[/* ev */ js.Any, _]
-  ): T = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSManipulationStateChanged(
-    `type`: blissfuljsLib.blissfuljsLibStrings.MSManipulationStateChanged,
-    listener: js.Function1[/* ev */ js.Any, _],
-    useCapture: scala.Boolean
-  ): T = js.native
-  @JSName("addEventListener")
   def addEventListener_MSPointerCancel(
     `type`: blissfuljsLib.blissfuljsLibStrings.MSPointerCancel,
     listener: js.Function1[/* ev */ stdLib.MSPointerEvent, _]
@@ -1477,8 +1466,6 @@ trait BlissNativeExtentions[T] extends js.Object {
   @JSName("getElementsByTagName")
   def getElementsByTagName_wbr(name: blissfuljsLib.blissfuljsLibStrings.wbr): stdLib.NodeListOf[stdLib.HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def `getElementsByTagName_x-ms-webview`(name: blissfuljsLib.blissfuljsLibStrings.`x-ms-webview`): stdLib.NodeListOf[_] = js.native
-  @JSName("getElementsByTagName")
   def getElementsByTagName_xmp(name: blissfuljsLib.blissfuljsLibStrings.xmp): stdLib.NodeListOf[stdLib.HTMLElement] = js.native
   def hasAttribute(name: java.lang.String): scala.Boolean = js.native
   def hasAttributeNS(namespaceURI: java.lang.String, localName: java.lang.String): scala.Boolean = js.native
@@ -1486,12 +1473,10 @@ trait BlissNativeExtentions[T] extends js.Object {
   def insertAdjacentHTML(where: java.lang.String, html: java.lang.String): T = js.native
   def insertAdjacentText(where: java.lang.String, text: java.lang.String): T = js.native
   def msGetInputContext(): stdLib.MSInputMethodContext = js.native
-  def msGetRegionContent(): js.Any = js.native
   def msGetUntransformedBounds(): stdLib.ClientRect = js.native
   def msMatchesSelector(selectors: java.lang.String): scala.Boolean = js.native
   def msReleasePointerCapture(pointerId: scala.Double): T = js.native
   def msSetPointerCapture(pointerId: scala.Double): T = js.native
-  def msZoomTo(args: js.Any): T = js.native
   def releasePointerCapture(pointerId: scala.Double): T = js.native
   def removeAttribute(): T = js.native
   def removeAttribute(name: java.lang.String): T = js.native

@@ -22,7 +22,7 @@ trait Button
   def componentWillUnmount_MButton(): scala.Unit = js.native
   def fixTwoCNChar(): scala.Unit = js.native
   def handleClick(
-    event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement | reactLib.HTMLAnchorElement]
+    event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement | reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent]
   ): scala.Unit = js.native
   def isNeedInserted(): scala.Boolean = js.native
   def saveButtonRef(): scala.Unit = js.native

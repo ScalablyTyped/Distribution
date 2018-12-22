@@ -12,7 +12,7 @@ class FileList () extends js.Object {
   	 	 * Get rid of any current exclusion rules
         	 */
   def clearExclude(): scala.Unit = js.native
-  def exclude(file: (FileFilter | java.lang.String | stdLib.RegExp)*): scala.Unit = js.native
+  def exclude(file: (FileFilter | stdLib.RegExp | java.lang.String)*): scala.Unit = js.native
   /**
   		 * Excludes file-patterns from the FileList. Should be called with one or more
   		 * pattern for finding file to include in the list. Arguments can be:
@@ -20,7 +20,7 @@ class FileList () extends js.Object {
   		 * 2. Regular expression literals
   		 * 3. Functions to be run on the filename that return a true/false
   		 */
-  def exclude(file: js.Array[FileFilter | java.lang.String | stdLib.RegExp]): scala.Unit = js.native
+  def exclude(file: js.Array[FileFilter | stdLib.RegExp | java.lang.String]): scala.Unit = js.native
   def include(files: java.lang.String*): scala.Unit = js.native
   /**
   	     * Includes file-patterns in the FileList. Should be called with one or more

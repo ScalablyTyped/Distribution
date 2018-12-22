@@ -10,7 +10,7 @@ trait AntAnchor extends js.Object {
   var activeLink: java.lang.String | scala.Null
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* link */ antdLib.Anon_Href, 
       scala.Unit
     ]

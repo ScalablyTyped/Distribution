@@ -161,7 +161,7 @@ object gNs extends js.Object {
     def this(pathData: java.lang.String) = this()
     def this(polyline: Polyline) = this()
     def this(segment: Segment) = this()
-    def this(segments: js.Array[Line | Curve | Segment]) = this()
+    def this(segments: js.Array[Curve | Line | Segment]) = this()
      // getter
     var end: Point | scala.Null = js.native
     var segments: js.Array[Segment] = js.native

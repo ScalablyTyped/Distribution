@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class BaseMiddleware () extends js.Object {
   val _container: js.Any = js.native
   val httpContext: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.HttpContext = js.native
-  /* protected */ def bind[T](serviceIdentifier: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ServiceIdentifier[T]): inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingToSyntax[T] = js.native
+  /* protected */ def bind[T](serviceIdentifier: js.Any): js.Any = js.native
   def handler(
     req: expressLib.expressMod.eNs.Request,
     res: expressLib.expressMod.eNs.Response,

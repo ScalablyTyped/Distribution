@@ -15,19 +15,19 @@ trait WaveRenderer
   def createWrapper(): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
   def drawBars(
-    peaks: js.Array[scala.Double | js.Array[scala.Double]],
+    peaks: js.Array[js.Array[scala.Double] | scala.Double],
     channelIndex: scala.Double,
     start: scala.Double,
     end: scala.Double
   ): scala.Unit = js.native
   def drawPeaks(
-    peaks: js.Array[scala.Double | js.Array[scala.Double]],
+    peaks: js.Array[js.Array[scala.Double] | scala.Double],
     length: scala.Double,
     start: scala.Double,
     end: scala.Double
   ): scala.Unit = js.native
   def drawWave(
-    peaks: js.Array[scala.Double | js.Array[scala.Double]],
+    peaks: js.Array[js.Array[scala.Double] | scala.Double],
     channelIndex: scala.Double,
     start: scala.Double,
     end: scala.Double

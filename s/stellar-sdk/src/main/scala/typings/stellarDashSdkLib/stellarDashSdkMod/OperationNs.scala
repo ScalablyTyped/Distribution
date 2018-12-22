@@ -99,7 +99,7 @@ object OperationNs extends js.Object {
   
   trait ManageData extends Operation {
     var name: java.lang.String
-    var value: java.lang.String
+    var value: nodeLib.Buffer
   }
   
   
@@ -120,7 +120,7 @@ object OperationNs extends js.Object {
   
   
   trait ManageOfferOptions extends CreatePassiveOfferOptions {
-    var offerId: scala.Double | java.lang.String
+    var offerId: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   }
   
   

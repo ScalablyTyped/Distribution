@@ -52,7 +52,7 @@ package object ReactNs {
   //
   // Event Handler Types
   // ----------------------------------------------------------------------
-  type EventHandler[E /* <: SyntheticEvent[_] */] = js.Function1[/* event */ E, scala.Unit]
+  type EventHandler[E /* <: SyntheticEvent[_, reactLib.Event] */] = js.Function1[/* event */ E, scala.Unit]
   type FC[P] = FunctionComponent[P]
   //
   // Factories
@@ -60,7 +60,7 @@ package object ReactNs {
   type Factory[P] = js.Function2[/* props */ js.UndefOr[Attributes with P], /* repeated */ReactNode, ReactElement[P]]
   type FocusEventHandler[T] = EventHandler[FocusEvent[T]]
   // tslint:disable-next-line:no-empty-interface
-  type FormEvent[T] = SyntheticEvent[T]
+  type FormEvent[T] = SyntheticEvent[T, reactLib.Event]
   type FormEventHandler[T] = EventHandler[FormEvent[T]]
   type FunctionComponentFactory[P] = js.Function2[
     /* props */ js.UndefOr[Attributes with P], 
@@ -92,7 +92,7 @@ package object ReactNs {
   type Key = java.lang.String | scala.Double
   type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
   type LegacyRef[T] = java.lang.String | Ref[T]
-  type MouseEventHandler[T] = EventHandler[MouseEvent[T]]
+  type MouseEventHandler[T] = EventHandler[MouseEvent[T, reactLib.NativeMouseEvent]]
   type PointerEventHandler[T] = EventHandler[PointerEvent[T]]
   /** Ensures that the props do not include string ref, which cannot be forwarded */
   type PropsWithRef[P] = P | (PropsWithoutRef[P] with reactLib.Anon_Ref)
@@ -103,7 +103,7 @@ package object ReactNs {
   type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
   type PureComponent[P, S, SS] = Component[P, S, SS]
   type ReactChild = ReactElement[js.Any] | ReactText
-  type ReactEventHandler[T] = EventHandler[SyntheticEvent[T]]
+  type ReactEventHandler[T] = EventHandler[SyntheticEvent[T, reactLib.Event]]
   type ReactFragment = js.Object | ReactNodeArray
   // ReactHTML for ReactHTMLElement
   // tslint:disable-next-line:no-empty-interface
@@ -157,6 +157,14 @@ package object ReactNs {
        * @see [React Hooks](https://reactjs.org/docs/hooks-intro.html)
        */
   type StatelessComponent[P] = FunctionComponent[P]
+  /**
+       * currentTarget - a reference to the element on which the event listener is registered.
+       *
+       * target - a reference to the element from which the event was originally dispatched.
+       * This might be a child element to the element on which the event listener is registered.
+       * If you thought this should be `EventTarget & T`, see https://github.com/DefinitelyTyped/DefinitelyTyped/pull/12239
+       */
+  type SyntheticEvent[T, E] = BaseSyntheticEvent[E, reactLib.EventTarget with T, reactLib.EventTarget]
   type TouchEventHandler[T] = EventHandler[TouchEvent[T]]
   type TransitionEventHandler[T] = EventHandler[TransitionEvent[T]]
   type UIEventHandler[T] = EventHandler[UIEvent[T]]

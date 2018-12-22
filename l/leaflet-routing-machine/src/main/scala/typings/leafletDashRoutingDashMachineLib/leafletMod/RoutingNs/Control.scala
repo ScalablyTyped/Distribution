@@ -15,7 +15,7 @@ class Control () extends Itinerary {
   def on(`type`: java.lang.String, fn: js.Function1[/* event */ js.Any, scala.Unit]): this.type = js.native
   def on(`type`: java.lang.String, fn: js.Function1[/* event */ js.Any, scala.Unit], context: js.Any): this.type = js.native
   def route(): scala.Unit = js.native
-  def setWaypoints(waypoints: js.Array[Waypoint | leafletLib.leafletMod.LatLng]): this.type = js.native
+  def setWaypoints(waypoints: js.Array[leafletLib.leafletMod.LatLng | Waypoint]): this.type = js.native
   def spliceWaypoints(index: scala.Double, waypointsToRemove: scala.Double, wayPoints: Waypoint*): js.Array[Waypoint] = js.native
 }
 

@@ -65,24 +65,24 @@ trait Instance
   def seed(input: java.lang.String, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
   def seed(
     input: js.Array[
-      java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.ReadableStream | stdLib.File
+      nodeLib.Buffer | stdLib.File | nodeLib.NodeJSNs.ReadableStream | java.lang.String
     ]
   ): Torrent = js.native
   def seed(
     input: js.Array[
-      java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.ReadableStream | stdLib.File
+      nodeLib.Buffer | stdLib.File | nodeLib.NodeJSNs.ReadableStream | java.lang.String
     ],
     cb: js.Function1[/* torrent */ Torrent, _]
   ): Torrent = js.native
   def seed(
     input: js.Array[
-      java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.ReadableStream | stdLib.File
+      nodeLib.Buffer | stdLib.File | nodeLib.NodeJSNs.ReadableStream | java.lang.String
     ],
     opts: TorrentOptions
   ): Torrent = js.native
   def seed(
     input: js.Array[
-      java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.ReadableStream | stdLib.File
+      nodeLib.Buffer | stdLib.File | nodeLib.NodeJSNs.ReadableStream | java.lang.String
     ],
     opts: TorrentOptions,
     cb: js.Function1[/* torrent */ Torrent, _]

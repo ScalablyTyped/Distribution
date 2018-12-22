@@ -15,6 +15,11 @@ trait LocalDatabaseConfiguration extends CommonDatabaseConfiguration {
                */
   var auto_compaction: js.UndefOr[scala.Boolean] = js.undefined
   /**
+               * A special constructor option, which appends a prefix to the database name
+               * and can be helpful for URL-based or file-based LevelDOWN path names.
+               */
+  var prefix: js.UndefOr[java.lang.String] = js.undefined
+  /**
                * How many old revisions we keep track (not a copy) of.
                */
   var revs_limit: js.UndefOr[scala.Double] = js.undefined

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Display extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/display
+  // Docs: http://electronjs.org/docs/api/structures/display
   var bounds: Rectangle
   /**
        * Unique identifier associated with the display.

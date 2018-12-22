@@ -63,7 +63,7 @@ org.scalablytyped.runtime.Instantiable4[
          *
          * @param options An object with options. See above for possible options
          */
-org.scalablytyped.runtime.Instantiable1[(/* uri */ java.lang.String) | (/* options */ Options), Sequelize]
+org.scalablytyped.runtime.Instantiable1[(/* options */ Options) | (/* uri */ java.lang.String), Sequelize]
      with /**
          * Instantiate sequelize with name of database, username and password
          *
@@ -96,7 +96,7 @@ org.scalablytyped.runtime.Instantiable1[(/* uri */ java.lang.String) | (/* optio
 org.scalablytyped.runtime.Instantiable3[
       /* database */ java.lang.String, 
       /* username */ java.lang.String, 
-      (/* password */ java.lang.String) | (/* options */ Options), 
+      (/* options */ Options) | (/* password */ java.lang.String), 
       Sequelize
     ]
      with /**
@@ -109,7 +109,7 @@ org.scalablytyped.runtime.Instantiable3[
          */
 org.scalablytyped.runtime.Instantiable2[
       /* database */ java.lang.String, 
-      (/* username */ java.lang.String) | (/* options */ Options), 
+      (/* options */ Options) | (/* username */ java.lang.String), 
       Sequelize
     ] {
   /**

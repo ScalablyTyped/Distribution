@@ -18,7 +18,7 @@ trait Promise[T] extends js.Object {
     filter: js.Function1[/* reason */ js.Any, scala.Boolean],
     onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]
   ): Promise[U] = js.native
-  def `catch`[U](onRejected: js.Function1[/* reason */ js.Any, U | Promise[U] | scala.Boolean]): Promise[U] = js.native
+  def `catch`[U](onRejected: js.Function1[/* reason */ js.Any, scala.Boolean | Promise[U] | U]): Promise[U] = js.native
   def delay(milliseconds: scala.Double): Promise[T] = js.native
   def done[U](): scala.Unit = js.native
   def done[U](onFulfilled: js.Function1[/* value */ T, scala.Unit]): scala.Unit = js.native
@@ -40,7 +40,7 @@ trait Promise[T] extends js.Object {
   // Make sure you test any usage of these overloads, exceptionType must
   // be a constructor with prototype set to an instance of Error.
   def otherwise[U](exceptionType: js.Any, onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]): Promise[U] = js.native
-  def otherwise[U](onRejected: js.Function1[/* reason */ js.Any, U | Promise[U] | scala.Boolean]): Promise[U] = js.native
+  def otherwise[U](onRejected: js.Function1[/* reason */ js.Any, scala.Boolean | Promise[U] | U]): Promise[U] = js.native
   def otherwise[U](
     predicate: js.Function1[/* reason */ js.Any, scala.Boolean],
     onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]
@@ -112,12 +112,12 @@ trait Promise[T] extends js.Object {
   def then_TResult[TResult](onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]]): Promise[TResult] = js.native
   @JSName("then")
   def then_TResult[TResult](
-    onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult] | T | Thenable[T]],
+    onFulfilled: js.Function1[/* value */ T, T | TResult | Thenable[TResult] | Thenable[T]],
     onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]
   ): Promise[TResult] = js.native
   @JSName("then")
   def then_TResult[TResult](
-    onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult] | T | Thenable[T]],
+    onFulfilled: js.Function1[/* value */ T, T | TResult | Thenable[TResult] | Thenable[T]],
     onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
     onProgress: js.Function1[/* update */ js.Any, scala.Unit]
   ): Promise[TResult] = js.native

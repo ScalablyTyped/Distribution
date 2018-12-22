@@ -220,7 +220,7 @@ trait Api
   /**
            * Order Methods / object
            */
-  def order(order: js.Array[java.lang.String | scala.Double | (js.Array[java.lang.String | scala.Double])]): Api = js.native
+  def order(order: js.Array[(js.Array[java.lang.String | scala.Double]) | scala.Double | java.lang.String]): Api = js.native
   /**
            * Order Methods / object
            */

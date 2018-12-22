@@ -1743,7 +1743,7 @@ object d3ModMembers extends js.Object {
   def cross[S, T, U](a: stdLib.ArrayLike[S], b: stdLib.ArrayLike[T], reducer: js.Function2[/* a */ S, /* b */ T, U]): js.Array[U] = js.native
   def csv(url: java.lang.String): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
   def csv(url: java.lang.String, init: stdLib.RequestInit): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
-  def csv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
+  def csv[ParsedRow /* <: js.Object */](
     url: java.lang.String,
     init: stdLib.RequestInit,
     row: js.Function3[
@@ -1753,7 +1753,7 @@ object d3ModMembers extends js.Object {
       js.UndefOr[ParsedRow | scala.Null]
     ]
   ): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
-  def csv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
+  def csv[ParsedRow /* <: js.Object */](
     url: java.lang.String,
     row: js.Function3[
       /* rawRow */ d3DashDsvLib.d3DashDsvMod.DSVRowString, 
@@ -1815,7 +1815,7 @@ object d3ModMembers extends js.Object {
   def drag_GElementDraggedElementBaseTypeDatumSubject[GElement /* <: d3DashDragLib.d3DashDragMod.DraggedElementBaseType */, Datum, Subject](): d3DashDragLib.d3DashDragMod.DragBehavior[GElement, Datum, Subject] = js.native
   def dsv(delimiter: java.lang.String, url: java.lang.String): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
   def dsv(delimiter: java.lang.String, url: java.lang.String, init: stdLib.RequestInit): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
-  def dsv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
+  def dsv[ParsedRow /* <: js.Object */](
     delimiter: java.lang.String,
     url: java.lang.String,
     init: stdLib.RequestInit,
@@ -1826,7 +1826,7 @@ object d3ModMembers extends js.Object {
       js.UndefOr[ParsedRow | scala.Null]
     ]
   ): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
-  def dsv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
+  def dsv[ParsedRow /* <: js.Object */](
     delimiter: java.lang.String,
     url: java.lang.String,
     row: js.Function3[
@@ -2534,6 +2534,7 @@ object d3ModMembers extends js.Object {
   def scaleBand(): d3DashScaleLib.d3DashScaleMod.ScaleBand[java.lang.String] = js.native
   @JSName("scaleBand")
   def scaleBand_DomainAnon_ToString[Domain /* <: d3DashScaleLib.Anon_ToString */](): d3DashScaleLib.d3DashScaleMod.ScaleBand[Domain] = js.native
+  def scaleDiverging[T](interpolator: js.Function1[/* t */ scala.Double, T]): d3DashScaleLib.d3DashScaleMod.ScaleDiverging[T] = js.native
   def scaleIdentity(): d3DashScaleLib.d3DashScaleMod.ScaleIdentity = js.native
   def scaleLinear(): d3DashScaleLib.d3DashScaleMod.ScaleLinear[scala.Double, scala.Double] = js.native
   @JSName("scaleLinear")
@@ -2798,7 +2799,7 @@ object d3ModMembers extends js.Object {
   ): scala.Unit = js.native
   def tsv(url: java.lang.String): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
   def tsv(url: java.lang.String, init: stdLib.RequestInit): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
-  def tsv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
+  def tsv[ParsedRow /* <: js.Object */](
     url: java.lang.String,
     init: stdLib.RequestInit,
     row: js.Function3[
@@ -2808,7 +2809,7 @@ object d3ModMembers extends js.Object {
       js.UndefOr[ParsedRow | scala.Null]
     ]
   ): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
-  def tsv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
+  def tsv[ParsedRow /* <: js.Object */](
     url: java.lang.String,
     row: js.Function3[
       /* rawRow */ d3DashDsvLib.d3DashDsvMod.DSVRowString, 

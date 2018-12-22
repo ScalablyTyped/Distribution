@@ -71,7 +71,7 @@ trait Mark extends js.Object {
        * Note that groups will be ignored and mark.js will always find all matches, regardless of the g flag.
        * @param options Optional options
        */
-  def markRegExp(regexp: stdLib.RegExp, options: markDotJsLib.markDotJsMod.MarkNs.MarkOptions): scala.Unit = js.native
+  def markRegExp(regexp: stdLib.RegExp, options: markDotJsLib.markDotJsMod.MarkNs.MarkRegExpOptions): scala.Unit = js.native
   /**
        * A method to remove highlights created by mark.js.
        * @param options Optional options

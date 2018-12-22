@@ -37,9 +37,6 @@ object blissfuljsLibStrings {
   sealed trait MSLostPointerCapture extends js.Object
   
   @js.native
-  sealed trait MSManipulationStateChanged extends js.Object
-  
-  @js.native
   sealed trait MSPointerCancel extends js.Object
   
   @js.native
@@ -823,9 +820,6 @@ object blissfuljsLibStrings {
   sealed trait wheel extends js.Object
   
   @js.native
-  sealed trait `x-ms-webview` extends js.Object
-  
-  @js.native
   sealed trait xmp extends js.Object
   
   def MSContentZoom: MSContentZoom = "MSContentZoom".asInstanceOf[MSContentZoom]
@@ -838,7 +832,6 @@ object blissfuljsLibStrings {
   def MSGotPointerCapture: MSGotPointerCapture = "MSGotPointerCapture".asInstanceOf[MSGotPointerCapture]
   def MSInertiaStart: MSInertiaStart = "MSInertiaStart".asInstanceOf[MSInertiaStart]
   def MSLostPointerCapture: MSLostPointerCapture = "MSLostPointerCapture".asInstanceOf[MSLostPointerCapture]
-  def MSManipulationStateChanged: MSManipulationStateChanged = "MSManipulationStateChanged".asInstanceOf[MSManipulationStateChanged]
   def MSPointerCancel: MSPointerCancel = "MSPointerCancel".asInstanceOf[MSPointerCancel]
   def MSPointerDown: MSPointerDown = "MSPointerDown".asInstanceOf[MSPointerDown]
   def MSPointerEnter: MSPointerEnter = "MSPointerEnter".asInstanceOf[MSPointerEnter]
@@ -1100,7 +1093,6 @@ object blissfuljsLibStrings {
   def webkitfullscreenchange: webkitfullscreenchange = "webkitfullscreenchange".asInstanceOf[webkitfullscreenchange]
   def webkitfullscreenerror: webkitfullscreenerror = "webkitfullscreenerror".asInstanceOf[webkitfullscreenerror]
   def wheel: wheel = "wheel".asInstanceOf[wheel]
-  def `x-ms-webview`: `x-ms-webview` = "x-ms-webview".asInstanceOf[`x-ms-webview`]
   def xmp: xmp = "xmp".asInstanceOf[xmp]
 }
 

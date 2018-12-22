@@ -37,7 +37,7 @@ object tlsNs extends js.Object {
        */
   def checkServerIdentity(host: java.lang.String, cert: nodeLib.tlsMod.PeerCertificate): js.UndefOr[nodeLib.Error] = js.native
   def connect(options: nodeLib.tlsMod.ConnectionOptions): nodeLib.tlsMod.TLSSocket = js.native
-  def connect(options: nodeLib.tlsMod.ConnectionOptions, secureConnectionListener: js.Function0[scala.Unit]): nodeLib.tlsMod.TLSSocket = js.native
+  def connect(options: nodeLib.tlsMod.ConnectionOptions, secureConnectListener: js.Function0[scala.Unit]): nodeLib.tlsMod.TLSSocket = js.native
   def connect(port: scala.Double): nodeLib.tlsMod.TLSSocket = js.native
   def connect(port: scala.Double, host: java.lang.String): nodeLib.tlsMod.TLSSocket = js.native
   def connect(port: scala.Double, host: java.lang.String, options: nodeLib.tlsMod.ConnectionOptions): nodeLib.tlsMod.TLSSocket = js.native

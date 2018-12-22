@@ -13,9 +13,7 @@ trait TraceOptions extends js.Object {
        * If creating your own, this must be an instance of DatadogSpanContext from ./src/opentracing/span_context
        * See: https://github.com/DataDog/dd-trace-js/blob/master/src/opentracing/tracer.js#L99
        */
-  var childOf: js.UndefOr[
-    opentracingLib.opentracingMod.Span | opentracingLib.opentracingMod.SpanContext | ddDashTraceLib.srcOpentracingSpanUnderscoreContextMod.namespaced
-  ] = js.undefined
+  var childOf: js.UndefOr[js.Any | ddDashTraceLib.srcOpentracingSpanUnderscoreContextMod.namespaced] = js.undefined
   /**
        * The resource name to be used for this span.
        * The operation name will be used if this is not provided.

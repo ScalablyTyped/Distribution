@@ -20,8 +20,8 @@ object inversifyDashExpressDashUtilsModMembers extends js.Object {
   ): js.Function1[/* target */ js.Any, scala.Unit] = js.native
   def cookies(): stdLib.ParameterDecorator = js.native
   def cookies(cookieName: java.lang.String): stdLib.ParameterDecorator = js.native
-  def getRawMetadata(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container): js.Array[inversifyDashExpressDashUtilsLib.Anon_MethodMetadata] = js.native
-  def getRouteInfo(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container): js.Array[inversifyDashExpressDashUtilsLib.Anon_Endpoints] = js.native
+  def getRawMetadata(container: js.Any): js.Array[inversifyDashExpressDashUtilsLib.Anon_MethodMetadata] = js.native
+  def getRouteInfo(container: js.Any): js.Array[inversifyDashExpressDashUtilsLib.Anon_Endpoints] = js.native
   def httpDelete(
     path: java.lang.String,
     middleware: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Middleware*

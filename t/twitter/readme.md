@@ -1,9 +1,7 @@
 ```
-// Type definitions for Twitter for Websites
-// Project: https://dev.twitter.com/web/
-// Definitions by: Chitoku <https://github.com/chitoku-k>
+// Type definitions for twitter 1.7
+// Project: https://github.com/desmondmorris/node-twitter
+// Definitions by: BendingBender <https://github.com/BendingBender>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/**
- * The interface for Twitter for Websites.
- */
+// TypeScript Version: 2.3
 ```

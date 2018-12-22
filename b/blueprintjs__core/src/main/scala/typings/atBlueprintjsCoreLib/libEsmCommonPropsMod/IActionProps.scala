@@ -15,7 +15,10 @@ trait IActionProps
   var icon: js.UndefOr[atBlueprintjsIconsLib.libEsmIconNameMod.IconName | MaybeElement] = js.undefined
   /** Click event handler. */
   var onClick: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]
+    js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   /** Action text. Can be any single React renderable. */
   var text: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Protocol extends EventEmitter {
-  // Docs: http://electron.atom.io/docs/api/protocol
+  // Docs: http://electronjs.org/docs/api/protocol
   /**
        * Intercepts scheme protocol and uses handler as the protocol's new handler which
        * sends a Buffer as a response.
@@ -20,7 +20,7 @@ trait Protocol extends EventEmitter {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  // Docs: http://electron.atom.io/docs/api/protocol
+  // Docs: http://electronjs.org/docs/api/protocol
   /**
        * Intercepts scheme protocol and uses handler as the protocol's new handler which
        * sends a Buffer as a response.
@@ -93,7 +93,7 @@ trait Protocol extends EventEmitter {
     handler: js.Function2[
       /* request */ InterceptStreamProtocolRequest, 
       /* callback */ js.Function1[
-        /* stream */ js.UndefOr[stdLib.ReadableStream[_] | StreamProtocolResponse], 
+        /* stream */ js.UndefOr[nodeLib.NodeJSNs.ReadableStream | StreamProtocolResponse], 
         scala.Unit
       ], 
       scala.Unit
@@ -108,7 +108,7 @@ trait Protocol extends EventEmitter {
     handler: js.Function2[
       /* request */ InterceptStreamProtocolRequest, 
       /* callback */ js.Function1[
-        /* stream */ js.UndefOr[stdLib.ReadableStream[_] | StreamProtocolResponse], 
+        /* stream */ js.UndefOr[nodeLib.NodeJSNs.ReadableStream | StreamProtocolResponse], 
         scala.Unit
       ], 
       scala.Unit
@@ -180,8 +180,8 @@ trait Protocol extends EventEmitter {
        * to be created with scheme. completion will be called with completion(null) when
        * scheme is successfully registered or completion(error) when failed. To handle
        * the request, the callback should be called with either the file's path or an
-       * object that has a path property, e.g. callback(filePath) or callback({path:
-       * filePath}). When callback is called with nothing, a number, or an object that
+       * object that has a path property, e.g. callback(filePath) or callback({ path:
+       * filePath }). When callback is called with nothing, a number, or an object that
        * has an error property, the request will fail with the error number you
        * specified. For the available error numbers you can use, please see the net error
        * list. By default the scheme is treated like http:, which is parsed differently
@@ -203,8 +203,8 @@ trait Protocol extends EventEmitter {
        * to be created with scheme. completion will be called with completion(null) when
        * scheme is successfully registered or completion(error) when failed. To handle
        * the request, the callback should be called with either the file's path or an
-       * object that has a path property, e.g. callback(filePath) or callback({path:
-       * filePath}). When callback is called with nothing, a number, or an object that
+       * object that has a path property, e.g. callback(filePath) or callback({ path:
+       * filePath }). When callback is called with nothing, a number, or an object that
        * has an error property, the request will fail with the error number you
        * specified. For the available error numbers you can use, please see the net error
        * list. By default the scheme is treated like http:, which is parsed differently
@@ -302,7 +302,7 @@ trait Protocol extends EventEmitter {
     handler: js.Function2[
       /* request */ RegisterStreamProtocolRequest, 
       /* callback */ js.Function1[
-        /* stream */ js.UndefOr[stdLib.ReadableStream[_] | StreamProtocolResponse], 
+        /* stream */ js.UndefOr[nodeLib.NodeJSNs.ReadableStream | StreamProtocolResponse], 
         scala.Unit
       ], 
       scala.Unit
@@ -321,7 +321,7 @@ trait Protocol extends EventEmitter {
     handler: js.Function2[
       /* request */ RegisterStreamProtocolRequest, 
       /* callback */ js.Function1[
-        /* stream */ js.UndefOr[stdLib.ReadableStream[_] | StreamProtocolResponse], 
+        /* stream */ js.UndefOr[nodeLib.NodeJSNs.ReadableStream | StreamProtocolResponse], 
         scala.Unit
       ], 
       scala.Unit

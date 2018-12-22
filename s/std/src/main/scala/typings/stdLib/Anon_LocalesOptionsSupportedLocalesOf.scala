@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_LocalesOptionsSupportedLocalesOf
   extends org.scalablytyped.runtime.Instantiable0[stdLib.IntlNs.Collator]
      with org.scalablytyped.runtime.Instantiable2[
-      (/* locales */ java.lang.String) | (/* locales */ js.Array[java.lang.String]), 
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       /* options */ stdLib.IntlNs.CollatorOptions, 
       stdLib.IntlNs.Collator
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* locales */ java.lang.String) | (/* locales */ js.Array[java.lang.String]), 
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       stdLib.IntlNs.Collator
     ] {
   def apply(): stdLib.IntlNs.Collator = js.native

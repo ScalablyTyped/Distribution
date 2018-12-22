@@ -23,7 +23,7 @@ trait IDetailsColumnProps
   var isDropped: js.UndefOr[scala.Boolean] = js.undefined
   var onColumnClick: js.UndefOr[
     js.Function2[
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* column */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.IColumn, 
       scala.Unit
     ]
@@ -31,7 +31,7 @@ trait IDetailsColumnProps
   var onColumnContextMenu: js.UndefOr[
     js.Function2[
       /* column */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.IColumn, 
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

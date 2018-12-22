@@ -12,6 +12,7 @@ trait ILinterOptions extends js.Object {
     java.lang.String | tslintLib.libLanguageFormatterFormatterMod.FormatterConstructor
   ] = js.undefined
   var formattersDirectory: js.UndefOr[java.lang.String] = js.undefined
+  var quiet: js.UndefOr[scala.Boolean] = js.undefined
   var rulesDirectory: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 

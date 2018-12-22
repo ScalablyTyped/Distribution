@@ -21,9 +21,9 @@ class Container () extends DisplayObject {
   /* protected */ def containerUpdateTransform(): scala.Unit = js.native
   def destroy(options: DestroyOptions): scala.Unit = js.native
   def destroy(options: scala.Boolean): scala.Unit = js.native
-  def getChildAt(index: scala.Double): DisplayObject = js.native
+  def getChildAt[T /* <: DisplayObject */](index: scala.Double): T = js.native
   // begin extras.getChildByName
-  def getChildByName(name: java.lang.String): DisplayObject = js.native
+  def getChildByName[T /* <: DisplayObject */](name: java.lang.String): T = js.native
   def getChildIndex(child: DisplayObject): scala.Double = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
@@ -88,11 +88,11 @@ class Container () extends DisplayObject {
     fn: js.Function1[/* displayObject */ DisplayObject, scala.Unit],
     context: js.Any
   ): this.type = js.native
-  def removeChild(child: DisplayObject): DisplayObject = js.native
-  def removeChildAt(index: scala.Double): DisplayObject = js.native
-  def removeChildren(): js.Array[DisplayObject] = js.native
-  def removeChildren(beginIndex: scala.Double): js.Array[DisplayObject] = js.native
-  def removeChildren(beginIndex: scala.Double, endIndex: scala.Double): js.Array[DisplayObject] = js.native
+  def removeChild[T /* <: DisplayObject */](child: DisplayObject): T = js.native
+  def removeChildAt[T /* <: DisplayObject */](index: scala.Double): T = js.native
+  def removeChildren[T /* <: DisplayObject */](): js.Array[T] = js.native
+  def removeChildren[T /* <: DisplayObject */](beginIndex: scala.Double): js.Array[T] = js.native
+  def removeChildren[T /* <: DisplayObject */](beginIndex: scala.Double, endIndex: scala.Double): js.Array[T] = js.native
   def renderAdvancedWebGL(renderer: WebGLRenderer): scala.Unit = js.native
   def setChildIndex(child: DisplayObject, index: scala.Double): scala.Unit = js.native
   def swapChildren(child: DisplayObject, child2: DisplayObject): scala.Unit = js.native

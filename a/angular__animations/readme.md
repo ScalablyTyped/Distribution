@@ -96,13 +96,6 @@
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
  * Provides programmatic control of a reusable animation sequence,
  * built using the `build()` method of `AnimationBuilder`. The `build()` method
  * returns a factory, whose `create()` method instantiates and initializes this interface.
@@ -112,5 +105,12 @@
  * @see `animate()`
  *
  * @publicApi
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
  */
 ```

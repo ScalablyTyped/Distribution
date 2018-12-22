@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IActionSheetService extends js.Object {
-  def hide(): js.Any
-  def show(options: ShowOptions): js.Any
+  def hide(): angularLib.angularMod.angularNs.IPromise[scala.Unit]
+  def show(options: ShowOptions): angularLib.angularMod.angularNs.IPromise[scala.Double]
 }
 

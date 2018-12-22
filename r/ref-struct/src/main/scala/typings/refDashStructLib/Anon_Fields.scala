@@ -14,7 +14,7 @@ trait Anon_Fields
     ]
      with org.scalablytyped.runtime.Instantiable0[refDashStructLib.refDashStructMod.StructType]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* fields */ js.Object) | (/* fields */ js.Array[js.Any]), 
+      (/* fields */ js.Array[js.Any]) | (/* fields */ js.Object), 
       refDashStructLib.refDashStructMod.StructType
     ] {
   def apply(): refDashStructLib.refDashStructMod.StructType = js.native

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("inversify-binding-decorators/dts/decorator/fluent_provide", JSImport.Namespace)
 @js.native
 object dtsDecoratorFluentUnderscoreProvideMod extends js.Object {
-  def default(serviceIdentifier: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ServiceIdentifier[_]): inversifyDashBindingDashDecoratorsLib.dtsInterfacesInterfacesMod.interfacesNs.ProvideInWhenOnSyntax[_] = js.native
+  def default(serviceIdentifier: js.Any): inversifyDashBindingDashDecoratorsLib.dtsInterfacesInterfacesMod.interfacesNs.ProvideInWhenOnSyntax[_] = js.native
 }
 

@@ -429,7 +429,7 @@ object StepFunctionsNs extends js.Object {
          */
     var maxResults: js.UndefOr[PageSize] = js.undefined
     /**
-         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
     /**
@@ -445,7 +445,7 @@ object StepFunctionsNs extends js.Object {
          */
     var events: HistoryEventList
     /**
-         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
   }
@@ -585,7 +585,7 @@ object StepFunctionsNs extends js.Object {
          */
     var maxResults: js.UndefOr[PageSize] = js.undefined
     /**
-         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
   }
@@ -597,7 +597,7 @@ object StepFunctionsNs extends js.Object {
          */
     var activities: ActivityList
     /**
-         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
   }
@@ -609,7 +609,7 @@ object StepFunctionsNs extends js.Object {
          */
     var maxResults: js.UndefOr[PageSize] = js.undefined
     /**
-         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
     /**
@@ -629,7 +629,7 @@ object StepFunctionsNs extends js.Object {
          */
     var executions: ExecutionList
     /**
-         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
   }
@@ -641,7 +641,7 @@ object StepFunctionsNs extends js.Object {
          */
     var maxResults: js.UndefOr[PageSize] = js.undefined
     /**
-         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
   }
@@ -649,10 +649,26 @@ object StepFunctionsNs extends js.Object {
   
   trait ListStateMachinesOutput extends js.Object {
     /**
-         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
     var stateMachines: StateMachineList
+  }
+  
+  
+  trait ListTagsForResourceInput extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) for the Step Functions state machine or activity.
+         */
+    var resourceArn: Arn
+  }
+  
+  
+  trait ListTagsForResourceOutput extends js.Object {
+    /**
+         * An array of tags associated with the resource.
+         */
+    var tags: js.UndefOr[TagList] = js.undefined
   }
   
   
@@ -793,6 +809,33 @@ object StepFunctionsNs extends js.Object {
   }
   
   
+  trait Tag extends js.Object {
+    /**
+         * The key of a tag.
+         */
+    var key: js.UndefOr[TagKey] = js.undefined
+    /**
+         * The value of a tag.
+         */
+    var value: js.UndefOr[TagValue] = js.undefined
+  }
+  
+  
+  trait TagResourceInput extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) for the Step Functions state machine or activity.
+         */
+    var resourceArn: Arn
+    /**
+         * The list of tags to add to a resource. Tags may only contain unicode letters, digits, whitespace, or these symbols: _ . : / = + - @.
+         */
+    var tags: TagList
+  }
+  
+  
+  trait TagResourceOutput extends js.Object
+  
+  
   trait TaskFailedEventDetails extends js.Object {
     /**
          * A more detailed explanation of the cause of the failure.
@@ -803,11 +846,11 @@ object StepFunctionsNs extends js.Object {
          */
     var error: js.UndefOr[SensitiveError] = js.undefined
     /**
-         * The service name of the connected service in a task state.
+         * The service name of the resource in a task state.
          */
     var resource: Name
     /**
-         * The action of the connected service called by a task state.
+         * The action of the resource called by a task state.
          */
     var resourceType: Name
   }
@@ -815,16 +858,19 @@ object StepFunctionsNs extends js.Object {
   
   trait TaskScheduledEventDetails extends js.Object {
     /**
-         * The JSON data passed to the connected service referenced in a task state.
+         * The JSON data passed to the resource referenced in a task state.
          */
     var parameters: ConnectorParameters
+    /**
+         * The region of the scheduled task
+         */
     var region: Name
     /**
-         * The service name of the connected service in a task state.
+         * The service name of the resource in a task state.
          */
     var resource: Name
     /**
-         * The action of the connected service called by a task state.
+         * The action of the resource called by a task state.
          */
     var resourceType: Name
     /**
@@ -844,11 +890,11 @@ object StepFunctionsNs extends js.Object {
          */
     var error: js.UndefOr[SensitiveError] = js.undefined
     /**
-         * The service name of the connected service in a task state.
+         * The service name of the resource in a task state.
          */
     var resource: Name
     /**
-         * The action of the connected service called by a task state.
+         * The action of the resource called by a task state.
          */
     var resourceType: Name
   }
@@ -856,11 +902,11 @@ object StepFunctionsNs extends js.Object {
   
   trait TaskStartedEventDetails extends js.Object {
     /**
-         * The service name of the connected service in a task state.
+         * The service name of the resource in a task state.
          */
     var resource: Name
     /**
-         * The action of the connected service called by a task state.
+         * The action of the resource called by a task state.
          */
     var resourceType: Name
   }
@@ -876,11 +922,11 @@ object StepFunctionsNs extends js.Object {
          */
     var error: js.UndefOr[SensitiveError] = js.undefined
     /**
-         * The service name of the connected service in a task state.
+         * The service name of the resource in a task state.
          */
     var resource: Name
     /**
-         * The action of the connected service called by a task state.
+         * The action of the resource called by a task state.
          */
     var resourceType: Name
   }
@@ -888,15 +934,15 @@ object StepFunctionsNs extends js.Object {
   
   trait TaskSubmittedEventDetails extends js.Object {
     /**
-         * The response from a connected service when a task has started.
+         * The response from a resource when a task has started.
          */
     var output: js.UndefOr[SensitiveData] = js.undefined
     /**
-         * The service name of the connected service in a task state.
+         * The service name of the resource in a task state.
          */
     var resource: Name
     /**
-         * The action of the connected service called by a task state.
+         * The action of the resource called by a task state.
          */
     var resourceType: Name
   }
@@ -904,15 +950,15 @@ object StepFunctionsNs extends js.Object {
   
   trait TaskSucceededEventDetails extends js.Object {
     /**
-         * The full JSON response from a connected service when a task has succeeded. This response becomes the output of the related task.
+         * The full JSON response from a resource when a task has succeeded. This response becomes the output of the related task.
          */
     var output: js.UndefOr[SensitiveData] = js.undefined
     /**
-         * The service name of the connected service in a task state.
+         * The service name of the resource in a task state.
          */
     var resource: Name
     /**
-         * The action of the connected service called by a task state.
+         * The action of the resource called by a task state.
          */
     var resourceType: Name
   }
@@ -928,11 +974,11 @@ object StepFunctionsNs extends js.Object {
          */
     var error: js.UndefOr[SensitiveError] = js.undefined
     /**
-         * The service name of the connected service in a task state.
+         * The service name of the resource in a task state.
          */
     var resource: Name
     /**
-         * The action of the connected service called by a task state.
+         * The action of the resource called by a task state.
          */
     var resourceType: Name
   }
@@ -1204,11 +1250,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetActivityTaskOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
        */
     def getExecutionHistory(): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
        */
     def getExecutionHistory(
       callback: js.Function2[
@@ -1218,11 +1264,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
        */
     def getExecutionHistory(params: GetExecutionHistoryInput): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
+       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.
        */
     def getExecutionHistory(
       params: GetExecutionHistoryInput,
@@ -1233,11 +1279,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listActivities(): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listActivities(
       callback: js.Function2[
@@ -1247,11 +1293,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listActivities(params: ListActivitiesInput): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listActivities(
       params: ListActivitiesInput,
@@ -1262,11 +1308,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listExecutions(): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listExecutions(
       callback: js.Function2[
@@ -1276,11 +1322,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listExecutions(params: ListExecutionsInput): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listExecutions(
       params: ListExecutionsInput,
@@ -1291,11 +1337,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listStateMachines(): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listStateMachines(
       callback: js.Function2[
@@ -1305,11 +1351,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listStateMachines(params: ListStateMachinesInput): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
+       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 24 hours. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listStateMachines(
       params: ListStateMachinesInput,
@@ -1319,6 +1365,35 @@ object StepFunctionsNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List tags for a given resource.
+       */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List tags for a given resource.
+       */
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List tags for a given resource.
+       */
+    def listTagsForResource(params: ListTagsForResourceInput): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List tags for a given resource.
+       */
+    def listTagsForResource(
+      params: ListTagsForResourceInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Used by workers to report that the task identified by the taskToken failed.
        */
@@ -1465,6 +1540,64 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Add a tag to a Step Functions resource.
+       */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Add a tag to a Step Functions resource.
+       */
+    def tagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Add a tag to a Step Functions resource.
+       */
+    def tagResource(params: TagResourceInput): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Add a tag to a Step Functions resource.
+       */
+    def tagResource(
+      params: TagResourceInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Remove a tag from a Step Functions resource
+       */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Remove a tag from a Step Functions resource
+       */
+    def untagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Remove a tag from a Step Functions resource
+       */
+    def untagResource(params: UntagResourceInput): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Remove a tag from a Step Functions resource
+       */
+    def untagResource(
+      params: UntagResourceInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
        */
     def updateStateMachine(): awsDashSdkLib.libRequestMod.Request[UpdateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1494,6 +1627,21 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
+  
+  
+  trait UntagResourceInput extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) for the Step Functions state machine or activity.
+         */
+    var resourceArn: Arn
+    /**
+         * The list of tags to remove from the resource.
+         */
+    var tagKeys: TagKeyList
+  }
+  
+  
+  trait UntagResourceOutput extends js.Object
   
   
   trait UpdateStateMachineInput extends js.Object {
@@ -1540,6 +1688,10 @@ object StepFunctionsNs extends js.Object {
   type SensitiveError = java.lang.String
   type StateMachineList = js.Array[StateMachineListItem]
   type StateMachineStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   type TaskToken = java.lang.String
   type TimeoutInSeconds = scala.Double
   type Timestamp = stdLib.Date

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object AdazzleReactDataGridNs {
   type ColumnEventCallback = js.Function2[
-    /* ev */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Any], 
+    /* ev */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Any, reactLib.Event], 
     /* args */ reactDashDataDashGridLib.Anon_RowIdx, 
     scala.Unit
   ]

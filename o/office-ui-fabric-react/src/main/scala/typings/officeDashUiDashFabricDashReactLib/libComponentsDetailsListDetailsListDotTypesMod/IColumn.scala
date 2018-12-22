@@ -129,7 +129,7 @@ trait IColumn extends js.Object {
        */
   var onColumnClick: js.UndefOr[
     js.Function2[
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* column */ IColumn, 
       _
     ]
@@ -140,7 +140,9 @@ trait IColumn extends js.Object {
   var onColumnContextMenu: js.UndefOr[
     js.Function2[
       /* column */ js.UndefOr[IColumn], 
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+      ], 
       _
     ]
   ] = js.undefined

@@ -394,23 +394,23 @@ object typescriptModMembers extends js.Object {
   ): typescriptLib.typescriptMod.tsNs.BinaryExpression = js.native
   def createBindingElement(
     dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: java.lang.String,
     initializer: typescriptLib.typescriptMod.tsNs.Expression
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.tsNs.BindingName
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.tsNs.BindingName,
     initializer: typescriptLib.typescriptMod.tsNs.Expression
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
@@ -434,23 +434,23 @@ object typescriptModMembers extends js.Object {
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.tsNs.DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.tsNs.DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: java.lang.String,
     initializer: typescriptLib.typescriptMod.tsNs.Expression
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.tsNs.DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.tsNs.BindingName
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.tsNs.DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.tsNs.BindingName,
     initializer: typescriptLib.typescriptMod.tsNs.Expression
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
@@ -1012,25 +1012,25 @@ object typescriptModMembers extends js.Object {
   /** Create a unique name based on the supplied text. This does not consider names injected by the transformer. */
   def createFileLevelUniqueName(text: java.lang.String): typescriptLib.typescriptMod.tsNs.Identifier = js.native
   def createFor(
-    initializer: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ForInitializer,
+    initializer: typescriptLib.typescriptMod.tsNs.ForInitializer | js.UndefOr[scala.Nothing],
     condition: js.UndefOr[scala.Nothing],
     incrementor: js.UndefOr[scala.Nothing],
     statement: typescriptLib.typescriptMod.tsNs.Statement
   ): typescriptLib.typescriptMod.tsNs.ForStatement = js.native
   def createFor(
-    initializer: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ForInitializer,
+    initializer: typescriptLib.typescriptMod.tsNs.ForInitializer | js.UndefOr[scala.Nothing],
     condition: js.UndefOr[scala.Nothing],
     incrementor: typescriptLib.typescriptMod.tsNs.Expression,
     statement: typescriptLib.typescriptMod.tsNs.Statement
   ): typescriptLib.typescriptMod.tsNs.ForStatement = js.native
   def createFor(
-    initializer: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ForInitializer,
+    initializer: typescriptLib.typescriptMod.tsNs.ForInitializer | js.UndefOr[scala.Nothing],
     condition: typescriptLib.typescriptMod.tsNs.Expression,
     incrementor: js.UndefOr[scala.Nothing],
     statement: typescriptLib.typescriptMod.tsNs.Statement
   ): typescriptLib.typescriptMod.tsNs.ForStatement = js.native
   def createFor(
-    initializer: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ForInitializer,
+    initializer: typescriptLib.typescriptMod.tsNs.ForInitializer | js.UndefOr[scala.Nothing],
     condition: typescriptLib.typescriptMod.tsNs.Expression,
     incrementor: typescriptLib.typescriptMod.tsNs.Expression,
     statement: typescriptLib.typescriptMod.tsNs.Statement
@@ -1713,7 +1713,7 @@ object typescriptModMembers extends js.Object {
     decorators: js.Array[typescriptLib.typescriptMod.tsNs.Decorator],
     modifiers: js.Array[typescriptLib.typescriptMod.tsNs.Modifier],
     name: typescriptLib.typescriptMod.tsNs.ModuleName,
-    body: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ModuleBody,
+    body: typescriptLib.typescriptMod.tsNs.ModuleBody | js.UndefOr[scala.Nothing],
     flags: typescriptLib.typescriptMod.tsNs.NodeFlags
   ): typescriptLib.typescriptMod.tsNs.ModuleDeclaration = js.native
   def createModuleDeclaration(
@@ -1731,7 +1731,7 @@ object typescriptModMembers extends js.Object {
     decorators: js.Array[typescriptLib.typescriptMod.tsNs.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.tsNs.ModuleName,
-    body: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ModuleBody,
+    body: typescriptLib.typescriptMod.tsNs.ModuleBody | js.UndefOr[scala.Nothing],
     flags: typescriptLib.typescriptMod.tsNs.NodeFlags
   ): typescriptLib.typescriptMod.tsNs.ModuleDeclaration = js.native
   def createModuleDeclaration(
@@ -1749,7 +1749,7 @@ object typescriptModMembers extends js.Object {
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.Array[typescriptLib.typescriptMod.tsNs.Modifier],
     name: typescriptLib.typescriptMod.tsNs.ModuleName,
-    body: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ModuleBody,
+    body: typescriptLib.typescriptMod.tsNs.ModuleBody | js.UndefOr[scala.Nothing],
     flags: typescriptLib.typescriptMod.tsNs.NodeFlags
   ): typescriptLib.typescriptMod.tsNs.ModuleDeclaration = js.native
   def createModuleDeclaration(
@@ -1767,7 +1767,7 @@ object typescriptModMembers extends js.Object {
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.tsNs.ModuleName,
-    body: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ModuleBody,
+    body: typescriptLib.typescriptMod.tsNs.ModuleBody | js.UndefOr[scala.Nothing],
     flags: typescriptLib.typescriptMod.tsNs.NodeFlags
   ): typescriptLib.typescriptMod.tsNs.ModuleDeclaration = js.native
   def createModuleDeclaration(
@@ -4410,26 +4410,26 @@ object typescriptModMembers extends js.Object {
   def updateBindingElement(
     node: typescriptLib.typescriptMod.tsNs.BindingElement,
     dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.tsNs.BindingName
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
   def updateBindingElement(
     node: typescriptLib.typescriptMod.tsNs.BindingElement,
     dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.tsNs.BindingName,
     initializer: typescriptLib.typescriptMod.tsNs.Expression
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
   def updateBindingElement(
     node: typescriptLib.typescriptMod.tsNs.BindingElement,
     dotDotDotToken: typescriptLib.typescriptMod.tsNs.DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.tsNs.BindingName
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
   def updateBindingElement(
     node: typescriptLib.typescriptMod.tsNs.BindingElement,
     dotDotDotToken: typescriptLib.typescriptMod.tsNs.DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.PropertyName,
+    propertyName: typescriptLib.typescriptMod.tsNs.PropertyName | js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.tsNs.BindingName,
     initializer: typescriptLib.typescriptMod.tsNs.Expression
   ): typescriptLib.typescriptMod.tsNs.BindingElement = js.native
@@ -4973,28 +4973,28 @@ object typescriptModMembers extends js.Object {
   ): typescriptLib.typescriptMod.tsNs.ExternalModuleReference = js.native
   def updateFor(
     node: typescriptLib.typescriptMod.tsNs.ForStatement,
-    initializer: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ForInitializer,
+    initializer: typescriptLib.typescriptMod.tsNs.ForInitializer | js.UndefOr[scala.Nothing],
     condition: js.UndefOr[scala.Nothing],
     incrementor: js.UndefOr[scala.Nothing],
     statement: typescriptLib.typescriptMod.tsNs.Statement
   ): typescriptLib.typescriptMod.tsNs.ForStatement = js.native
   def updateFor(
     node: typescriptLib.typescriptMod.tsNs.ForStatement,
-    initializer: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ForInitializer,
+    initializer: typescriptLib.typescriptMod.tsNs.ForInitializer | js.UndefOr[scala.Nothing],
     condition: js.UndefOr[scala.Nothing],
     incrementor: typescriptLib.typescriptMod.tsNs.Expression,
     statement: typescriptLib.typescriptMod.tsNs.Statement
   ): typescriptLib.typescriptMod.tsNs.ForStatement = js.native
   def updateFor(
     node: typescriptLib.typescriptMod.tsNs.ForStatement,
-    initializer: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ForInitializer,
+    initializer: typescriptLib.typescriptMod.tsNs.ForInitializer | js.UndefOr[scala.Nothing],
     condition: typescriptLib.typescriptMod.tsNs.Expression,
     incrementor: js.UndefOr[scala.Nothing],
     statement: typescriptLib.typescriptMod.tsNs.Statement
   ): typescriptLib.typescriptMod.tsNs.ForStatement = js.native
   def updateFor(
     node: typescriptLib.typescriptMod.tsNs.ForStatement,
-    initializer: js.UndefOr[scala.Nothing] | typescriptLib.typescriptMod.tsNs.ForInitializer,
+    initializer: typescriptLib.typescriptMod.tsNs.ForInitializer | js.UndefOr[scala.Nothing],
     condition: typescriptLib.typescriptMod.tsNs.Expression,
     incrementor: typescriptLib.typescriptMod.tsNs.Expression,
     statement: typescriptLib.typescriptMod.tsNs.Statement

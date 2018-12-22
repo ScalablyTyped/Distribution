@@ -20,7 +20,7 @@ trait SharedDropdownMenuProps
   var onVisibilityChange: js.UndefOr[
     js.Function2[
       /* visible */ scala.Boolean, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

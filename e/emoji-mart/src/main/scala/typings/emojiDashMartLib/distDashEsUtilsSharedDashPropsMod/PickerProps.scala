@@ -39,7 +39,7 @@ trait PickerProps extends js.Object {
   var onClick: js.UndefOr[
     js.Function2[
       /* emoji */ emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

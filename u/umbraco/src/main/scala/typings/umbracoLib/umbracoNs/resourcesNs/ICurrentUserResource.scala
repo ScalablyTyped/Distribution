@@ -25,7 +25,7 @@ trait ICurrentUserResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the user array.
            *
            */
-  def changePassword(changePasswordArgs: js.Any): js.Any
+  def changePassword(changePasswordArgs: js.Any): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.currentUserResource#getMembershipProviderConfig

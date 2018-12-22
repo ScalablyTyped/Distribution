@@ -140,7 +140,7 @@ class Bar[X, Y] ()
        * This means it will totally ignore the range band width of category scales,
        * so this probably doesn't make sense to use with category axes.
        */
-  def barEnd(end: plottableLib.buildSrcCoreInterfacesMod.IAccessor[X | scala.Double]): this.type = js.native
+  def barEnd(end: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Double | X]): this.type = js.native
   /**
        * Sets the accessor for the bar "end", which is used to compute the width of
        * each bar on the x axis (y axis if horizontal).

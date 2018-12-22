@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "anydb-sql-migrations"
-version := "2.3.1-1e0956"
+version := "2.3.1-24c1c1"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "any-db" % "2.1.0-dt-20180910Z-2a9034",
-  "org.scalablytyped" %%% "any-db-transaction" % "2.2.1-dt-20180910Z-8c65a3",
-  "org.scalablytyped" %%% "anydb-sql" % "0.7.0-11e625",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181214Z-21934a",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-17fe49",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
-  "org.scalablytyped" %%% "sqlite3" % "3.1-dt-20180910Z-b8d529",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
-  "org.scalablytyped" %%% "yargs" % "12.0-dt-20180929Z-20416f")
+  "org.scalablytyped" %%% "any-db" % "2.1.0-dt-20180214Z-0f532b",
+  "org.scalablytyped" %%% "any-db-transaction" % "2.2.1-dt-20180214Z-a8d4fc",
+  "org.scalablytyped" %%% "anydb-sql" % "0.7.0-b634b9",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-8f594d",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-b7dcf8",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
+  "org.scalablytyped" %%% "sqlite3" % "3.1-dt-20180322Z-61667c",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
+  "org.scalablytyped" %%% "yargs" % "12.0-dt-20181220Z-2479ce")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

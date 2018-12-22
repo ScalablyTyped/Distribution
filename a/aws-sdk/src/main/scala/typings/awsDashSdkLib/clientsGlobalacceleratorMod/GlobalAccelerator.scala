@@ -52,14 +52,14 @@ trait GlobalAccelerator
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Create an endpoint group for the specified accelerator. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
+     * Create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
      */
   def createEndpointGroup(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.CreateEndpointGroupResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Create an endpoint group for the specified accelerator. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
+     * Create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
      */
   def createEndpointGroup(
     callback: js.Function2[
@@ -72,14 +72,14 @@ trait GlobalAccelerator
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Create an endpoint group for the specified accelerator. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
+     * Create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
      */
   def createEndpointGroup(params: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.CreateEndpointGroupRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.CreateEndpointGroupResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Create an endpoint group for the specified accelerator. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
+     * Create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
      */
   def createEndpointGroup(
     params: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.CreateEndpointGroupRequest,
@@ -134,21 +134,21 @@ trait GlobalAccelerator
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Delete an accelerator. Note: before you can delete an accelerator, you must disable it.
+     * Delete an accelerator. Note: before you can delete an accelerator, you must disable it and remove all dependent resources (listeners and endpoint groups).
      */
   def deleteAccelerator(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Delete an accelerator. Note: before you can delete an accelerator, you must disable it.
+     * Delete an accelerator. Note: before you can delete an accelerator, you must disable it and remove all dependent resources (listeners and endpoint groups).
      */
   def deleteAccelerator(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Delete an accelerator. Note: before you can delete an accelerator, you must disable it.
+     * Delete an accelerator. Note: before you can delete an accelerator, you must disable it and remove all dependent resources (listeners and endpoint groups).
      */
   def deleteAccelerator(params: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.DeleteAcceleratorRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Delete an accelerator. Note: before you can delete an accelerator, you must disable it.
+     * Delete an accelerator. Note: before you can delete an accelerator, you must disable it and remove all dependent resources (listeners and endpoint groups).
      */
   def deleteAccelerator(
     params: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.DeleteAcceleratorRequest,

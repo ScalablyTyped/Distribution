@@ -52,7 +52,7 @@ trait DOMMatrix extends DOMMatrixReadOnly {
 @js.native
 object DOMMatrix
   extends org.scalablytyped.runtime.Instantiable0[DOMMatrix]
-     with org.scalablytyped.runtime.Instantiable1[(/* init */ java.lang.String) | (/* init */ js.Array[scala.Double]), DOMMatrix] {
+     with org.scalablytyped.runtime.Instantiable1[(/* init */ js.Array[scala.Double]) | (/* init */ java.lang.String), DOMMatrix] {
   def fromFloat32Array(array32: stdLib.Float32Array): xtermLib.DOMMatrix = js.native
   def fromFloat64Array(array64: stdLib.Float64Array): xtermLib.DOMMatrix = js.native
   def fromMatrix(): xtermLib.DOMMatrix = js.native

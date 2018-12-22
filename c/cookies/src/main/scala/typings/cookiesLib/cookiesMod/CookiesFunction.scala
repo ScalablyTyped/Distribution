@@ -22,7 +22,7 @@ trait CookiesFunction
 org.scalablytyped.runtime.Instantiable3[
       /* request */ nodeLib.httpMod.IncomingMessage, 
       /* response */ nodeLib.httpMod.ServerResponse, 
-      (/* options */ cookiesLib.cookiesMod.CookiesNs.Option) | (/* options */ js.Array[java.lang.String]) | (/* options */ keygripLib.keygripMod.Keygrip), 
+      (/* options */ js.Array[java.lang.String]) | (/* options */ keygripLib.keygripMod.Keygrip) | (/* options */ cookiesLib.cookiesMod.CookiesNs.Option), 
       Cookies
     ] {
   var Cookie: cookiesLib.Anon_Name = js.native

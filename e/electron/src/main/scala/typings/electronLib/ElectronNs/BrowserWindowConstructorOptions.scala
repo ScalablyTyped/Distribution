@@ -22,9 +22,8 @@ trait BrowserWindowConstructorOptions extends js.Object {
   var autoHideMenuBar: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Window's background color as a hexadecimal value, like #66CD00 or #FFF or
-       * #80FFFFFF (alpha is supported). Default is #FFF (white). If transparent is set
-       * to true, only values with transparent (#00-------) or opaque (#FF-----) alpha
-       * values are respected.
+       * #80FFFFFF (alpha is supported if transparent is set to true). Default is #FFF
+       * (white).
        */
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   /**

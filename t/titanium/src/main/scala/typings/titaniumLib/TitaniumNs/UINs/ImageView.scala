@@ -177,7 +177,7 @@ trait ImageView extends View {
   			 */
   def setImages(
     images: js.Array[
-      java.lang.String | titaniumLib.TitaniumNs.Blob | titaniumLib.TitaniumNs.FilesystemNs.File
+      titaniumLib.TitaniumNs.Blob | titaniumLib.TitaniumNs.FilesystemNs.File | java.lang.String
     ]
   ): scala.Unit = js.native
   /**

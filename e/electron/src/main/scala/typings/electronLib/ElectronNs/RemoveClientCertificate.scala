@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait RemoveClientCertificate extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/remove-client-certificate
+  // Docs: http://electronjs.org/docs/api/structures/remove-client-certificate
   /**
        * Origin of the server whose associated client certificate must be removed from
        * the cache.

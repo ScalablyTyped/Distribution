@@ -684,10 +684,10 @@ object rxjsModMembers extends js.Object {
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
   ): js.Function1[/* arg1 */ A1, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindCallback")
-  def bindCallback_ARFunction1[A, R](callbackFunc: js.Function1[/* repeated */A | (js.Function1[/* repeated */R, _]), _]): js.Function1[/* repeated */A, rxjsLib.internalObservableMod.Observable[js.Array[R]]] = js.native
+  def bindCallback_ARFunction1[A, R](callbackFunc: js.Function1[A | (js.Function1[/* repeated */R, _]), _]): js.Function1[/* repeated */A, rxjsLib.internalObservableMod.Observable[js.Array[R]]] = js.native
   @JSName("bindCallback")
   def bindCallback_ARFunction1[A, R](
-    callbackFunc: js.Function1[/* repeated */A | (js.Function1[/* repeated */R, _]), _],
+    callbackFunc: js.Function1[A | (js.Function1[/* repeated */R, _]), _],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
   ): js.Function1[/* repeated */A, rxjsLib.internalObservableMod.Observable[js.Array[R]]] = js.native
   @JSName("bindCallback")
@@ -1862,9 +1862,9 @@ object rxjsModMembers extends js.Object {
   ): rxjsLib.internalObservableMod.Observable[js.Tuple6[T, T2, T3, T4, T5, T6]] = js.native
   @JSName("forkJoin")
   def forkJoin_T[T](sources: rxjsLib.internalTypesMod.ObservableInput[T]*): rxjsLib.internalObservableMod.Observable[js.Array[T]] = js.native
-  def from[T](input: rxjsLib.internalTypesMod.ObservableInput[T | rxjsLib.internalTypesMod.ObservableInput[T]]): rxjsLib.internalObservableMod.Observable[rxjsLib.internalObservableMod.Observable[T]] = js.native
+  def from[T](input: rxjsLib.internalTypesMod.ObservableInput[rxjsLib.internalTypesMod.ObservableInput[T] | T]): rxjsLib.internalObservableMod.Observable[rxjsLib.internalObservableMod.Observable[T]] = js.native
   def from[T](
-    input: rxjsLib.internalTypesMod.ObservableInput[T | rxjsLib.internalTypesMod.ObservableInput[T]],
+    input: rxjsLib.internalTypesMod.ObservableInput[rxjsLib.internalTypesMod.ObservableInput[T] | T],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
   ): rxjsLib.internalObservableMod.Observable[rxjsLib.internalObservableMod.Observable[T]] = js.native
   def fromEvent[T](target: rxjsLib.internalObservableFromEventMod.FromEventTarget[T], eventName: java.lang.String): rxjsLib.internalObservableMod.Observable[T] = js.native

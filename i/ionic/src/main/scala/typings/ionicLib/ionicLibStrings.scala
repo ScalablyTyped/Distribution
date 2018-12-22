@@ -82,6 +82,9 @@ object ionicLibStrings {
   sealed trait capacitor extends js.Object
   
   @js.native
+  sealed trait compile extends js.Object
+  
+  @js.native
   sealed trait cordova extends js.Object
   
   @js.native
@@ -208,6 +211,7 @@ object ionicLibStrings {
   def `build:before`: `build:before` = "build:before".asInstanceOf[`build:before`]
   def canary: canary = "canary".asInstanceOf[canary]
   def capacitor: capacitor = "capacitor".asInstanceOf[capacitor]
+  def compile: compile = "compile".asInstanceOf[compile]
   def cordova: cordova = "cordova".asInstanceOf[cordova]
   def custom: custom = "custom".asInstanceOf[custom]
   def development: development = "development".asInstanceOf[development]

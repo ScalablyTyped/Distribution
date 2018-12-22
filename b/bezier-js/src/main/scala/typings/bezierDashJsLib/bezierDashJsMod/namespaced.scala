@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced protected ()
   extends bezierDashJsLib.BezierJsNs.Bezier {
-  def this(points: js.Array[bezierDashJsLib.BezierJsNs.Point | scala.Double]) = this()
+  def this(points: js.Array[scala.Double | bezierDashJsLib.BezierJsNs.Point]) = this()
   def this(p1: bezierDashJsLib.BezierJsNs.Point, p2: bezierDashJsLib.BezierJsNs.Point, p3: bezierDashJsLib.BezierJsNs.Point) = this()
   def this(p1: bezierDashJsLib.BezierJsNs.Point, p2: bezierDashJsLib.BezierJsNs.Point, p3: bezierDashJsLib.BezierJsNs.Point, p4: bezierDashJsLib.BezierJsNs.Point) = this()
   def this(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double, x3: scala.Double, y3: scala.Double) = this()

@@ -32,7 +32,7 @@ trait FormApi extends js.Object {
   def setValue(fieldName: java.lang.String, value: js.Any): scala.Unit
   def setWarning(field: java.lang.String, warning: java.lang.String): scala.Unit
   // Methods
-  def submitForm(event: reactLib.reactMod.ReactNs.SyntheticEvent[_]): scala.Unit
+  def submitForm(event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]): scala.Unit
   def swapValues(name: java.lang.String, index1: scala.Double, index2: scala.Double): scala.Unit
 }
 

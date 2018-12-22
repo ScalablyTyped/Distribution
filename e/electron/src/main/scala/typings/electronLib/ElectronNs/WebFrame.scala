@@ -40,7 +40,7 @@ trait WebFrame extends EventEmitter {
        * the property would be null if top frame is not in the current renderer process.
        */
   var top: js.UndefOr[WebFrame] = js.native
-  // Docs: http://electron.atom.io/docs/api/web-frame
+  // Docs: http://electronjs.org/docs/api/web-frame
   /**
        * Attempts to free memory that is no longer being used (like images from a
        * previous navigation). Note that blindly calling this method probably makes
@@ -73,15 +73,15 @@ trait WebFrame extends EventEmitter {
     callback: js.Function1[/* result */ js.Any, scala.Unit]
   ): js.Promise[_] = js.native
   /**
-       * Work like executeJavaScript but evaluates scripts in isolated context.
+       * Work like executeJavaScript but evaluates scripts in an isolated context.
        */
   def executeJavaScriptInIsolatedWorld(worldId: scala.Double, scripts: js.Array[WebSource]): scala.Unit = js.native
   /**
-       * Work like executeJavaScript but evaluates scripts in isolated context.
+       * Work like executeJavaScript but evaluates scripts in an isolated context.
        */
   def executeJavaScriptInIsolatedWorld(worldId: scala.Double, scripts: js.Array[WebSource], userGesture: scala.Boolean): scala.Unit = js.native
   /**
-       * Work like executeJavaScript but evaluates scripts in isolated context.
+       * Work like executeJavaScript but evaluates scripts in an isolated context.
        */
   def executeJavaScriptInIsolatedWorld(
     worldId: scala.Double,

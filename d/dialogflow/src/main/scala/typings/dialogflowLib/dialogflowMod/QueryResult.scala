@@ -15,7 +15,7 @@ trait QueryResult extends js.Object {
   var intent: Intent
   var intentDetectionConfidence: scala.Double
   var languageCode: java.lang.String
-  var outputContexts: js.Array[Context]
+  var outputContexts: js.Array[Context[java.lang.String, _]]
   var parameters: js.Any
   var queryText: java.lang.String
   var sentimentAnalysisResult: js.UndefOr[dialogflowLib.Anon_QueryTextSentiment] = js.undefined

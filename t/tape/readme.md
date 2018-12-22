@@ -5,5 +5,6 @@
 //                 Haoqun Jiang <https://github.com/sodatea>
 //                 Dennis Schwartz <https://github.com/DennisSchwartz>
 //                 Michael Henretty <https://github.com/mikehenrty>
+//                 Rafał Ostrowski <https://github.com/rostrowski>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

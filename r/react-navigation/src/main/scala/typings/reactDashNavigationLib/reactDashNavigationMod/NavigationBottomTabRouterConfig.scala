@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait NavigationBottomTabRouterConfig extends NavigationTabRouterConfigBase {
-  var navigationOptions: js.UndefOr[NavigationScreenConfig[NavigationBottomTabScreenOptions]] = js.undefined
+  var defaultNavigationOptions: js.UndefOr[NavigationScreenConfig[NavigationBottomTabScreenOptions]] = js.undefined
+  var navigationOptions: js.UndefOr[NavigationTabRouterConfigBase] = js.undefined
 }
 

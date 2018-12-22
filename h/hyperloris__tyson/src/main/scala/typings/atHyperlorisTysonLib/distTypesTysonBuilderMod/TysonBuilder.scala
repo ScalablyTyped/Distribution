@@ -18,7 +18,7 @@ class TysonBuilder () extends js.Object {
        * @returns {Tyson} a Tyson instance
        * @memberof TysonBuilder
        */
-  def build(): atHyperlorisTysonLib.distTypesTysonMod.Tyson = js.native
+  def build(): js.Any = js.native
   /**
        * Configure Tyson to serialize null fields. By default, Tyson omits all fields that are null
        * during serialization.

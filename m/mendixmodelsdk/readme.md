@@ -2,6 +2,10 @@
 /**
  * Module containing several often-used interfaces.
  */
+/**
+ * Convenience to be able to export everything at once.
+ */
+/** Highest supported Metamodel version: 7.22.0 */
 /*
 The MIT License (MIT)
 
@@ -26,14 +30,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-/** Current SDK version: 4.18.0 */
-/**
- * Convenience to be able to export everything at once.
- */
-/** Highest supported Metamodel version: 7.22.0 */
-/**
- * The `utils` module contains various utility interfaces and functions.
- */
 /**
  * "Something" that contains properties.
  * Concrete sub types: MxElement, MxStructuralUnit, MxModelUnit.
@@ -50,4 +46,8 @@ THE SOFTWARE.
  * This is useful to determine product version and to be able to re-export the MPR as part of an MPK
  * that can be read in by the Business Modeler.
  */
+/**
+ * The `utils` module contains various utility interfaces and functions.
+ */
+/** Current SDK version: 4.18.0 */
 ```

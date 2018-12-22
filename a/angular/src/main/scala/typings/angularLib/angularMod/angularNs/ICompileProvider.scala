@@ -29,8 +29,13 @@ trait ICompileProvider extends IServiceProvider {
   def cssClassDirectivesEnabled(enabled: scala.Boolean): ICompileProvider = js.native
   def debugInfoEnabled(): scala.Boolean = js.native
   def debugInfoEnabled(enabled: scala.Boolean): ICompileProvider = js.native
-  def directive[TScope /* <: IScope */](name: java.lang.String, directiveFactory: Injectable[IDirectiveFactory[TScope]]): ICompileProvider = js.native
-  def directive[TScope /* <: IScope */](`object`: org.scalablytyped.runtime.StringDictionary[Injectable[IDirectiveFactory[TScope]]]): ICompileProvider = js.native
+  def directive[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](
+    name: java.lang.String,
+    directiveFactory: Injectable[IDirectiveFactory[TScope, TElement, TAttributes, TController]]
+  ): ICompileProvider = js.native
+  def directive[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](
+    `object`: org.scalablytyped.runtime.StringDictionary[Injectable[IDirectiveFactory[TScope, TElement, TAttributes, TController]]]
+  ): ICompileProvider = js.native
   def imgSrcSanitizationWhitelist(): stdLib.RegExp = js.native
   def imgSrcSanitizationWhitelist(regexp: stdLib.RegExp): ICompileProvider = js.native
   /**

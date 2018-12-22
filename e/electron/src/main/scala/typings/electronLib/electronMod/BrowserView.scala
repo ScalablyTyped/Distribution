@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BrowserView ()
   extends electronLib.ElectronNs.BrowserView {
-  // Docs: http://electron.atom.io/docs/api/browser-view
+  // Docs: http://electronjs.org/docs/api/browser-view
   def this(options: electronLib.ElectronNs.BrowserViewConstructorOptions) = this()
 }
 

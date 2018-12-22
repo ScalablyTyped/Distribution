@@ -36,7 +36,7 @@ trait ITinyMceService extends js.Object {
           * @param {Object} editor the TinyMCE editor instance
           * @param {Object} $scope the current controller scope
           */
-  def createInsertEmbeddedMedia(editor: js.Object, $scope: js.Any): scala.Unit
+  def createInsertEmbeddedMedia(editor: js.Object, $scope: angularLib.angularMod.angularNs.IScope): scala.Unit
   /**
           * @ngdoc method
           * @name umbraco.services.tinyMceService#createUmbracoMacro
@@ -48,7 +48,7 @@ trait ITinyMceService extends js.Object {
           * @param {Object} editor the TinyMCE editor instance
           * @param {Object} $scope the current controller scope
           */
-  def createInsertMacro(editor: js.Object, $scope: js.Any): scala.Unit
+  def createInsertMacro(editor: js.Object, $scope: angularLib.angularMod.angularNs.IScope): scala.Unit
   /**
           * @ngdoc method
           * @name umbraco.services.tinyMceService#createMediaPicker

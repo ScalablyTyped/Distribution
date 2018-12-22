@@ -16,7 +16,7 @@ trait Anon_Opts
      with org.scalablytyped.runtime.Instantiable1[/* write */ Write, nodeLib.streamMod.Writable]
      with org.scalablytyped.runtime.Instantiable2[
       (/* opts */ nodeLib.streamMod.internalNs.WritableOptions) | (/* write */ Write), 
-      (/* write */ Write) | (/* flush */ Flush), 
+      (/* flush */ Flush) | (/* write */ Write), 
       nodeLib.streamMod.Writable
     ] {
   def apply(opts: nodeLib.streamMod.internalNs.WritableOptions, write: Write): nodeLib.streamMod.Writable = js.native

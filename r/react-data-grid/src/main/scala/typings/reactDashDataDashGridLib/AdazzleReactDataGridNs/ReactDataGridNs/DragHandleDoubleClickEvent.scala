@@ -14,7 +14,7 @@ trait DragHandleDoubleClickEvent[T] extends js.Object {
   /**
            * The double click event.
            */
-  var e: reactLib.reactMod.ReactNs.SyntheticEvent[_]
+  var e: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]
   /**
            * The column where the double click occurred.
            */

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StrategyStatic
   extends org.scalablytyped.runtime.Instantiable2[
-      (/* options */ StrategyOptionsWithRequest) | (/* options */ StrategyOptions), 
-      (/* verify */ VerifyFunctionWithRequest) | (/* verify */ VerifyFunction), 
+      (/* options */ StrategyOptions) | (/* options */ StrategyOptionsWithRequest), 
+      (/* verify */ VerifyFunction) | (/* verify */ VerifyFunctionWithRequest), 
       StrategyInstance
     ]
 

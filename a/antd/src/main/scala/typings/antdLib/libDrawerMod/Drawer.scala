@@ -25,7 +25,7 @@ trait Drawer
   def getPushTransform_right(placement: antdLib.antdLibStrings.right): js.UndefOr[java.lang.String] = js.native
   @JSName("getPushTransform")
   def getPushTransform_top(placement: antdLib.antdLibStrings.top): js.UndefOr[java.lang.String] = js.native
-  def getRcDrawerStyle(): antdLib.Anon_OffsetBlockEnd = js.native
+  def getRcDrawerStyle(): antdLib.Anon_Transform | antdLib.Anon_OffsetBlockEnd = js.native
   def onDestoryTransitionEnd(): scala.Unit = js.native
   def onMaskClick(e: EventType): scala.Unit = js.native
   def pull(): scala.Unit = js.native

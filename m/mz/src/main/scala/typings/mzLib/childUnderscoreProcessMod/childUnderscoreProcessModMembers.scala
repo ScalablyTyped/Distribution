@@ -13,7 +13,7 @@ object childUnderscoreProcessModMembers extends js.Object {
   def exec(
     command: java.lang.String,
     callback: js.Function3[
-      nodeLib.childUnderscoreProcessMod.ExecException | scala.Null | (/* error */ nodeLib.Error), 
+      (/* error */ nodeLib.Error) | nodeLib.childUnderscoreProcessMod.ExecException | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -90,9 +90,9 @@ object childUnderscoreProcessModMembers extends js.Object {
     command: java.lang.String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      nodeLib.childUnderscoreProcessMod.ExecException | scala.Null | (/* error */ nodeLib.Error), 
-      java.lang.String | nodeLib.Buffer, 
-      java.lang.String | nodeLib.Buffer, 
+      (/* error */ nodeLib.Error) | nodeLib.childUnderscoreProcessMod.ExecException | scala.Null, 
+      nodeLib.Buffer | (/* stdout */ java.lang.String), 
+      nodeLib.Buffer | (/* stderr */ java.lang.String), 
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
@@ -130,7 +130,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     command: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecOptions,
     callback: js.Function3[
-      nodeLib.childUnderscoreProcessMod.ExecException | scala.Null | (/* error */ nodeLib.Error), 
+      (/* error */ nodeLib.Error) | nodeLib.childUnderscoreProcessMod.ExecException | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -141,9 +141,9 @@ object childUnderscoreProcessModMembers extends js.Object {
     command: java.lang.String,
     options: scala.Null,
     callback: js.Function3[
-      nodeLib.childUnderscoreProcessMod.ExecException | scala.Null | (/* error */ nodeLib.Error), 
-      java.lang.String | nodeLib.Buffer, 
-      java.lang.String | nodeLib.Buffer, 
+      (/* error */ nodeLib.Error) | nodeLib.childUnderscoreProcessMod.ExecException | scala.Null, 
+      nodeLib.Buffer | (/* stdout */ java.lang.String), 
+      nodeLib.Buffer | (/* stderr */ java.lang.String), 
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
@@ -153,7 +153,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     file: java.lang.String,
     args: js.Array[java.lang.String],
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -201,7 +201,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     args: js.Array[java.lang.String],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ nodeLib.Buffer, 
       /* stderr */ nodeLib.Buffer, 
       scala.Unit
@@ -228,7 +228,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     args: js.Array[java.lang.String],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -239,7 +239,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     args: js.Array[java.lang.String],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -261,9 +261,9 @@ object childUnderscoreProcessModMembers extends js.Object {
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
-      java.lang.String | nodeLib.Buffer, 
-      java.lang.String | nodeLib.Buffer, 
+      (/* error */ nodeLib.Error) | scala.Null, 
+      nodeLib.Buffer | (/* stdout */ java.lang.String), 
+      nodeLib.Buffer | (/* stderr */ java.lang.String), 
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
@@ -298,7 +298,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     args: js.UndefOr[scala.Nothing],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ nodeLib.Buffer, 
       /* stderr */ nodeLib.Buffer, 
       scala.Unit
@@ -325,7 +325,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     args: js.UndefOr[scala.Nothing],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -336,7 +336,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     args: js.UndefOr[scala.Nothing],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -358,9 +358,9 @@ object childUnderscoreProcessModMembers extends js.Object {
     file: java.lang.String,
     args: scala.Null,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
-      java.lang.String | nodeLib.Buffer, 
-      java.lang.String | nodeLib.Buffer, 
+      (/* error */ nodeLib.Error) | scala.Null, 
+      nodeLib.Buffer | (/* stdout */ java.lang.String), 
+      nodeLib.Buffer | (/* stderr */ java.lang.String), 
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
@@ -395,7 +395,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     args: scala.Null,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ nodeLib.Buffer, 
       /* stderr */ nodeLib.Buffer, 
       scala.Unit
@@ -422,7 +422,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     args: scala.Null,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -433,7 +433,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     args: scala.Null,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -454,7 +454,7 @@ object childUnderscoreProcessModMembers extends js.Object {
   def execFile(
     file: java.lang.String,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -485,7 +485,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     file: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ nodeLib.Buffer, 
       /* stderr */ nodeLib.Buffer, 
       scala.Unit
@@ -512,7 +512,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     file: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit
@@ -523,7 +523,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     file: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions,
     callback: js.Function3[
-      nodeLib.Error | scala.Null, 
+      (/* error */ nodeLib.Error) | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       scala.Unit

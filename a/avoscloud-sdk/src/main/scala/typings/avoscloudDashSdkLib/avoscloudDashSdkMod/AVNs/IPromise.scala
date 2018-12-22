@@ -24,10 +24,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IPromise[T] extends js.Object {
-  def `then`[U](resolvedCallback: js.Function1[/* value */ T, U | IPromise[U]]): IPromise[T] = js.native
+  def `then`[U](resolvedCallback: js.Function1[/* value */ T, IPromise[U] | U]): IPromise[T] = js.native
   def `then`[U](
-    resolvedCallback: js.Function1[/* value */ T, U | IPromise[U]],
-    rejectedCallback: js.Function1[/* reason */ js.Any, U | IPromise[U]]
+    resolvedCallback: js.Function1[/* value */ T, IPromise[U] | U],
+    rejectedCallback: js.Function1[/* reason */ js.Any, IPromise[U] | U]
   ): IPromise[T] = js.native
 }
 

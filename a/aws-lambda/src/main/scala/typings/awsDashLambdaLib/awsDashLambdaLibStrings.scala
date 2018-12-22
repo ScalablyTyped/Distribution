@@ -10,16 +10,40 @@ object awsDashLambdaLibStrings {
   sealed trait ADMIN_NO_SRP_AUTH extends js.Object
   
   @js.native
+  sealed trait AWS extends js.Object
+  
+  @js.native
+  sealed trait Approval extends js.Object
+  
+  @js.native
+  sealed trait Build extends js.Object
+  
+  @js.native
+  sealed trait CANCELED extends js.Object
+  
+  @js.native
   sealed trait CONFIRMED extends js.Object
   
   @js.native
   sealed trait CUSTOM_CHALLENGE extends js.Object
   
   @js.native
+  sealed trait `CodePipeline Action Execution State Change` extends js.Object
+  
+  @js.native
+  sealed trait `CodePipeline Pipeline Execution State Change` extends js.Object
+  
+  @js.native
+  sealed trait `CodePipeline Stage Execution State Change` extends js.Object
+  
+  @js.native
   sealed trait Create extends js.Object
   
   @js.native
   sealed trait CreateAuthChallenge_Authentication extends js.Object
+  
+  @js.native
+  sealed trait Custom extends js.Object
   
   @js.native
   sealed trait CustomMessage_AdminCreateUser extends js.Object
@@ -55,6 +79,9 @@ object awsDashLambdaLibStrings {
   sealed trait Delete extends js.Object
   
   @js.native
+  sealed trait Deploy extends js.Object
+  
+  @js.native
   sealed trait Dropped extends js.Object
   
   @js.native
@@ -65,6 +92,9 @@ object awsDashLambdaLibStrings {
   
   @js.native
   sealed trait INSERT extends js.Object
+  
+  @js.native
+  sealed trait Invoke extends js.Object
   
   @js.native
   sealed trait KEYS_ONLY extends js.Object
@@ -118,6 +148,9 @@ object awsDashLambdaLibStrings {
   sealed trait RESET_REQUIRED extends js.Object
   
   @js.native
+  sealed trait RESUMED extends js.Object
+  
+  @js.native
   sealed trait S3 extends js.Object
   
   @js.native
@@ -127,10 +160,28 @@ object awsDashLambdaLibStrings {
   sealed trait SMS_MFA extends js.Object
   
   @js.native
+  sealed trait STARTED extends js.Object
+  
+  @js.native
+  sealed trait SUCCEEDED extends js.Object
+  
+  @js.native
   sealed trait SUCCESS extends js.Object
   
   @js.native
+  sealed trait SUPERSEDED extends js.Object
+  
+  @js.native
   sealed trait SUPPRESS extends js.Object
+  
+  @js.native
+  sealed trait Source extends js.Object
+  
+  @js.native
+  sealed trait Test extends js.Object
+  
+  @js.native
+  sealed trait ThirdParty extends js.Object
   
   @js.native
   sealed trait TokenGeneration_AuthenticateDevice extends js.Object
@@ -158,6 +209,9 @@ object awsDashLambdaLibStrings {
   
   @js.native
   sealed trait VerifyAuthChallengeResponse_Authentication extends js.Object
+  
+  @js.native
+  sealed trait awsDOTcodepipeline extends js.Object
   
   @js.native
   sealed trait base64 extends js.Object
@@ -190,10 +244,18 @@ object awsDashLambdaLibStrings {
   sealed trait `viewer-response` extends js.Object
   
   def ADMIN_NO_SRP_AUTH: ADMIN_NO_SRP_AUTH = "ADMIN_NO_SRP_AUTH".asInstanceOf[ADMIN_NO_SRP_AUTH]
+  def AWS: AWS = "AWS".asInstanceOf[AWS]
+  def Approval: Approval = "Approval".asInstanceOf[Approval]
+  def Build: Build = "Build".asInstanceOf[Build]
+  def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
   def CONFIRMED: CONFIRMED = "CONFIRMED".asInstanceOf[CONFIRMED]
   def CUSTOM_CHALLENGE: CUSTOM_CHALLENGE = "CUSTOM_CHALLENGE".asInstanceOf[CUSTOM_CHALLENGE]
+  def `CodePipeline Action Execution State Change`: `CodePipeline Action Execution State Change` = "CodePipeline Action Execution State Change".asInstanceOf[`CodePipeline Action Execution State Change`]
+  def `CodePipeline Pipeline Execution State Change`: `CodePipeline Pipeline Execution State Change` = "CodePipeline Pipeline Execution State Change".asInstanceOf[`CodePipeline Pipeline Execution State Change`]
+  def `CodePipeline Stage Execution State Change`: `CodePipeline Stage Execution State Change` = "CodePipeline Stage Execution State Change".asInstanceOf[`CodePipeline Stage Execution State Change`]
   def Create: Create = "Create".asInstanceOf[Create]
   def CreateAuthChallenge_Authentication: CreateAuthChallenge_Authentication = "CreateAuthChallenge_Authentication".asInstanceOf[CreateAuthChallenge_Authentication]
+  def Custom: Custom = "Custom".asInstanceOf[Custom]
   def CustomMessage_AdminCreateUser: CustomMessage_AdminCreateUser = "CustomMessage_AdminCreateUser".asInstanceOf[CustomMessage_AdminCreateUser]
   def CustomMessage_Authentication: CustomMessage_Authentication = "CustomMessage_Authentication".asInstanceOf[CustomMessage_Authentication]
   def CustomMessage_ForgotPassword: CustomMessage_ForgotPassword = "CustomMessage_ForgotPassword".asInstanceOf[CustomMessage_ForgotPassword]
@@ -205,10 +267,12 @@ object awsDashLambdaLibStrings {
   def DEVICE_SRP_AUTH: DEVICE_SRP_AUTH = "DEVICE_SRP_AUTH".asInstanceOf[DEVICE_SRP_AUTH]
   def DefineAuthChallenge_Authentication: DefineAuthChallenge_Authentication = "DefineAuthChallenge_Authentication".asInstanceOf[DefineAuthChallenge_Authentication]
   def Delete: Delete = "Delete".asInstanceOf[Delete]
+  def Deploy: Deploy = "Deploy".asInstanceOf[Deploy]
   def Dropped: Dropped = "Dropped".asInstanceOf[Dropped]
   def EMAIL: EMAIL = "EMAIL".asInstanceOf[EMAIL]
   def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
+  def Invoke: Invoke = "Invoke".asInstanceOf[Invoke]
   def KEYS_ONLY: KEYS_ONLY = "KEYS_ONLY".asInstanceOf[KEYS_ONLY]
   def KMS: KMS = "KMS".asInstanceOf[KMS]
   def MODIFY: MODIFY = "MODIFY".asInstanceOf[MODIFY]
@@ -226,11 +290,18 @@ object awsDashLambdaLibStrings {
   def ProcessingFailed: ProcessingFailed = "ProcessingFailed".asInstanceOf[ProcessingFailed]
   def REMOVE: REMOVE = "REMOVE".asInstanceOf[REMOVE]
   def RESET_REQUIRED: RESET_REQUIRED = "RESET_REQUIRED".asInstanceOf[RESET_REQUIRED]
+  def RESUMED: RESUMED = "RESUMED".asInstanceOf[RESUMED]
   def S3: S3 = "S3".asInstanceOf[S3]
   def SMS: SMS = "SMS".asInstanceOf[SMS]
   def SMS_MFA: SMS_MFA = "SMS_MFA".asInstanceOf[SMS_MFA]
+  def STARTED: STARTED = "STARTED".asInstanceOf[STARTED]
+  def SUCCEEDED: SUCCEEDED = "SUCCEEDED".asInstanceOf[SUCCEEDED]
   def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
+  def SUPERSEDED: SUPERSEDED = "SUPERSEDED".asInstanceOf[SUPERSEDED]
   def SUPPRESS: SUPPRESS = "SUPPRESS".asInstanceOf[SUPPRESS]
+  def Source: Source = "Source".asInstanceOf[Source]
+  def Test: Test = "Test".asInstanceOf[Test]
+  def ThirdParty: ThirdParty = "ThirdParty".asInstanceOf[ThirdParty]
   def TokenGeneration_AuthenticateDevice: TokenGeneration_AuthenticateDevice = "TokenGeneration_AuthenticateDevice".asInstanceOf[TokenGeneration_AuthenticateDevice]
   def TokenGeneration_Authentication: TokenGeneration_Authentication = "TokenGeneration_Authentication".asInstanceOf[TokenGeneration_Authentication]
   def TokenGeneration_HostedAuth: TokenGeneration_HostedAuth = "TokenGeneration_HostedAuth".asInstanceOf[TokenGeneration_HostedAuth]
@@ -240,6 +311,7 @@ object awsDashLambdaLibStrings {
   def UserMigration_Authentication: UserMigration_Authentication = "UserMigration_Authentication".asInstanceOf[UserMigration_Authentication]
   def UserMigration_ForgotPassword: UserMigration_ForgotPassword = "UserMigration_ForgotPassword".asInstanceOf[UserMigration_ForgotPassword]
   def VerifyAuthChallengeResponse_Authentication: VerifyAuthChallengeResponse_Authentication = "VerifyAuthChallengeResponse_Authentication".asInstanceOf[VerifyAuthChallengeResponse_Authentication]
+  def awsDOTcodepipeline: awsDOTcodepipeline = "aws.codepipeline".asInstanceOf[awsDOTcodepipeline]
   def base64: base64 = "base64".asInstanceOf[base64]
   def http: http = "http".asInstanceOf[http]
   def https: https = "https".asInstanceOf[https]

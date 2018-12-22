@@ -16,5 +16,6 @@ class default protected () extends RadioGroup {
 object default extends js.Object {
   var childContextTypes: antdLib.Anon_RadioGroup = js.native
   var defaultProps: antdLib.Anon_PrefixClsDisabled = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libRadioInterfaceMod.RadioGroupProps): antdLib.Anon_ValueAny | scala.Null = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait FileFilter extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/file-filter
+  // Docs: http://electronjs.org/docs/api/structures/file-filter
   var extensions: js.Array[java.lang.String]
   var name: java.lang.String
 }

@@ -4804,11 +4804,11 @@ trait LoDashFp extends js.Object {
   ): LodashOrderBy2x3[T] = js.native
   def orderBy[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      (lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]) | (js.Function1[
+      (js.Function1[
         /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
         lodashLib.lodashMod.underscoreNs.NotVoid
+      ]) | (lodashLib.lodashMod.underscoreNs.ValueIteratee[
+        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
       ])
     ],
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc],
@@ -4818,7 +4818,7 @@ trait LoDashFp extends js.Object {
   ] = js.native
   def orderBy[T](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[T] | (js.Function1[/* value */ T, lodashLib.lodashMod.underscoreNs.NotVoid])
+      (js.Function1[/* value */ T, lodashLib.lodashMod.underscoreNs.NotVoid]) | lodashLib.lodashMod.underscoreNs.ValueIteratee[T]
     ],
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
@@ -4865,7 +4865,7 @@ trait LoDashFp extends js.Object {
   @JSName("orderBy")
   def orderBy_TArray[T](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[T] | (js.Function1[/* value */ T, lodashLib.lodashMod.underscoreNs.NotVoid])
+      (js.Function1[/* value */ T, lodashLib.lodashMod.underscoreNs.NotVoid]) | lodashLib.lodashMod.underscoreNs.ValueIteratee[T]
     ],
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc]
   ): js.Array[T] = js.native
@@ -4899,11 +4899,11 @@ trait LoDashFp extends js.Object {
   @JSName("orderBy")
   def orderBy_TObjectArray[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      (lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]) | (js.Function1[
+      (js.Function1[
         /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
         lodashLib.lodashMod.underscoreNs.NotVoid
+      ]) | (lodashLib.lodashMod.underscoreNs.ValueIteratee[
+        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
       ])
     ],
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc]

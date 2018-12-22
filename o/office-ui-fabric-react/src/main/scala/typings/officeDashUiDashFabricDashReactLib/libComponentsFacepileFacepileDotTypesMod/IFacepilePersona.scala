@@ -48,7 +48,9 @@ trait IFacepilePersona
   @JSName("onClick")
   var onClick_IFacepilePersona: js.UndefOr[
     js.Function2[
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+      ], 
       /* persona */ js.UndefOr[IFacepilePersona], 
       scala.Unit
     ]
@@ -59,7 +61,9 @@ trait IFacepilePersona
   @JSName("onMouseMove")
   var onMouseMove_IFacepilePersona: js.UndefOr[
     js.Function2[
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+      ], 
       /* persona */ js.UndefOr[IFacepilePersona], 
       scala.Unit
     ]
@@ -70,7 +74,9 @@ trait IFacepilePersona
   @JSName("onMouseOut")
   var onMouseOut_IFacepilePersona: js.UndefOr[
     js.Function2[
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+      ], 
       /* persona */ js.UndefOr[IFacepilePersona], 
       scala.Unit
     ]

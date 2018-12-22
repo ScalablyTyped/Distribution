@@ -61,7 +61,9 @@ trait INavProps extends js.Object {
        */
   var onLinkClick: js.UndefOr[
     js.Function2[
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+      ], 
       /* item */ js.UndefOr[INavLink], 
       scala.Unit
     ]
@@ -71,7 +73,9 @@ trait INavProps extends js.Object {
        */
   var onLinkExpandClick: js.UndefOr[
     js.Function2[
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+      ], 
       /* item */ js.UndefOr[INavLink], 
       scala.Unit
     ]

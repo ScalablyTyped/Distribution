@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object outCodeSignWindowsCodeSignModMembers extends js.Object {
   def getCertInfo(file: java.lang.String, password: java.lang.String): js.Promise[CertificateInfo] = js.native
-  def getCertificateFromStoreInfo(
-    options: appDashBuilderDashLibLib.outOptionsWinOptionsMod.WindowsConfiguration,
-    vm: appDashBuilderDashLibLib.outVmVmMod.VmManager
-  ): js.Promise[CertificateFromStoreInfo] = js.native
+  def getCertificateFromStoreInfo(options: js.Any, vm: appDashBuilderDashLibLib.outVmVmMod.VmManager): js.Promise[CertificateFromStoreInfo] = js.native
   def getSignVendorPath(): js.Promise[java.lang.String] = js.native
   def sign(options: WindowsSignOptions, packager: appDashBuilderDashLibLib.outWinPackagerMod.WinPackager): js.Promise[scala.Unit] = js.native
 }

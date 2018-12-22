@@ -19,7 +19,7 @@ trait FormProps extends js.Object {
   var onSubmit: js.UndefOr[
     js.Function3[
       /* values */ FormValues, 
-      /* submissionEvent */ reactLib.reactMod.ReactNs.SyntheticEvent[_], 
+      /* submissionEvent */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
       /* formApi */ FormApi, 
       scala.Unit
     ]

@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait Anon_Ptr
   extends org.scalablytyped.runtime.Instantiable3[
       /* ptr */ Buffer, 
-      (/* ret */ refLib.refMod.Type) | (/* ret */ java.lang.String), 
+      (/* ret */ java.lang.String) | (/* ret */ refLib.refMod.Type), 
       /* fixedArgs */ js.Array[js.Any], 
       ffiLib.ffiMod.VariadicForeignFunction
     ]
      with org.scalablytyped.runtime.Instantiable4[
       /* ptr */ Buffer, 
-      (/* ret */ refLib.refMod.Type) | (/* ret */ java.lang.String), 
+      (/* ret */ java.lang.String) | (/* ret */ refLib.refMod.Type), 
       /* fixedArgs */ js.Array[js.Any], 
       /* abi */ scala.Double, 
       ffiLib.ffiMod.VariadicForeignFunction

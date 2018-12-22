@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Electron.MenuItem")
 @js.native
 class MenuItem protected () extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/menu-item
+  // Docs: http://electronjs.org/docs/api/menu-item
   def this(options: MenuItemConstructorOptions) = this()
   var checked: scala.Boolean = js.native
   var click: js.Function = js.native

@@ -32,7 +32,7 @@ trait IDataTypeResource extends js.Object {
            * @returns {Promise} resourcePromise object.
            *
            */
-  def deleteById(id: scala.Double): js.Any
+  def deleteById(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   def getAll(): js.Any
   /**
            * @ngdoc method
@@ -54,7 +54,7 @@ trait IDataTypeResource extends js.Object {
            * @returns {Promise} resourcePromise object.
            *
            */
-  def getById(id: scala.Double): js.Any
+  def getById(id: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.dataTypeResource#getPreValues
@@ -76,7 +76,7 @@ trait IDataTypeResource extends js.Object {
            * @returns {Promise} resourcePromise object.
            *
            */
-  def getPreValues(editorAlias: java.lang.String, dataTypeId: scala.Double): js.Any
+  def getPreValues(editorAlias: java.lang.String, dataTypeId: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.contentResource#getScaffold
@@ -104,7 +104,7 @@ trait IDataTypeResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the data type scaffold.
            *
            */
-  def getScaffold(): js.Any
+  def getScaffold(): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.dataTypeResource#save
@@ -119,6 +119,6 @@ trait IDataTypeResource extends js.Object {
            * @returns {Promise} resourcePromise object.
            *
            */
-  def save(dataType: js.Object, preValues: js.Array[_], isNew: scala.Boolean): js.Any
+  def save(dataType: js.Object, preValues: js.Array[_], isNew: scala.Boolean): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 

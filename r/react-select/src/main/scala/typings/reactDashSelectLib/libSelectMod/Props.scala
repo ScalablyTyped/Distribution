@@ -173,14 +173,14 @@ trait Props[OptionType] extends js.Object {
   /* Fired when the user scrolls to the bottom of the menu */
   var onMenuScrollToBottom: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   /* Fired when the user scrolls to the top of the menu */
   var onMenuScrollToTop: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined

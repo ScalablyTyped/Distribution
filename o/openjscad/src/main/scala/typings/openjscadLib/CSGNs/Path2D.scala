@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Path2D protected ()
   extends openjscadLib.CxG {
-  def this(points: js.Array[Vector2D | scala.Double]) = this()
-  def this(points: js.Array[Vector2D | scala.Double], closed: scala.Boolean) = this()
+  def this(points: js.Array[scala.Double | Vector2D]) = this()
+  def this(points: js.Array[scala.Double | Vector2D], closed: scala.Boolean) = this()
   var closed: scala.Boolean = js.native
   var lastBezierControlPoint: Vector2D = js.native
   var points: js.Array[Vector2D] = js.native

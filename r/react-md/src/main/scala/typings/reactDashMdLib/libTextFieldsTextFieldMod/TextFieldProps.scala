@@ -27,7 +27,10 @@ trait TextFieldProps
     js.Function2[/* value */ scala.Double | java.lang.String, /* event */ reactLib.Event, scala.Unit]
   ] = js.undefined
   var onDoubleClick: js.UndefOr[
-    js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]
+    js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
   ] = js.undefined
   var onPaste: js.UndefOr[
     js.Function1[

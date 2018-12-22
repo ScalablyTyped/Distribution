@@ -30,7 +30,7 @@ org.scalablytyped.runtime.Instantiable2[
      * @param options for specifying details about PeerServer
      */
 org.scalablytyped.runtime.Instantiable1[
-      (/* id */ java.lang.String) | (/* options */ peerjsLib.PeerJsNs.PeerJSOption), 
+      (/* options */ peerjsLib.PeerJsNs.PeerJSOption) | (/* id */ java.lang.String), 
       peerjsLib.PeerJsNs.Peer
     ]
 

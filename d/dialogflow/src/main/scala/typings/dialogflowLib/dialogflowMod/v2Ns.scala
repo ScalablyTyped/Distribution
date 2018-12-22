@@ -114,11 +114,11 @@ object v2Ns extends js.Object {
     var scopes: js.Array[java.lang.String] = js.native
     var servicePath: java.lang.String = js.native
     def contextPath(project: java.lang.String, session: java.lang.String, context: java.lang.String): java.lang.String = js.native
-    def createContext(request: dialogflowLib.dialogflowMod.CreateContextReqeust): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context]] = js.native
+    def createContext(request: dialogflowLib.dialogflowMod.CreateContextReqeust): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context[java.lang.String, _]]] = js.native
     def createContext(
       request: dialogflowLib.dialogflowMod.CreateContextReqeust,
       options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
-    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context]] = js.native
+    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context[java.lang.String, _]]] = js.native
     def deleteAllContexts(request: dialogflowLib.dialogflowMod.DeleteAllContextsRequest): js.Promise[scala.Unit] = js.native
     def deleteAllContexts(
       request: dialogflowLib.dialogflowMod.DeleteAllContextsRequest,
@@ -129,20 +129,20 @@ object v2Ns extends js.Object {
       request: dialogflowLib.dialogflowMod.DeleteContextRequest,
       options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
     ): js.Promise[scala.Unit] = js.native
-    def getContext(request: dialogflowLib.dialogflowMod.GetContextRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context]] = js.native
+    def getContext(request: dialogflowLib.dialogflowMod.GetContextRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context[java.lang.String, _]]] = js.native
     def getContext(
       request: dialogflowLib.dialogflowMod.GetContextRequest,
       options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
-    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context]] = js.native
+    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context[java.lang.String, _]]] = js.native
     def getProjectId(): js.Promise[java.lang.String] = js.native
     def getProjectId(callback: js.Function2[/* error */ stdLib.Error, /* id */ java.lang.String, java.lang.String]): scala.Unit = js.native
     @JSName("getProjectId")
     def getProjectId_Unit(): scala.Unit = js.native
-    def listContexts(request: dialogflowLib.dialogflowMod.ListContextsRequest): js.Promise[js.Array[js.Array[dialogflowLib.dialogflowMod.Context]]] = js.native
+    def listContexts(request: dialogflowLib.dialogflowMod.ListContextsRequest): js.Promise[js.Array[js.Array[dialogflowLib.dialogflowMod.Context[java.lang.String, _]]]] = js.native
     def listContexts(
       request: dialogflowLib.dialogflowMod.ListContextsRequest,
       options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
-    ): js.Promise[js.Array[js.Array[dialogflowLib.dialogflowMod.Context]]] = js.native
+    ): js.Promise[js.Array[js.Array[dialogflowLib.dialogflowMod.Context[java.lang.String, _]]]] = js.native
     def listContextsStream(request: dialogflowLib.dialogflowMod.ListContextsRequest): js.Any = js.native
     def listContextsStream(
       request: dialogflowLib.dialogflowMod.ListContextsRequest,
@@ -154,11 +154,11 @@ object v2Ns extends js.Object {
     def matchSessionFromContextName(name: java.lang.String): java.lang.String = js.native
     def matchSessionFromSessionName(name: java.lang.String): java.lang.String = js.native
     def sessionPath(project: java.lang.String, session: java.lang.String): java.lang.String = js.native
-    def updateContext(request: dialogflowLib.dialogflowMod.UpdateContextRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context]] = js.native
+    def updateContext(request: dialogflowLib.dialogflowMod.UpdateContextRequest): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context[java.lang.String, _]]] = js.native
     def updateContext(
       request: dialogflowLib.dialogflowMod.UpdateContextRequest,
       options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
-    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context]] = js.native
+    ): js.Promise[js.Array[dialogflowLib.dialogflowMod.Context[java.lang.String, _]]] = js.native
   }
   
   @js.native

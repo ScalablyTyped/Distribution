@@ -14,6 +14,6 @@ trait Scope extends js.Object {
   /**
        * Get the span wrapped by this scope.
        */
-  def span(): opentracingLib.opentracingMod.Span
+  def span(): js.Any
 }
 

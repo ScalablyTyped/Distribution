@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_LocalesOptionsSupportedLocalesOfNumberFormat
   extends org.scalablytyped.runtime.Instantiable0[stdLib.IntlNs.NumberFormat]
      with org.scalablytyped.runtime.Instantiable2[
-      (/* locales */ java.lang.String) | (/* locales */ js.Array[java.lang.String]), 
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       /* options */ stdLib.IntlNs.NumberFormatOptions, 
       stdLib.IntlNs.NumberFormat
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* locales */ java.lang.String) | (/* locales */ js.Array[java.lang.String]), 
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
       stdLib.IntlNs.NumberFormat
     ] {
   def apply(): stdLib.IntlNs.NumberFormat = js.native

@@ -52,13 +52,13 @@ object leafletModMembers extends js.Object {
   def point(coords: PointTuple): Point = js.native
   def point(x: scala.Double, y: scala.Double): Point = js.native
   def point(x: scala.Double, y: scala.Double, round: scala.Boolean): Point = js.native
-  def polygon(latlngs: js.Array[LatLngExpression | (js.Array[LatLngExpression | js.Array[LatLngExpression]])]): Polygon[_] = js.native
+  def polygon(latlngs: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression]): Polygon[_] = js.native
   def polygon(
-    latlngs: js.Array[LatLngExpression | (js.Array[LatLngExpression | js.Array[LatLngExpression]])],
+    latlngs: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression],
     options: PolylineOptions
   ): Polygon[_] = js.native
-  def polyline(latlngs: js.Array[LatLngExpression | js.Array[LatLngExpression]]): Polyline[geojsonLib.geojsonMod.LineString | geojsonLib.geojsonMod.MultiLineString, _] = js.native
-  def polyline(latlngs: js.Array[LatLngExpression | js.Array[LatLngExpression]], options: PolylineOptions): Polyline[geojsonLib.geojsonMod.LineString | geojsonLib.geojsonMod.MultiLineString, _] = js.native
+  def polyline(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]): Polyline[geojsonLib.geojsonMod.LineString | geojsonLib.geojsonMod.MultiLineString, _] = js.native
+  def polyline(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions): Polyline[geojsonLib.geojsonMod.LineString | geojsonLib.geojsonMod.MultiLineString, _] = js.native
   def popup(): Popup = js.native
   def popup(options: PopupOptions): Popup = js.native
   def popup(options: PopupOptions, source: Layer): Popup = js.native

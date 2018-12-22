@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GlobalShortcut extends EventEmitter {
-  // Docs: http://electron.atom.io/docs/api/global-shortcut
+  // Docs: http://electronjs.org/docs/api/global-shortcut
   /**
        * When the accelerator is already taken by other applications, this call will
        * still return false. This behavior is intended by operating systems, since they

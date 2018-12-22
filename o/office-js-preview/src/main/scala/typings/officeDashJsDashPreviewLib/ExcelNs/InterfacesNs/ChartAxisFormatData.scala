@@ -1,0 +1,26 @@
+package typings
+package officeDashJsDashPreviewLib.ExcelNs.InterfacesNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** An interface describing the data returned by calling "chartAxisFormat.toJSON()". */
+
+trait ChartAxisFormatData extends js.Object {
+  /**
+              *
+              * Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
+              *
+              * [Api set: ExcelApi 1.1]
+              */
+  var font: js.UndefOr[ChartFontData] = js.undefined
+  /**
+              *
+              * Represents chart line formatting. Read-only.
+              *
+              * [Api set: ExcelApi 1.1]
+              */
+  var line: js.UndefOr[ChartLineFormatData] = js.undefined
+}
+

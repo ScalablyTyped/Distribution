@@ -21,7 +21,7 @@ trait SliderProps extends js.Object {
   var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[js.Object]] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* value */ scala.Double, 
       scala.Unit
     ]

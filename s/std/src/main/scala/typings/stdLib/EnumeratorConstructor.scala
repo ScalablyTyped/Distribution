@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EnumeratorConstructor
   extends org.scalablytyped.runtime.Instantiable1[
-      (/* safearray */ SafeArray[js.Object]) | (/* collection */ Anon_Item[js.Object]) | (/* collection */ js.Any), 
+      (/* collection */ Anon_Item[js.Object]) | (/* collection */ js.Any) | (/* safearray */ SafeArray[js.Object]), 
       Enumerator[js.Object]
     ]
 

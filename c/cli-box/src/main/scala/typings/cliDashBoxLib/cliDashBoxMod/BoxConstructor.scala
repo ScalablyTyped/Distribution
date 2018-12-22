@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait BoxConstructor
   extends org.scalablytyped.runtime.Instantiable2[
       (/* options */ Options) | (/* options */ java.lang.String), 
-      (/* text */ Text) | (/* text */ java.lang.String), 
+      (/* text */ java.lang.String) | (/* text */ Text), 
       Box
     ]
      with org.scalablytyped.runtime.Instantiable1[(/* options */ Options) | (/* options */ java.lang.String), Box] {

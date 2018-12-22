@@ -21,6 +21,7 @@ object HandlebarsNsMembers extends js.Object {
   def log(level: scala.Double, obj: js.Any): scala.Unit = js.native
   def noConflict(): js.Object = js.native
   def parse(input: java.lang.String): handlebarsLib.hbsNs.ASTNs.Program = js.native
+  def parse(input: java.lang.String, options: ParseOptions): handlebarsLib.hbsNs.ASTNs.Program = js.native
   def precompile(input: js.Any): handlebarsLib.TemplateSpecification = js.native
   def precompile(input: js.Any, options: handlebarsLib.PrecompileOptions): handlebarsLib.TemplateSpecification = js.native
   def registerDecorator(name: java.lang.String, fn: js.Function): scala.Unit = js.native

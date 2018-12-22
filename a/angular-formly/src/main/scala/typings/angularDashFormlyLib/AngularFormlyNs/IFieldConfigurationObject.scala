@@ -108,7 +108,12 @@ trait IFieldConfigurationObject extends js.Object {
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#link-link-function
   		 */
   var link: js.UndefOr[
-    angularLib.angularMod.angularNs.IDirectiveLinkFn[angularLib.angularMod.angularNs.IScope]
+    angularLib.angularMod.angularNs.IDirectiveLinkFn[
+      angularLib.angularMod.angularNs.IScope, 
+      angularLib.JQLite, 
+      angularLib.angularMod.angularNs.IAttributes, 
+      angularLib.angularMod.angularNs.IController
+    ]
   ] = js.undefined
   /**
   		 * By default, the model passed to the formly-field directive is the same as the model passed to the

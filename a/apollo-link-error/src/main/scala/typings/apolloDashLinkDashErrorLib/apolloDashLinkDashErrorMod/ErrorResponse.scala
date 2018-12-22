@@ -18,7 +18,11 @@ trait ErrorResponse extends js.Object {
     graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
   ] = js.native
   def forward(operation: apolloDashLinkLib.libTypesMod.Operation): zenDashObservableDashTsLib.libZenObservableMod.Observable[
-    apolloDashLinkLib.libTypesMod.FetchResult[stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
+    apolloDashLinkLib.libTypesMod.FetchResult[
+      org.scalablytyped.runtime.StringDictionary[_], 
+      stdLib.Record[java.lang.String, _], 
+      stdLib.Record[java.lang.String, _]
+    ]
   ] = js.native
 }
 

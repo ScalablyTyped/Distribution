@@ -106,7 +106,7 @@ object renderNs extends js.Object {
              * @param ends Ends or Endss.
              * @param properties Properties.
              */
-    def this(`type`: openlayersLib.openlayersMod.geomNs.GeometryType, flatCoordinates: js.Array[scala.Double], ends: js.Array[scala.Double | js.Array[scala.Double]], properties: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+    def this(`type`: openlayersLib.openlayersMod.geomNs.GeometryType, flatCoordinates: js.Array[scala.Double], ends: js.Array[js.Array[scala.Double] | scala.Double], properties: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     /**
              * Get a feature property by its key.
              * @param key Key

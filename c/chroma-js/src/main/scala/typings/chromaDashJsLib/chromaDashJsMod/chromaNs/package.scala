@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object chromaNs {
-  type Color = chromaDashJsLib.Anon_Alpha with chromaDashJsLib.chromaDashJsLibStrings.Color with js.Any
+  type InterpolationMode = chromaDashJsLib.chromaDashJsLibStrings.rgb | chromaDashJsLib.chromaDashJsLibStrings.hsl | chromaDashJsLib.chromaDashJsLibStrings.hsv | chromaDashJsLib.chromaDashJsLibStrings.hsi | chromaDashJsLib.chromaDashJsLibStrings.lab | chromaDashJsLib.chromaDashJsLibStrings.lch | chromaDashJsLib.chromaDashJsLibStrings.hcl
 }

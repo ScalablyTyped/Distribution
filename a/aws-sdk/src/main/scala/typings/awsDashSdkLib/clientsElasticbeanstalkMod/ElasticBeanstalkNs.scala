@@ -1167,7 +1167,7 @@ object ElasticBeanstalkNs extends js.Object {
          */
     var EnvironmentName: js.UndefOr[EnvironmentName] = js.undefined
     /**
-         * Describes the health status of the environment. AWS Elastic Beanstalk indicates the failure levels for a running environment:    Red: Indicates the environment is not responsive. Occurs when three or more consecutive failures occur for an environment.    Yellow: Indicates that something is wrong. Occurs when two consecutive failures occur for an environment.    Green: Indicates the environment is healthy and fully functional.    Grey: Default health for a new environment. The environment is not fully launched and health checks have not started or health checks are suspended during an UpdateEnvironment or RestartEnvironement request.    Default: Grey 
+         * Describes the health status of the environment. AWS Elastic Beanstalk indicates the failure levels for a running environment:    Red: Indicates the environment is not responsive. Occurs when three or more consecutive failures occur for an environment.    Yellow: Indicates that something is wrong. Occurs when two consecutive failures occur for an environment.    Green: Indicates the environment is healthy and fully functional.    Grey: Default health for a new environment. The environment is not fully launched and health checks have not started or health checks are suspended during an UpdateEnvironment or RestartEnvironment request.    Default: Grey 
          */
     var Health: js.UndefOr[EnvironmentHealth] = js.undefined
     /**
@@ -1227,7 +1227,7 @@ object ElasticBeanstalkNs extends js.Object {
          */
     var InfoType: js.UndefOr[EnvironmentInfoType] = js.undefined
     /**
-         * The retrieved information.
+         * The retrieved information. Currently contains a presigned Amazon S3 URL. The files are deleted after 15 minutes. Anyone in possession of this URL can access the files before they are deleted. Make the URL available only to trusted parties.
          */
     var Message: js.UndefOr[Message] = js.undefined
     /**
@@ -1267,6 +1267,10 @@ object ElasticBeanstalkNs extends js.Object {
          */
     var LaunchConfigurations: js.UndefOr[LaunchConfigurationList] = js.undefined
     /**
+         * The Amazon EC2 launch templates in use by this environment.
+         */
+    var LaunchTemplates: js.UndefOr[LaunchTemplateList] = js.undefined
+    /**
          * The LoadBalancers in use by this environment.
          */
     var LoadBalancers: js.UndefOr[LoadBalancerList] = js.undefined
@@ -1299,11 +1303,11 @@ object ElasticBeanstalkNs extends js.Object {
   
   trait EnvironmentTier extends js.Object {
     /**
-         * The name of this environment tier.
+         * The name of this environment tier. Valid values:   For Web server tier – WebServer    For Worker tier – Worker   
          */
     var Name: js.UndefOr[String] = js.undefined
     /**
-         * The type of this environment tier.
+         * The type of this environment tier. Valid values:   For Web server tier – Standard    For Worker tier – SQS/HTTP   
          */
     var Type: js.UndefOr[String] = js.undefined
     /**
@@ -1450,6 +1454,14 @@ object ElasticBeanstalkNs extends js.Object {
          * The name of the launch configuration.
          */
     var Name: js.UndefOr[ResourceId] = js.undefined
+  }
+  
+  
+  trait LaunchTemplate extends js.Object {
+    /**
+         * The ID of the launch template.
+         */
+    var Id: js.UndefOr[ResourceId] = js.undefined
   }
   
   
@@ -3525,6 +3537,7 @@ object ElasticBeanstalkNs extends js.Object {
   type InstancesHealthAttributes = js.Array[InstancesHealthAttribute]
   type Integer = scala.Double
   type LaunchConfigurationList = js.Array[LaunchConfiguration]
+  type LaunchTemplateList = js.Array[LaunchTemplate]
   type LaunchedAt = stdLib.Date
   type LoadAverage = js.Array[LoadAverageValue]
   type LoadAverageValue = scala.Double

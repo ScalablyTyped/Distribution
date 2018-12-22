@@ -13,7 +13,7 @@ class Manager protected () extends js.Object {
   def destroy(): this.type = js.native
   def getMargin(): js.Array[scala.Double] = js.native
   def getOffset(): js.Array[scala.Double] = js.native
-  def setDefaultMargin(margin: js.Array[scala.Double | js.Array[scala.Double]]): scala.Unit = js.native
+  def setDefaultMargin(margin: js.Array[js.Array[scala.Double] | scala.Double]): scala.Unit = js.native
   def setDefaultMargin(margin: scala.Double): scala.Unit = js.native
 }
 

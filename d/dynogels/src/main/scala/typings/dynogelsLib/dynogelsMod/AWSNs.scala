@@ -58,6 +58,24 @@ object AWSNs extends js.Object {
   }
   
   @js.native
+  class ApiGatewayManagementApi ()
+    extends awsDashSdkLib.awsDashSdkMod.ApiGatewayManagementApi {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsApigatewaymanagementapiMod.ApiGatewayManagementApiNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class ApiGatewayV2 ()
+    extends awsDashSdkLib.awsDashSdkMod.ApiGatewayV2 {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.ClientConfiguration) = this()
+  }
+  
+  @js.native
   class AppMesh ()
     extends awsDashSdkLib.awsDashSdkMod.AppMesh {
     /**
@@ -1856,6 +1874,48 @@ object AWSNs extends js.Object {
     @JSName("Amplify")
     @js.native
     object AmplifyNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("ApiGatewayManagementApi")
+  @js.native
+  object ApiGatewayManagementApiNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.ApiGatewayManagementApiNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsApigatewaymanagementapiMod.ApiGatewayManagementApiNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("ApiGatewayManagementApi")
+    @js.native
+    object ApiGatewayManagementApiNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("ApiGatewayV2")
+  @js.native
+  object ApiGatewayV2Ns extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.ApiGatewayV2Ns.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("ApiGatewayV2")
+    @js.native
+    object ApiGatewayV2Ns extends js.Object {
       val TypesNs: this.type = js.native
     }
     

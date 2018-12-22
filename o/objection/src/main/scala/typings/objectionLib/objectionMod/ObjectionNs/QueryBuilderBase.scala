@@ -128,7 +128,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def findById(id: Id): QueryBuilderYieldingOneOrNone[QM] = js.native
   @JSName("findById")
   def `findById_<this>`(idOrIds: IdOrIds): this.type = js.native
-  def findByIds(ids: js.Array[Id | js.Array[Id]]): this.type = js.native
+  def findByIds(ids: js.Array[js.Array[Id] | Id]): this.type = js.native
   /** findOne is shorthand for .where(...whereArgs).first() */
   def findOne(
     callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]

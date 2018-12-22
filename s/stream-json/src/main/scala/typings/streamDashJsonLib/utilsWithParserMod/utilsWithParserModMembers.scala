@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object utilsWithParserModMembers extends js.Object {
   def apply(
     fn: js.Function1[
-      (/* options */ js.UndefOr[
-        nodeLib.streamMod.internalNs.TransformOptions | streamDashJsonLib.streamersStreamBaseMod.StreamBaseNs.StreamOptions
-      ]) | (/* options */ streamDashJsonLib.filtersFilterBaseMod.FilterBaseNs.FilterOptions), 
-      nodeLib.streamMod.Transform | streamDashJsonLib.filtersFilterBaseMod.namespaced | streamDashJsonLib.streamersStreamBaseMod.namespaced
+      (/* options */ streamDashJsonLib.filtersFilterBaseMod.FilterBaseNs.FilterOptions) | (/* options */ js.UndefOr[
+        streamDashJsonLib.streamersStreamBaseMod.StreamBaseNs.StreamOptions | nodeLib.streamMod.internalNs.TransformOptions
+      ]), 
+      nodeLib.streamMod.Transform | streamDashJsonLib.streamersStreamBaseMod.namespaced | streamDashJsonLib.filtersFilterBaseMod.namespaced
     ]
   ): streamDashChainLib.streamDashChainMod.namespaced = js.native
   def apply(

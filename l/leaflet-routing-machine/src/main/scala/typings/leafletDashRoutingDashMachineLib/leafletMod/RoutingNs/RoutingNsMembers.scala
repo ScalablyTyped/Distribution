@@ -18,8 +18,8 @@ object RoutingNsMembers extends js.Object {
   def line(route: IRoute, options: LineOptions): Line = js.native
   def osrmv1(): OSRMv1 = js.native
   def osrmv1(options: OSRMOptions): OSRMv1 = js.native
-  def plan(waypoints: js.Array[Waypoint | leafletLib.leafletMod.LatLng]): Plan = js.native
-  def plan(waypoints: js.Array[Waypoint | leafletLib.leafletMod.LatLng], options: PlanOptions): Plan = js.native
+  def plan(waypoints: js.Array[leafletLib.leafletMod.LatLng | Waypoint]): Plan = js.native
+  def plan(waypoints: js.Array[leafletLib.leafletMod.LatLng | Waypoint], options: PlanOptions): Plan = js.native
   def waypoint(latLng: leafletLib.leafletMod.LatLng): Waypoint = js.native
   def waypoint(latLng: leafletLib.leafletMod.LatLng, name: java.lang.String): Waypoint = js.native
   def waypoint(latLng: leafletLib.leafletMod.LatLng, name: java.lang.String, options: WaypointOptions): Waypoint = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SelectableProps extends js.Object {
   var onChange: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
       /* value */ js.Any, 
       scala.Unit
     ]

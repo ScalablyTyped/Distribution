@@ -17,7 +17,7 @@ trait MenuProps extends js.Object {
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
       /* itemValue */ js.Any | js.Array[_], 
       scala.Unit
     ]
@@ -25,7 +25,7 @@ trait MenuProps extends js.Object {
   var onEscKeyDown: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object]] = js.undefined
   var onItemClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
       /* item */ MenuItem, 
       scala.Unit
     ]

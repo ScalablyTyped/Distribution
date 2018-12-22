@@ -14,7 +14,7 @@ trait IHashSetStatic
     ]
      with org.scalablytyped.runtime.Instantiable0[IHashSet[js.Object]]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* options */ hashtableLib.IHashtableOptions[js.Object]) | (/* hashCode */ js.Function1[/* value */ js.Object, js.Any]), 
+      (/* hashCode */ js.Function1[/* value */ js.Object, js.Any]) | (/* options */ hashtableLib.IHashtableOptions[js.Object]), 
       IHashSet[js.Object]
     ]
 

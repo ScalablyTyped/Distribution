@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_RetType
   extends org.scalablytyped.runtime.Instantiable2[
-      (/* retType */ refDashNapiLib.refDashNapiMod.Type) | (/* retType */ java.lang.String), 
+      (/* retType */ java.lang.String) | (/* retType */ refDashNapiLib.refDashNapiMod.Type), 
       /* argTypes */ js.Array[js.Any], 
       ffiDashNapiLib.ffiDashNapiMod.Function
     ]
      with org.scalablytyped.runtime.Instantiable3[
-      (/* retType */ refDashNapiLib.refDashNapiMod.Type) | (/* retType */ java.lang.String), 
+      (/* retType */ java.lang.String) | (/* retType */ refDashNapiLib.refDashNapiMod.Type), 
       /* argTypes */ js.Array[js.Any], 
       /* abi */ scala.Double, 
       ffiDashNapiLib.ffiDashNapiMod.Function

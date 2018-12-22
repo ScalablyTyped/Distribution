@@ -8,8 +8,28 @@ import scala.scalajs.js.annotation._
 @JSImport("kue", "redisClientFactory")
 @js.native
 object redisClientFactoryNs extends js.Object {
-  val Multi: redisLib.Anon_Multi = js.native
-  val RedisClient: redisLib.Anon_Options = js.native
+  @js.native
+  class AbortError ()
+    extends redisLib.redisMod.AbortError
+  
+  @js.native
+  class AggregateError ()
+    extends redisLib.redisMod.AggregateError
+  
+  @js.native
+  class ParserError ()
+    extends redisLib.redisMod.ParserError
+  
+  @js.native
+  class RedisError ()
+    extends redisLib.redisMod.RedisError
+  
+  @js.native
+  class ReplyError ()
+    extends redisLib.redisMod.ReplyError
+  
+  val Multi: org.scalablytyped.runtime.Instantiable0[redisLib.redisMod.Multi] = js.native
+  val RedisClient: org.scalablytyped.runtime.Instantiable1[/* options */ redisLib.redisMod.ClientOpts, redisLib.redisMod.RedisClient] = js.native
   var debug_mode: scala.Boolean = js.native
   def createClient(): redisLib.redisMod.RedisClient = js.native
   def createClient(options: redisLib.redisMod.ClientOpts): redisLib.redisMod.RedisClient = js.native

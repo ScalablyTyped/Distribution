@@ -13,7 +13,7 @@ trait IDialogRenderingOptions extends js.Object {
   /*animation css class, by default set to "fade"*/
   var animation: js.UndefOr[java.lang.String] = js.undefined
   /*function called when the modal is submitted*/
-  var callback: js.Function
+  var callback: angularLib.angularMod.Global.Function
   /*the DOM element to inject the modal into, by default set to body*/
   var container: js.UndefOr[stdLib.HTMLElement] = js.undefined
   /** 

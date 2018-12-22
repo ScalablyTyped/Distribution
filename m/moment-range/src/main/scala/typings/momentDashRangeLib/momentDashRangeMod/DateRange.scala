@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DateRange protected () extends js.Object {
   def this(range: java.lang.String) = this()
-  def this(range: js.Array[momentLib.momentMod.momentNs.Moment | stdLib.Date]) = this()
+  def this(range: js.Array[stdLib.Date | momentLib.momentMod.momentNs.Moment]) = this()
   def this(start: momentLib.momentMod.momentNs.Moment, end: momentLib.momentMod.momentNs.Moment) = this()
   def this(start: momentLib.momentMod.momentNs.Moment, end: stdLib.Date) = this()
   def this(start: stdLib.Date, end: momentLib.momentMod.momentNs.Moment) = this()

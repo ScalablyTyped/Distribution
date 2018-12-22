@@ -23,7 +23,7 @@ object libDetailsListModMembers extends js.Object {
     canResizeColumns: js.UndefOr[scala.Boolean],
     onColumnClick: js.UndefOr[
       js.Function2[
-        /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+        /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
         /* column */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.IColumn, 
         _
       ]

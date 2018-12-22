@@ -60,7 +60,7 @@ class HTMLAppViewElement () extends HTMLElement {
        * ❗ Unprefixed version are not available as of Chrome 68, in Chrome apps ❗
        */
   /* CompleteClass */
-  override def requestFullscreen(): scala.Unit = js.native
+  override def requestFullscreen(): js.Promise[scala.Unit] = js.native
   /**
        * @requires Permissions: 'pointerLock'
        */

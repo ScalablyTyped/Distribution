@@ -25,6 +25,7 @@ object reactDashNavigationModMembers extends js.Object {
   def TabNavigator(routeConfigMap: NavigationRouteConfigMap): NavigationContainer = js.native
   def TabNavigator(routeConfigMap: NavigationRouteConfigMap, drawConfig: TabNavigatorConfig): NavigationContainer = js.native
   def TabRouter(routeConfigs: NavigationRouteConfigMap, config: NavigationTabRouterConfig): NavigationRouter[_, _] = js.native
+  def createAppContainer(Component: NavigationNavigator[_, _, _]): NavigationContainer = js.native
   def createBottomTabNavigator(routeConfigMap: NavigationRouteConfigMap): NavigationContainer = js.native
   def createBottomTabNavigator(routeConfigMap: NavigationRouteConfigMap, drawConfig: BottomTabNavigatorConfig): NavigationContainer = js.native
   def createDrawerNavigator(routeConfigMap: NavigationRouteConfigMap): NavigationContainer = js.native

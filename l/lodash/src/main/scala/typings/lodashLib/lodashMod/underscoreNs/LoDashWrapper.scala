@@ -43,13 +43,13 @@ trait LoDashWrapper[TValue] extends js.Object {
            * @see _.forEachRight
            */
   @JSName("eachRight")
-  def eachRight_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]]): this.type = js.native
+  def eachRight_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]]): this.type = js.native
   /**
            * @see _.forEachRight
            */
   @JSName("eachRight")
   def eachRight_T[T](
-    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]],
+    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
     iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])
   ): this.type = js.native
   /**
@@ -66,13 +66,13 @@ trait LoDashWrapper[TValue] extends js.Object {
            * @see _.forEach
            */
   @JSName("each")
-  def each_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]]): this.type = js.native
+  def each_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]]): this.type = js.native
   /**
            * @see _.forEach
            */
   @JSName("each")
   def each_T[T](
-    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]],
+    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
     iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])
   ): this.type = js.native
   /**
@@ -109,13 +109,13 @@ trait LoDashWrapper[TValue] extends js.Object {
            * @see _.forEachRight
            */
   @JSName("forEachRight")
-  def forEachRight_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]]): this.type = js.native
+  def forEachRight_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]]): this.type = js.native
   /**
            * @see _.forEachRight
            */
   @JSName("forEachRight")
   def forEachRight_T[T](
-    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]],
+    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
     iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])
   ): this.type = js.native
   /**
@@ -132,13 +132,13 @@ trait LoDashWrapper[TValue] extends js.Object {
            * @see _.forEach
            */
   @JSName("forEach")
-  def forEach_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]]): this.type = js.native
+  def forEach_T[T](`this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]]): this.type = js.native
   /**
            * @see _.forEach
            */
   @JSName("forEach")
   def forEach_T[T](
-    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]],
+    `this`: LoDashWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
     iteratee: (ArrayIterator[T, _]) | (ListIterator[T, _])
   ): this.type = js.native
   /**

@@ -12,7 +12,7 @@ trait LogEntry extends js.Object {
   var guid: java.lang.String
   var multiInject: scala.Boolean
   var results: js.Array[_]
-  var rootRequest: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Request
+  var rootRequest: js.Any
   var serviceIdentifier: js.Any
   var time: java.lang.String
 }

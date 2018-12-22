@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait JumpListCategory extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/jump-list-category
+  // Docs: http://electronjs.org/docs/api/structures/jump-list-category
   /**
        * Array of objects if type is tasks or custom, otherwise it should be omitted.
        */

@@ -26,10 +26,10 @@ trait PromisedDeep extends js.Object {
   def equal(value: js.Any, message: java.lang.String): PromisedAssertion = js.native
   def equals(value: js.Any): PromisedAssertion = js.native
   def equals(value: js.Any, message: java.lang.String): PromisedAssertion = js.native
+  def include(value: chaiLib.Object): PromisedAssertion = js.native
+  def include(value: chaiLib.Object, message: java.lang.String): PromisedAssertion = js.native
   def include(value: java.lang.String): PromisedAssertion = js.native
   def include(value: java.lang.String, message: java.lang.String): PromisedAssertion = js.native
-  def include(value: js.Object): PromisedAssertion = js.native
-  def include(value: js.Object, message: java.lang.String): PromisedAssertion = js.native
   def include(value: scala.Double): PromisedAssertion = js.native
   def include(value: scala.Double, message: java.lang.String): PromisedAssertion = js.native
   def members(set: js.Array[_]): PromisedAssertion = js.native

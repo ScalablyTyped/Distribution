@@ -21,7 +21,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[stdLib.EventListener],
     toasterId: js.UndefOr[scala.Double],
     showCloseButton: js.UndefOr[scala.Boolean],
-    toastId: js.UndefOr[java.lang.String | scala.Double],
+    toastId: js.UndefOr[scala.Double | java.lang.String],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
   def info(params: IPopParams): scala.Unit = js.native
@@ -33,7 +33,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[stdLib.EventListener],
     toasterId: js.UndefOr[scala.Double],
     showCloseButton: js.UndefOr[scala.Boolean],
-    toastId: js.UndefOr[java.lang.String | scala.Double],
+    toastId: js.UndefOr[scala.Double | java.lang.String],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
   def pop(params: IPopParams): scala.Unit = js.native
@@ -49,7 +49,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[stdLib.EventListener],
     toasterId: js.UndefOr[scala.Double],
     showCloseButton: js.UndefOr[scala.Boolean],
-    toastId: js.UndefOr[java.lang.String | scala.Double],
+    toastId: js.UndefOr[scala.Double | java.lang.String],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
   def success(params: IPopParams): scala.Unit = js.native
@@ -61,7 +61,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[stdLib.EventListener],
     toasterId: js.UndefOr[scala.Double],
     showCloseButton: js.UndefOr[scala.Boolean],
-    toastId: js.UndefOr[java.lang.String | scala.Double],
+    toastId: js.UndefOr[scala.Double | java.lang.String],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
   def wait(params: IPopParams): scala.Unit = js.native
@@ -73,7 +73,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[stdLib.EventListener],
     toasterId: js.UndefOr[scala.Double],
     showCloseButton: js.UndefOr[scala.Boolean],
-    toastId: js.UndefOr[java.lang.String | scala.Double],
+    toastId: js.UndefOr[scala.Double | java.lang.String],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
   def warning(params: IPopParams): scala.Unit = js.native
@@ -85,7 +85,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[stdLib.EventListener],
     toasterId: js.UndefOr[scala.Double],
     showCloseButton: js.UndefOr[scala.Boolean],
-    toastId: js.UndefOr[java.lang.String | scala.Double],
+    toastId: js.UndefOr[scala.Double | java.lang.String],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
 }

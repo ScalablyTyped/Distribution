@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait RemovePassword extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/remove-password
+  // Docs: http://electronjs.org/docs/api/structures/remove-password
   /**
        * When provided, the authentication info related to the origin will only be
        * removed otherwise the entire cache will be cleared.

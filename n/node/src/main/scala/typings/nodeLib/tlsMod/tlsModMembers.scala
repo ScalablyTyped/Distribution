@@ -20,7 +20,7 @@ object tlsModMembers extends js.Object {
        */
   def checkServerIdentity(host: java.lang.String, cert: PeerCertificate): js.UndefOr[nodeLib.Error] = js.native
   def connect(options: ConnectionOptions): TLSSocket = js.native
-  def connect(options: ConnectionOptions, secureConnectionListener: js.Function0[scala.Unit]): TLSSocket = js.native
+  def connect(options: ConnectionOptions, secureConnectListener: js.Function0[scala.Unit]): TLSSocket = js.native
   def connect(port: scala.Double): TLSSocket = js.native
   def connect(port: scala.Double, host: java.lang.String): TLSSocket = js.native
   def connect(port: scala.Double, host: java.lang.String, options: ConnectionOptions): TLSSocket = js.native

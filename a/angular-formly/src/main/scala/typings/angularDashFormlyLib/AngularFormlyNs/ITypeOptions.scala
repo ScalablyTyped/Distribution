@@ -24,7 +24,12 @@ trait ITypeOptions extends js.Object {
   var defaultOptions: js.UndefOr[IFieldConfigurationObject | angularLib.angularMod.Global.Function] = js.undefined
   var `extends`: js.UndefOr[java.lang.String] = js.undefined
   var link: js.UndefOr[
-    angularLib.angularMod.angularNs.IDirectiveLinkFn[angularLib.angularMod.angularNs.IScope]
+    angularLib.angularMod.angularNs.IDirectiveLinkFn[
+      angularLib.angularMod.angularNs.IScope, 
+      angularLib.JQLite, 
+      angularLib.angularMod.angularNs.IAttributes, 
+      angularLib.angularMod.angularNs.IController
+    ]
   ] = js.undefined
   var name: java.lang.String
   var overwriteOk: js.UndefOr[scala.Boolean] = js.undefined

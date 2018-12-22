@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PowerSaveBlocker extends EventEmitter {
-  // Docs: http://electron.atom.io/docs/api/power-save-blocker
+  // Docs: http://electronjs.org/docs/api/power-save-blocker
   def isStarted(id: scala.Double): scala.Boolean = js.native
   /**
        * Starts preventing the system from entering lower-power mode. Returns an integer

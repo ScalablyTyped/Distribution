@@ -37,25 +37,27 @@ package object angularNs {
        */
   type IComponentController = IController
   type IControllerConstructor = (org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, IController]) | (js.Function1[/* repeated */js.Any, scala.Unit | IController])
-  type IDirectiveCompileFn[TScope /* <: IScope */] = js.Function3[
-    /* templateElement */ angularLib.JQLite, 
-    /* templateAttributes */ IAttributes, 
+  type IDirectiveCompileFn[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] = js.Function3[
+    /* templateElement */ TElement, 
+    /* templateAttributes */ TAttributes, 
     /* transclude */ ITranscludeFunction, 
-    scala.Unit | IDirectiveLinkFn[TScope] | IDirectivePrePost[TScope]
+    scala.Unit | (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController])
   ]
   ///////////////////////////////////////////////////////////////////////////
   // Directive
   // see http://docs.angularjs.org/api/ng.$compileProvider#directive
   // and http://docs.angularjs.org/guide/directive
   ///////////////////////////////////////////////////////////////////////////
-  type IDirectiveFactory[TScope /* <: IScope */] = js.Function1[/* repeated */js.Any, IDirective[TScope] | IDirectiveLinkFn[TScope]]
-  type IDirectiveLinkFn[TScope /* <: IScope */] = js.Function5[
+  type IDirectiveController = IController | js.Array[IController] | org.scalablytyped.runtime.StringDictionary[IController]
+  type IDirectiveFactory[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] = js.Function1[
+    /* repeated */js.Any, 
+    (IDirective[TScope, TElement, TAttributes, TController]) | (IDirectiveLinkFn[TScope, TElement, TAttributes, TController])
+  ]
+  type IDirectiveLinkFn[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] = js.Function5[
     /* scope */ TScope, 
-    /* instanceElement */ angularLib.JQLite, 
-    /* instanceAttributes */ IAttributes, 
-    /* controller */ js.UndefOr[
-      IController | js.Array[IController] | org.scalablytyped.runtime.StringDictionary[IController]
-    ], 
+    /* instanceElement */ TElement, 
+    /* instanceAttributes */ TAttributes, 
+    /* controller */ js.UndefOr[TController], 
     /* transclude */ js.UndefOr[ITranscludeFunction], 
     scala.Unit
   ]

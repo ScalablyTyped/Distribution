@@ -381,23 +381,23 @@ trait LoDashExplicitSyncWrapper[TValue]
     customizer: lodashLib.lodashMod.underscoreNs.AssignCustomizer
   ): LoDashExplicitSyncWrapper[TValue with TSource1 with TSource2 with TSource3 with TSource4] = js.native
   def fill[T](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[_] | scala.Null | lodashLib.lodashMod.underscoreNs.List[_]]],
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[_] | lodashLib.lodashMod.underscoreNs.List[_] | scala.Null]],
     value: T
   ): LoDashExplicitSyncWrapper[js.Array[T]] = js.native
   def fill[T, U](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[U] | scala.Null | lodashLib.lodashMod.underscoreNs.List[U]]],
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[U] | lodashLib.lodashMod.underscoreNs.List[U] | scala.Null]],
     value: T,
     start: scala.Double
   ): LoDashExplicitSyncWrapper[js.Array[T | U]] = js.native
   def fill[T, U](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[U] | scala.Null | lodashLib.lodashMod.underscoreNs.List[U]]],
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[U] | lodashLib.lodashMod.underscoreNs.List[U] | scala.Null]],
     value: T,
     start: scala.Double,
     end: scala.Double
   ): LoDashExplicitSyncWrapper[js.Array[T | U]] = js.native
   @JSName("fill")
   def fill_TU[T, U](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[U] | scala.Null | lodashLib.lodashMod.underscoreNs.List[U]]],
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[U] | lodashLib.lodashMod.underscoreNs.List[U] | scala.Null]],
     value: T
   ): LoDashExplicitSyncWrapper[js.Array[T | U]] = js.native
   def filter(`this`: LoDashExplicitSyncWrapper[js.UndefOr[java.lang.String | scala.Null]]): LoDashExplicitSyncWrapper[js.Array[java.lang.String]] = js.native
@@ -1552,7 +1552,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   def map[T](
     `this`: LoDashExplicitSyncWrapper[
       js.UndefOr[
-        lodashLib.lodashMod.underscoreNs.List[T] | lodashLib.lodashMod.underscoreNs.Dictionary[T] | lodashLib.lodashMod.underscoreNs.NumericDictionary[T] | scala.Null
+        lodashLib.lodashMod.underscoreNs.Dictionary[T] | lodashLib.lodashMod.underscoreNs.List[T] | scala.Null | lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
       ]
     ]
   ): LoDashExplicitSyncWrapper[js.Array[T]] = js.native
@@ -1673,7 +1673,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   ): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[TResult]] = js.native
   @JSName("map")
   def map_TTResult[T, TResult](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[T] | scala.Null | lodashLib.lodashMod.underscoreNs.List[T]]],
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[T] | lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]],
     iteratee: (lodashLib.lodashMod.underscoreNs.ArrayIterator[T, TResult]) | (lodashLib.lodashMod.underscoreNs.ListIterator[T, TResult])
   ): LoDashExplicitSyncWrapper[js.Array[TResult]] = js.native
   def matches[V](): LoDashExplicitSyncWrapper[js.Function1[/* value */ V, scala.Boolean]] = js.native
@@ -1805,7 +1805,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     ]
   ] = js.native
   def orderBy[T /* <: js.Object */](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[scala.Null | T]],
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
       lodashLib.lodashMod.underscoreNs.ObjectIteratee[T] | (lodashLib.lodashMod.underscoreNs.ObjectIterator[T, lodashLib.lodashMod.underscoreNs.NotVoid])
     ]
@@ -1815,7 +1815,7 @@ trait LoDashExplicitSyncWrapper[TValue]
     ]
   ] = js.native
   def orderBy[T /* <: js.Object */](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[T | scala.Null]],
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[scala.Null | T]],
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
       lodashLib.lodashMod.underscoreNs.ObjectIteratee[T] | (lodashLib.lodashMod.underscoreNs.ObjectIterator[T, lodashLib.lodashMod.underscoreNs.NotVoid])
     ],
@@ -2239,7 +2239,7 @@ trait LoDashExplicitSyncWrapper[TValue]
   def partition[T](
     `this`: LoDashExplicitSyncWrapper[js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null | T]],
     callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      T | (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any)
+      (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any) | T
     ]
   ): LoDashExplicitSyncWrapper[js.Tuple2[js.Array[T], js.Array[T]]] = js.native
   def pick[T /* <: js.Object */](
@@ -2351,24 +2351,24 @@ trait LoDashExplicitSyncWrapper[TValue]
   ): LoDashExplicitSyncWrapper[TResult] = js.native
   @JSName("reduceRight")
   def reduceRight_T[T](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[T] | scala.Null | lodashLib.lodashMod.underscoreNs.List[T]]],
-    callback: lodashLib.lodashMod.underscoreNs.MemoListIterator[T, T, lodashLib.lodashMod.underscoreNs.List[T] | js.Array[T]]
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[T] | lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]],
+    callback: lodashLib.lodashMod.underscoreNs.MemoListIterator[T, T, js.Array[T] | lodashLib.lodashMod.underscoreNs.List[T]]
   ): LoDashExplicitSyncWrapper[js.UndefOr[T]] = js.native
   @JSName("reduceRight")
   def reduceRight_TTResult[T, TResult](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[T] | scala.Null | lodashLib.lodashMod.underscoreNs.List[T]]],
-    callback: lodashLib.lodashMod.underscoreNs.MemoListIterator[T, TResult, lodashLib.lodashMod.underscoreNs.List[T] | js.Array[T]],
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[T] | lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]],
+    callback: lodashLib.lodashMod.underscoreNs.MemoListIterator[T, TResult, js.Array[T] | lodashLib.lodashMod.underscoreNs.List[T]],
     accumulator: TResult
   ): LoDashExplicitSyncWrapper[TResult] = js.native
   @JSName("reduce")
   def reduce_T[T](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[T] | scala.Null | lodashLib.lodashMod.underscoreNs.List[T]]],
-    callback: lodashLib.lodashMod.underscoreNs.MemoListIterator[T, T, lodashLib.lodashMod.underscoreNs.List[T] | js.Array[T]]
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[T] | lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]],
+    callback: lodashLib.lodashMod.underscoreNs.MemoListIterator[T, T, js.Array[T] | lodashLib.lodashMod.underscoreNs.List[T]]
   ): LoDashExplicitSyncWrapper[js.UndefOr[T]] = js.native
   @JSName("reduce")
   def reduce_TTResult[T, TResult](
-    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[T] | scala.Null | lodashLib.lodashMod.underscoreNs.List[T]]],
-    callback: lodashLib.lodashMod.underscoreNs.MemoListIterator[T, TResult, lodashLib.lodashMod.underscoreNs.List[T] | js.Array[T]],
+    `this`: LoDashExplicitSyncWrapper[js.UndefOr[js.Array[T] | lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]],
+    callback: lodashLib.lodashMod.underscoreNs.MemoListIterator[T, TResult, js.Array[T] | lodashLib.lodashMod.underscoreNs.List[T]],
     accumulator: TResult
   ): LoDashExplicitSyncWrapper[TResult] = js.native
   def reject(`this`: LoDashExplicitSyncWrapper[js.UndefOr[java.lang.String | scala.Null]]): LoDashExplicitSyncWrapper[js.Array[java.lang.String]] = js.native
@@ -2690,16 +2690,16 @@ trait LoDashExplicitSyncWrapper[TValue]
   def transform(): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[_]] = js.native
   def transform(`this`: LoDashExplicitSyncWrapper[js.Array[_]]): LoDashExplicitSyncWrapper[js.Array[_]] = js.native
   def transform[T, TResult](
-    `this`: LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[T] | js.Array[T]],
-    iteratee: (lodashLib.lodashMod.underscoreNs.MemoVoidArrayIterator[T, lodashLib.lodashMod.underscoreNs.Dictionary[TResult] | js.Array[TResult]]) | (lodashLib.lodashMod.underscoreNs.MemoVoidDictionaryIterator[T, lodashLib.lodashMod.underscoreNs.Dictionary[TResult] | js.Array[TResult]])
+    `this`: LoDashExplicitSyncWrapper[js.Array[T] | lodashLib.lodashMod.underscoreNs.Dictionary[T]],
+    iteratee: (lodashLib.lodashMod.underscoreNs.MemoVoidArrayIterator[T, js.Array[TResult] | lodashLib.lodashMod.underscoreNs.Dictionary[TResult]]) | (lodashLib.lodashMod.underscoreNs.MemoVoidDictionaryIterator[T, js.Array[TResult] | lodashLib.lodashMod.underscoreNs.Dictionary[TResult]])
   ): LoDashExplicitSyncWrapper[js.Array[TResult]] = js.native
   def transform[T, TResult](
-    `this`: LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[T] | js.Array[T]],
+    `this`: LoDashExplicitSyncWrapper[js.Array[T] | lodashLib.lodashMod.underscoreNs.Dictionary[T]],
     iteratee: (lodashLib.lodashMod.underscoreNs.MemoVoidArrayIterator[T, js.Array[TResult]]) | (lodashLib.lodashMod.underscoreNs.MemoVoidDictionaryIterator[T, js.Array[TResult]]),
     accumulator: js.Array[TResult]
   ): LoDashExplicitSyncWrapper[js.Array[TResult]] = js.native
   def transform[T, TResult](
-    `this`: LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[T] | js.Array[T]],
+    `this`: LoDashExplicitSyncWrapper[js.Array[T] | lodashLib.lodashMod.underscoreNs.Dictionary[T]],
     iteratee: (lodashLib.lodashMod.underscoreNs.MemoVoidArrayIterator[T, lodashLib.lodashMod.underscoreNs.Dictionary[TResult]]) | (lodashLib.lodashMod.underscoreNs.MemoVoidDictionaryIterator[T, lodashLib.lodashMod.underscoreNs.Dictionary[TResult]]),
     accumulator: lodashLib.lodashMod.underscoreNs.Dictionary[TResult]
   ): LoDashExplicitSyncWrapper[lodashLib.lodashMod.underscoreNs.Dictionary[TResult]] = js.native

@@ -130,7 +130,7 @@ trait IButtonProps
   var onMenuClick: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement] | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]
+        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]
       ], 
       /* button */ js.UndefOr[IButtonProps], 
       scala.Unit

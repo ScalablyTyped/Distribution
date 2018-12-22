@@ -13,7 +13,7 @@ object SyncNsMembers extends js.Object {
     adminUser: User,
     regex: java.lang.String,
     name: java.lang.String,
-    changeCallback: js.Function1[/* changeEvent */ ChangeEvent, scala.Unit | js.Promise[scala.Unit]]
+    changeCallback: js.Function1[/* changeEvent */ ChangeEvent, js.Promise[scala.Unit] | scala.Unit]
   ): scala.Unit = js.native
   def initiateClientReset(path: java.lang.String): scala.Unit = js.native
   def reconnect(): scala.Unit = js.native

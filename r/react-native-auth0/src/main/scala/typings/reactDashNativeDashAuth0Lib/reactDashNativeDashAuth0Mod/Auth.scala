@@ -17,6 +17,7 @@ class Auth () extends js.Object {
   def refreshToken(params: RefreshTokenParams): js.Promise[_] = js.native
   def resetPassword(params: ResetPasswordParams): js.Promise[_] = js.native
   def revoke(params: RevokeParams): js.Promise[_] = js.native
-  def userInfo(params: UserInfoParams): js.Promise[UserInfo] = js.native
+  /* tslint:disable-next-line no-unnecessary-generics */
+  def userInfo[CustomClaims](params: UserInfoParams): js.Promise[UserInfo[CustomClaims]] = js.native
 }
 

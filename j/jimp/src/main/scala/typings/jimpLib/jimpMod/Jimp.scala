@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 trait Jimp
   extends // Constructors
 org.scalablytyped.runtime.Instantiable2[
-      (/* path */ java.lang.String) | (/* urlOptions */ jimpLib.URLOptions) | (/* image */ Jimp) | (/* data */ nodeLib.Buffer) | (/* data */ Bitmap) | (/* w */ scala.Double), 
-      (/* cb */ jimpLib.ImageCallback[js.Any]) | (/* h */ scala.Double), 
+      (/* data */ Bitmap) | (/* data */ nodeLib.Buffer) | (/* w */ scala.Double) | (/* image */ Jimp) | (/* path */ java.lang.String) | (/* urlOptions */ jimpLib.URLOptions), 
+      (/* h */ scala.Double) | (/* cb */ jimpLib.ImageCallback[js.Any]), 
       Jimp
     ]
      with // Constructors
 // For custom constructors when using Jimp.appendConstructorOption
 org.scalablytyped.runtime.Instantiable1[
-      (/* path */ java.lang.String) | (/* urlOptions */ jimpLib.URLOptions) | (/* image */ Jimp) | (/* data */ nodeLib.Buffer) | (/* data */ Bitmap) | (/* args (repeated) */ js.Any), 
+      (/* args (repeated) */ js.Any) | (/* data */ Bitmap) | (/* data */ nodeLib.Buffer) | (/* image */ Jimp) | (/* path */ java.lang.String) | (/* urlOptions */ jimpLib.URLOptions), 
       Jimp
     ]
      with org.scalablytyped.runtime.Instantiable3[
       /* w */ scala.Double, 
       /* h */ scala.Double, 
-      (/* cb */ jimpLib.ImageCallback[js.Any]) | (/* background */ scala.Double) | (/* background */ java.lang.String), 
+      (/* background */ scala.Double) | (/* cb */ jimpLib.ImageCallback[js.Any]) | (/* background */ java.lang.String), 
       Jimp
     ]
      with org.scalablytyped.runtime.Instantiable4[

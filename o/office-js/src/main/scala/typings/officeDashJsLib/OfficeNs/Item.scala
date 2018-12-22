@@ -258,7 +258,7 @@ trait Item extends js.Object {
            * 
            * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
            * 
-           * @param attachmentId The identifier of the attachment you want to get. The maximum length of the string is 100 characters. 
+           * @param attachmentId The identifier of the attachment you want to get. 
            * @param options Optional. An object literal that contains one or more of the following properties.
            *        asyncContext: Developers can provide any object they wish to access in the callback method.
            * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
@@ -287,7 +287,7 @@ trait Item extends js.Object {
            * 
            * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
            * 
-           * @param attachmentId The identifier of the attachment you want to get. The maximum length of the string is 100 characters. 
+           * @param attachmentId The identifier of the attachment you want to get. 
            * @param options Optional. An object literal that contains one or more of the following properties.
            *        asyncContext: Developers can provide any object they wish to access in the callback method.
            * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
@@ -316,7 +316,7 @@ trait Item extends js.Object {
            * 
            * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
            * 
-           * @param attachmentId The identifier of the attachment you want to get. The maximum length of the string is 100 characters. 
+           * @param attachmentId The identifier of the attachment you want to get. 
            * @param options Optional. An object literal that contains one or more of the following properties.
            *        asyncContext: Developers can provide any object they wish to access in the callback method.
            * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 

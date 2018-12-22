@@ -1,16 +1,4 @@
 ```
-/** @publicapi @module core */ /** */
-/** @publicapi @module common */ /** */
-/**
- * # Core classes and interfaces
- *
- * The classes and interfaces that are core to ui-router and do not belong
- * to a more specific subsystem (such as resolve).
- *
- * @preferred @publicapi @module core
- */ /** */
-/** @publicapi @module core */ /** */
-/** @internalapi @module vanilla */ /** */
 /**
  * This module is a stub for core services such as Dependency Injection or Browser Location.
  * Core services may be implemented by a specific framework, such as ng1 or ng2, or be pure javascript.
@@ -81,6 +69,16 @@
  *
  * @module common_strings
  */ /** */
+/** @publicapi @module core */ /** */
+/** @publicapi @module common */ /** */
+/**
+ * # Core classes and interfaces
+ *
+ * The classes and interfaces that are core to ui-router and do not belong
+ * to a more specific subsystem (such as resolve).
+ *
+ * @preferred @publicapi @module core
+ */ /** */
 /**
  * This module contains code for State Parameters.
  *
@@ -96,6 +94,7 @@
 /**
  * An interface which is similar to an Angular 2 `Provider`
  */
+/** @publicapi @module core */ /** */
 /**
  * # The state subsystem
  *
@@ -150,6 +149,7 @@
 /** @publicapi @module url */ /** */
 /** @publicapi @module url */ /** */
 /** @publicapi @module url */ /** */
+/** @internalapi @module vanilla */ /** */
 /** @internalapi @module vanilla */ /** */
 /**
  * Naive, pure JS implementation of core ui-router services

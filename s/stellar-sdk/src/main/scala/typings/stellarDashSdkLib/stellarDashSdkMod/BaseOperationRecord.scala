@@ -15,6 +15,7 @@ trait BaseOperationRecord extends Record {
   var precedes_Original: CallFunction[OperationRecord] = js.native
   @JSName("self")
   var self_Original: CallFunction[OperationRecord] = js.native
+  var source_account: java.lang.String = js.native
   @JSName("succeeds")
   var succeeds_Original: CallFunction[OperationRecord] = js.native
   @JSName("transaction")

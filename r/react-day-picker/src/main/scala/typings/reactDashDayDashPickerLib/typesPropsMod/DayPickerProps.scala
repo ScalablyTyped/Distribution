@@ -59,7 +59,7 @@ trait DayPickerProps extends js.Object {
   var onCaptionClick: js.UndefOr[
     js.Function2[
       /* month */ stdLib.Date, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -67,7 +67,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -83,7 +83,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -91,7 +91,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -99,7 +99,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -107,7 +107,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -141,7 +141,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* day */ stdLib.Date, 
       /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -149,7 +149,7 @@ trait DayPickerProps extends js.Object {
     js.Function3[
       /* weekNumber */ scala.Double, 
       /* days */ js.Array[stdLib.Date], 
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

@@ -12,7 +12,7 @@ trait SetDetails extends js.Object {
   /** Optional. The resource identifier for the content type.  */
   var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.undefined
   /** Optional. Where to set the setting (default: regular).  */
-  var scope: js.UndefOr[java.lang.String] = js.undefined
+  var scope: js.UndefOr[ScopeEnum] = js.undefined
   /** Optional. The pattern for the secondary URL. Defaults to matching all URLs. For details on the format of a pattern, see Content Setting Patterns.  */
   var secondaryPattern: js.UndefOr[java.lang.String] = js.undefined
   /** The setting applied by this rule. See the description of the individual ContentSetting objects for the possible values. */

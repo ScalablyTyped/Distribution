@@ -16,7 +16,7 @@ trait PhononPopoverComponent extends js.Object {
   def open(direction: PhononPopoverDirection): PhononPopoverComponent = js.native
   def openFrom(element: java.lang.String): PhononPopoverComponent = js.native
   def openFrom(element: phononLib.Element): PhononPopoverComponent = js.native
-  def setList(list: js.Array[_ | java.lang.String | PhononPopoverItem]): PhononPopoverComponent = js.native
+  def setList(list: js.Array[_ | PhononPopoverItem | java.lang.String]): PhononPopoverComponent = js.native
   def setList(list: js.Array[_], itemBuilder: js.Function1[/* item */ js.Any, scala.Unit]): PhononPopoverComponent = js.native
 }
 

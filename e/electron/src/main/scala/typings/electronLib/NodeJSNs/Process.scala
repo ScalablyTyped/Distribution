@@ -34,6 +34,11 @@ trait Process
        */
   var resourcesPath: js.UndefOr[java.lang.String] = js.native
   /**
+       * A Boolean. When the renderer process is sandboxed, this property is true,
+       * otherwise it is undefined.
+       */
+  var sandboxed: js.UndefOr[scala.Boolean] = js.native
+  /**
        * A Boolean that controls whether or not deprecation warnings will be thrown as
        * exceptions. Setting this to true will throw errors for deprecations. This
        * property is used instead of the --throw-deprecation command line flag.
@@ -71,16 +76,17 @@ trait Process
   def crash(): scala.Unit = js.native
   def getCPUUsage(): electronLib.ElectronNs.CPUUsage = js.native
   /**
+       * Indicates the creation time of the application. The time is represented as
+       * number of milliseconds since epoch. It returns null if it is unable to get the
+       * process creation time.
+       */
+  def getCreationTime(): scala.Double | scala.Null = js.native
+  /**
        * Returns an object with V8 heap statistics. Note that all statistics are reported
        * in Kilobytes.
        */
   def getHeapStatistics(): electronLib.ElectronNs.HeapStatistics = js.native
   def getIOCounters(): electronLib.ElectronNs.IOCounters = js.native
-  /**
-       * Returns an object giving memory usage statistics about the current process. Note
-       * that all statistics are reported in Kilobytes.
-       */
-  def getProcessMemoryInfo(): electronLib.ElectronNs.ProcessMemoryInfo = js.native
   /**
        * Returns an object giving memory usage statistics about the entire system. Note
        * that all statistics are reported in Kilobytes.
@@ -90,7 +96,7 @@ trait Process
        * Causes the main thread of the current process hang.
        */
   def hang(): scala.Unit = js.native
-  // Docs: http://electron.atom.io/docs/api/process
+  // Docs: http://electronjs.org/docs/api/process
   /**
        * Emitted when Electron has loaded its internal initialization script and is
        * beginning to load the web page or the main script. It can be used by the preload
@@ -108,5 +114,9 @@ trait Process
        * whichever is lower for the current process.
        */
   def setFdLimit(maxDescriptors: scala.Double): scala.Unit = js.native
+  /**
+       * Takes a V8 heap snapshot and saves it to filePath.
+       */
+  def takeHeapSnapshot(filePath: java.lang.String): scala.Boolean = js.native
 }
 

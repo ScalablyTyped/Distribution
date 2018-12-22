@@ -52,7 +52,7 @@ class CalloutContentBase protected ()
   def dismiss(): scala.Unit = js.native
   def dismiss(ev: reactLib.Event): scala.Unit = js.native
   def dismiss(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
-  def dismiss(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def dismiss(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
 }
 
 @JSImport("office-ui-fabric-react/lib/components/Callout/CalloutContent.base", "CalloutContentBase")

@@ -20,7 +20,11 @@ object ApolloLink extends js.Object {
     /* link */ this.type, 
     /* operation */ apolloDashLinkLib.libTypesMod.GraphQLRequest, 
     zenDashObservableDashTsLib.libZenObservableMod.Observable[
-      apolloDashLinkLib.libTypesMod.FetchResult[stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
+      apolloDashLinkLib.libTypesMod.FetchResult[
+        org.scalablytyped.runtime.StringDictionary[_], 
+        stdLib.Record[java.lang.String, _], 
+        stdLib.Record[java.lang.String, _]
+      ]
     ]
   ] = js.native
   def empty(): apolloDashLinkLib.libLinkMod.ApolloLink = js.native
@@ -28,7 +32,11 @@ object ApolloLink extends js.Object {
     link: apolloDashLinkLib.libLinkMod.ApolloLink,
     operation: apolloDashLinkLib.libTypesMod.GraphQLRequest
   ): zenDashObservableDashTsLib.libZenObservableMod.Observable[
-    apolloDashLinkLib.libTypesMod.FetchResult[stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
+    apolloDashLinkLib.libTypesMod.FetchResult[
+      org.scalablytyped.runtime.StringDictionary[_], 
+      stdLib.Record[java.lang.String, _], 
+      stdLib.Record[java.lang.String, _]
+    ]
   ] = js.native
   def from(links: js.Array[apolloDashLinkLib.libLinkMod.ApolloLink]): apolloDashLinkLib.libLinkMod.ApolloLink = js.native
   def split(

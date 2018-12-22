@@ -8,13 +8,12 @@ import scala.scalajs.js.annotation._
 
 trait Request extends js.Object {
   /**
+           * @summary true if timeout fired; false otherwise.
+           */
+  var timedout: scala.Boolean
+  /**
            * @summary Clears the timeout on the request.
            */
   def clearTimeout(): scala.Unit
-  /**
-           *
-           * @return {boolean} true if timeout fired; false otherwise.
-           */
-  def timedout(event: java.lang.String, message: java.lang.String): scala.Boolean
 }
 

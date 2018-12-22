@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait TransitionEvent[T] extends SyntheticEvent[T] {
+trait TransitionEvent[T]
+  extends BaseSyntheticEvent[reactLib.NativeTransitionEvent, reactLib.EventTarget with T, reactLib.EventTarget] {
   var elapsedTime: scala.Double
-  @JSName("nativeEvent")
-  var nativeEvent_TransitionEvent: reactLib.NativeTransitionEvent
   var propertyName: java.lang.String
   var pseudoElement: java.lang.String
 }

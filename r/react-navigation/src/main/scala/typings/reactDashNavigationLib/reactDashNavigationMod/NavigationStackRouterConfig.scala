@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait NavigationStackRouterConfig extends js.Object {
+  var defaultNavigationOptions: js.UndefOr[NavigationScreenConfig[NavigationScreenOptions]] = js.undefined
   var headerTransitionPreset: js.UndefOr[
     reactDashNavigationLib.reactDashNavigationLibStrings.`fade-in-place` | reactDashNavigationLib.reactDashNavigationLibStrings.uikit
   ] = js.undefined

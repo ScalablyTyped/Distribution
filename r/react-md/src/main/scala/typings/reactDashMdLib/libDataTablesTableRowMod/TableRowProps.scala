@@ -19,7 +19,7 @@ trait TableRowProps
     js.Function3[
       /* rowIndex */ scala.Double, 
       /* checked */ scala.Boolean, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLTableRowElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLTableRowElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

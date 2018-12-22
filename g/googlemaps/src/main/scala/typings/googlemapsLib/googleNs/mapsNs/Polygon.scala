@@ -25,7 +25,7 @@ class Polygon () extends MVCObject {
   def setPath(path: MVCArray[LatLng]): scala.Unit = js.native
   def setPath(path: js.Array[LatLng | LatLngLiteral]): scala.Unit = js.native
   def setPaths(paths: MVCArray[LatLng | MVCArray[LatLng]]): scala.Unit = js.native
-  def setPaths(paths: js.Array[LatLng | LatLngLiteral | (js.Array[LatLng | LatLngLiteral])]): scala.Unit = js.native
+  def setPaths(paths: js.Array[(js.Array[LatLng | LatLngLiteral]) | LatLng | LatLngLiteral]): scala.Unit = js.native
   def setVisible(visible: scala.Boolean): scala.Unit = js.native
 }
 

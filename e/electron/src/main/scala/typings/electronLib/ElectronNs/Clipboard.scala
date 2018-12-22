@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Clipboard extends EventEmitter {
-  // Docs: http://electron.atom.io/docs/api/clipboard
+  // Docs: http://electronjs.org/docs/api/clipboard
   def availableFormats(): js.Array[java.lang.String] = js.native
-  // Docs: http://electron.atom.io/docs/api/clipboard
+  // Docs: http://electronjs.org/docs/api/clipboard
   def availableFormats(`type`: java.lang.String): js.Array[java.lang.String] = js.native
   /**
        * Clears the clipboard content.

@@ -12,6 +12,7 @@ object d3DashScaleModMembers extends js.Object {
   def scaleBand(): ScaleBand[java.lang.String] = js.native
   @JSName("scaleBand")
   def scaleBand_DomainAnon_ToString[Domain /* <: d3DashScaleLib.Anon_ToString */](): ScaleBand[Domain] = js.native
+  def scaleDiverging[T](interpolator: js.Function1[/* t */ scala.Double, T]): ScaleDiverging[T] = js.native
   def scaleIdentity(): ScaleIdentity = js.native
   def scaleLinear(): ScaleLinear[scala.Double, scala.Double] = js.native
   @JSName("scaleLinear")

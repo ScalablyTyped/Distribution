@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
-trait LinuxTargetSpecificOptions
-  extends CommonLinuxOptions
-     with appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions {
+/* RemoveDifficultInheritance: 
+- Dropped any */ 
+trait LinuxTargetSpecificOptions extends CommonLinuxOptions {
   val afterInstall: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   val afterRemove: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("johnny-five", "Motors")
 @js.native
 class Motors protected () extends js.Object {
-  def this(option: js.Array[MotorOption | scala.Double]) = this()
+  def this(option: js.Array[scala.Double | MotorOption]) = this()
   val isOn: scala.Boolean = js.native
   def brake(): scala.Unit = js.native
   def forward(speed: scala.Double): scala.Unit = js.native

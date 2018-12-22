@@ -55,6 +55,9 @@ object expoLibStrings {
   sealed trait PORTRAIT_UP extends js.Object
   
   @js.native
+  sealed trait PermissionResponse extends js.Object
+  
+  @js.native
   sealed trait QDM2 extends js.Object
   
   @js.native
@@ -62,6 +65,9 @@ object expoLibStrings {
   
   @js.native
   sealed trait Qclp extends js.Object
+  
+  @js.native
+  sealed trait SMS extends js.Object
   
   @js.native
   sealed trait Videos extends js.Object
@@ -601,6 +607,9 @@ object expoLibStrings {
   sealed trait notification extends js.Object
   
   @js.native
+  sealed trait notifications extends js.Object
+  
+  @js.native
   sealed trait off extends js.Object
   
   @js.native
@@ -638,9 +647,6 @@ object expoLibStrings {
   
   @js.native
   sealed trait reminders extends js.Object
-  
-  @js.native
-  sealed trait remoteNotifications extends js.Object
   
   @js.native
   sealed trait rewardedVideoDidClose extends js.Object
@@ -769,9 +775,11 @@ object expoLibStrings {
   def PORTRAIT: PORTRAIT = "PORTRAIT".asInstanceOf[PORTRAIT]
   def PORTRAIT_DOWN: PORTRAIT_DOWN = "PORTRAIT_DOWN".asInstanceOf[PORTRAIT_DOWN]
   def PORTRAIT_UP: PORTRAIT_UP = "PORTRAIT_UP".asInstanceOf[PORTRAIT_UP]
+  def PermissionResponse: PermissionResponse = "PermissionResponse".asInstanceOf[PermissionResponse]
   def QDM2: QDM2 = "QDM2".asInstanceOf[QDM2]
   def QDMC: QDMC = "QDMC".asInstanceOf[QDMC]
   def Qclp: Qclp = "Qclp".asInstanceOf[Qclp]
+  def SMS: SMS = "SMS".asInstanceOf[SMS]
   def Videos: Videos = "Videos".asInstanceOf[Videos]
   def `aac `: `aac ` = "aac ".asInstanceOf[`aac `]
   def aace: aace = "aace".asInstanceOf[aace]
@@ -951,6 +959,7 @@ object expoLibStrings {
   def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   def note: note = "note".asInstanceOf[note]
   def notification: notification = "notification".asInstanceOf[notification]
+  def notifications: notifications = "notifications".asInstanceOf[notifications]
   def off: off = "off".asInstanceOf[off]
   def on: on = "on".asInstanceOf[on]
   def phoneNumbers: phoneNumbers = "phoneNumbers".asInstanceOf[phoneNumbers]
@@ -964,7 +973,6 @@ object expoLibStrings {
   def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   def relationships: relationships = "relationships".asInstanceOf[relationships]
   def reminders: reminders = "reminders".asInstanceOf[reminders]
-  def remoteNotifications: remoteNotifications = "remoteNotifications".asInstanceOf[remoteNotifications]
   def rewardedVideoDidClose: rewardedVideoDidClose = "rewardedVideoDidClose".asInstanceOf[rewardedVideoDidClose]
   def rewardedVideoDidFailToLoad: rewardedVideoDidFailToLoad = "rewardedVideoDidFailToLoad".asInstanceOf[rewardedVideoDidFailToLoad]
   def rewardedVideoDidLoad: rewardedVideoDidLoad = "rewardedVideoDidLoad".asInstanceOf[rewardedVideoDidLoad]

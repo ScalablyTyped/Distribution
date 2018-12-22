@@ -11,6 +11,7 @@ trait BottomNavigationProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BottomNavigationClassKey] {
   var children: reactLib.reactMod.ReactNs.ReactNode
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[BottomNavigationProps]] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 

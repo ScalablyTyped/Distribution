@@ -52,7 +52,7 @@ trait Screen extends EventEmitter {
   def getDisplayMatching(rect: Rectangle): Display = js.native
   def getDisplayNearestPoint(point: Point): Display = js.native
   def getPrimaryDisplay(): Display = js.native
-  // Docs: http://electron.atom.io/docs/api/screen
+  // Docs: http://electronjs.org/docs/api/screen
   /**
        * Emitted when newDisplay has been added.
        */

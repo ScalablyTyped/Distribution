@@ -49,7 +49,7 @@ trait DataTableProps
       /* rowId */ scala.Double, 
       /* checked */ scala.Boolean, 
       /* selectedCount */ scala.Double, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

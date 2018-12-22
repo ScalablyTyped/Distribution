@@ -11,7 +11,7 @@ trait Event extends js.Object {
   def apply(
     eventType: java.lang.String,
     eventName: java.lang.String,
-    parameters: AddToCartParameters | facebookDashPixelLib.facebookNs.PixelNs.DPANs.AddToCartParameters | facebookDashPixelLib.facebookNs.PixelNs.DPANs.PurchaseParameters | PurchaseParameters | facebookDashPixelLib.facebookNs.PixelNs.DPANs.ViewContentParameters | ViewContentParameters
+    parameters: facebookDashPixelLib.facebookNs.PixelNs.DPANs.AddToCartParameters | AddToCartParameters | facebookDashPixelLib.facebookNs.PixelNs.DPANs.PurchaseParameters | PurchaseParameters | ViewContentParameters | facebookDashPixelLib.facebookNs.PixelNs.DPANs.ViewContentParameters
   ): scala.Unit = js.native
   def apply(eventType: java.lang.String, eventName: java.lang.String, parameters: AddPaymentInfoParameters): scala.Unit = js.native
   def apply(eventType: java.lang.String, eventName: java.lang.String, parameters: AddToWishlistParameters): scala.Unit = js.native

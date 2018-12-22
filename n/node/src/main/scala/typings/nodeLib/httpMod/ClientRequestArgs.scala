@@ -28,6 +28,7 @@ trait ClientRequestArgs extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
   var port: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var protocol: js.UndefOr[java.lang.String] = js.undefined
+  var setHost: js.UndefOr[scala.Boolean] = js.undefined
   var socketPath: js.UndefOr[java.lang.String] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }

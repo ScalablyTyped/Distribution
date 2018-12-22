@@ -30,7 +30,7 @@ trait IAssetsService extends js.Object {
           * @param {Scope} scope optional scope to pass into the loader
           * @returns {Promise} Promise object which resolves when all the files has loaded
           */
-  def load(pathArray: js.Array[java.lang.String], scope: js.Any): js.Any
+  def load(pathArray: js.Array[java.lang.String], scope: angularLib.angularMod.angularNs.IScope): angularLib.angularMod.angularNs.IPromise[_]
   /**
           * @ngdoc method
           * @name umbraco.services.assetsService#loadCss
@@ -45,7 +45,12 @@ trait IAssetsService extends js.Object {
           * @param {Number} timeout in milliseconds
           * @returns {Promise} Promise object which resolves when the file has loaded
           */
-  def loadCss(path: java.lang.String, scope: js.Any, attributes: js.Object, timeout: scala.Double): js.Any
+  def loadCss(
+    path: java.lang.String,
+    scope: angularLib.angularMod.angularNs.IScope,
+    attributes: js.Object,
+    timeout: scala.Double
+  ): angularLib.angularMod.angularNs.IPromise[_]
   /**
           * @ngdoc method
           * @name umbraco.services.assetsService#loadJs
@@ -60,6 +65,11 @@ trait IAssetsService extends js.Object {
           * @param {Number} timeout in milliseconds
           * @returns {Promise} Promise object which resolves when the file has loaded
           */
-  def loadJs(path: java.lang.String, scope: js.Any, attributes: js.Object, timeout: scala.Double): js.Any
+  def loadJs(
+    path: java.lang.String,
+    scope: angularLib.angularMod.angularNs.IScope,
+    attributes: js.Object,
+    timeout: scala.Double
+  ): angularLib.angularMod.angularNs.IPromise[_]
 }
 

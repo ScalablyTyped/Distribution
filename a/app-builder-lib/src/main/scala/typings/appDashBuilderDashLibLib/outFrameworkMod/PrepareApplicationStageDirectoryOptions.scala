@@ -12,8 +12,8 @@ trait PrepareApplicationStageDirectoryOptions extends js.Object {
        */
   val appOutDir: java.lang.String
   val arch: java.lang.String
-  val packager: appDashBuilderDashLibLib.outMod.PlatformPackager[_]
-  val platformName: appDashBuilderDashLibLib.outElectronElectronFrameworkMod.ElectronPlatformName
+  val packager: js.Any
+  val platformName: js.Any
   val version: java.lang.String
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait KnockoutObservableArrayFunctions[T] extends js.Object {
   def filter(predicate: js.Function1[/* value */ T, scala.Boolean]): knockoutLib.KnockoutObservableArray[T] = js.native
-  def indexBy(indexer: js.Function1[/* value */ T, _ | java.lang.String | js.Array[java.lang.String]]): knockoutLib.KnockoutObservable[org.scalablytyped.runtime.StringDictionary[js.Array[T]]] = js.native
+  def indexBy(indexer: js.Function1[/* value */ T, _ | js.Array[java.lang.String] | java.lang.String]): knockoutLib.KnockoutObservable[org.scalablytyped.runtime.StringDictionary[js.Array[T]]] = js.native
   def map[TResult](mapping: knockoutDashTransformationsLib.KnockoutTransformationsNs.Mapping[T, TResult]): knockoutLib.KnockoutObservableArray[TResult] = js.native
   def map[TResult](mapping: knockoutDashTransformationsLib.KnockoutTransformationsNs.MappingOption[T, TResult]): knockoutLib.KnockoutObservableArray[TResult] = js.native
   def map[TResult](

@@ -17,7 +17,7 @@ org.scalablytyped.runtime.Instantiable0[braceLib.braceMod.AceAjaxNs.Document]
          * @param text The starting text
         **/
 org.scalablytyped.runtime.Instantiable1[
-      (/* text */ java.lang.String) | (/* text */ js.Array[java.lang.String]), 
+      (/* text */ js.Array[java.lang.String]) | (/* text */ java.lang.String), 
       braceLib.braceMod.AceAjaxNs.Document
     ]
 

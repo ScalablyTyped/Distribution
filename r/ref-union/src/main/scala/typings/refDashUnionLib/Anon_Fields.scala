@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Fields
   extends org.scalablytyped.runtime.Instantiable0[refDashUnionLib.refDashUnionMod.UnionType]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* fields */ js.Object) | (/* fields */ js.Array[js.Any]), 
+      (/* fields */ js.Array[js.Any]) | (/* fields */ js.Object), 
       refDashUnionLib.refDashUnionMod.UnionType
     ] {
   def apply(): refDashUnionLib.refDashUnionMod.UnionType = js.native

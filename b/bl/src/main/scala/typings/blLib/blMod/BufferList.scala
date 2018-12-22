@@ -11,7 +11,7 @@ trait BufferList
   var length: scala.Double = js.native
   def append(buffer: BufferList): scala.Unit = js.native
   def append(buffer: java.lang.String): scala.Unit = js.native
-  def append(buffer: js.Array[BufferList | nodeLib.Buffer]): scala.Unit = js.native
+  def append(buffer: js.Array[nodeLib.Buffer | BufferList]): scala.Unit = js.native
   def append(buffer: nodeLib.Buffer): scala.Unit = js.native
   def consume(): scala.Unit = js.native
   def consume(bytes: scala.Double): scala.Unit = js.native

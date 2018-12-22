@@ -43,7 +43,7 @@ object Model extends js.Object {
   def where[T](
     key: java.lang.String,
     operatorOrValue: java.lang.String,
-    valueIfOperator: js.Array[java.lang.String | scala.Double]
+    valueIfOperator: js.Array[scala.Double | java.lang.String]
   ): T = js.native
   def where[T](key: java.lang.String, operatorOrValue: java.lang.String, valueIfOperator: scala.Boolean): T = js.native
   def where[T](key: java.lang.String, operatorOrValue: java.lang.String, valueIfOperator: scala.Double): T = js.native
@@ -52,7 +52,7 @@ object Model extends js.Object {
   def where[T](
     key: java.lang.String,
     operatorOrValue: scala.Boolean,
-    valueIfOperator: js.Array[java.lang.String | scala.Double]
+    valueIfOperator: js.Array[scala.Double | java.lang.String]
   ): T = js.native
   def where[T](key: java.lang.String, operatorOrValue: scala.Boolean, valueIfOperator: scala.Boolean): T = js.native
   def where[T](key: java.lang.String, operatorOrValue: scala.Boolean, valueIfOperator: scala.Double): T = js.native
@@ -61,7 +61,7 @@ object Model extends js.Object {
   def where[T](
     key: java.lang.String,
     operatorOrValue: scala.Double,
-    valueIfOperator: js.Array[java.lang.String | scala.Double]
+    valueIfOperator: js.Array[scala.Double | java.lang.String]
   ): T = js.native
   def where[T](key: java.lang.String, operatorOrValue: scala.Double, valueIfOperator: scala.Boolean): T = js.native
   def where[T](key: java.lang.String, operatorOrValue: scala.Double, valueIfOperator: scala.Double): T = js.native

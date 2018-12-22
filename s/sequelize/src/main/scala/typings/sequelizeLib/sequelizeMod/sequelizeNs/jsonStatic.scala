@@ -18,8 +18,8 @@ trait jsonStatic
          *     '<value>'".
          */
 org.scalablytyped.runtime.Instantiable2[
-      (/* conditionsOrPath */ java.lang.String) | (/* conditionsOrPath */ js.Object), 
-      (/* value */ java.lang.String) | (/* value */ scala.Double) | (/* value */ scala.Boolean), 
+      (/* conditionsOrPath */ js.Object) | (/* conditionsOrPath */ java.lang.String), 
+      (/* value */ scala.Boolean) | (/* value */ scala.Double) | (/* value */ java.lang.String), 
       json
     ]
      with /**
@@ -33,7 +33,7 @@ org.scalablytyped.runtime.Instantiable2[
          *     '<value>'".
          */
 org.scalablytyped.runtime.Instantiable1[
-      (/* conditionsOrPath */ java.lang.String) | (/* conditionsOrPath */ js.Object), 
+      (/* conditionsOrPath */ js.Object) | (/* conditionsOrPath */ java.lang.String), 
       json
     ]
 

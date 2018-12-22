@@ -22,18 +22,18 @@ trait KnockoutMapping extends js.Object {
   def resetDefaultOptions(): scala.Unit = js.native
   def toJS[T](viewModel: T): T = js.native
   def toJS[T](viewModel: T, options: KnockoutMappingOptions): T = js.native
-  def toJS[T](viewModel: js.Array[T | KnockoutObservableType[T]]): js.Array[T] = js.native
-  def toJS[T](viewModel: js.Array[T | KnockoutObservableType[T]], options: KnockoutMappingOptions): js.Array[T] = js.native
+  def toJS[T](viewModel: js.Array[KnockoutObservableType[T] | T]): js.Array[T] = js.native
+  def toJS[T](viewModel: js.Array[KnockoutObservableType[T] | T], options: KnockoutMappingOptions): js.Array[T] = js.native
   def toJS[T](viewModel: KnockoutObservableType[T]): T = js.native
   def toJS[T](viewModel: KnockoutObservableType[T], options: KnockoutMappingOptions): T = js.native
-  def toJS[T](viewModel: knockoutLib.KnockoutObservable[T | KnockoutObservableType[T]]): T = js.native
-  def toJS[T](viewModel: knockoutLib.KnockoutObservableArray[T | KnockoutObservableType[T]]): js.Array[T] = js.native
+  def toJS[T](viewModel: knockoutLib.KnockoutObservable[KnockoutObservableType[T] | T]): T = js.native
+  def toJS[T](viewModel: knockoutLib.KnockoutObservableArray[KnockoutObservableType[T] | T]): js.Array[T] = js.native
   def toJS[T](
-    viewModel: knockoutLib.KnockoutObservableArray[T | KnockoutObservableType[T]],
+    viewModel: knockoutLib.KnockoutObservableArray[KnockoutObservableType[T] | T],
     options: KnockoutMappingOptions
   ): js.Array[T] = js.native
   def toJS[T](
-    viewModel: knockoutLib.KnockoutObservable[T | KnockoutObservableType[T]],
+    viewModel: knockoutLib.KnockoutObservable[KnockoutObservableType[T] | T],
     options: KnockoutMappingOptions
   ): T = js.native
   def toJSON(rootObject: js.Any): java.lang.String = js.native

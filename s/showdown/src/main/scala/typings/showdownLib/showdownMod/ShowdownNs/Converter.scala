@@ -37,6 +37,13 @@ trait Converter extends js.Object {
            */
   def makeHtml(text: java.lang.String): java.lang.String = js.native
   /**
+           * Converts an HTML string into a markdown string
+           * 
+           * @param src The input text (HTML)
+           * @returns The output markdown
+           */
+  def makeMarkdown(src: java.lang.String): java.lang.String = js.native
+  /**
            * Remove an extension from THIS converter.
            *
            * Note: This is a costly operation. It's better to initialize a new converter

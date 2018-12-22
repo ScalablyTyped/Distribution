@@ -59,7 +59,7 @@ class DocumentClient () extends js.Object {
        */
   def createSet(
     list: js.Array[
-      awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.binaryType | java.lang.String | scala.Double
+      scala.Double | java.lang.String | awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.binaryType
     ]
   ): awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.DynamoDbSet = js.native
   /**
@@ -67,7 +67,7 @@ class DocumentClient () extends js.Object {
        */
   def createSet(
     list: js.Array[
-      awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.binaryType | java.lang.String | scala.Double
+      scala.Double | java.lang.String | awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.binaryType
     ],
     options: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.CreateSetOptions
   ): awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.DynamoDbSet = js.native

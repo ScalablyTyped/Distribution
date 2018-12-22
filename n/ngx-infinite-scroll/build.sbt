@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "ngx-infinite-scroll"
-version := "6.0.1-d07c25"
+version := "6.0.1-3c98c8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular__common" % "7.1.3-7f5b9b",
-  "org.scalablytyped" %%% "angular__core" % "7.1.3-81cc67",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
-  "org.scalablytyped" %%% "rxjs" % "6.3.3-e2dd16",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-866b29",
-  "org.scalablytyped" %%% "zone_dot_js" % "0.8.26-1c9482")
+  "org.scalablytyped" %%% "angular__common" % "7.1.4-b65c48",
+  "org.scalablytyped" %%% "angular__core" % "7.1.4-eafed2",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
+  "org.scalablytyped" %%% "rxjs" % "6.3.3-d24498",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-417c1f",
+  "org.scalablytyped" %%% "zone_dot_js" % "0.8.26-54153a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

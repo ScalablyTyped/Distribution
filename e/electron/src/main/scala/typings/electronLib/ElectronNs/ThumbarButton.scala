@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ThumbarButton extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/thumbar-button
+  // Docs: http://electronjs.org/docs/api/structures/thumbar-button
   var click: js.Function
   /**
        * Control specific states and behaviors of the button. By default, it is

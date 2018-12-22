@@ -11,7 +11,7 @@ trait _Number
   extends org.scalablytyped.runtime.Instantiable0[_Number]
      with org.scalablytyped.runtime.Instantiable2[/* value */ scala.Double, /* unit */ js.Any, _Number]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* value */ _Number) | (/* value */ java.lang.String) | (/* value */ scala.Double), 
+      (/* value */ scala.Double) | (/* value */ java.lang.String) | (/* value */ _Number), 
       _Number
     ] {
   def at(pos: scala.Double): _Number = js.native

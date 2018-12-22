@@ -28,14 +28,17 @@ trait DropDownMenuProps extends js.Object {
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
       /* index */ scala.Double, 
       /* menuItemValue */ js.Any, 
       scala.Unit
     ]
   ] = js.undefined
   var onClose: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
+      scala.Unit
+    ]
   ] = js.undefined
   var openImmediately: js.UndefOr[scala.Boolean] = js.undefined
   var selectedMenuItemStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

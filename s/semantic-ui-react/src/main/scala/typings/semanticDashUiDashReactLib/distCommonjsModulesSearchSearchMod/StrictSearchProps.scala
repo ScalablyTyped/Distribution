@@ -67,7 +67,7 @@ trait StrictSearchProps extends js.Object {
      */
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -80,7 +80,7 @@ trait StrictSearchProps extends js.Object {
      */
   var onFocus: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -93,7 +93,7 @@ trait StrictSearchProps extends js.Object {
      */
   var onMouseDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -106,7 +106,7 @@ trait StrictSearchProps extends js.Object {
      */
   var onResultSelect: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ SearchResultData, 
       scala.Unit
     ]
@@ -119,7 +119,7 @@ trait StrictSearchProps extends js.Object {
      */
   var onSearchChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchProps, 
       scala.Unit
     ]
@@ -132,7 +132,7 @@ trait StrictSearchProps extends js.Object {
      */
   var onSelectionChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ SearchResultData, 
       scala.Unit
     ]

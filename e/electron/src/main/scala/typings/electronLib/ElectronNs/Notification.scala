@@ -29,7 +29,7 @@ class Notification protected () extends EventEmitter {
        * Dismisses the notification.
        */
   def close(): scala.Unit = js.native
-  // Docs: http://electron.atom.io/docs/api/notification
+  // Docs: http://electronjs.org/docs/api/notification
   @JSName("on")
   def on_action(
     event: electronLib.electronLibStrings.action,

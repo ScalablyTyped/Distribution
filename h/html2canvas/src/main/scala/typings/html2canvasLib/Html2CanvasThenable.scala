@@ -13,8 +13,8 @@ trait Html2CanvasThenable[R] extends js.Object {
   def `then`[U](): Html2CanvasThenable[U] = js.native
   def `then`[U](onFulfilled: js.Function1[/* value */ R, U | Html2CanvasThenable[U]]): Html2CanvasThenable[U] = js.native
   def `then`[U](
-    onFulfilled: js.Function1[/* value */ R, U | Html2CanvasThenable[U]],
-    onRejected: js.Function1[/* error */ js.Any, U | Html2CanvasThenable[U] | scala.Unit]
+    onFulfilled: js.Function1[/* value */ R, Html2CanvasThenable[U] | U],
+    onRejected: js.Function1[/* error */ js.Any, Html2CanvasThenable[U] | U | scala.Unit]
   ): Html2CanvasThenable[U] = js.native
 }
 

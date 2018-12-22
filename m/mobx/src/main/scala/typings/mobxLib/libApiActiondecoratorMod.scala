@@ -15,7 +15,7 @@ object libApiActiondecoratorMod extends js.Object {
     /* target */ js.Any, 
     /* prop */ js.Any, 
     /* descriptor */ mobxLib.libUtilsDecoratorsMod.BabelDescriptor, 
-    _
+    scala.Unit | mobxLib.Anon_Enumerable | mobxLib.Anon_InitializerConfigurable
   ] = js.native
 }
 

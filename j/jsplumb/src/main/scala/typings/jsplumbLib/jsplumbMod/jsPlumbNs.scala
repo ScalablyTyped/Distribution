@@ -301,7 +301,7 @@ object jsPlumbNs extends js.Object {
     def doWhileSuspended(): jsPlumbInstance = js.native
     def draggable(el: js.Object): jsPlumbInstance = js.native
     def draggable(el: js.Object, options: DragOptions): jsPlumbInstance = js.native
-    def empty(el: java.lang.String | Selector): scala.Unit = js.native
+    def empty(el: Selector | java.lang.String): scala.Unit = js.native
     def empty(el: stdLib.Element): scala.Unit = js.native
     def fire(event: java.lang.String, value: js.Object, originalEvent: stdLib.Event): scala.Unit = js.native
     def getAllConnections(): js.Object = js.native
@@ -311,21 +311,21 @@ object jsPlumbNs extends js.Object {
       scope: java.lang.String,
       options: js.Object,
       scope2: java.lang.String,
-      source: java.lang.String | Selector
+      source: Selector | java.lang.String
     ): js.Array[_] | (stdLib.Map[_, _]) = js.native
     def getConnections(
       scope: java.lang.String,
       options: js.Object,
       scope2: java.lang.String,
-      source: java.lang.String | Selector,
-      target: java.lang.String | Selector
+      source: Selector | java.lang.String,
+      target: Selector | java.lang.String
     ): js.Array[_] | (stdLib.Map[_, _]) = js.native
     def getConnections(
       scope: java.lang.String,
       options: js.Object,
       scope2: java.lang.String,
-      source: java.lang.String | Selector,
-      target: java.lang.String | Selector,
+      source: Selector | java.lang.String,
+      target: Selector | java.lang.String,
       flat: scala.Boolean
     ): js.Array[_] | (stdLib.Map[_, _]) = js.native
     def getContainer(): stdLib.Element = js.native
@@ -364,29 +364,29 @@ object jsPlumbNs extends js.Object {
     def getTargetScope(Element: java.lang.String): java.lang.String = js.native
     def getTargetScope(Element: stdLib.Element): java.lang.String = js.native
     def getType(id: java.lang.String, typeDescriptor: java.lang.String): js.Object = js.native
-    def hide(el: java.lang.String | Selector): jsPlumbInstance = js.native
-    def hide(el: java.lang.String | Selector, changeEndpoints: scala.Boolean): jsPlumbInstance = js.native
+    def hide(el: Selector | java.lang.String): jsPlumbInstance = js.native
+    def hide(el: Selector | java.lang.String, changeEndpoints: scala.Boolean): jsPlumbInstance = js.native
     def hide(el: stdLib.Element): jsPlumbInstance = js.native
     def hide(el: stdLib.Element, changeEndpoints: scala.Boolean): jsPlumbInstance = js.native
     def importDefaults(defaults: js.Object): jsPlumbInstance = js.native
     def isHoverSuspended(): scala.Boolean = js.native
-    def isSource(el: java.lang.String | Selector): scala.Boolean = js.native
+    def isSource(el: Selector | java.lang.String): scala.Boolean = js.native
     def isSource(el: stdLib.Element): scala.Boolean = js.native
-    def isSourceEnabled(el: java.lang.String | Selector): scala.Boolean = js.native
-    def isSourceEnabled(el: java.lang.String | Selector, connectionType: java.lang.String): scala.Boolean = js.native
+    def isSourceEnabled(el: Selector | java.lang.String): scala.Boolean = js.native
+    def isSourceEnabled(el: Selector | java.lang.String, connectionType: java.lang.String): scala.Boolean = js.native
     def isSourceEnabled(el: stdLib.Element): scala.Boolean = js.native
     def isSourceEnabled(el: stdLib.Element, connectionType: java.lang.String): scala.Boolean = js.native
     def isSuspendDrawing(): scala.Boolean = js.native
     def isSuspendEvents(): scala.Boolean = js.native
-    def isTarget(el: java.lang.String | Selector): scala.Boolean = js.native
+    def isTarget(el: Selector | java.lang.String): scala.Boolean = js.native
     def isTarget(el: stdLib.Element): scala.Boolean = js.native
-    def isTargetEnabled(el: java.lang.String | Selector): scala.Boolean = js.native
+    def isTargetEnabled(el: Selector | java.lang.String): scala.Boolean = js.native
     def isTargetEnabled(el: stdLib.Element): scala.Boolean = js.native
     def makeSource(
-      el: java.lang.String | Selector,
+      el: Selector | java.lang.String,
       params: js.Object,
-      endpoint: js.UndefOr[java.lang.String | js.Array[_]],
-      parent: js.UndefOr[java.lang.String | stdLib.Element],
+      endpoint: js.UndefOr[js.Array[_] | java.lang.String],
+      parent: js.UndefOr[stdLib.Element | java.lang.String],
       scope: js.UndefOr[java.lang.String],
       dragOptions: js.UndefOr[js.Object],
       deleteEndpointsOnEmpty: js.UndefOr[scala.Boolean],
@@ -395,17 +395,17 @@ object jsPlumbNs extends js.Object {
     def makeSource(
       el: stdLib.Element,
       params: js.Object,
-      endpoint: js.UndefOr[java.lang.String | js.Array[_]],
-      parent: js.UndefOr[java.lang.String | stdLib.Element],
+      endpoint: js.UndefOr[js.Array[_] | java.lang.String],
+      parent: js.UndefOr[stdLib.Element | java.lang.String],
       scope: js.UndefOr[java.lang.String],
       dragOptions: js.UndefOr[js.Object],
       deleteEndpointsOnEmpty: js.UndefOr[scala.Boolean],
       filter: js.UndefOr[js.Function]
     ): scala.Unit = js.native
     def makeTarget(
-      el: java.lang.String | Selector,
+      el: Selector | java.lang.String,
       params: js.Object,
-      endpoint: js.UndefOr[java.lang.String | js.Array[_]],
+      endpoint: js.UndefOr[js.Array[_] | java.lang.String],
       scope: js.UndefOr[java.lang.String],
       dropOptions: js.UndefOr[js.Object],
       deleteEndpointsOnEmpty: js.UndefOr[scala.Boolean],
@@ -415,7 +415,7 @@ object jsPlumbNs extends js.Object {
     def makeTarget(
       el: stdLib.Element,
       params: js.Object,
-      endpoint: js.UndefOr[java.lang.String | js.Array[_]],
+      endpoint: js.UndefOr[js.Array[_] | java.lang.String],
       scope: js.UndefOr[java.lang.String],
       dropOptions: js.UndefOr[js.Object],
       deleteEndpointsOnEmpty: js.UndefOr[scala.Boolean],
@@ -433,26 +433,26 @@ object jsPlumbNs extends js.Object {
     def on(el: stdLib.Element, children: java.lang.String, event: java.lang.String): jsPlumbInstance = js.native
     def on(el: stdLib.Element, children: java.lang.String, event: java.lang.String, fn: js.Function): jsPlumbInstance = js.native
     def ready(fn: js.Function): scala.Unit = js.native
-    def recalculateOffsets(el: java.lang.String | Selector): scala.Unit = js.native
+    def recalculateOffsets(el: Selector | java.lang.String): scala.Unit = js.native
     def recalculateOffsets(el: stdLib.Element): scala.Unit = js.native
     def registerConnectionType(typeId: java.lang.String, `type`: js.Object): scala.Unit = js.native
     def registerConnectionTypes(types: js.Object): scala.Unit = js.native
     def registerEndpointType(typeId: java.lang.String, `type`: js.Object): scala.Unit = js.native
     def registerEndpointTypes(types: js.Object): scala.Unit = js.native
-    def remove(el: java.lang.String | Selector): scala.Unit = js.native
+    def remove(el: Selector | java.lang.String): scala.Unit = js.native
     def remove(el: stdLib.Element): scala.Unit = js.native
-    def removeAllEndpoints(el: java.lang.String | Selector): jsPlumbInstance = js.native
-    def removeAllEndpoints(el: java.lang.String | Selector, recurse: scala.Boolean): jsPlumbInstance = js.native
+    def removeAllEndpoints(el: Selector | java.lang.String): jsPlumbInstance = js.native
+    def removeAllEndpoints(el: Selector | java.lang.String, recurse: scala.Boolean): jsPlumbInstance = js.native
     def removeAllEndpoints(el: stdLib.Element): jsPlumbInstance = js.native
     def removeAllEndpoints(el: stdLib.Element, recurse: scala.Boolean): jsPlumbInstance = js.native
-    def repaint(el: java.lang.String | Selector): jsPlumbInstance = js.native
+    def repaint(el: Selector | java.lang.String): jsPlumbInstance = js.native
     def repaint(el: stdLib.Element): jsPlumbInstance = js.native
     def repaintEverything(): jsPlumbInstance = js.native
     def repaintEverything(clearEdits: scala.Boolean): jsPlumbInstance = js.native
     def reset(): scala.Unit = js.native
     def reset(doNotUnbindInstanceEventListeners: scala.Boolean): scala.Unit = js.native
     def restoreDefaults(): jsPlumbInstance = js.native
-    def revalidate(el: java.lang.String | Selector): scala.Unit = js.native
+    def revalidate(el: Selector | java.lang.String): scala.Unit = js.native
     def revalidate(el: stdLib.Element): scala.Unit = js.native
     def select(): jsplumbLib.Anon_Each = js.native
     def select(params: js.Object): jsplumbLib.Anon_Each = js.native
@@ -466,19 +466,19 @@ object jsPlumbNs extends js.Object {
       target: java.lang.String,
       connections: js.Array[Connection]
     ): jsplumbLib.Anon_Each = js.native
-    def setContainer(el: java.lang.String | Selector): scala.Unit = js.native
+    def setContainer(el: Selector | java.lang.String): scala.Unit = js.native
     def setContainer(el: stdLib.Element): scala.Unit = js.native
     def setDefaultScope(scope: java.lang.String): jsPlumbInstance = js.native
     def setDraggable(el: java.lang.String, draggable: scala.Boolean): scala.Unit = js.native
     def setDraggable(el: js.Array[_], draggable: scala.Boolean): scala.Unit = js.native
     def setDraggable(el: js.Object, draggable: scala.Boolean): scala.Unit = js.native
-    def setHover(container: java.lang.String | Selector): scala.Unit = js.native
+    def setHover(container: Selector | java.lang.String): scala.Unit = js.native
     def setHover(container: stdLib.Element): scala.Unit = js.native
     def setHoverSuspended(hover: scala.Boolean): scala.Unit = js.native
     def setIdChanged(oldId: java.lang.String, newId: java.lang.String): scala.Unit = js.native
-    def setParent(el: Selector, newParent: java.lang.String | Selector): scala.Unit = js.native
+    def setParent(el: Selector, newParent: Selector | java.lang.String): scala.Unit = js.native
     def setParent(el: Selector, newParent: stdLib.Element): scala.Unit = js.native
-    def setParent(el: stdLib.Element, newParent: java.lang.String | Selector): scala.Unit = js.native
+    def setParent(el: stdLib.Element, newParent: Selector | java.lang.String): scala.Unit = js.native
     def setParent(el: stdLib.Element, newParent: stdLib.Element): scala.Unit = js.native
     def setScope(el: java.lang.String, scope: java.lang.String): scala.Unit = js.native
     def setScope(el: stdLib.Element, scope: java.lang.String): scala.Unit = js.native
@@ -488,7 +488,7 @@ object jsPlumbNs extends js.Object {
     def setSource(connection: Connection, source: Endpoint, doNotRepaint: scala.Boolean): jsPlumbInstance = js.native
     def setSource(connection: Connection, source: stdLib.Element): jsPlumbInstance = js.native
     def setSource(connection: Connection, source: stdLib.Element, doNotRepaint: scala.Boolean): jsPlumbInstance = js.native
-    def setSourceEnabled(el: java.lang.String | Selector, state: scala.Boolean): jsPlumbInstance = js.native
+    def setSourceEnabled(el: Selector | java.lang.String, state: scala.Boolean): jsPlumbInstance = js.native
     def setSourceEnabled(el: stdLib.Element, state: scala.Boolean): jsPlumbInstance = js.native
     def setSourceScope(el: java.lang.String, scope: java.lang.String): scala.Unit = js.native
     def setSourceScope(el: java.lang.String, scope: java.lang.String, connectionType: java.lang.String): scala.Unit = js.native
@@ -503,24 +503,24 @@ object jsPlumbNs extends js.Object {
     def setTarget(connection: Connection, target: Endpoint, doNotRepaint: scala.Boolean): jsPlumbInstance = js.native
     def setTarget(connection: Connection, target: stdLib.Element): jsPlumbInstance = js.native
     def setTarget(connection: Connection, target: stdLib.Element, doNotRepaint: scala.Boolean): jsPlumbInstance = js.native
-    def setTargetEnabled(el: java.lang.String | Selector, state: scala.Boolean): jsPlumbInstance = js.native
+    def setTargetEnabled(el: Selector | java.lang.String, state: scala.Boolean): jsPlumbInstance = js.native
     def setTargetEnabled(el: stdLib.Element, state: scala.Boolean): jsPlumbInstance = js.native
     def setTargetScope(el: java.lang.String, scope: java.lang.String): scala.Unit = js.native
     def setTargetScope(el: java.lang.String, scope: java.lang.String, connectionType: java.lang.String): scala.Unit = js.native
     def setTargetScope(el: stdLib.Element, scope: java.lang.String): scala.Unit = js.native
     def setTargetScope(el: stdLib.Element, scope: java.lang.String, connectionType: java.lang.String): scala.Unit = js.native
-    def show(el: java.lang.String | Selector): jsPlumbInstance = js.native
-    def show(el: java.lang.String | Selector, changeEndpoints: scala.Boolean): jsPlumbInstance = js.native
+    def show(el: Selector | java.lang.String): jsPlumbInstance = js.native
+    def show(el: Selector | java.lang.String, changeEndpoints: scala.Boolean): jsPlumbInstance = js.native
     def show(el: stdLib.Element): jsPlumbInstance = js.native
     def show(el: stdLib.Element, changeEndpoints: scala.Boolean): jsPlumbInstance = js.native
-    def toggleDraggable(el: java.lang.String | Selector): scala.Boolean = js.native
+    def toggleDraggable(el: Selector | java.lang.String): scala.Boolean = js.native
     def toggleDraggable(el: stdLib.Element): scala.Boolean = js.native
-    def toggleSourceEnabled(el: java.lang.String | Selector): scala.Boolean = js.native
+    def toggleSourceEnabled(el: Selector | java.lang.String): scala.Boolean = js.native
     def toggleSourceEnabled(el: stdLib.Element): scala.Boolean = js.native
-    def toggleTargetEnabled(el: java.lang.String | Selector): scala.Boolean = js.native
+    def toggleTargetEnabled(el: Selector | java.lang.String): scala.Boolean = js.native
     def toggleTargetEnabled(el: stdLib.Element): scala.Boolean = js.native
-    def toggleVisible(el: java.lang.String | Selector): scala.Unit = js.native
-    def toggleVisible(el: java.lang.String | Selector, changeEndpoints: scala.Boolean): scala.Unit = js.native
+    def toggleVisible(el: Selector | java.lang.String): scala.Unit = js.native
+    def toggleVisible(el: Selector | java.lang.String, changeEndpoints: scala.Boolean): scala.Unit = js.native
     def toggleVisible(el: stdLib.Element): scala.Unit = js.native
     def toggleVisible(el: stdLib.Element, changeEndpoints: scala.Boolean): scala.Unit = js.native
     def unbind(): scala.Unit = js.native
@@ -530,9 +530,9 @@ object jsPlumbNs extends js.Object {
     def unbind(eventOrListener: js.Function, listener: js.Function): scala.Unit = js.native
     def unmakeEverySource(): jsPlumbInstance = js.native
     def unmakeEveryTarget(): jsPlumbInstance = js.native
-    def unmakeSource(el: java.lang.String | Selector): jsPlumbInstance = js.native
+    def unmakeSource(el: Selector | java.lang.String): jsPlumbInstance = js.native
     def unmakeSource(el: stdLib.Element): jsPlumbInstance = js.native
-    def unmakeTarget(el: java.lang.String | Selector): jsPlumbInstance = js.native
+    def unmakeTarget(el: Selector | java.lang.String): jsPlumbInstance = js.native
     def unmakeTarget(el: stdLib.Element): jsPlumbInstance = js.native
   }
   

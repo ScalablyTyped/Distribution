@@ -38,7 +38,7 @@ trait TransferProps extends js.Object {
   var onScroll: js.UndefOr[
     js.Function2[
       /* direction */ TransferDirection, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined

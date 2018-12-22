@@ -10,11 +10,15 @@ trait InsertModalFooterProps extends js.Object {
   /**
   	 * Callback function to call prior to closing the Insert Modal window.
   	 */
-  var beforeClose: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[_], scala.Unit]] = js.undefined
+  var beforeClose: js.UndefOr[
+    js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], scala.Unit]
+  ] = js.undefined
   /**
   	 * Callback function to be called prior to saving the new row.
   	 */
-  var beforeSave: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[_], scala.Unit]] = js.undefined
+  var beforeSave: js.UndefOr[
+    js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], scala.Unit]
+  ] = js.undefined
   /**
   	 * Header class name.
   	 */

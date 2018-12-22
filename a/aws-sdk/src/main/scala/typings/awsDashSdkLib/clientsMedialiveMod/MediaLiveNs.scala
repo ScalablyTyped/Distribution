@@ -1670,6 +1670,10 @@ object MediaLiveNs extends js.Object {
          */
     var SpatialAq: js.UndefOr[H264SpatialAq] = js.undefined
     /**
+         * If set to fixed, use gopNumBFrames B-frames per sub-GOP. If set to dynamic, optimize the number of B-frames used for each sub-GOP to improve visual quality.
+         */
+    var SubgopLength: js.UndefOr[H264SubGopLength] = js.undefined
+    /**
          * Produces a bitstream compliant with SMPTE RP-2027.
          */
     var Syntax: js.UndefOr[H264Syntax] = js.undefined
@@ -1869,7 +1873,7 @@ object MediaLiveNs extends js.Object {
          */
     var SegmentLength: js.UndefOr[__integerMin1] = js.undefined
     /**
-         * When set to useInputSegmentation, the output segment or fragment points are set by the RAI markers from the input streams.
+         * useInputSegmentation has been deprecated. The configured segment size is always used.
          */
     var SegmentationMode: js.UndefOr[HlsSegmentationMode] = js.undefined
     /**
@@ -1962,6 +1966,14 @@ object MediaLiveNs extends js.Object {
   trait HlsSettings extends js.Object {
     var AudioOnlyHlsSettings: js.UndefOr[AudioOnlyHlsSettings] = js.undefined
     var StandardHlsSettings: js.UndefOr[StandardHlsSettings] = js.undefined
+  }
+  
+  
+  trait HlsTimedMetadataScheduleActionSettings extends js.Object {
+    /**
+         * Base64 string formatted according to the ID3 specification: http://id3.org/id3v2.4.0-structure
+         */
+    var Id3: __string
   }
   
   
@@ -2772,7 +2784,7 @@ object MediaLiveNs extends js.Object {
          */
     var RestartDelay: js.UndefOr[__integerMin0] = js.undefined
     /**
-         * When set to useInputSegmentation, the output segment or fragment points are set by the RAI markers from the input streams.
+         * useInputSegmentation has been deprecated. The configured segment size is always used.
          */
     var SegmentationMode: js.UndefOr[SmoothGroupSegmentationMode] = js.undefined
     /**
@@ -3184,6 +3196,10 @@ object MediaLiveNs extends js.Object {
   
   
   trait ScheduleActionSettings extends js.Object {
+    /**
+         * Settings to emit HLS metadata
+         */
+    var HlsTimedMetadataSettings: js.UndefOr[HlsTimedMetadataScheduleActionSettings] = js.undefined
     /**
          * Settings to switch an input
          */
@@ -4641,6 +4657,7 @@ object MediaLiveNs extends js.Object {
   type H264ScanType = awsDashSdkLib.awsDashSdkLibStrings.INTERLACED | awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE | java.lang.String
   type H264SceneChangeDetect = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
   type H264SpatialAq = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
+  type H264SubGopLength = awsDashSdkLib.awsDashSdkLibStrings.DYNAMIC | awsDashSdkLib.awsDashSdkLibStrings.FIXED | java.lang.String
   type H264Syntax = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.RP2027 | java.lang.String
   type H264TemporalAq = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
   type H264TimecodeInsertionBehavior = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.PIC_TIMING_SEI | java.lang.String

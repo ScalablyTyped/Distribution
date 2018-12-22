@@ -20,7 +20,10 @@ package object libTypesMod {
   ]
   type MenuPlacement = reactDashSelectLib.reactDashSelectLibStrings.auto | reactDashSelectLib.reactDashSelectLibStrings.bottom | reactDashSelectLib.reactDashSelectLibStrings.top
   type MenuPosition = reactDashSelectLib.reactDashSelectLibStrings.absolute | reactDashSelectLib.reactDashSelectLibStrings.fixed
-  type MouseEventHandler = js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]
+  type MouseEventHandler = js.Function1[
+    /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+    scala.Unit
+  ]
   type OptionProps = PropsWithInnerRef with reactDashSelectLib.Anon_IsFocused
   type OptionsType[OptionType] = js.Array[OptionType]
   type ValueType[OptionType] = js.UndefOr[OptionType | OptionsType[OptionType] | scala.Null]

@@ -7,15 +7,11 @@ import scala.scalajs.js.annotation._
 
 
 trait ProcessMetric extends js.Object {
-  // Docs: http://electron.atom.io/docs/api/structures/process-metric
+  // Docs: http://electronjs.org/docs/api/structures/process-metric
   /**
        * CPU usage of the process.
        */
   var cpu: CPUUsage
-  /**
-       * Memory information for the process.
-       */
-  var memory: MemoryInfo
   /**
        * Process id of the process.
        */

@@ -16,7 +16,7 @@ object materializeDashCssModMembers extends js.Object {
        * Automatically initialize components.
        */
   def AutoInit(context: stdLib.Element): scala.Unit = js.native
-  def textareaAutoResize(textarea: js.Any): scala.Unit = js.native
+  def textareaAutoResize(textarea: cashLib.Cash): scala.Unit = js.native
   def textareaAutoResize(textarea: materializeDashCssLib.JQuery): scala.Unit = js.native
   def textareaAutoResize(textarea: stdLib.Element): scala.Unit = js.native
   /**

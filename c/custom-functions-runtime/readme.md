@@ -10,9 +10,7 @@ Copyright (c) Microsoft Corporation
 */
 
 /**
- * Specific to Excel Custom Functions.
- * Enables you to set key-value pairs which map
- * a function's id in the JSON metadata to the JS function name.
+ * CustomFunctions namespace, used by Excel Custom Functions
  * @beta
  */
 ```

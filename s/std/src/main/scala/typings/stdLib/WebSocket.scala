@@ -171,7 +171,7 @@ trait WebSocket extends EventTarget {
 object WebSocket
   extends org.scalablytyped.runtime.Instantiable2[
       /* url */ java.lang.String, 
-      (/* protocols */ java.lang.String) | (/* protocols */ js.Array[java.lang.String]), 
+      (/* protocols */ js.Array[java.lang.String]) | (/* protocols */ java.lang.String), 
       WebSocket
     ]
      with org.scalablytyped.runtime.Instantiable1[/* url */ java.lang.String, WebSocket] {

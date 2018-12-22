@@ -59,7 +59,7 @@ trait IToggleProps
   @JSName("onChange")
   var onChange_IToggleProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* checked */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]

@@ -39,7 +39,7 @@ trait ReactDatePickerProps extends js.Object {
   var forceShowMonthNavigation: js.UndefOr[scala.Boolean] = js.native
   var formatWeekDay: js.UndefOr[js.Function1[/* date */ stdLib.Date, java.lang.String]] = js.native
   var formatWeekNumber: js.UndefOr[js.Function1[/* date */ stdLib.Date, java.lang.String | scala.Double]] = js.native
-  var highlightDates: js.UndefOr[js.Array[stdLib.Date]] = js.native
+  var highlightDates: js.UndefOr[js.Array[HighlightDates | stdLib.Date]] = js.native
   var id: js.UndefOr[java.lang.String] = js.native
   var includeDates: js.UndefOr[js.Array[stdLib.Date]] = js.native
   var includeTimes: js.UndefOr[js.Array[stdLib.Date]] = js.native
@@ -68,7 +68,7 @@ trait ReactDatePickerProps extends js.Object {
   ] = js.native
   var onClickOutside: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.native
@@ -90,7 +90,7 @@ trait ReactDatePickerProps extends js.Object {
   var onSelect: js.UndefOr[
     js.Function2[
       /* date */ stdLib.Date, 
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[_]], 
+      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.native
@@ -98,7 +98,7 @@ trait ReactDatePickerProps extends js.Object {
     js.Function3[
       /* firstDayOfWeek */ stdLib.Date, 
       /* weekNumber */ java.lang.String | scala.Double, 
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[_]], 
+      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.native
@@ -156,8 +156,8 @@ trait ReactDatePickerProps extends js.Object {
   var withPortal: js.UndefOr[scala.Boolean] = js.native
   var yearDropdownItemNumber: js.UndefOr[scala.Double] = js.native
   def onChange(): scala.Unit = js.native
-  def onChange(date: scala.Null, event: reactLib.reactMod.ReactNs.SyntheticEvent[_]): scala.Unit = js.native
+  def onChange(date: scala.Null, event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]): scala.Unit = js.native
   def onChange(date: stdLib.Date): scala.Unit = js.native
-  def onChange(date: stdLib.Date, event: reactLib.reactMod.ReactNs.SyntheticEvent[_]): scala.Unit = js.native
+  def onChange(date: stdLib.Date, event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event]): scala.Unit = js.native
 }
 

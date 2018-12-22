@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Logout extends js.Object {
-  def authRedirectGuardd(): js.Promise[vueDashRouterLib.typesRouterMod.NavigationGuard[vueLib.typesVueMod.Vue]] = js.native
+  def authRedirectGuardd(): js.Promise[_] = js.native
   def getAccessToken(): js.Promise[java.lang.String] = js.native
   def getFromUri(): java.lang.String = js.native
   def getIdToken(): js.Promise[java.lang.String] = js.native

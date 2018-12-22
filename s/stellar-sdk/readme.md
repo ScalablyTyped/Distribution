@@ -6,6 +6,7 @@
 //                 Paul Selden <https://github.com/pselden>
 //                 Max Bause <https://github.com/maxbause>
 //                 Timur Ramazanov <https://github.com/charlie-wasp>
+//                 Kalvis Kalniņš <https://github.com/Akuukis>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 ```

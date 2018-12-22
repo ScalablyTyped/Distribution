@@ -1234,7 +1234,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent) | (/* ev */ stdLib.Event), 
+      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
       _
     ]
   ): scala.Unit = js.native
@@ -1243,7 +1243,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent) | (/* ev */ stdLib.Event), 
+      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
       _
     ],
     options: scala.Boolean
@@ -1253,7 +1253,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent) | (/* ev */ stdLib.Event), 
+      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
       _
     ],
     options: stdLib.AddEventListenerOptions
@@ -3462,7 +3462,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent) | (/* ev */ stdLib.Event), 
+      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
       _
     ]
   ): scala.Unit = js.native
@@ -3471,7 +3471,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent) | (/* ev */ stdLib.Event), 
+      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
       _
     ],
     options: scala.Boolean
@@ -3481,7 +3481,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent) | (/* ev */ stdLib.Event), 
+      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
       _
     ],
     options: stdLib.EventListenerOptions
@@ -4458,7 +4458,7 @@ class HTMLWebViewElement () extends HTMLElement {
        * ❗ Unprefixed version are not available as of Chrome 68, in Chrome apps ❗
        */
   /* CompleteClass */
-  override def requestFullscreen(): scala.Unit = js.native
+  override def requestFullscreen(): js.Promise[scala.Unit] = js.native
   /**
        * @requires Permissions: 'pointerLock'
        */

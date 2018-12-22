@@ -49,7 +49,7 @@ class JSONModel protected ()
             */
   def loadData(
     sURL: java.lang.String,
-    oParameters: js.UndefOr[java.lang.String | js.Any],
+    oParameters: js.UndefOr[js.Any | java.lang.String],
     bAsync: js.UndefOr[scala.Boolean],
     sType: js.UndefOr[java.lang.String],
     bMerge: js.UndefOr[scala.Boolean],

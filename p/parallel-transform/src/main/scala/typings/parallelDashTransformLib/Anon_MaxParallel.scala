@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait Anon_MaxParallel
   extends org.scalablytyped.runtime.Instantiable1[/* ontransform */ OnTransform, nodeLib.streamMod.Transform]
      with org.scalablytyped.runtime.Instantiable2[
-      (/* opts */ parallelDashTransformLib.parallelDashTransformMod.ParallelTransformNs.Options) | (/* opts */ scala.Double) | (/* opts */ js.UndefOr[scala.Nothing]) | (/* opts */ scala.Null), 
+      (/* opts */ scala.Double) | (/* opts */ scala.Null) | (/* opts */ parallelDashTransformLib.parallelDashTransformMod.ParallelTransformNs.Options) | (/* opts */ js.UndefOr[scala.Nothing]), 
       /* ontransform */ OnTransform, 
       nodeLib.streamMod.Transform
     ]
      with org.scalablytyped.runtime.Instantiable3[
       /* maxParallel */ scala.Double, 
-      (/* opts */ parallelDashTransformLib.parallelDashTransformMod.ParallelTransformNs.Options) | (/* opts */ js.UndefOr[scala.Nothing]) | (/* opts */ scala.Null), 
+      (/* opts */ scala.Null) | (/* opts */ parallelDashTransformLib.parallelDashTransformMod.ParallelTransformNs.Options) | (/* opts */ js.UndefOr[scala.Nothing]), 
       /* ontransform */ OnTransform, 
       nodeLib.streamMod.Transform
     ] {

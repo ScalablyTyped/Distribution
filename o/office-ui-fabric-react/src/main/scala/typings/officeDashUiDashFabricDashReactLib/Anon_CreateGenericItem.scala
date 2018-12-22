@@ -13,12 +13,12 @@ trait Anon_CreateGenericItem extends js.Object {
     officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerMod.IGenericItem with Anon_Key_902091276
   ]
   var onRenderItem: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemProps, 
+    /* props */ officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSelectedProps, 
     reactLib.reactMod.Global.JSXNs.Element
   ]
   var onRenderSuggestionsItem: js.Function2[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps, 
-    /* itemProps */ js.UndefOr[
+    /* personaProps */ officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps, 
+    /* suggestionsProps */ js.UndefOr[
       officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.IBasePickerSuggestionsProps
     ], 
     reactLib.reactMod.Global.JSXNs.Element

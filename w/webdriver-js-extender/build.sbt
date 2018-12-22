@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "webdriver-js-extender"
-version := "2.1.0-a84174"
+version := "2.1.0-770429"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "selenium-webdriver" % "3.0-dt-20181213Z-89c1db",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
+  "org.scalablytyped" %%% "selenium-webdriver" % "3.0-dt-20181204Z-701cba",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

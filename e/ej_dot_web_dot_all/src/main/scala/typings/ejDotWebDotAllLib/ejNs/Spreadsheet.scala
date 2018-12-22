@@ -128,7 +128,7 @@ class Spreadsheet protected () extends Widget {
            * @returns {void}
            */
   def clearRangeData(
-    range: js.UndefOr[java.lang.String | js.Array[_]],
+    range: js.UndefOr[js.Array[_] | java.lang.String],
     property: js.UndefOr[java.lang.String],
     cells: js.UndefOr[js.Any],
     skipHiddenRow: js.UndefOr[scala.Boolean],

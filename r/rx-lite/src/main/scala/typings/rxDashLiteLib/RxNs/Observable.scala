@@ -337,7 +337,7 @@ trait Observable[T] extends IObservable[T] {
     selector: js.Function2[
       /* value */ T, 
       /* index */ scala.Double, 
-      rxDashCoreLib.RxNs.IPromise[R] | Observable[R] | js.Array[R]
+      js.Array[R] | rxDashCoreLib.RxNs.IPromise[R] | Observable[R]
     ]
   ): Observable[R] = js.native
       // alias for selectConcat
@@ -454,7 +454,7 @@ trait Observable[T] extends IObservable[T] {
   def flatMap[TResult](
     selector: js.Function1[
       /* value */ T, 
-      rxDashCoreLib.RxNs.IPromise[TResult] | Observable[TResult] | js.Array[TResult]
+      js.Array[TResult] | rxDashCoreLib.RxNs.IPromise[TResult] | Observable[TResult]
     ]
   ): Observable[TResult] = js.native
       // alias for selectMany
@@ -618,7 +618,7 @@ trait Observable[T] extends IObservable[T] {
   def selectMany[TResult](
     selector: js.Function1[
       /* value */ T, 
-      rxDashCoreLib.RxNs.IPromise[TResult] | Observable[TResult] | js.Array[TResult]
+      js.Array[TResult] | rxDashCoreLib.RxNs.IPromise[TResult] | Observable[TResult]
     ]
   ): Observable[TResult] = js.native
   def selectMany[TOther, TResult](

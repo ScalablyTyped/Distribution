@@ -376,7 +376,7 @@ trait SeriesObject extends js.Object {
            * This option prevents this, and makes setData behave like it did prior to Highcharts 3.0.10.
            * @since 1.2.0
            */
-  def setData(data: js.Array[DataPoint | scala.Double | js.Array[scala.Double]]): scala.Unit = js.native
+  def setData(data: js.Array[js.Array[scala.Double] | DataPoint | scala.Double]): scala.Unit = js.native
   /**
            * Apply a new set of data to the series and optionally redraw it. Note that this method throws away all points and
            * creates new ones. For updating the values of existing points, use Point.update() instead.
@@ -389,7 +389,7 @@ trait SeriesObject extends js.Object {
            * This option prevents this, and makes setData behave like it did prior to Highcharts 3.0.10.
            * @since 1.2.0
            */
-  def setData(data: js.Array[DataPoint | scala.Double | js.Array[scala.Double]], redraw: scala.Boolean): scala.Unit = js.native
+  def setData(data: js.Array[js.Array[scala.Double] | DataPoint | scala.Double], redraw: scala.Boolean): scala.Unit = js.native
   /**
            * Apply a new set of data to the series and optionally redraw it. Note that this method throws away all points and
            * creates new ones. For updating the values of existing points, use Point.update() instead.
@@ -403,7 +403,7 @@ trait SeriesObject extends js.Object {
            * @since 1.2.0
            */
   def setData(
-    data: js.Array[DataPoint | scala.Double | js.Array[scala.Double]],
+    data: js.Array[js.Array[scala.Double] | DataPoint | scala.Double],
     redraw: scala.Boolean,
     animation: Animation
   ): scala.Unit = js.native
@@ -420,7 +420,7 @@ trait SeriesObject extends js.Object {
            * @since 1.2.0
            */
   def setData(
-    data: js.Array[DataPoint | scala.Double | js.Array[scala.Double]],
+    data: js.Array[js.Array[scala.Double] | DataPoint | scala.Double],
     redraw: scala.Boolean,
     animation: Animation,
     updatePoints: scala.Boolean
@@ -438,7 +438,7 @@ trait SeriesObject extends js.Object {
            * @since 1.2.0
            */
   def setData(
-    data: js.Array[DataPoint | scala.Double | js.Array[scala.Double]],
+    data: js.Array[js.Array[scala.Double] | DataPoint | scala.Double],
     redraw: scala.Boolean,
     animation: scala.Boolean
   ): scala.Unit = js.native
@@ -455,7 +455,7 @@ trait SeriesObject extends js.Object {
            * @since 1.2.0
            */
   def setData(
-    data: js.Array[DataPoint | scala.Double | js.Array[scala.Double]],
+    data: js.Array[js.Array[scala.Double] | DataPoint | scala.Double],
     redraw: scala.Boolean,
     animation: scala.Boolean,
     updatePoints: scala.Boolean

@@ -15,6 +15,10 @@ object fluentDashFfmpegModMembers extends js.Object {
     options: fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FfmpegCommandOptions
   ): fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FfmpegCommand = js.native
   def apply(options: fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FfmpegCommandOptions): fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FfmpegCommand = js.native
+  def availableCodecs(callback: fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.CodecsCallback): scala.Unit = js.native
+  def availableEncoders(callback: fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.EncodersCallback): scala.Unit = js.native
+  def availableFilters(callback: fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FiltersCallback): scala.Unit = js.native
+  def availableFormats(callback: fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FormatsCallback): scala.Unit = js.native
   def ffprobe(
     file: java.lang.String,
     callback: js.Function2[
@@ -51,5 +55,13 @@ object fluentDashFfmpegModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def getAvailableCodecs(callback: fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.CodecsCallback): scala.Unit = js.native
+  def getAvailableEncoders(callback: fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.EncodersCallback): scala.Unit = js.native
+  def getAvailableFilters(callback: fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FiltersCallback): scala.Unit = js.native
+  def getAvailableFormats(callback: fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FormatsCallback): scala.Unit = js.native
+  // static methods
+  def setFfmpegPath(path: java.lang.String): fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FfmpegCommand = js.native
+  def setFfprobePath(path: java.lang.String): fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FfmpegCommand = js.native
+  def setFlvtoolPath(path: java.lang.String): fluentDashFfmpegLib.fluentDashFfmpegMod.FfmpegNs.FfmpegCommand = js.native
 }
 

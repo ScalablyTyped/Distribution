@@ -104,21 +104,21 @@ object srcViewProviderMod extends js.Object {
     checkIndex: scala.Double,
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     matchedQueries: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+      js.Tuple2[scala.Double | java.lang.String, atAngularCoreLib.srcViewTypesMod.QueryValueType]
     ],
     childCount: scala.Double,
     ctor: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _]
+    deps: js.Array[_ | (js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _])]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def directiveDef(
     checkIndex: scala.Double,
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     matchedQueries: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+      js.Tuple2[scala.Double | java.lang.String, atAngularCoreLib.srcViewTypesMod.QueryValueType]
     ],
     childCount: scala.Double,
     ctor: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
+    deps: js.Array[_ | (js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _])],
     props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def directiveDef(
@@ -151,7 +151,7 @@ object srcViewProviderMod extends js.Object {
     matchedQueries: scala.Null,
     childCount: scala.Double,
     ctor: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _]
+    deps: js.Array[_ | (js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _])]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def directiveDef(
     checkIndex: scala.Double,
@@ -159,7 +159,7 @@ object srcViewProviderMod extends js.Object {
     matchedQueries: scala.Null,
     childCount: scala.Double,
     ctor: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
+    deps: js.Array[_ | (js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _])],
     props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def directiveDef(

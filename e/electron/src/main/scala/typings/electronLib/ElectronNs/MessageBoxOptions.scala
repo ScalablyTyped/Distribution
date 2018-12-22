@@ -16,7 +16,7 @@ trait MessageBoxOptions extends js.Object {
        * The index of the button to be used to cancel the dialog, via the Esc key. By
        * default this is assigned to the first button with "cancel" or "no" as the label.
        * If no such labeled buttons exist and this option is not set, 0 will be used as
-       * the return value or callback response. This option is ignored on Windows.
+       * the return value or callback response.
        */
   var cancelId: js.UndefOr[scala.Double] = js.undefined
   /**

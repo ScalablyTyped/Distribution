@@ -65,7 +65,7 @@ trait IEntityResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the entity.
            *
            */
-  def getAll(`type`: java.lang.String, postFilter: java.lang.String, postFilterParams: java.lang.String): js.Any = js.native
+  def getAll(`type`: java.lang.String, postFilter: java.lang.String, postFilterParams: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
   /**
            * @ngdoc method
            * @name umbraco.resources.entityResource#getAncestors
@@ -79,7 +79,7 @@ trait IEntityResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the entity.
            *
            */
-  def getAncestors(id: scala.Double, `type`: java.lang.String): js.Any = js.native
+  def getAncestors(id: scala.Double, `type`: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
   /**
            * @ngdoc method
            * @name umbraco.resources.entityResource#getById
@@ -103,7 +103,7 @@ trait IEntityResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the entity.
            *
            */
-  def getById(id: scala.Double, `type`: java.lang.String): js.Any = js.native
+  def getById(id: scala.Double, `type`: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
   /**
            * @ngdoc method
            * @name umbraco.resources.entityResource#getByIds
@@ -127,9 +127,9 @@ trait IEntityResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the entity array.
            *
            */
-  def getByIds(ids: js.Array[scala.Double], `type`: java.lang.String): js.Any = js.native
-  def getByQuery(query: java.lang.String, nodeContextId: java.lang.String, `type`: java.lang.String): js.Any = js.native
-  def getByQuery(query: java.lang.String, nodeContextId: scala.Double, `type`: java.lang.String): js.Any = js.native
+  def getByIds(ids: js.Array[scala.Double], `type`: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getByQuery(query: java.lang.String, nodeContextId: java.lang.String, `type`: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getByQuery(query: java.lang.String, nodeContextId: scala.Double, `type`: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
   /**
            * @ngdoc method
            * @name umbraco.resources.entityResource#getAncestors
@@ -143,7 +143,7 @@ trait IEntityResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the entity.
            *
            */
-  def getChildren(id: scala.Double, `type`: java.lang.String): js.Any = js.native
+  def getChildren(id: scala.Double, `type`: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
   /**
            * @ngdoc method
            * @name umbraco.resources.entityResource#getPath
@@ -165,7 +165,7 @@ trait IEntityResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the url.
            *
            */
-  def getPath(id: scala.Double, `type`: java.lang.String): js.Any = js.native
+  def getPath(id: scala.Double, `type`: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
   /**
            * @ngdoc method
            * @name umbraco.resources.entityResource#searchMedia
@@ -188,7 +188,7 @@ trait IEntityResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the entity array.
            *
            */
-  def search(query: java.lang.String, `type`: java.lang.String, searchFrom: js.Any, canceler: js.Any): js.Any = js.native
+  def search(query: java.lang.String, `type`: java.lang.String, searchFrom: js.Any, canceler: js.Any): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
   /**
            * @ngdoc method
            * @name umbraco.resources.entityResource#searchAll
@@ -210,6 +210,6 @@ trait IEntityResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the entity array.
            *
            */
-  def searchAll(query: java.lang.String, canceler: js.Any): js.Any = js.native
+  def searchAll(query: java.lang.String, canceler: js.Any): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
 }
 

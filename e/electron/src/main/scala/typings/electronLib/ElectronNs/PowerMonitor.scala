@@ -21,7 +21,7 @@ trait PowerMonitor extends EventEmitter {
   def addListener_suspend(event: electronLib.electronLibStrings.suspend, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def `addListener_unlock-screen`(event: electronLib.electronLibStrings.`unlock-screen`, listener: js.Function): this.type = js.native
-  // Docs: http://electron.atom.io/docs/api/power-monitor
+  // Docs: http://electronjs.org/docs/api/power-monitor
   /**
        * Emitted when the system is about to lock the screen.
        */

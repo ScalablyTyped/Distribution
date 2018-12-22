@@ -30,6 +30,7 @@ package object DocumentClientNs {
   type BinarySetAttributeValue = js.Array[BinaryAttributeValue]
   type BooleanAttributeValue = scala.Boolean
   type BooleanObject = scala.Boolean
+  type ClientRequestToken = java.lang.String
   type ComparisonOperator = awsDashSdkLib.awsDashSdkLibStrings.EQ | awsDashSdkLib.awsDashSdkLibStrings.NE | awsDashSdkLib.awsDashSdkLibStrings.IN | awsDashSdkLib.awsDashSdkLibStrings.LE | awsDashSdkLib.awsDashSdkLibStrings.LT | awsDashSdkLib.awsDashSdkLibStrings.GE | awsDashSdkLib.awsDashSdkLibStrings.GT | awsDashSdkLib.awsDashSdkLibStrings.BETWEEN | awsDashSdkLib.awsDashSdkLibStrings.NOT_NULL | awsDashSdkLib.awsDashSdkLibStrings.NULL | awsDashSdkLib.awsDashSdkLibStrings.CONTAINS | awsDashSdkLib.awsDashSdkLibStrings.NOT_CONTAINS | awsDashSdkLib.awsDashSdkLibStrings.BEGINS_WITH | java.lang.String
   type ConditionExpression = java.lang.String
   type ConditionalOperator = awsDashSdkLib.awsDashSdkLibStrings.AND | awsDashSdkLib.awsDashSdkLibStrings.OR | java.lang.String

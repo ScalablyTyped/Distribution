@@ -15,7 +15,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onCellClick: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       /* column */ scala.Double, 
       scala.Unit
@@ -24,7 +24,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onCellHover: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       /* column */ scala.Double, 
       scala.Unit
@@ -33,7 +33,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onCellHoverExit: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       /* column */ scala.Double, 
       scala.Unit
@@ -42,7 +42,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onRowClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       scala.Unit
     ]
@@ -50,7 +50,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onRowHover: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       scala.Unit
     ]
@@ -58,7 +58,7 @@ trait TableRowProps extends js.Object {
   /** @deprecated Instead, use event handler on Table */
   var onRowHoverExit: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* row */ scala.Double, 
       scala.Unit
     ]

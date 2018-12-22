@@ -16,7 +16,7 @@ class WebRequest () extends EventEmitter {
     filter: OnBeforeRedirectFilter,
     listener: js.Function1[/* details */ OnBeforeRedirectDetails, scala.Unit]
   ): scala.Unit = js.native
-  // Docs: http://electron.atom.io/docs/api/web-request
+  // Docs: http://electronjs.org/docs/api/web-request
   /**
        * The listener will be called with listener(details) when a server initiated
        * redirect is about to occur.

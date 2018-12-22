@@ -13,7 +13,7 @@ trait CirclePickerProps
   var colors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var onSwatchHover: js.UndefOr[
     js.Function2[
-      /* color */ reactDashColorLib.reactDashColorMod.Color, 
+      /* colorResult */ reactDashColorLib.reactDashColorMod.ColorResult, 
       /* event */ reactLib.MouseEvent, 
       scala.Unit
     ]

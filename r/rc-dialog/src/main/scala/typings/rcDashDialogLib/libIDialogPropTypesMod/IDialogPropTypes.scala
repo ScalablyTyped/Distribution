@@ -28,7 +28,10 @@ trait IDialogPropTypes extends js.Object {
   var maskTransitionName: js.UndefOr[java.lang.String] = js.undefined
   var mousePosition: js.UndefOr[rcDashDialogLib.Anon_Y] = js.undefined
   var onClose: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement], _]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event], 
+      _
+    ]
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

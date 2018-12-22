@@ -68,7 +68,7 @@ object fsDashExtraDashPromiseDashEs6ModMembers extends js.Object {
     src: java.lang.String,
     dest: java.lang.String,
     callback: js.Function1[
-      (/* src */ java.lang.String) | (/* err */ nodeLib.Error), 
+      (/* err */ nodeLib.Error) | (/* src */ java.lang.String), 
       scala.Boolean | scala.Unit
     ]
   ): scala.Unit = js.native

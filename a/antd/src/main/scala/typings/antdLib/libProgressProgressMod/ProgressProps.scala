@@ -24,7 +24,7 @@ trait ProgressProps extends js.Object {
   var showInfo: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[ProgressSize] = js.undefined
   var status: js.UndefOr[
-    antdLib.antdLibStrings.success | antdLib.antdLibStrings.active | antdLib.antdLibStrings.exception
+    antdLib.antdLibStrings.success | antdLib.antdLibStrings.active | antdLib.antdLibStrings.exception | antdLib.antdLibStrings.normal
   ] = js.undefined
   var strokeColor: js.UndefOr[java.lang.String] = js.undefined
   var strokeLinecap: js.UndefOr[java.lang.String] = js.undefined

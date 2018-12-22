@@ -25,7 +25,21 @@ object tapeModMembers extends js.Object {
   def createStream(): nodeLib.NodeJSNs.ReadableStream = js.native
   def createStream(opts: tapeLib.tapeMod.tapeNs.StreamOptions): nodeLib.NodeJSNs.ReadableStream = js.native
   def onFinish(cb: js.Function0[scala.Unit]): scala.Unit = js.native
+  def only(cb: tapeLib.tapeMod.tapeNs.TestCase): scala.Unit = js.native
   def only(name: java.lang.String, cb: tapeLib.tapeMod.tapeNs.TestCase): scala.Unit = js.native
+  def only(
+    name: java.lang.String,
+    opts: tapeLib.tapeMod.tapeNs.TestOptions,
+    cb: tapeLib.tapeMod.tapeNs.TestCase
+  ): scala.Unit = js.native
+  def only(opts: tapeLib.tapeMod.tapeNs.TestOptions, cb: tapeLib.tapeMod.tapeNs.TestCase): scala.Unit = js.native
+  def skip(cb: tapeLib.tapeMod.tapeNs.TestCase): scala.Unit = js.native
   def skip(name: java.lang.String, cb: tapeLib.tapeMod.tapeNs.TestCase): scala.Unit = js.native
+  def skip(
+    name: java.lang.String,
+    opts: tapeLib.tapeMod.tapeNs.TestOptions,
+    cb: tapeLib.tapeMod.tapeNs.TestCase
+  ): scala.Unit = js.native
+  def skip(opts: tapeLib.tapeMod.tapeNs.TestOptions, cb: tapeLib.tapeMod.tapeNs.TestCase): scala.Unit = js.native
 }
 

@@ -158,7 +158,7 @@ trait IContextualMenuProps
   var onItemClick: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement] | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]
+        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]
       ], 
       /* item */ js.UndefOr[IContextualMenuItem], 
       scala.Boolean | scala.Unit

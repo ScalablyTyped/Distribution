@@ -17,7 +17,7 @@ trait Intent extends js.Object {
   var messages: js.UndefOr[js.Array[Message]] = js.undefined
   var mlEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var name: java.lang.String
-  var outputContexts: js.UndefOr[js.Array[Context]] = js.undefined
+  var outputContexts: js.UndefOr[js.Array[Context[java.lang.String, _]]] = js.undefined
   var parameters: js.UndefOr[js.Array[Parameter]] = js.undefined
   var parentFollowupIntentName: java.lang.String
   var priority: js.UndefOr[scala.Double] = js.undefined

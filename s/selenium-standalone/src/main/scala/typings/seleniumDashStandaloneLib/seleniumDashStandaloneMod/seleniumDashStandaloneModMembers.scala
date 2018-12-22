@@ -20,7 +20,7 @@ object seleniumDashStandaloneModMembers extends js.Object {
   ): scala.Unit = js.native
   def start(
     cb: js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
+      nodeLib.Error | scala.Null, 
       /* selenium */ nodeLib.childUnderscoreProcessMod.ChildProcess, 
       scala.Unit
     ]
@@ -41,7 +41,7 @@ object seleniumDashStandaloneModMembers extends js.Object {
   def start(
     opts: StartOpts,
     cb: js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
+      nodeLib.Error | scala.Null, 
       /* selenium */ nodeLib.childUnderscoreProcessMod.ChildProcess, 
       scala.Unit
     ]

@@ -14,7 +14,12 @@ trait Anon_OnClick extends js.Object {
   var divider: js.UndefOr[scala.Boolean] = js.undefined
   var header: js.UndefOr[scala.Boolean] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit]] = js.undefined
+  var onClick: js.UndefOr[
+    js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ]
+  ] = js.undefined
   var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var toggle: js.UndefOr[scala.Boolean] = js.undefined
 }

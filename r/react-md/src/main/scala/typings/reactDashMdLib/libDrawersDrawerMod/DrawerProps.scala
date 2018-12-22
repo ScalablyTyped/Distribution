@@ -23,7 +23,7 @@ trait DrawerProps
   var onVisibilityToggle: js.UndefOr[
     js.Function2[
       /* visible */ scala.Boolean, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

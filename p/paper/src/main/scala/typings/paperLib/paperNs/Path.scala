@@ -22,7 +22,7 @@ class Path () extends PathItem {
            * Creates a new path item and places it at the top of the active layer.
            * @param segments [optional] - An array of segments (or points to be converted to segments) that will be added to the path
            */
-  def this(segments: js.Array[Point | Segment | js.Array[scala.Double]]) = this()
+  def this(segments: js.Array[js.Array[scala.Double] | Point | Segment]) = this()
   /**
            * The area of the path in square points. Self-intersecting paths can contain sub-areas that cancel each other out.
            * Read only.
@@ -91,7 +91,7 @@ class Path () extends PathItem {
            * @param segments - Array of Segment objects
            * @returns an array of the added segments. These segments are not necessarily the same objects, e.g. if the segment to be added already belongs to another path.
            */
-  def addSegments(segments: js.Array[Point | Segment | js.Array[scala.Double]]): js.Array[Segment] = js.native
+  def addSegments(segments: js.Array[js.Array[scala.Double] | Point | Segment]): js.Array[Segment] = js.native
   /**
            * Clears the path’s handles by setting their coordinates to zero, turning the path into a polygon (or a polyline if it isn’t closed).
            */
@@ -242,7 +242,7 @@ class Path () extends PathItem {
            * @param segments - the segments to be inserted.
            * @returns an array of the added segments. These segments are not necessarily the same objects, e.g. if the segment to be added already belongs to another path.
            */
-  def insertSegments(index: scala.Double, segments: js.Array[Point | Segment | js.Array[scala.Double]]): js.Array[Segment] = js.native
+  def insertSegments(index: scala.Double, segments: js.Array[js.Array[scala.Double] | Point | Segment]): js.Array[Segment] = js.native
   /**
            * Joins the path with the specified path, which will be removed in the process.
            * @param path - the path to join this path with

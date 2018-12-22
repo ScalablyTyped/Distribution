@@ -29,7 +29,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
        */
   def containsAllMatchingElements(
     nodes: js.Array[
-      reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]
+      js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] | reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ): scala.Boolean = js.native
   /**
@@ -37,7 +37,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
        */
   def containsAnyMatchingElements(
     nodes: js.Array[
-      reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]
+      js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] | reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ): scala.Boolean = js.native
   /**

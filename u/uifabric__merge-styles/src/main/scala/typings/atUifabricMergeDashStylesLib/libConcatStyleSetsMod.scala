@@ -53,7 +53,7 @@ object libConcatStyleSetsMod extends js.Object {
     styleSet1: TStyleSet1 | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`false`,
     styleSet2: TStyleSet2 | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`false`,
     styleSet3: TStyleSet3 | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`false`,
-    styleSet4: TStyleSet3 | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`false` | TStyleSet4
+    styleSet4: TStyleSet3 | TStyleSet4 | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1 | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`false`,

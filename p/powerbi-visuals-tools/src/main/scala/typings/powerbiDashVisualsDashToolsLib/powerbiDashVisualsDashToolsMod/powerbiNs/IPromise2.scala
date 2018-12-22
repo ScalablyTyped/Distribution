@@ -14,7 +14,7 @@ trait IPromise2[TSuccess, TError] extends js.Object {
   /**
            * Shorthand for promise.then(null, errorCallback).
            */
-  def `catch`[TErrorResult](onRejected: js.Function1[/* reason */ js.Any, TErrorResult | (IPromise2[TSuccess, TErrorResult])]): IPromise2[TSuccess, TErrorResult] = js.native
+  def `catch`[TErrorResult](onRejected: js.Function1[/* reason */ js.Any, (IPromise2[TSuccess, TErrorResult]) | TErrorResult]): IPromise2[TSuccess, TErrorResult] = js.native
   /**
            * Allows you to observe either the fulfillment or rejection of a promise,
            * but to do so without modifying the final value.

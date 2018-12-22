@@ -32,7 +32,7 @@ trait IMemberResource extends js.Object {
            * @returns {Promise} resourcePromise object.
            *
            */
-  def deleteByKey(key: java.lang.String): js.Any
+  def deleteByKey(key: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.memberResource#getByKey
@@ -54,7 +54,7 @@ trait IMemberResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the member item.
            *
            */
-  def getByKey(key: java.lang.String): js.Any
+  def getByKey(key: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   def getListNode(listName: java.lang.String): js.Any
   def getPagedResults(memberTypeAlias: java.lang.String, options: js.Any): js.Any
   /**
@@ -87,7 +87,7 @@ trait IMemberResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the member scaffold.
            *
            */
-  def getScaffold(alias: java.lang.String): js.Any
+  def getScaffold(alias: java.lang.String): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
   /**
            * @ngdoc method
            * @name umbraco.resources.memberResource#save
@@ -116,6 +116,6 @@ trait IMemberResource extends js.Object {
            * @returns {Promise} resourcePromise object containing the saved media item.
            *
            */
-  def save(member: js.Object, isNew: scala.Boolean, files: js.Array[_]): js.Any
+  def save(member: js.Object, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 

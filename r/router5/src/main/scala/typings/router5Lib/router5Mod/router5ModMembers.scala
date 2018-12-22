@@ -8,30 +8,19 @@ import scala.scalajs.js.annotation._
 @JSImport("router5", JSImport.Namespace)
 @js.native
 object router5ModMembers extends js.Object {
-  val constants: router5Lib.constantsMod.Constants = js.native
-  val errorCodes: router5Lib.constantsMod.ErrorCodes = js.native
-  val loggerPlugin: router5Lib.corePluginsMod.PluginFactory = js.native
-  def createRouter(routers: js.Array[router5Lib.createDashRouterMod.Route]): router5Lib.createDashRouterMod.Router = js.native
-  def createRouter(
-    routers: js.Array[router5Lib.createDashRouterMod.Route],
-    options: stdLib.Partial[router5Lib.createDashRouterMod.Options]
-  ): router5Lib.createDashRouterMod.Router = js.native
-  def createRouter(
-    routers: js.Array[router5Lib.createDashRouterMod.Route],
-    options: stdLib.Partial[router5Lib.createDashRouterMod.Options],
-    dependencies: router5Lib.createDashRouterMod.Dependencies
-  ): router5Lib.createDashRouterMod.Router = js.native
-  def default(routers: js.Array[router5Lib.createDashRouterMod.Route]): router5Lib.createDashRouterMod.Router = js.native
-  def default(
-    routers: js.Array[router5Lib.createDashRouterMod.Route],
-    options: stdLib.Partial[router5Lib.createDashRouterMod.Options]
-  ): router5Lib.createDashRouterMod.Router = js.native
-  def default(
-    routers: js.Array[router5Lib.createDashRouterMod.Route],
-    options: stdLib.Partial[router5Lib.createDashRouterMod.Options],
-    dependencies: router5Lib.createDashRouterMod.Dependencies
-  ): router5Lib.createDashRouterMod.Router = js.native
-  def transitionPath(toState: js.Any): router5DashTransitionDashPathLib.router5DashTransitionDashPathMod.TransitionPath = js.native
-  def transitionPath(toState: js.Any, fromState: js.Any): router5DashTransitionDashPathLib.router5DashTransitionDashPathMod.TransitionPath = js.native
+  val constants: router5Lib.typesConstantsMod.Constants = js.native
+  val createRouter: router5Lib.typesTypesRouterMod.CreateRouter = js.native
+  val default: router5Lib.typesTypesRouterMod.CreateRouter = js.native
+  val errorCodes: router5Lib.typesConstantsMod.ErrorCodes = js.native
+  def cloneRouter(router: router5Lib.typesTypesRouterMod.Router): router5Lib.typesTypesRouterMod.Router = js.native
+  def cloneRouter(
+    router: router5Lib.typesTypesRouterMod.Router,
+    dependencies: router5Lib.typesTypesRouterMod.Dependencies
+  ): router5Lib.typesTypesRouterMod.Router = js.native
+  def transitionPath(toState: router5DashTransitionDashPathLib.typesTransitionPathMod.State): router5DashTransitionDashPathLib.typesTransitionPathMod.TransitionPath = js.native
+  def transitionPath(
+    toState: router5DashTransitionDashPathLib.typesTransitionPathMod.State,
+    fromState: router5DashTransitionDashPathLib.typesTransitionPathMod.State
+  ): router5DashTransitionDashPathLib.typesTransitionPathMod.TransitionPath = js.native
 }
 

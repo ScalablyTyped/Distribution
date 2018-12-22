@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-server", JSImport.Namespace)
 @js.native
 object apolloDashServerModMembers extends js.Object {
-  val GraphQLUpload: js.UndefOr[graphqlLib.graphqlMod.GraphQLScalarType] = js.native
+  val SyntaxError: stdLib.SyntaxErrorConstructor = js.native
   val attachConnectorsToContext: js.Function = js.native
   val defaultMergedResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
-  val defaultPlaygroundOptions: apolloDashServerDashCoreLib.Anon_Settings = js.native
   def addCatchUndefinedToSchema(schema: graphqlLib.graphqlMod.GraphQLSchema): scala.Unit = js.native
   def addErrorLoggingToSchema(schema: graphqlLib.graphqlMod.GraphQLSchema, logger: graphqlDashToolsLib.distInterfacesMod.ILogger): scala.Unit = js.native
   def addMockFunctionsToSchema(hasSchemaMocksPreserveResolvers: graphqlDashToolsLib.distInterfacesMod.IMockOptions): scala.Unit = js.native
@@ -96,8 +95,6 @@ object apolloDashServerModMembers extends js.Object {
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     fn: graphqlDashToolsLib.distInterfacesMod.IFieldIteratorFn
   ): scala.Unit = js.native
-  def gql(template: java.lang.String, substitutions: js.Any*): graphqlLib.languageAstMod.DocumentNode = js.native
-  def gql(template: stdLib.TemplateStringsArray, substitutions: js.Any*): graphqlLib.languageAstMod.DocumentNode = js.native
   def introspectSchema(fetcher: apolloDashLinkLib.apolloDashLinkMod.ApolloLink): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
   def introspectSchema(
     fetcher: apolloDashLinkLib.apolloDashLinkMod.ApolloLink,
@@ -130,8 +127,6 @@ object apolloDashServerModMembers extends js.Object {
     mocks: graphqlDashToolsLib.distInterfacesMod.IMocks,
     preserveResolvers: scala.Boolean
   ): graphqlDashToolsLib.distInterfacesMod.IMockServer = js.native
-  def toApolloError(error: stdLib.Error with apolloDashServerDashErrorsLib.Anon_Extensions): stdLib.Error with apolloDashServerDashErrorsLib.Anon_ExtensionsRecord = js.native
-  def toApolloError(error: stdLib.Error with apolloDashServerDashErrorsLib.Anon_Extensions, code: java.lang.String): stdLib.Error with apolloDashServerDashErrorsLib.Anon_ExtensionsRecord = js.native
   def transformSchema(
     targetSchema: graphqlLib.graphqlMod.GraphQLSchema,
     transforms: js.Array[graphqlDashToolsLib.distInterfacesMod.Transform]

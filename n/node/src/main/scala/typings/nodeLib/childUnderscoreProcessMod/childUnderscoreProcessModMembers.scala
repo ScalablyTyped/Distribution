@@ -188,9 +188,9 @@ object childUnderscoreProcessModMembers extends js.Object {
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      /* error */ nodeLib.Error | scala.Null, 
-      java.lang.String | nodeLib.Buffer, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Error | scala.Null, 
+      nodeLib.Buffer | (/* stdout */ java.lang.String), 
+      nodeLib.Buffer | (/* stderr */ java.lang.String), 
       scala.Unit
     ]
   ): ChildProcess = js.native
@@ -248,9 +248,9 @@ object childUnderscoreProcessModMembers extends js.Object {
     file: java.lang.String,
     args: scala.Null,
     callback: js.Function3[
-      /* error */ nodeLib.Error | scala.Null, 
-      java.lang.String | nodeLib.Buffer, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Error | scala.Null, 
+      nodeLib.Buffer | (/* stdout */ java.lang.String), 
+      nodeLib.Buffer | (/* stderr */ java.lang.String), 
       scala.Unit
     ]
   ): ChildProcess = js.native

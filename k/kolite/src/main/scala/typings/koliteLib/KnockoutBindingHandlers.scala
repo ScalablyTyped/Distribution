@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait KnockoutBindingHandlers extends js.Object {
   var activity: KoLiteActivityBindingHandler
-  var command: js.Any
+  var command: knockoutLib.KnockoutBindingHandler[_, _, _]
 }
 

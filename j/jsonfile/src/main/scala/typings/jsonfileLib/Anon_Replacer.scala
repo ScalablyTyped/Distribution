@@ -14,6 +14,5 @@ trait Anon_Replacer extends js.Object {
   var mode: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var replacer: js.UndefOr[js.Function2[/* key */ java.lang.String, /* value */ js.Any, _]] = js.undefined
   var spaces: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var throws: js.UndefOr[scala.Boolean] = js.undefined
 }
 

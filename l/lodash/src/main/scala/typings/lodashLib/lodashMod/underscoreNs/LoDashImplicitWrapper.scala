@@ -750,12 +750,12 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
            * @see _.fill
            */
-  def fill[T](`this`: LoDashImplicitWrapper[js.UndefOr[js.Array[_] | scala.Null | List[_]]], value: T): LoDashImplicitWrapper[js.Array[T]] = js.native
+  def fill[T](`this`: LoDashImplicitWrapper[js.UndefOr[js.Array[_] | List[_] | scala.Null]], value: T): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
            * @see _.fill
            */
   def fill[T, U](
-    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[U] | scala.Null | List[U]]],
+    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[U] | List[U] | scala.Null]],
     value: T,
     start: scala.Double
   ): LoDashImplicitWrapper[js.Array[T | U]] = js.native
@@ -763,7 +763,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
            * @see _.fill
            */
   def fill[T, U](
-    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[U] | scala.Null | List[U]]],
+    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[U] | List[U] | scala.Null]],
     value: T,
     start: scala.Double,
     end: scala.Double
@@ -772,7 +772,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
            * @see _.fill
            */
   @JSName("fill")
-  def fill_TU[T, U](`this`: LoDashImplicitWrapper[js.UndefOr[js.Array[U] | scala.Null | List[U]]], value: T): LoDashImplicitWrapper[js.Array[T | U]] = js.native
+  def fill_TU[T, U](`this`: LoDashImplicitWrapper[js.UndefOr[js.Array[U] | List[U] | scala.Null]], value: T): LoDashImplicitWrapper[js.Array[T | U]] = js.native
   /**
            * @see _.filter
            */
@@ -2300,7 +2300,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
            * @see _.map
            */
   def map[T](
-    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | Dictionary[T] | NumericDictionary[T] | scala.Null]]
+    `this`: LoDashImplicitWrapper[js.UndefOr[Dictionary[T] | List[T] | scala.Null | NumericDictionary[T]]]
   ): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
            * @see _.map
@@ -2329,7 +2329,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
            * @see _.map
            */
   def map[T, TResult](
-    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]],
+    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
     iteratee: (ArrayIterator[T, TResult]) | (ListIterator[T, TResult])
   ): LoDashImplicitWrapper[js.Array[TResult]] = js.native
   /**
@@ -2673,7 +2673,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
            */
   @JSName("orderBy")
   def orderBy_TObject[T /* <: js.Object */](
-    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
+    `this`: LoDashImplicitWrapper[js.UndefOr[scala.Null | T]],
     iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]
   ): LoDashImplicitWrapper[
     js.Array[
@@ -2685,7 +2685,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
            */
   @JSName("orderBy")
   def orderBy_TObject[T /* <: js.Object */](
-    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
+    `this`: LoDashImplicitWrapper[js.UndefOr[scala.Null | T]],
     iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])],
     orders: Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc]
   ): LoDashImplicitWrapper[
@@ -3156,7 +3156,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def partition[T](
     `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null | T]],
     callback: ValueIteratee[
-      T | (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any)
+      (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any) | T
     ]
   ): LoDashImplicitWrapper[js.Tuple2[js.Array[T], js.Array[T]]] = js.native
   /**
@@ -3277,8 +3277,8 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
           * @see _.reduce
           **/
   def reduce[T](
-    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]],
-    callback: MemoListIterator[T, T, List[T] | js.Array[T]]
+    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
+    callback: MemoListIterator[T, T, js.Array[T] | List[T]]
   ): js.UndefOr[T] = js.native
   /**
           * @see _.reduce
@@ -3287,23 +3287,23 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
            * @see _.reduce
            **/
   def reduce[T, TResult](
-    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]],
-    callback: MemoListIterator[T, TResult, List[T] | js.Array[T]],
+    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
+    callback: MemoListIterator[T, TResult, js.Array[T] | List[T]],
     accumulator: TResult
   ): TResult = js.native
   /**
           * @see _.reduceRight
           **/
   def reduceRight[T](
-    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]],
-    callback: MemoListIterator[T, T, List[T] | js.Array[T]]
+    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
+    callback: MemoListIterator[T, T, js.Array[T] | List[T]]
   ): js.UndefOr[T] = js.native
   /**
           * @see _.reduceRight
           **/
   def reduceRight[T, TResult](
-    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | scala.Null | List[T]]],
-    callback: MemoListIterator[T, TResult, List[T] | js.Array[T]],
+    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
+    callback: MemoListIterator[T, TResult, js.Array[T] | List[T]],
     accumulator: TResult
   ): TResult = js.native
   /**
@@ -3912,14 +3912,14 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
            * @see _.transform
            */
   def transform[T, TResult](
-    `this`: LoDashImplicitWrapper[Dictionary[T] | js.Array[T]],
+    `this`: LoDashImplicitWrapper[js.Array[T] | Dictionary[T]],
     iteratee: (MemoVoidArrayIterator[T, js.Array[TResult]]) | (MemoVoidDictionaryIterator[T, Dictionary[TResult]])
   ): LoDashImplicitWrapper[js.Array[TResult]] = js.native
   /**
            * @see _.transform
            */
   def transform[T, TResult](
-    `this`: LoDashImplicitWrapper[Dictionary[T] | js.Array[T]],
+    `this`: LoDashImplicitWrapper[js.Array[T] | Dictionary[T]],
     iteratee: (MemoVoidArrayIterator[T, js.Array[TResult]]) | (MemoVoidDictionaryIterator[T, js.Array[TResult]]),
     accumulator: js.Array[TResult]
   ): LoDashImplicitWrapper[js.Array[TResult]] = js.native
@@ -3927,7 +3927,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
            * @see _.transform
            */
   def transform[T, TResult](
-    `this`: LoDashImplicitWrapper[Dictionary[T] | js.Array[T]],
+    `this`: LoDashImplicitWrapper[js.Array[T] | Dictionary[T]],
     iteratee: (MemoVoidArrayIterator[T, Dictionary[TResult]]) | (MemoVoidDictionaryIterator[T, Dictionary[TResult]]),
     accumulator: Dictionary[TResult]
   ): LoDashImplicitWrapper[Dictionary[TResult]] = js.native

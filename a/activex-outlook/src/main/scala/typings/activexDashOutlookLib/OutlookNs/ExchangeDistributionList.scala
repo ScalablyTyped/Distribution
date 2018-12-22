@@ -33,8 +33,8 @@ class ExchangeDistributionList protected () extends js.Object {
   def GetExchangeDistributionList(): ExchangeDistributionList = js.native
   def GetExchangeDistributionListMembers(): AddressEntries = js.native
   def GetExchangeUser(): ExchangeUser = js.native
-  def GetFreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
-  def GetFreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
+  def GetFreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
+  def GetFreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
   def GetMemberOfList(): AddressEntries = js.native
   def GetOwners(): AddressEntries = js.native
   def Update(): scala.Unit = js.native

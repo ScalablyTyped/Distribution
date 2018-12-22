@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
+/* RemoveDifficultInheritance: 
+- Dropped any */ 
 trait NsisOptions
   extends CommonNsisOptions
-     with appDashBuilderDashLibLib.outOptionsCommonWindowsInstallerConfigurationMod.CommonWindowsInstallerConfiguration
      with appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions {
   /**
        * *assisted installer only.* Allow requesting for elevation. If false, user will have to restart installer with elevated permissions.
@@ -80,10 +80,26 @@ trait NsisOptions
        */
   val multiLanguageInstaller: js.UndefOr[scala.Boolean] = js.undefined
   /**
+       * Whether to create one-click installer or assisted.
+       * @default true
+       */
+  val oneClick: js.UndefOr[scala.Boolean] = js.undefined
+  /**
        * Whether to pack the elevate executable (required for electron-updater if per-machine installer used or can be used in the future). Ignored if `perMachine` is set to `true`.
        * @default true
        */
   val packElevateHelper: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+       * Whether to show install mode installer page (choice per-machine or per-user) for assisted installer. Or whether installation always per all users (per-machine).
+       *
+       * If `oneClick` is `true` (default): Whether to install per all users (per-machine).
+       *
+       * If `oneClick` is `false` and `perMachine` is `true`: no install mode installer page, always install per-machine.
+       *
+       * If `oneClick` is `false` and `perMachine` is `false` (default): install mode installer page.
+       * @default false
+       */
+  val perMachine: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * The file extension of files that will be not compressed. Applicable only for `extraResources` and `extraFiles` files.
        * @default [".avi", ".mov", ".m4v", ".mp4", ".m4p", ".qt", ".mkv", ".webm", ".vmdk"]

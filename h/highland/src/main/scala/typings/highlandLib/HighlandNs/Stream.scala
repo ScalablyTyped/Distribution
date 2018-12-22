@@ -342,7 +342,7 @@ trait Stream[R]
   		 * @param {Function} f - the iterator function
   		 * @api public
   		 */
-  def flatMap[U](f: js.Function1[/* x */ R, U | Stream[U]]): Stream[U] = js.native
+  def flatMap[U](f: js.Function1[/* x */ R, Stream[U] | U]): Stream[U] = js.native
   def flatten(): Stream[R] = js.native
   /**
   		 * Recursively reads values from a Stream which may contain nested Streams

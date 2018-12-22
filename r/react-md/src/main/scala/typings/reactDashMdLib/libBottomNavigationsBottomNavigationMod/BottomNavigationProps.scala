@@ -23,7 +23,7 @@ trait BottomNavigationProps
   var onNavChange: js.UndefOr[
     js.Function2[
       /* activeIndex */ scala.Double, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

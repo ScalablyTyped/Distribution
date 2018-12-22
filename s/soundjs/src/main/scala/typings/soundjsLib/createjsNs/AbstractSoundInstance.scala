@@ -32,7 +32,7 @@ class AbstractSoundInstance protected ()
   def getPosition(): scala.Double = js.native
   def getVolume(): scala.Double = js.native
   def play(
-    interrupt: js.UndefOr[java.lang.String | js.Object],
+    interrupt: js.UndefOr[js.Object | java.lang.String],
     delay: js.UndefOr[scala.Double],
     offset: js.UndefOr[scala.Double],
     loop: js.UndefOr[scala.Double],

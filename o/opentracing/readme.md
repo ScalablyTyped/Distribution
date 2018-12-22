@@ -18,6 +18,7 @@
  * expected to be an Array-like object (Array, ArrayBuffer, or
  * TypedBuffer).
  */
+/** SPAN_KIND hints at relationship between spans, e.g. client/server */
 /**
  * SpanContext represents Span state that must propagate to descendant Spans
  * and across process boundaries.
@@ -28,5 +29,4 @@
  * identify or otherwise contextualize the associated Span instance (e.g., a
  * <trace_id, span_id, sampled> tuple).
  */
-/** SPAN_KIND hints at relationship between spans, e.g. client/server */
 ```

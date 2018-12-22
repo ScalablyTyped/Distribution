@@ -50,7 +50,7 @@ object sylvesterLibMembers extends js.Object {
   * @param {Array<number>|Array<Array<number>>|Vector|Matrix} elements The elements.
   */
   @JSName("$M")
-  def $M(elements: js.Array[scala.Double | js.Array[scala.Double]]): Matrix = js.native
+  def $M(elements: js.Array[js.Array[scala.Double] | scala.Double]): Matrix = js.native
   /**
   * Constructor function.
   *

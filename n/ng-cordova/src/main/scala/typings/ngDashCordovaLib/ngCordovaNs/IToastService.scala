@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 
 trait IToastService extends js.Object {
-  def show(message: java.lang.String, duration: java.lang.String, position: java.lang.String): js.Any
-  def showLongBottom(message: java.lang.String): js.Any
-  def showLongCenter(message: java.lang.String): js.Any
-  def showLongTop(message: java.lang.String): js.Any
-  def showShortBottom(message: java.lang.String): js.Any
-  def showShortCenter(message: java.lang.String): js.Any
-  def showShortTop(message: java.lang.String): js.Any
+  def show(message: java.lang.String, duration: java.lang.String, position: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]
+  def showLongBottom(message: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]
+  def showLongCenter(message: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]
+  def showLongTop(message: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]
+  def showShortBottom(message: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]
+  def showShortCenter(message: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]
+  def showShortTop(message: java.lang.String): angularLib.angularMod.angularNs.IPromise[_]
 }
 

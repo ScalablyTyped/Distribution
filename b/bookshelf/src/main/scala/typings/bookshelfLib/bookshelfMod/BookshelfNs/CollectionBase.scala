@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait CollectionBase[T /* <: Model[_] */] extends Events[T] {
   // See https://github.com/tgriesser/bookshelf/blob/0.9.4/src/base/collection.js#L573
   var length: scala.Double = js.native
-  def add(models: js.Array[T | org.scalablytyped.runtime.StringDictionary[_]]): Collection[T] = js.native
-  def add(models: js.Array[T | org.scalablytyped.runtime.StringDictionary[_]], options: CollectionAddOptions): Collection[T] = js.native
+  def add(models: js.Array[org.scalablytyped.runtime.StringDictionary[_] | T]): Collection[T] = js.native
+  def add(models: js.Array[org.scalablytyped.runtime.StringDictionary[_] | T], options: CollectionAddOptions): Collection[T] = js.native
   // lodash methods
   def all(): scala.Boolean = js.native
   // lodash methods
@@ -289,8 +289,8 @@ trait CollectionBase[T /* <: Model[_] */] extends Events[T] {
   def select_RObject[R /* <: js.Object */](): js.Array[T] = js.native
   def serialize(): js.Array[_] = js.native
   def serialize(options: SerializeOptions): js.Array[_] = js.native
-  def set(models: js.Array[T | org.scalablytyped.runtime.StringDictionary[_]]): Collection[T] = js.native
-  def set(models: js.Array[T | org.scalablytyped.runtime.StringDictionary[_]], options: CollectionSetOptions): Collection[T] = js.native
+  def set(models: js.Array[org.scalablytyped.runtime.StringDictionary[_] | T]): Collection[T] = js.native
+  def set(models: js.Array[org.scalablytyped.runtime.StringDictionary[_] | T], options: CollectionSetOptions): Collection[T] = js.native
   def shift(): scala.Unit = js.native
   def shift(options: EventOptions): scala.Unit = js.native
   def shuffle(): js.Array[T] = js.native

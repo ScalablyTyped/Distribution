@@ -71,7 +71,7 @@ trait Workbooks extends js.Object {
     Comma: js.UndefOr[scala.Boolean | js.UndefOr[scala.Nothing]],
     Space: js.UndefOr[scala.Boolean | js.UndefOr[scala.Nothing]],
     Other: js.UndefOr[
-      activexDashExcelLib.activexDashExcelLibNumbers.`true` | scala.Boolean | js.UndefOr[scala.Nothing]
+      scala.Boolean | js.UndefOr[scala.Nothing] | activexDashExcelLib.activexDashExcelLibNumbers.`true`
     ],
     OtherChar: js.UndefOr[java.lang.String | js.UndefOr[scala.Nothing]],
     FieldInfo: js.UndefOr[activexDashInteropLib.SafeArray[_]],

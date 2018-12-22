@@ -15,10 +15,10 @@ object extrasNs extends js.Object {
   class AnimatedSprite protected ()
     extends pixiDotJsLib.PIXINs.extrasNs.AnimatedSprite {
     def this(textures: js.Array[
-          pixiDotJsLib.PIXINs.Texture | pixiDotJsLib.PIXINs.extrasNs.AnimatedSpriteTextureTimeObject
+          pixiDotJsLib.PIXINs.extrasNs.AnimatedSpriteTextureTimeObject | pixiDotJsLib.PIXINs.Texture
         ]) = this()
     def this(textures: js.Array[
-          pixiDotJsLib.PIXINs.Texture | pixiDotJsLib.PIXINs.extrasNs.AnimatedSpriteTextureTimeObject
+          pixiDotJsLib.PIXINs.extrasNs.AnimatedSpriteTextureTimeObject | pixiDotJsLib.PIXINs.Texture
         ], autoUpdate: scala.Boolean) = this()
   }
   

@@ -377,7 +377,7 @@ class Popup protected ()
     iDuration: scala.Double,
     my: js.UndefOr[openui5Lib.Anon_EndCenter],
     at: js.UndefOr[openui5Lib.Anon_EndCenter],
-    of: js.UndefOr[java.lang.String | jqueryLib.JQueryStatic | Element | js.Any],
+    of: js.UndefOr[js.Any | Element | jqueryLib.JQueryStatic | java.lang.String],
     offset: js.UndefOr[java.lang.String],
     collision: js.UndefOr[java.lang.String],
     followOf: js.UndefOr[scala.Boolean]

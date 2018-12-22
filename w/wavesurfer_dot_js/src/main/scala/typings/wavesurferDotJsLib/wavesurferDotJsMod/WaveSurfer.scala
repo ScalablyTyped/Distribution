@@ -30,28 +30,28 @@ trait WaveSurfer
   def isPlaying(): scala.Boolean = js.native
   def isReady(): scala.Boolean = js.native
   def load(url: java.lang.String): scala.Unit = js.native
-  def load(url: java.lang.String, peaks: js.Array[scala.Double | js.Array[scala.Double]]): scala.Unit = js.native
+  def load(url: java.lang.String, peaks: js.Array[js.Array[scala.Double] | scala.Double]): scala.Unit = js.native
   def load(
     url: java.lang.String,
-    peaks: js.Array[scala.Double | js.Array[scala.Double]],
+    peaks: js.Array[js.Array[scala.Double] | scala.Double],
     preload: java.lang.String
   ): scala.Unit = js.native
   def load(
     url: java.lang.String,
-    peaks: js.Array[scala.Double | js.Array[scala.Double]],
+    peaks: js.Array[js.Array[scala.Double] | scala.Double],
     preload: java.lang.String,
     duration: scala.Double
   ): scala.Unit = js.native
   def load(url: stdLib.HTMLMediaElement): scala.Unit = js.native
-  def load(url: stdLib.HTMLMediaElement, peaks: js.Array[scala.Double | js.Array[scala.Double]]): scala.Unit = js.native
+  def load(url: stdLib.HTMLMediaElement, peaks: js.Array[js.Array[scala.Double] | scala.Double]): scala.Unit = js.native
   def load(
     url: stdLib.HTMLMediaElement,
-    peaks: js.Array[scala.Double | js.Array[scala.Double]],
+    peaks: js.Array[js.Array[scala.Double] | scala.Double],
     preload: java.lang.String
   ): scala.Unit = js.native
   def load(
     url: stdLib.HTMLMediaElement,
-    peaks: js.Array[scala.Double | js.Array[scala.Double]],
+    peaks: js.Array[js.Array[scala.Double] | scala.Double],
     preload: java.lang.String,
     duration: scala.Double
   ): scala.Unit = js.native

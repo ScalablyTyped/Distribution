@@ -15,7 +15,9 @@ object libTransformModMembers extends js.Object {
     doc: graphqlLib.languageAstMod.DocumentNode,
     includeAllFragments: scala.Boolean
   ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
+  def removeArgumentsFromDocument(config: js.Array[RemoveArgumentsConfig], query: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
   def removeConnectionDirectiveFromDocument(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def removeDirectivesFromDocument(directives: js.Array[RemoveDirectiveConfig], doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
+  def removeFragmentSpreadFromDocument(config: js.Array[RemoveFragmentSpreadConfig], query: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
 }
 

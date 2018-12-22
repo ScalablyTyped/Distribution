@@ -27,13 +27,13 @@ class Packager protected () extends js.Object {
   val areNodeModulesHandledExternally: scala.Boolean = js.native
   val buildResourcesDir: java.lang.String = js.native
   val cancellationToken: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeMod.CancellationToken = js.native
-  val config: appDashBuilderDashLibLib.outConfigurationMod.Configuration = js.native
+  val config: js.Any = js.native
   var createHelper: js.Any = js.native
   val debugLogger: builderDashUtilLib.builderDashUtilMod.DebugLogger = js.native
   val devMetadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata | scala.Null = js.native
   var doBuild: js.Any = js.native
   val eventEmitter: nodeLib.eventsMod.EventEmitter = js.native
-  val framework: appDashBuilderDashLibLib.outFrameworkMod.Framework = js.native
+  val framework: js.Any = js.native
   var installAppDependencies: js.Any = js.native
   val isPrepackedAppAsar: scala.Boolean = js.native
   var isTwoPackageJsonProjectLayoutUsed: scala.Boolean = js.native
@@ -43,36 +43,28 @@ class Packager protected () extends js.Object {
   val projectDir: java.lang.String = js.native
   var readProjectMetadataIfTwoPackageStructureOrPrepacked: js.Any = js.native
   val relativeBuildResourcesDirname: java.lang.String = js.native
-  val repositoryInfo: js.Promise[appDashBuilderDashLibLib.outCoreMod.SourceRepositoryInfo | scala.Null] = js.native
+  val repositoryInfo: js.Promise[_ | scala.Null] = js.native
   val tempDirManager: builderDashUtilLib.builderDashUtilMod.TmpDir = js.native
+  def _build(configuration: js.Any, metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata): js.Promise[BuildResult] = js.native
   def _build(
-    configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
-    metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata
-  ): js.Promise[BuildResult] = js.native
-  def _build(
-    configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
+    configuration: js.Any,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
     devMetadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata
   ): js.Promise[BuildResult] = js.native
   def _build(
-    configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
+    configuration: js.Any,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
     devMetadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
-    repositoryInfo: appDashBuilderDashLibLib.outCoreMod.SourceRepositoryInfo
+    repositoryInfo: js.Any
   ): js.Promise[BuildResult] = js.native
   def _build(
-    configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
+    configuration: js.Any,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
     devMetadata: scala.Null,
-    repositoryInfo: appDashBuilderDashLibLib.outCoreMod.SourceRepositoryInfo
+    repositoryInfo: js.Any
   ): js.Promise[BuildResult] = js.native
-  def addAfterPackHandler(
-    handler: js.Function1[
-      /* context */ appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, 
-      js.Promise[_] | scala.Null
-    ]
-  ): scala.Unit = js.native
-  def afterPack(context: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext): js.Promise[_] = js.native
+  def addAfterPackHandler(handler: js.Function1[/* context */ js.Any, js.Promise[_] | scala.Null]): scala.Unit = js.native
+  def afterPack(context: js.Any): js.Promise[_] = js.native
   def artifactCreated(
     handler: js.Function1[/* event */ appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated, scala.Unit]
   ): Packager = js.native
@@ -85,7 +77,7 @@ class Packager protected () extends js.Object {
        */
   def dispatchArtifactCreated(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated): scala.Unit = js.native
   def stageDirPathCustomizer(
-    target: appDashBuilderDashLibLib.outMod.Target,
+    target: js.Any,
     packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     arch: builderDashUtilLib.outArchMod.Arch
   ): java.lang.String = js.native

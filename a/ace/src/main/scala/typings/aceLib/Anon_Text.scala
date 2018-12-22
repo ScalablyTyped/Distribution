@@ -13,8 +13,8 @@ trait Anon_Text
          * @param mode [The inital language mode to use for the document]{: #modeParam}
         **/
 org.scalablytyped.runtime.Instantiable2[
-      (/* text */ java.lang.String) | (/* text */ js.Array[java.lang.String]), 
-      (/* mode */ aceLib.AceAjaxNs.TextMode) | (/* mode */ java.lang.String), 
+      (/* text */ js.Array[java.lang.String]) | (/* text */ java.lang.String), 
+      (/* mode */ java.lang.String) | (/* mode */ aceLib.AceAjaxNs.TextMode), 
       aceLib.AceAjaxNs.IEditSession
     ]
      with /**
@@ -23,7 +23,7 @@ org.scalablytyped.runtime.Instantiable2[
          * @param mode [The inital language mode to use for the document]{: #modeParam}
         **/
 org.scalablytyped.runtime.Instantiable1[
-      (/* text */ java.lang.String) | (/* text */ js.Array[java.lang.String]), 
+      (/* text */ js.Array[java.lang.String]) | (/* text */ java.lang.String), 
       aceLib.AceAjaxNs.IEditSession
     ]
 

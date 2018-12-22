@@ -216,14 +216,14 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
      */
   def createDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
      */
   def createDocumentClassifier(
     callback: js.Function2[
@@ -236,14 +236,14 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
      */
   def createDocumentClassifier(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
      */
   def createDocumentClassifier(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierRequest,
@@ -1650,6 +1650,88 @@ trait Comprehend
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopSentimentDetectionJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
+     */
+  def stopTrainingDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
+     */
+  def stopTrainingDocumentClassifier(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
+     */
+  def stopTrainingDocumentClassifier(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
+     */
+  def stopTrainingDocumentClassifier(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
+     */
+  def stopTrainingEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
+     */
+  def stopTrainingEntityRecognizer(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
+     */
+  def stopTrainingEntityRecognizer(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
+     */
+  def stopTrainingEntityRecognizer(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
 }

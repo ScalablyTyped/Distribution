@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait ITreePickerOptions extends js.Object {
   /*callback function*/
-  var callback: js.Function
+  var callback: angularLib.angularMod.Global.Function
   /*should the tree pick one or multiple items before returning*/
   var multiPicker: scala.Boolean
   /*tree section to display*/

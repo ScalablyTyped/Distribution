@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Geocoder extends js.Object {
-  def batchGeocode(queries: js.Array[java.lang.String | Query]): js.Promise[js.Array[BatchResult]] = js.native
+  def batchGeocode(queries: js.Array[Query | java.lang.String]): js.Promise[js.Array[BatchResult]] = js.native
   def batchGeocode(
-    queries: js.Array[java.lang.String | Query],
+    queries: js.Array[Query | java.lang.String],
     cb: js.Function2[/* err */ js.Any, /* data */ js.Array[BatchResult], scala.Unit]
   ): js.Promise[js.Array[BatchResult]] = js.native
   def geocode(query: java.lang.String): js.Promise[js.Array[Entry]] = js.native

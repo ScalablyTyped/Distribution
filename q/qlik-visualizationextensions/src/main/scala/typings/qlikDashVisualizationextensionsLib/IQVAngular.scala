@@ -18,13 +18,23 @@ trait IQVAngular extends js.Object {
   def directive(
     name: java.lang.String,
     directiveFactory: angularLib.angularMod.angularNs.Injectable[
-      angularLib.angularMod.angularNs.IDirectiveFactory[angularLib.angularMod.angularNs.IScope]
+      angularLib.angularMod.angularNs.IDirectiveFactory[
+        angularLib.angularMod.angularNs.IScope, 
+        angularLib.JQLite, 
+        angularLib.angularMod.angularNs.IAttributes, 
+        angularLib.angularMod.angularNs.IController
+      ]
     ]
   ): scala.Unit = js.native
   def directive(
     `object`: org.scalablytyped.runtime.StringDictionary[
       angularLib.angularMod.angularNs.Injectable[
-        angularLib.angularMod.angularNs.IDirectiveFactory[angularLib.angularMod.angularNs.IScope]
+        angularLib.angularMod.angularNs.IDirectiveFactory[
+          angularLib.angularMod.angularNs.IScope, 
+          angularLib.JQLite, 
+          angularLib.angularMod.angularNs.IAttributes, 
+          angularLib.angularMod.angularNs.IController
+        ]
       ]
     ]
   ): scala.Unit = js.native

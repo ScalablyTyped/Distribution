@@ -27,7 +27,7 @@ trait SnackbarProps
   var message: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var onClose: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
       /* reason */ java.lang.String, 
       scala.Unit
     ]

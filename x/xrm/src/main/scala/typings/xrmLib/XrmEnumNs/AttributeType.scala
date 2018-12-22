@@ -48,6 +48,10 @@ object AttributeType extends js.Object {
     extends xrmLib.XrmEnumNs.AttributeType
   
   @js.native
+  sealed trait MultiOptionSet
+    extends xrmLib.XrmEnumNs.AttributeType
+  
+  @js.native
   sealed trait OptionSet
     extends xrmLib.XrmEnumNs.AttributeType
   
@@ -63,6 +67,7 @@ object AttributeType extends js.Object {
   /* "lookup" */ val Lookup: Lookup with java.lang.String = js.native
   /* "memo" */ val Memo: Memo with java.lang.String = js.native
   /* "money" */ val Money: Money with java.lang.String = js.native
+  /* "multioptionset" */ val MultiOptionSet: MultiOptionSet with java.lang.String = js.native
   /* "optionset" */ val OptionSet: OptionSet with java.lang.String = js.native
   /* "string" */ val String: String with java.lang.String = js.native
   @JSBracketAccess

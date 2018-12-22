@@ -15,7 +15,7 @@ trait TableHeaderColumnProps extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* column */ scala.Double, 
       scala.Unit
     ]

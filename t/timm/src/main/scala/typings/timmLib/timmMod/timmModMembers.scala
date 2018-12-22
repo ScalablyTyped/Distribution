@@ -27,7 +27,7 @@ object timmModMembers extends js.Object {
   def addLast[T](array: js.Array[T], `val`: T): js.Array[T] = js.native
   def addLast[T](array: js.Array[T], `val`: js.Array[T]): js.Array[T] = js.native
   def clone[T](obj: T): T = js.native
-  def getIn(obj: js.UndefOr[scala.Nothing] | ArrayOrObject, path: js.Array[Key]): js.Any = js.native
+  def getIn(obj: ArrayOrObject | js.UndefOr[scala.Nothing], path: js.Array[Key]): js.Any = js.native
   def insert[T](array: js.Array[T], idx: scala.Double, `val`: T): js.Array[T] = js.native
   def insert[T](array: js.Array[T], idx: scala.Double, `val`: js.Array[T]): js.Array[T] = js.native
   def merge(a: js.Object): js.Object = js.native

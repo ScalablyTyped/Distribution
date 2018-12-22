@@ -16,7 +16,7 @@ trait CheckboxProps extends CommonEnhancedSwitchProps[Checkbox] {
   var labelStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var onCheck: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[js.Object], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
       /* checked */ scala.Boolean, 
       scala.Unit
     ]

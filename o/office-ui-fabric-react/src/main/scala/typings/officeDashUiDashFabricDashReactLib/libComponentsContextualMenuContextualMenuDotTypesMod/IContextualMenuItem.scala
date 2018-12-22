@@ -131,7 +131,7 @@ trait IContextualMenuItem
   var onClick: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement] | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]
+        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]
       ], 
       /* item */ js.UndefOr[IContextualMenuItem], 
       scala.Boolean | scala.Unit
@@ -208,9 +208,10 @@ trait IContextualMenuItem
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /**
        * Properties to apply to a submenu to this item.
-       * The ContextualMenu will provide default values for 'target', 'onDismiss', 'isSubMenu',
-       *  'id', 'shouldFocusOnMount', 'directionalHint', 'className', and 'gapSpace', all of which
-       *  can be overridden.
+       *
+       * The ContextualMenu will provide default values for `target`, `onDismiss`, `isSubMenu`,
+       * `id`, `shouldFocusOnMount`, `directionalHint`, `className`, and `gapSpace`, all of which
+       * can be overridden.
        */
   var subMenuProps: js.UndefOr[IContextualMenuProps] = js.undefined
   /**

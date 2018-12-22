@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TouchBarSpacer protected ()
   extends electronLib.ElectronNs.TouchBarSpacer {
-  // Docs: http://electron.atom.io/docs/api/touch-bar-spacer
+  // Docs: http://electronjs.org/docs/api/touch-bar-spacer
   def this(options: electronLib.ElectronNs.TouchBarSpacerConstructorOptions) = this()
 }
 

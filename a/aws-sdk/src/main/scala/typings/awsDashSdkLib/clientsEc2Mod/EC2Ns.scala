@@ -289,6 +289,34 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait ApplySecurityGroupsToClientVpnTargetNetworkRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The IDs of the security groups to apply to the associated target network. Up to 5 security groups can be applied to an associated target network.
+         */
+    var SecurityGroupIds: ClientVpnSecurityGroupIdSet
+    /**
+         * The ID of the VPC in which the associated target network is located.
+         */
+    var VpcId: String
+  }
+  
+  
+  trait ApplySecurityGroupsToClientVpnTargetNetworkResult extends js.Object {
+    /**
+         * The IDs of the applied security groups.
+         */
+    var SecurityGroupIds: js.UndefOr[ClientVpnSecurityGroupIdSet] = js.undefined
+  }
+  
+  
   trait AssignIpv6AddressesRequest extends js.Object {
     /**
          * The number of IPv6 addresses to assign to the network interface. Amazon EC2 automatically selects the IPv6 addresses from the subnet range. You can't use this option if specifying specific IPv6 addresses.
@@ -374,6 +402,34 @@ object EC2Ns extends js.Object {
          * [EC2-VPC] The ID that represents the association of the Elastic IP address with an instance.
          */
     var AssociationId: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait AssociateClientVpnTargetNetworkRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The ID of the subnet to associate with the Client VPN endpoint.
+         */
+    var SubnetId: String
+  }
+  
+  
+  trait AssociateClientVpnTargetNetworkResult extends js.Object {
+    /**
+         * The unique ID of the target network association.
+         */
+    var AssociationId: js.UndefOr[String] = js.undefined
+    /**
+         * The current state of the target network association.
+         */
+    var Status: js.UndefOr[AssociationStatus] = js.undefined
   }
   
   
@@ -517,6 +573,30 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait AssociatedTargetNetwork extends js.Object {
+    /**
+         *  The ID of the subnet. 
+         */
+    var NetworkId: js.UndefOr[String] = js.undefined
+    /**
+         *  The target network type. 
+         */
+    var NetworkType: js.UndefOr[AssociatedNetworkType] = js.undefined
+  }
+  
+  
+  trait AssociationStatus extends js.Object {
+    /**
+         * The state of the target network association.
+         */
+    var Code: js.UndefOr[AssociationStatusCode] = js.undefined
+    /**
+         * A message about the status of the target network association, if applicable.
+         */
+    var Message: js.UndefOr[String] = js.undefined
+  }
+  
+  
   trait AttachClassicLinkVpcRequest extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -646,6 +726,70 @@ object EC2Ns extends js.Object {
          * The attribute value. The value is case-sensitive.
          */
     var Value: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait AuthorizationRule extends js.Object {
+    /**
+         * Indicates whether the authorization rule grants access to all clients.
+         */
+    var AccessAll: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The ID of the Client VPN endpoint with which the authorization rule is associated.
+         */
+    var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
+    /**
+         * A brief description of the authorization rule.
+         */
+    var Description: js.UndefOr[String] = js.undefined
+    /**
+         * The IPv4 address range, in CIDR notation, of the network to which the authorization rule applies.
+         */
+    var DestinationCidr: js.UndefOr[String] = js.undefined
+    /**
+         * The ID of the Active Directory group to which the authorization rule grants access.
+         */
+    var GroupId: js.UndefOr[String] = js.undefined
+    /**
+         * The current state of the authorization rule.
+         */
+    var Status: js.UndefOr[ClientVpnAuthorizationRuleStatus] = js.undefined
+  }
+  
+  
+  trait AuthorizeClientVpnIngressRequest extends js.Object {
+    /**
+         * The ID of the Active Directory group to grant access.
+         */
+    var AccessGroupId: js.UndefOr[String] = js.undefined
+    /**
+         * Indicates whether to grant access to all clients. Use true to grant all clients who successfully establish a VPN connection access to the network.
+         */
+    var AuthorizeAllGroups: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * A brief description of the authorization rule.
+         */
+    var Description: js.UndefOr[String] = js.undefined
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The IPv4 address range, in CIDR notation, of the network for which access is being authorized.
+         */
+    var TargetNetworkCidr: String
+  }
+  
+  
+  trait AuthorizeClientVpnIngressResult extends js.Object {
+    /**
+         * The current state of the authorization rule.
+         */
+    var Status: js.UndefOr[ClientVpnAuthorizationRuleStatus] = js.undefined
   }
   
   
@@ -1010,11 +1154,11 @@ object EC2Ns extends js.Object {
     /**
          * The error code.
          */
-    var Code: CancelBatchErrorCode
+    var Code: js.UndefOr[CancelBatchErrorCode] = js.undefined
     /**
          * The description for the error code.
          */
-    var Message: String
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1022,11 +1166,11 @@ object EC2Ns extends js.Object {
     /**
          * The error.
          */
-    var Error: CancelSpotFleetRequestsError
+    var Error: js.UndefOr[CancelSpotFleetRequestsError] = js.undefined
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: String
+    var SpotFleetRequestId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1062,15 +1206,15 @@ object EC2Ns extends js.Object {
     /**
          * The current state of the Spot Fleet request.
          */
-    var CurrentSpotFleetRequestState: BatchState
+    var CurrentSpotFleetRequestState: js.UndefOr[BatchState] = js.undefined
     /**
          * The previous state of the Spot Fleet request.
          */
-    var PreviousSpotFleetRequestState: BatchState
+    var PreviousSpotFleetRequestState: js.UndefOr[BatchState] = js.undefined
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: String
+    var SpotFleetRequestId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1210,6 +1354,22 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait CertificateAuthentication extends js.Object {
+    /**
+         *  The ARN of the client certificate.  
+         */
+    var ClientRootCertificateChain: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait CertificateAuthenticationRequest extends js.Object {
+    /**
+         *  The ARN of the client certificate. The certificate must be signed by a certificate authority (CA) and it must be provisioned in AWS Certificate Manager (ACM). 
+         */
+    var ClientRootCertificateChainArn: js.UndefOr[String] = js.undefined
+  }
+  
+  
   trait CidrAuthorizationContext extends js.Object {
     /**
          * The plain-text authorization message for the prefix and account.
@@ -1266,7 +1426,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the load balancer.
          */
-    var Name: String
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1274,7 +1434,7 @@ object EC2Ns extends js.Object {
     /**
          * One or more Classic Load Balancers.
          */
-    var ClassicLoadBalancers: ClassicLoadBalancers
+    var ClassicLoadBalancers: js.UndefOr[ClassicLoadBalancers] = js.undefined
   }
   
   
@@ -1283,6 +1443,18 @@ object EC2Ns extends js.Object {
          * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
          */
     var apiVersion: js.UndefOr[apiVersion] = js.undefined
+  }
+  
+  
+  trait ClientCertificateRevocationListStatus extends js.Object {
+    /**
+         * The state of the client certificate revocation list.
+         */
+    var Code: js.UndefOr[ClientCertificateRevocationListStatusCode] = js.undefined
+    /**
+         * A message about the status of the client certificate revocation list, if applicable.
+         */
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1303,6 +1475,234 @@ object EC2Ns extends js.Object {
          * The time that the disk upload starts.
          */
     var UploadStart: js.UndefOr[DateTime] = js.undefined
+  }
+  
+  
+  trait ClientVpnAuthentication extends js.Object {
+    /**
+         * Information about the Active Directory, if applicable.
+         */
+    var ActiveDirectory: js.UndefOr[DirectoryServiceAuthentication] = js.undefined
+    /**
+         * Information about the authentication certificates, if applicable.
+         */
+    var MutualAuthentication: js.UndefOr[CertificateAuthentication] = js.undefined
+    /**
+         * The authentication type used.
+         */
+    var Type: js.UndefOr[ClientVpnAuthenticationType] = js.undefined
+  }
+  
+  
+  trait ClientVpnAuthenticationRequest extends js.Object {
+    /**
+         * Information about the Active Directory to be used, if applicable. You must provide this information if Type is directory-service-authentication.
+         */
+    var ActiveDirectory: js.UndefOr[DirectoryServiceAuthenticationRequest] = js.undefined
+    /**
+         * Information about the authentication certificates to be used, if applicable. You must provide this information if Type is certificate-authentication.
+         */
+    var MutualAuthentication: js.UndefOr[CertificateAuthenticationRequest] = js.undefined
+    /**
+         * The type of client authentication to be used. Specify certificate-authentication to use certificate-based authentication, or directory-service-authentication to use Active Directory authentication.
+         */
+    var Type: js.UndefOr[ClientVpnAuthenticationType] = js.undefined
+  }
+  
+  
+  trait ClientVpnAuthorizationRuleStatus extends js.Object {
+    /**
+         * The state of the authorization rule.
+         */
+    var Code: js.UndefOr[ClientVpnAuthorizationRuleStatusCode] = js.undefined
+    /**
+         * A message about the status of the authorization rule, if applicable.
+         */
+    var Message: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait ClientVpnConnection extends js.Object {
+    /**
+         * The IP address of the client.
+         */
+    var ClientIp: js.UndefOr[String] = js.undefined
+    /**
+         * The ID of the Client VPN endpoint to which the client is connected.
+         */
+    var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
+    /**
+         *  The common name associated with the client. This is either the name of the client certificate, or the Active Directory user name. 
+         */
+    var CommonName: js.UndefOr[String] = js.undefined
+    /**
+         * The date and time the client connection was terminated.
+         */
+    var ConnectionEndTime: js.UndefOr[String] = js.undefined
+    /**
+         * The date and time the client connection was established.
+         */
+    var ConnectionEstablishedTime: js.UndefOr[String] = js.undefined
+    /**
+         * The ID of the client connection.
+         */
+    var ConnectionId: js.UndefOr[String] = js.undefined
+    /**
+         * The number of bytes received by the client.
+         */
+    var EgressBytes: js.UndefOr[String] = js.undefined
+    /**
+         * The number of packets received by the client.
+         */
+    var EgressPackets: js.UndefOr[String] = js.undefined
+    /**
+         * The number of bytes sent by the client.
+         */
+    var IngressBytes: js.UndefOr[String] = js.undefined
+    /**
+         * The number of packets sent by the client.
+         */
+    var IngressPackets: js.UndefOr[String] = js.undefined
+    /**
+         * The current state of the client connection.
+         */
+    var Status: js.UndefOr[ClientVpnConnectionStatus] = js.undefined
+    /**
+         *  The current date and time. 
+         */
+    var Timestamp: js.UndefOr[String] = js.undefined
+    /**
+         * The username of the client who established the client connection. This information is only provided if Active Directory client authentication is used.
+         */
+    var Username: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait ClientVpnConnectionStatus extends js.Object {
+    /**
+         * The state of the client connection.
+         */
+    var Code: js.UndefOr[ClientVpnConnectionStatusCode] = js.undefined
+    /**
+         * A message about the status of the client connection, if applicable.
+         */
+    var Message: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait ClientVpnEndpoint extends js.Object {
+    /**
+         * Information about the associated target networks. A target network is a subnet in a VPC.
+         */
+    var AssociatedTargetNetworks: js.UndefOr[AssociatedTargetNetworkSet] = js.undefined
+    /**
+         * Information about the authentication method used by the Client VPN endpoint.
+         */
+    var AuthenticationOptions: js.UndefOr[ClientVpnAuthenticationList] = js.undefined
+    /**
+         * The IPv4 address range, in CIDR notation, from which client IP addresses are assigned.
+         */
+    var ClientCidrBlock: js.UndefOr[String] = js.undefined
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
+    /**
+         * Information about the client connection logging options for the Client VPN endpoint.
+         */
+    var ConnectionLogOptions: js.UndefOr[ConnectionLogResponseOptions] = js.undefined
+    /**
+         * The date and time the Client VPN endpoint was created.
+         */
+    var CreationTime: js.UndefOr[String] = js.undefined
+    /**
+         * The date and time the Client VPN endpoint was deleted, if applicable. Information about deleted Client VPN endpoints is retained for 24 hours, unless a new Client VPN is created with the same name.
+         */
+    var DeletionTime: js.UndefOr[String] = js.undefined
+    /**
+         * A brief description of the endpoint.
+         */
+    var Description: js.UndefOr[String] = js.undefined
+    /**
+         * The DNS name to be used by clients when establishing a connection.
+         */
+    var DnsName: js.UndefOr[String] = js.undefined
+    /**
+         * The ARN of the server certificate.
+         */
+    var ServerCertificateArn: js.UndefOr[String] = js.undefined
+    /**
+         *  Indicates whether VPN split tunneling is supported. 
+         */
+    var SplitTunnel: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The current state of the Client VPN endpoint.
+         */
+    var Status: js.UndefOr[ClientVpnEndpointStatus] = js.undefined
+    /**
+         *  The transport protocol used by the Client VPN endpoint. 
+         */
+    var TransportProtocol: js.UndefOr[TransportProtocol] = js.undefined
+    /**
+         * The protocol used by the VPN session.
+         */
+    var VpnProtocol: js.UndefOr[VpnProtocol] = js.undefined
+  }
+  
+  
+  trait ClientVpnEndpointStatus extends js.Object {
+    /**
+         * The state of the Client VPN endpoint. Possible states include:    pending-associate - The Client VPN endpoint has been created but no target networks have been associated. The Client VPN endpoint cannot accept connections.    available - The Client VPN endpoint has been created and a target network has been associated. The Client VPN endpoint can accept connections.    deleting - The Client VPN endpoint is being deleted. The Client VPN endpoint cannot accept connections.    deleted - The Client VPN endpoint has been deleted. The Client VPN endpoint cannot accept connections.  
+         */
+    var Code: js.UndefOr[ClientVpnEndpointStatusCode] = js.undefined
+    /**
+         * A message about the status of the Client VPN endpoint.
+         */
+    var Message: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait ClientVpnRoute extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint with which the route is associated.
+         */
+    var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
+    /**
+         * A brief description of the route.
+         */
+    var Description: js.UndefOr[String] = js.undefined
+    /**
+         * The IPv4 address range, in CIDR notation, of the route destination.
+         */
+    var DestinationCidr: js.UndefOr[String] = js.undefined
+    /**
+         * Indicates how the route was associated with the Client VPN endpoint. associate indicates that the route was automatically added when the target network was associated with the Client VPN endpoint. add-route indicates that the route was manually added using the CreateClientVpnRoute action.
+         */
+    var Origin: js.UndefOr[String] = js.undefined
+    /**
+         * The current state of the route.
+         */
+    var Status: js.UndefOr[ClientVpnRouteStatus] = js.undefined
+    /**
+         * The ID of the subnet through which traffic is routed.
+         */
+    var TargetSubnet: js.UndefOr[String] = js.undefined
+    /**
+         *  The route type. 
+         */
+    var Type: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait ClientVpnRouteStatus extends js.Object {
+    /**
+         * The state of the Client VPN endpoint route.
+         */
+    var Code: js.UndefOr[ClientVpnRouteStatusCode] = js.undefined
+    /**
+         * A message about the status of the Client VPN endpoint route, if applicable.
+         */
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1331,6 +1731,38 @@ object EC2Ns extends js.Object {
          * The return value of the request. Returns true if the specified product code is owned by the requester and associated with the specified instance.
          */
     var Return: js.UndefOr[Boolean] = js.undefined
+  }
+  
+  
+  trait ConnectionLogOptions extends js.Object {
+    /**
+         * The name of the CloudWatch Logs log group.
+         */
+    var CloudwatchLogGroup: js.UndefOr[String] = js.undefined
+    /**
+         * The name of the CloudWatch Logs log stream to which the connection data is published.
+         */
+    var CloudwatchLogStream: js.UndefOr[String] = js.undefined
+    /**
+         * Indicates whether connection logging is enabled.
+         */
+    var Enabled: js.UndefOr[Boolean] = js.undefined
+  }
+  
+  
+  trait ConnectionLogResponseOptions extends js.Object {
+    /**
+         * The name of the Amazon CloudWatch Logs log group to which connection logging data is published.
+         */
+    var CloudwatchLogGroup: js.UndefOr[String] = js.undefined
+    /**
+         * The name of the Amazon CloudWatch Logs log stream to which connection logging data is published.
+         */
+    var CloudwatchLogStream: js.UndefOr[String] = js.undefined
+    /**
+         * Indicates whether client connection logging is enabled for the Client VPN endpoint.
+         */
+    var Enabled: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1607,6 +2039,94 @@ object EC2Ns extends js.Object {
          * Information about the Capacity Reservation.
          */
     var CapacityReservation: js.UndefOr[CapacityReservation] = js.undefined
+  }
+  
+  
+  trait CreateClientVpnEndpointRequest extends js.Object {
+    /**
+         * Information about the authentication method to be used to authenticate clients.
+         */
+    var AuthenticationOptions: ClientVpnAuthenticationRequestList
+    /**
+         * The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.
+         */
+    var ClientCidrBlock: String
+    /**
+         * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see  How to Ensure Idempotency.
+         */
+    var ClientToken: js.UndefOr[String] = js.undefined
+    /**
+         * Information about the client connection logging options. If you enable client connection logging, data about client connections is sent to a Cloudwatch Logs log stream. The following information is logged:   Client connection requests   Client connection results (successful and unsuccessful)   Reasons for unsuccessful client connection requests   Client connection termination time  
+         */
+    var ConnectionLogOptions: ConnectionLogOptions
+    /**
+         * A brief description of the Client VPN endpoint.
+         */
+    var Description: js.UndefOr[String] = js.undefined
+    /**
+         * Information about the DNS servers to be used for DNS resolution. A Client VPN endpoint can have up to two DNS servers. If no DNS server is specified, the DNS address of the VPC that is to be associated with Client VPN endpoint is used as the DNS server.
+         */
+    var DnsServers: js.UndefOr[ValueStringList] = js.undefined
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The ARN of the server certificate. For more information, see the AWS Certificate Manager User Guide .
+         */
+    var ServerCertificateArn: String
+    /**
+         * The transport protocol to be used by the VPN session. Default value: udp 
+         */
+    var TransportProtocol: js.UndefOr[TransportProtocol] = js.undefined
+  }
+  
+  
+  trait CreateClientVpnEndpointResult extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
+    /**
+         * The DNS name to be used by clients when establishing their VPN session.
+         */
+    var DnsName: js.UndefOr[String] = js.undefined
+    /**
+         * The current state of the Client VPN endpoint.
+         */
+    var Status: js.UndefOr[ClientVpnEndpointStatus] = js.undefined
+  }
+  
+  
+  trait CreateClientVpnRouteRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint to which to add the route.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * A brief description of the route.
+         */
+    var Description: js.UndefOr[String] = js.undefined
+    /**
+         * The IPv4 address range, in CIDR notation, of the route destination. For example:   To add a route for Internet access, enter 0.0.0.0/0    To add a route for a peered VPC, enter the peered VPC's IPv4 CIDR range   To add a route for an on-premises network, enter the AWS Site-to-Site VPN connection's IPv4 CIDR range   Route address ranges cannot overlap with the CIDR range specified for client allocation.
+         */
+    var DestinationCidrBlock: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The ID of the subnet through which you want to route traffic. The specified subnet must be an existing target network of the Client VPN endpoint.
+         */
+    var TargetVpcSubnetId: String
+  }
+  
+  
+  trait CreateClientVpnRouteResult extends js.Object {
+    /**
+         * The current state of the route.
+         */
+    var Status: js.UndefOr[ClientVpnRouteStatus] = js.undefined
   }
   
   
@@ -2276,13 +2796,17 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-         * A name for the placement group. Must be unique within the scope of your account for the region. Constraints: Up to 255 ASCII characters
+         * A name for the placement group. Must be unique within the scope of your account for the Region. Constraints: Up to 255 ASCII characters
          */
-    var GroupName: String
+    var GroupName: js.UndefOr[String] = js.undefined
+    /**
+         * The number of partitions. Valid only when Strategy is set to partition.
+         */
+    var PartitionCount: js.UndefOr[Integer] = js.undefined
     /**
          * The placement strategy.
          */
-    var Strategy: PlacementStrategy
+    var Strategy: js.UndefOr[PlacementStrategy] = js.undefined
   }
   
   
@@ -2504,7 +3028,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-         * The IDs of one or more resources, separated by spaces.
+         * The IDs of one or more resources, separated by spaces. Constraints: Up to 1000 resource IDs. We recommend breaking up this request into smaller batches.
          */
     var Resources: ResourceIdList
     /**
@@ -2684,7 +3208,7 @@ object EC2Ns extends js.Object {
          */
     var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
-         * The number of I/O operations per second (IOPS) to provision for the volume, with a maximum ratio of 50 IOPS/GiB. Range is 100 to 64,000IOPS for volumes in most regions. Maximum IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. This parameter is valid only for Provisioned IOPS SSD (io1) volumes.
+         * The number of I/O operations per second (IOPS) to provision for the volume, with a maximum ratio of 50 IOPS/GiB. Range is 100 to 64,000 IOPS for volumes in most regions. Maximum IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. This parameter is valid only for Provisioned IOPS SSD (io1) volumes.
          */
     var Iops: js.UndefOr[Integer] = js.undefined
     /**
@@ -3015,6 +3539,54 @@ object EC2Ns extends js.Object {
          * The type of VPN connection the customer gateway supports (ipsec.1).
          */
     var Type: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait DeleteClientVpnEndpointRequest extends js.Object {
+    /**
+         * The ID of the Client VPN to be deleted.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+  }
+  
+  
+  trait DeleteClientVpnEndpointResult extends js.Object {
+    /**
+         * The current state of the Client VPN endpoint.
+         */
+    var Status: js.UndefOr[ClientVpnEndpointStatus] = js.undefined
+  }
+  
+  
+  trait DeleteClientVpnRouteRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint from which the route is to be deleted.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * The IPv4 address range, in CIDR notation, of the route to be deleted.
+         */
+    var DestinationCidrBlock: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The ID of the target subnet used by the route.
+         */
+    var TargetVpcSubnetId: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait DeleteClientVpnRouteResult extends js.Object {
+    /**
+         * The current state of the route.
+         */
+    var Status: js.UndefOr[ClientVpnRouteStatus] = js.undefined
   }
   
   
@@ -3468,7 +4040,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-         * The IDs of one or more resources, separated by spaces.
+         * The IDs of one or more resources, separated by spaces. Constraints: Up to 1000 resource IDs. We recommend breaking up this request into smaller batches.
          */
     var Resources: ResourceIdList
     /**
@@ -3951,6 +4523,190 @@ object EC2Ns extends js.Object {
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
     var NextToken: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait DescribeClientVpnAuthorizationRulesRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * One or more filters. Filter names and values are case-sensitive.
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the nextToken value.
+         */
+    var MaxResults: js.UndefOr[MaxResults] = js.undefined
+    /**
+         * The token to retrieve the next page of results.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait DescribeClientVpnAuthorizationRulesResult extends js.Object {
+    /**
+         * Information about the authorization rules.
+         */
+    var AuthorizationRules: js.UndefOr[AuthorizationRuleSet] = js.undefined
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait DescribeClientVpnConnectionsRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * One or more filters. Filter names and values are case-sensitive.
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the nextToken value.
+         */
+    var MaxResults: js.UndefOr[MaxResults] = js.undefined
+    /**
+         * The token to retrieve the next page of results.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait DescribeClientVpnConnectionsResult extends js.Object {
+    /**
+         * Information about the active and terminated client connections.
+         */
+    var Connections: js.UndefOr[ClientVpnConnectionSet] = js.undefined
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait DescribeClientVpnEndpointsRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointIds: js.UndefOr[ValueStringList] = js.undefined
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * One or more filters. Filter names and values are case-sensitive.
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the nextToken value.
+         */
+    var MaxResults: js.UndefOr[MaxResults] = js.undefined
+    /**
+         * The token to retrieve the next page of results.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait DescribeClientVpnEndpointsResult extends js.Object {
+    /**
+         * Information about the Client VPN endpoints.
+         */
+    var ClientVpnEndpoints: js.UndefOr[EndpointSet] = js.undefined
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait DescribeClientVpnRoutesRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * One or more filters. Filter names and values are case-sensitive.
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the nextToken value.
+         */
+    var MaxResults: js.UndefOr[MaxResults] = js.undefined
+    /**
+         * The token to retrieve the next page of results.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait DescribeClientVpnRoutesResult extends js.Object {
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * Information about the Client VPN endpoint routes.
+         */
+    var Routes: js.UndefOr[ClientVpnRouteSet] = js.undefined
+  }
+  
+  
+  trait DescribeClientVpnTargetNetworksRequest extends js.Object {
+    /**
+         * The IDs of the target network associations.
+         */
+    var AssociationIds: js.UndefOr[ValueStringList] = js.undefined
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * One or more filters. Filter names and values are case-sensitive.
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the nextToken value.
+         */
+    var MaxResults: js.UndefOr[MaxResults] = js.undefined
+    /**
+         * The token to retrieve the next page of results.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait DescribeClientVpnTargetNetworksResult extends js.Object {
+    /**
+         * Information about the associated target networks.
+         */
+    var ClientVpnTargetNetworks: js.UndefOr[TargetNetworkSet] = js.undefined
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
   }
   
   
@@ -4772,7 +5528,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-         * One or more filters.    affinity - The affinity setting for an instance running on a Dedicated Host (default | host).    architecture - The instance architecture (i386 | x86_64).    availability-zone - The Availability Zone of the instance.    block-device-mapping.attach-time - The attach time for an EBS volume mapped to the instance, for example, 2010-09-15T17:15:20.000Z.    block-device-mapping.delete-on-termination - A Boolean that indicates whether the EBS volume is deleted on instance termination.    block-device-mapping.device-name - The device name specified in the block device mapping (for example, /dev/sdh or xvdh).    block-device-mapping.status - The status for the EBS volume (attaching | attached | detaching | detached).    block-device-mapping.volume-id - The volume ID of the EBS volume.    client-token - The idempotency token you provided when you launched the instance.    dns-name - The public DNS name of the instance.    group-id - The ID of the security group for the instance. EC2-Classic only.    group-name - The name of the security group for the instance. EC2-Classic only.    hibernation-options.configured - A Boolean that indicates whether the instance is enabled for hibernation. A value of true means that the instance is enabled for hibernation.     host-id - The ID of the Dedicated Host on which the instance is running, if applicable.    hypervisor - The hypervisor type of the instance (ovm | xen).    iam-instance-profile.arn - The instance profile associated with the instance. Specified as an ARN.    image-id - The ID of the image used to launch the instance.    instance-id - The ID of the instance.    instance-lifecycle - Indicates whether this is a Spot Instance or a Scheduled Instance (spot | scheduled).    instance-state-code - The state of the instance, as a 16-bit unsigned integer. The high byte is used for internal purposes and should be ignored. The low byte is set based on the state represented. The valid values are: 0 (pending), 16 (running), 32 (shutting-down), 48 (terminated), 64 (stopping), and 80 (stopped).    instance-state-name - The state of the instance (pending | running | shutting-down | terminated | stopping | stopped).    instance-type - The type of instance (for example, t2.micro).    instance.group-id - The ID of the security group for the instance.     instance.group-name - The name of the security group for the instance.     ip-address - The public IPv4 address of the instance.    kernel-id - The kernel ID.    key-name - The name of the key pair used when the instance was launched.    launch-index - When launching multiple instances, this is the index for the instance in the launch group (for example, 0, 1, 2, and so on).     launch-time - The time when the instance was launched.    monitoring-state - Indicates whether detailed monitoring is enabled (disabled | enabled).    network-interface.addresses.private-ip-address - The private IPv4 address associated with the network interface.    network-interface.addresses.primary - Specifies whether the IPv4 address of the network interface is the primary private IPv4 address.    network-interface.addresses.association.public-ip - The ID of the association of an Elastic IP address (IPv4) with a network interface.    network-interface.addresses.association.ip-owner-id - The owner ID of the private IPv4 address associated with the network interface.    network-interface.association.public-ip - The address of the Elastic IP address (IPv4) bound to the network interface.    network-interface.association.ip-owner-id - The owner of the Elastic IP address (IPv4) associated with the network interface.    network-interface.association.allocation-id - The allocation ID returned when you allocated the Elastic IP address (IPv4) for your network interface.    network-interface.association.association-id - The association ID returned when the network interface was associated with an IPv4 address.    network-interface.attachment.attachment-id - The ID of the interface attachment.    network-interface.attachment.instance-id - The ID of the instance to which the network interface is attached.    network-interface.attachment.instance-owner-id - The owner ID of the instance to which the network interface is attached.    network-interface.attachment.device-index - The device index to which the network interface is attached.    network-interface.attachment.status - The status of the attachment (attaching | attached | detaching | detached).    network-interface.attachment.attach-time - The time that the network interface was attached to an instance.    network-interface.attachment.delete-on-termination - Specifies whether the attachment is deleted when an instance is terminated.    network-interface.availability-zone - The Availability Zone for the network interface.    network-interface.description - The description of the network interface.    network-interface.group-id - The ID of a security group associated with the network interface.    network-interface.group-name - The name of a security group associated with the network interface.    network-interface.ipv6-addresses.ipv6-address - The IPv6 address associated with the network interface.    network-interface.mac-address - The MAC address of the network interface.    network-interface.network-interface-id - The ID of the network interface.    network-interface.owner-id - The ID of the owner of the network interface.    network-interface.private-dns-name - The private DNS name of the network interface.    network-interface.requester-id - The requester ID for the network interface.    network-interface.requester-managed - Indicates whether the network interface is being managed by AWS.    network-interface.status - The status of the network interface (available) | in-use).    network-interface.source-dest-check - Whether the network interface performs source/destination checking. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the network interface to perform network address translation (NAT) in your VPC.    network-interface.subnet-id - The ID of the subnet for the network interface.    network-interface.vpc-id - The ID of the VPC for the network interface.    owner-id - The AWS account ID of the instance owner.    placement-group-name - The name of the placement group for the instance.    platform - The platform. Use windows if you have Windows instances; otherwise, leave blank.    private-dns-name - The private IPv4 DNS name of the instance.    private-ip-address - The private IPv4 address of the instance.    product-code - The product code associated with the AMI used to launch the instance.    product-code.type - The type of product code (devpay | marketplace).    ramdisk-id - The RAM disk ID.    reason - The reason for the current state of the instance (for example, shows "User Initiated [date]" when you stop or terminate the instance). Similar to the state-reason-code filter.    requester-id - The ID of the entity that launched the instance on your behalf (for example, AWS Management Console, Auto Scaling, and so on).    reservation-id - The ID of the instance's reservation. A reservation ID is created any time you launch an instance. A reservation ID has a one-to-one relationship with an instance launch request, but can be associated with more than one instance if you launch multiple instances using the same launch request. For example, if you launch one instance, you get one reservation ID. If you launch ten instances using the same launch request, you also get one reservation ID.    root-device-name - The device name of the root device volume (for example, /dev/sda1).    root-device-type - The type of the root device volume (ebs | instance-store).    source-dest-check - Indicates whether the instance performs source/destination checking. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the instance to perform network address translation (NAT) in your VPC.     spot-instance-request-id - The ID of the Spot Instance request.    state-reason-code - The reason code for the state change.    state-reason-message - A message that describes the state change.    subnet-id - The ID of the subnet for the instance.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources that have a tag with a specific key, regardless of the tag value.    tenancy - The tenancy of an instance (dedicated | default | host).    virtualization-type - The virtualization type of the instance (paravirtual | hvm).    vpc-id - The ID of the VPC that the instance is running in.  
+         * One or more filters.    affinity - The affinity setting for an instance running on a Dedicated Host (default | host).    architecture - The instance architecture (i386 | x86_64).    availability-zone - The Availability Zone of the instance.    block-device-mapping.attach-time - The attach time for an EBS volume mapped to the instance, for example, 2010-09-15T17:15:20.000Z.    block-device-mapping.delete-on-termination - A Boolean that indicates whether the EBS volume is deleted on instance termination.    block-device-mapping.device-name - The device name specified in the block device mapping (for example, /dev/sdh or xvdh).    block-device-mapping.status - The status for the EBS volume (attaching | attached | detaching | detached).    block-device-mapping.volume-id - The volume ID of the EBS volume.    client-token - The idempotency token you provided when you launched the instance.    dns-name - The public DNS name of the instance.    group-id - The ID of the security group for the instance. EC2-Classic only.    group-name - The name of the security group for the instance. EC2-Classic only.    hibernation-options.configured - A Boolean that indicates whether the instance is enabled for hibernation. A value of true means that the instance is enabled for hibernation.     host-id - The ID of the Dedicated Host on which the instance is running, if applicable.    hypervisor - The hypervisor type of the instance (ovm | xen).    iam-instance-profile.arn - The instance profile associated with the instance. Specified as an ARN.    image-id - The ID of the image used to launch the instance.    instance-id - The ID of the instance.    instance-lifecycle - Indicates whether this is a Spot Instance or a Scheduled Instance (spot | scheduled).    instance-state-code - The state of the instance, as a 16-bit unsigned integer. The high byte is used for internal purposes and should be ignored. The low byte is set based on the state represented. The valid values are: 0 (pending), 16 (running), 32 (shutting-down), 48 (terminated), 64 (stopping), and 80 (stopped).    instance-state-name - The state of the instance (pending | running | shutting-down | terminated | stopping | stopped).    instance-type - The type of instance (for example, t2.micro).    instance.group-id - The ID of the security group for the instance.     instance.group-name - The name of the security group for the instance.     ip-address - The public IPv4 address of the instance.    kernel-id - The kernel ID.    key-name - The name of the key pair used when the instance was launched.    launch-index - When launching multiple instances, this is the index for the instance in the launch group (for example, 0, 1, 2, and so on).     launch-time - The time when the instance was launched.    monitoring-state - Indicates whether detailed monitoring is enabled (disabled | enabled).    network-interface.addresses.private-ip-address - The private IPv4 address associated with the network interface.    network-interface.addresses.primary - Specifies whether the IPv4 address of the network interface is the primary private IPv4 address.    network-interface.addresses.association.public-ip - The ID of the association of an Elastic IP address (IPv4) with a network interface.    network-interface.addresses.association.ip-owner-id - The owner ID of the private IPv4 address associated with the network interface.    network-interface.association.public-ip - The address of the Elastic IP address (IPv4) bound to the network interface.    network-interface.association.ip-owner-id - The owner of the Elastic IP address (IPv4) associated with the network interface.    network-interface.association.allocation-id - The allocation ID returned when you allocated the Elastic IP address (IPv4) for your network interface.    network-interface.association.association-id - The association ID returned when the network interface was associated with an IPv4 address.    network-interface.attachment.attachment-id - The ID of the interface attachment.    network-interface.attachment.instance-id - The ID of the instance to which the network interface is attached.    network-interface.attachment.instance-owner-id - The owner ID of the instance to which the network interface is attached.    network-interface.attachment.device-index - The device index to which the network interface is attached.    network-interface.attachment.status - The status of the attachment (attaching | attached | detaching | detached).    network-interface.attachment.attach-time - The time that the network interface was attached to an instance.    network-interface.attachment.delete-on-termination - Specifies whether the attachment is deleted when an instance is terminated.    network-interface.availability-zone - The Availability Zone for the network interface.    network-interface.description - The description of the network interface.    network-interface.group-id - The ID of a security group associated with the network interface.    network-interface.group-name - The name of a security group associated with the network interface.    network-interface.ipv6-addresses.ipv6-address - The IPv6 address associated with the network interface.    network-interface.mac-address - The MAC address of the network interface.    network-interface.network-interface-id - The ID of the network interface.    network-interface.owner-id - The ID of the owner of the network interface.    network-interface.private-dns-name - The private DNS name of the network interface.    network-interface.requester-id - The requester ID for the network interface.    network-interface.requester-managed - Indicates whether the network interface is being managed by AWS.    network-interface.status - The status of the network interface (available) | in-use).    network-interface.source-dest-check - Whether the network interface performs source/destination checking. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the network interface to perform network address translation (NAT) in your VPC.    network-interface.subnet-id - The ID of the subnet for the network interface.    network-interface.vpc-id - The ID of the VPC for the network interface.    owner-id - The AWS account ID of the instance owner.    partition-number - The partition in which the instance is located.    placement-group-name - The name of the placement group for the instance.    platform - The platform. Use windows if you have Windows instances; otherwise, leave blank.    private-dns-name - The private IPv4 DNS name of the instance.    private-ip-address - The private IPv4 address of the instance.    product-code - The product code associated with the AMI used to launch the instance.    product-code.type - The type of product code (devpay | marketplace).    ramdisk-id - The RAM disk ID.    reason - The reason for the current state of the instance (for example, shows "User Initiated [date]" when you stop or terminate the instance). Similar to the state-reason-code filter.    requester-id - The ID of the entity that launched the instance on your behalf (for example, AWS Management Console, Auto Scaling, and so on).    reservation-id - The ID of the instance's reservation. A reservation ID is created any time you launch an instance. A reservation ID has a one-to-one relationship with an instance launch request, but can be associated with more than one instance if you launch multiple instances using the same launch request. For example, if you launch one instance, you get one reservation ID. If you launch ten instances using the same launch request, you also get one reservation ID.    root-device-name - The device name of the root device volume (for example, /dev/sda1).    root-device-type - The type of the root device volume (ebs | instance-store).    source-dest-check - Indicates whether the instance performs source/destination checking. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the instance to perform network address translation (NAT) in your VPC.     spot-instance-request-id - The ID of the Spot Instance request.    state-reason-code - The reason code for the state change.    state-reason-message - A message that describes the state change.    subnet-id - The ID of the subnet for the instance.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources that have a tag with a specific key, regardless of the tag value.    tenancy - The tenancy of an instance (dedicated | default | host).    virtualization-type - The virtualization type of the instance (paravirtual | hvm).    vpc-id - The ID of the VPC that the instance is running in.  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -5148,7 +5904,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-         * One or more filters.    group-name - The name of the placement group.    state - The state of the placement group (pending | available | deleting | deleted).    strategy - The strategy of the placement group (cluster | spread).  
+         * One or more filters.    group-name - The name of the placement group.    state - The state of the placement group (pending | available | deleting | deleted).    strategy - The strategy of the placement group (cluster | spread | partition).  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -5746,7 +6502,7 @@ object EC2Ns extends js.Object {
     /**
          * The running instances. This list is refreshed periodically and might be out of date.
          */
-    var ActiveInstances: ActiveInstanceSet
+    var ActiveInstances: js.UndefOr[ActiveInstanceSet] = js.undefined
     /**
          * The token required to retrieve the next set of results. This value is null when there are no more results to return.
          */
@@ -5754,7 +6510,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: String
+    var SpotFleetRequestId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5790,11 +6546,11 @@ object EC2Ns extends js.Object {
     /**
          * Information about the events in the history of the Spot Fleet request.
          */
-    var HistoryRecords: HistoryRecords
+    var HistoryRecords: js.UndefOr[HistoryRecords] = js.undefined
     /**
          * The last date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). All records up to this time were retrieved. If nextToken indicates that there are more results, this value is not present.
          */
-    var LastEvaluatedTime: DateTime
+    var LastEvaluatedTime: js.UndefOr[DateTime] = js.undefined
     /**
          * The token required to retrieve the next set of results. This value is null when there are no more results to return.
          */
@@ -5802,11 +6558,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: String
+    var SpotFleetRequestId: js.UndefOr[String] = js.undefined
     /**
          * The starting date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
          */
-    var StartTime: DateTime
+    var StartTime: js.UndefOr[DateTime] = js.undefined
   }
   
   
@@ -5838,7 +6594,7 @@ object EC2Ns extends js.Object {
     /**
          * Information about the configuration of your Spot Fleet.
          */
-    var SpotFleetRequestConfigs: SpotFleetRequestConfigSet
+    var SpotFleetRequestConfigs: js.UndefOr[SpotFleetRequestConfigSet] = js.undefined
   }
   
   
@@ -6814,6 +7570,22 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait DirectoryServiceAuthentication extends js.Object {
+    /**
+         * The ID of the Active Directory used for authentication.
+         */
+    var DirectoryId: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait DirectoryServiceAuthenticationRequest extends js.Object {
+    /**
+         * The ID of the Active Directory to be used for authentication.
+         */
+    var DirectoryId: js.UndefOr[String] = js.undefined
+  }
+  
+  
   trait DisableTransitGatewayRouteTablePropagationRequest extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -6899,6 +7671,34 @@ object EC2Ns extends js.Object {
          * [EC2-Classic] The Elastic IP address. Required for EC2-Classic.
          */
     var PublicIp: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait DisassociateClientVpnTargetNetworkRequest extends js.Object {
+    /**
+         * The ID of the target network association.
+         */
+    var AssociationId: String
+    /**
+         * The ID of the Client VPN endpoint from which to disassociate the target network.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+  }
+  
+  
+  trait DisassociateClientVpnTargetNetworkResult extends js.Object {
+    /**
+         * The ID of the target network association.
+         */
+    var AssociationId: js.UndefOr[String] = js.undefined
+    /**
+         * The current state of the target network association.
+         */
+    var Status: js.UndefOr[AssociationStatus] = js.undefined
   }
   
   
@@ -7074,6 +7874,18 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait DnsServersOptionsModifyStructure extends js.Object {
+    /**
+         * The IPv4 address range, in CIDR notation, of the DNS servers to be used. You can specify up to two DNS servers. Ensure that the DNS servers can be reached by the clients. The specified values overwrite the existing values.
+         */
+    var CustomDnsServers: js.UndefOr[ValueStringList] = js.undefined
+    /**
+         * Indicates whether DNS servers should be used. Specify False to delete the existing DNS servers.
+         */
+    var Enabled: js.UndefOr[Boolean] = js.undefined
+  }
+  
+  
   trait EbsBlockDevice extends js.Object {
     /**
          * Indicates whether the EBS volume is deleted on instance termination.
@@ -7084,7 +7896,7 @@ object EC2Ns extends js.Object {
          */
     var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
-         * The number of I/O operations per second (IOPS) that the volume supports. For io1, this represents the number of IOPS that are provisioned for the volume. For gp2, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-10,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes in most regions. Maximum io1IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
+         * The number of I/O operations per second (IOPS) that the volume supports. For io1, this represents the number of IOPS that are provisioned for the volume. For gp2, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-16,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes in most Regions. Maximum io1IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
          */
     var Iops: js.UndefOr[Integer] = js.undefined
     /**
@@ -7347,6 +8159,50 @@ object EC2Ns extends js.Object {
          * The ID of the instance. This information is available only for instanceChange events.
          */
     var InstanceId: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait ExportClientVpnClientCertificateRevocationListRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+  }
+  
+  
+  trait ExportClientVpnClientCertificateRevocationListResult extends js.Object {
+    /**
+         * Information about the client certificate revocation list.
+         */
+    var CertificateRevocationList: js.UndefOr[String] = js.undefined
+    /**
+         * The current state of the client certificate revocation list.
+         */
+    var Status: js.UndefOr[ClientCertificateRevocationListStatus] = js.undefined
+  }
+  
+  
+  trait ExportClientVpnClientConfigurationRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+  }
+  
+  
+  trait ExportClientVpnClientConfigurationResult extends js.Object {
+    /**
+         * The contents of the Client VPN endpoint configuration file.
+         */
+    var ClientConfiguration: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8142,15 +8998,15 @@ object EC2Ns extends js.Object {
     /**
          * Information about the event.
          */
-    var EventInformation: EventInformation
+    var EventInformation: js.UndefOr[EventInformation] = js.undefined
     /**
          * The event type.    error - An error with the Spot Fleet request.    fleetRequestChange - A change in the status or configuration of the Spot Fleet request.    instanceChange - An instance was launched or terminated.    Information - An informational event.  
          */
-    var EventType: EventType
+    var EventType: js.UndefOr[EventType] = js.undefined
     /**
          * The date and time of the event, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
          */
-    var Timestamp: DateTime
+    var Timestamp: js.UndefOr[DateTime] = js.undefined
   }
   
   
@@ -8579,6 +9435,30 @@ object EC2Ns extends js.Object {
          * The S3 bucket for the disk image.
          */
     var UserBucket: js.UndefOr[UserBucket] = js.undefined
+  }
+  
+  
+  trait ImportClientVpnClientCertificateRevocationListRequest extends js.Object {
+    /**
+         * The client certificate revocation list file. For more information, see Generate a Client Certificate Revocation List in the AWS Client VPN Admin Guide.
+         */
+    var CertificateRevocationList: String
+    /**
+         * The ID of the Client VPN endpoint to which the client certificate revocation list applies.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+  }
+  
+  
+  trait ImportClientVpnClientCertificateRevocationListResult extends js.Object {
+    /**
+         * Returns true if the request succeeds; otherwise, it returns an error.
+         */
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -10631,6 +11511,42 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait ModifyClientVpnEndpointRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint to modify.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Information about the client connection logging options. If you enable client connection logging, data about client connections is sent to a Cloudwatch Logs log stream. The following information is logged:   Client connection requests   Client connection results (successful and unsuccessful)   Reasons for unsuccessful client connection requests   Client connection termination time  
+         */
+    var ConnectionLogOptions: js.UndefOr[ConnectionLogOptions] = js.undefined
+    /**
+         * A brief description of the Client VPN endpoint.
+         */
+    var Description: js.UndefOr[String] = js.undefined
+    /**
+         * Information about the DNS servers to be used by Client VPN connections. A Client VPN endpoint can have up to two DNS servers.
+         */
+    var DnsServers: js.UndefOr[DnsServersOptionsModifyStructure] = js.undefined
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The ARN of the server certificate to be used. The server certificate must be provisioned in AWS Certificate Manager (ACM).
+         */
+    var ServerCertificateArn: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait ModifyClientVpnEndpointResult extends js.Object {
+    /**
+         * Returns true if the request succeeds; otherwise, it returns an error.
+         */
+    var Return: js.UndefOr[Boolean] = js.undefined
+  }
+  
+  
   trait ModifyFleetRequest extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -10933,7 +11849,7 @@ object EC2Ns extends js.Object {
          */
     var Affinity: js.UndefOr[Affinity] = js.undefined
     /**
-         * The name of the placement group in which to place the instance. For spread placement groups, the instance must have a tenancy of default. For cluster placement groups, the instance must have a tenancy of default or dedicated. To remove an instance from a placement group, specify an empty string ("").
+         * The name of the placement group in which to place the instance. For spread placement groups, the instance must have a tenancy of default. For cluster and partition placement groups, the instance must have a tenancy of default or dedicated. To remove an instance from a placement group, specify an empty string ("").
          */
     var GroupName: js.UndefOr[String] = js.undefined
     /**
@@ -10944,6 +11860,10 @@ object EC2Ns extends js.Object {
          * The ID of the instance that you are modifying.
          */
     var InstanceId: String
+    /**
+         * Reserved for future use.
+         */
+    var PartitionNumber: js.UndefOr[Integer] = js.undefined
     /**
          * The tenancy for the instance.
          */
@@ -11967,6 +12887,10 @@ object EC2Ns extends js.Object {
          */
     var HostId: js.UndefOr[String] = js.undefined
     /**
+         * The number of the partition the instance is in. Valid only if the placement group strategy is set to partition.
+         */
+    var PartitionNumber: js.UndefOr[Integer] = js.undefined
+    /**
          * Reserved for future use.
          */
     var SpreadDomain: js.UndefOr[String] = js.undefined
@@ -11982,6 +12906,10 @@ object EC2Ns extends js.Object {
          * The name of the placement group.
          */
     var GroupName: js.UndefOr[String] = js.undefined
+    /**
+         * The number of partitions. Valid only if strategy is set to partition.
+         */
+    var PartitionCount: js.UndefOr[Integer] = js.undefined
     /**
          * The state of the placement group.
          */
@@ -12921,7 +13849,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: String
+    var SpotFleetRequestId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13610,6 +14538,38 @@ object EC2Ns extends js.Object {
          * The move status for the IP address.
          */
     var Status: js.UndefOr[Status] = js.undefined
+  }
+  
+  
+  trait RevokeClientVpnIngressRequest extends js.Object {
+    /**
+         * The ID of the Active Directory group for which to revoke access. 
+         */
+    var AccessGroupId: js.UndefOr[String] = js.undefined
+    /**
+         * The ID of the Client VPN endpoint with which the authorization rule is associated.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * Indicates whether access should be revoked for all clients.
+         */
+    var RevokeAllGroups: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The IPv4 address range, in CIDR notation, of the network for which access is being removed.
+         */
+    var TargetNetworkCidr: String
+  }
+  
+  
+  trait RevokeClientVpnIngressResult extends js.Object {
+    /**
+         * The current state of the authorization rule.
+         */
+    var Status: js.UndefOr[ClientVpnAuthorizationRuleStatus] = js.undefined
   }
   
   
@@ -14885,19 +15845,19 @@ object EC2Ns extends js.Object {
     /**
          * The creation date and time of the request.
          */
-    var CreateTime: DateTime
+    var CreateTime: js.UndefOr[DateTime] = js.undefined
     /**
          * The configuration of the Spot Fleet request.
          */
-    var SpotFleetRequestConfig: SpotFleetRequestConfigData
+    var SpotFleetRequestConfig: js.UndefOr[SpotFleetRequestConfigData] = js.undefined
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: String
+    var SpotFleetRequestId: js.UndefOr[String] = js.undefined
     /**
          * The state of the Spot Fleet request.
          */
-    var SpotFleetRequestState: BatchState
+    var SpotFleetRequestState: js.UndefOr[BatchState] = js.undefined
   }
   
   
@@ -15565,7 +16525,7 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the target group.
          */
-    var Arn: String
+    var Arn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15573,7 +16533,35 @@ object EC2Ns extends js.Object {
     /**
          * One or more target groups.
          */
-    var TargetGroups: TargetGroups
+    var TargetGroups: js.UndefOr[TargetGroups] = js.undefined
+  }
+  
+  
+  trait TargetNetwork extends js.Object {
+    /**
+         * The ID of the association.
+         */
+    var AssociationId: js.UndefOr[String] = js.undefined
+    /**
+         * The ID of the Client VPN endpoint with which the target network is associated.
+         */
+    var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
+    /**
+         * The IDs of the security groups applied to the target network association.
+         */
+    var SecurityGroups: js.UndefOr[ValueStringList] = js.undefined
+    /**
+         * The current state of the target network association.
+         */
+    var Status: js.UndefOr[AssociationStatus] = js.undefined
+    /**
+         * The ID of the subnet specified as the target network.
+         */
+    var TargetNetworkId: js.UndefOr[String] = js.undefined
+    /**
+         * The ID of the VPC in which the target network (subnet) is located.
+         */
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15586,6 +16574,58 @@ object EC2Ns extends js.Object {
          * The configuration of the Convertible Reserved Instances that make up the exchange.
          */
     var TargetConfiguration: js.UndefOr[TargetConfiguration] = js.undefined
+  }
+  
+  
+  trait TerminateClientVpnConnectionsRequest extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint to which the client is connected.
+         */
+    var ClientVpnEndpointId: String
+    /**
+         * The ID of the client connection to be terminated.
+         */
+    var ConnectionId: js.UndefOr[String] = js.undefined
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+         * The name of the user who initiated the connection. Use this option to terminate all active connections for the specified user. This option can only be used if the user has established up to five connections.
+         */
+    var Username: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait TerminateClientVpnConnectionsResult extends js.Object {
+    /**
+         * The ID of the Client VPN endpoint.
+         */
+    var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
+    /**
+         * The current state of the client connections.
+         */
+    var ConnectionStatuses: js.UndefOr[TerminateConnectionStatusSet] = js.undefined
+    /**
+         * The user who established the terminated client connections.
+         */
+    var Username: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait TerminateConnectionStatus extends js.Object {
+    /**
+         * The ID of the client connection.
+         */
+    var ConnectionId: js.UndefOr[String] = js.undefined
+    /**
+         * A message about the status of the client connection, if applicable.
+         */
+    var CurrentStatus: js.UndefOr[ClientVpnConnectionStatus] = js.undefined
+    /**
+         * The state of the client connection.
+         */
+    var PreviousStatus: js.UndefOr[ClientVpnConnectionStatus] = js.undefined
   }
   
   
@@ -16193,6 +17233,47 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AllocateHostsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
+       */
+    def applySecurityGroupsToClientVpnTargetNetwork(): awsDashSdkLib.libRequestMod.Request[
+        ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
+       */
+    def applySecurityGroupsToClientVpnTargetNetwork(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
+       */
+    def applySecurityGroupsToClientVpnTargetNetwork(params: ApplySecurityGroupsToClientVpnTargetNetworkRequest): awsDashSdkLib.libRequestMod.Request[
+        ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
+       */
+    def applySecurityGroupsToClientVpnTargetNetwork(
+      params: ApplySecurityGroupsToClientVpnTargetNetworkRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        ApplySecurityGroupsToClientVpnTargetNetworkResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
        * Assigns one or more IPv6 addresses to the specified network interface. You can specify one or more specific IPv6 addresses, or you can specify the number of IPv6 addresses to be automatically assigned from within the subnet's IPv6 CIDR block range. You can assign as many IPv6 addresses to a network interface as you can assign private IPv4 addresses, and the limit varies per instance type. For information, see IP Addresses Per Network Interface Per Instance Type in the Amazon Elastic Compute Cloud User Guide.
        */
     def assignIpv6Addresses(): awsDashSdkLib.libRequestMod.Request[AssignIpv6AddressesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -16271,6 +17352,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateAddressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
+       */
+    def associateClientVpnTargetNetwork(): awsDashSdkLib.libRequestMod.Request[AssociateClientVpnTargetNetworkResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
+       */
+    def associateClientVpnTargetNetwork(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociateClientVpnTargetNetworkResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AssociateClientVpnTargetNetworkResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
+       */
+    def associateClientVpnTargetNetwork(params: AssociateClientVpnTargetNetworkRequest): awsDashSdkLib.libRequestMod.Request[AssociateClientVpnTargetNetworkResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates a target network with a Client VPN endpoint. A target network is a subnet in a VPC. You can associate multiple subnets from the same VPC with a Client VPN endpoint. You can associate only one subnet in each Availability Zone. We recommend that you associate at least two subnets to provide Availability Zone redundancy.
+       */
+    def associateClientVpnTargetNetwork(
+      params: AssociateClientVpnTargetNetworkRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociateClientVpnTargetNetworkResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AssociateClientVpnTargetNetworkResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Associates a set of DHCP options (that you've previously created) with the specified VPC, or associates no DHCP options with the VPC. After you associate the options with the VPC, any existing instances and all new instances that you launch in that VPC use the options. You don't need to restart or relaunch the instances. They automatically pick up the changes within a few hours, depending on how frequently the instance renews its DHCP lease. You can explicitly renew the lease using the operating system on the instance. For more information, see DHCP Options Sets in the Amazon Virtual Private Cloud User Guide.
        */
@@ -16574,6 +17684,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[AttachVpnGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds an ingress authorization rule to a Client VPN endpoint. Ingress authorization rules act as firewall rules that grant access to networks. You must configure ingress authorization rules to enable clients to access resources in AWS or on-premises networks.
+       */
+    def authorizeClientVpnIngress(): awsDashSdkLib.libRequestMod.Request[AuthorizeClientVpnIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds an ingress authorization rule to a Client VPN endpoint. Ingress authorization rules act as firewall rules that grant access to networks. You must configure ingress authorization rules to enable clients to access resources in AWS or on-premises networks.
+       */
+    def authorizeClientVpnIngress(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AuthorizeClientVpnIngressResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AuthorizeClientVpnIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds an ingress authorization rule to a Client VPN endpoint. Ingress authorization rules act as firewall rules that grant access to networks. You must configure ingress authorization rules to enable clients to access resources in AWS or on-premises networks.
+       */
+    def authorizeClientVpnIngress(params: AuthorizeClientVpnIngressRequest): awsDashSdkLib.libRequestMod.Request[AuthorizeClientVpnIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds an ingress authorization rule to a Client VPN endpoint. Ingress authorization rules act as firewall rules that grant access to networks. You must configure ingress authorization rules to enable clients to access resources in AWS or on-premises networks.
+       */
+    def authorizeClientVpnIngress(
+      params: AuthorizeClientVpnIngressRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AuthorizeClientVpnIngressResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AuthorizeClientVpnIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * [EC2-VPC only] Adds one or more egress rules to a security group for use with a VPC. Specifically, this action permits instances to send traffic to one or more destination IPv4 or IPv6 CIDR address ranges, or to one or more destination security groups for the same VPC. This action doesn't apply to security groups for use in EC2-Classic. For more information, see Security Groups for Your VPC in the Amazon Virtual Private Cloud User Guide. For more information about security group limits, see Amazon VPC Limits. Each rule consists of the protocol (for example, TCP), plus either a CIDR range or a source group. For the TCP and UDP protocols, you must also specify the destination port or port range. For the ICMP protocol, you must also specify the ICMP type and code. You can use -1 for the type or code to mean all types or all codes. You can optionally specify a description for the rule. Rule changes are propagated to affected instances as quickly as possible. However, a small delay might occur.
        */
@@ -16998,6 +18137,64 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a Client VPN endpoint. A Client VPN endpoint is the resource you create and configure to enable and manage client VPN sessions. It is the destination endpoint at which all client VPN sessions are terminated.
+       */
+    def createClientVpnEndpoint(): awsDashSdkLib.libRequestMod.Request[CreateClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a Client VPN endpoint. A Client VPN endpoint is the resource you create and configure to enable and manage client VPN sessions. It is the destination endpoint at which all client VPN sessions are terminated.
+       */
+    def createClientVpnEndpoint(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateClientVpnEndpointResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a Client VPN endpoint. A Client VPN endpoint is the resource you create and configure to enable and manage client VPN sessions. It is the destination endpoint at which all client VPN sessions are terminated.
+       */
+    def createClientVpnEndpoint(params: CreateClientVpnEndpointRequest): awsDashSdkLib.libRequestMod.Request[CreateClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a Client VPN endpoint. A Client VPN endpoint is the resource you create and configure to enable and manage client VPN sessions. It is the destination endpoint at which all client VPN sessions are terminated.
+       */
+    def createClientVpnEndpoint(
+      params: CreateClientVpnEndpointRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateClientVpnEndpointResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traﬃc to speciﬁc resources or networks.
+       */
+    def createClientVpnRoute(): awsDashSdkLib.libRequestMod.Request[CreateClientVpnRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traﬃc to speciﬁc resources or networks.
+       */
+    def createClientVpnRoute(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateClientVpnRouteResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateClientVpnRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traﬃc to speciﬁc resources or networks.
+       */
+    def createClientVpnRoute(params: CreateClientVpnRouteRequest): awsDashSdkLib.libRequestMod.Request[CreateClientVpnRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds a route to a network to a Client VPN endpoint. Each Client VPN endpoint has a route table that describes the available destination network routes. Each route in the route table specifies the path for traﬃc to speciﬁc resources or networks.
+       */
+    def createClientVpnRoute(
+      params: CreateClientVpnRouteRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateClientVpnRouteResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateClientVpnRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
        */
@@ -17534,21 +18731,21 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateNetworkInterfacePermissionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+       * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
        */
     def createPlacementGroup(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+       * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
        */
     def createPlacementGroup(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+       * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
        */
     def createPlacementGroup(params: CreatePlacementGroupRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+       * Creates a placement group in which to launch instances. The strategy of the placement group determines how the instances are organized within the group.  A cluster placement group is a logical grouping of instances within a single Availability Zone that benefit from low network latency, high network throughput. A spread placement group places instances on distinct hardware. A partition placement group places groups of instances in different partitions, where instances in one partition do not share the same hardware with instances in another partition. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
        */
     def createPlacementGroup(
       params: CreatePlacementGroupRequest,
@@ -18123,6 +19320,64 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateVpnGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
+       */
+    def deleteClientVpnEndpoint(): awsDashSdkLib.libRequestMod.Request[DeleteClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
+       */
+    def deleteClientVpnEndpoint(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteClientVpnEndpointResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
+       */
+    def deleteClientVpnEndpoint(params: DeleteClientVpnEndpointRequest): awsDashSdkLib.libRequestMod.Request[DeleteClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.
+       */
+    def deleteClientVpnEndpoint(
+      params: DeleteClientVpnEndpointRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteClientVpnEndpointResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using the CreateClientVpnRoute action. You cannot delete routes that were automatically added when associating a subnet. To remove routes that have been automatically added, disassociate the target subnet from the Client VPN endpoint.
+       */
+    def deleteClientVpnRoute(): awsDashSdkLib.libRequestMod.Request[DeleteClientVpnRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using the CreateClientVpnRoute action. You cannot delete routes that were automatically added when associating a subnet. To remove routes that have been automatically added, disassociate the target subnet from the Client VPN endpoint.
+       */
+    def deleteClientVpnRoute(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteClientVpnRouteResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteClientVpnRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using the CreateClientVpnRoute action. You cannot delete routes that were automatically added when associating a subnet. To remove routes that have been automatically added, disassociate the target subnet from the Client VPN endpoint.
+       */
+    def deleteClientVpnRoute(params: DeleteClientVpnRouteRequest): awsDashSdkLib.libRequestMod.Request[DeleteClientVpnRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a route from a Client VPN endpoint. You can only delete routes that you manually added using the CreateClientVpnRoute action. You cannot delete routes that were automatically added when associating a subnet. To remove routes that have been automatically added, disassociate the target subnet from the Client VPN endpoint.
+       */
+    def deleteClientVpnRoute(
+      params: DeleteClientVpnRouteRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteClientVpnRouteResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteClientVpnRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Deletes the specified customer gateway. You must delete the VPN connection before you can delete the customer gateway.
        */
@@ -19290,6 +20545,151 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeClassicLinkInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Describes the authorization rules for a specified Client VPN endpoint.
+       */
+    def describeClientVpnAuthorizationRules(): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnAuthorizationRulesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the authorization rules for a specified Client VPN endpoint.
+       */
+    def describeClientVpnAuthorizationRules(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeClientVpnAuthorizationRulesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnAuthorizationRulesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the authorization rules for a specified Client VPN endpoint.
+       */
+    def describeClientVpnAuthorizationRules(params: DescribeClientVpnAuthorizationRulesRequest): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnAuthorizationRulesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the authorization rules for a specified Client VPN endpoint.
+       */
+    def describeClientVpnAuthorizationRules(
+      params: DescribeClientVpnAuthorizationRulesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeClientVpnAuthorizationRulesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnAuthorizationRulesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
+       */
+    def describeClientVpnConnections(): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
+       */
+    def describeClientVpnConnections(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeClientVpnConnectionsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
+       */
+    def describeClientVpnConnections(params: DescribeClientVpnConnectionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
+       */
+    def describeClientVpnConnections(
+      params: DescribeClientVpnConnectionsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeClientVpnConnectionsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more Client VPN endpoints in the account.
+       */
+    def describeClientVpnEndpoints(): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnEndpointsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more Client VPN endpoints in the account.
+       */
+    def describeClientVpnEndpoints(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeClientVpnEndpointsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnEndpointsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more Client VPN endpoints in the account.
+       */
+    def describeClientVpnEndpoints(params: DescribeClientVpnEndpointsRequest): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnEndpointsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more Client VPN endpoints in the account.
+       */
+    def describeClientVpnEndpoints(
+      params: DescribeClientVpnEndpointsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeClientVpnEndpointsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnEndpointsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the routes for the specified Client VPN endpoint.
+       */
+    def describeClientVpnRoutes(): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the routes for the specified Client VPN endpoint.
+       */
+    def describeClientVpnRoutes(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeClientVpnRoutesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the routes for the specified Client VPN endpoint.
+       */
+    def describeClientVpnRoutes(params: DescribeClientVpnRoutesRequest): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the routes for the specified Client VPN endpoint.
+       */
+    def describeClientVpnRoutes(
+      params: DescribeClientVpnRoutesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeClientVpnRoutesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the target networks associated with the specified Client VPN endpoint.
+       */
+    def describeClientVpnTargetNetworks(): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnTargetNetworksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the target networks associated with the specified Client VPN endpoint.
+       */
+    def describeClientVpnTargetNetworks(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeClientVpnTargetNetworksResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnTargetNetworksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the target networks associated with the specified Client VPN endpoint.
+       */
+    def describeClientVpnTargetNetworks(params: DescribeClientVpnTargetNetworksRequest): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnTargetNetworksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the target networks associated with the specified Client VPN endpoint.
+       */
+    def describeClientVpnTargetNetworks(
+      params: DescribeClientVpnTargetNetworksRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeClientVpnTargetNetworksResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeClientVpnTargetNetworksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Describes one or more of your conversion tasks. For more information, see the VM Import/Export User Guide. For information about the import manifest referenced by this API action, see VM Import Manifest.
        */
     def describeConversionTasks(): awsDashSdkLib.libRequestMod.Request[DescribeConversionTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -19638,11 +21038,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeFpgaImagesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
+       * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and Region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
        */
     def describeHostReservationOfferings(): awsDashSdkLib.libRequestMod.Request[DescribeHostReservationOfferingsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
+       * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and Region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
        */
     def describeHostReservationOfferings(
       callback: js.Function2[
@@ -19652,11 +21052,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeHostReservationOfferingsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
+       * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and Region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
        */
     def describeHostReservationOfferings(params: DescribeHostReservationOfferingsRequest): awsDashSdkLib.libRequestMod.Request[DescribeHostReservationOfferingsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
+       * Describes the Dedicated Host reservations that are available to purchase. The results describe all the Dedicated Host reservation offerings, including offerings that may not match the instance family and Region of your Dedicated Hosts. When purchasing an offering, ensure that the instance family and Region of the offering matches that of the Dedicated Hosts with which it is to be associated. For more information about supported instance types, see Dedicated Hosts Overview in the Amazon Elastic Compute Cloud User Guide. 
        */
     def describeHostReservationOfferings(
       params: DescribeHostReservationOfferingsRequest,
@@ -19696,11 +21096,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeHostReservationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
+       * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the Region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
        */
     def describeHosts(): awsDashSdkLib.libRequestMod.Request[DescribeHostsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
+       * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the Region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
        */
     def describeHosts(
       callback: js.Function2[
@@ -19710,11 +21110,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeHostsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
+       * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the Region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
        */
     def describeHosts(params: DescribeHostsRequest): awsDashSdkLib.libRequestMod.Request[DescribeHostsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
+       * Describes one or more of your Dedicated Hosts. The results describe only the Dedicated Hosts in the Region you're currently using. All listed instances consume capacity on your Dedicated Host. Dedicated Hosts that have recently been released are listed with the state released.
        */
     def describeHosts(
       params: DescribeHostsRequest,
@@ -21934,6 +23334,35 @@ object EC2Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:   The route that was automatically added for the VPC is deleted   All active client connections are terminated   New client connections are disallowed   The Client VPN endpoint's status changes to pending-associate   
+       */
+    def disassociateClientVpnTargetNetwork(): awsDashSdkLib.libRequestMod.Request[DisassociateClientVpnTargetNetworkResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:   The route that was automatically added for the VPC is deleted   All active client connections are terminated   New client connections are disallowed   The Client VPN endpoint's status changes to pending-associate   
+       */
+    def disassociateClientVpnTargetNetwork(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociateClientVpnTargetNetworkResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisassociateClientVpnTargetNetworkResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:   The route that was automatically added for the VPC is deleted   All active client connections are terminated   New client connections are disallowed   The Client VPN endpoint's status changes to pending-associate   
+       */
+    def disassociateClientVpnTargetNetwork(params: DisassociateClientVpnTargetNetworkRequest): awsDashSdkLib.libRequestMod.Request[DisassociateClientVpnTargetNetworkResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Disassociates a target network from the specified Client VPN endpoint. When you disassociate the last target network from a Client VPN, the following happens:   The route that was automatically added for the VPC is deleted   All active client connections are terminated   New client connections are disallowed   The Client VPN endpoint's status changes to pending-associate   
+       */
+    def disassociateClientVpnTargetNetwork(
+      params: DisassociateClientVpnTargetNetworkRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociateClientVpnTargetNetworkResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisassociateClientVpnTargetNetworkResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Disassociates an IAM instance profile from a running or stopped instance. Use DescribeIamInstanceProfileAssociations to get the association ID.
        */
     def disassociateIamInstanceProfile(): awsDashSdkLib.libRequestMod.Request[DisassociateIamInstanceProfileResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -22211,6 +23640,76 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[EnableVpcClassicLinkDnsSupportResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Downloads the client certificate revocation list for the specified Client VPN endpoint.
+       */
+    def exportClientVpnClientCertificateRevocationList(): awsDashSdkLib.libRequestMod.Request[
+        ExportClientVpnClientCertificateRevocationListResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Downloads the client certificate revocation list for the specified Client VPN endpoint.
+       */
+    def exportClientVpnClientCertificateRevocationList(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ExportClientVpnClientCertificateRevocationListResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        ExportClientVpnClientCertificateRevocationListResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Downloads the client certificate revocation list for the specified Client VPN endpoint.
+       */
+    def exportClientVpnClientCertificateRevocationList(params: ExportClientVpnClientCertificateRevocationListRequest): awsDashSdkLib.libRequestMod.Request[
+        ExportClientVpnClientCertificateRevocationListResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Downloads the client certificate revocation list for the specified Client VPN endpoint.
+       */
+    def exportClientVpnClientCertificateRevocationList(
+      params: ExportClientVpnClientCertificateRevocationListRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ExportClientVpnClientCertificateRevocationListResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        ExportClientVpnClientCertificateRevocationListResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
+       */
+    def exportClientVpnClientConfiguration(): awsDashSdkLib.libRequestMod.Request[ExportClientVpnClientConfigurationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
+       */
+    def exportClientVpnClientConfiguration(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ExportClientVpnClientConfigurationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ExportClientVpnClientConfigurationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
+       */
+    def exportClientVpnClientConfiguration(params: ExportClientVpnClientConfigurationRequest): awsDashSdkLib.libRequestMod.Request[ExportClientVpnClientConfigurationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
+       */
+    def exportClientVpnClientConfiguration(
+      params: ExportClientVpnClientConfigurationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ExportClientVpnClientConfigurationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ExportClientVpnClientConfigurationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range.
        */
@@ -22502,6 +24001,47 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayRouteTablePropagationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
+       */
+    def importClientVpnClientCertificateRevocationList(): awsDashSdkLib.libRequestMod.Request[
+        ImportClientVpnClientCertificateRevocationListResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
+       */
+    def importClientVpnClientCertificateRevocationList(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ImportClientVpnClientCertificateRevocationListResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        ImportClientVpnClientCertificateRevocationListResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
+       */
+    def importClientVpnClientCertificateRevocationList(params: ImportClientVpnClientCertificateRevocationListRequest): awsDashSdkLib.libRequestMod.Request[
+        ImportClientVpnClientCertificateRevocationListResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
+       */
+    def importClientVpnClientCertificateRevocationList(
+      params: ImportClientVpnClientCertificateRevocationListRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ImportClientVpnClientCertificateRevocationListResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        ImportClientVpnClientCertificateRevocationListResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
        * Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI). For more information, see Importing a VM as an Image Using VM Import/Export in the VM Import/Export User Guide.
        */
     def importImage(): awsDashSdkLib.libRequestMod.Request[ImportImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -22675,6 +24215,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the specified Client VPN endpoint. You can only modify an endpoint's server certificate information, client connection logging information, DNS server, and description. Modifying the DNS server resets existing client connections.
+       */
+    def modifyClientVpnEndpoint(): awsDashSdkLib.libRequestMod.Request[ModifyClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the specified Client VPN endpoint. You can only modify an endpoint's server certificate information, client connection logging information, DNS server, and description. Modifying the DNS server resets existing client connections.
+       */
+    def modifyClientVpnEndpoint(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyClientVpnEndpointResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the specified Client VPN endpoint. You can only modify an endpoint's server certificate information, client connection logging information, DNS server, and description. Modifying the DNS server resets existing client connections.
+       */
+    def modifyClientVpnEndpoint(params: ModifyClientVpnEndpointRequest): awsDashSdkLib.libRequestMod.Request[ModifyClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the specified Client VPN endpoint. You can only modify an endpoint's server certificate information, client connection logging information, DNS server, and description. Modifying the DNS server resets existing client connections.
+       */
+    def modifyClientVpnEndpoint(
+      params: ModifyClientVpnEndpointRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyClientVpnEndpointResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Modifies the specified EC2 Fleet. While the EC2 Fleet is being modified, it is in the modifying state.
        */
@@ -22917,11 +24486,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyInstanceCreditSpecificationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, or placement group for an instance, the instance must be in the stopped state.
+       * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
        */
     def modifyInstancePlacement(): awsDashSdkLib.libRequestMod.Request[ModifyInstancePlacementResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, or placement group for an instance, the instance must be in the stopped state.
+       * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
        */
     def modifyInstancePlacement(
       callback: js.Function2[
@@ -22931,11 +24500,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyInstancePlacementResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, or placement group for an instance, the instance must be in the stopped state.
+       * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
        */
     def modifyInstancePlacement(params: ModifyInstancePlacementRequest): awsDashSdkLib.libRequestMod.Request[ModifyInstancePlacementResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, or placement group for an instance, the instance must be in the stopped state.
+       * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
        */
     def modifyInstancePlacement(
       params: ModifyInstancePlacementRequest,
@@ -24110,6 +25679,35 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RestoreAddressToClassicResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Removes an ingress authorization rule from a Client VPN endpoint. 
+       */
+    def revokeClientVpnIngress(): awsDashSdkLib.libRequestMod.Request[RevokeClientVpnIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes an ingress authorization rule from a Client VPN endpoint. 
+       */
+    def revokeClientVpnIngress(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ RevokeClientVpnIngressResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[RevokeClientVpnIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes an ingress authorization rule from a Client VPN endpoint. 
+       */
+    def revokeClientVpnIngress(params: RevokeClientVpnIngressRequest): awsDashSdkLib.libRequestMod.Request[RevokeClientVpnIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes an ingress authorization rule from a Client VPN endpoint. 
+       */
+    def revokeClientVpnIngress(
+      params: RevokeClientVpnIngressRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ RevokeClientVpnIngressResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[RevokeClientVpnIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * [EC2-VPC only] Removes one or more egress rules from a security group for EC2-VPC. This action doesn't apply to security groups for use in EC2-Classic. To remove a rule, the values that you specify (for example, ports) must match the existing rule's values exactly. Each rule consists of the protocol and the IPv4 or IPv6 CIDR range or source security group. For the TCP and UDP protocols, you must also specify the destination port or range of ports. For the ICMP protocol, you must also specify the ICMP type and code. If the security group rule has a description, you do not have to specify the description to revoke the rule. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur.
        */
     def revokeSecurityGroupEgress(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -24288,6 +25886,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
+       */
+    def terminateClientVpnConnections(): awsDashSdkLib.libRequestMod.Request[TerminateClientVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
+       */
+    def terminateClientVpnConnections(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TerminateClientVpnConnectionsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TerminateClientVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
+       */
+    def terminateClientVpnConnections(params: TerminateClientVpnConnectionsRequest): awsDashSdkLib.libRequestMod.Request[TerminateClientVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
+       */
+    def terminateClientVpnConnections(
+      params: TerminateClientVpnConnectionsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TerminateClientVpnConnectionsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TerminateClientVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Shuts down one or more instances. This operation is idempotent; if you terminate an instance more than once, each call succeeds.  If you specify multiple instances and the request fails (for example, because of a single incorrect instance ID), none of the instances are terminated. Terminated instances remain visible after termination (for approximately one hour). By default, Amazon EC2 deletes all EBS volumes that were attached when the instance launched. Volumes attached after instance launch continue running. You can stop, start, and terminate EBS-backed instances. You can only terminate instance store-backed instances. What happens to an instance differs if you stop it or terminate it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, any attached EBS volumes with the DeleteOnTermination block device mapping parameter set to true are automatically deleted. For more information about the differences between stopping and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. For more information about troubleshooting, see Troubleshooting Terminating Your Instance in the Amazon Elastic Compute Cloud User Guide.
        */
@@ -25772,7 +27399,7 @@ object EC2Ns extends js.Object {
     /**
          * Information about the error.
          */
-    var Error: UnsuccessfulItemError
+    var Error: js.UndefOr[UnsuccessfulItemError] = js.undefined
     /**
          * The ID of the resource.
          */
@@ -25784,11 +27411,11 @@ object EC2Ns extends js.Object {
     /**
          * The error code.
          */
-    var Code: String
+    var Code: js.UndefOr[String] = js.undefined
     /**
          * The error message accompanying the error code.
          */
-    var Message: String
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25954,7 +27581,7 @@ object EC2Ns extends js.Object {
          */
     var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
-         * The number of I/O operations per second (IOPS) that the volume supports. For Provisioned IOPS SSD volumes, this represents the number of IOPS that are provisioned for the volume. For General Purpose SSD volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-10,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes in most regions. Maximum io1IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
+         * The number of I/O operations per second (IOPS) that the volume supports. For Provisioned IOPS SSD volumes, this represents the number of IOPS that are provisioned for the volume. For General Purpose SSD volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-16,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes in most regions. Maximum io1IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
          */
     var Iops: js.UndefOr[Integer] = js.undefined
     /**
@@ -26617,8 +28244,12 @@ object EC2Ns extends js.Object {
   type AllocationStrategy = awsDashSdkLib.awsDashSdkLibStrings.lowestPrice | awsDashSdkLib.awsDashSdkLibStrings.diversified | java.lang.String
   type AllowedPrincipalSet = js.Array[AllowedPrincipal]
   type ArchitectureValues = awsDashSdkLib.awsDashSdkLibStrings.i386 | awsDashSdkLib.awsDashSdkLibStrings.x86_64 | awsDashSdkLib.awsDashSdkLibStrings.arm64 | java.lang.String
+  type AssociatedNetworkType = awsDashSdkLib.awsDashSdkLibStrings.vpc | java.lang.String
+  type AssociatedTargetNetworkSet = js.Array[AssociatedTargetNetwork]
   type AssociationIdList = js.Array[String]
+  type AssociationStatusCode = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.`association-failed` | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | java.lang.String
   type AttachmentStatus = awsDashSdkLib.awsDashSdkLibStrings.attaching | awsDashSdkLib.awsDashSdkLibStrings.attached | awsDashSdkLib.awsDashSdkLibStrings.detaching | awsDashSdkLib.awsDashSdkLibStrings.detached | java.lang.String
+  type AuthorizationRuleSet = js.Array[AuthorizationRule]
   type AutoAcceptSharedAttachmentsValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
   type AutoPlacement = awsDashSdkLib.awsDashSdkLibStrings.on | awsDashSdkLib.awsDashSdkLibStrings.off | java.lang.String
   type AvailabilityZoneList = js.Array[AvailabilityZone]
@@ -26650,7 +28281,18 @@ object EC2Ns extends js.Object {
   type ClassicLinkDnsSupportList = js.Array[ClassicLinkDnsSupport]
   type ClassicLinkInstanceList = js.Array[ClassicLinkInstance]
   type ClassicLoadBalancers = js.Array[ClassicLoadBalancer]
+  type ClientCertificateRevocationListStatusCode = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.active | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  type ClientVpnAuthenticationList = js.Array[ClientVpnAuthentication]
+  type ClientVpnAuthenticationRequestList = js.Array[ClientVpnAuthenticationRequest]
+  type ClientVpnAuthenticationType = awsDashSdkLib.awsDashSdkLibStrings.`certificate-authentication` | awsDashSdkLib.awsDashSdkLibStrings.`directory-service-authentication` | java.lang.String
+  type ClientVpnAuthorizationRuleStatusCode = awsDashSdkLib.awsDashSdkLibStrings.authorizing | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.revoking | java.lang.String
+  type ClientVpnConnectionSet = js.Array[ClientVpnConnection]
+  type ClientVpnConnectionStatusCode = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.`failed-to-terminate` | awsDashSdkLib.awsDashSdkLibStrings.terminating | awsDashSdkLib.awsDashSdkLibStrings.terminated | java.lang.String
+  type ClientVpnEndpointStatusCode = awsDashSdkLib.awsDashSdkLibStrings.`pending-associate` | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type ClientVpnRouteSet = js.Array[ClientVpnRoute]
+  type ClientVpnRouteStatusCode = awsDashSdkLib.awsDashSdkLibStrings.creating | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.deleting | java.lang.String
+  type ClientVpnSecurityGroupIdSet = js.Array[String]
   type ConnectionNotificationSet = js.Array[ConnectionNotification]
   type ConnectionNotificationState = awsDashSdkLib.awsDashSdkLibStrings.Enabled | awsDashSdkLib.awsDashSdkLibStrings.Disabled | java.lang.String
   type ConnectionNotificationType = awsDashSdkLib.awsDashSdkLibStrings.Topic | java.lang.String
@@ -26701,6 +28343,7 @@ object EC2Ns extends js.Object {
   type ElasticInferenceAcceleratorAssociationList = js.Array[ElasticInferenceAcceleratorAssociation]
   type ElasticInferenceAccelerators = js.Array[ElasticInferenceAccelerator]
   type EndDateType = awsDashSdkLib.awsDashSdkLibStrings.unlimited | awsDashSdkLib.awsDashSdkLibStrings.limited | java.lang.String
+  type EndpointSet = js.Array[ClientVpnEndpoint]
   type EventCode = awsDashSdkLib.awsDashSdkLibStrings.`instance-reboot` | awsDashSdkLib.awsDashSdkLibStrings.`system-reboot` | awsDashSdkLib.awsDashSdkLibStrings.`system-maintenance` | awsDashSdkLib.awsDashSdkLibStrings.`instance-retirement` | awsDashSdkLib.awsDashSdkLibStrings.`instance-stop` | java.lang.String
   type EventType = awsDashSdkLib.awsDashSdkLibStrings.instanceChange | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestChange | awsDashSdkLib.awsDashSdkLibStrings.error | java.lang.String
   type ExcessCapacityTerminationPolicy = awsDashSdkLib.awsDashSdkLibStrings.noTermination | awsDashSdkLib.awsDashSdkLibStrings.default | java.lang.String
@@ -26863,7 +28506,7 @@ object EC2Ns extends js.Object {
   type PlacementGroupList = js.Array[PlacementGroup]
   type PlacementGroupState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
   type PlacementGroupStringList = js.Array[String]
-  type PlacementStrategy = awsDashSdkLib.awsDashSdkLibStrings.cluster | awsDashSdkLib.awsDashSdkLibStrings.spread | java.lang.String
+  type PlacementStrategy = awsDashSdkLib.awsDashSdkLibStrings.cluster | awsDashSdkLib.awsDashSdkLibStrings.spread | awsDashSdkLib.awsDashSdkLibStrings.partition | java.lang.String
   type PlatformValues = awsDashSdkLib.awsDashSdkLibStrings.Windows | java.lang.String
   type PoolMaxResults = scala.Double
   type PrefixListIdList = js.Array[PrefixListId]
@@ -26977,9 +28620,11 @@ object EC2Ns extends js.Object {
   type TagSpecificationList = js.Array[TagSpecification]
   type TargetConfigurationRequestSet = js.Array[TargetConfigurationRequest]
   type TargetGroups = js.Array[TargetGroup]
+  type TargetNetworkSet = js.Array[TargetNetwork]
   type TargetReservationValueSet = js.Array[TargetReservationValue]
   type TelemetryStatus = awsDashSdkLib.awsDashSdkLibStrings.UP | awsDashSdkLib.awsDashSdkLibStrings.DOWN | java.lang.String
   type Tenancy = awsDashSdkLib.awsDashSdkLibStrings.default | awsDashSdkLib.awsDashSdkLibStrings.dedicated | awsDashSdkLib.awsDashSdkLibStrings.host | java.lang.String
+  type TerminateConnectionStatusSet = js.Array[TerminateConnectionStatus]
   type TrafficType = awsDashSdkLib.awsDashSdkLibStrings.ACCEPT | awsDashSdkLib.awsDashSdkLibStrings.REJECT | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
   type TransitGatewayAssociationState = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | java.lang.String
   type TransitGatewayAttachmentIdStringList = js.Array[String]
@@ -27002,6 +28647,7 @@ object EC2Ns extends js.Object {
   type TransitGatewayRouteType = awsDashSdkLib.awsDashSdkLibStrings.static | awsDashSdkLib.awsDashSdkLibStrings.propagated | java.lang.String
   type TransitGatewayState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.modifying | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
   type TransitGatewayVpcAttachmentList = js.Array[TransitGatewayVpcAttachment]
+  type TransportProtocol = awsDashSdkLib.awsDashSdkLibStrings.tcp | awsDashSdkLib.awsDashSdkLibStrings.udp | java.lang.String
   type TunnelOptionsList = js.Array[VpnTunnelOptionsSpecification]
   type UnsuccessfulInstanceCreditSpecificationErrorCode = awsDashSdkLib.awsDashSdkLibStrings.InvalidInstanceIDDOTMalformed | awsDashSdkLib.awsDashSdkLibStrings.InvalidInstanceIDDOTNotFound | awsDashSdkLib.awsDashSdkLibStrings.IncorrectInstanceState | awsDashSdkLib.awsDashSdkLibStrings.InstanceCreditSpecificationDOTNotSupported | java.lang.String
   type UnsuccessfulInstanceCreditSpecificationSet = js.Array[UnsuccessfulInstanceCreditSpecificationItem]
@@ -27052,6 +28698,7 @@ object EC2Ns extends js.Object {
   type VpnEcmpSupportValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
   type VpnGatewayIdStringList = js.Array[String]
   type VpnGatewayList = js.Array[VpnGateway]
+  type VpnProtocol = awsDashSdkLib.awsDashSdkLibStrings.openvpn | java.lang.String
   type VpnState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
   type VpnStaticRouteList = js.Array[VpnStaticRoute]
   type VpnStaticRouteSource = awsDashSdkLib.awsDashSdkLibStrings.Static | java.lang.String

@@ -27,7 +27,7 @@ trait ISearchService extends js.Object {
           * @param {String} args.term seach term
           * @returns {Promise} returns promise containing all matching items
           */
-  def searchAll(args: ISearchArgs): js.Any
+  def searchAll(args: ISearchArgs): angularLib.angularMod.angularNs.IPromise[_]
   /**
           * @ngdoc method
           * @name umbraco.services.searchService#searchContent
@@ -39,7 +39,7 @@ trait ISearchService extends js.Object {
           * @param {String} args.term seach term
           * @returns {Promise} returns promise containing all matching content items
           */
-  def searchContent(args: ISearchArgs): js.Any
+  def searchContent(args: ISearchArgs): angularLib.angularMod.angularNs.IPromise[js.Array[ISearchContent]]
   /**
           * @ngdoc method
           * @name umbraco.services.searchService#searchMedia
@@ -51,7 +51,7 @@ trait ISearchService extends js.Object {
           * @param {String} args.term seach term
           * @returns {Promise} returns promise containing all matching media items
           */
-  def searchMedia(args: ISearchArgs): js.Any
+  def searchMedia(args: ISearchArgs): angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMedia]]
   /**
           * @ngdoc method
           * @name umbraco.services.searchService#searchMembers
@@ -63,6 +63,6 @@ trait ISearchService extends js.Object {
           * @param {String} args.term seach term
           * @returns {Promise} returns promise containing all matching members
           */
-  def searchMembers(args: ISearchArgs): js.Any
+  def searchMembers(args: ISearchArgs): angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMember]]
 }
 

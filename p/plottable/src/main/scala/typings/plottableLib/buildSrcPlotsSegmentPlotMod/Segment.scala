@@ -32,7 +32,7 @@ class Segment[X, Y] ()
        * @param {number|Accessor<number>|Y|Accessor<Y>} y2
        * @returns {Plots.Segment} The calling Segment Plot
        */
-  def x2(x2: plottableLib.buildSrcCoreInterfacesMod.IAccessor[X | scala.Double]): this.type = js.native
+  def x2(x2: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Double | X]): this.type = js.native
   /**
        * Sets X2 to a constant number or the result of an Accessor.
        * If a Scale has been set for X, it will also be used to scale X2.
@@ -60,7 +60,7 @@ class Segment[X, Y] ()
        * @param {number|Accessor<number>|Y|Accessor<Y>} y2
        * @returns {Plots.Segment} The calling Segment Plot.
        */
-  def y2(y2: plottableLib.buildSrcCoreInterfacesMod.IAccessor[Y | scala.Double]): this.type = js.native
+  def y2(y2: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Double | Y]): this.type = js.native
   /**
        * Sets Y2 to a constant number or the result of an Accessor.
        * If a Scale has been set for Y, it will also be used to scale Y2.

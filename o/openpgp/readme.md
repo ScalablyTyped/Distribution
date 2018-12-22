@@ -6,4 +6,5 @@
 //                 Daniel Montesinos <https://github.com/damonpam>
 //                 Carlos Villavicencio <https://github.com/po5i>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.2
 ```

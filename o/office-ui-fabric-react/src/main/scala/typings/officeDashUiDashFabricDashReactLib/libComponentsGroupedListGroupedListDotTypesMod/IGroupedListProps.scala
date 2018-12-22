@@ -12,6 +12,8 @@ trait IGroupedListProps
     ] {
   /** Optional class name to add to the root element. */
   var className: js.UndefOr[java.lang.String] = js.native
+  /** Boolean value to indicate if the component should render in compact mode. Set to false by default */
+  var compact: js.UndefOr[scala.Boolean] = js.native
   /**
        * Optional callback to access the IGroupedList interface. Use this instead of ref for accessing
        * the public methods and properties of the component.

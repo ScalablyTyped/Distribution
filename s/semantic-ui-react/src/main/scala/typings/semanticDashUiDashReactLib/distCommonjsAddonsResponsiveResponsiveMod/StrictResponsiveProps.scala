@@ -30,7 +30,7 @@ trait StrictResponsiveProps extends js.Object {
      */
   var onUpdate: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
       /* data */ ResponsiveOnUpdateData, 
       scala.Unit
     ]

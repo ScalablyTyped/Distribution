@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait UIEvent[T] extends SyntheticEvent[T] {
+trait UIEvent[T]
+  extends BaseSyntheticEvent[reactLib.NativeUIEvent, reactLib.EventTarget with T, reactLib.EventTarget] {
   var detail: scala.Double
-  @JSName("nativeEvent")
-  var nativeEvent_UIEvent: reactLib.NativeUIEvent
   var view: AbstractView
 }
 

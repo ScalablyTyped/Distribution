@@ -198,7 +198,7 @@ trait ChaiJQuery
        * @param duration A string or number determining how long the animation will run.
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object): ChaiJQuery = js.native
+  def animate(properties: chaiLib.Object): ChaiJQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
@@ -206,7 +206,7 @@ trait ChaiJQuery
        * @param duration A string or number determining how long the animation will run.
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object, duration: java.lang.String): ChaiJQuery = js.native
+  def animate(properties: chaiLib.Object, duration: java.lang.String): ChaiJQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
@@ -214,16 +214,7 @@ trait ChaiJQuery
        * @param duration A string or number determining how long the animation will run.
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object, duration: java.lang.String, complete: js.Function): ChaiJQuery = js.native
-  /**
-       * Perform a custom animation of a set of CSS properties.
-       *
-       * @param properties An object of CSS properties and values that the animation will move toward.
-       * @param duration A string or number determining how long the animation will run.
-       * @param easing A string indicating which easing function to use for the transition. (default: swing)
-       * @param complete A function to call once the animation is complete.
-       */
-  def animate(properties: js.Object, duration: java.lang.String, easing: java.lang.String): ChaiJQuery = js.native
+  def animate(properties: chaiLib.Object, duration: java.lang.String, complete: js.Function): ChaiJQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
@@ -232,23 +223,7 @@ trait ChaiJQuery
        * @param easing A string indicating which easing function to use for the transition. (default: swing)
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object, duration: java.lang.String, easing: java.lang.String, complete: js.Function): ChaiJQuery = js.native
-  /**
-       * Perform a custom animation of a set of CSS properties.
-       *
-       * @param properties An object of CSS properties and values that the animation will move toward.
-       * @param duration A string or number determining how long the animation will run.
-       * @param complete A function to call once the animation is complete.
-       */
-  def animate(properties: js.Object, duration: scala.Double): ChaiJQuery = js.native
-  /**
-       * Perform a custom animation of a set of CSS properties.
-       *
-       * @param properties An object of CSS properties and values that the animation will move toward.
-       * @param duration A string or number determining how long the animation will run.
-       * @param complete A function to call once the animation is complete.
-       */
-  def animate(properties: js.Object, duration: scala.Double, complete: js.Function): ChaiJQuery = js.native
+  def animate(properties: chaiLib.Object, duration: java.lang.String, easing: java.lang.String): ChaiJQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
@@ -257,7 +232,28 @@ trait ChaiJQuery
        * @param easing A string indicating which easing function to use for the transition. (default: swing)
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object, duration: scala.Double, easing: java.lang.String): ChaiJQuery = js.native
+  def animate(
+    properties: chaiLib.Object,
+    duration: java.lang.String,
+    easing: java.lang.String,
+    complete: js.Function
+  ): ChaiJQuery = js.native
+  /**
+       * Perform a custom animation of a set of CSS properties.
+       *
+       * @param properties An object of CSS properties and values that the animation will move toward.
+       * @param duration A string or number determining how long the animation will run.
+       * @param complete A function to call once the animation is complete.
+       */
+  def animate(properties: chaiLib.Object, duration: scala.Double): ChaiJQuery = js.native
+  /**
+       * Perform a custom animation of a set of CSS properties.
+       *
+       * @param properties An object of CSS properties and values that the animation will move toward.
+       * @param duration A string or number determining how long the animation will run.
+       * @param complete A function to call once the animation is complete.
+       */
+  def animate(properties: chaiLib.Object, duration: scala.Double, complete: js.Function): ChaiJQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
@@ -266,14 +262,28 @@ trait ChaiJQuery
        * @param easing A string indicating which easing function to use for the transition. (default: swing)
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object, duration: scala.Double, easing: java.lang.String, complete: js.Function): ChaiJQuery = js.native
+  def animate(properties: chaiLib.Object, duration: scala.Double, easing: java.lang.String): ChaiJQuery = js.native
+  /**
+       * Perform a custom animation of a set of CSS properties.
+       *
+       * @param properties An object of CSS properties and values that the animation will move toward.
+       * @param duration A string or number determining how long the animation will run.
+       * @param easing A string indicating which easing function to use for the transition. (default: swing)
+       * @param complete A function to call once the animation is complete.
+       */
+  def animate(
+    properties: chaiLib.Object,
+    duration: scala.Double,
+    easing: java.lang.String,
+    complete: js.Function
+  ): ChaiJQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
        * @param properties An object of CSS properties and values that the animation will move toward.
        * @param options A map of additional options to pass to the method.
        */
-  def animate(properties: js.Object, options: jqueryLib.JQueryAnimationOptions): ChaiJQuery = js.native
+  def animate(properties: chaiLib.Object, options: jqueryLib.JQueryAnimationOptions): ChaiJQuery = js.native
   /**
        * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
        *
@@ -384,7 +394,7 @@ trait ChaiJQuery
        *
        * @param attributes An object of attribute-value pairs to set.
        */
-  def attr(attributes: js.Object): ChaiJQuery = js.native
+  def attr(attributes: chaiLib.Object): ChaiJQuery = js.native
   /**
        * Insert content, specified by the parameter, before each element in the set of matched elements.
        *
@@ -633,7 +643,7 @@ trait ChaiJQuery
        *
        * @param properties An object of property-value pairs to set.
        */
-  def css(properties: js.Object): ChaiJQuery = js.native
+  def css(properties: chaiLib.Object): ChaiJQuery = js.native
   /**
        * Get the value of style properties for the first element in the set of matched elements.
        *
@@ -1173,7 +1183,7 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute each time the event is triggered.
        */
-  def focusin(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]): ChaiJQuery = js.native
+  def focusin(eventData: chaiLib.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "focusin" JavaScript event
        *
@@ -1186,7 +1196,7 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute each time the event is triggered.
        */
-  def focusout(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]): ChaiJQuery = js.native
+  def focusout(eventData: chaiLib.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "focusout" JavaScript event
        *
@@ -1606,7 +1616,7 @@ trait ChaiJQuery
        * @param data A plain object or string that is sent to the server with the request.
        * @param complete A callback function that is executed when the request completes.
        */
-  def load(url: java.lang.String, data: java.lang.String): ChaiJQuery = js.native
+  def load(url: java.lang.String, data: chaiLib.Object): ChaiJQuery = js.native
   /**
        * Load data from the server and place the returned HTML into the matched element.
        *
@@ -1616,7 +1626,7 @@ trait ChaiJQuery
        */
   def load(
     url: java.lang.String,
-    data: java.lang.String,
+    data: chaiLib.Object,
     complete: js.Function3[
       /* responseText */ java.lang.String, 
       /* textStatus */ java.lang.String, 
@@ -1631,7 +1641,7 @@ trait ChaiJQuery
        * @param data A plain object or string that is sent to the server with the request.
        * @param complete A callback function that is executed when the request completes.
        */
-  def load(url: java.lang.String, data: js.Object): ChaiJQuery = js.native
+  def load(url: java.lang.String, data: java.lang.String): ChaiJQuery = js.native
   /**
        * Load data from the server and place the returned HTML into the matched element.
        *
@@ -1641,7 +1651,7 @@ trait ChaiJQuery
        */
   def load(
     url: java.lang.String,
-    data: js.Object,
+    data: java.lang.String,
     complete: js.Function3[
       /* responseText */ java.lang.String, 
       /* textStatus */ java.lang.String, 
@@ -1665,7 +1675,10 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mousedown(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]): ChaiJQuery = js.native
+  def mousedown(
+    eventData: chaiLib.Object,
+    handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]
+  ): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "mousedown" JavaScript event.
        *
@@ -1682,7 +1695,10 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mouseenter(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]): ChaiJQuery = js.native
+  def mouseenter(
+    eventData: chaiLib.Object,
+    handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]
+  ): ChaiJQuery = js.native
   /**
        * Bind an event handler to be fired when the mouse enters an element.
        *
@@ -1699,7 +1715,10 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mouseleave(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]): ChaiJQuery = js.native
+  def mouseleave(
+    eventData: chaiLib.Object,
+    handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]
+  ): ChaiJQuery = js.native
   /**
        * Bind an event handler to be fired when the mouse leaves an element.
        *
@@ -1716,7 +1735,10 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mousemove(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]): ChaiJQuery = js.native
+  def mousemove(
+    eventData: chaiLib.Object,
+    handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]
+  ): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "mousemove" JavaScript event.
        *
@@ -1733,7 +1755,10 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mouseout(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]): ChaiJQuery = js.native
+  def mouseout(
+    eventData: chaiLib.Object,
+    handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]
+  ): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "mouseout" JavaScript event.
        *
@@ -1750,7 +1775,10 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mouseover(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]): ChaiJQuery = js.native
+  def mouseover(
+    eventData: chaiLib.Object,
+    handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]
+  ): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "mouseover" JavaScript event.
        *
@@ -1767,7 +1795,10 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mouseup(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]): ChaiJQuery = js.native
+  def mouseup(
+    eventData: chaiLib.Object,
+    handler: js.Function1[/* eventObject */ jqueryLib.JQueryMouseEventObject, _]
+  ): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "mouseup" JavaScript event.
        *
@@ -2042,7 +2073,7 @@ trait ChaiJQuery
        */
   def one(
     events: java.lang.String,
-    data: js.Object,
+    data: chaiLib.Object,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): ChaiJQuery = js.native
   /**
@@ -2402,13 +2433,13 @@ trait ChaiJQuery
        * @param type The type of queue that needs to be observed. (default: fx)
        * @param target Object onto which the promise methods have to be attached
        */
-  def promise(`type`: java.lang.String, target: js.Object): jqueryLib.JQueryPromise[_] = js.native
+  def promise(`type`: java.lang.String, target: chaiLib.Object): jqueryLib.JQueryPromise[_] = js.native
   /**
        * Set one or more properties for the set of matched elements.
        *
        * @param properties An object of property-value pairs to set.
        */
-  def prop(properties: js.Object): ChaiJQuery = js.native
+  def prop(properties: chaiLib.Object): ChaiJQuery = js.native
   /**
        * Set the HTML contents of each element in the set of matched elements.
        *
@@ -2634,7 +2665,7 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute each time the event is triggered.
        */
-  def resize(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]): ChaiJQuery = js.native
+  def resize(eventData: chaiLib.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "resize" JavaScript event.
        *
@@ -2651,7 +2682,7 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute each time the event is triggered.
        */
-  def scroll(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]): ChaiJQuery = js.native
+  def scroll(eventData: chaiLib.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "scroll" JavaScript event.
        *
@@ -2688,7 +2719,7 @@ trait ChaiJQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute each time the event is triggered.
        */
-  def select(eventData: js.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]): ChaiJQuery = js.native
+  def select(eventData: chaiLib.Object, handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "select" JavaScript event.
        *
@@ -3270,14 +3301,14 @@ trait ChaiJQuery
        * @param eventType A string containing a JavaScript event type, such as click or submit.
        * @param extraParameters Additional parameters to pass along to the event handler.
        */
-  def trigger(eventType: java.lang.String, extraParameters: js.Array[_]): ChaiJQuery = js.native
+  def trigger(eventType: java.lang.String, extraParameters: chaiLib.Object): ChaiJQuery = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        *
        * @param eventType A string containing a JavaScript event type, such as click or submit.
        * @param extraParameters Additional parameters to pass along to the event handler.
        */
-  def trigger(eventType: java.lang.String, extraParameters: js.Object): ChaiJQuery = js.native
+  def trigger(eventType: java.lang.String, extraParameters: js.Array[_]): ChaiJQuery = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        *
@@ -3291,21 +3322,21 @@ trait ChaiJQuery
        * @param event A jQuery.Event object.
        * @param extraParameters Additional parameters to pass along to the event handler.
        */
-  def trigger(event: jqueryLib.JQueryEventObject, extraParameters: js.Array[_]): ChaiJQuery = js.native
+  def trigger(event: jqueryLib.JQueryEventObject, extraParameters: chaiLib.Object): ChaiJQuery = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        *
        * @param event A jQuery.Event object.
        * @param extraParameters Additional parameters to pass along to the event handler.
        */
-  def trigger(event: jqueryLib.JQueryEventObject, extraParameters: js.Object): ChaiJQuery = js.native
+  def trigger(event: jqueryLib.JQueryEventObject, extraParameters: js.Array[_]): ChaiJQuery = js.native
   /**
        * Execute all handlers attached to an element for an event.
        *
        * @param eventType A string containing a JavaScript event type, such as click or submit.
        * @param extraParameters An array of additional parameters to pass along to the event handler.
        */
-  def triggerHandler(eventType: java.lang.String, extraParameters: js.Any*): js.Object = js.native
+  def triggerHandler(eventType: java.lang.String, extraParameters: js.Any*): chaiLib.Object = js.native
   /**
        * Remove a previously-attached event handler from the elements.
        *
@@ -3379,7 +3410,7 @@ trait ChaiJQuery
        * @param selector A selector which will be used to filter the event results.
        * @param events An object of one or more event types and previously bound functions to unbind from them.
        */
-  def undelegate(selector: java.lang.String, events: js.Object): ChaiJQuery = js.native
+  def undelegate(selector: java.lang.String, events: chaiLib.Object): ChaiJQuery = js.native
   /**
        * Bind an event handler to the "unload" JavaScript event. (DEPRECATED from v1.8)
        *

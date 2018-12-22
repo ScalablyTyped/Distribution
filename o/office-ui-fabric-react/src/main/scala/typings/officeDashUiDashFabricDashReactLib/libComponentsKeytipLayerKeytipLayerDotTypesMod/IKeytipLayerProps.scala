@@ -53,7 +53,7 @@ trait IKeytipLayerProps
   var onExitKeytipMode: js.UndefOr[
     js.Function1[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement] | reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]
+        reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement] | (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent])
       ], 
       scala.Unit
     ]

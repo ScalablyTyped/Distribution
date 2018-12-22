@@ -25,7 +25,7 @@ trait Array[T]
         * Combines two or more arrays.
         * @param items Additional items to add to the end of array1.
         */
-  def concat(items: (T | js.Array[T])*): js.Array[T] = js.native
+  def concat(items: (js.Array[T] | T)*): js.Array[T] = js.native
   /**
        * Returns the this object after copying a section of the array identified by start and end
        * to the same array starting at position target

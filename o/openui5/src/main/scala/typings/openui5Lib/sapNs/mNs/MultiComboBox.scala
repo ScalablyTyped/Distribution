@@ -192,7 +192,7 @@ abstract class MultiComboBox protected () extends ComboBoxBase {
          * of sap.ui.core.Item instance may be given or null.
          * @returns <code>this</code> to allow method chaining.
         */
-  def setSelectedItems(aItems: js.Array[java.lang.String | openui5Lib.sapNs.uiNs.coreNs.Item]): MultiComboBox = js.native
+  def setSelectedItems(aItems: js.Array[openui5Lib.sapNs.uiNs.coreNs.Item | java.lang.String]): MultiComboBox = js.native
   /**
          * Sets a new value for property <code>selectedKeys</code>.Keys of the selected items. If the key has
          * no corresponding item, no changes will apply. If duplicate keys exists the first item matching the

@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
  *
  * const defaultStyle = {
  *   transition: `opacity ${duration}ms ease-in-out`,
- *   opactity: 0,
+ *   opacity: 0,
  * }
  *
  * const transitionStyles = {

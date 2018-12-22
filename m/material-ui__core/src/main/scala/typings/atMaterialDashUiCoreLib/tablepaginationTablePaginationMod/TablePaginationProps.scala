@@ -31,7 +31,10 @@ trait TablePaginationProps
   var rowsPerPage: scala.Double = js.native
   var rowsPerPageOptions: js.UndefOr[js.Array[scala.Double]] = js.native
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.native
-  def onChangePage(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement], page: scala.Double): scala.Unit = js.native
+  def onChangePage(
+    event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent],
+    page: scala.Double
+  ): scala.Unit = js.native
   def onChangePage(event: scala.Null, page: scala.Double): scala.Unit = js.native
 }
 

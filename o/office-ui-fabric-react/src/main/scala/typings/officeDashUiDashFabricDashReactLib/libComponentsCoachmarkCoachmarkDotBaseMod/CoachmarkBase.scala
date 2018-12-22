@@ -61,7 +61,7 @@ class CoachmarkBase protected ()
   @JSName("dismiss")
   def dismiss_MCoachmarkBase(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
   @JSName("dismiss")
-  def dismiss_MCoachmarkBase(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def dismiss_MCoachmarkBase(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MCoachmarkBase(
     newProps: officeDashUiDashFabricDashReactLib.libComponentsCoachmarkCoachmarkDotTypesMod.ICoachmarkProps,

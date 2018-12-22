@@ -166,6 +166,10 @@ object ECRNs extends js.Object {
          * The name to use for the repository. The repository name may be specified on its own (such as nginx-web-app) or it can be prepended with a namespace to group the repository into a category (such as project-a/nginx-web-app).
          */
     var repositoryName: RepositoryName
+    /**
+         * 
+         */
+    var tags: js.UndefOr[TagList] = js.undefined
   }
   
   
@@ -279,7 +283,7 @@ object ECRNs extends js.Object {
          */
     var imageIds: js.UndefOr[ImageIdentifierList] = js.undefined
     /**
-         * The maximum number of repository results returned by DescribeImages in paginated output. When this parameter is used, DescribeImages only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another DescribeImages request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then DescribeImages returns up to 100 results and a nextToken value, if applicable. This option cannot be used when you specify images with imageIds.
+         * The maximum number of repository results returned by DescribeImages in paginated output. When this parameter is used, DescribeImages only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another DescribeImages request with the returned nextToken value. This value can be between 1 and 1000. If this parameter is not used, then DescribeImages returns up to 100 results and a nextToken value, if applicable. This option cannot be used when you specify images with imageIds.
          */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
@@ -291,7 +295,7 @@ object ECRNs extends js.Object {
          */
     var registryId: js.UndefOr[RegistryId] = js.undefined
     /**
-         * A list of repositories to describe. If this parameter is omitted, then all repositories in a registry are described.
+         * A list of repositories to describe.
          */
     var repositoryName: RepositoryName
   }
@@ -311,7 +315,7 @@ object ECRNs extends js.Object {
   
   trait DescribeRepositoriesRequest extends js.Object {
     /**
-         * The maximum number of repository results returned by DescribeRepositories in paginated output. When this parameter is used, DescribeRepositories only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another DescribeRepositories request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then DescribeRepositories returns up to 100 results and a nextToken value, if applicable. This option cannot be used when you specify repositories with repositoryNames.
+         * The maximum number of repository results returned by DescribeRepositories in paginated output. When this parameter is used, DescribeRepositories only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another DescribeRepositories request with the returned nextToken value. This value can be between 1 and 1000. If this parameter is not used, then DescribeRepositories returns up to 100 results and a nextToken value, if applicable. This option cannot be used when you specify repositories with repositoryNames.
          */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
@@ -395,9 +399,9 @@ object ECRNs extends js.Object {
          */
     var imageIds: js.UndefOr[ImageIdentifierList] = js.undefined
     /**
-         * The maximum number of repository results returned by GetLifecyclePolicyPreviewRequest in&#x2028; paginated output. When this parameter is used, GetLifecyclePolicyPreviewRequest only returns&#x2028; maxResults results in a single page along with a nextToken&#x2028; response element. The remaining results of the initial request can be seen by sending&#x2028; another GetLifecyclePolicyPreviewRequest request with the returned nextToken&#x2028; value. This value can be between 1 and 100. If this&#x2028; parameter is not used, then GetLifecyclePolicyPreviewRequest returns up to&#x2028; 100 results and a nextToken value, if&#x2028; applicable. This option cannot be used when you specify images with imageIds.
+         * The maximum number of repository results returned by GetLifecyclePolicyPreviewRequest in&#x2028; paginated output. When this parameter is used, GetLifecyclePolicyPreviewRequest only returns&#x2028; maxResults results in a single page along with a nextToken&#x2028; response element. The remaining results of the initial request can be seen by sending&#x2028; another GetLifecyclePolicyPreviewRequest request with the returned nextToken&#x2028; value. This value can be between 1 and 1000. If this&#x2028; parameter is not used, then GetLifecyclePolicyPreviewRequest returns up to&#x2028; 100 results and a nextToken value, if&#x2028; applicable. This option cannot be used when you specify images with imageIds.
          */
-    var maxResults: js.UndefOr[MaxResults] = js.undefined
+    var maxResults: js.UndefOr[LifecyclePreviewMaxResults] = js.undefined
     /**
          * The nextToken value returned from a previous paginated&#x2028; GetLifecyclePolicyPreviewRequest request where maxResults was used and the&#x2028; results exceeded the value of that parameter. Pagination continues from the end of the&#x2028; previous results that returned the nextToken value. This value is&#x2028; null when there are no more results to return. This option cannot be used when you specify images with imageIds.
          */
@@ -703,7 +707,7 @@ object ECRNs extends js.Object {
          */
     var filter: js.UndefOr[ListImagesFilter] = js.undefined
     /**
-         * The maximum number of image results returned by ListImages in paginated output. When this parameter is used, ListImages only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListImages request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListImages returns up to 100 results and a nextToken value, if applicable.
+         * The maximum number of image results returned by ListImages in paginated output. When this parameter is used, ListImages only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListImages request with the returned nextToken value. This value can be between 1 and 1000. If this parameter is not used, then ListImages returns up to 100 results and a nextToken value, if applicable.
          */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
@@ -730,6 +734,22 @@ object ECRNs extends js.Object {
          * The nextToken value to include in a future ListImages request. When the results of a ListImages request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
     var nextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait ListTagsForResourceRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) that identifies the resource for which to list the tags. Currently, the only supported resource is an Amazon ECR repository.
+         */
+    var resourceArn: Arn
+  }
+  
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    /**
+         * The tags for the resource.
+         */
+    var tags: js.UndefOr[TagList] = js.undefined
   }
   
   
@@ -887,6 +907,33 @@ object ECRNs extends js.Object {
          */
     var status: js.UndefOr[LifecyclePolicyPreviewStatus] = js.undefined
   }
+  
+  
+  trait Tag extends js.Object {
+    /**
+         * One part of a key-value pair that make up a tag. A key is a general label that acts like a category for more specific tag values.
+         */
+    var Key: js.UndefOr[TagKey] = js.undefined
+    /**
+         * The optional part of a key-value pair that make up a tag. A value acts as a descriptor within a tag category (key).
+         */
+    var Value: js.UndefOr[TagValue] = js.undefined
+  }
+  
+  
+  trait TagResourceRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the the resource to which to add tags. Currently, the only supported resource is an Amazon ECR repository.
+         */
+    var resourceArn: Arn
+    /**
+         * The tags to add to the resource. A tag is an array of key-value pairs. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
+         */
+    var tags: TagList
+  }
+  
+  
+  trait TagResourceResponse extends js.Object
   
   @js.native
   trait Types
@@ -1387,6 +1434,35 @@ object ECRNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListImagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * List the tags for an Amazon ECR resource.
+       */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List the tags for an Amazon ECR resource.
+       */
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List the tags for an Amazon ECR resource.
+       */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List the tags for an Amazon ECR resource.
+       */
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Creates or updates the image manifest and tags associated with an image.  This operation is used by the Amazon ECR proxy, and it is not intended for general use by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
        */
     def putImage(): awsDashSdkLib.libRequestMod.Request[PutImageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1503,6 +1579,64 @@ object ECRNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartLifecyclePolicyPreviewResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
+       */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
+       */
+    def tagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
+       */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
+       */
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes specified tags from a resource.
+       */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes specified tags from a resource.
+       */
+    def untagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes specified tags from a resource.
+       */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes specified tags from a resource.
+       */
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Uploads an image layer part to Amazon ECR.  This operation is used by the Amazon ECR proxy, and it is not intended for general use by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
        */
     def uploadLayerPart(): awsDashSdkLib.libRequestMod.Request[UploadLayerPartResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1532,6 +1666,21 @@ object ECRNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UploadLayerPartResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
+  
+  
+  trait UntagResourceRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the resource from which to remove tags. Currently, the only supported resource is an Amazon ECR repository.
+         */
+    var resourceArn: Arn
+    /**
+         * The keys of the tags to be removed.
+         */
+    var tagKeys: TagKeyList
+  }
+  
+  
+  trait UntagResourceResponse extends js.Object
   
   
   trait UploadLayerPartRequest extends js.Object {
@@ -1619,6 +1768,7 @@ object ECRNs extends js.Object {
   type LifecyclePolicyPreviewStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.COMPLETE | awsDashSdkLib.awsDashSdkLibStrings.EXPIRED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
   type LifecyclePolicyRulePriority = scala.Double
   type LifecyclePolicyText = java.lang.String
+  type LifecyclePreviewMaxResults = scala.Double
   type MaxResults = scala.Double
   type MediaType = java.lang.String
   type MediaTypeList = js.Array[MediaType]
@@ -1631,7 +1781,11 @@ object ECRNs extends js.Object {
   type RepositoryName = java.lang.String
   type RepositoryNameList = js.Array[RepositoryName]
   type RepositoryPolicyText = java.lang.String
-  type TagStatus = awsDashSdkLib.awsDashSdkLibStrings.TAGGED | awsDashSdkLib.awsDashSdkLibStrings.UNTAGGED | java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagStatus = awsDashSdkLib.awsDashSdkLibStrings.TAGGED | awsDashSdkLib.awsDashSdkLibStrings.UNTAGGED | awsDashSdkLib.awsDashSdkLibStrings.ANY | java.lang.String
+  type TagValue = java.lang.String
   type UploadId = java.lang.String
   type Url = java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-09-21` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String

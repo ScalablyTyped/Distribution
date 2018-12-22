@@ -16,7 +16,7 @@ class InEndpoint protected () extends Endpoint {
   def stopPoll(cb: js.Function0[scala.Unit]): scala.Unit = js.native
   def transfer(
     length: scala.Double,
-    callback: js.Function2[/* error */ java.lang.String, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* error */ LibUSBException, /* data */ nodeLib.Buffer, scala.Unit]
   ): InEndpoint = js.native
 }
 

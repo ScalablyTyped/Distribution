@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DsvRequest extends Request {
-  def row[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
+  def row[ParsedRow /* <: js.Object */](
     value: js.Function3[
       /* rawRow */ d3DashDsvLib.d3DashDsvMod.DSVRowString, 
       /* index */ scala.Double, 

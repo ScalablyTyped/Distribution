@@ -10,7 +10,7 @@ trait CommentProps extends js.Object {
   /** List of action items rendered below the comment content */
   var actions: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   /** The element to display as the comment author. */
-  var author: js.UndefOr[java.lang.String] = js.undefined
+  var author: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /** The element to display as the comment avatar - generally an antd Avatar */
   var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /** Nested comments should be provided as children of the Comment */

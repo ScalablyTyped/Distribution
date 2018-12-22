@@ -78,7 +78,7 @@ object SyncNs extends js.Object {
     name: java.lang.String,
     changeCallback: js.Function1[
       /* changeEvent */ realmLib.RealmNs.SyncNs.ChangeEvent, 
-      scala.Unit | js.Promise[scala.Unit]
+      js.Promise[scala.Unit] | scala.Unit
     ]
   ): scala.Unit = js.native
   def initiateClientReset(path: java.lang.String): scala.Unit = js.native

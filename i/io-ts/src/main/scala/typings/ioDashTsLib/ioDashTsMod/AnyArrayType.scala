@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class AnyArrayType ()
   extends Type[
-      ioDashTsLib.ioDashTsMod.Global.Array[mixed], 
-      ioDashTsLib.ioDashTsMod.Global.Array[mixed], 
+      fpDashTsLib.libArrayMod.Global.Array[mixed], 
+      fpDashTsLib.libArrayMod.Global.Array[mixed], 
       mixed
     ] {
   val _tag: ioDashTsLib.ioDashTsLibStrings.AnyArrayType = js.native

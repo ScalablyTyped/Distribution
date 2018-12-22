@@ -72,294 +72,6 @@ import scala.scalajs.js.annotation._
 // zipObject
 // zipObjectDeep
 // zipWith
-// add
-// ceil
-// divide
-// floor
-// max
-// maxBy
-// mean
-// meanBy
-// min
-// minBy
-// multiply
-// round
-// subtract
-// sum
-// sumBy
-// castArray
-// clone
-// cloneDeep
-// conformsTo
-// eq
-// gt
-// gte
-// isArguments
-// isArray
-// isArrayBuffer
-// isArrayLike
-// isArrayLikeObject
-// isBoolean
-// isBuffer
-// isDate
-// isElement
-// isEmpty
-// isEqual
-// isError
-// isFinite
-// isFunction
-// isInteger
-// isLength
-// isMap
-// isNaN
-// isNative
-// isNil
-// isNull
-// isNumber
-// isObject
-// isObjectLike
-// isPlainObject
-// isRegExp
-// isSafeInteger
-// isSet
-// isString
-// isSymbol
-// isTypedArray
-// isUndefined
-// isWeakMap
-// isWeakSet
-// lt
-// lte
-// toArray
-// toFinite
-// toInteger
-// toLength
-// toNumber
-// toPlainObject
-// toSafeInteger
-// toString
-// assign
-// assignIn
-// assignWith
-// at
-// create
-// defaults
-// defaultsDeep
-// entries
-// entriesIn
-// extend
-// extendWith
-// findKey
-// findLastKey
-// forIn
-// forInRight
-// forOwn
-// forOwnRight
-// functions
-// functionsIn
-// get
-// has
-// hasIn
-// invert
-// invertBy
-// invoke
-// keys
-// keysIn
-// mapKeys
-// mapValues
-// merge
-// omit
-// omitBy
-// pick
-// pickBy
-// result
-// set
-// toPairs
-// toPairsIn
-// transform
-// unset
-// update
-// updateWith
-// values
-// valuesIn
-// attempt
-// bindAll
-// cond
-// constant
-// defaultTo
-// flow
-// flowRight
-// identity
-// iteratee
-// matches
-// matchesProperty
-// method
-// methodOf
-// noConflict
-// noop
-// nthArg
-// over
-// overEvery
-// overSome
-// property
-// propertyOf
-// range
-// rangeRight
-// runInContext
-// stubArray
-// stubFalse
-// stubObject
-// stubString
-// stubTrue
-// times
-// toPath
-// uniqueId
-// now
-// countBy
-// each
-// eachRight
-// every
-// filter
-// find
-// findLast
-// flatMap
-// flatMapDeep
-// flatMapDepth
-// forEach
-// forEachRight
-// groupBy
-// includes
-// invokeMap
-// keyBy
-// map
-// orderBy
-// partition
-// reduce
-// reduceRight
-// reject
-// sample
-// sampleSize
-// shuffle
-// size
-// some
-// sortBy
-// chain
-// prototype.chain
-// tap
-// thru
-// camelCase
-// capitalize
-// deburr
-// endsWith
-// escape
-// escapeRegExp
-// kebabCase
-// lowerCase
-// lowerFirst
-// pad
-// padEnd
-// padStart
-// parseInt
-// repeat
-// replace
-// snakeCase
-// split
-// startCase
-// startsWith
-// toLower
-// toUpper
-// trim
-// trimEnd
-// trimStart
-// unescape
-// upperCase
-// upperFirst
-// words
-// clamp
-// inRange
-// random
-// after
-// ary
-// before
-// defer
-// delay
-// flip
-// negate
-// once
-// overArgs
-// partial
-// partialRight
-// rearg
-// rest
-// spread
-// unary
-// wrap
-// chunk
-// compact
-// concat
-// difference
-// differenceBy
-// differenceWith
-// drop
-// dropRight
-// dropRightWhile
-// dropWhile
-// fill
-// findIndex
-// findLastIndex
-// first
-// flatten
-// flattenDeep
-// flattenDepth
-// fromPairs
-// head
-// indexOf
-// initial
-// intersection
-// intersectionBy
-// intersectionWith
-// join
-// last
-// lastIndexOf
-// nth
-// pull
-// pullAll
-// pullAllBy
-// pullAllWith
-// pullAt
-// remove
-// reverse
-// slice
-// sortedIndex
-// sortedIndexBy
-// _.sortedIndexBy
-// sortedIndexOf
-// sortedLastIndex
-// sortedLastIndexBy
-// sortedLastIndexOf
-// sortedUniq
-// sortedUniqBy
-// tail
-// take
-// takeRight
-// takeRightWhile
-// takeWhile
-// union
-// unionBy
-// unionWith
-// uniq
-// uniqBy
-// uniqWith
-// unzip
-// unzipWith
-// without
-// xor
-// xorBy
-// xorWith
-// zip
-// zipObject
-// zipObjectDeep
-// zipWith
 // countBy
 // each
 // eachRight
@@ -10327,7 +10039,7 @@ trait LoDashStatic extends js.Object {
   /**
            * @see _.reduce
            **/
-  def reduce[T](collection: js.UndefOr[scala.Nothing], callback: MemoListIterator[T, T, List[T] | js.Array[T]]): js.UndefOr[T] = js.native
+  def reduce[T](collection: js.UndefOr[scala.Nothing], callback: MemoListIterator[T, T, js.Array[T] | List[T]]): js.UndefOr[T] = js.native
   /**
            * @see _.reduce
            **/
@@ -10338,7 +10050,7 @@ trait LoDashStatic extends js.Object {
   /**
            * @see _.reduce
            **/
-  def reduce[T](collection: scala.Null, callback: MemoListIterator[T, T, List[T] | js.Array[T]]): js.UndefOr[T] = js.native
+  def reduce[T](collection: scala.Null, callback: MemoListIterator[T, T, js.Array[T] | List[T]]): js.UndefOr[T] = js.native
   /**
           * @see _.reduce
           **/
@@ -10379,7 +10091,7 @@ trait LoDashStatic extends js.Object {
           **/
   def reduce[T, TResult](
     collection: js.UndefOr[scala.Nothing],
-    callback: MemoListIterator[T, TResult, List[T] | js.Array[T]],
+    callback: MemoListIterator[T, TResult, js.Array[T] | List[T]],
     accumulator: TResult
   ): TResult = js.native
   /**
@@ -10402,7 +10114,7 @@ trait LoDashStatic extends js.Object {
           **/
   def reduce[T, TResult](
     collection: scala.Null,
-    callback: MemoListIterator[T, TResult, List[T] | js.Array[T]],
+    callback: MemoListIterator[T, TResult, js.Array[T] | List[T]],
     accumulator: TResult
   ): TResult = js.native
   /**
@@ -10425,7 +10137,7 @@ trait LoDashStatic extends js.Object {
   /**
           * @see _.reduceRight
           **/
-  def reduceRight[T](collection: js.UndefOr[scala.Nothing], callback: MemoListIterator[T, T, List[T] | js.Array[T]]): js.UndefOr[T] = js.native
+  def reduceRight[T](collection: js.UndefOr[scala.Nothing], callback: MemoListIterator[T, T, js.Array[T] | List[T]]): js.UndefOr[T] = js.native
   /**
           * @see _.reduceRight
           **/
@@ -10433,7 +10145,7 @@ trait LoDashStatic extends js.Object {
   /**
           * @see _.reduceRight
           **/
-  def reduceRight[T](collection: scala.Null, callback: MemoListIterator[T, T, List[T] | js.Array[T]]): js.UndefOr[T] = js.native
+  def reduceRight[T](collection: scala.Null, callback: MemoListIterator[T, T, js.Array[T] | List[T]]): js.UndefOr[T] = js.native
   /**
           * @see _.reduceRight
           **/
@@ -10468,7 +10180,7 @@ trait LoDashStatic extends js.Object {
           **/
   def reduceRight[T, TResult](
     collection: js.UndefOr[scala.Nothing],
-    callback: MemoListIterator[T, TResult, List[T] | js.Array[T]],
+    callback: MemoListIterator[T, TResult, js.Array[T] | List[T]],
     accumulator: TResult
   ): TResult = js.native
   /**
@@ -10488,7 +10200,7 @@ trait LoDashStatic extends js.Object {
           **/
   def reduceRight[T, TResult](
     collection: scala.Null,
-    callback: MemoListIterator[T, TResult, List[T] | js.Array[T]],
+    callback: MemoListIterator[T, TResult, js.Array[T] | List[T]],
     accumulator: TResult
   ): TResult = js.native
   /**

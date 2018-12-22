@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 - Lifted 1 members from Set(std.Partial) */ 
 trait Props extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactNode
-  def onOutsideClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): scala.Unit
+  def onOutsideClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit
 }
 

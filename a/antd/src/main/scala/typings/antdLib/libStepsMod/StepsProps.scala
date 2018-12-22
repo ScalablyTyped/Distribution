@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait StepsProps extends js.Object {
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var current: js.UndefOr[scala.Double] = js.undefined
   var direction: js.UndefOr[antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical] = js.undefined
   var iconPrefix: js.UndefOr[java.lang.String] = js.undefined

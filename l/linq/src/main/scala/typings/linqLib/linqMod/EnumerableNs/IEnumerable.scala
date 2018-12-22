@@ -28,7 +28,7 @@ trait IEnumerable[T] extends js.Object {
   def cast[TResult](): IEnumerable[TResult] = js.native
   def catchError(handler: js.Function1[/* exception */ js.Any, scala.Unit]): IEnumerable[T] = js.native
   def choose(selector: js.Function2[/* element */ T, /* index */ scala.Double, T]): IEnumerable[T] = js.native
-  def concat(sequences: (T | linqLib.Anon_X[T] | IEnumerable[T])*): IEnumerable[T] = js.native
+  def concat(sequences: (linqLib.Anon_X[T] | IEnumerable[T] | T)*): IEnumerable[T] = js.native
   def contains(value: T): scala.Boolean = js.native
   def contains[TCompare](value: T, compareSelector: js.Function1[/* element */ T, TCompare]): scala.Boolean = js.native
   @JSName("contains")
@@ -176,7 +176,7 @@ trait IEnumerable[T] extends js.Object {
   def letBind[TResult](
     func: js.Function1[
       /* source */ IEnumerable[T], 
-      linqLib.Anon_XLengthNumberTResult[TResult] | IEnumerable[TResult] | js.Array[TResult]
+      linqLib.Anon_XLengthNumberTResult[TResult] | js.Array[TResult] | IEnumerable[TResult]
     ]
   ): IEnumerable[TResult] = js.native
   def log(): IEnumerable[T] = js.native
@@ -186,7 +186,7 @@ trait IEnumerable[T] extends js.Object {
   def maxBy[TKey](keySelector: js.Function1[/* element */ T, TKey]): T = js.native
   def memoize(): IDisposableEnumerable[T] = js.native
    // last one is selector
-  def merge[TResult](params: (linqLib.Anon_X[T] | IEnumerable[T] | js.Array[T])*): IEnumerable[T] = js.native
+  def merge[TResult](params: (linqLib.Anon_X[T] | js.Array[T] | IEnumerable[T])*): IEnumerable[T] = js.native
   def min(): scala.Double = js.native
   def min(selector: js.Function1[/* element */ T, scala.Double]): scala.Double = js.native
   def minBy[TKey](keySelector: js.Function1[/* element */ T, TKey]): T = js.native
@@ -220,14 +220,14 @@ trait IEnumerable[T] extends js.Object {
     collectionSelector: js.Function2[
       /* element */ T, 
       /* index */ scala.Double, 
-      linqLib.Anon_XLengthNumberTOther[TOther] | IEnumerable[TOther] | js.Array[TOther]
+      linqLib.Anon_XLengthNumberTOther[TOther] | js.Array[TOther] | IEnumerable[TOther]
     ]
   ): IEnumerable[TOther] = js.native
   def selectMany[TCollection, TResult](
     collectionSelector: js.Function2[
       /* element */ T, 
       /* index */ scala.Double, 
-      linqLib.Anon_XLengthNumberTCollection[TCollection] | IEnumerable[TCollection] | js.Array[TCollection]
+      linqLib.Anon_XLengthNumberTCollection[TCollection] | js.Array[TCollection] | IEnumerable[TCollection]
     ],
     resultSelector: js.Function2[/* outer */ T, /* inner */ TCollection, TResult]
   ): IEnumerable[TResult] = js.native

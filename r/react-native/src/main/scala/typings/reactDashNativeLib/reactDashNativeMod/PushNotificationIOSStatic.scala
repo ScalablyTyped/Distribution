@@ -128,7 +128,7 @@ trait PushNotificationIOSStatic extends js.Object {
   def removeEventListener(
     `type`: PushNotificationEventName,
     handler: js.Function1[
-      (/* deviceToken */ java.lang.String) | (/* error */ reactDashNativeLib.Anon_Details) | (/* notification */ PushNotification), 
+      (/* error */ reactDashNativeLib.Anon_Details) | (/* notification */ PushNotification) | (/* deviceToken */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native

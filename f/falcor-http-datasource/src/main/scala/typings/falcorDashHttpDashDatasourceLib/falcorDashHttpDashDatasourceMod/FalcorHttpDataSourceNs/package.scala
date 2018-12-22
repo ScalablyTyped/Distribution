@@ -9,5 +9,5 @@ package object FalcorHttpDataSourceNs {
   /**
        * A HttpDataSource object is a {@link DataSource} can be used to retrieve data from a remote JSONGraph object using the browser's XMLHttpRequest.
        **/
-  type XMlHttpSource = js.Any
+  type XMlHttpSource = falcorLib.falcorMod.DataSource
 }

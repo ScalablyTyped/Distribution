@@ -47,15 +47,15 @@ object GlobalAcceleratorNs extends js.Object {
   
   trait AcceleratorAttributes extends js.Object {
     /**
-         * Indicates whether flow logs are enabled. The value is true or false. The default value is false. If the value is true, FlowLogsS3Bucket and FlowLogsS3Prefix must be specified.
+         * Indicates whether flow logs are enabled. The default value is false. If the value is true, FlowLogsS3Bucket and FlowLogsS3Prefix must be specified. For more information, see Flow Logs in the AWS Global Accelerator Developer Guide.
          */
     var FlowLogsEnabled: js.UndefOr[GenericBoolean] = js.undefined
     /**
-         * The name of the Amazon S3 bucket for the flow logs. This attribute is required if flow logs are enabled. The bucket must exist and have a bucket policy that grants AWS Global Accelerator permission to write to the bucket.
+         * The name of the Amazon S3 bucket for the flow logs. Attribute is required if FlowLogsEnabled is true. The bucket must exist and have a bucket policy that grants AWS Global Accelerator permission to write to the bucket.
          */
     var FlowLogsS3Bucket: js.UndefOr[GenericString] = js.undefined
     /**
-         * The prefix for the location in the Amazon S3 bucket for the flow logs. If you don’t specify a prefix, the flow logs are stored in the root of the bucket.
+         * The prefix for the location in the Amazon S3 bucket for the flow logs. Attribute is required if FlowLogsEnabled is true. If you don’t specify a prefix, the flow logs are stored in the root of the bucket.
          */
     var FlowLogsS3Prefix: js.UndefOr[GenericString] = js.undefined
   }
@@ -107,7 +107,7 @@ object GlobalAcceleratorNs extends js.Object {
          */
     var EndpointGroupRegion: GenericString
     /**
-         * The time, in seconds, between each health check for an endpoint. The default value is 30.
+         * The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.
          */
     var HealthCheckIntervalSeconds: js.UndefOr[HealthCheckIntervalSeconds] = js.undefined
     /**
@@ -155,7 +155,7 @@ object GlobalAcceleratorNs extends js.Object {
          */
     var AcceleratorArn: GenericString
     /**
-         * Client affinity lets you direct all requests from a user to the same endpoint, if you have stateful applications, regardless of the port and protocol of the client request. Clienty affinity gives you control over whether to always route each client to the same specific endpoint. AWS Global Accelerator uses a consistent-flow hashing algorithm to choose the optimal endpoint for a connection. If client affinity is NONE, Global Accelerator uses the "five-tuple" (5-tuple) properties—client IP address, client port, destination IP address, destination port, and protocol—to select the hash value, and then chooses the best endpoint. However, with this setting, if someone uses different ports to connect to Global Accelerator, their connections might not be always routed to the same endpoint because the hash value changes.  If you want a given client to always be routed to the same endpoint, set client affinity to CLIENT_IP instead. When you use the CLIENT_IP setting, Global Accelerator uses the "two-tuple" (2-tuple) properties— client IP address and destination IP address—to select the hash value. For UDP, Global Accelerator always uses two-tuple properties to select the hash value. The default value is NONE.
+         * Client affinity lets you direct all requests from a user to the same endpoint, if you have stateful applications, regardless of the port and protocol of the client request. Clienty affinity gives you control over whether to always route each client to the same specific endpoint. AWS Global Accelerator uses a consistent-flow hashing algorithm to choose the optimal endpoint for a connection. If client affinity is NONE, Global Accelerator uses the "five-tuple" (5-tuple) properties—source IP address, source port, destination IP address, destination port, and protocol—to select the hash value, and then chooses the best endpoint. However, with this setting, if someone uses different ports to connect to Global Accelerator, their connections might not be always routed to the same endpoint because the hash value changes.  If you want a given client to always be routed to the same endpoint, set client affinity to SOURCE_IP instead. When you use the SOURCE_IP setting, Global Accelerator uses the "two-tuple" (2-tuple) properties— source (client) IP address and destination IP address—to select the hash value. The default value is NONE.
          */
     var ClientAffinity: js.UndefOr[ClientAffinity] = js.undefined
     /**
@@ -207,7 +207,7 @@ object GlobalAcceleratorNs extends js.Object {
   
   trait DescribeAcceleratorAttributesRequest extends js.Object {
     /**
-         * The Amazon Resource Name (ARN) of the accelerator with the attributes that you want to describe.
+         * The Amazon Resource Name (ARN) of the accelerator with the attributes that you want to describe. Value is required.
          */
     var AcceleratorArn: js.UndefOr[GenericString] = js.undefined
   }
@@ -315,7 +315,7 @@ object GlobalAcceleratorNs extends js.Object {
          */
     var EndpointGroupRegion: js.UndefOr[GenericString] = js.undefined
     /**
-         * The elapsed time, in seconds, between health checks for each endpoint. The default value is 30.
+         * The time—10 seconds or 30 seconds—between health checks for each endpoint. The default value is 30.
          */
     var HealthCheckIntervalSeconds: js.UndefOr[HealthCheckIntervalSeconds] = js.undefined
     /**
@@ -435,7 +435,7 @@ object GlobalAcceleratorNs extends js.Object {
   
   trait Listener extends js.Object {
     /**
-         * The client properties that Global Accelerator uses to select an endpoint so that you can choose to route traffic from users to their original endpoint. The default value is NONE.
+         * Client affinity lets you direct all requests from a user to the same endpoint, if you have stateful applications, regardless of the port and protocol of the client request. Clienty affinity gives you control over whether to always route each client to the same specific endpoint. AWS Global Accelerator uses a consistent-flow hashing algorithm to choose the optimal endpoint for a connection. If client affinity is NONE, Global Accelerator uses the "five-tuple" (5-tuple) properties—source IP address, source port, destination IP address, destination port, and protocol—to select the hash value, and then chooses the best endpoint. However, with this setting, if someone uses different ports to connect to Global Accelerator, their connections might not be always routed to the same endpoint because the hash value changes.  If you want a given client to always be routed to the same endpoint, set client affinity to SOURCE_IP instead. When you use the SOURCE_IP setting, Global Accelerator uses the "two-tuple" (2-tuple) properties— source (client) IP address and destination IP address—to select the hash value. The default value is NONE.
          */
     var ClientAffinity: js.UndefOr[ClientAffinity] = js.undefined
     /**
@@ -499,11 +499,11 @@ object GlobalAcceleratorNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateAcceleratorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Create an endpoint group for the specified accelerator. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
+       * Create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
        */
     def createEndpointGroup(): awsDashSdkLib.libRequestMod.Request[CreateEndpointGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Create an endpoint group for the specified accelerator. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
+       * Create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
        */
     def createEndpointGroup(
       callback: js.Function2[
@@ -513,11 +513,11 @@ object GlobalAcceleratorNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateEndpointGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Create an endpoint group for the specified accelerator. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
+       * Create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
        */
     def createEndpointGroup(params: CreateEndpointGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateEndpointGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Create an endpoint group for the specified accelerator. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
+       * Create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region. To see an AWS CLI example of creating an endpoint group, scroll down to Example.
        */
     def createEndpointGroup(
       params: CreateEndpointGroupRequest,
@@ -557,21 +557,21 @@ object GlobalAcceleratorNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateListenerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Delete an accelerator. Note: before you can delete an accelerator, you must disable it.
+       * Delete an accelerator. Note: before you can delete an accelerator, you must disable it and remove all dependent resources (listeners and endpoint groups).
        */
     def deleteAccelerator(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Delete an accelerator. Note: before you can delete an accelerator, you must disable it.
+       * Delete an accelerator. Note: before you can delete an accelerator, you must disable it and remove all dependent resources (listeners and endpoint groups).
        */
     def deleteAccelerator(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Delete an accelerator. Note: before you can delete an accelerator, you must disable it.
+       * Delete an accelerator. Note: before you can delete an accelerator, you must disable it and remove all dependent resources (listeners and endpoint groups).
        */
     def deleteAccelerator(params: DeleteAcceleratorRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Delete an accelerator. Note: before you can delete an accelerator, you must disable it.
+       * Delete an accelerator. Note: before you can delete an accelerator, you must disable it and remove all dependent resources (listeners and endpoint groups).
        */
     def deleteAccelerator(
       params: DeleteAcceleratorRequest,
@@ -943,19 +943,19 @@ object GlobalAcceleratorNs extends js.Object {
   
   trait UpdateAcceleratorAttributesRequest extends js.Object {
     /**
-         * The Amazon Resource Name (ARN) of the accelerator that you want to update.
+         * The Amazon Resource Name (ARN) of the accelerator that you want to update. Attribute is required.
          */
     var AcceleratorArn: js.UndefOr[GenericString] = js.undefined
     /**
-         * Update whether flow logs are enabled.
+         * Update whether flow logs are enabled. The default value is false. If the value is true, FlowLogsS3Bucket and FlowLogsS3Prefix must be specified. For more information, see Flow Logs in the AWS Global Accelerator Developer Guide.
          */
     var FlowLogsEnabled: js.UndefOr[GenericBoolean] = js.undefined
     /**
-         * Update the name of the Amazon S3 bucket for the flow logs.
+         * The name of the Amazon S3 bucket for the flow logs. Attribute is required if FlowLogsEnabled is true. The bucket must exist and have a bucket policy that grants AWS Global Accelerator permission to write to the bucket.
          */
     var FlowLogsS3Bucket: js.UndefOr[GenericString] = js.undefined
     /**
-         * Update the prefix for the location in the Amazon S3 bucket for the flow logs.
+         * Update the prefix for the location in the Amazon S3 bucket for the flow logs. Attribute is required if FlowLogsEnabled is true. If you don’t specify a prefix, the flow logs are stored in the root of the bucket.
          */
     var FlowLogsS3Prefix: js.UndefOr[GenericString] = js.undefined
   }
@@ -1007,7 +1007,7 @@ object GlobalAcceleratorNs extends js.Object {
          */
     var EndpointGroupArn: GenericString
     /**
-         * The time, in seconds, between each health check for an endpoint. The default value is 30.
+         * The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.
          */
     var HealthCheckIntervalSeconds: js.UndefOr[HealthCheckIntervalSeconds] = js.undefined
     /**
@@ -1043,7 +1043,7 @@ object GlobalAcceleratorNs extends js.Object {
   
   trait UpdateListenerRequest extends js.Object {
     /**
-         * Client affinity lets you direct all requests from a user to the same endpoint, if you have stateful applications, regardless of the source port and protocol of the user request. This gives you control over whether and how to maintain client affinity to a given endpoint. The default value is NONE.
+         * Client affinity lets you direct all requests from a user to the same endpoint, if you have stateful applications, regardless of the port and protocol of the client request. Clienty affinity gives you control over whether to always route each client to the same specific endpoint. AWS Global Accelerator uses a consistent-flow hashing algorithm to choose the optimal endpoint for a connection. If client affinity is NONE, Global Accelerator uses the "five-tuple" (5-tuple) properties—source IP address, source port, destination IP address, destination port, and protocol—to select the hash value, and then chooses the best endpoint. However, with this setting, if someone uses different ports to connect to Global Accelerator, their connections might not be always routed to the same endpoint because the hash value changes.  If you want a given client to always be routed to the same endpoint, set client affinity to SOURCE_IP instead. When you use the SOURCE_IP setting, Global Accelerator uses the "two-tuple" (2-tuple) properties— source (client) IP address and destination IP address—to select the hash value. The default value is NONE.
          */
     var ClientAffinity: js.UndefOr[ClientAffinity] = js.undefined
     /**

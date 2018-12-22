@@ -14,7 +14,7 @@ trait Tag
   def close(): scala.Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MTag(_prevProps: TagProps, prevState: TagState): scala.Unit = js.native
-  def handleIconClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def handleIconClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native
   def isPresetColor(): scala.Boolean = js.native
   def isPresetColor(color: java.lang.String): scala.Boolean = js.native
   def show(): scala.Unit = js.native

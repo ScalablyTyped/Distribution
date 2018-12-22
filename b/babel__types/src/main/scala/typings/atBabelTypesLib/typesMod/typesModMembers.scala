@@ -80,15 +80,15 @@ object typesModMembers extends js.Object {
   def booleanTypeAnnotation(): BooleanTypeAnnotation = js.native
   def breakStatement(): BreakStatement = js.native
   def breakStatement(label: Identifier): BreakStatement = js.native
-  def callExpression(callee: Expression, _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName]): CallExpression = js.native
+  def callExpression(callee: Expression, _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement]): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
     typeArguments: TypeParameterInstantiation
   ): CallExpression = js.native
@@ -108,12 +108,12 @@ object typesModMembers extends js.Object {
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: TypeParameterInstantiation
   ): CallExpression = js.native
@@ -133,7 +133,7 @@ object typesModMembers extends js.Object {
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: scala.Null,
     typeArguments: TypeParameterInstantiation
   ): CallExpression = js.native
@@ -318,10 +318,10 @@ object typesModMembers extends js.Object {
   ): DeclareExportAllDeclaration = js.native
   def declareExportDeclaration(): DeclareExportDeclaration = js.native
   def declareExportDeclaration(declaration: Flow): DeclareExportDeclaration = js.native
-  def declareExportDeclaration(declaration: Flow, specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier]): DeclareExportDeclaration = js.native
+  def declareExportDeclaration(declaration: Flow, specifiers: js.Array[ExportNamespaceSpecifier | ExportSpecifier]): DeclareExportDeclaration = js.native
   def declareExportDeclaration(
     declaration: Flow,
-    specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier],
+    specifiers: js.Array[ExportNamespaceSpecifier | ExportSpecifier],
     source: StringLiteral
   ): DeclareExportDeclaration = js.native
   def declareExportDeclaration(
@@ -339,10 +339,10 @@ object typesModMembers extends js.Object {
   def declareExportDeclaration(declaration: Flow, specifiers: scala.Null, source: StringLiteral): DeclareExportDeclaration = js.native
   def declareExportDeclaration(declaration: Flow, specifiers: scala.Null, source: StringLiteral, _default: scala.Boolean): DeclareExportDeclaration = js.native
   def declareExportDeclaration(declaration: Flow, specifiers: scala.Null, source: scala.Null, _default: scala.Boolean): DeclareExportDeclaration = js.native
-  def declareExportDeclaration(declaration: scala.Null, specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier]): DeclareExportDeclaration = js.native
+  def declareExportDeclaration(declaration: scala.Null, specifiers: js.Array[ExportNamespaceSpecifier | ExportSpecifier]): DeclareExportDeclaration = js.native
   def declareExportDeclaration(
     declaration: scala.Null,
-    specifiers: js.Array[ExportSpecifier | ExportNamespaceSpecifier],
+    specifiers: js.Array[ExportNamespaceSpecifier | ExportSpecifier],
     source: StringLiteral
   ): DeclareExportDeclaration = js.native
   def declareExportDeclaration(
@@ -419,16 +419,16 @@ object typesModMembers extends js.Object {
   def exportDefaultSpecifier(exported: Identifier): ExportDefaultSpecifier = js.native
   def exportNamedDeclaration(
     declaration: Declaration | js.UndefOr[scala.Nothing],
-    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier]
+    specifiers: js.Array[ExportDefaultSpecifier | ExportNamespaceSpecifier | ExportSpecifier]
   ): ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
     declaration: Declaration | js.UndefOr[scala.Nothing],
-    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier],
+    specifiers: js.Array[ExportDefaultSpecifier | ExportNamespaceSpecifier | ExportSpecifier],
     source: StringLiteral
   ): ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
     declaration: scala.Null,
-    specifiers: js.Array[ExportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier]
+    specifiers: js.Array[ExportDefaultSpecifier | ExportNamespaceSpecifier | ExportSpecifier]
   ): ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
     declaration: scala.Null,
@@ -1331,15 +1331,15 @@ object typesModMembers extends js.Object {
   ): MemberExpression = js.native
   def metaProperty(meta: Identifier, property: Identifier): MetaProperty = js.native
   def mixedTypeAnnotation(): MixedTypeAnnotation = js.native
-  def newExpression(callee: Expression, _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName]): NewExpression = js.native
+  def newExpression(callee: Expression, _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement]): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
     typeArguments: TypeParameterInstantiation
   ): NewExpression = js.native
@@ -1359,12 +1359,12 @@ object typesModMembers extends js.Object {
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: TypeParameterInstantiation
   ): NewExpression = js.native
@@ -1384,7 +1384,7 @@ object typesModMembers extends js.Object {
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: scala.Null,
     typeArguments: TypeParameterInstantiation
   ): NewExpression = js.native
@@ -1424,8 +1424,8 @@ object typesModMembers extends js.Object {
     returnType: js.UndefOr[TypeAnnotation | TSTypeAnnotation | Noop | scala.Null],
     typeParameters: js.UndefOr[TypeParameterDeclaration | TSTypeParameterDeclaration | Noop | scala.Null]
   ): ObjectMethod = js.native
-  def objectPattern(properties: js.Array[RestElement | ObjectProperty]): ObjectPattern = js.native
-  def objectPattern(properties: js.Array[RestElement | ObjectProperty], decorators: js.Array[Decorator]): ObjectPattern = js.native
+  def objectPattern(properties: js.Array[ObjectProperty | RestElement]): ObjectPattern = js.native
+  def objectPattern(properties: js.Array[ObjectProperty | RestElement], decorators: js.Array[Decorator]): ObjectPattern = js.native
   def objectPattern(
     properties: js.Array[RestElement | ObjectProperty],
     decorators: js.Array[Decorator],
@@ -1720,12 +1720,12 @@ object typesModMembers extends js.Object {
   def opaqueType(id: Identifier, typeParameters: scala.Null, supertype: scala.Null, impltype: FlowType): OpaqueType = js.native
   def optionalCallExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: scala.Boolean
   ): OptionalCallExpression = js.native
   def optionalCallExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
     optional: scala.Boolean,
     typeArguments: TypeParameterInstantiation
   ): OptionalCallExpression = js.native

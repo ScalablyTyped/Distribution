@@ -14,7 +14,7 @@ trait FeatherlightStatic
       Featherlight
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* $content */ featherlightLib.JQuery) | (/* $content */ java.lang.String) | (/* config */ Config), 
+      (/* config */ Config) | (/* $content */ featherlightLib.JQuery) | (/* $content */ java.lang.String), 
       Featherlight
     ] {
   var autoBind: scala.Boolean | java.lang.String = js.native

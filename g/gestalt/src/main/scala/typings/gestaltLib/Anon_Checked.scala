@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Checked extends js.Object {
   var checked: scala.Boolean
-  var event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLInputElement]
+  var event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLInputElement, reactLib.Event]
 }
 

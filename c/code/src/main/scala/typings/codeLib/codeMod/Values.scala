@@ -20,13 +20,13 @@ trait Values[T] extends js.Object {
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def contain(values: java.lang.String): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
-  def contain(values: js.Array[T | java.lang.String]): AssertionChain[T] = js.native
+  def contain(values: js.Array[java.lang.String | T]): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def contains(values: T): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def contains(values: java.lang.String): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
-  def contains(values: js.Array[T | java.lang.String]): AssertionChain[T] = js.native
+  def contains(values: js.Array[java.lang.String | T]): AssertionChain[T] = js.native
   /** Asserts that the reference value has a length property equal to zero or an object with no keys. */
   def empty(): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string) ends with the provided value. */
@@ -60,13 +60,13 @@ trait Values[T] extends js.Object {
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def include(values: java.lang.String): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
-  def include(values: js.Array[T | java.lang.String]): AssertionChain[T] = js.native
+  def include(values: js.Array[java.lang.String | T]): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def includes(values: T): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
   def includes(values: java.lang.String): AssertionChain[T] = js.native
   /** Asserts that the reference value (a string, array, or object) includes the provided values. */
-  def includes(values: js.Array[T | java.lang.String]): AssertionChain[T] = js.native
+  def includes(values: js.Array[java.lang.String | T]): AssertionChain[T] = js.native
   /** Asserts that the reference value has the provided instanceof value. */
   def instanceOf(`type`: js.Any): AssertionChain[T] = js.native
   /** Asserts that the reference value has the provided instanceof value. */

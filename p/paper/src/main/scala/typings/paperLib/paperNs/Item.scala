@@ -694,7 +694,10 @@ class Item () extends js.Object {
            */
   def off(
     `type`: java.lang.String,
-    callback: js.Function1[Event | MouseEvent | (/* event */ IFrameEvent), scala.Unit | scala.Boolean]
+    callback: js.Function1[
+      Event | (/* event */ IFrameEvent) | (/* event */ MouseEvent), 
+      scala.Boolean | scala.Unit
+    ]
   ): Item = js.native
   /**
            * Attach one or more event handlers to the item.
@@ -719,7 +722,10 @@ class Item () extends js.Object {
            */
   def on(
     `type`: java.lang.String,
-    callback: js.Function1[Event | MouseEvent | (/* event */ IFrameEvent), scala.Unit | scala.Boolean]
+    callback: js.Function1[
+      Event | (/* event */ IFrameEvent) | (/* event */ MouseEvent), 
+      scala.Boolean | scala.Unit
+    ]
   ): Item = js.native
   /**
            * The function to be called when the mouse clicks on the item. The function receives a MouseEvent object which contains information about the mouse event.

@@ -42,7 +42,7 @@ object defaultNs extends js.Object {
   val PY_WEEKDAYS: js.Array[scala.Double] = js.native
   def clone(date: rruleLib.distEsmDateutilMod.dateutilNs.Time): stdLib.Date = js.native
   def clone(date: stdLib.Date): stdLib.Date = js.native
-  def cloneDates(dates: js.Array[rruleLib.distEsmDateutilMod.dateutilNs.Time | stdLib.Date]): js.Array[stdLib.Date] = js.native
+  def cloneDates(dates: js.Array[stdLib.Date | rruleLib.distEsmDateutilMod.dateutilNs.Time]): js.Array[stdLib.Date] = js.native
   /**
        * @see: <http://docs.python.org/library/datetime.html#datetime.datetime.combine>
        */

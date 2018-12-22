@@ -34,7 +34,7 @@ org.scalablytyped.runtime.Instantiable1[/* options */ Options, ChartObject]
          * As a consequence, code that relies on the newly built Chart object should always run in the callback. Defining a chart.event.load handler is equivalent.
          */
 org.scalablytyped.runtime.Instantiable2[
-      (/* options */ Options) | (/* renderTo */ java.lang.String) | (/* renderTo */ stdLib.HTMLElement), 
+      (/* renderTo */ stdLib.HTMLElement) | (/* options */ Options) | (/* renderTo */ java.lang.String), 
       (/* callback */ js.Function1[/* chart */ ChartObject, scala.Unit]) | (/* options */ Options), 
       ChartObject
     ]
@@ -48,7 +48,7 @@ org.scalablytyped.runtime.Instantiable2[
          * As a consequence, code that relies on the newly built Chart object should always run in the callback. Defining a chart.event.load handler is equivalent.
          */
 org.scalablytyped.runtime.Instantiable3[
-      (/* renderTo */ java.lang.String) | (/* renderTo */ stdLib.HTMLElement), 
+      (/* renderTo */ stdLib.HTMLElement) | (/* renderTo */ java.lang.String), 
       /* options */ Options, 
       /* callback */ js.Function1[/* chart */ ChartObject, scala.Unit], 
       ChartObject

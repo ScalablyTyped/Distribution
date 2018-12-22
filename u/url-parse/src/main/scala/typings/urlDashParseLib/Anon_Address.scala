@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait Anon_Address
   extends org.scalablytyped.runtime.Instantiable2[
       /* address */ java.lang.String, 
-      (/* location */ java.lang.String) | (/* location */ js.Object), 
+      (/* location */ js.Object) | (/* location */ java.lang.String), 
       urlDashParseLib.urlDashParseMod.URLParse
     ]
      with org.scalablytyped.runtime.Instantiable1[/* address */ java.lang.String, urlDashParseLib.urlDashParseMod.URLParse]
      with org.scalablytyped.runtime.Instantiable3[
       /* address */ java.lang.String, 
-      (/* location */ java.lang.String) | (/* location */ js.Object), 
+      (/* location */ js.Object) | (/* location */ java.lang.String), 
       (/* parser */ scala.Boolean) | (/* parser */ urlDashParseLib.urlDashParseMod.URLParseNs.QueryParser), 
       urlDashParseLib.urlDashParseMod.URLParse
     ] {

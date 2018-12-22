@@ -685,7 +685,7 @@ object ComprehendNs extends js.Object {
          */
     var Message: js.UndefOr[AnyLengthString] = js.undefined
     /**
-         * The status of the document classifier. The the status is TRAINED the classifier is ready to use. If the status is FAILED you can see additional information about why the classifier wasn't trained in the Message field.
+         * The status of the document classifier. If the status is TRAINED the classifier is ready to use. If the status is FAILED you can see additional information about why the classifier wasn't trained in the Message field.
          */
     var Status: js.UndefOr[ModelStatus] = js.undefined
     /**
@@ -1771,6 +1771,28 @@ object ComprehendNs extends js.Object {
   }
   
   
+  trait StopTrainingDocumentClassifierRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) that identifies the document classifier currently being trained.
+         */
+    var DocumentClassifierArn: DocumentClassifierArn
+  }
+  
+  
+  trait StopTrainingDocumentClassifierResponse extends js.Object
+  
+  
+  trait StopTrainingEntityRecognizerRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) that identifies the entity recognizer currently being trained.
+         */
+    var EntityRecognizerArn: EntityRecognizerArn
+  }
+  
+  
+  trait StopTrainingEntityRecognizerResponse extends js.Object
+  
+  
   trait SyntaxToken extends js.Object {
     /**
          * The zero-based offset from the beginning of the source text to the first character in the word.
@@ -2005,11 +2027,11 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchDetectSyntaxResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
        */
     def createDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[CreateDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
        */
     def createDocumentClassifier(
       callback: js.Function2[
@@ -2019,11 +2041,11 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
        */
     def createDocumentClassifier(params: CreateDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[CreateDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
        */
     def createDocumentClassifier(
       params: CreateDocumentClassifierRequest,
@@ -3019,6 +3041,64 @@ object ComprehendNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopSentimentDetectionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
+       */
+    def stopTrainingDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[StopTrainingDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
+       */
+    def stopTrainingDocumentClassifier(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StopTrainingDocumentClassifierResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StopTrainingDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
+       */
+    def stopTrainingDocumentClassifier(params: StopTrainingDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[StopTrainingDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
+       */
+    def stopTrainingDocumentClassifier(
+      params: StopTrainingDocumentClassifierRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StopTrainingDocumentClassifierResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StopTrainingDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
+       */
+    def stopTrainingEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[StopTrainingEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
+       */
+    def stopTrainingEntityRecognizer(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StopTrainingEntityRecognizerResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StopTrainingEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
+       */
+    def stopTrainingEntityRecognizer(params: StopTrainingEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[StopTrainingEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops an entity recognizer training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and putted into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body.
+       */
+    def stopTrainingEntityRecognizer(
+      params: StopTrainingEntityRecognizerRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StopTrainingEntityRecognizerResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StopTrainingEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
   val TypesNs: this.type = js.native
@@ -3058,7 +3138,7 @@ object ComprehendNs extends js.Object {
   type ListOfKeyPhrases = js.Array[KeyPhrase]
   type ListOfSyntaxTokens = js.Array[SyntaxToken]
   type MaxResultsInteger = scala.Double
-  type ModelStatus = awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED | awsDashSdkLib.awsDashSdkLibStrings.TRAINING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.IN_ERROR | awsDashSdkLib.awsDashSdkLibStrings.TRAINED | java.lang.String
+  type ModelStatus = awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED | awsDashSdkLib.awsDashSdkLibStrings.TRAINING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.STOP_REQUESTED | awsDashSdkLib.awsDashSdkLibStrings.STOPPED | awsDashSdkLib.awsDashSdkLibStrings.IN_ERROR | awsDashSdkLib.awsDashSdkLibStrings.TRAINED | java.lang.String
   type NumberOfTopicsInteger = scala.Double
   type PartOfSpeechTagType = awsDashSdkLib.awsDashSdkLibStrings.ADJ | awsDashSdkLib.awsDashSdkLibStrings.ADP | awsDashSdkLib.awsDashSdkLibStrings.ADV | awsDashSdkLib.awsDashSdkLibStrings.AUX | awsDashSdkLib.awsDashSdkLibStrings.CONJ | awsDashSdkLib.awsDashSdkLibStrings.CCONJ | awsDashSdkLib.awsDashSdkLibStrings.DET | awsDashSdkLib.awsDashSdkLibStrings.INTJ | awsDashSdkLib.awsDashSdkLibStrings.NOUN | awsDashSdkLib.awsDashSdkLibStrings.NUM | awsDashSdkLib.awsDashSdkLibStrings.O | awsDashSdkLib.awsDashSdkLibStrings.PART | awsDashSdkLib.awsDashSdkLibStrings.PRON | awsDashSdkLib.awsDashSdkLibStrings.PROPN | awsDashSdkLib.awsDashSdkLibStrings.PUNCT | awsDashSdkLib.awsDashSdkLibStrings.SCONJ | awsDashSdkLib.awsDashSdkLibStrings.SYM | awsDashSdkLib.awsDashSdkLibStrings.VERB | java.lang.String
   type S3Uri = java.lang.String

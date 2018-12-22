@@ -11,10 +11,10 @@ class QueryDef protected () extends js.Object {
   var CacheSize: scala.Double = js.native
   var Connect: java.lang.String = js.native
   var `DAO.QueryDef_typekey`: QueryDef = js.native
-  val DateCreated: stdLib.VarDate = js.native
+  val DateCreated: activexDashInteropLib.VarDate = js.native
   @JSName("Fields")
   val Fields_Original: Fields = js.native
-  val LastUpdated: stdLib.VarDate = js.native
+  val LastUpdated: activexDashInteropLib.VarDate = js.native
   var MaxRecords: scala.Double = js.native
   var Name: java.lang.String = js.native
   var ODBCTimeout: scala.Double = js.native

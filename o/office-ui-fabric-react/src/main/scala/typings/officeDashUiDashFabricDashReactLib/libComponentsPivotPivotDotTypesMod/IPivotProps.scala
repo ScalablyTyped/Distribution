@@ -53,7 +53,9 @@ trait IPivotProps
   var onLinkClick: js.UndefOr[
     js.Function2[
       /* item */ js.UndefOr[officeDashUiDashFabricDashReactLib.libComponentsPivotPivotItemMod.PivotItem], 
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+      ], 
       scala.Unit
     ]
   ] = js.undefined

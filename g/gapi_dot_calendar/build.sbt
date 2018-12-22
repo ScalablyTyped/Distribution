@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_calendar"
-version := "3.0-dt-20180910Z-3b4eb1"
+version := "3.0-dt-20180528Z-0a8477"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "gapi" % "0.0-dt-20181213Z-c35bb0",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
+  "org.scalablytyped" %%% "gapi" % "0.0-dt-20181212Z-9551b3",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

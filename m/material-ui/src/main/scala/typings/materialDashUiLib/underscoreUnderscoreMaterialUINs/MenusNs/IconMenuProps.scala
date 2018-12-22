@@ -31,17 +31,20 @@ trait IconMenuProps extends js.Object {
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
       /* itemValue */ js.Any | js.Array[_], 
       scala.Unit
     ]
   ] = js.undefined
   var onClick: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
+      scala.Unit
+    ]
   ] = js.undefined
   var onItemClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
       /* item */ MenuItem, 
       scala.Unit
     ]

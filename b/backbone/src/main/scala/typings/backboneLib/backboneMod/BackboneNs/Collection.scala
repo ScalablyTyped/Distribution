@@ -151,8 +151,8 @@ trait Collection[TModel /* <: Model */] extends ModelBase {
   def initial(): TModel = js.native
   def initial(n: scala.Double): js.Array[TModel] = js.native
   def initialize(): scala.Unit = js.native
-  def initialize(models: js.Array[TModel | js.Object]): scala.Unit = js.native
-  def initialize(models: js.Array[TModel | js.Object], options: js.Any): scala.Unit = js.native
+  def initialize(models: js.Array[js.Object | TModel]): scala.Unit = js.native
+  def initialize(models: js.Array[js.Object | TModel], options: js.Any): scala.Unit = js.native
   def inject[TResult](iterator: underscoreLib.underscoreMod.underscoreNs.MemoIterator[TModel, TResult]): TResult = js.native
   def inject[TResult](iterator: underscoreLib.underscoreMod.underscoreNs.MemoIterator[TModel, TResult], memo: TResult): TResult = js.native
   def inject[TResult](

@@ -65,7 +65,7 @@ object realpathNs extends js.Object {
     options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -110,7 +110,7 @@ object realpathNs extends js.Object {
     options: scala.Null,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native

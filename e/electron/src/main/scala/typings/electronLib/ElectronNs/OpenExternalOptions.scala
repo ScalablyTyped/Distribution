@@ -10,6 +10,10 @@ trait OpenExternalOptions extends js.Object {
   /**
        * true to bring the opened application to the foreground. The default is true.
        */
-  var activate: scala.Boolean
+  var activate: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+       * The working directory.
+       */
+  var workingDirectory: js.UndefOr[java.lang.String] = js.undefined
 }
 

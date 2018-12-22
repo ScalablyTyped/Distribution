@@ -52,7 +52,7 @@ trait StrictCheckboxProps extends js.Object {
      */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
       /* data */ CheckboxProps, 
       scala.Unit
     ]
@@ -65,7 +65,7 @@ trait StrictCheckboxProps extends js.Object {
      */
   var onMouseDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
       /* data */ CheckboxProps, 
       scala.Unit
     ]
@@ -78,7 +78,7 @@ trait StrictCheckboxProps extends js.Object {
      */
   var onMouseUp: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
       /* data */ CheckboxProps, 
       scala.Unit
     ]

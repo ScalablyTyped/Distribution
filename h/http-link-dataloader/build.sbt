@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "http-link-dataloader"
-version := "0.1.6-ef3665"
+version := "0.1.6-530a10"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.4-b0ec7c",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.0.26-062b35",
-  "org.scalablytyped" %%% "cross-fetch" % "3.0.0-1ff70b",
-  "org.scalablytyped" %%% "dataloader" % "1.4.0-63ae76",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-6c0a30",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-d32d36",
-  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
-  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-962402",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.11-76cd5d")
+  "org.scalablytyped" %%% "apollo-link" % "1.2.6-5dd416",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-084adf",
+  "org.scalablytyped" %%% "cross-fetch" % "3.0.0-c28eb4",
+  "org.scalablytyped" %%% "dataloader" % "1.4.0-565b78",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181016Z-3245d4",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181119Z-d6edb6",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
+  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-76c70f",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.13-850d40")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

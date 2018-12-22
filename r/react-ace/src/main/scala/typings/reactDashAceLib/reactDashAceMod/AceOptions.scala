@@ -14,7 +14,6 @@ trait AceOptions extends js.Object {
   var cursorStyle: js.UndefOr[
     reactDashAceLib.reactDashAceLibStrings.ace | reactDashAceLib.reactDashAceLibStrings.slim | reactDashAceLib.reactDashAceLibStrings.smooth | reactDashAceLib.reactDashAceLibStrings.wide
   ] = js.undefined
-  var debounceChangePeriod: js.UndefOr[scala.Double] = js.undefined
   var displayIndentGuides: js.UndefOr[scala.Boolean] = js.undefined
   var dragDelay: js.UndefOr[scala.Double] = js.undefined
   var dragEnabled: js.UndefOr[scala.Boolean] = js.undefined

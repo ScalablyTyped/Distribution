@@ -25,7 +25,7 @@ trait IDocumentCardProps
        */
   var onClick: js.UndefOr[
     js.Function1[
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
       scala.Unit
     ]
   ] = js.undefined

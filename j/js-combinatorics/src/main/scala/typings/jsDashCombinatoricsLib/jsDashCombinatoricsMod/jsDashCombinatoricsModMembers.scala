@@ -29,6 +29,20 @@ object jsDashCombinatoricsModMembers extends js.Object {
   	 * When n is ommited, the length of the array is used.
   	 */
   def baseN[T](a: js.Array[T], n: scala.Double): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IPredictableGenerator[js.Array[T]] = js.native
+  /**
+  	 * Generates the combination of array with n elements, which
+  	 * also supports larger sets of elements.
+  	 * When n is ommited, the length of the array is used.
+  	 * Somewhat slower than combination()
+  	 */
+  def bigCombination[T](a: js.Array[T]): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
+  /**
+  	 * Generates the combination of array with n elements, which
+  	 * also supports larger sets of elements.
+  	 * When n is ommited, the length of the array is used.
+  	 * Somewhat slower than combination()
+  	 */
+  def bigCombination[T](a: js.Array[T], n: scala.Double): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.IGenerator[js.Array[T]] = js.native
   def cartesianProduct(a: js.Array[_]*): jsDashCombinatoricsLib.jsDashCombinatoricsMod.underscoreUnderscoreCombinatoricsNs.ICartesianProductGenerator[js.Array[_]] = js.native
   /**
   	 * Generates the cartesian product of the arrays. All arguments must be arrays with more than one element.

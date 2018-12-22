@@ -16,7 +16,7 @@ trait EmitterConstructor
      with org.scalablytyped.runtime.Instantiable1[/* pattern */ java.lang.String, Emitter]
      with org.scalablytyped.runtime.Instantiable2[
       /* pattern */ java.lang.String, 
-      (/* optons */ Options) | (/* callback */ js.Function2[/* error */ js.Any, /* matches */ js.Array[java.lang.String], scala.Unit]), 
+      (/* callback */ js.Function2[/* error */ js.Any, /* matches */ js.Array[java.lang.String], scala.Unit]) | (/* optons */ Options), 
       Emitter
     ]
 

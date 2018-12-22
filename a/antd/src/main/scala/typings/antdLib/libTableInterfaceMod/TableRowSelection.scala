@@ -15,7 +15,7 @@ trait TableRowSelection[T] extends js.Object {
   var onChange: js.UndefOr[
     js.Function2[
       /* selectedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double], 
-      /* selectedRows */ js.Array[js.Object], 
+      /* selectedRows */ js.Array[T], 
       scala.Unit
     ]
   ] = js.undefined
@@ -23,17 +23,22 @@ trait TableRowSelection[T] extends js.Object {
   var onSelectAll: js.UndefOr[
     js.Function3[
       /* selected */ scala.Boolean, 
-      /* selectedRows */ js.Array[js.Object], 
-      /* changeRows */ js.Array[js.Object], 
+      /* selectedRows */ js.Array[T], 
+      /* changeRows */ js.Array[T], 
       scala.Unit
     ]
   ] = js.undefined
-  var onSelectInvert: js.UndefOr[js.Function1[/* selectedRows */ js.Array[js.Object], scala.Unit]] = js.undefined
+  var onSelectInvert: js.UndefOr[
+    js.Function1[
+      /* selectedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double], 
+      scala.Unit
+    ]
+  ] = js.undefined
   var onSelectMultiple: js.UndefOr[
     js.Function3[
       /* selected */ scala.Boolean, 
-      /* selectedRows */ js.Array[js.Object], 
-      /* changeRows */ js.Array[js.Object], 
+      /* selectedRows */ js.Array[T], 
+      /* changeRows */ js.Array[T], 
       scala.Unit
     ]
   ] = js.undefined

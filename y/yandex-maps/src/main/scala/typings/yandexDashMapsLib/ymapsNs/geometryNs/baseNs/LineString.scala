@@ -31,17 +31,17 @@ class LineString ()
     priority: scala.Double
   ): this.type = js.native
   def remove(
-    types: js.Array[java.lang.String | js.Array[java.lang.String]],
-    callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.ymapsNs.IEvent, scala.Unit]
+    types: js.Array[js.Array[java.lang.String] | java.lang.String],
+    callback: js.Function1[yandexDashMapsLib.ymapsNs.IEvent | js.Object, scala.Unit]
   ): this.type = js.native
   def remove(
-    types: js.Array[java.lang.String | js.Array[java.lang.String]],
-    callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.ymapsNs.IEvent, scala.Unit],
+    types: js.Array[js.Array[java.lang.String] | java.lang.String],
+    callback: js.Function1[yandexDashMapsLib.ymapsNs.IEvent | js.Object, scala.Unit],
     context: js.Object
   ): this.type = js.native
   def remove(
-    types: js.Array[java.lang.String | js.Array[java.lang.String]],
-    callback: js.Function1[/* event */ js.Object | yandexDashMapsLib.ymapsNs.IEvent, scala.Unit],
+    types: js.Array[js.Array[java.lang.String] | java.lang.String],
+    callback: js.Function1[yandexDashMapsLib.ymapsNs.IEvent | js.Object, scala.Unit],
     context: js.Object,
     priority: scala.Double
   ): this.type = js.native

@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait TouchEvent[T] extends SyntheticEvent[T] {
+trait TouchEvent[T]
+  extends BaseSyntheticEvent[reactLib.NativeTouchEvent, reactLib.EventTarget with T, reactLib.EventTarget] {
   var altKey: scala.Boolean
   var changedTouches: TouchList
   var ctrlKey: scala.Boolean
   var metaKey: scala.Boolean
-  @JSName("nativeEvent")
-  var nativeEvent_TouchEvent: reactLib.NativeTouchEvent
   var shiftKey: scala.Boolean
   var targetTouches: TouchList
   var touches: TouchList

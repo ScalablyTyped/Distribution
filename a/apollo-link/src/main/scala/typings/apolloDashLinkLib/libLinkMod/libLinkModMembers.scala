@@ -17,7 +17,11 @@ object libLinkModMembers extends js.Object {
   ): ApolloLink = js.native
   def empty(): ApolloLink = js.native
   def execute(link: ApolloLink, operation: apolloDashLinkLib.libTypesMod.GraphQLRequest): zenDashObservableDashTsLib.libZenObservableMod.Observable[
-    apolloDashLinkLib.libTypesMod.FetchResult[stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
+    apolloDashLinkLib.libTypesMod.FetchResult[
+      org.scalablytyped.runtime.StringDictionary[_], 
+      stdLib.Record[java.lang.String, _], 
+      stdLib.Record[java.lang.String, _]
+    ]
   ] = js.native
   def from(links: js.Array[ApolloLink]): ApolloLink = js.native
   def split(

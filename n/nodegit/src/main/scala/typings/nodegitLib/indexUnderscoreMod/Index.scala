@@ -31,6 +31,7 @@ class Index () extends js.Object {
   def entryCount(): scala.Double = js.native
   def findPrefix(atPos: scala.Double, prefix: java.lang.String): scala.Double = js.native
   def getByIndex(n: scala.Double): nodegitLib.indexDashEntryMod.IndexEntry = js.native
+  def getByPath(path: java.lang.String): nodegitLib.indexDashEntryMod.IndexEntry = js.native
   def getByPath(path: java.lang.String, stage: scala.Double): nodegitLib.indexDashEntryMod.IndexEntry = js.native
   def hasConflicts(): scala.Boolean = js.native
   def owner(): nodegitLib.repositoryMod.Repository = js.native

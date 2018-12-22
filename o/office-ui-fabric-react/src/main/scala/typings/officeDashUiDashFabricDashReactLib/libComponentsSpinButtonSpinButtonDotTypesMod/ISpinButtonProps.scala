@@ -148,7 +148,7 @@ trait ISpinButtonProps extends js.Object {
   var onValidate: js.UndefOr[
     js.Function2[
       /* value */ java.lang.String, 
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement]], 
+      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
       java.lang.String | scala.Unit
     ]
   ] = js.undefined

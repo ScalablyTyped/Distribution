@@ -12,6 +12,7 @@ trait TransactionRecord extends Record {
   var created_at: java.lang.String = js.native
   @JSName("effects")
   var effects_Original: CallCollectionFunction[EffectRecord] = js.native
+  var envelope: js.Any = js.native
   var envelope_xdr: java.lang.String = js.native
   var fee_paid: scala.Double = js.native
   var hash: java.lang.String = js.native
@@ -21,6 +22,7 @@ trait TransactionRecord extends Record {
   var ledger_attr: scala.Double = js.native
   var max_fee: scala.Double = js.native
   var memo: java.lang.String = js.native
+  var memo_type: js.Any = js.native
   var operation_count: scala.Double = js.native
   @JSName("operations")
   var operations_Original: CallCollectionFunction[OperationRecord] = js.native

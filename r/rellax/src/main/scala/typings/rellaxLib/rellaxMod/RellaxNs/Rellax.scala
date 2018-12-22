@@ -19,7 +19,7 @@ org.scalablytyped.runtime.Instantiable0[RellaxInstance]
          * @param options Options
          */
 org.scalablytyped.runtime.Instantiable2[
-      (/* el */ java.lang.String) | (/* el */ stdLib.Element), 
+      (/* el */ stdLib.Element) | (/* el */ java.lang.String), 
       /* options */ RellaxOptions, 
       RellaxInstance
     ]
@@ -28,7 +28,7 @@ org.scalablytyped.runtime.Instantiable2[
          * @param el Single element or string with selector of elements
          * @param options Options
          */
-org.scalablytyped.runtime.Instantiable1[(/* el */ java.lang.String) | (/* el */ stdLib.Element), RellaxInstance] {
+org.scalablytyped.runtime.Instantiable1[(/* el */ stdLib.Element) | (/* el */ java.lang.String), RellaxInstance] {
   /**
            * Inits and starts the Parallax animations
            * @param el Single element or string with selector of elements

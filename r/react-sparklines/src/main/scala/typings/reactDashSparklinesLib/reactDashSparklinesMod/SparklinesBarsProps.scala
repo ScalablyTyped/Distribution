@@ -13,7 +13,7 @@ trait SparklinesBarsProps extends js.Object {
   var onMouseMove: js.UndefOr[
     js.Function2[
       /* p */ Point, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.reactMod.ReactNs.ReactSVGElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.reactMod.ReactNs.ReactSVGElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
