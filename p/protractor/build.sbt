@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "protractor"
-version := "5.4.1-2efab2"
+version := "5.4.2-2e401a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

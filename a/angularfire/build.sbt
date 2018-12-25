@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angularfire"
-version := "0.8.2-dt-20181124Z-63fbe2"
+version := "0.8.2-dt-20181124Z-871ad6"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-190fe4",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-a51b52",
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-96442c",
   "org.scalablytyped" %%% "firebase" % "5.7.1-4cb4d6",
   "org.scalablytyped" %%% "firebase__app" % "0.3.5-35017a",

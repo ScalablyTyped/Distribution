@@ -15,6 +15,6 @@ class Tag ()
 object Tag extends js.Object {
   var CheckableTag: org.scalablytyped.runtime.Instantiable0[antdLib.libTagCheckableTagMod.default] = js.native
   var defaultProps: antdLib.Anon_PrefixClsClosable = js.native
-  def getDerivedStateFromProps(nextProps: antdLib.libTagMod.TagProps, state: antdLib.libTagMod.TagState): stdLib.Partial[antdLib.libTagMod.TagState] | scala.Null = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libTagMod.TagProps): antdLib.Anon_Visible | scala.Null = js.native
 }
 

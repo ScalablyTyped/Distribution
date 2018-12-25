@@ -12,6 +12,11 @@ trait OptionsLayout extends js.Object {
        */
   var backgroundColor: js.UndefOr[Color] = js.undefined
   /**
+       * Set background color only for components, helps reduce overdraw if background color is set in default options.
+       * #### (Android specific)
+       */
+  var componentBackgroundColor: js.UndefOr[Color] = js.undefined
+  /**
        * Set the allowed orientations
        */
   var orientation: js.UndefOr[js.Array[LayoutOrientation]] = js.undefined

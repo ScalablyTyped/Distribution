@@ -26,6 +26,13 @@ class Query () extends js.Object {
   def search(searchKey: js.Any, fieldNames: js.Any): Query = js.native
   def search(searchKey: js.Any, fieldNames: js.Any, operator: java.lang.String): Query = js.native
   def search(searchKey: js.Any, fieldNames: js.Any, operator: java.lang.String, ignoreCase: scala.Boolean): Query = js.native
+  def search(
+    searchKey: js.Any,
+    fieldNames: js.Any,
+    operator: java.lang.String,
+    ignoreCase: scala.Boolean,
+    ignoreAccent: scala.Boolean
+  ): Query = js.native
   def select(fieldNames: js.Any): Query = js.native
   def skip(nos: scala.Double): Query = js.native
   def sortBy(fieldName: java.lang.String): Query = js.native
@@ -36,6 +43,13 @@ class Query () extends js.Object {
   def using(dataManager: DataManager): Query = js.native
   def where(fieldName: java.lang.String, operator: FilterOperators, value: js.Any): Query = js.native
   def where(fieldName: java.lang.String, operator: FilterOperators, value: js.Any, ignoreCase: scala.Boolean): Query = js.native
+  def where(
+    fieldName: java.lang.String,
+    operator: FilterOperators,
+    value: js.Any,
+    ignoreCase: scala.Boolean,
+    ignoreAccent: scala.Boolean
+  ): Query = js.native
   def where(predicate: Predicate): Query = js.native
 }
 

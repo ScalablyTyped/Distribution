@@ -26,7 +26,7 @@ trait Options extends js.Object {
     ]
   ] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
-  var message: js.UndefOr[java.lang.String] = js.undefined
+  var message: js.UndefOr[java.lang.String | nodeLib.Buffer | Message] = js.undefined
   var onLimitReached: js.UndefOr[
     js.Function3[
       /* req */ expressLib.expressMod.eNs.Request, 

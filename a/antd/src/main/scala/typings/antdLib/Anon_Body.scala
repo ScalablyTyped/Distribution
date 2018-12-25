@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Body extends js.Object {
   var body: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]
   var className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
-  var dataSource: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]]
+  var dataSource: propDashTypesLib.propDashTypesMod.Validator[js.Array[antdLib.libTransferMod.TransferItem]]
   var disabled: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   var filterOption: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]
   var footer: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]

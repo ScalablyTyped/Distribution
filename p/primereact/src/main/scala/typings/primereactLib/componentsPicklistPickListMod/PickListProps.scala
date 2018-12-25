@@ -25,6 +25,7 @@ trait PickListProps extends js.Object {
   var sourceHeader: js.UndefOr[js.Any] = js.undefined
   var sourceStyle: js.UndefOr[js.Object] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var tabIndex: js.UndefOr[java.lang.String] = js.undefined
   var target: js.UndefOr[js.Array[_]] = js.undefined
   var targetHeader: js.UndefOr[js.Any] = js.undefined
   var targetStyle: js.UndefOr[js.Object] = js.undefined

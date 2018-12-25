@@ -26,7 +26,9 @@ trait DatePickerSettings extends js.Object {
   var open: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
   var select: js.UndefOr[js.Function2[/* e */ js.Any, /* type */ java.lang.String, _]] = js.undefined
   var selectOtherMonths: js.UndefOr[scala.Boolean] = js.undefined
+  var showOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   var showOtherMonths: js.UndefOr[scala.Boolean] = js.undefined
+  var showRightIcon: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[java.lang.String] = js.undefined
   var uiLibrary: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined

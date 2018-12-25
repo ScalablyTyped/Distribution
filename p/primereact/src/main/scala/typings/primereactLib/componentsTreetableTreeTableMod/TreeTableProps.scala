@@ -12,6 +12,7 @@ trait TreeTableProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var columnResizeMode: js.UndefOr[java.lang.String] = js.undefined
   var contextMenuSelectionKey: js.UndefOr[js.Any] = js.undefined
+  var currentPageReportTemplate: js.UndefOr[java.lang.String] = js.undefined
   var defaultSortOrder: js.UndefOr[scala.Double] = js.undefined
   var emptyMessage: js.UndefOr[java.lang.String] = js.undefined
   var expandedKeys: js.UndefOr[js.Any] = js.undefined
@@ -63,6 +64,7 @@ trait TreeTableProps extends js.Object {
   var sortMode: js.UndefOr[java.lang.String] = js.undefined
   var sortOrder: js.UndefOr[scala.Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var tabIndex: js.UndefOr[java.lang.String] = js.undefined
   var tableClassName: js.UndefOr[java.lang.String] = js.undefined
   var tableStyle: js.UndefOr[js.Object] = js.undefined
   var totalRecords: js.UndefOr[scala.Double] = js.undefined

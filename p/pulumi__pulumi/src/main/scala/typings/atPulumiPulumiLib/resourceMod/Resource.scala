@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Resource protected () extends js.Object {
   /**
-       * Creates and registers a new resource object.  t is the fully qualified type token and name is
-       * the "name" part to use in creating a stable and globally unique URN for the object.
+       * Creates and registers a new resource object.  [t] is the fully qualified type token and
+       * [name] is the "name" part to use in creating a stable and globally unique URN for the object.
        * dependsOn is an optional list of other resources that this resource depends on, controlling
        * the order in which we perform resource operations.
        *
@@ -22,8 +22,8 @@ abstract class Resource protected () extends js.Object {
        */
   def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean) = this()
   /**
-       * Creates and registers a new resource object.  t is the fully qualified type token and name is
-       * the "name" part to use in creating a stable and globally unique URN for the object.
+       * Creates and registers a new resource object.  [t] is the fully qualified type token and
+       * [name] is the "name" part to use in creating a stable and globally unique URN for the object.
        * dependsOn is an optional list of other resources that this resource depends on, controlling
        * the order in which we perform resource operations.
        *
@@ -35,8 +35,8 @@ abstract class Resource protected () extends js.Object {
        */
   def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean, props: Inputs) = this()
   /**
-       * Creates and registers a new resource object.  t is the fully qualified type token and name is
-       * the "name" part to use in creating a stable and globally unique URN for the object.
+       * Creates and registers a new resource object.  [t] is the fully qualified type token and
+       * [name] is the "name" part to use in creating a stable and globally unique URN for the object.
        * dependsOn is an optional list of other resources that this resource depends on, controlling
        * the order in which we perform resource operations.
        *

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sortablejs"
-version := "1.7-dt-20181220Z-923569"
+version := "1.7-dt-20181221Z-923569"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -37,6 +37,10 @@ object AnimatedNs extends js.Object {
     extends reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedMultiplication
   
   @js.native
+  class AnimatedSubtraction ()
+    extends reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedSubtraction
+  
+  @js.native
   class AnimatedWithChildren ()
     extends reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedWithChildren
   
@@ -108,6 +112,10 @@ object AnimatedNs extends js.Object {
     time: scala.Double,
     animations: js.Array[reactDashNativeLib.reactDashNativeMod.AnimatedNs.CompositeAnimation]
   ): reactDashNativeLib.reactDashNativeMod.AnimatedNs.CompositeAnimation = js.native
+  def subtract(
+    a: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Animated,
+    b: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Animated
+  ): reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedSubtraction = js.native
   def timing(
     value: reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValueXY,
     config: reactDashNativeLib.reactDashNativeMod.AnimatedNs.TimingAnimationConfig

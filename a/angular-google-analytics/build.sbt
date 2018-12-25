@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular-google-analytics"
-version := "v1.1.8-dt-20180214Z-e4fef0"
+version := "v1.1.8-dt-20180214Z-cc1262"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-190fe4",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-a51b52",
   "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

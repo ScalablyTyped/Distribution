@@ -25,6 +25,9 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait black extends js.Object
   
   @js.native
+  sealed trait bottom extends js.Object
+  
+  @js.native
   sealed trait center extends js.Object
   
   @js.native
@@ -55,6 +58,9 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait leading extends js.Object
   
   @js.native
+  sealed trait left extends js.Object
+  
+  @js.native
   sealed trait light extends js.Object
   
   @js.native
@@ -64,10 +70,16 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait portrait extends js.Object
   
   @js.native
+  sealed trait right extends js.Object
+  
+  @js.native
   sealed trait selected extends js.Object
   
   @js.native
   sealed trait showWhenActive extends js.Object
+  
+  @js.native
+  sealed trait top extends js.Object
   
   @js.native
   sealed trait trailing extends js.Object
@@ -81,6 +93,7 @@ object reactDashNativeDashNavigationLibStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   def bezel: bezel = "bezel".asInstanceOf[bezel]
   def black: black = "black".asInstanceOf[black]
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
   def center: center = "center".asInstanceOf[center]
   def dark: dark = "dark".asInstanceOf[dark]
   def decelerate: decelerate = "decelerate".asInstanceOf[decelerate]
@@ -91,11 +104,14 @@ object reactDashNativeDashNavigationLibStrings {
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   def leading: leading = "leading".asInstanceOf[leading]
+  def left: left = "left".asInstanceOf[left]
   def light: light = "light".asInstanceOf[light]
   def overlay: overlay = "overlay".asInstanceOf[overlay]
   def portrait: portrait = "portrait".asInstanceOf[portrait]
+  def right: right = "right".asInstanceOf[right]
   def selected: selected = "selected".asInstanceOf[selected]
   def showWhenActive: showWhenActive = "showWhenActive".asInstanceOf[showWhenActive]
+  def top: top = "top".asInstanceOf[top]
   def trailing: trailing = "trailing".asInstanceOf[trailing]
   def visible: visible = "visible".asInstanceOf[visible]
 }

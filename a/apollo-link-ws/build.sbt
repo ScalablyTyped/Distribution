@@ -1,15 +1,16 @@
 organization := "org.scalablytyped"
 name := "apollo-link-ws"
-version := "1.0.12-f58efe"
+version := "1.0.12-eba05e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.6-5dd416",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-084adf",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.6-d4b20d",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-52c89b",
   "org.scalablytyped" %%% "backo2" % "1.0-dt-20180601Z-f25749",
   "org.scalablytyped" %%% "eventemitter3" % "3.1.0-50d79a",
+  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-904c02",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20181016Z-3245d4",
   "org.scalablytyped" %%% "iterall" % "1.2.2-b891ad",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rx-jquery"
-version := "0.0-unknown-dt-20180214Z-45d0c6"
+version := "0.0-unknown-dt-20180214Z-0ed148"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-f533e1",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-c4ac04",
   "org.scalablytyped" %%% "rx" % "4.1-dt-20180214Z-01fdde",
   "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180214Z-88559c",
   "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180214Z-75edf5",

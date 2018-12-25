@@ -23,6 +23,7 @@ trait Tree
   def expand(node: js.Any, cascade: scala.Boolean): Tree = js.native
   def expandAll(): Tree = js.native
   def getAll(): js.Array[_] = js.native
+  //parents(id: string): Array<string>;
   def getCheckedNodes(): js.Array[java.lang.String] = js.native
   def getChildren(node: js.Any): js.Array[_] = js.native
   def getChildren(node: js.Any, cascade: scala.Boolean): js.Array[_] = js.native

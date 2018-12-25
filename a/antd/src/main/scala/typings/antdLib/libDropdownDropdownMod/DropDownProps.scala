@@ -18,9 +18,7 @@ trait DropDownProps extends js.Object {
   var overlay: reactLib.reactMod.ReactNs.ReactNode
   var overlayClassName: js.UndefOr[java.lang.String] = js.undefined
   var overlayStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var placement: js.UndefOr[
-    antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomCenter | antdLib.antdLibStrings.bottomRight
-  ] = js.undefined
+  var placement: js.UndefOr[Placement] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
   var trigger: js.UndefOr[

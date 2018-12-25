@@ -28,7 +28,9 @@ trait ColumnSettings extends js.Object {
   /**
            * Class to assign to each cell in the column. Since: 1.10
            */
-  var data: js.UndefOr[scala.Double | java.lang.String | ObjectColumnData | FunctionColumnData] = js.undefined
+  var data: js.UndefOr[
+    scala.Double | java.lang.String | ObjectColumnData | FunctionColumnData | scala.Null
+  ] = js.undefined
   /**
            * Set default, static, content for a column. Since: 1.10
            */

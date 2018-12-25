@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 
 trait TextProps extends js.Object {
   /** Default: 'Loading...' */
-  var loadingText: java.lang.String
+  var loadingText: reactLib.reactMod.ReactNs.ReactNode
   /** Default: 'Next' */
-  var nextText: java.lang.String
+  var nextText: reactLib.reactMod.ReactNs.ReactNode
   /** Default: 'No rows found' */
-  var noDataText: java.lang.String
+  var noDataText: reactLib.reactMod.ReactNs.ReactNode | reactLib.reactMod.ReactNs.ComponentType[js.Object]
   /** Default: 'of' */
-  var ofText: java.lang.String
+  var ofText: reactLib.reactMod.ReactNs.ReactNode
   /** Default: 'Page' */
-  var pageText: java.lang.String
+  var pageText: reactLib.reactMod.ReactNs.ReactNode
   /** Default: 'Previous' */
-  var previousText: java.lang.String
+  var previousText: reactLib.reactMod.ReactNs.ReactNode
   /** Default: 'rows' */
   var rowsText: java.lang.String
 }

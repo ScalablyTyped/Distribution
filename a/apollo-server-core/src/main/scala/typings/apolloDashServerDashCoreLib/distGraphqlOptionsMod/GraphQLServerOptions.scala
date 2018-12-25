@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var cache: js.UndefOr[apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache] = js.undefined
-  var cacheControl: js.UndefOr[
-    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions
-  ] = js.undefined
+  var cacheControl: js.UndefOr[js.Any] = js.undefined
   var context: js.UndefOr[TContext | js.Function0[scala.Nothing]] = js.undefined
   var dataSources: js.UndefOr[js.Function0[DataSources[TContext]]] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined

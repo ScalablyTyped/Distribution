@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.1.3-34642e"
+version := "3.1.3-066942"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-8f594d",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-e33499",
   "org.scalablytyped" %%% "chai" % "4.1-dt-20181019Z-c92fce",
-  "org.scalablytyped" %%% "chai-jquery" % "1.1.1-dt-20181023Z-5a4fef",
+  "org.scalablytyped" %%% "chai-jquery" % "1.1.1-dt-20181023Z-de9a6d",
   "org.scalablytyped" %%% "chalk" % "2.4.1-44ad3c",
   "org.scalablytyped" %%% "check-more-types" % "2.24.0-474a7b",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-633954",
@@ -27,7 +27,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-790699",
   "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180416Z-88eb4b",
   "org.scalablytyped" %%% "is-installed-globally" % "0.1-dt-20181212Z-d01b42",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-f533e1",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-c4ac04",
   "org.scalablytyped" %%% "lazy-ass" % "1.6.0-5e3753",
   "org.scalablytyped" %%% "listr" % "0.13-dt-20180306Z-459af2",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-b7dcf8",

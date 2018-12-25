@@ -19,6 +19,6 @@ trait Anon_Style extends js.Object {
   var onSelect: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]
   var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var style: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
-  var value: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
+  var value: propDashTypesLib.propDashTypesMod.Requireable[momentLib.momentMod.momentNs.Moment]
 }
 

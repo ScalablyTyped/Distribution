@@ -170,13 +170,13 @@ object typesNs extends js.Object {
     var info: cassandraDashDriverLib.Anon_SpeculativeExecutions
     @JSName(org.scalablytyped.runtime.Symbol.iterator)
     var iterator: js.Function0[nodeLib.Iterator[Row]]
-    var nextPage: js.Function
     var pageState: java.lang.String
     var rowLength: scala.Double
     var rows: js.Array[Row]
     def first(): Row | scala.Null
     def getColumns(): js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
     def getPageState(): java.lang.String
+    def nextPage(): scala.Unit
     def wasApplied(): scala.Boolean
   }
   
@@ -196,7 +196,7 @@ object typesNs extends js.Object {
     extends nodeLib.streamMod.Readable {
     var buffer: nodeLib.Buffer = js.native
     var paused: scala.Boolean = js.native
-    def _valve(readNext: js.Function): scala.Unit = js.native
+    def _valve(readNext: js.Function0[scala.Unit]): scala.Unit = js.native
     def add(chunk: nodeLib.Buffer): scala.Unit = js.native
   }
   
@@ -287,6 +287,7 @@ object typesNs extends js.Object {
   
   trait Uuid extends js.Object {
     var buffer: nodeLib.Buffer
+    // tslint:disable-next-line:no-unnecessary-qualifier
     def equals(other: Uuid): scala.Boolean
     def getBuffer(): nodeLib.Buffer
     def inspect(): java.lang.String

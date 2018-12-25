@@ -46,7 +46,7 @@ trait TypeaheadProps[T] extends js.Object {
   var emptyLabel: js.UndefOr[java.lang.String] = js.undefined
   /* Either an array of fields in option to search, or a custom filtering callback. */
   var filterBy: js.UndefOr[
-    js.Array[java.lang.String] | (js.Function2[/* option */ T | java.lang.String, /* text */ java.lang.String, scala.Boolean])
+    js.Array[java.lang.String] | (js.Function2[/* option */ T | java.lang.String, /* props */ TypeaheadFilterbyProps, scala.Boolean])
   ] = js.undefined
   /* Highlights the menu item if there is only one result and allows selecting that item by hitting enter.
          Does not work with allowNew. */
@@ -106,7 +106,7 @@ trait TypeaheadProps[T] extends js.Object {
   ] = js.undefined
   /* Provides a hook for customized rendering of menu item contents. */
   var renderMenuItemChildren: js.UndefOr[
-    js.Function3[/* option */ T, /* props */ TypeaheadProps[T], /* index */ scala.Double, _]
+    js.Function3[/* option */ T, /* props */ TypeaheadMenuProps[T], /* index */ scala.Double, _]
   ] = js.undefined
   /* Provides a hook for customized rendering of tokens when multiple selections are enabled. */
   var renderToken: js.UndefOr[

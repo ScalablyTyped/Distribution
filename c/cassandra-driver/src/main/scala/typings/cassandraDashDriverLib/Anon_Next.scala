@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Next extends js.Object {
-  var next: js.Function
+  def next(): Anon_Done
 }
 

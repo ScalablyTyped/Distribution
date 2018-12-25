@@ -18,7 +18,6 @@ object default extends js.Object {
     reactLib.reactMod.Global.JSXNs.Element
   ] = js.native
   var contextTypes: antdLib.Anon_Grid = js.native
-  var propTypes: antdLib.Anon_Xs = js.native
   def Meta(props: antdLib.libListItemMod.ListItemMetaProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

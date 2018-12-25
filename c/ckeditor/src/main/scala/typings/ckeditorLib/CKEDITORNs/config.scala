@@ -181,9 +181,9 @@ trait config extends js.Object {
   var pasteFromWordNumberedHeadingToList: js.UndefOr[scala.Boolean] = js.undefined
   var pasteFromWordPromptCleanup: js.UndefOr[scala.Boolean] = js.undefined
   var pasteFromWordRemoveFontStyles: js.UndefOr[scala.Boolean] = js.undefined
+  var pasteFromWordRemoveStyles: js.UndefOr[scala.Boolean] = js.undefined
   var pasteFromWord_heuristicsEdgeList: js.UndefOr[scala.Boolean] = js.undefined
   var pasteFromWord_inlineImages: js.UndefOr[scala.Boolean] = js.undefined
-  var pasteFromWorkRemoveStyles: js.UndefOr[scala.Boolean] = js.undefined
   var plugins: js.UndefOr[java.lang.String] = js.undefined
   var protectedSource: js.UndefOr[js.Array[stdLib.RegExp]] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined

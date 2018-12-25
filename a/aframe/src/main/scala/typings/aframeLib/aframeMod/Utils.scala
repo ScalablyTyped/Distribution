@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Utils extends js.Object {
   var coordinates: aframeLib.Anon_IsCoordinate = js.native
+  var device: aframeLib.Anon_IsMobile = js.native
   var entity: aframeLib.Anon_GetComponentProperty = js.native
   var styleParser: aframeLib.Anon_Stringify = js.native
   def deepEqual(a: js.Any, b: js.Any): scala.Boolean = js.native

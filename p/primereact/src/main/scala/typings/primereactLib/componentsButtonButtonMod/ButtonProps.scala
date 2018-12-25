@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* RemoveDifficultInheritance: 
 - Lifted 1 members from Set(std.Pick) */ 
 trait ButtonProps
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var cornerStyleClass: js.UndefOr[java.lang.String] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined
   var iconPos: js.UndefOr[java.lang.String] = js.undefined

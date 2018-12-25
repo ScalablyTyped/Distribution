@@ -19,6 +19,7 @@ trait SliderProps extends js.Object {
   var range: js.UndefOr[scala.Boolean] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var tabIndex: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[scala.Double | (js.Tuple2[scala.Double, scala.Double])] = js.undefined
 }
 

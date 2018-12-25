@@ -12,7 +12,7 @@ trait Anon_MaskHeight extends js.Object {
   var level: scala.Null
   var mask: scala.Boolean
   var maskClosable: scala.Boolean
-  var placement: java.lang.String
+  var placement: js.Any
   var prefixCls: java.lang.String
   var width: scala.Double
 }

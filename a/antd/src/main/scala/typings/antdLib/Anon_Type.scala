@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Type extends js.Object {
-  var placement: java.lang.String
+  var placement: js.UndefOr[
+    antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomCenter
+  ]
   var prefixCls: java.lang.String
-  var `type`: java.lang.String
+  var `type`: antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
 }
 

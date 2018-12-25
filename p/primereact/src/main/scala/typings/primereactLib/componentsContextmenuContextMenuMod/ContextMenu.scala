@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ContextMenu ()
   extends reactLib.reactMod.Component[ContextMenuProps, js.Any, js.Any] {
-  def show(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element]): scala.Unit = js.native
+  def show(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event]): scala.Unit = js.native
 }
 

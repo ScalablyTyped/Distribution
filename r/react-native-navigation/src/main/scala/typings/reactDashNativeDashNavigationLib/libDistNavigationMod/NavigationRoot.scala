@@ -171,6 +171,13 @@ class NavigationRoot () extends js.Object {
        */
   def setStackRoot(
     componentId: java.lang.String,
+    layout: js.Array[reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]]
+  ): js.Promise[_] = js.native
+  /**
+       * Sets new root component to stack.
+       */
+  def setStackRoot(
+    componentId: java.lang.String,
     layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]
   ): js.Promise[_] = js.native
   /**

@@ -71,6 +71,7 @@ trait BaseJQueryEventObject
   var target_BaseJQueryEventObject: stdLib.Element = js.native
   /**
        * For key or mouse events, this property indicates the specific key or button that was pressed.
+       * @deprecated Use `key` for KeyEvents or `button` for MouseEvents instead.
        * @see {@link https://api.jquery.com/event.which/}
        */
   var which: scala.Double = js.native

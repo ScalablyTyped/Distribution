@@ -25,15 +25,29 @@ package object nextNs {
   type NextComponentType[P, IP, C] = (NextComponentClass[P, IP, C]) | (NextStatelessComponent[P, IP, C])
   // Moved to next-server
   type NextConfig = nextDashServerLib.nextDashConfigMod.NextConfig
+  type NextFC[P, IP, C] = NextFunctionComponent[P, IP, C]
   /**
-       * Next.js counterpart of React.SFC/React.StatelessComponent.
+       * Next.js counterpart of React.FC/React.FunctionComponent.
        *
        * @template P Component props.
        * @template IP Initial props returned from getInitialProps.
        * @template C Context passed to getInitialProps.
        */
-  type NextSFC[P, IP, C] = NextStatelessComponent[P, IP, C]
-  type NextStatelessComponent[P, IP, C] = reactLib.reactMod.ReactNs.StatelessComponent[P] with (NextStaticLifecycle[IP, C])
+  type NextFunctionComponent[P, IP, C] = reactLib.reactMod.ReactNs.FunctionComponent[P] with (NextStaticLifecycle[IP, C])
+  /**
+       * @deprecated as of recent React versions, function components can no
+       * longer be considered 'stateless'. Please use `NextFunctionComponent` instead.
+       *
+       * @see [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+       */
+  type NextSFC[P, IP, C] = NextFunctionComponent[P, IP, C]
+  /**
+       * @deprecated as of recent React versions, function components can no
+       * longer be considered 'stateless'. Please use `NextFunctionComponent` instead.
+       *
+       * @see [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+       */
+  type NextStatelessComponent[P, IP, C] = NextFunctionComponent[P, IP, C]
   // End Moved to next-server
   // Deprecated
   type QueryStringMapObject = nextDashServerLib.routerMod.DefaultQuery

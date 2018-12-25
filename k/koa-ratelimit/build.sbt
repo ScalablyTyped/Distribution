@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-ratelimit"
-version := "4.1-dt-20181005Z-b68cb1"
+version := "4.1-dt-20181217Z-b68cb1"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

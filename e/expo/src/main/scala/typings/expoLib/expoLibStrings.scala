@@ -400,13 +400,25 @@ object expoLibStrings {
   sealed trait cancelled extends js.Object
   
   @js.native
+  sealed trait cardDAV extends js.Object
+  
+  @js.native
   sealed trait celp extends js.Object
+  
+  @js.native
+  sealed trait chinese extends js.Object
   
   @js.native
   sealed trait coarse extends js.Object
   
   @js.native
   sealed trait collapse extends js.Object
+  
+  @js.native
+  sealed trait company extends js.Object
+  
+  @js.native
+  sealed trait contactType extends js.Object
   
   @js.native
   sealed trait contacts extends js.Object
@@ -442,6 +454,9 @@ object expoLibStrings {
   sealed trait denied extends js.Object
   
   @js.native
+  sealed trait department extends js.Object
+  
+  @js.native
   sealed trait dismissed extends js.Object
   
   @js.native
@@ -466,6 +481,9 @@ object expoLibStrings {
   sealed trait evenodd extends js.Object
   
   @js.native
+  sealed trait exchange extends js.Object
+  
+  @js.native
   sealed trait expo extends js.Object
   
   @js.native
@@ -478,6 +496,9 @@ object expoLibStrings {
   sealed trait fine extends js.Object
   
   @js.native
+  sealed trait firstName extends js.Object
+  
+  @js.native
   sealed trait front extends js.Object
   
   @js.native
@@ -487,7 +508,13 @@ object expoLibStrings {
   sealed trait granted extends js.Object
   
   @js.native
+  sealed trait gregorian extends js.Object
+  
+  @js.native
   sealed trait guest extends js.Object
+  
+  @js.native
+  sealed trait hebrew extends js.Object
   
   @js.native
   sealed trait high extends js.Object
@@ -502,6 +529,9 @@ object expoLibStrings {
   sealed trait icon extends js.Object
   
   @js.native
+  sealed trait id extends js.Object
+  
+  @js.native
   sealed trait ilbc extends js.Object
   
   @js.native
@@ -509,6 +539,9 @@ object expoLibStrings {
   
   @js.native
   sealed trait image extends js.Object
+  
+  @js.native
+  sealed trait imageAvailable extends js.Object
   
   @js.native
   sealed trait instantMessageAddresses extends js.Object
@@ -529,6 +562,12 @@ object expoLibStrings {
   sealed trait interstitialWillLeaveApplication extends js.Object
   
   @js.native
+  sealed trait islamic extends js.Object
+  
+  @js.native
+  sealed trait jobTitle extends js.Object
+  
+  @js.native
   sealed trait jpeg extends js.Object
   
   @js.native
@@ -544,6 +583,9 @@ object expoLibStrings {
   sealed trait largeBanner extends js.Object
   
   @js.native
+  sealed trait lastName extends js.Object
+  
+  @js.native
   sealed trait leaderboard extends js.Object
   
   @js.native
@@ -551,6 +593,9 @@ object expoLibStrings {
   
   @js.native
   sealed trait `light-content` extends js.Object
+  
+  @js.native
+  sealed trait local extends js.Object
   
   @js.native
   sealed trait location extends js.Object
@@ -562,10 +607,16 @@ object expoLibStrings {
   sealed trait lpcm extends js.Object
   
   @js.native
+  sealed trait maidenName extends js.Object
+  
+  @js.native
   sealed trait max extends js.Object
   
   @js.native
   sealed trait mediumRectangle extends js.Object
+  
+  @js.native
+  sealed trait middleName extends js.Object
   
   @js.native
   sealed trait min extends js.Object
@@ -575,6 +626,9 @@ object expoLibStrings {
   
   @js.native
   sealed trait month extends js.Object
+  
+  @js.native
+  sealed trait name extends js.Object
   
   @js.native
   sealed trait namePrefix extends js.Object
@@ -587,6 +641,12 @@ object expoLibStrings {
   
   @js.native
   sealed trait never extends js.Object
+  
+  @js.native
+  sealed trait `new` extends js.Object
+  
+  @js.native
+  sealed trait nickname extends js.Object
   
   @js.native
   sealed trait noUpdateAvailable extends js.Object
@@ -616,6 +676,9 @@ object expoLibStrings {
   sealed trait on extends js.Object
   
   @js.native
+  sealed trait person extends js.Object
+  
+  @js.native
   sealed trait phoneNumbers extends js.Object
   
   @js.native
@@ -635,6 +698,9 @@ object expoLibStrings {
   
   @js.native
   sealed trait public extends js.Object
+  
+  @js.native
+  sealed trait rawImage extends js.Object
   
   @js.native
   sealed trait received extends js.Object
@@ -712,22 +778,28 @@ object expoLibStrings {
   sealed trait systemBrightness extends js.Object
   
   @js.native
-  sealed trait thumbnail extends js.Object
-  
-  @js.native
   sealed trait twvq extends js.Object
   
   @js.native
   sealed trait ulaw extends js.Object
   
   @js.native
+  sealed trait unassigned extends js.Object
+  
+  @js.native
   sealed trait undetermined extends js.Object
+  
+  @js.native
+  sealed trait unknown extends js.Object
   
   @js.native
   sealed trait unlisted extends js.Object
   
   @js.native
   sealed trait urlAddresses extends js.Object
+  
+  @js.native
+  sealed trait userDefault extends js.Object
   
   @js.native
   sealed trait userFacingNotifications extends js.Object
@@ -890,9 +962,13 @@ object expoLibStrings {
   def cameraRoll: cameraRoll = "cameraRoll".asInstanceOf[cameraRoll]
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  def cardDAV: cardDAV = "cardDAV".asInstanceOf[cardDAV]
   def celp: celp = "celp".asInstanceOf[celp]
+  def chinese: chinese = "chinese".asInstanceOf[chinese]
   def coarse: coarse = "coarse".asInstanceOf[coarse]
   def collapse: collapse = "collapse".asInstanceOf[collapse]
+  def company: company = "company".asInstanceOf[company]
+  def contactType: contactType = "contactType".asInstanceOf[contactType]
   def contacts: contacts = "contacts".asInstanceOf[contacts]
   def contain: contain = "contain".asInstanceOf[contain]
   def cover: cover = "cover".asInstanceOf[cover]
@@ -904,6 +980,7 @@ object expoLibStrings {
   def debug: debug = "debug".asInstanceOf[debug]
   def default: default = "default".asInstanceOf[default]
   def denied: denied = "denied".asInstanceOf[denied]
+  def department: department = "department".asInstanceOf[department]
   def dismissed: dismissed = "dismissed".asInstanceOf[dismissed]
   def downloadFinished: downloadFinished = "downloadFinished".asInstanceOf[downloadFinished]
   def downloadProgress: downloadProgress = "downloadProgress".asInstanceOf[downloadProgress]
@@ -912,47 +989,62 @@ object expoLibStrings {
   def emails: emails = "emails".asInstanceOf[emails]
   def error: error = "error".asInstanceOf[error]
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
+  def exchange: exchange = "exchange".asInstanceOf[exchange]
   def expo: expo = "expo".asInstanceOf[expo]
   def fast: fast = "fast".asInstanceOf[fast]
   def file: file = "file".asInstanceOf[file]
   def fine: fine = "fine".asInstanceOf[fine]
+  def firstName: firstName = "firstName".asInstanceOf[firstName]
   def front: front = "front".asInstanceOf[front]
   def fullBanner: fullBanner = "fullBanner".asInstanceOf[fullBanner]
   def granted: granted = "granted".asInstanceOf[granted]
+  def gregorian: gregorian = "gregorian".asInstanceOf[gregorian]
   def guest: guest = "guest".asInstanceOf[guest]
+  def hebrew: hebrew = "hebrew".asInstanceOf[hebrew]
   def high: high = "high".asInstanceOf[high]
   def hour: hour = "hour".asInstanceOf[hour]
   def hvxc: hvxc = "hvxc".asInstanceOf[hvxc]
   def icon: icon = "icon".asInstanceOf[icon]
+  def id: id = "id".asInstanceOf[id]
   def ilbc: ilbc = "ilbc".asInstanceOf[ilbc]
   def ima4: ima4 = "ima4".asInstanceOf[ima4]
   def image: image = "image".asInstanceOf[image]
+  def imageAvailable: imageAvailable = "imageAvailable".asInstanceOf[imageAvailable]
   def instantMessageAddresses: instantMessageAddresses = "instantMessageAddresses".asInstanceOf[instantMessageAddresses]
   def interstitialDidClose: interstitialDidClose = "interstitialDidClose".asInstanceOf[interstitialDidClose]
   def interstitialDidFailToLoad: interstitialDidFailToLoad = "interstitialDidFailToLoad".asInstanceOf[interstitialDidFailToLoad]
   def interstitialDidLoad: interstitialDidLoad = "interstitialDidLoad".asInstanceOf[interstitialDidLoad]
   def interstitialDidOpen: interstitialDidOpen = "interstitialDidOpen".asInstanceOf[interstitialDidOpen]
   def interstitialWillLeaveApplication: interstitialWillLeaveApplication = "interstitialWillLeaveApplication".asInstanceOf[interstitialWillLeaveApplication]
+  def islamic: islamic = "islamic".asInstanceOf[islamic]
+  def jobTitle: jobTitle = "jobTitle".asInstanceOf[jobTitle]
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   def jpg: jpg = "jpg".asInstanceOf[jpg]
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   def large: large = "large".asInstanceOf[large]
   def largeBanner: largeBanner = "largeBanner".asInstanceOf[largeBanner]
+  def lastName: lastName = "lastName".asInstanceOf[lastName]
   def leaderboard: leaderboard = "leaderboard".asInstanceOf[leaderboard]
   def light: light = "light".asInstanceOf[light]
   def `light-content`: `light-content` = "light-content".asInstanceOf[`light-content`]
+  def local: local = "local".asInstanceOf[local]
   def location: location = "location".asInstanceOf[location]
   def low: low = "low".asInstanceOf[low]
   def lpcm: lpcm = "lpcm".asInstanceOf[lpcm]
+  def maidenName: maidenName = "maidenName".asInstanceOf[maidenName]
   def max: max = "max".asInstanceOf[max]
   def mediumRectangle: mediumRectangle = "mediumRectangle".asInstanceOf[mediumRectangle]
+  def middleName: middleName = "middleName".asInstanceOf[middleName]
   def min: min = "min".asInstanceOf[min]
   def minute: minute = "minute".asInstanceOf[minute]
   def month: month = "month".asInstanceOf[month]
+  def name: name = "name".asInstanceOf[name]
   def namePrefix: namePrefix = "namePrefix".asInstanceOf[namePrefix]
   def nameSuffix: nameSuffix = "nameSuffix".asInstanceOf[nameSuffix]
   def native: native = "native".asInstanceOf[native]
   def never: never = "never".asInstanceOf[never]
+  def `new`: `new` = "new".asInstanceOf[`new`]
+  def nickname: nickname = "nickname".asInstanceOf[nickname]
   def noUpdateAvailable: noUpdateAvailable = "noUpdateAvailable".asInstanceOf[noUpdateAvailable]
   def nonGregorianBirthday: nonGregorianBirthday = "nonGregorianBirthday".asInstanceOf[nonGregorianBirthday]
   def none: none = "none".asInstanceOf[none]
@@ -962,6 +1054,7 @@ object expoLibStrings {
   def notifications: notifications = "notifications".asInstanceOf[notifications]
   def off: off = "off".asInstanceOf[off]
   def on: on = "on".asInstanceOf[on]
+  def person: person = "person".asInstanceOf[person]
   def phoneNumbers: phoneNumbers = "phoneNumbers".asInstanceOf[phoneNumbers]
   def phoneticFirstName: phoneticFirstName = "phoneticFirstName".asInstanceOf[phoneticFirstName]
   def phoneticLastName: phoneticLastName = "phoneticLastName".asInstanceOf[phoneticLastName]
@@ -969,6 +1062,7 @@ object expoLibStrings {
   def png: png = "png".asInstanceOf[png]
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   def public: public = "public".asInstanceOf[public]
+  def rawImage: rawImage = "rawImage".asInstanceOf[rawImage]
   def received: received = "received".asInstanceOf[received]
   def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   def relationships: relationships = "relationships".asInstanceOf[relationships]
@@ -994,12 +1088,14 @@ object expoLibStrings {
   def success: success = "success".asInstanceOf[success]
   def system: system = "system".asInstanceOf[system]
   def systemBrightness: systemBrightness = "systemBrightness".asInstanceOf[systemBrightness]
-  def thumbnail: thumbnail = "thumbnail".asInstanceOf[thumbnail]
   def twvq: twvq = "twvq".asInstanceOf[twvq]
   def ulaw: ulaw = "ulaw".asInstanceOf[ulaw]
+  def unassigned: unassigned = "unassigned".asInstanceOf[unassigned]
   def undetermined: undetermined = "undetermined".asInstanceOf[undetermined]
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
   def unlisted: unlisted = "unlisted".asInstanceOf[unlisted]
   def urlAddresses: urlAddresses = "urlAddresses".asInstanceOf[urlAddresses]
+  def userDefault: userDefault = "userDefault".asInstanceOf[userDefault]
   def userFacingNotifications: userFacingNotifications = "userFacingNotifications".asInstanceOf[userFacingNotifications]
   def verbose: verbose = "verbose".asInstanceOf[verbose]
   def video: video = "video".asInstanceOf[video]

@@ -36,5 +36,9 @@ class HttpStatusError protected () extends ErrorConstructor {
        * @param message     any message
        */
   def this(status_code: scala.Double, message: java.lang.String) = this()
+  /**
+       * Status code for this error.
+       */
+  var statusCode: scala.Double = js.native
 }
 

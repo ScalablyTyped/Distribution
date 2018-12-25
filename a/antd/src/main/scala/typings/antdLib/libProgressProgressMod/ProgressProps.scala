@@ -23,8 +23,8 @@ trait ProgressProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var showInfo: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[ProgressSize] = js.undefined
-  var status: js.UndefOr[
-    antdLib.antdLibStrings.success | antdLib.antdLibStrings.active | antdLib.antdLibStrings.exception | antdLib.antdLibStrings.normal
+  var status: /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(normal)), TsTypeLiteral(TsLiteralString(exception)), TsTypeLiteral(TsLiteralString(active)), TsTypeLiteral(TsLiteralString(success)))),Left(TsIdentSimple(number))) */js.UndefOr[
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(normal)), TsTypeLiteral(TsLiteralString(exception)), TsTypeLiteral(TsLiteralString(active)), TsTypeLiteral(TsLiteralString(success)))),Left(TsIdentSimple(number))) */js.Any
   ] = js.undefined
   var strokeColor: js.UndefOr[java.lang.String] = js.undefined
   var strokeLinecap: js.UndefOr[java.lang.String] = js.undefined

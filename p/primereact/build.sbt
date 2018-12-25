@@ -1,15 +1,15 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "primereact"
-version := "2.0.0-rc.1-afd0f2"
+version := "3.0.0-beta.1-629828"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "csstype" % "2.5.7-8f5757",
-  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20181102Z-3c49da",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-28281f",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-28635b",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-3109dd",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-b38950",
+  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

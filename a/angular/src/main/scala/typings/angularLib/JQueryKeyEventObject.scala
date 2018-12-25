@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait JQueryKeyEventObject extends JQueryInputEventObject {
-  var char: js.Any = js.native
+  /** @deprecated */
+  var char: java.lang.String = js.native
+  /** @deprecated */
   var charCode: scala.Double = js.native
-  var key: js.Any = js.native
+  var key: java.lang.String = js.native
+  /** @deprecated */
   var keyCode: scala.Double = js.native
 }
 

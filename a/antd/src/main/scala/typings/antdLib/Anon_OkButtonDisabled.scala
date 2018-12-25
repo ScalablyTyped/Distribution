@@ -11,7 +11,7 @@ trait Anon_OkButtonDisabled extends js.Object {
   var confirmLoading: scala.Boolean
   var maskTransitionName: java.lang.String
   var okButtonDisabled: scala.Boolean
-  var okType: antdLib.libButtonButtonMod.ButtonType
+  var okType: antdLib.antdLibStrings.default | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.primary | antdLib.antdLibStrings.ghost | antdLib.antdLibStrings.danger
   var prefixCls: java.lang.String
   var transitionName: java.lang.String
   var visible: scala.Boolean

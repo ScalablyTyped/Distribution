@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait InputTextProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement]
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var keyfilter: js.UndefOr[js.Any] = js.undefined
   @JSName("onInput")
   var onInput_InputTextProps: js.UndefOr[

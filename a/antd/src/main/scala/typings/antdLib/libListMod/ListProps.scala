@@ -20,7 +20,9 @@ trait ListProps extends js.Object {
   var loadMore: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var loading: js.UndefOr[scala.Boolean | antdLib.libSpinMod.SpinProps] = js.undefined
   var locale: js.UndefOr[js.Object] = js.undefined
-  var pagination: js.UndefOr[antdLib.libPaginationPaginationMod.PaginationConfig] = js.undefined
+  var pagination: js.UndefOr[
+    antdLib.libPaginationPaginationMod.PaginationConfig | antdLib.antdLibNumbers.`false`
+  ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var renderItem: js.Any
   var rowKey: js.UndefOr[js.Any] = js.undefined

@@ -10,9 +10,6 @@ object reactDashPrimitivesLibStrings {
   sealed trait PlatformStatic extends js.Object
   
   @js.native
-  sealed trait create extends js.Object
-  
-  @js.native
   sealed trait disk extends js.Object
   
   @js.native
@@ -25,7 +22,6 @@ object reactDashPrimitivesLibStrings {
   sealed trait vr extends js.Object
   
   def PlatformStatic: PlatformStatic = "PlatformStatic".asInstanceOf[PlatformStatic]
-  def create: create = "create".asInstanceOf[create]
   def disk: disk = "disk".asInstanceOf[disk]
   def memory: memory = "memory".asInstanceOf[memory]
   def sketch: sketch = "sketch".asInstanceOf[sketch]

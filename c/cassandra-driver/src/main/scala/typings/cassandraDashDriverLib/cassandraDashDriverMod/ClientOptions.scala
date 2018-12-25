@@ -17,7 +17,15 @@ trait ClientOptions extends js.Object {
   var pooling: js.UndefOr[cassandraDashDriverLib.Anon_CoreConnectionsPerHost] = js.undefined
   var prepareOnAllHosts: js.UndefOr[scala.Boolean] = js.undefined
   var profiles: js.UndefOr[js.Array[ExecutionProfile]] = js.undefined
-  var promiseFactory: js.UndefOr[js.Function] = js.undefined
+  var promiseFactory: js.UndefOr[
+    js.Function1[
+      /* handler */ js.Function1[
+        /* callback */ js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.UndefOr[js.Any], scala.Unit], 
+        scala.Unit
+      ], 
+      js.Promise[_]
+    ]
+  ] = js.undefined
   var protocolOptions: js.UndefOr[cassandraDashDriverLib.Anon_MaxVersion] = js.undefined
   var queryOptions: js.UndefOr[QueryOptions] = js.undefined
   var rePrepareOnUp: js.UndefOr[scala.Boolean] = js.undefined

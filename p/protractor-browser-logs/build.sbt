@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "protractor-browser-logs"
-version := "1.0-dt-20180214Z-a0f08a"
+version := "1.0-dt-20180214Z-26f15e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -23,7 +23,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-077fe7",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
   "org.scalablytyped" %%% "optimist" % "0.0-unknown-dt-20180214Z-ed7fcc",
-  "org.scalablytyped" %%% "protractor" % "5.4.1-2efab2",
+  "org.scalablytyped" %%% "protractor" % "5.4.2-2e401a",
   "org.scalablytyped" %%% "q" % "1.5-dt-20181124Z-725d84",
   "org.scalablytyped" %%% "request" % "2.48-dt-20181105Z-2246af",
   "org.scalablytyped" %%% "rimraf" % "2.0-dt-20180214Z-dc4b5e",

@@ -18,8 +18,8 @@ trait FormItemProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var validateStatus: js.UndefOr[
-    antdLib.antdLibStrings.success | antdLib.antdLibStrings.warning | antdLib.antdLibStrings.error | antdLib.antdLibStrings.validating
+  var validateStatus: /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(success)), TsTypeLiteral(TsLiteralString(warning)), TsTypeLiteral(TsLiteralString(error)), TsTypeLiteral(TsLiteralString(validating)))),Left(TsIdentSimple(number))) */js.UndefOr[
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(success)), TsTypeLiteral(TsLiteralString(warning)), TsTypeLiteral(TsLiteralString(error)), TsTypeLiteral(TsLiteralString(validating)))),Left(TsIdentSimple(number))) */js.Any
   ] = js.undefined
   var wrapperCol: js.UndefOr[antdLib.libGridColMod.ColProps] = js.undefined
 }

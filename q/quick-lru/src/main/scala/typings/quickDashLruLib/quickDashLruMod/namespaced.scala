@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("quick-lru", JSImport.Namespace)
 @js.native
-class namespaced[K, V] () extends QuickLRU[K, V] {
+class namespaced[K, V] protected () extends QuickLRU[K, V] {
   def this(options: quickDashLruLib.quickDashLruMod.QuickLRUNs.Options) = this()
   /* CompleteClass */
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
@@ -17,7 +17,7 @@ class namespaced[K, V] () extends QuickLRU[K, V] {
   /* CompleteClass */
   override def clear(): scala.Unit = js.native
   /* CompleteClass */
-  override def delete(key: K): scala.Unit = js.native
+  override def delete(key: K): scala.Boolean = js.native
   /* CompleteClass */
   override def get(key: K): js.UndefOr[V] = js.native
   /* CompleteClass */

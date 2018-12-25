@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsforce"
-version := "1.9-dt-20181205Z-5454c8"
+version := "1.9-dt-20181222Z-c6a9cd"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

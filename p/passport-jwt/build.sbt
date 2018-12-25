@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-jwt"
-version := "3.0-dt-20180214Z-165b0e"
+version := "3.0-dt-20180214Z-fc4688"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,8 +13,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20181101Z-96f59f",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-b650df",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
-  "org.scalablytyped" %%% "passport" % "0.4-dt-20181019Z-4dbaf1",
-  "org.scalablytyped" %%% "passport-strategy" % "v0.2.0-dt-20180815Z-b17b04",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20181215Z-70ccf7",
+  "org.scalablytyped" %%% "passport-strategy" % "v0.2.0-dt-20180815Z-7e7df1",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-ef877c",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-f8f5d7",
   "org.scalablytyped" %%% "std" % "3.2.2-669a73")

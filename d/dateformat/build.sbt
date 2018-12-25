@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dateformat"
-version := "v1.0.12-dt-20180214Z-f17532"
+version := "3.0-dt-20181223Z-bbaf9d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

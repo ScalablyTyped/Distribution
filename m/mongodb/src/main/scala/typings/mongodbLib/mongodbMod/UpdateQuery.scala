@@ -41,7 +41,7 @@ trait UpdateQuery[T] extends js.Object {
   ] = js.undefined
   @JSName("$pull")
   var $pull: js.UndefOr[
-    stdLib.Partial[T] | (org.scalablytyped.runtime.StringDictionary[mongodbLib.Condition[T, java.lang.String]])
+    stdLib.Partial[T] | (org.scalablytyped.runtime.StringDictionary[Condition[T, java.lang.String]])
   ] = js.undefined
   @JSName("$push")
   var $push: js.UndefOr[stdLib.Partial[T] | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-virtualized-select"
-version := "3.0-dt-20180802Z-5cd805"
+version := "3.0-dt-20180802Z-362034"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-3109dd",
   "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-b38950",
   "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-d008b6",
-  "org.scalablytyped" %%% "react-select" % "2.0-dt-20181130Z-19edd3",
+  "org.scalablytyped" %%% "react-select" % "2.0-dt-20181218Z-f0c357",
   "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20181219Z-cbde35",
   "org.scalablytyped" %%% "react-virtualized" % "9.18-dt-20181130Z-4831dd",
   "org.scalablytyped" %%% "std" % "3.2.2-669a73")

@@ -19,9 +19,16 @@ object errorsNs extends js.Object {
   }
   
   @js.native
-  abstract class DriverError protected () extends js.Object {
+  class BusyConnectionError protected () extends DriverError {
+    def this(address: java.lang.String, maxRequestsPerConnection: scala.Double, connectionLength: scala.Double) = this()
+  }
+  
+  @js.native
+  abstract class DriverError protected ()
+    extends nodeLib.Error {
     def this(message: java.lang.String) = this()
     def this(message: java.lang.String, constructor: js.Any) = this()
+    var info: java.lang.String = js.native
   }
   
   @js.native
@@ -33,6 +40,7 @@ object errorsNs extends js.Object {
   class NoHostAvailableError protected () extends DriverError {
     def this(innerErrors: js.Any) = this()
     def this(innerErrors: js.Any, message: java.lang.String) = this()
+    var innerErrors: js.Any = js.native
   }
   
   @js.native
@@ -41,11 +49,16 @@ object errorsNs extends js.Object {
   }
   
   @js.native
-  class OperationTimedOutError () extends DriverError
+  class OperationTimedOutError protected () extends DriverError {
+    def this(message: java.lang.String) = this()
+    def this(message: java.lang.String, host: java.lang.String) = this()
+    var host: js.UndefOr[java.lang.String] = js.native
+  }
   
   @js.native
   class ResponseError protected () extends DriverError {
     def this(code: scala.Double, message: java.lang.String) = this()
+    var code: scala.Double = js.native
   }
   
 }

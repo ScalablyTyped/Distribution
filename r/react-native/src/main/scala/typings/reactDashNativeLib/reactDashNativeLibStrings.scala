@@ -427,9 +427,6 @@ object reactDashNativeLibStrings {
   sealed trait cover extends js.Object
   
   @js.native
-  sealed trait create extends js.Object
-  
-  @js.native
   sealed trait creditCardNumber extends js.Object
   
   @js.native
@@ -1229,7 +1226,6 @@ object reactDashNativeLibStrings {
   def cors: cors = "cors".asInstanceOf[cors]
   def countryName: countryName = "countryName".asInstanceOf[countryName]
   def cover: cover = "cover".asInstanceOf[cover]
-  def create: create = "create".asInstanceOf[create]
   def creditCardNumber: creditCardNumber = "creditCardNumber".asInstanceOf[creditCardNumber]
   def dark: dark = "dark".asInstanceOf[dark]
   def `dark-content`: `dark-content` = "dark-content".asInstanceOf[`dark-content`]

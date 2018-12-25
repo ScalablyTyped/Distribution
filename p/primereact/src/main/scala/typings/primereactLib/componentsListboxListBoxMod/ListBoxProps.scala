@@ -22,6 +22,7 @@ trait ListBoxProps extends js.Object {
   var optionLabel: js.UndefOr[java.lang.String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var tabIndex: js.UndefOr[java.lang.String] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined

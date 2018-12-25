@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_ui_dot_datetimepicker"
-version := "0.3-dt-20180214Z-1d9423"
+version := "0.3-dt-20180214Z-91e287"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-f533e1",
-  "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20181116Z-8c0572",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-c4ac04",
+  "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20181116Z-9f8c4a",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3a6abd",
   "org.scalablytyped" %%% "std" % "3.2.2-669a73")
 publishArtifact in packageDoc := false

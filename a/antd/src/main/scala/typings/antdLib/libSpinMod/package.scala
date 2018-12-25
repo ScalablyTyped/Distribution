@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libSpinMod {
   type SpinIndicator = reactLib.reactMod.ReactNs.ReactElement[js.Any]
-  type SpinSize = antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large
+  type SpinSize = /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(small)), TsTypeLiteral(TsLiteralString(default)), TsTypeLiteral(TsLiteralString(large)))),Left(TsIdentSimple(number))) */js.Any
 }

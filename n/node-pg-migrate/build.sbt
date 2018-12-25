@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-pg-migrate"
-version := "3.14.2-30dda6"
+version := "3.14.2-588e50"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "pg" % "7.4-dt-20181008Z-2a9220",
   "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-0f8d67",
   "org.scalablytyped" %%% "std" % "3.2.2-669a73",
-  "org.scalablytyped" %%% "yargs" % "12.0-dt-20181220Z-2479ce")
+  "org.scalablytyped" %%% "yargs" % "12.0-dt-20181222Z-04ff61")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

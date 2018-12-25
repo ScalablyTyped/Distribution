@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular-meteor"
-version := "0.8-dt-20181116Z-54b10f"
+version := "0.8-dt-20181116Z-281988"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-190fe4",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-a51b52",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-38b4a6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-28635b",
   "org.scalablytyped" %%% "meteor" % "1.4-dt-20181220Z-4aebc6",

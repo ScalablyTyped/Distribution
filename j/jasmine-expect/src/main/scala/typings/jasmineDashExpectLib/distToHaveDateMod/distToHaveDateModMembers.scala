@@ -1,0 +1,13 @@
+package typings
+package jasmineDashExpectLib.distToHaveDateMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("jasmine-expect/dist/toHaveDate", JSImport.Namespace)
+@js.native
+object distToHaveDateModMembers extends js.Object {
+  val toHaveDate: ToHaveDate = js.native
+}
+

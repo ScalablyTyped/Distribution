@@ -9,8 +9,23 @@ import scala.scalajs.js.annotation._
 @js.native
 class Predicate () extends js.Object {
   def this(field: java.lang.String, operator: FilterOperators, value: js.Any, ignoreCase: scala.Boolean) = this()
+  def this(field: java.lang.String, operator: FilterOperators, value: js.Any, ignoreCase: scala.Boolean, ignoreAccent: scala.Boolean) = this()
   def and(field: java.lang.String, operator: js.Any, value: js.Any, ignoreCase: scala.Boolean): Predicate = js.native
+  def and(
+    field: java.lang.String,
+    operator: js.Any,
+    value: js.Any,
+    ignoreCase: scala.Boolean,
+    ignoreAccent: scala.Boolean
+  ): Predicate = js.native
   def or(field: java.lang.String, operator: js.Any, value: js.Any, ignoreCase: scala.Boolean): Predicate = js.native
+  def or(
+    field: java.lang.String,
+    operator: js.Any,
+    value: js.Any,
+    ignoreCase: scala.Boolean,
+    ignoreAccent: scala.Boolean
+  ): Predicate = js.native
   def or(predicate: js.Array[_]): js.Any = js.native
   def toJSON(): ejDotWebDotAllLib.Anon_Predicates = js.native
   def validate(record: js.Any): scala.Boolean = js.native

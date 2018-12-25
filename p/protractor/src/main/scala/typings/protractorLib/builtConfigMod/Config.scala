@@ -366,13 +366,13 @@ trait Config
        */
   var rootElement: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Use sauceAgent if you need custom HTTP agent to connect to saucelabs.com.
+       * Use sauceAgent if you need custom HTTP agent to connect to saucelabs.com APIs.
        * This is needed if your computer is behind a corporate proxy.
        *
        * To match sauce agent implementation, use
        * [HttpProxyAgent](https://github.com/TooTallNate/node-http-proxy-agent)
-       * to generate the agent or use webDriverProxy as an alternative. If a
-       * webDriverProxy is provided, the sauceAgent will be overridden.
+       * to generate the agent or use sauceProxy as an alternative. If a
+       * sauceProxy is provided, the sauceAgent will be overridden.
        */
   var sauceAgent: js.UndefOr[js.Any] = js.undefined
   /**
@@ -385,16 +385,23 @@ trait Config
        */
   var sauceKey: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The address of a proxy server to use for communicating to Sauce Labs rest APIs via the
+       * The address of a proxy server to use for communicating to Sauce Labs REST APIs via the
        * saucelabs node module. For example, the Sauce Labs Proxy can be setup with: sauceProxy:
        * 'http://localhost:3128'
        */
   var sauceProxy: js.UndefOr[java.lang.String] = js.undefined
   /**
+       * If you run your tests on SauceLabs you can specify the region you want to run your tests
+       * in via the `sauceRegion` property. Available short handles for regions are:
+       * us: us-west-1 (default)
+       * eu: eu-central-1
+       */
+  var sauceRegion: js.UndefOr[java.lang.String] = js.undefined
+  /**
        * Use sauceSeleniumAddress if you need to customize the URL Protractor
        * uses to connect to sauce labs (for example, if you are tunneling selenium
        * traffic through a sauce connect tunnel). Default is
-       * ondemand.saucelabs.com:80/wd/hub
+       * ondemand.saucelabs.com:443/wd/hub
        */
   var sauceSeleniumAddress: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -516,7 +523,8 @@ trait Config
        */
   var webDriverLogDir: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The proxy address that browser traffic will go through which is tied to the browser session.
+       * The proxy address that WebDriver (e.g. Selenium commands) traffic will go through
+       * which is tied to the browser session.
        */
   var webDriverProxy: js.UndefOr[java.lang.String] = js.undefined
 }

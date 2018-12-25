@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "weixin-app"
-version := "2.2-dt-20181212Z-781326"
+version := "2.2-dt-20181224Z-f0b37e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

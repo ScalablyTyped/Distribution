@@ -1,0 +1,13 @@
+package typings
+package jasmineDashExpectLib.distToBeWithinRangeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("jasmine-expect/dist/toBeWithinRange", JSImport.Namespace)
+@js.native
+object distToBeWithinRangeModMembers extends js.Object {
+  val toBeWithinRange: ToBeWithinRange = js.native
+}
+

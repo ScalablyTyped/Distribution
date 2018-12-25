@@ -53,6 +53,7 @@ trait Options extends js.Object {
        * Configure the bottom tabs
        */
   var bottomTabs: js.UndefOr[OptionsBottomTabs] = js.undefined
+  var fab: js.UndefOr[OptionsFab] = js.undefined
   /**
        * Configure the layout
        */

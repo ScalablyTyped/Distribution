@@ -13,6 +13,6 @@ trait LightboxProps extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var images: js.UndefOr[js.Array[_]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var target: js.UndefOr[java.lang.String] = js.undefined
 }
 

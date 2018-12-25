@@ -90,7 +90,7 @@ object metadataNs extends js.Object {
     extends org.scalablytyped.runtime.Instantiable4[
           /* name */ java.lang.String, 
           /* target */ java.lang.String, 
-          /* kind */ IndexType, 
+          (/* kind */ IndexType) | (/* kind */ java.lang.String), 
           /* options */ js.Object, 
           Index
         ] {
@@ -186,11 +186,13 @@ object metadataNs extends js.Object {
   
   
   trait TableMetadata extends DataCollection {
+    var cdc: js.UndefOr[scala.Boolean] = js.undefined
     var indexInterval: js.UndefOr[scala.Double] = js.undefined
     var indexes: js.Array[Index]
     var isCompact: scala.Boolean
     var memtableFlushPeriod: scala.Double
     var replicateOnWrite: scala.Boolean
+    var virtual: scala.Boolean
   }
   
   @js.native

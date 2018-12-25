@@ -14,7 +14,9 @@ trait Anon_ShowSearchTransitionName extends js.Object {
   var optionLabelProp: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var showSearch: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
-  var size: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var size: propDashTypesLib.propDashTypesMod.Requireable[
+    antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large
+  ]
   var transitionName: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
 }
 

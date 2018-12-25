@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SlideMenu ()
   extends reactLib.reactMod.Component[SlideMenuProps, js.Any, js.Any] {
-  def hide(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element]): scala.Unit = js.native
-  def show(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element]): scala.Unit = js.native
-  def toggle(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element]): scala.Unit = js.native
+  def hide(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event]): scala.Unit = js.native
+  def show(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event]): scala.Unit = js.native
+  def toggle(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event]): scala.Unit = js.native
 }
 

@@ -18,6 +18,7 @@ trait OrderListProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
   var responsive: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var tabIndex: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[js.Array[_]] = js.undefined
 }
 

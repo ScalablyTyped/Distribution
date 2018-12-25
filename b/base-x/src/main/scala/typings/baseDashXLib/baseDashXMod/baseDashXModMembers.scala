@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("base-x", JSImport.Namespace)
 @js.native
-object baseDashXModMembers
-  extends org.scalablytyped.runtime.TopLevel[baseDashXLib.baseDashXMod.BaseXNs.Base]
+object baseDashXModMembers extends js.Object {
+  def apply(ALPHABET: java.lang.String): baseDashXLib.baseDashXMod.baseXNs.BaseConverter = js.native
+}
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cassandra-driver"
-version := "v3.5.0-dt-20181009Z-ff21b8"
+version := "3.6-dt-20181221Z-a864f3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

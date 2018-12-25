@@ -14,6 +14,6 @@ package object libFormFormMod {
     ]
   ]
   type FormCreateOptionMessagesCallback = js.Function1[/* repeated */js.Any, java.lang.String]
-  type FormLayout = antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.`inline` | antdLib.antdLibStrings.vertical
+  type FormLayout = /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(horizontal)), TsTypeLiteral(TsLiteralString(inline)), TsTypeLiteral(TsLiteralString(vertical)))),Left(TsIdentSimple(number))) */js.Any
   type ValidateCallback = js.Function2[/* errors */ js.Any, /* values */ js.Any, scala.Unit]
 }

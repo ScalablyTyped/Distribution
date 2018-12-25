@@ -14,7 +14,7 @@ trait DescribeSObjectResult extends js.Object {
   var createable: scala.Boolean
   var custom: scala.Boolean
   var customSetting: scala.Boolean
-  var deleteable: scala.Boolean
+  var deletable: scala.Boolean
   var deprecatedAndHidden: scala.Boolean
   var feedEnabled: scala.Boolean
   var fields: js.Array[Field]
@@ -37,7 +37,7 @@ trait DescribeSObjectResult extends js.Object {
   var searchable: scala.Boolean
   var supportedScopes: js.Array[ScopeInfo]
   var triggerable: scala.Boolean
-  var undeleteable: scala.Boolean
+  var undeletable: scala.Boolean
   var updateable: scala.Boolean
   var urlDetail: js.UndefOr[java.lang.String] = js.undefined
   var urlEdit: js.UndefOr[java.lang.String] = js.undefined

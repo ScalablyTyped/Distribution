@@ -14,6 +14,7 @@ trait DataTableProps extends js.Object {
   var compareSelectionBy: js.UndefOr[java.lang.String] = js.undefined
   var contextMenuSelection: js.UndefOr[js.Any] = js.undefined
   var csvSeparator: js.UndefOr[java.lang.String] = js.undefined
+  var currentPageReportTemplate: js.UndefOr[java.lang.String] = js.undefined
   var dataKey: js.UndefOr[java.lang.String] = js.undefined
   var defaultSortOrder: js.UndefOr[scala.Double] = js.undefined
   var emptyMessage: js.UndefOr[java.lang.String] = js.undefined
@@ -53,6 +54,7 @@ trait DataTableProps extends js.Object {
   var onRowUnselect: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_Type, scala.Unit]] = js.undefined
   var onSelectionChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
   var onSort: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_SortField, scala.Unit]] = js.undefined
+  var onValueChange: js.UndefOr[js.Function1[/* value */ js.Array[_], scala.Unit]] = js.undefined
   var onVirtualScroll: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_Rows, scala.Unit]] = js.undefined
   var pageLinkSize: js.UndefOr[scala.Double] = js.undefined
   var paginator: js.UndefOr[scala.Boolean] = js.undefined
@@ -92,6 +94,7 @@ trait DataTableProps extends js.Object {
   var sortMode: js.UndefOr[java.lang.String] = js.undefined
   var sortOrder: js.UndefOr[scala.Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
+  var tabIndex: js.UndefOr[java.lang.String] = js.undefined
   var tableClassName: js.UndefOr[java.lang.String] = js.undefined
   var tableStyle: js.UndefOr[js.Object] = js.undefined
   var totalRecords: js.UndefOr[scala.Double] = js.undefined

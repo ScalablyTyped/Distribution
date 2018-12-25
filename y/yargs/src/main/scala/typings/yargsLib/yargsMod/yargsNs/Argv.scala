@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 // The type parameter T is the expected shape of the parsed options.
 // Arguments<T> is those options plus _ and $0, and an indexer falling
-// back to any for unknown options.
+// back to unknown for unknown options.
 //
 // For the return type / argv property, we create a mapped type over
 // Arguments<T> to simplify the inferred type signature in client code.
@@ -191,10 +191,8 @@ trait Argv[T] extends js.Object {
   def default[K /* <: java.lang.String */, V](key: K, value: V): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with js.Any] = js.native
   def default[K /* <: java.lang.String */, V](key: K, value: V, description: java.lang.String): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with js.Any] = js.native
   def demand(key: java.lang.String): Argv[T] = js.native
-  def demand(key: java.lang.String, msg: java.lang.String): Argv[T] = js.native
   def demand(key: java.lang.String, required: scala.Boolean): Argv[T] = js.native
   def demand(key: js.Array[java.lang.String]): Argv[T] = js.native
-  def demand(key: js.Array[java.lang.String], msg: java.lang.String): Argv[T] = js.native
   def demand(key: js.Array[java.lang.String], required: scala.Boolean): Argv[T] = js.native
   def demand(positionals: scala.Double): Argv[T] = js.native
   def demand(positionals: scala.Double, max: scala.Double): Argv[T] = js.native
@@ -220,6 +218,11 @@ trait Argv[T] extends js.Object {
            * @deprecated since version 6.6.0
            * Use '.demandCommand()' or '.demandOption()' instead
            */
+  def demand[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
+  /**
+           * @deprecated since version 6.6.0
+           * Use '.demandCommand()' or '.demandOption()' instead
+           */
   def demand[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   def demandCommand(): Argv[T] = js.native
   def demandCommand(min: scala.Double): Argv[T] = js.native
@@ -229,30 +232,21 @@ trait Argv[T] extends js.Object {
   def demandCommand(min: scala.Double, minMsg: java.lang.String): Argv[T] = js.native
   def demandOption(key: java.lang.String): Argv[T] = js.native
   def demandOption(key: java.lang.String, demand: scala.Boolean): Argv[T] = js.native
-  def demandOption(key: java.lang.String, msg: java.lang.String): Argv[T] = js.native
   def demandOption(key: js.Array[java.lang.String]): Argv[T] = js.native
   def demandOption(key: js.Array[java.lang.String], demand: scala.Boolean): Argv[T] = js.native
-  def demandOption(key: js.Array[java.lang.String], msg: java.lang.String): Argv[T] = js.native
   def demandOption[K /* <: java.lang.String */](key: K): Argv[Defined[T, K]] = js.native
   def demandOption[K /* <: java.lang.String */](key: K, msg: java.lang.String): Argv[Defined[T, K]] = js.native
   def demandOption[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
+  def demandOption[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
   def demandOption[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   @JSName("demandOption")
   def demandOption_KString[K /* <: java.lang.String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
-  @JSName("demandOption")
-  def demandOption_KString[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
   /**
            * @deprecated since version 6.6.0
            * Use '.demandCommand()' or '.demandOption()' instead
            */
   @JSName("demand")
   def demand_KString[K /* <: java.lang.String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
-  @JSName("demand")
-  def demand_KString[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
   def describe(descriptions: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Argv[T] = js.native
   def describe(key: java.lang.String, description: java.lang.String): Argv[T] = js.native
   def describe(key: js.Array[java.lang.String], description: java.lang.String): Argv[T] = js.native

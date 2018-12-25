@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "monk"
-version := "6.0.6-71b7f3"
+version := "6.0.6-52f5fc"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bson" % "1.0.6-dt-20180721Z-d496ac",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-e4c78d",
-  "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20181203Z-899288",
+  "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20181223Z-7d3e22",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
   "org.scalablytyped" %%% "object-assign" % "4.0.1-dt-20180214Z-4e14ab",
   "org.scalablytyped" %%% "std" % "3.2.2-669a73")

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "app-builder-lib"
-version := "20.38.4-33c04d"
+version := "20.38.4-06879d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "7zip-bin" % "4.1.0-ab2090",
-  "org.scalablytyped" %%% "ajv" % "6.6.2-f4974a",
+  "org.scalablytyped" %%% "ajv" % "6.6.2-95b01f",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-6fdba3",
   "org.scalablytyped" %%% "app-builder-bin" % "2.6.1-147f5b",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-8f594d",
@@ -25,6 +25,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "electron-publish" % "20.38.3-872272",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-cb7b0b",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-dc1557",
+  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-904c02",
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20180706Z-9e8f6d",
   "org.scalablytyped" %%% "fs-extra-p" % "7.0.0-af656e",
   "org.scalablytyped" %%% "hosted-git-info" % "2.7-dt-20181031Z-b09f46",
@@ -39,7 +40,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-d891ae",
   "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-b6dbcd",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-5fd723",
-  "org.scalablytyped" %%% "read-config-file" % "3.2.0-cf979c",
+  "org.scalablytyped" %%% "read-config-file" % "3.2.0-eb1f5a",
   "org.scalablytyped" %%% "sanitize-filename" % "v1.1.1-dt-20180214Z-052d66",
   "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-a778ce",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-e2fd38",

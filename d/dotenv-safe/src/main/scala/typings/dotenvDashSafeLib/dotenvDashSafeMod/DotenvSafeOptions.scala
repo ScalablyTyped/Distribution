@@ -18,12 +18,17 @@ trait DotenvSafeOptions extends js.Object {
      */
   var encoding: js.UndefOr[java.lang.String] = js.undefined
   /**
+     * Path to example environment file. (Option 1)
+     * @default ".env.example"
+     */
+  var example: js.UndefOr[java.lang.String] = js.undefined
+  /**
      * You can specify a custom path if your file containing environment variables is named or located differently.
      * @default '.env'
      */
   var path: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Path to example environment file.
+     * Path to example environment file. (Option 2 -- example takes precendence)
      * @default ".env.example"
      */
   var sample: js.UndefOr[java.lang.String] = js.undefined

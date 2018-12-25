@@ -26,6 +26,12 @@ trait VictoryBarProps
        */
   var barWidth: js.UndefOr[NumberOrCallback] = js.undefined
   /**
+       * The cornerRadius prop specifies a radius to apply to each bar.
+       * If this prop is given as a single number, the radius will only be applied to the top of each bar.
+       * When this prop is given as a function, it will be evaluated with the arguments datum, and active.
+       */
+  var cornerRadius: js.UndefOr[NumberOrCallback] = js.undefined
+  /**
        * Similar to data accessor props `x` and `y`, this prop may be used to functionally
        * assign eventKeys to data
        */

@@ -17,7 +17,7 @@ trait Anon_BorderedSize extends js.Object {
   var onChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]
   var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var rowSelection: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
-  var size: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var size: propDashTypesLib.propDashTypesMod.Requireable[antdLib.libTableInterfaceMod.TableSize]
   var useFixedHeader: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
 }
 

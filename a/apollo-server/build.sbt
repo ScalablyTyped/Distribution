@@ -1,26 +1,24 @@
 organization := "org.scalablytyped"
 name := "apollo-server"
-version := "2.3.1-fb02cf"
+version := "2.3.1-de67e2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-208775",
-  "org.scalablytyped" %%% "apollo-cache-control" % "0.4.0-3eb62b",
   "org.scalablytyped" %%% "apollo-datasource" % "0.2.1-ef69ba",
   "org.scalablytyped" %%% "apollo-engine-reporting" % "0.2.0-731dc1",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.0-812a12",
   "org.scalablytyped" %%% "apollo-env" % "0.2.5-4d3598",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.6-5dd416",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.6-d4b20d",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.2.1-a9b51c",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.3.1-221cf4",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.3.1-4a0ecd",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-3c897e",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.0-caa260",
-  "org.scalablytyped" %%% "apollo-server-express" % "2.3.1-191d6c",
+  "org.scalablytyped" %%% "apollo-server-express" % "2.3.1-127a6f",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.2.1-02374e",
-  "org.scalablytyped" %%% "apollo-tracing" % "0.4.0-d8369d",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-084adf",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-52c89b",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.2.9-1989d7",
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.6-88cf76",
   "org.scalablytyped" %%% "async-retry" % "1.2-dt-20180601Z-a2ffdc",
@@ -33,10 +31,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "eventemitter3" % "3.1.0-50d79a",
   "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-05cc5e",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-776b92",
+  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-904c02",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20181016Z-3245d4",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.0.0-1778b2",
   "org.scalablytyped" %%% "graphql-tag" % "2.10.0-9b8191",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.3-31ceb4",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.3-596ce8",
   "org.scalablytyped" %%% "iterall" % "1.2.2-b891ad",
   "org.scalablytyped" %%% "json-stable-stringify" % "1.0-dt-20180214Z-5f9731",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-b7dcf8",

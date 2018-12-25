@@ -52,14 +52,6 @@ trait ByteBuffer extends js.Object {
        */
   def LE(bigEndian: scala.Boolean): ByteBuffer = js.native
   /**
-       * Writes an UTF8 encoded string.This is an alias of ByteBuffer#writeUTF8String.
-       */
-  def WriteString(str: java.lang.String): ByteBuffer | scala.Double = js.native
-  /**
-       * Writes an UTF8 encoded string.This is an alias of ByteBuffer#writeUTF8String.
-       */
-  def WriteString(str: java.lang.String, offset: scala.Double): ByteBuffer | scala.Double = js.native
-  /**
        * Appends some data to this ByteBuffer. This will overwrite any contents behind the specified offset up to the appended data's length.
        */
   def append(source: ByteBuffer): ByteBuffer = js.native
@@ -859,6 +851,14 @@ trait ByteBuffer extends js.Object {
        * Writes a 16bit signed integer. This is an alias of ByteBuffer#writeInt16.
        */
   def writeShort(value: scala.Double, offset: scala.Double): ByteBuffer = js.native
+  /**
+       * Writes an UTF8 encoded string. This is an alias of ByteBuffer#writeUTF8String.
+       */
+  def writeString(str: java.lang.String): ByteBuffer | scala.Double = js.native
+  /**
+       * Writes an UTF8 encoded string. This is an alias of ByteBuffer#writeUTF8String.
+       */
+  def writeString(str: java.lang.String, offset: scala.Double): ByteBuffer | scala.Double = js.native
   /**
        * Writes an UTF8 encoded string.
        */

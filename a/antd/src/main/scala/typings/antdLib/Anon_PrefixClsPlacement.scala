@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_PrefixClsPlacement extends js.Object {
   var mouseEnterDelay: scala.Double
   var mouseLeaveDelay: scala.Double
-  var placement: java.lang.String
+  var placement: antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomCenter
   var prefixCls: java.lang.String
 }
 

@@ -423,6 +423,10 @@ object wxNsMembers extends js.Object {
   def getSystemInfo(options: GetSystemInfoOptions): scala.Unit = js.native
   def getSystemInfoSync(): SystemInfo = js.native
   /**
+  	 * 获取全局唯一的版本更新管理器，用于管理小程序更新。关于小程序的更新机制，可以查看运行机制文档。
+  	 */
+  def getUpdateManager(): UpdateManager = js.native
+  /**
   	 * 获取用户信息，需要先调用 wx.login 接口。
   	 */
   def getUserInfo(options: GetUserInfoOptions): scala.Unit = js.native

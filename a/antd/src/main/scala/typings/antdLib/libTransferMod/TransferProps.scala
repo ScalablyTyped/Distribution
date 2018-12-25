@@ -62,7 +62,7 @@ trait TransferProps extends js.Object {
   var operationStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var operations: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var render: js.UndefOr[js.Function1[/* record */ TransferItem, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var render: js.UndefOr[TransferRender] = js.undefined
   var rowKey: js.UndefOr[js.Function1[/* record */ TransferItem, java.lang.String]] = js.undefined
   var searchPlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var selectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined

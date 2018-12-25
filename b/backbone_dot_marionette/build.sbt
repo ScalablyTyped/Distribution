@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "backbone_dot_marionette"
-version := "3.3-dt-20181121Z-69cd83"
+version := "3.3-dt-20181121Z-38508b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20181124Z-40535c",
-  "org.scalablytyped" %%% "backbone_dot_radio" % "v0.8.3-dt-20181121Z-a1ecdf",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-f533e1",
+  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20181124Z-93edff",
+  "org.scalablytyped" %%% "backbone_dot_radio" % "v0.8.3-dt-20181121Z-e1fdb9",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-c4ac04",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3a6abd",
   "org.scalablytyped" %%% "std" % "3.2.2-669a73",
   "org.scalablytyped" %%% "underscore" % "1.8-dt-20180808Z-09fcd3")

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-local-mongoose"
-version := "4.0.0-dt-20181119Z-5bcc13"
+version := "4.0.0-dt-20181119Z-a32597"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,12 +12,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-05cc5e",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-776b92",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-b650df",
-  "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20181203Z-899288",
-  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181210Z-b9725e",
+  "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20181223Z-7d3e22",
+  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181210Z-945f29",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
-  "org.scalablytyped" %%% "passport" % "0.4-dt-20181019Z-4dbaf1",
-  "org.scalablytyped" %%% "passport-local" % "1.0.0-dt-20180328Z-256c96",
-  "org.scalablytyped" %%% "passport-strategy" % "v0.2.0-dt-20180815Z-b17b04",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20181215Z-70ccf7",
+  "org.scalablytyped" %%% "passport-local" % "1.0.0-dt-20180328Z-b41ef0",
+  "org.scalablytyped" %%% "passport-strategy" % "v0.2.0-dt-20180815Z-7e7df1",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-ef877c",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-f8f5d7",
   "org.scalablytyped" %%% "std" % "3.2.2-669a73")

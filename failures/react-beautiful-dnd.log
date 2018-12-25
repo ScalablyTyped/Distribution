@@ -151,7 +151,7 @@
 	at scala.collection.parallel.Task.tryLeaf(Tasks.scala:56)
 	at scala.collection.parallel.Task.tryLeaf$(Tasks.scala:50)
 	at scala.collection.parallel.ParIterableLike$Map.tryLeaf(ParIterableLike.scala:1053)
-	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal(Tasks.scala:160)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal(Tasks.scala:170)
 	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal$(Tasks.scala:157)
 	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.internal(Tasks.scala:440)
 	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute(Tasks.scala:150)

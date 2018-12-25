@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "common-errors"
-version := "1.0-dt-20180420Z-5171ab"
+version := "1.0-dt-20181224Z-08e324"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

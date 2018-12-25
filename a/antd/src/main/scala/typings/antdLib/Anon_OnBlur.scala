@@ -12,8 +12,8 @@ trait Anon_OnBlur extends js.Object {
   var className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var defaultValue: propDashTypesLib.propDashTypesMod.Requireable[_]
   var disabled: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
-  var id: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | scala.Double]
-  var maxLength: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | scala.Double]
+  var id: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var maxLength: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
   var onBlur: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]
   var onFocus: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]
   var onKeyDown: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]
@@ -21,7 +21,9 @@ trait Anon_OnBlur extends js.Object {
   var onPressEnter: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]
   var prefix: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
   var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
-  var size: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var size: propDashTypesLib.propDashTypesMod.Requireable[
+    antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large
+  ]
   var suffix: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
   var `type`: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var value: propDashTypesLib.propDashTypesMod.Requireable[_]

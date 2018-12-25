@@ -19,6 +19,8 @@ trait GetFieldDecoratorOptions extends js.Object {
   var normalize: js.UndefOr[
     js.Function3[/* value */ js.Any, /* prevValue */ js.Any, /* allValues */ js.Any, _]
   ] = js.undefined
+  /** 是否一直保留子节点的信息 */
+  var preserve: js.UndefOr[scala.Boolean] = js.undefined
   /** 校验规则，参见 [async-validator](https://github.com/yiminghe/async-validator) */
   var rules: js.UndefOr[js.Array[ValidationRule]] = js.undefined
   /** 收集子节点的值的时机 */

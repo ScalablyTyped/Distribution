@@ -13,8 +13,8 @@ trait InputProps extends js.Object {
   var onPressEnter: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLInputElement]] = js.undefined
   var prefix: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var size: js.UndefOr[
-    antdLib.antdLibStrings.large | antdLib.antdLibStrings.default | antdLib.antdLibStrings.small
+  var size: /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(small)), TsTypeLiteral(TsLiteralString(default)), TsTypeLiteral(TsLiteralString(large)))),Left(TsIdentSimple(number))) */js.UndefOr[
+    /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(small)), TsTypeLiteral(TsLiteralString(default)), TsTypeLiteral(TsLiteralString(large)))),Left(TsIdentSimple(number))) */js.Any
   ] = js.undefined
   var suffix: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }

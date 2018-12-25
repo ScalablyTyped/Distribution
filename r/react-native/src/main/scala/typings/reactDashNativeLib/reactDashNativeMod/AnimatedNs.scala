@@ -32,6 +32,9 @@ object AnimatedNs extends js.Object {
   class AnimatedMultiplication () extends AnimatedInterpolation
   
   @js.native
+  class AnimatedSubtraction () extends AnimatedInterpolation
+  
+  @js.native
   class AnimatedWithChildren () extends Animated
   
   
@@ -93,6 +96,7 @@ object AnimatedNs extends js.Object {
   trait SpringAnimationConfig extends AnimationConfig {
     var bounciness: js.UndefOr[scala.Double] = js.undefined
     var damping: js.UndefOr[scala.Double] = js.undefined
+    var delay: js.UndefOr[scala.Double] = js.undefined
     var friction: js.UndefOr[scala.Double] = js.undefined
     var mass: js.UndefOr[scala.Double] = js.undefined
     var overshootClamping: js.UndefOr[scala.Boolean] = js.undefined
@@ -220,6 +224,7 @@ object AnimatedNs extends js.Object {
   def spring(value: AnimatedValueXY, config: SpringAnimationConfig): CompositeAnimation = js.native
   def spring(value: AnimatedValue, config: SpringAnimationConfig): CompositeAnimation = js.native
   def stagger(time: scala.Double, animations: js.Array[CompositeAnimation]): CompositeAnimation = js.native
+  def subtract(a: Animated, b: Animated): AnimatedSubtraction = js.native
   def timing(value: AnimatedValueXY, config: TimingAnimationConfig): CompositeAnimation = js.native
   def timing(value: AnimatedValue, config: TimingAnimationConfig): CompositeAnimation = js.native
   type AnimatedValue = Value

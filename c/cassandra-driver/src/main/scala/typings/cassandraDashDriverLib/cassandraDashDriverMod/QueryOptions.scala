@@ -14,6 +14,7 @@ trait QueryOptions extends js.Object {
   var executionProfile: js.UndefOr[java.lang.String | ExecutionProfile] = js.undefined
   var fetchSize: js.UndefOr[scala.Double] = js.undefined
   var hints: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]] = js.undefined
+  var host: js.UndefOr[Host] = js.undefined
   var isIdempotent: js.UndefOr[scala.Boolean] = js.undefined
   var keyspace: js.UndefOr[java.lang.String] = js.undefined
   var logged: js.UndefOr[scala.Boolean] = js.undefined

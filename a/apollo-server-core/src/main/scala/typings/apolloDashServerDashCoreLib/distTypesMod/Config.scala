@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation._
 /* RemoveDifficultInheritance: 
 - Lifted 1 members from Set(std.Pick) */ 
 trait Config extends js.Object {
-  var cacheControl: js.UndefOr[
-    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions | scala.Boolean
-  ] = js.undefined
+  var cacheControl: js.UndefOr[js.Any | scala.Boolean] = js.undefined
   var context: js.UndefOr[Context[_] | ContextFunction[_]] = js.undefined
   var engine: js.UndefOr[
     scala.Boolean | apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[Context[_]]

@@ -1,17 +1,18 @@
 organization := "org.scalablytyped"
 name := "react-apollo"
-version := "2.3.3-32a466"
+version := "2.3.3-69b301"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-cache" % "1.1.22-bd6cd1",
-  "org.scalablytyped" %%% "apollo-client" % "2.4.8-7a3c80",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.6-5dd416",
-  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.13-5eb02d",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-084adf",
+  "org.scalablytyped" %%% "apollo-cache" % "1.1.22-80c157",
+  "org.scalablytyped" %%% "apollo-client" % "2.4.8-42062f",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.6-d4b20d",
+  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.13-2415f0",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-52c89b",
   "org.scalablytyped" %%% "csstype" % "2.5.8-28635b",
+  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-904c02",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20181016Z-3245d4",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-9becb0",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-ed559c",

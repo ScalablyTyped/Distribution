@@ -13,6 +13,7 @@ trait SidebarProps extends js.Object {
   var dismissable: js.UndefOr[scala.Boolean] = js.undefined
   var fullScreen: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
+  var modal: js.UndefOr[scala.Boolean] = js.undefined
   var onShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var position: js.UndefOr[java.lang.String] = js.undefined
   var showCloseIcon: js.UndefOr[scala.Boolean] = js.undefined

@@ -17,5 +17,7 @@ class Camera () extends Object3D {
        * This is the matrix which contains the projection.
        */
   var projectionMatrix: Matrix4 = js.native
+  def copy(source: Camera): this.type = js.native
+  def copy(source: Camera, recursive: scala.Boolean): this.type = js.native
 }
 

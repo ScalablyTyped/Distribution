@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class TieredMenu ()
   extends reactLib.reactMod.Component[TieredMenuProps, js.Any, js.Any] {
-  def toggle(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element]): scala.Unit = js.native
+  def toggle(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event]): scala.Unit = js.native
 }
 

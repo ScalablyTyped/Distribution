@@ -124,6 +124,12 @@ trait ICoachmarkProps
        */
   var preventDismissOnLostFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
+       * If true then focus will not be set to the Coachmark when it mounts. Useful in cases where focus on coachmark
+       * is causing other components in page to dismiss upon losing focus.
+       * @defaultvalue false
+       */
+  var preventFocusOnMount: js.UndefOr[scala.Boolean] = js.undefined
+  /**
        * Call to provide customized styling that will layer on top of the variant rules
        */
   var styles: js.UndefOr[
