@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+   * Setting default options for cy.server()
+   * @see https://on.cypress.io/server
+   */
 
 trait ServerOptions extends js.Object {
   var delay: scala.Double
@@ -18,6 +22,6 @@ trait ServerOptions extends js.Object {
   def onAbort(args: js.Any*): scala.Unit
   def onRequest(args: js.Any*): scala.Unit
   def onResponse(args: js.Any*): scala.Unit
-  def whitelist(args: js.Any*): scala.Unit
+  def whitelist(xhr: stdLib.Request): scala.Unit
 }
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_GraphqlResponse extends js.Object {
-  var graphqlResponse: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse
+  var graphqlResponse: js.Any
 }
 

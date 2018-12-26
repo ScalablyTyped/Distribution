@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-json-tree"
-version := "v0.6.5-dt-20180803Z-242f61"
+version := "v0.6.5-dt-20181225Z-c13c60"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

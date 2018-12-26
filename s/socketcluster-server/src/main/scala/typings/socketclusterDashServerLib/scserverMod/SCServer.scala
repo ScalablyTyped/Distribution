@@ -17,7 +17,7 @@ trait SCServer
   val MIDDLEWARE_SUBSCRIBE: socketclusterDashServerLib.socketclusterDashServerLibStrings.subscribe = js.native
   var clients: org.scalablytyped.runtime.StringDictionary[socketclusterDashServerLib.scserversocketMod.namespaced] = js.native
   var clientsCount: scala.Double = js.native
-  var exchange: js.Any = js.native
+  var exchange: scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.SCExchange = js.native
   var options: socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions = js.native
   var pendingClients: org.scalablytyped.runtime.StringDictionary[socketclusterDashServerLib.scserversocketMod.namespaced] = js.native
   var pendingClientsCount: scala.Double = js.native

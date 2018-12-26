@@ -5,7 +5,7 @@
 //                 Mike Woudenberg <https://github.com/mikewoudenberg>
 //                 Robbert van Markus <https://github.com/rvanmarkus>
 //                 Nicholas Boll <https://github.com/nicholasboll>
-// TypeScript Version: 2.5
+// TypeScript Version: 2.8
 // Updated by the Cypress team: https://www.cypress.io/about/
 // Shim definition to export a namespace. Cypress is actually a global module
 // so import/export isn't allowed there. We import here and define a global module

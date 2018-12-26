@@ -13,6 +13,7 @@ object httpDashAssertModMembers extends js.Object {
   val notDeepEqual: httpDashAssertLib.httpDashAssertMod.assertNs.Assert = js.native
   val notEqual: httpDashAssertLib.httpDashAssertMod.assertNs.Assert = js.native
   val notStrictEqual: httpDashAssertLib.httpDashAssertMod.assertNs.Assert = js.native
+  val ok: httpDashAssertLib.httpDashAssertMod.assertNs.Assert = js.native
   val strictEqual: httpDashAssertLib.httpDashAssertMod.assertNs.Assert = js.native
   def apply(value: js.Any): scala.Unit = js.native
   def apply(value: js.Any, status: scala.Double): scala.Unit = js.native

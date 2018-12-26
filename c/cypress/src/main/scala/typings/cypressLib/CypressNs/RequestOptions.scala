@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+   * Full set of possible options for cy.request call
+   */
 
 trait RequestOptions
   extends Loggable
@@ -17,7 +20,7 @@ trait RequestOptions
   var gzip: scala.Boolean
   var headers: js.Object
   var method: HttpMethod
-  var qs: java.lang.String
+  var qs: js.Object
   var url: java.lang.String
 }
 

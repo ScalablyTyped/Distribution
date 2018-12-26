@@ -11,6 +11,6 @@ trait CommandModule[T, U] extends js.Object {
   var builder: js.UndefOr[CommandBuilder[T, U]] = js.undefined
   var command: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
   var describe: js.UndefOr[java.lang.String | yargsLib.yargsLibNumbers.`false`] = js.undefined
-  def handler(args: Argv[U]): scala.Unit
+  def handler(args: Arguments[U]): scala.Unit
 }
 

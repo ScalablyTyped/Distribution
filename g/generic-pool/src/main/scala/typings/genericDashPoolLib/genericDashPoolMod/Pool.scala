@@ -24,6 +24,6 @@ class Pool[T] ()
   def isBorrowedResource(resource: T): scala.Boolean = js.native
   def release(resource: T): js.Thenable[scala.Unit] = js.native
   def start(): scala.Unit = js.native
-  def use[U](cb: js.Function1[/* resource */ T, U]): js.Thenable[U] = js.native
+  def use[U](cb: js.Function1[/* resource */ T, U | js.Thenable[U]]): js.Thenable[U] = js.native
 }
 

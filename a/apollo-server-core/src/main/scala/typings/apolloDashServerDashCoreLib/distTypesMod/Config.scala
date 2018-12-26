@@ -8,12 +8,18 @@ import scala.scalajs.js.annotation._
 /* RemoveDifficultInheritance: 
 - Lifted 1 members from Set(std.Pick) */ 
 trait Config extends js.Object {
-  var cacheControl: js.UndefOr[js.Any | scala.Boolean] = js.undefined
+  var cacheControl: js.UndefOr[
+    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions | scala.Boolean
+  ] = js.undefined
   var context: js.UndefOr[Context[_] | ContextFunction[_]] = js.undefined
   var engine: js.UndefOr[
     scala.Boolean | apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[Context[_]]
   ] = js.undefined
-  var extensions: js.UndefOr[apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[js.Function0[_]]] = js.undefined
+  var extensions: js.UndefOr[
+    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
+    ]
+  ] = js.undefined
   var introspection: js.UndefOr[scala.Boolean] = js.undefined
   var mockEntireSchema: js.UndefOr[scala.Boolean] = js.undefined
   var mocks: js.UndefOr[scala.Boolean | graphqlDashToolsLib.distInterfacesMod.IMocks] = js.undefined

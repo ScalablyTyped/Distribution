@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "http-assert"
-version := "1.3-dt-20181121Z-341460"
+version := "1.4-dt-20181225Z-10ee03"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

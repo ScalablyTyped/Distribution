@@ -75,9 +75,9 @@ object ecNs extends js.Object {
   
   
   trait SignatureOptions extends js.Object {
-    var r: scala.Double
+    var r: ellipticLib.ellipticMod.BNInput
     var recoveryParam: js.UndefOr[scala.Double] = js.undefined
-    var s: scala.Double
+    var s: ellipticLib.ellipticMod.BNInput
   }
   
   @js.native

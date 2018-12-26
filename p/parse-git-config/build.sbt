@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-git-config"
-version := "2.0-dt-20180807Z-baae53"
+version := "3.0-dt-20181225Z-f47fc4"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

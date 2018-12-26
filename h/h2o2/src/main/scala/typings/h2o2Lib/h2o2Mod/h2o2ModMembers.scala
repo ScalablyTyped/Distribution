@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("h2o2", JSImport.Namespace)
 @js.native
 object h2o2ModMembers
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[hapiLib.hapiMod.Plugin[js.Object]]
 

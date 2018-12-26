@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-confirm"
-version := "0.1-dt-20180803Z-7ec712"
+version := "0.1-dt-20181226Z-dc7afe"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

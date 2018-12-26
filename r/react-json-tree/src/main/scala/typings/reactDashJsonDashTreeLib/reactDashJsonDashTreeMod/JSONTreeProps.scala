@@ -40,6 +40,13 @@ trait JSONTreeProps
   ] = js.undefined
   var sortObjectKeys: js.UndefOr[js.Function | scala.Boolean] = js.undefined
   var theme: js.UndefOr[js.Object | java.lang.String] = js.undefined
-  var valueRenderer: js.UndefOr[js.Function1[/* raw */ java.lang.String, reactLib.reactMod.Global.JSXNs.Element]] = js.undefined
+  var valueRenderer: js.UndefOr[
+    js.Function3[
+      /* displayValue */ java.lang.String | scala.Double, 
+      /* rawValue */ js.UndefOr[java.lang.String | scala.Double | scala.Boolean | scala.Null], 
+      /* repeated */java.lang.String | scala.Double, 
+      reactLib.reactMod.Global.JSXNs.Element
+    ]
+  ] = js.undefined
 }
 

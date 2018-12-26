@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-logger-winston"
-version := "0.0-dt-20180703Z-5d00b0"
+version := "0.0-dt-20180703Z-4a5c3f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,10 +13,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-a1165f",
   "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-05cc5e",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-776b92",
-  "org.scalablytyped" %%% "http-assert" % "1.3-dt-20181121Z-341460",
+  "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-10ee03",
   "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180214Z-2b8873",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-ef7ada",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20181106Z-d33f50",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20181106Z-dd5f7e",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20180214Z-2abf67",
   "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-1dd23a",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-b650df",

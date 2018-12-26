@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object scworkerMod {
   type middlewareFunction = js.Function2[
-    /* options */ socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions, 
+    /* options */ js.Any, 
     /* next */ js.Function1[/* error */ js.UndefOr[java.lang.String | nodeLib.Error], scala.Unit], 
     scala.Unit
   ]

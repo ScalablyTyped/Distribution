@@ -12,7 +12,7 @@ package object CypressNs {
   type FileContents = java.lang.String | js.Array[js.Any] | js.Object
   type HistoryDirection = cypressLib.cypressLibStrings.back | cypressLib.cypressLibStrings.forward
   type HttpMethod = cypressLib.cypressLibStrings.GET | cypressLib.cypressLibStrings.POST | cypressLib.cypressLibStrings.PUT | cypressLib.cypressLibStrings.DELETE | cypressLib.cypressLibStrings.OPTIONS | cypressLib.cypressLibStrings.HEAD | cypressLib.cypressLibStrings.TRACE | cypressLib.cypressLibStrings.CONNECT | cypressLib.cypressLibStrings.PATCH
-  // @ts-ignore TODO - remove this if possible. Seems a recent change to TypeScript broke this. Possibly https://github.com/Microsoft/TypeScript/pull/17912
+  // TODO - remove this if possible. Seems a recent change to TypeScript broke this. Possibly https://github.com/Microsoft/TypeScript/pull/17912
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, Diff[java.lang.String, K]]
   type PositionType = cypressLib.cypressLibStrings.topLeft | cypressLib.cypressLibStrings.top | cypressLib.cypressLibStrings.topRight | cypressLib.cypressLibStrings.left | cypressLib.cypressLibStrings.center | cypressLib.cypressLibStrings.right | cypressLib.cypressLibStrings.bottomLeft | cypressLib.cypressLibStrings.bottom | cypressLib.cypressLibStrings.bottomRight
   type PrevSubject = cypressLib.cypressLibStrings.optional | cypressLib.cypressLibStrings.element | cypressLib.cypressLibStrings.document | cypressLib.cypressLibStrings.window
