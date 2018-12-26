@@ -1,0 +1,23 @@
+package typings
+package atBlueprintjsSelectLib.libEsmComponentsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@blueprintjs/select/lib/esm/components", "MultiSelect")
+@js.native
+class MultiSelect[T] ()
+  extends atBlueprintjsSelectLib.libEsmComponentsSelectMultiSelectMod.MultiSelect[T]
+
+@JSImport("@blueprintjs/select/lib/esm/components", "MultiSelect")
+@js.native
+object MultiSelect extends js.Object {
+  var defaultProps: atBlueprintjsSelectLib.Anon_Placeholder = js.native
+  var displayName: java.lang.String = js.native
+  def ofType[T](): org.scalablytyped.runtime.Instantiable1[
+    /* props */ atBlueprintjsSelectLib.libEsmComponentsSelectMultiSelectMod.IMultiSelectProps[T], 
+    atBlueprintjsSelectLib.libEsmComponentsSelectMultiSelectMod.MultiSelect[T]
+  ] = js.native
+}
+

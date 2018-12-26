@@ -1,0 +1,7 @@
+[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(react-draggable-list) [id => react-draggable-list, phase => typescript, file => ../node_modules/react-draggable-list/index.d.ts] 
+[debug] PhaseRunner.scala:81 Success [id => react-draggable-list, phase => typescript] 
+[warn ] PhaseRunner.scala:67 Failed because of, [immutability-helper => InFile(/home/tso/tmp/tso-cache/npm/node_modules/immutability-helper/index.d.ts): Parse error at 25.35 '']'' expected but '?' found] [id => react-draggable-list, phase => typescript] 
+[debug] PhaseRunner.scala:85 Failure, [immutability-helper => InFile(/home/tso/tmp/tso-cache/npm/node_modules/immutability-helper/index.d.ts): Parse error at 25.35 '']'' expected but '?' found] [id => react-draggable-list, phase => typescript] 
+[debug] PhaseRunner.scala:85 Failure, [immutability-helper => InFile(/home/tso/tmp/tso-cache/npm/node_modules/immutability-helper/index.d.ts): Parse error at 25.35 '']'' expected but '?' found] [id => react-draggable-list, phase => scala.js] 
+[debug] PhaseRunner.scala:85 Failure, [immutability-helper => InFile(/home/tso/tmp/tso-cache/npm/node_modules/immutability-helper/index.d.ts): Parse error at 25.35 '']'' expected but '?' found] [id => react-draggable-list, phase => build] 
+[debug] PhaseRunner.scala:85 Failure, [immutability-helper => InFile(/home/tso/tmp/tso-cache/npm/node_modules/immutability-helper/index.d.ts): Parse error at 25.35 '']'' expected but '?' found] [id => react-draggable-list, phase => publish] 

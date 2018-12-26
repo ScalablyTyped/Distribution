@@ -1,0 +1,168 @@
+package typings
+package reactDashJsonDashViewLib.reactDashJsonDashViewMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait ReactJsonViewProps extends js.Object {
+  /**
+     * When an integer value is assigned, strings will be cut off at that length.
+     * Collapsed strings are followed by an ellipsis.
+     * String content can be expanded and collapsed by clicking on the string value.
+     *
+     * Default: false
+     */
+  var collapseStringsAfterLength: js.UndefOr[scala.Double | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false`] = js.undefined
+  /**
+     * When set to true, all nodes will be collapsed by default.
+     * Use an integer value to collapse at a particular depth.
+     *
+     * Default: false
+     */
+  var collapsed: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
+  /**
+     * Set to a value to be used as defaultValue when adding new key to json
+     *
+     * Default: null
+     */
+  var defaultValue: js.UndefOr[TypeDefaultValue | js.Array[TypeDefaultValue] | scala.Null] = js.undefined
+  /**
+     * When set to true, data type labels prefix values.
+     *
+     * Default: true
+     */
+  var displayDataTypes: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+     * When set to true, objects and arrays are labeled with size.
+     *
+     * Default: true
+     */
+  var displayObjectSize: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+     * When prop is not false, the user can copy objects and arrays to clipboard by clicking on the clipboard icon.
+     * Copy callbacks are supported.
+     *
+     * Default: true
+     */
+  var enableClipboard: js.UndefOr[scala.Boolean | (js.Function1[/* copy */ OnCopyProps, scala.Unit])] = js.undefined
+  /**
+     * When an integer value is assigned, arrays will be displayed in groups by count of the value.
+     * Groups are displayed with brakcet notation and can be expanded and collapsed by clickong on the brackets.
+     *
+     * Default: 100
+     */
+  var groupArraysAfterLength: js.UndefOr[scala.Double] = js.undefined
+  /**
+     * Style of expand/collapse icons. Accepted values are "circle", triangle" or "square".
+     *
+     * Default: {}
+     */
+  var iconStyle: js.UndefOr[
+    reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.circle | reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.triangle | reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.square
+  ] = js.undefined
+  /**
+     * Set the indent-width for nested objects.
+     *
+     * Default: 4
+     */
+  var indentWidth: js.UndefOr[scala.Double] = js.undefined
+  /**
+     * Contains the name of your root node. Use null or false for no name.
+     *
+     * Default: "root"
+     */
+  var name: js.UndefOr[
+    java.lang.String | scala.Null | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false`
+  ] = js.undefined
+  /**
+     * When a callback function is passed in, add functionality is enabled.
+     * The callback is invoked before additions are completed.
+     * Returning false from onAdd will prevent the change from being made. see: onAdd docs
+     *
+     * Default: false
+     */
+  var onAdd: js.UndefOr[
+    (js.Function1[
+      /* add */ InteractionProps, 
+      reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` | _
+    ]) | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false`
+  ] = js.undefined
+  /**
+     * When a callback function is passed in, delete functionality is enabled.
+     * The callback is invoked before deletions are completed.
+     * Returning false from onDelete will prevent the change from being made. see: onDelete docs
+     *
+     * Default: false
+     */
+  var onDelete: js.UndefOr[
+    (js.Function1[
+      /* del */ InteractionProps, 
+      reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` | _
+    ]) | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false`
+  ] = js.undefined
+  /**
+     * When a callback function is passed in, edit functionality is enabled.
+     * The callback is invoked before edits are completed. Returning false
+     * from onEdit will prevent the change from being made. see: onEdit docs.
+     *
+     * Default: false
+     */
+  var onEdit: js.UndefOr[
+    (js.Function1[
+      /* edit */ InteractionProps, 
+      reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` | _
+    ]) | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false`
+  ] = js.undefined
+  /**
+     * When a function is passed in, clicking a value triggers the onSelect method to be called.
+     *
+     * Default: false
+     */
+  var onSelect: js.UndefOr[
+    (js.Function1[/* select */ OnSelectProps, scala.Unit]) | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false`
+  ] = js.undefined
+  /**
+     * Callback function to provide control over what objects and arrays should be collapsed by default.
+     * An object is passed to the callback containing name, src, type ("array" or "object") and namespace.
+     *
+     * Default: false
+     */
+  var shouldCollapse: js.UndefOr[
+    reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` | (js.Function1[/* field */ CollapsedFieldProps, scala.Boolean])
+  ] = js.undefined
+  /**
+     * Set to true to sort object keys.
+     *
+     * Default: false
+     */
+  var sortKeys: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+     * This property contains your input JSON.
+     *
+     * Required.
+     */
+  var src: js.Object
+  /**
+     * Style attributes for react-json-view container.
+     * Explicit style attributes will override attributes provided by a theme.
+     *
+     * Default: "rjv-default"
+     */
+  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  /**
+     * RJV supports base-16 themes. Check out the list of supported themes in the demo.
+     * A custom "rjv-default" theme applies by default.
+     *
+     * Default: "rjv-default"
+     */
+  var theme: js.UndefOr[ThemeKeys | ThemeObject] = js.undefined
+  /**
+     * Custom message for validation failures to onEdit, onAdd, or onDelete callbacks.
+     *
+     * Default: "Validation Error"
+     */
+  var validationMessage: js.UndefOr[java.lang.String] = js.undefined
+}
+
