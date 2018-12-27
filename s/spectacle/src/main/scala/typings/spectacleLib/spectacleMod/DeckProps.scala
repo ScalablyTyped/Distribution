@@ -14,6 +14,13 @@ trait DeckProps extends js.Object {
   var globalStyles: js.UndefOr[scala.Boolean] = js.undefined
   var history: js.UndefOr[js.Any] = js.undefined
    // Needs a type, see https://github.com/ReactTraining/history
+  var onStateChange: js.UndefOr[
+    js.Function2[
+      /* previousState */ js.UndefOr[java.lang.String], 
+      /* nextState */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ]
+  ] = js.undefined
   var progress: js.UndefOr[progressType] = js.undefined
   var theme: js.UndefOr[Theme] = js.undefined
   var transition: js.UndefOr[js.Array[transitionType]] = js.undefined

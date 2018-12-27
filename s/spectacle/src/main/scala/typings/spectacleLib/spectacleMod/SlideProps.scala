@@ -20,6 +20,7 @@ trait SlideProps extends BaseProps {
   var onActive: js.UndefOr[js.Function1[/* slideIndex */ java.lang.String | scala.Double, scala.Unit]] = js.undefined
   var progressColor: js.UndefOr[java.lang.String] = js.undefined
   var slideIndex: js.UndefOr[scala.Double] = js.undefined
+  var state: js.UndefOr[java.lang.String] = js.undefined
   var transition: js.UndefOr[js.Array[transitionType]] = js.undefined
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
   var transitionIn: js.UndefOr[js.Array[transitionType]] = js.undefined

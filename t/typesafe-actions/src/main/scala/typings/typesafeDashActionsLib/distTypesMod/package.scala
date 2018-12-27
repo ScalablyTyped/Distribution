@@ -25,4 +25,5 @@ package object distTypesMod {
   type StringType = java.lang.String
   type SymbolType = js.Symbol
   type U[T /* <: B[_] */] = /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(v))) */js.Any
+  type Unboxed[T] = T
 }
