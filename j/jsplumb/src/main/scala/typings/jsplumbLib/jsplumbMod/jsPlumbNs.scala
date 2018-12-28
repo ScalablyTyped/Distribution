@@ -49,6 +49,7 @@ object jsPlumbNs extends js.Object {
     var detachable: js.UndefOr[scala.Boolean] = js.undefined
     var endpoint: js.UndefOr[EndpointSpec] = js.undefined
     var label: js.UndefOr[java.lang.String] = js.undefined
+    var overlays: js.UndefOr[js.Array[OverlaySpec]] = js.undefined
     var source: js.UndefOr[ElementRef | Endpoint] = js.undefined
     var target: js.UndefOr[ElementRef | Endpoint] = js.undefined
     var uuids: js.UndefOr[js.Tuple2[UUID, UUID]] = js.undefined
