@@ -14,9 +14,7 @@ trait OutputOptions extends js.Object {
   ] = js.undefined
   var chunkFileNames: js.UndefOr[java.lang.String] = js.undefined
   var compact: js.UndefOr[scala.Boolean] = js.undefined
-  // deprecated
-  var dest: js.UndefOr[java.lang.String] = js.undefined
-  // only required for bundles.write
+  // only required for bundle.write
   var dir: js.UndefOr[java.lang.String] = js.undefined
   var entryFileNames: js.UndefOr[java.lang.String] = js.undefined
   var esModule: js.UndefOr[scala.Boolean] = js.undefined
@@ -39,15 +37,14 @@ trait OutputOptions extends js.Object {
   var intro: js.UndefOr[
     java.lang.String | (js.Function0[java.lang.String | js.Promise[java.lang.String]])
   ] = js.undefined
-  var moduleId: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var namespaceToStringTag: js.UndefOr[scala.Boolean] = js.undefined
-  // undocumented?
   var noConflict: js.UndefOr[scala.Boolean] = js.undefined
   var outro: js.UndefOr[
     java.lang.String | (js.Function0[java.lang.String | js.Promise[java.lang.String]])
   ] = js.undefined
   var paths: js.UndefOr[OptionsPaths] = js.undefined
+  var preferConst: js.UndefOr[scala.Boolean] = js.undefined
   var sourcemap: js.UndefOr[scala.Boolean | rollupLib.rollupLibStrings.`inline`] = js.undefined
   var sourcemapExcludeSources: js.UndefOr[scala.Boolean] = js.undefined
   var sourcemapFile: js.UndefOr[java.lang.String] = js.undefined

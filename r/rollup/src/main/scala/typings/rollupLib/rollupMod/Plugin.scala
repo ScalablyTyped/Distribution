@@ -11,7 +11,7 @@ trait Plugin extends js.Object {
   var buildEnd: js.UndefOr[
     js.ThisFunction1[
       /* this */ PluginContext, 
-      /* err */ js.UndefOr[js.Any], 
+      /* err */ js.UndefOr[nodeLib.Error], 
       js.Promise[scala.Unit] | scala.Unit
     ]
   ] = js.undefined
@@ -36,7 +36,7 @@ trait Plugin extends js.Object {
   var intro: js.UndefOr[AddonHook] = js.undefined
   var load: js.UndefOr[LoadHook] = js.undefined
   var name: java.lang.String
-  // TODO: deprecate
+  /** @deprecated */
   var ongenerate: js.UndefOr[
     js.ThisFunction2[
       /* this */ PluginContext, 
@@ -45,7 +45,7 @@ trait Plugin extends js.Object {
       scala.Unit | js.Promise[scala.Unit]
     ]
   ] = js.undefined
-  // TODO: deprecate
+  /** @deprecated */
   var onwrite: js.UndefOr[
     js.ThisFunction2[
       /* this */ PluginContext, 
@@ -57,11 +57,20 @@ trait Plugin extends js.Object {
   var options: js.UndefOr[js.Function1[/* options */ InputOptions, InputOptions | scala.Unit | scala.Null]] = js.undefined
   var outro: js.UndefOr[AddonHook] = js.undefined
   var renderChunk: js.UndefOr[RenderChunkHook] = js.undefined
+  var renderError: js.UndefOr[
+    js.ThisFunction1[
+      /* this */ PluginContext, 
+      /* err */ js.UndefOr[nodeLib.Error], 
+      js.Promise[scala.Unit] | scala.Unit
+    ]
+  ] = js.undefined
+  var renderStart: js.UndefOr[js.ThisFunction0[/* this */ PluginContext, js.Promise[scala.Unit] | scala.Unit]] = js.undefined
   var resolveDynamicImport: js.UndefOr[ResolveDynamicImportHook] = js.undefined
   var resolveId: js.UndefOr[ResolveIdHook] = js.undefined
   var transform: js.UndefOr[TransformHook] = js.undefined
-  // TODO: deprecate
+  /** @deprecated */
   var transformBundle: js.UndefOr[TransformChunkHook] = js.undefined
+  /** @deprecated */
   var transformChunk: js.UndefOr[TransformChunkHook] = js.undefined
   var watchChange: js.UndefOr[js.Function1[/* id */ java.lang.String, scala.Unit]] = js.undefined
 }

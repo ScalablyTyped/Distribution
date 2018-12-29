@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
-trait OutputOptionsFile extends OutputOptions
+@js.native
+trait RollupWatcher
+  extends nodeLib.eventsMod.EventEmitter {
+  def close(): scala.Unit = js.native
+}
 

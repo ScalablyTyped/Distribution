@@ -14,8 +14,8 @@ trait PluginContext extends js.Object {
   var moduleIds: nodeLib.IterableIterator[java.lang.String] = js.native
   @JSName("resolveId")
   var resolveId_Original: ResolveIdHook = js.native
-  // TODO deprecate:
-  var watcher: Watcher = js.native
+  /** @deprecated */
+  var watcher: nodeLib.eventsMod.EventEmitter = js.native
   def addWatchFile(id: java.lang.String): scala.Unit = js.native
   def emitAsset(name: java.lang.String): java.lang.String = js.native
   def emitAsset(name: java.lang.String, source: java.lang.String): java.lang.String = js.native
@@ -28,7 +28,7 @@ trait PluginContext extends js.Object {
   def getModuleInfo(moduleId: java.lang.String): rollupLib.Anon_IsExternal = js.native
   def isExternal(id: java.lang.String, parentId: java.lang.String, isResolved: scala.Boolean): scala.Boolean | scala.Unit = js.native
   def parse(input: java.lang.String, options: js.Any): estreeLib.estreeMod.Program = js.native
-  def resolveId(`this`: PluginContext, id: java.lang.String, parent: java.lang.String): (js.Promise[java.lang.String | scala.Boolean | scala.Unit | scala.Null]) | java.lang.String | scala.Boolean | scala.Unit | scala.Null = js.native
+  def resolveId(`this`: PluginContext, id: java.lang.String, parent: java.lang.String): (js.Promise[java.lang.String | rollupLib.rollupLibNumbers.`false` | scala.Null]) | java.lang.String | rollupLib.rollupLibNumbers.`false` | scala.Unit | scala.Null = js.native
   def setAssetSource(assetId: java.lang.String, source: java.lang.String): scala.Unit = js.native
   def setAssetSource(assetId: java.lang.String, source: nodeLib.Buffer): scala.Unit = js.native
   def warn(warning: java.lang.String): scala.Unit = js.native

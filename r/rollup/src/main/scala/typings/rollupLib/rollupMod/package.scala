@@ -19,11 +19,10 @@ package object rollupMod {
   type LoadHook = js.ThisFunction1[
     /* this */ PluginContext, 
     /* id */ java.lang.String, 
-    (js.Promise[SourceDescription | java.lang.String | scala.Unit | scala.Null]) | SourceDescription | java.lang.String | scala.Unit | scala.Null
+    (js.Promise[SourceDescription | java.lang.String | scala.Null]) | SourceDescription | java.lang.String | scala.Null
   ]
   type ModuleFormat = rollupLib.rollupLibStrings.amd | rollupLib.rollupLibStrings.cjs | rollupLib.rollupLibStrings.system | rollupLib.rollupLibStrings.es | rollupLib.rollupLibStrings.esm | rollupLib.rollupLibStrings.iife | rollupLib.rollupLibStrings.umd
   type OptionsPaths = (stdLib.Record[java.lang.String, java.lang.String]) | (js.Function1[/* id */ java.lang.String, java.lang.String])
-  type OutputFile = java.lang.String | nodeLib.Buffer | OutputChunk
   type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], Plugin]
   type RawSourceMap = rollupLib.Anon_Mappings | ExistingRawSourceMap
   type RenderChunkHook = js.ThisFunction3[
@@ -31,7 +30,7 @@ package object rollupMod {
     /* code */ java.lang.String, 
     /* chunk */ RenderedChunk, 
     /* options */ OutputOptions, 
-    (js.Promise[rollupLib.Anon_Code | scala.Unit]) | rollupLib.Anon_Code | scala.Unit | scala.Null
+    (js.Promise[rollupLib.Anon_Code | scala.Null]) | rollupLib.Anon_Code | java.lang.String | scala.Null
   ]
   type ResolveDynamicImportHook = js.ThisFunction2[
     /* this */ PluginContext, 
@@ -43,7 +42,7 @@ package object rollupMod {
     /* this */ PluginContext, 
     /* id */ java.lang.String, 
     /* parent */ java.lang.String, 
-    (js.Promise[java.lang.String | scala.Boolean | scala.Unit | scala.Null]) | java.lang.String | scala.Boolean | scala.Unit | scala.Null
+    (js.Promise[java.lang.String | rollupLib.rollupLibNumbers.`false` | scala.Null]) | java.lang.String | rollupLib.rollupLibNumbers.`false` | scala.Unit | scala.Null
   ]
   type TransformChunkHook = js.ThisFunction2[
     /* this */ PluginContext, 
@@ -58,5 +57,4 @@ package object rollupMod {
     (js.Promise[TransformSourceDescription | java.lang.String | scala.Unit]) | TransformSourceDescription | java.lang.String | scala.Unit
   ]
   type WarningHandler = js.Function1[/* warning */ java.lang.String | RollupWarning, scala.Unit]
-  type Watcher = nodeLib.eventsMod.EventEmitter
 }

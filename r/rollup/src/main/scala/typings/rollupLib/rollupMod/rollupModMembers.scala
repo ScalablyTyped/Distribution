@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object rollupModMembers extends js.Object {
   val VERSION: java.lang.String = js.native
-  def rollup(options: RollupDirOptions): js.Promise[RollupBuild] = js.native
-  def rollup(options: RollupFileOptions): js.Promise[RollupSingleFileBuild] = js.native
-  def watch(configs: js.Array[RollupWatchOptions]): Watcher = js.native
+  def rollup(options: RollupOptions): js.Promise[RollupBuild] = js.native
+  def watch(configs: js.Array[RollupWatchOptions]): RollupWatcher = js.native
 }
 
