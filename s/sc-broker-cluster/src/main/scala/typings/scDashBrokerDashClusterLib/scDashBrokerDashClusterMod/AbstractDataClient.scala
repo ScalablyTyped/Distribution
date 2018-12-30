@@ -32,10 +32,13 @@ class AbstractDataClient protected ()
     query: js.Function1[/* datamap */ fleximapLib.fleximapMod.FlexiMap, scala.Unit],
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def exec(query: js.Function1[/* datamap */ fleximapLib.fleximapMod.FlexiMap, scala.Unit], options: js.Any): scala.Unit = js.native
   def exec(
     query: js.Function1[/* datamap */ fleximapLib.fleximapMod.FlexiMap, scala.Unit],
-    options: js.Any,
+    options: scDashBrokerLib.scDashBrokerMod.QueryOptions
+  ): scala.Unit = js.native
+  def exec(
+    query: js.Function1[/* datamap */ fleximapLib.fleximapMod.FlexiMap, scala.Unit],
+    options: scDashBrokerLib.scDashBrokerMod.QueryOptions,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def expire(keys: expirymanagerLib.expirymanagerMod.Keys, seconds: scala.Double): scala.Unit = js.native
@@ -133,10 +136,10 @@ class AbstractDataClient protected ()
     keyChain: fleximapLib.fleximapMod.KeyChain,
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): scala.Unit = js.native
-  def splice(keyChain: fleximapLib.fleximapMod.KeyChain, options: js.Any): scala.Unit = js.native
+  def splice(keyChain: fleximapLib.fleximapMod.KeyChain, options: scDashBrokerLib.scDashBrokerMod.SpliceOptions): scala.Unit = js.native
   def splice(
     keyChain: fleximapLib.fleximapMod.KeyChain,
-    options: js.Any,
+    options: scDashBrokerLib.scDashBrokerMod.SpliceOptions,
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def unexpire(keys: expirymanagerLib.expirymanagerMod.Keys): scala.Unit = js.native

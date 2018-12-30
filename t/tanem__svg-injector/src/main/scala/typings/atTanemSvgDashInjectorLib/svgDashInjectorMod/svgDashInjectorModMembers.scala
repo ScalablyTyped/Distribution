@@ -23,7 +23,7 @@ object svgDashInjectorModMembers extends js.Object {
    * SVGAnimatedString with the class value found in the "baseVal" property,
    * instead of simple string like with HTML Elements.
    */
-  def default(elements: scala.Null, hasDoneEachEvalScriptsPngFallbackRenumerateIRIElements: IOptionalArgs): scala.Unit = js.native
+  def default(elements: scala.Null, hasDoneEachEvalScriptsRenumerateIRIElements: IOptionalArgs): scala.Unit = js.native
   /**
    * :NOTE: We are using get/setAttribute with SVG because the SVG DOM spec
    * differs from HTML DOM and can return other unexpected object types when
@@ -39,7 +39,7 @@ object svgDashInjectorModMembers extends js.Object {
    * SVGAnimatedString with the class value found in the "baseVal" property,
    * instead of simple string like with HTML Elements.
    */
-  def default(elements: stdLib.Element, hasDoneEachEvalScriptsPngFallbackRenumerateIRIElements: IOptionalArgs): scala.Unit = js.native
+  def default(elements: stdLib.Element, hasDoneEachEvalScriptsRenumerateIRIElements: IOptionalArgs): scala.Unit = js.native
   /**
    * :NOTE: We are using get/setAttribute with SVG because the SVG DOM spec
    * differs from HTML DOM and can return other unexpected object types when
@@ -57,7 +57,7 @@ object svgDashInjectorModMembers extends js.Object {
    */
   def default(
     elements: stdLib.HTMLCollectionOf[stdLib.Element],
-    hasDoneEachEvalScriptsPngFallbackRenumerateIRIElements: IOptionalArgs
+    hasDoneEachEvalScriptsRenumerateIRIElements: IOptionalArgs
   ): scala.Unit = js.native
   /**
    * :NOTE: We are using get/setAttribute with SVG because the SVG DOM spec
@@ -76,7 +76,7 @@ object svgDashInjectorModMembers extends js.Object {
    */
   def default(
     elements: stdLib.NodeListOf[stdLib.Element],
-    hasDoneEachEvalScriptsPngFallbackRenumerateIRIElements: IOptionalArgs
+    hasDoneEachEvalScriptsRenumerateIRIElements: IOptionalArgs
   ): scala.Unit = js.native
 }
 

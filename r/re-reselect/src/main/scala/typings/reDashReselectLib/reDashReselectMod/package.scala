@@ -14,12 +14,12 @@ package object reDashReselectMod {
   type OutputCachedSelector[S, R, C] = js.Function2[
     /* resolver */ Resolver[S], 
     /* optionsOrSelectorCreator */ js.UndefOr[reDashReselectLib.Options], 
-    (OutputSelector[S, R, C]) with (reDashReselectLib.Anon_ClearCacheRemoveMatchingSelector[S, R, C])
+    (OutputSelector[S, R, C]) with (reDashReselectLib.Anon_GetMatchingSelectorState[S, R, C])
   ]
   type OutputParametricCachedSelector[S, P, R, C] = js.Function2[
     /* resolver */ ParametricResolver[S, P], 
     /* optionsOrSelectorCreator */ js.UndefOr[reDashReselectLib.Options], 
-    (OutputParametricSelector[S, P, R, C]) with (reDashReselectLib.Anon_ClearCache[S, P, R, C])
+    (OutputParametricSelector[S, P, R, C]) with (reDashReselectLib.Anon_GetMatchingSelector[S, P, R, C])
   ]
   type OutputParametricSelector[S, P, R, C] = (ParametricSelector[S, P, R]) with reDashReselectLib.Anon_Recomputations[C]
   type OutputSelector[S, R, C] = (Selector[S, R]) with reDashReselectLib.Anon_Recomputations[C]

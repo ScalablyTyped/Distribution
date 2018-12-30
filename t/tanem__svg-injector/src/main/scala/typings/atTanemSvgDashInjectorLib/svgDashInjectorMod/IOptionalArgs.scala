@@ -12,7 +12,6 @@ trait IOptionalArgs extends js.Object {
   var evalScripts: js.UndefOr[
     atTanemSvgDashInjectorLib.atTanemSvgDashInjectorLibStrings.always | atTanemSvgDashInjectorLib.atTanemSvgDashInjectorLibStrings.once | atTanemSvgDashInjectorLib.atTanemSvgDashInjectorLibStrings.never
   ] = js.undefined
-  var pngFallback: js.UndefOr[java.lang.String] = js.undefined
   var renumerateIRIElements: js.UndefOr[scala.Boolean] = js.undefined
 }
 
