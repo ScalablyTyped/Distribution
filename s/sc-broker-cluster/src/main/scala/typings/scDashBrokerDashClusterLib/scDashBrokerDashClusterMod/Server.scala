@@ -16,7 +16,7 @@ class Server protected ()
   def on_brokerExit(
     event: scDashBrokerDashClusterLib.scDashBrokerDashClusterLibStrings.brokerExit,
     listener: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BrokerExitInfo */ /* brokerInfo */ js.Any, 
+      /* brokerInfo */ socketclusterLib.socketclusterMod.SocketClusterNs.BrokerExitInfo, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -34,7 +34,7 @@ class Server protected ()
   def on_brokerStart(
     event: scDashBrokerDashClusterLib.scDashBrokerDashClusterLibStrings.brokerStart,
     listener: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BrokerStartInfo */ /* brokerInfo */ js.Any, 
+      /* brokerInfo */ socketclusterLib.socketclusterMod.SocketClusterNs.BrokerStartInfo, 
       scala.Unit
     ]
   ): this.type = js.native
